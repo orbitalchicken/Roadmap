@@ -2,7 +2,6 @@
 LINUX MINT 14
 =======================================================================
 
-
 NEMO
 ----
 - Ctrl+L switch the visibility of the pathbar
@@ -12,9 +11,19 @@ NEMO
 - Open terminal
 - Check MD5
 - Create an actions API, which reads desktop files in /usr/share/nemo/launchers. A action is basically a text file which defines a name, an icon, an executable and which file extensions nemo shows the action for when the file is right-clicked. A typical example of this would be a "Edit tags" action which would apply to *.mp3 files. 
+- Launch cinnamon settings option when right-clicking the desktop
 
 MDM
 ---
 
-Cinnamon
--------- 
+Cinnamon 1.6
+------------
+
+=======================================================================
+LINUX MINT 15
+=======================================================================
+
+Cinnamon 1.8
+------------
+- Desklets
+- Ability for cinnamon-settings to browse/install/remove/update themes/applets/extensions/desklets remotely

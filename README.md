@@ -18,6 +18,7 @@ Cinnamon 1.8
     
     - Configurable color schemes for themes
     - Calendar events - similar to KDE's implementation [clem]
+    - Upgrade Menu applet with mintMenu features (highlight new apps, install/remove apps, search the Web) [clem]
     
     NEW APPLETS
     

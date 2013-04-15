@@ -1,0 +1,431 @@
+<clem> ok, this is the first time we do this so I hope it won't be too chaotic.
+<clem> what I'll do is list the topics first and then use the channel topic to write the topic we're currently talking about
+<clem> I'm also keeping a log of the channel for those who couldn't make it
+<clem> The topics are: 
+<d[-_-]b> will you also publish the results? eg somewhere on the mint page?
+<clem> yes
+<clem> - Triaging issues (new members, tags, how to do it)
+<clem> - 3.8 compatibility and the use of GNOME libs in general (where do we use them, can we replace them?)
+<clem> - Road to 1.8 (what's left, when do we freeze/release)
+<clem> - - Dev blog
+<clem> Before we get into these 4 topics, I'd like to take some time to answer any question people might have that doesn't fall within these topics
+* clem has changed the topic to: Current topic: Questions, non-listed topics
+<Garmine> clem: so.... can I panic now? :D
+<clem> yes :)
+* Garmine has no idea if that's good or not
+<Garmine> gonna check it in the guide... hold on :)
+<mtwebster> clem: this may fall under another category as well, but based on recent events, any plans on making cinnamon its own development entity, ala mate?
+* mtwebster feels like an interviewer
+<clem> mtwebster: no
+<glebihan> I think clem's answer on the "cinnnamon needs some love" thread was relatively clear on the matte
+<glebihan> r
+<clem> mtwebster: when the project was started it was started because it was needed by Mint, so as such it was similar to say mintinstall in scope
+<clem> mtwebster: of course it was likely to be used by other distributions so a certain commitment was made at the time
+<lockjs> clem: could you expand on the reasons why you don't want to do this? woud it be a possibility in the future?
+<clem> mtwebster: that's where we went further than unity for instance by guaranteeing cinnamon would be designed and compatible not only for Mint but for Linux in general
+<mtwebster> ok.. feelings evolve, so i thought i'd follow up one more time.  i'm good with that stance 100%
+<clem> mtwebster: with that said, it is the implementation of the Mint vision, and this is the benefit that comes out of forking Gnome, a huge effort went into it.. not to create something new, but to control our own desktop
+<clem> mtwebster: mintsources is a similar effort
+<clem> mtwebster: it helps to think of mintsources because it's smaller in scale and it wears the name "mint"
+<clem> mtwebster: mintsources is made to solve a problem Mint has, and in recognition of the fact that other distros would benefit from it, it supports Netrunner, SnowLinux, LMDE etc..
+<clem> mtwebster: there's the same commitment there in regards to branding and design, that this tool WILL work outside of Mint
+<d[-_-]b> so let's say someone wanted to use cinnamon for his/her distribution. what would be the recommended way? fork it? or get in contact to see if something has to be changed in the code?
+<clem> d[-_-]b: it really depends on what they wanted
+<clem> d[-_-]b: if they wanted cinnamon itself, we commit to them and consider it a bug if it doesn't work for them
+<clem> d[-_-]b: so they'd simply contact us and we'd work with them
+<clem> d[-_-]b: if they wanted a design that wasn't the same as cinnamon and their need wasn't what we need for Mint, we'd recommend a fork
+<d[-_-]b> maybe this should be stated in a popular place to avoid misunderstandings like with this cinnarch thing
+<clem> d[-_-]b: the reason we forked GNOME was because they were implementing something we didn't want to use, not because they wouldn't fix such or such issue
+<clem> d[-_-]b: with Cinnarch, the misinterpretation is to do with commitment
+<clem> d[-_-]b: I'm committed personally to call any problem Fedora or Arch, or any other distro has, a bug.
+<clem> d[-_-]b: and to consider it seriously and as a valid bug.
+<clem> d[-_-]b: where things are different is when it comes to prioritizing these bugs and the interpretation of how urgent they are.
+<clem> d[-_-]b: Not everyone here is a Mint dev, so I only speak for myself here. We're all busy and we have different priorities.
+<lockjs> clem: as Cinnamon is a part of Mint, will the next LTS or perhaps release of Mint re-introduce the core Linux Mint name, or will MATE continue to be given equal positioning(?)
+<clem> d[-_-]b: 3.8 support, which is a topic we'll talk about in this meeting is something we all want, but we don't all want it as badly.
+<clem> lockjs: MATE will continue to get equal consideration.
+<d[-_-]b> clem I see. so one could wrap it up like this: generally cinnamon should run for everybody, but if there are issues, mint issues will be priorized
+<clem> lockjs: a lot of users are still running GNOME 2, MATE is the DE they'd expect to see when they upgrade.
+<clem> lockjs: also, Cinnamon doesn't yet work as reliably as MATE on all computer specs or as well as MATE within the enterprise.
+<clem> d[-_-]b: no, but you can expect Mint devs to prioritize Mint issues of course.
+<clem> d[-_-]b: the same way leigh is more likely to work on Fedora issues than on the new calendar :)
+<d[-_-]b> sure. that's the way i meant it anyways. thank you
+<clem> d[-_-]b: his interest is with Fedora, mine with Mint, we both work on making Cinnamon better and we both agree on calling an issue an issue whether it affects our own distro or not.
+<lockjs> clem: thats fine, I was just wondering as some of the confusion (probably mine mostly) regarding the position / commitment to Cinnamon may have come from the equal waiting given to to MATE [although from a distribution perspective I can see and understand the reasoning]
+<clem> any other questions?
+<clem> ok, moving on to the first topic then..
+<clem> TOPIC: Triaging issues (new members, tags, how to do it)
+* clem has changed the topic to: Current topic: Triaging issues (new members, tags, how to do it)
+<mtwebster> clem: did you get dalcde's pastebin? he had some good input regarding this
+<clem> yes, I was about to paste it :)
+<mtwebster> ok
+<clem> dalcde couldn't make it to the meeting but he had some thoughts which he pastebin'd here http://pastebin.com/Shy7t7q7
+<clem> before I let everyone react to the topic... I'd like to mention what is and isn't possible with github
+<clem> the last time we checked, it wasn't possible to give somebody triaging rights without giving them merging rights
+<clem> this means we'll need to make it clear to people and trust them not to merge content in the git repositories
+<clem> the current state of things is that we've got a team set up with the following members: https://github.com/organizations/linuxmint/teams/122275
+<lockjs> clem: link 404's for me...
+<clem> oh.. it might be due to permission, I'll list the names here:
+<clem> clem, glebihan, mtwebster, albertP
+<clem> I'd like to include more people into this group personally
+<clem> there's a few people we worked with for a while now and which I think earned our trust when it comes to administrative permissions
+<glebihan> a little on the side, but are we committed to keep using github, or would switching to another tool be a possibility if we found something more adapted to the project's needs (no specific ideas in mind atm) ?
+<clem> I don't know.. personally it's not set in stone, I'd consider alternatives
+<clem> github provides a lot of handyness though :)
+<mtwebster> there are quite a few options if you want to do the hosting yourself
+<d[-_-]b> i think github is quite popular so as long as there is no urgent reason to swith i would prefer to stay there
+<clem> it also has momentum, it might be easier for people to contribute because we're using github
+<d[-_-]b> clem +1
+<mtwebster> i did check gitorious when we discussed the permissions thing a while back, it provided no better granularity
+<clem> we used it initially :)
+* clem tries not to laugh
+<glebihan> bgs :)
+<lockjs> Would it be possible to look at bug tracking systems that interface with GitHub's API's - Id be loath to move away entirely from Github for the reasons Clem mentioned
+<mtwebster> i'd prefer to keep it all together honestly
+<d[-_-]b> mtwebster +1
+<mtwebster> it's not perfect, but it's all in one location
+<clem> we also built our infra around github..
+<clem> silly little things like the IRC bot coming here and telling us about a pull or a commit :)
+<lockjs> that would be my pref, but is an option if the permissions are seen as a large issue
+<clem> or the automate build system
+<d[-_-]b> it will distract new people if there are too many tools they have to use
+<mtwebster> i send feedback to github quite often.  they have yet to enact anything i suggested, but there's hope
+<wrouesnel> urgh. gtk2 could really use a preload library to render with gtk2
+<wrouesnel> *gtk3
+<clem> ok, we're getting off-topic :)
+<clem> within github, we can't distinguish between merging and triaging rights
+<clem> I don't think we want specific issue-git-repos :)
+<clem> so we need to trust the people we work with, and in my opinion we can do so
+<glebihan> agreed
+<clem> I'd like to include autarkper and Lusito personally if that's ok with you glebihan 
+<clem> and assuming they're interested
+<d[-_-]b> agreed if the circle is well organized and not to big
+<glebihan> clem, ok with me
+<clem> I'd also be happy to include larst 
+<clem> he's not as involved in the code, and we had an incident a long time ago but he's been part of this for a long time now and he's eager to help
+<lockjs> ...apologies, I'm going to have to leave
+<d[-_-]b> bye
+<clem> no problem lockjs, I'll send around the log for this
+<clem> glebihan: what do you think?
+<mtwebster> clem: i would recommend dalcde as well
+<glebihan> clem, hmm, did larst ever do any code for cinnamon ?
+<clem> glebihan: peripheral, small fixes, not really
+<clem> glebihan: but he's enough understanding of the project to identify areas and he's experienced with community feedback
+<clem> mtwebster: +1
+<glebihan> clem, as far as cinnamon is concerned, I would consider dalcde a better fit than larst
+<d[-_-]b> this leads to the basic question of who will be considered to join the "inner circle"
+<autarkper> I would vote for rjanja
+<clem> d[-_-]b: the circle of trust? you're referring to "meet the parents"? :))
+<mtwebster> lol
+<d[-_-]b> clem no just didn't know how to call it^^
+<clem> see, there's a lot of good devs out there we've worked with a lot already
+<clem> I looked at the list of people here
+<clem> but if we look at the cinnamon repo, yes there's rjanja, cobinja..
+<autarkper> I was going to mention cobinja too
+<mtwebster> +1 rjanja and cobinja
+<glebihan> maybe we should start by this : how many people do we need/want ?
+<clem> what's important to me when it comes to triaging is trust, first and foremost, understanding of the project and presence
+<d[-_-]b> maybe it would be a way to introduce some kind of proposal system. someone would be proposed and if enough "inner circle guys" vote for him he would be invented to join
+<clem> d[-_-]b: that's decision making delegation, no way :)
+<glebihan> we're not a sorority :)
+<clem> glebihan: well there's 4 of us and it doesn't work
+<d[-_-]b> clem it's nothing other than you're doing it currently. only in an ordered way (i'm not saying everyone should be allowed to vote)
+<clem> d[-_-]b: it's very empirical how this all works
+<clem> d[-_-]b: I can look at autarkper and tell him what I liked and didn't like and how I trust him after a year of us working together
+<clem> d[-_-]b: I couldn't have told him what I expected in advance, the same way right now I seek approval from glebihan, tomorrow I'll probably ask more people as well
+<d[-_-]b> clem yes. i totally understand that. i only wondered how you will do it if you want to introduce someone new. i just think it would be easier if you had a central "team space"
+<clem> we do, but that's off-topic a bit
+<clem> I'd like to go back to the triaging team
+<clem> glebihan: autarkper, lusito, dalcde, rjanja, cobinja and a question mark on larst?
+<glebihan> clem, agreed
+<clem> glebihan: shall we talk about larst or do you want to do it in private?
+<clem> glebihan: to me it doesn't matter that he's not actively developing, it's his motivation and availability which makes him great here I think
+<glebihan> clem, might be better in private
+<clem> glebihan: ok
+* gargamel (gargamel@SpotChat-t3b.1ms.130.177.IP) has joined #linuxmint-dev
+<clem> ok, let's move on to the second question then... "how do we do triaging"
+<clem> dalcde's ideas are sound
+<clem> I'm adding an action on myself to talk to glebihan about larst, and to contact autarkper, lusito, dalcde, rjanja and cobinja about triaging to see if they're interested.
+<clem> as a reminder, dalcde ideas are posted at http://pastebin.com/Shy7t7q7
+<d[-_-]b> i think githab labels to filter would be nice
+<d[-_-]b> the easier the search, the faster you start fixing  
+<glebihan> I personally agree with most of dalcde's ideas, except on closing issues when a pull request is made (as long as it's not in master, I don't think the issue should be closed)
+<clem> d[-_-]b: yes, sometimes it's nice to fix things in bunch too
+<clem> d[-_-]b: or when you refactor something, to close multiple bugs
+<clem> glebihan: same here
+<clem> glebihan: I'd wait for that pull to be dealt with
+<d[-_-]b> agree on pull request. may lead to reopen the bug
+<clem> glebihan: not to mention github makes it easy to see related issues when you work on a merge or refuse a pull
+<clem> there's something missing here though...
+<clem> the state of the bug
+<clem> typical example is a bug report which you can't reproduce... and which you can't close
+<clem> it stays there for a while and no matter how many people look at it :)
+<clem> I'd like for devs to be able to quickly find "easy to fix" bugs
+<clem> as in, "confirmed bugs", that they can reproduce and fix
+<d[-_-]b> clem usually if the description is to low to reproduce it, it should either be closed or put to a low priority
+<clem> when the cause of a bug is known, that this bug is reproducible... any dev with a bit of time can make a difference and close it... so these should be easy to find
+<clem> yes but d[-_-]b, when you do triaging you do a bit of politics... you've got a user in front of you, and you can't tell him the priority is lowered because his bug is hard to work on
+<clem> so what usually happens is that bug slows you down
+<clem> and you can't close it because it's not invalid
+<glebihan> I think launchpad has a relatively approach on this
+<d[-_-]b> clem well not reproducible bugs won't be fixed anyway
+<clem> canonical deals with these on LP by not answering them and using the fact that they've been inactive too long
+<clem> personally I'd like to flag them "non-reproducible"
+<clem> that way they stay open, but out of the way, everyone's happy
+<glebihan> the fact that a bug isn't reproducible at some point doesn't mean noone will ever manage to reproduce it
+<d[-_-]b> ok. as long as this doesn't lead to to many flags, i'm ok with it
+<clem> now, rather than flagging the non-reproducible ones, I'd be in favor of marking "confirmed" the ones that are
+<d[-_-]b> this is even better, agreed
+<clem> take larst for instance, he can quickly find the ones that are valid and fixable
+<clem> you come after him, you work off a list of easy to fix bugs, in a couple of hours you make a big difference
+<d[-_-]b> little bit of topic: is there a way to get notified about bugs labeled with certain tags?
+<clem> no I don't think so
+<clem> if you look at MATE on github, that's what they do..
+<clem> they use two tags.. new features, and bug confirmed
+<clem> everything by default is a bug that isn't yet confirmed
+<clem> should we get started with these two? and eventually see if we need more?
+<clem> what do you guys think?
+<d[-_-]b> yes. but not more than ~5
+<glebihan> ok with me
+<clem> ok, looking at the clock, it's been an hour already...
+<clem> moving on to the next topic
+<clem> TOPIC: 3.8 compatibility and the use of GNOME libs in general (where do we use them, can we replace them?)
+<clem> before we move on to the technical aspect of 3.8 compatibility, does anyone want to talk about the political one?
+<d[-_-]b> maybe we should do that
+<clem> ok
+<clem> I felt like I said everything already but I'm happy to let anyone talk or seek clarification
+<d[-_-]b> dalcde seems to want that cinnarch could have stayed with cinnamon because cinnamon would support 3.8 faster
+<glebihan> well, that's not up to us, it's cinnarch's decision, I don't think there's any going back on this
+<clem> ok
+<clem> as I said before, I consider that incompatibility a valid bug
+<clem> where faidoc and I probably disagree is on me waking up in the morning and working on this before I fix more urgent problems I'm supposed to work on
+<d[-_-]b> so the main question is: how to handle this if there isn't enough man power to do it fast
+<Lusito> hey, I'll need to read a lot of text before I can answer any of the mentions of my name, so please be patient -_-
+<City-busz> it's a requirement by Arch Linux to make Cinnamon compatible with the latest stable GNOME releases
+<glebihan> it's not only a man power issue
+<d[-_-]b> glebihan: why?
+<clem> it's a "make it happen" issue
+<glebihan> because, as long as gnome won't keep backwards compatibility, there will be times when we have to make a choice
+<clem> it doesn't matter who does it, but if nobody does, it doesn't get done
+<d[-_-]b> but the problem is that you need someone to "make it happen" who isn't busy with doing more important stuff
+<clem> indeed, but the reason it wasn't a problem last time around (and remember 3.6 was not compatible either)
+<clem> was because Mint needed it as well
+<glebihan> right
+<clem> so faidoc and my agenda would have been the same here
+<d[-_-]b> i guess that point is clear
+<clem> we see it here with 3.8... leigh wants it for June, I want it for October.. faidoc wants it for yesterday
+<clem> the problem is, you don't see faidoc do it, you see leigh do it partially
+<clem> come close to October, you'll see me all over it if it isn't done by then
+<clem> we all have our own agendas
+<mtwebster> and finite disk space to have vm's of every different linux flavor to develop on
+<d[-_-]b> well we could tell faidoc to do it or shut up. the question is: do we want to do so
+<clem> when we get together and work on Cinnamon, we recognize this and as part of the merging team of course I treat it seriously but there's nobody I pay to fix this, and I'm certainly not paid myself to work on it
+<clem> I was delighted to see some of the guys step up and help out, and if we're lucky we might see 3.8 support in a couple of days
+<clem> but don't take it as given, things don't happen by magic
+<d[-_-]b> so as a matter of fact it's not beeing done by mint devs (at the moment). the thing that isn't clear is how to handle the "pr" concerned with this
+<clem> mint devs work on mint, they're mint devs :)
+<clem> some of the cinnamon devs don't use mint though
+<clem> leigh is a good example of this, he contributes pull requests just the same way as some of the mint devs and his focus is on Fedora
+<d[-_-]b> that doesn't fix the question
+<clem> his concern is to make sure 3.8 is supported by June
+<clem> I know I personally have enough time to make it happen and it won't take too much off my time and it's something I need done as well for myself before November, so I can commit to that and guarantee to him that yes, he will have it.
+<clem> but in the case of Arch, it's different. I can't guarantee to them that I'll be done this time next week.
+<clem> because I've no idea who'll do it.
+<clem> there's a big problem other than 3.8 when it comes to rolling distros..
+<d[-_-]b> ok. this makes the basic policy: "if it fits in hour agenda it will be done, in any other case feel free do do it yourself"
+<clem> say we finish 3.8 support today and release 1.7.4 and it works for them...
+<clem> they upgrade their users from 1.6.4 to 1.7.4..
+<clem> in other words they provide their users with our unstable version of Cinnamon
+<d[-_-]b> clem: we should not do that. because in the end we will be blamed
+<clem> think of that... they won't patch gjs, they won't delay upgrading GNOME, but they're happy to upgrade to an unstable release of Cinnamon
+<d[-_-]b> -> bad pr
+<clem> that's not good
+<clem> we're probably at 90% when it comes to 3.8 support, most of it was merged and it looks like gdbus is the only thing left?
+<City-busz> If the GDBus port would be trivial, I'd do that, but it requires deeper knowledge.
+<City-busz> not only the GDBus port is missing
+<glebihan> honestly, I think that what we're facing here, is that most people working on Arch don't care about Cinnamon, so whether it's removed from the repos or is an unstable version is irrelevant to them
+<clem> ok 5 more minutes about the politics before we move on to the technical side
+<clem> I'll say something quick...
+<clem> in cinnamon 1.6 most parts of the DE aren't forked yet
+<clem> which means cinnamon 1.6 was better in Mint than anywhere else, and Shell was worse than anywhere else (except Ubuntu who break it as well)
+<clem> with 1.8, we fixed most of that
+<clem> we forked screensaver, control center etc..
+<clem> which means shell will be better in Mint and cinnamon better everywhere else
+<clem> with that said, it's very probably that users who care about cinnamon are majoritarily running Mint
+<clem> and people who like Shell are probably gone away from it
+<clem> this is to take into consideration when it comes to the commitment a distro has for a DE glebihan 
+<glebihan> I didn't say otherwise
+<clem> you can't ask every distro out there to care as much as we do
+<clem> to give you an example, we pulled support on Xfce in LMDE
+<clem> when faced with incompatibilities and Debian running 4.8, we stopped supporting it
+<clem> I see a similar situation here and I've no ill feelings towards Arch
+<glebihan> neither do I, I perfectly understand their position
+<clem> they don't feel the same commitment towards Cinnamon, it's not as important to them as GNOME and so the decision to pull it makes sense
+<clem> ok
+<clem> ok that's good
+<clem> I hope they understand ours
+<glebihan> just saying that having an unstable version isn't really an issue for them, given the circumstances
+<City-busz> ideally, Cinnamon release circle would synced with the GNOME release circle...
+<d[-_-]b> not gonna happen though
+<clem> City-busz: in most cases it did...
+<clem> City-busz: ubuntu sync with it, one month later
+<clem> City-busz: Mint is one month later than Ubuntu and we want a month of feedback
+<clem> City-busz: which places Cinnamon a month after GNOME
+<City-busz> but they stay at GNOME 3.6...
+<clem> City-busz: the problem here is that we're on 3.6
+<clem> exactly
+<City-busz> so the latest stable release of GNOME is appear 7 month later in Ubuntu repositories
+<clem> we knew that'd be an issue for Fedora the minute Ubuntu announced that, we didn't think it'd come so fast.. I think we didn't really think about the rolling distros
+<City-busz> that's the problem
+<clem> yes, that's where there's a divide there
+<mtwebster> we're already straddling 3.4 and 3.6 as is
+<clem> now, technically, and long term, I want an independent DE
+<clem> one that doesn't break every 6 months
+<clem> I don't think it's easy to achieve but we will reduce the usage on gnome libs more and more
+<d[-_-]b> independet of gnome in general?
+<d[-_-]b> won't this result into something like: forking needed gnome libs and selling them as cinnamon libs?
+<clem> one of the 3.8 pull requests resulted in deletion of code rather than migration
+<clem> we also communicate with many gnome services over dbus, tomorow these will be cinnamon services which won't conflict with gnome
+<clem> d[-_-]b: there's utility features in the libs, and DE services
+<City-busz> then many gnome libraries would need to be forked, like gnome-desktop, gjs, gnome-menus, gnome-settings-daemon, gnome-session etc., which is not ideal, I think
+<clem> no no no...
+<clem> not all of them
+<d[-_-]b> clem could you explain the plan?
+<clem> d[-_-]b: it's hard because it works whether you fork or not, and so it's a case by case scenario of taking more under the umbrella vs the benefit of doing so
+<clem> d[-_-]b: in 1.8 we added screensaver and control center modules
+<clem> d[-_-]b: because we had the resources to maintain these... and so cinnamon is better as a result and more independent
+<clem> d[-_-]b: we're planning to look at gsd next, but there's no plan to fork everything
+<d[-_-]b> ok. but like City-busz said: if cinnamon should not use gnome libs, the functionality that is needed would have to be forked sometime
+<clem> d[-_-]b: in other words, 2.0 can work with gsd.. or we might decide to use our own services.. it'll depend on whether we think we can do better on our own and we have enough resources to do it.
+<clem> d[-_-]b: for utility libs, sometimes it's as easy as rewriting it yourself.. just the little part you're using
+<clem> d[-_-]b: I'm sure we can trim some of the dependencies without forking anything
+<clem> we need to move on... the meeting is taking too long :)
+<clem> from a technical point of view, I don't have a clear picture of what's left to do for 3.8 support
+<glebihan> ^^
+<d[-_-]b> in the end. everything that is used now will need a cinnamon replacement independend of gnome. so we can either continue developing own stuff or pull gnome changes every now and then
+<clem> because I've no one in front of me telling me exactly what is needed
+<d[-_-]b> ok move on
+<clem> from my understanding, it looks like gjs is the final hurdle?
+<glebihan> City-busz, do you know what is missing ?
+<City-busz> another issue with GNOME 3.8 is that the desktop background rendering is gone from gnome-settings-daemon: https://bugzilla.gnome.org/show_bug.cgi?id=682427
+<clem> was it put in nautilus?
+<City-busz> it's moved into mutter
+<clem> ok
+<City-busz> to the window manager
+<clem> the future looks bleak :)
+<City-busz> the desktop background rendering feature of nautilus is also gone
+<mtwebster> i'm working on removing background rendering altogether from nemo
+<clem> ok, that might be problematic..
+<mtwebster> just provide a transparent canvas to the desktop
+<City-busz> now nautilus renders a transparent ARGB window to draw desktop icons
+<mtwebster> but we'll have to handle one or the other.. something needs to draw the background
+<clem> something like cinnamon-settings-daemon? :)
+<clem> that won't be done in time for 1.8...
+<City-busz> maybe it can be implemented in muffin, based on mutter's patches
+<mtwebster> the problem is, in mint, we still need gsd to do it
+<mtwebster> so we can't just move it to muffin arbitrarily
+<clem> yes, we need it to work in 3.4/3.6
+<mtwebster> or rather, gsd still wants to do it
+<clem> this one is tricky..
+<clem> I'll make it an action on City-busz, myself, glebihan and mtwebster to talk about this and seek a solution, we really need to move on
+<City-busz> currently nemo fails to build on GNOME 3.8, because the gnome_bg_set_draw_background() function was removed from gnome-desktop: https://git.gnome.org/browse/gnome-desktop/commit/?id=ac536ef65ee399c3267b29049c62c70074b0a97d
+<clem> that's fixed
+<clem> that's the DND problem isn't it mtwebster?
+<mtwebster> clem: yes
+<clem> ok that's fixed then
+<mtwebster> i'm working to remove that entire file that handles rendering the desktop, as said before, so we wont' use gnome_bg at all
+<City-busz> okay
+<mtwebster> but i'll wait till we solve our bigger issue
+* leigh123linux (kvirc@SpotChat-772i57.dsl.as9105.com) has joined #linuxmint-dev
+<clem> hopefully we'll find a way to do it, it doesn't look easy though
+<mtwebster> i'll look at mutter tonight
+<clem> ok moving on to the next topic
+<clem> TOPIC: Road to 1.8 (what's left, when do we freeze/release)
+* clem has changed the topic to: Current topic: Road to 1.8 (what's left, when do we freeze/release),
+<clem> basically on this one, you probably saw all the version bumps today :)
+<clem> I'm getting another ISO ready, Mint 15 / Cinnamon 1.8
+<clem> I'll update the roadmap, find all the little things that aren't working well and list them :)
+<clem> we planned to release by the end of april... I think we might be a little late
+<autarkper> I have one blocker: https://github.com/linuxmint/Cinnamon/issues/1608
+<clem> thanks
+<d[-_-]b> basically for mint i think better late than unstable
+<clem> yes definitely
+* kentos (kentos@SpotChat-t1fcs0.mpls.qwest.net) has joined #linuxmint-dev
+<mtwebster> i think we should pull bumpmaps for now
+<glebihan> from where I stand, my main concern is about uncomplete features
+<clem> it goes without saying that there'll be a feature freeze at the end of the month and I wouldn't mind if we applied it a bit earlier
+<clem> mtwebster: yes
+<clem> glebihan: I'll go nazi on them
+<clem> glebihan: they'll be disabled
+<glebihan> there's the question of what to do with desklets too
+<clem> glebihan: dalcde fixed the DND issues afaik
+<mtwebster> we should get dalcde's pull requests in for desklets then reevaluate where they stand
+<clem> +1
+<clem> another thing is the inconsistent and incomplete UI look of the xlet modules in cinnamon settings
+<clem> that's something we should finalize
+<clem> applets is 95% there
+<clem> but it wasn't applied to themes, extensions and desklets
+<mtwebster> rjanja mentioned he had sent you stuff for serverside changes for desklets, extensions
+<clem> he did, some of it is on me :)
+<mtwebster> clem: i think we were sort of waiting to get applets 'just right' then duplicating it on desklets ,etc..
+<clem> my email is worse than my github dashboard mtwebster :))
+<clem> yes, we're still on applets indeed
+<mtwebster> but we haven't gotten that 'it's just right' yet
+<clem> agreed, completely my fault :)
+<clem> ok moving on.. cause I'm feeling down here :))
+<mtwebster> lol
+<glebihan> how dare you ? it's my fault ;)
+<clem> it's all on my on this one, I'll list all that's remaining and upgrade the server for the applet
+<clem> final topic: Dev blog
+* clem has changed the topic to: Current topic: Dev blog
+<Lusito> phew, done... you guys are chatty
+<clem> I think we're running out of time so I'll just do the talking and won't let anyone say anything ok?
+<clem> :))
+<Lusito> triaging is tagging issues on github I assume =
+<Lusito> ?
+<clem> yes
+<Lusito> alrite, count me in
+<clem> people are sad that nothing happens on the cinnamon blog
+<clem> unity fans get much more excited about a single new icon than they should
+<clem> and we've no buzz at all :)
+<d[-_-]b> you mean we need more pr?
+<clem> we've got a blog out there and we could start talking about the development
+<clem> for instance, you can now maximize windows horizontally thanks to mtwebster, that's something only github readers know :)
+<Lusito> well, You'll get some buzz by the 3d switchers
+<clem> so the idea is to open up the blog to developers
+<d[-_-]b> who do you concern a "developer"?
+<clem> that's a good question
+<d[-_-]b> cause you can't just let anyone write something who forked on github
+<clem> typically anyone who got his pull merged could probably talk about it...
+<d[-_-]b> I'd suggest to invite people to send in a blog entry when their pull request is merged
+<clem> there'd be a few things we'd want to talk about... to make sure he doesn't talk like he would in a pub..etc..
+<clem> it might come down to defining a team here as well
+<d[-_-]b> then he would send it to you/glebihan whatever and you would publish it
+<clem> and we might have to define rules (for instance, I don't want people to talk about things that might not happen.. things that aren't merged yet in other words)
+<clem> no, I'd rather go further and let people have author access
+<d[-_-]b> ok. but this might be dangerous
+<clem> as you illustrate here, the idea isn't mature yet and we need to think about multiple aspects
+<clem> but I wanted to let people know that this was something we were thinking about
+<d[-_-]b> as it could cause a not homoguenes picture
+<clem> true, it's something to plan, definitely
+<d[-_-]b> if you read a blog, you usually get used to a certain style. we should not spoil this experience
+<clem> indeed, but remember the monthly stats in Mint and the Developer of the Month?
+<clem> you have consistency there, but I'm the bottleneck again
+<Lusito> Is there a way to create a draft that is only visible to the team ?
+<clem> if we want things to happen I need to delegate
+<d[-_-]b> clem how about appointing someone to do the pr?
+<clem> not only in writing content on the blog, but in validating it.. I think we need to trust each other more
+<d[-_-]b> maybe larst would be interested instead of getting into the inner circle
+<d[-_-]b> you said he knows the changes and you trust him. so this might be a reasonable option
+<clem> two things I learnt... giving someone who does well more responsibility and taking it back when it turns out if was a bad idea usually ends up in them leaving the project... AND... if I do everything myself, we won't get much more done that what we're doing now.
+<clem> so let's go slowly on this, but the plan is definitely to let more people in, whether it's triaging like today, blogging, or at some stage merging
+<d[-_-]b> in all of those cases: many people who do things, some people to look it over
+<autarkper> I'll be taking my leave now. I hope the next meeting is a bit snappier. Bye all!
+<Lusito> Make a page with rules about blog posts, then ask a developer if he/she can comply to them, if so give them access. If they then can't comply to these rules (apart from minor mistakes), then you wouldn't want them on the team anyway
+<clem> that's what we have with the pulling vs merging, that creates bottlenecks d[-_-]b 
+<clem> ttyl autarkper 
+<glebihan> here again, it's a matter of trust. I think we have enough people in the team that can be trusted for clem to delegate the responsibility
+<glebihan> but rules need to be defined for things to go smooth
+<Lusito> Agree with clem, no need to bottleneck this. Responsible developers can write responsible blogs.
+<clem> definitely, let's all think of it and we can talk about it later
+<clem> Next meeting next week, Monday nights aren't supposed to be fun anyway right? :))

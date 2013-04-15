@@ -1,0 +1,18 @@
+Topics:
+
+- Questions
+- Triaging issues (new members, tags, how to do it)
+- 3.8 compatibility and the use of GNOME libs in general (where do we use them, can we replace them?)
+- Road to 1.8 (what's left, when do we freeze/release), 
+- Dev blog
+
+Actions:
+
+- @clem: autarkper, lusito, dalcde, rjanja, cobinja and a question mark on larst
+- @city-busz, clem, glebihan, mtwebster: Talk about 3.8 desktop rendering issue
+- @clem: upgrade applet server code
+- @clem: list all problems for 1.8
+
+Decisions
+
+- Tags to be used: New Features, Bug confirmed (when the bug is valid, reproducible)

@@ -12,6 +12,8 @@ Cinnamon 1.8
     - Migrate to gdbus (GNOME 3.8 support)
     - Draw the background in Cinnamon (GNOME 3.8 support)
     - Applet manager crash when changing panel layout: https://github.com/linuxmint/Cinnamon/issues/1608
+    - Can't logout? (seems to crash gsd)
+    - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
 
   Settings
     - Finalize applet settings module
@@ -35,7 +37,7 @@ Cinnamon 1.8
 
   Gnome CC modules
     - C modules don't fill the page in cinnamon-settings
-    - User module doesn't use .face
+    - User module doesn't use .face (go to Users, select a predefined avatar, it doesn't overwrite .face)
 
 MDM 1.2
 -------
@@ -50,7 +52,7 @@ Mint 15
 
     - UI Improvements for Software Management    
     - Implement nemo actions
-    - Upgrade nithglife theme to 1.8 and improve the title of the selected window in the scale plugin
+    - Nightlife: Upgrade to 1.8, improve the title of the selected window in the scale plugin, improve look of widgets in notifications
     - Make beautiful HTML5 themes for MDM
     - Finalize artwork
     - Can't remove software-properties-gtk because apturl requires it (hack apturl to cope with the loss)

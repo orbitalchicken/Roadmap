@@ -23,7 +23,6 @@ Cinnamon 1.8
 
   Nemo
     - Add devices to MoveTo/CopyTo context menu
-    - Ctrl+N should open a new instance in the same location as the current window
     - when the breadcrumb is full, and you use the back button to show the start of it.. the forward button doesn't do anything so you can't get back to the end. Also, the last two items on the first page are not clickable.
 
   Screensaver

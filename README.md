@@ -30,12 +30,10 @@ Cinnamon 1.8
     - The position of the away message could be better (cosmetic improvement)
 
   Xlets
-    - Power applet appears when moving applets in the panel
     - Photoframe doesn't show up in the desklets
     - Desklet position is lost after killing MDM
 
   Gnome CC modules
-    - C modules don't fill the page in cinnamon-settings
     - User module doesn't use .face (go to Users, select a predefined avatar, it doesn't overwrite .face)
 
 MDM 1.2

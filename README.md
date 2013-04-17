@@ -6,7 +6,6 @@ Cinnamon 1.8
 ------------
 
   Cinnamon
-    - Remove any usage of bumpmaps in 1.8
     - Should cinnamon2d force software rendering? do we need 3 sessions (softwareforced, light and full)?
     - Should cinnamon2d send a notification or visual indication to the user that he/she is not running the full Cinnamon?
     - Migrate to gdbus (GNOME 3.8 support)

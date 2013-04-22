@@ -12,8 +12,6 @@ Cinnamon 1.8
     - Can't logout? (seems to crash gsd)
     - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
     - Sound applet menu closes when changing song
-    - Using normal alt-tab, cycles through last 3 windows instead of last 2 when pressing alt-tab quickly.
-    - Using normal alt-tab, panel becomes unresponsive
 
   Settings
 

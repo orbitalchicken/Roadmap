@@ -7,17 +7,12 @@ Cinnamon 1.8
 
   Cinnamon
 
-    - Should cinnamon2d force software rendering? do we need 3 sessions (softwareforced, light and full)?            
     - Applet manager crash when changing panel layout: https://github.com/linuxmint/Cinnamon/issues/1608
     - Can't logout? (seems to crash gsd)
     - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
-    - Sound applet menu closes when changing song
 
   Settings
 
-    - Finalize applet settings module
-    - Port applet settings module UI to themes, desklets and extensions
-    - Merge dalcde's work on desklets (incomplete, needs to fix huge memory usage in photoframe)
     - Couldn't find UUID when installing gtile... crash when uninstalling it.
 
   Nemo
@@ -33,6 +28,7 @@ Cinnamon 1.8
   Xlets
     
     - Desklet position is lost after killing MDM
+    - Heavy DND on desklets still crash Cinnamon
 
   Gnome CC modules
 

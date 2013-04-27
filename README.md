@@ -7,8 +7,6 @@ Cinnamon 1.8
 
   Cinnamon
 
-    - Applet manager crash when changing panel layout: https://github.com/linuxmint/Cinnamon/issues/1608
-    - Can't logout? (seems to crash gsd)
     - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
 
   Settings

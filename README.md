@@ -18,19 +18,9 @@ Cinnamon 1.8
     - Add devices to MoveTo/CopyTo context menu
     - when the breadcrumb is full, and you use the back button to show the start of it.. the forward button doesn't do anything so you can't get back to the end. Also, the last two items on the first page are not clickable.
 
-  Screensaver
-
-    - Empty message is shown as ""
-    - The position of the away message could be better (cosmetic improvement)
-
   Xlets
     
     - Desklet position is lost after killing MDM
-    - Heavy DND on desklets still crash Cinnamon
-
-  Gnome CC modules
-
-    - User module doesn't use .face (go to Users, select a predefined avatar, it doesn't overwrite .face)
 
 MDM 1.2
 -------

@@ -5,21 +5,17 @@ Upcoming
 Cinnamon 1.8
 ------------
 
-  Cinnamon
+  Blockers
 
     - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
+    - Nemo isn't l10n'd
+    - Cinnamon crashes if you turn on "Only use workspaces on primary monitor"
 
-  Settings
+  Other
 
     - Couldn't find UUID when installing gtile... crash when uninstalling it.
-
-  Nemo
-
-    - Add devices to MoveTo/CopyTo context menu
-    - when the breadcrumb is full, and you use the back button to show the start of it.. the forward button doesn't do anything so you can't get back to the end. Also, the last two items on the first page are not clickable.
-
-  Xlets
-    
+    - Nemo: Add devices to MoveTo/CopyTo context menu
+    - Nemo: when the breadcrumb is full, and you use the back button to show the start of it.. the forward button doesn't do anything so you can't get back to the end. Also, the last two items on the first page are not clickable.
     - Desklet position is lost after killing MDM
 
 MDM 1.2

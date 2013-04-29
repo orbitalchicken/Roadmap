@@ -11,6 +11,6 @@ Actions:
 
 Decisions
 
-- The GNOME 3.8 support pull request was finalized, but not merged. It's in Arch already but it won't go in Cinnamon 1.8 per se (as it brings nothing to 3.4/3.6 users and presents a risk for regressions close to the 1.8 release).
-- It was decided no release dates would be announced for Cinnamon 1.8. The new release will happen when the Roadmap is cleared.
-- Cinnamon was Feature Frozen, only bug fixes are going in.
+- Blog name: segfault
+- 1.9 development is frozen until the end of may to focus on bug fixes for 1.8
+- Master will go to 1.9 at the end of may (with 1.8 branching out if additional fixes are needed)

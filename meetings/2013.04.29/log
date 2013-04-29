@@ -1,0 +1,367 @@
+<clem_> welcome to the 3rd official weekly meeting :)
+<clem_> for this one we didn't set any topics, but there's one important thing we need to discuss: Cinnamon 1.8
+<clem_> so we'll start with a follow up on last week's actions
+<clem_> then we'll talk about Cinnamon 1.8 ETA/release
+<clem_> and then we'll open the floor to questions, remarks, jokes, and whatnot
+
+<clem_> ok, let's start with the follow up
+<clem_> Minutes for the previous meeting: https://github.com/linuxmint/Roadmap/blob/master/meetings/2013.04.22/minutes
+<clem_> action: @clem: Add autarkper, lusito, rjanja, cobinja to the triaging team
+<clem_> action: @glebihan, @clem: Talk about larst and decide on whether he should join the triaging team
+<clem_> .. so, glebihan and I talked about this and we decided to welcome Lars into the team
+<clem_> Lusito and autarkper were also added
+<lars> thanks :)
+<clem_> I didn't get the chance to talk to rjanja and cobinja yet though
+
+<clem_> Next action..
+<clem_> @clem: Upgrade applet server code
+<clem_> this was done and the UI was updated in Cinnamon Settings
+<clem_> applets, desklets, themes and extensions can be installed/upgraded remotely
+<clem_> one thing wasn't done... the description still isn't parsed from the metadata on the server side
+<clem_> we'll probably need to remove the descriptions from the online tabs in cinnamon settings
+<clem_> there's a lot of improvements we can do on the server code (which was added to github btw)
+<clem_> and parsing the metadata isn't something we'll do in a hurry in time for 1.8
+
+<clem_> Next action..
+<clem_> @clem, @glebihan, @mtwebster: Talk about the blog, its scope, what it should be etc..
+<clem_> mtwebster came up with a ridiculous name...
+<clem_> and glebihan thought it was a good idea, so we went for it
+<lars> what name was it ?
+<clem_> the decision was made to create a new blog, distinct from the official one and from cinnamon.linuxmint.com
+<clem_> but to use a subdomain under linuxmint.com
+<clem_> so we'll use segfault.linuxmint.com
+<lars> ok
+<d[-_-]b> that's like: we are some nerds and write a blog
+<clem_> that's exactly it d[-_-]b 
+<clem_> the book we read before going to bed is xkcd
+<d[-_-]b> i don't like it... but your choice
+<lars> clem_: do we take wordpress ?
+<clem_> well it isn't too late to change it
+<clem_> but as we said, we'll pick the name which sucks the less... right now that's the one
+<clem_> the "least"
+<clem_> probably lars 
+* lockjs (james@SpotChat-mnoj7o.bethere.co.uk) has joined #linuxmint-dev
+<autarkper> cinnamonitor ?
+* mtwebster will have to rename his applet
+<mtwebster> it's not a cinnamon-only blog either
+<clem_> it will be handled as a news blog, with the aim of about 1 article per day, focused on dev and new stuff around the Mint ecosystem
+<lockjs> evening, sorry im late
+<clem_> so focused on cinnamon of course, but also talking about other things and it could cover other DEs
+<clem_> I've had a word with the MATE board, they're interested in the idea as well
+<d[-_-]b> why not new.linuxmint.com then?
+<d[-_-]b> *news
+<clem_> because it should be something people can refer to and have its own identity
+<d[-_-]b> ok
+<mtwebster> news doesn't imply dev either
+<clem_> it's not a place where Mint announces things to its community, but a place where people read buzz and devs can get people excited
+
+<clem_> Last action: 
+<clem_> @clem, @glebihan, @briand: Talk about pastebin and integration with xchat/DE
+<d[-_-]b> i see. hmm
+<clem_> Nothing was done on this one.
+<lockjs> dev.mint(/blog)
+
+<clem_> Next topic: 1.8 ETA and Roadmap
+<clem_> The roadmap is available at https://github.com/linuxmint/Roadmap/blob/master/README.md
+<clem_> It got pretty small :)
+<clem_> There's two things I consider blockers...
+<clem_> - The artefacts in the menu
+<clem_> - The fact that nemo doesn't l10n (which is missing in the roadmap right now)
+<mtwebster> clem_: didn't we remove all the old nautilus translations  about a month ago?
+* AlbertP (albert@SpotChat-66j.hko.67.92.IP) has joined #linuxmint-dev
+<clem_> we did, but we probably pointed to the wrong path
+<clem_> I'm sure it's easy to fix, we'll just need to make it work before 1.8
+<mtwebster> yeah.. probably somethign simple
+<AlbertP> Hi all. I've managed to get internet at a restaurant to join this meeting.
+<clem_> mtwebster has a pull on the desklets too, so DND shouldn't cause any crashes anymore
+<clem_> hi AlbertP 
+<clem_> Are there any issues people consider blockers?
+<autarkper> I have a blocker coming up: Cinnamon crashes if you turn on "Only use workspaces on primary monitor"
+<clem_> ok
+<autarkper> It's not confirmed yet but I'm starting to see a pattern
+<AlbertP> That "feature" was the default behaviour of gnome-shell, that's how it got into cinnamon.
+<autarkper> it's actually not that bad after one gets used to it
+<autarkper> I dont' mean the crashing :)
+<AlbertP> I made it possible to turn that off using cinnamon settings and I think off is default now. Don't know if there are still users of it.
+<glebihan> a feature crash ?
+<clem_> that's not something people need to tick on/off right, it's a matter of preference
+<clem_> I guess we could ask for a restart to apply that one, and stop listening to the key change here
+<clem_> otherwise we need to scan all windows on all workspaces, test their monitor and move them around..
+<AlbertP> autarkper: so it's crashing because it has to move the windows somewhere?
+<autarkper> I don't know why it's crashing, only that it crashes. It's a recent regression BTW.
+<clem_> ok
+* clem_ blames glebihan 
+<glebihan> of course :)
+<autarkper> https://github.com/linuxmint/Cinnamon/pull/1831
+<clem_> any other blockers?
+<clem_> Note that the first release of 1.8 will be 1.8.0
+<glebihan> anything else you want to blame me for ?
+<clem_> and that once it's out, it will be followed by quick successions of 1.8.x bug fixes releases
+<clem_> 1.8.1 could come an hour after 1.8.0 and contain only one bug fix...
+<AlbertP> clem_: I thought you had learned from 1.6.7.
+<clem_> we'll be very strict on the freeze and the potential regressions, but we'll be able to follow up with numerous tiny releases whenever we have fixes
+<glebihan> AlbertP, learned ?
+<clem_> learnt
+<clem_> same thing
+<glebihan> that wasn't my point :)
+<glebihan> what should have been learned ?
+<AlbertP> glebihan: The last thing clem merged before tagging 1.6.7 was a regression.
+<glebihan> AlbertP, oh
+<clem_> oh right
+<glebihan> well
+<clem_> it was indeed :)
+<AlbertP> So tagging a new release only an hour after 1.8.0 is perhaps too quickly.
+<clem_> look, I can't guarantee no regressions will ever go in...
+<glebihan> it took months to identify that as a regression, so it wasn't that bad :)
+<clem_> but the quick succession of bug fixes releases following the main 1.6.0 was a success
+<AlbertP> OK, so it's learnt, not learned. I should have known that. Thought it was like spelled/spelt which are both possible.
+<clem_> both spellings are correct
+<mtwebster> not in the US
+<glebihan> isn't it an English vs US thing ?
+<clem_> yes
+<lars> when will 1.8 be released ?
+<mtwebster> spelt is a hardy wheat grown mostly in Europe
+<clem_> as soon as the blockers are gone lars 
+<lars> ok
+<clem_> what's happening is that after a few bug fixes, 1.8.x will stabilize
+<clem_> and we'll eventually focus on 1.9
+<lars> ahhh ok
+<mtwebster> clem_: your nemo roadmap issue, i still can't reproduce..  and the menu ghosting, it's a possible driver issue i think
+<clem_> when that happens, we'll let 1.8.x be... unless there's a huge bug that REALLY needs to be fixed
+<lars> ok
+<clem_> so after 1.8.0 is out, it's not just about giving people fixes ASAP, but also making sure any code that gets in, gets in early... within that month or so where we're still focused on 1.8
+<lars> clem_: but we need to give 1.8 at least one more month to stabilize
+<lars> ah yeah
+<lars> you just said that last sentence :)
+<AlbertP> mtwebster: well mtwebster I usually attempt to write British, unless you know a good reason for writing American English in this chat.
+<clem_> nobody wants a buggy 1.8.0, but what really matters a lot here, is that 1.8.x which will ship in Mint, Fedora and all
+<AlbertP> lars: well Mint 15 isn't out yet. It'll have a few weeks anyway.
+<clem_> that's the one that needs to be rock solid
+<clem_> and the community feedback we'll get on 1.8.0, 1.8.1, etc.. will help a lot here
+<lars> AlbertP: no i didn't meant mint15 i meant 1.8 :)
+<mtwebster> AlbertP: i was attempting to be funny, apparently unsuccessfully
+<lars> AlbertP: not sure what you mean now
+<clem_> you can think of 1.8.0 as an RC, it works, it's stable, but people WILL find bugs in it.
+<lars> ok
+<autarkper> mtwebster: I appreciated your remark :)
+<clem_> it's the first 1.8.x which will get large community feedback
+<lars> clem_: yeah ok I unterstood now :)
+<clem_> in Mint we'll feed Romeo with 1.8.x
+<lars> mint 13 ?
+<clem_> yes
+<lars> ok but not mint 14 right ?
+<clem_> well, we'll see
+<lars> ok
+<clem_> either way we'll get feedback on 1.8.0
+<AlbertP> I'm sure 1.8.x will get into one of glebihan's PPA's for use on Mint 14 as well.
+<glebihan> why not mint 14 ? the users that are most looking forward to new features and are the more likely to provide feedback IMO are the ones running 14
+<lars> glebihan: yes I also ask me
+<clem_> by the end of May we'll have Mint 15 and a solid 1.8 Cinnamon, I'd expect to switch focus towards 1.9 then
+<glebihan> AlbertP, not for mint 13 / precise though
+<clem_> good point glebihan
+<AlbertP> glebihan: With cinnamon-control-center no longer a dependency it should be ok to run it on precise I think.
+<glebihan> AlbertP, but I won't do it in the PPA
+<AlbertP> glebihan: that's not such a problem if clem has it in romeo for maya.
+<AlbertP> glebihan: so it's ok.
+<clem_> of course that means pull requests will be ignored until the end of may unless they're bug fixes for 1.8
+<clem_> we had that problem before and it was frustrating, but if we stick to the agenda, it's only one month here
+<lars> clem_: you already can make a branch NEXT
+<clem_> that's the thing lars, I'd rather not multitrack
+<lars> clem_: ah it's a good argument clem
+<lars> clem_: good point
+<clem_> we can agree on letting master go to 1.9 at the end of May though
+<lars> ok
+<clem_> so if we need more fixes on 1.8 by then, we'll branch out 1.8 into its own maintenance branch
+<clem_> that's a guarantee I'm happy to give to developers
+<fpqc> anything new in 1.7.7? muffin and cinnamon were segfaulting really bad on the latest arch update
+<fpqc> but since it's a higher number, does that mean new features?
+<AlbertP> With 1.4 we also had such a branch and IMO that worked out well, without disturbing development on master.
+<clem_> I can't remember... I remember the frustration with 1.6 though
+<fpqc> 1.7.x already is a branch next, isn't it?
+<clem_> no it's using master fpqc 
+<clem_> ideally all devs would do bug fixing until the end of may and work on 1.9 in June... :)
+<fpqc> ah, but you compile nightlies off it anyway, don't you?
+<clem_> but people contribute what their passion drives...
+<fpqc> or well, other people do
+<AlbertP> clem_: well none of us seems to remember such frustration with 1.4. And with 1.6, other people including me were frustrated as well.
+<d[-_-]b> clem_ concerning the low manpower i would agree on not branching if not absolutely neccessary
+<clem_> we can't ask people to focus on what we want all the time
+<fpqc> clem, better to release full-featured but buggy software than bug-free software that can't do anything
+<clem_> autarkper: what's your input on this? You were frustrated the last time around. How do you see it this time around with master getting in 1.9 at the end of May?
+<AlbertP> clem_: that's right. But now we at least have a guarantee that master will be back to normal after a month. We can now tell developers a date on which we can look into their pulls again.
+<glebihan> fpqc, that's the arch way of seeing things
+<fpqc> glebihan, idk, I use nightly everything
+<clem_> autarkper: essentially it means we're freezing for a month, but with a guarantee that it won't last longer than a month.
+<glebihan> fpqc, exactly, which basically no mint user does
+<fpqc> that's why everything breaks so often lol
+<autarkper> clem: I would certainly have preferred not freezing 
+<fpqc> glebihan, I mean, they don't really havea choice
+<autarkper> I think we should be able to handle two branches
+<clem_> autarkper: the problem with not freezing is that every bug fix will need merging in both branches... 1.9 and 1.8
+<fpqc> you don't have a rolling release for mint, and mint is the girl that all the boys want to get to know
+<glebihan> fpqc, there's always a choice, but that wasn't really my point. We'll always choose not to release a feature over releasing it while it's still buggy
+<clem_> autarkper: it makes our job much harder precisely at the very moment when we're the most focused on Mint and the least on Cinnamon
+<AlbertP> clem_: last time with 1.6, there was no such date set. People were left in the dark about when development on master would continue - and that was, in my experience, why they got so frustrated. Now we can tell people that it'll be frozen until the first of June.
+<fpqc> glebihan, idk, there's nothing wrong with releasing buggy software as long as you label it unstable
+<autarkper> clem_: you could let a band of rookies take joint responsibility for one of the branches
+<glebihan> fpqc, we don't release unstable versions
+<fpqc> then how do you test?
+* mockturtl has quit (Ping timeout: 121 seconds)
+<clem_> with 1.8.0 :))
+<mtwebster> arch does
+<glebihan> fpqc, there's no need to release in order to test
+<fpqc> haha mtwebster
+<fpqc> glebihan, well, when you guys do a "release", it's a big deal since you do bi-annual releases
+<d[-_-]b> clem_ so how's the decission?
+<clem_> well, for me it's crystal clear, unless I absolutely have to, I don't want to maintain more than one branch
+<d[-_-]b> agreed
+<clem_> I'm hoping the fact that we promise to let master go by the end of may will make it easier on contributors this time around since they'll know how long they have to wait
+<fpqc> so do you guys have any big features planned in the distant future?
+* mockturtl (mockturtl@SpotChat-b5j3rh.res.rr.com) has joined #linuxmint-dev
+<d[-_-]b> fpqc: how bout checking out our new dev blog
+<clem_> oh yes, there's plenty of ideas :)
+<fpqc> or is it just bugfixing and GNOME compatibility stuff for the foreseeable future
+<clem_> that's never been a problem
+<fpqc> d[-_-]b, I read the devmeeting chat logs
+<clem_> Any other reaction on the topic of 1.8?
+<fpqc> clem, well mtwebster was talking about forking gnome-settings-daemon once and for all
+<fpqc> but what's the link to the blog
+<fpqc> I only see the thing that is announcing the latest LMDE release
+
+<clem_> ok, next topic: General questions
+<d[-_-]b> fpqc: it's not really out in the wild yet
+<clem_> gsd is likely to get forked for cinnamon 2.0
+<fpqc> yeah, that's what mtwebster said
+<clem_> using gsd brings a lot of issues...
+<fpqc> oh shit wait this is the dev meeting isn't it
+<fpqc> sorry for disturbing you guys
+<clem_> first, gsd is tightly linked to a particular version of GNOME..
+<AlbertP> fpqc: We're not doing such invasive things just before 1.8 release. and yes this is the dev meeting.
+<clem_> gsd 3.6 and gsd 3.8 don't talk the same language.. and it's making it hard for us to ship Cinnamon
+<fpqc> I like to read these after they happen, and since I'm not a dev, I don't want to disrupt
+<fpqc> so bye
+<clem_> then, there's the fact that gsd is made for GNOME.. not Cinnamon..
+* Oscar799 has quit (Quit: Leaving)
+<fred> clem_: PM
+<clem_> so it calls particular gnome components by their name and uses particular dbus services which we conflict with
+<clem_> that's a problem for MDM, cinnamon-screensaver etc..
+<AlbertP> clem_: well you know I'm not too fond of forking, but gsd does not have much upstream dependencies that are known to break. I think we're pretty safe with our own fork of the program as long as we get such conflicts solved.
+<clem_> forking gsd 3.6 into csd 2.0 will be easy and solve a huge amount of problems, it will also simplify the work on screensaver, control-center and make it easier to ship cinnamon on different distros and for user to run both gnome and cinnamon on the same computer
+<City-busz> I think that gsettings-desktop-schemas needs to be forked also, at least partially
+<mtwebster> we'd probably wrap that right into csd
+<mtwebster> eliminate that package
+<AlbertP> this time I agree with forking but I don't know how bad gsettings-desktop-schemas is.
+<clem_> we got into cinnamon because we knew what we wanted and we knew we could get it done, every time we fork something we'll consider whether it makes our DE better and whether we have the resources to take on more
+<AlbertP> mtwebster: I agree with you this time.
+<clem_> in the case of GSD, we'll need to look at it in-depth before making a final decision, but it already makes a lot of sense to consider forking it
+<City-busz> e.g. I had to aply some downstream patches in Arch Linux, because some settings were removed/renamed in 3.8: https://projects.archlinux.org/svntogit/community.git/tree/trunk/idle-delay.patch?h=packages/cinnamon-control-center
+<clem_> it's one component we use a lot which is not backward compatible, and doesn't do exactly what we want
+<clem_> it's also quite simple technically afaik
+<d[-_-]b> clem_: concerning mintflash: it's still 11.0 in mint 13, right? will this get fixed any time soon?
+<clem_> d[-_-]b: yes, that's on my todo, sorry I didn't get it done yet
+<d[-_-]b> clem_: ok. why do we need mintflash after all?
+<clem_> d[-_-]b: to make sure people get a decent version of Flash
+<clem_> d[-_-]b: Ubuntu got it wrong more than once
+<d[-_-]b> clem_: where's the difference to flashplugin-installer?
+<clem_> d[-_-]b: well initially Ubuntu was shipping the 32bit plugin to 64 users
+<AlbertP> clem_: since there will not be releases in this form beyond 11.2, it's less risky now.
+<clem_> d[-_-]b: and then at some stage they shipped the latest version without testing it
+<d[-_-]b> i have to agree with AlberP
+<AlbertP> clem_: no new major releases coming, only bugfixes: I don't see the point in pinning flash ourselves anymore.
+<clem_> d[-_-]b: when 3D accel was introduced in the plugin all video rendering was blue.. you remember that one?
+<clem_> it's easy to maintain, there's no real advantage in using the very latest
+<d[-_-]b> clem_: i see why it has been introduced. but now as AlbertP says, I don't think we need it anymore
+<clem_> and there's no guarantee Ubuntu will continue to ship it
+<AlbertP> clem_: I very much agree that it was a good thing to pin flash at a well-tested release in the past, but 11.0 is really to outdated now.
+<d[-_-]b> they will stop shipping flash?
+<AlbertP> clem_: if Ubuntu stops shipping it, we can start to ship latest 11.2 the same way we're shipping mint-flashplugin now.
+<glebihan> d[-_-]b, at some point, all Linux distros are likely to have to stop shipping it
+<clem_> who knows, I don't see a point on relying on them when we don't need to
+<clem_> but you've got a point on 11.0, I'll upgrade it asap
+<lars> clem_: can you please write on your TODO that you remove 'nautilus' from mint-meta-cinnamon in Mint 13 Romeo
+<clem_> lars: in backport?
+<lars> yeah
+<clem_> ok
+<lars> clem_: nice :)
+* WildTux (WildTux@SpotChat-q30gvd.dynamic.mundo-r.com) has joined #linuxmint-dev
+<lars> clem_: and does the flash 11.2 come in maya-backport or in maya-main?
+<clem_> main
+<lars> good
+<d[-_-]b> has to
+<clem_> any other topics anyone wants to cover?
+<clem_> glebihan: do you want to talk about scapegoating?
+* WildTux has quit (Quit: .)
+<City-busz> could you review my pull request for cinnamon-screensaver? https://github.com/linuxmint/cinnamon-screensaver/pulls
+<glebihan> clem_, I'm fine with my role :)
+<clem_> glebihan: ok
+<clem_> City-busz: yes, I did, I meant to take some time to talk to you about it
+<clem_> City-busz: #14 should get in
+<d[-_-]b> can we have a sweet little minty mascot pleaaaaaaaaaaaase ;)
+<clem_> City-busz: I tested the other 3 together and it caused regressions in Mint
+<mtwebster> penguin drinking a mint julep
+<clem_> City-busz: we need to provide the exec name for the screensaver to activate properly and the simplification of the string handling causes segfaults here
+<d[-_-]b> mtwebster: wearing a hula skirt?
+* blubb has quit (Quit: leaving)
+<clem_> City-busz: I committed a fix in cinnamon itself so we now call cinnamon-screensaver-command --lock, without the away-message argument when the message is empty
+<mtwebster> lol
+<clem_> City-busz: this makes things work well and so we don't need to simplify the string handling anymore
+* Malsasa has quit (Connection closed)
+<clem_> City-busz: of course there's probably still a little bug.. if you feed --away-message with "\n" or even "" for instance, it probably shows ""
+<clem_> City-busz: but for the normal use cases, it works pretty well now
+<City-busz> clem_: I don't agree that the other pathes are not needed
+<d[-_-]b> gotta leave. have a nice day
+<clem_> City-busz: regarding #11 and #12, we need this at the moment. We'll remove all that when GSD is forked of course.
+<clem_> ttyl d[-_-]b 
+<City-busz> at least, please consider merge #11, because it fixes some problem
+* d[-_-]b has quit (Quit: Leaving.)
+<clem_> City-busz: I'll have another look at it and test it on its own
+<City-busz> clem_: okay, thanks
+<clem_> City-busz: you patch it in for Arch atm anyway?
+<City-busz> clem_: yes
+<clem_> ok
+<mtwebster> so we sticking with segfault?
+<City-busz> I have to apply at least #11 to keep the compatibility with gnome-screensaver
+* mtwebster moves to important matters
+<clem_> City-busz: isn't 3.6 expecting "Lock" though, and not "LockMessage"
+<clem_> City-busz: or does it support both already?
+<City-busz> gnome-screensaver supports "Lock" only without any argument
+<City-busz> and if you call the "Lock" method without any argument, than it's not handled by cinnamon-screensaver, because it expects a string argument
+<clem_> why do they need to be compatible though?
+<lars> clem_: Sorry to get on your nerves...but...how is mint15 until now :) ?
+<lars> clem_: problems or alright ?
+<clem_> lars: no critical issues so far
+<lars> ah nice
+<lars> that's good 'cause the nonLTS releases don't have so much attention by canonical now
+<clem_> City-busz: is it for people to be able to run cinnamon with gnome-screensaver in the same session?
+<City-busz> because the 'gnome-screensaver-command --lock' uses the "Lock" method without any argument
+<clem_> yes, but we've no interest in providing a screensaver for shell users here..
+<City-busz> no, it's not for gnome users
+<clem_> if you call gnome-screensaver-command it should be compatible with gnome-screensaver, it doesn't need to work with cinnamon-screensaver
+<City-busz> I don't agree with you
+<clem_> you're talking about a user calling it? or gsd?
+<City-busz> gsd and gnome-session uses the 'gnome-screensaver-command --lock' command
+<AlbertP> City-busz: With cinnamon screensaver, you'd have to use cinnamon-screensaver-command --lock or something like that, instead.
+<clem_> yes, but that works well afaik City-busz 
+<clem_> at least here in 3.6, gsd and gnome-session work with cinnamon-screensaver perfectly
+<City-busz> no, because you replaced the gnome-screensaver-command with a symlink to cinnamon-screensaver-command
+<clem_> yes, that's why it works :)
+<City-busz> but I don't want to conflict between the two packages
+<clem_> why not?
+<City-busz> it's not ideal for users who want to use multiple sessions
+<clem_> it's not going to be ideal anyway until we fork gsd
+<City-busz> and the compatibility can be preserved easily with gnome-screensaver
+<AlbertP> City-busz: I think it's discussed before: if we want to support installing Cinnamon and Gnome Shell next to each other on the same linux system.
+<clem_> yes, it's something we already reviewed for mdm for instance
+<clem_> some components call each others directly and until we control both sides of the communication we need to pretend we're GNOME here and there
+<City-busz> even if you fork gnome-settings-daemon, gnome-session still uses the 'gnome-screensaver-command --lock' in some cases
+<clem_> gnome-session is part of the fork
+<clem_> gsd, gnome-session and there's a schema package as well I think
+<City-busz> then it's okay, if you rename the D-Bus interface also
+<clem_> oh yes, that's the goal
+<clem_> as much as possible we'll use our own gsettings and dbus contexts
+<clem_> the least we've got in common with GNOME DE the better
+<AlbertP> clem_: the gnome-session thing you want to fix, would be the "gnome-session-bin" package in the repo then. "gnome-session" in ubuntu repo, is the Gnome Shell session files.
+<clem_> it's the technology we find value in, not the DE itself, so we've already replaced all visual aspects of GNOME and we need to go a bit further and make sure we control our own configuration and backend services
+<clem_> eventually if we do it right it shouldn't matter whether people run 3.6 or 3.8 and whether they have Shell installed or not
+<clem_> AlbertP: yes
+

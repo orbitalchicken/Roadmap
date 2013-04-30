@@ -8,7 +8,6 @@ Cinnamon 1.8
   Blockers
 
     - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
-    - Nemo isn't l10n'd
     - Cinnamon crashes if you turn on "Only use workspaces on primary monitor"
 
   Other

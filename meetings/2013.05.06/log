@@ -1,0 +1,214 @@
+<clem> Welcome everyone to this weekly meeting
+<clem> I'm hoping we'll keep things short today and we won't go over 1 hour in length
+<clem> the topics for today are:
+<clem> - Follow up on actions
+<clem> - Segfault Blog
+<clem> - 1.8 Release
+<clem> - General questions
+
+<clem> Following up on the actions...
+<clem> - @clem: Add rjanja, cobinja to the triaging team
+<clem> --> I didn't get a chance to do that
+<clem> - @clem, @glebihan, @briand: Talk about pastebin and integration with xchat/DE
+<clem> --> Nothing was done on this either :(
+* clem looks at his shoes
+<clem> right.. next topic...
+<clem> Segfault Blog
+<glebihan> it's gonna be quick that way ;)
+<clem> The blog was successfully started
+<clem> it's hosted at http://segfault.linuxmint.com
+<clem> so far we kept a pace of 1 article per day but we only have two active contributors at the moment
+<clem> Any questions regarding the blog before we move on to the next topic?
+* glebihan now looks at his shoes
+<clem> nice shoes glebihan 
+<glebihan> thanks :)
+<clem> right, next topic then ...
+* clem whispers to glebihan, "only kidding, I don't like them" :)
+
+<clem> 1.8 release
+<clem> Cinnamon 1.8.0 was released
+* glebihan doesn't believe clem
+<clem> all packages were labeled 1.8.0
+<AlbertP> muffin too has jumped from 1.1.2 to 1.7.x to 1.8.0 versions.
+<clem> they can now evolve independently on the 1.8.x wave as we fix bugs
+<clem> yes
+<clem> so for instance, we can fix a few bugs in cinnamon and label it 1.8.1
+<clem> and have muffin and all stay at 1.8.0
+<clem> we won't make announcements for these bug fixes minor releases
+<glebihan> none at all ?
+<clem> any question on 1.8? anything you want to see included in 1.8.1?
+<AlbertP> mtwebster's menu pull already got merged?
+<mtwebster> AlbertP: yes
+<AlbertP> indeed, I see it on github #1958.
+<clem> link?
+<AlbertP> clem: no need, it's merged already.https://github.com/linuxmint/Cinnamon/pull/1958
+<clem> oh yes, that's in 1.8.0 already
+<AlbertP> For Muffin, what do we do with pulls #80 and #82? We should add a [2.0] label if they get postponed.
+<clem> there's a couple of fixes from glebihan coming in 1.8.1 and we're moving background defs to cinnamon-background-properties
+<mtwebster> i don't think 82 should wait for 2.0
+<glebihan> clem, my fixes are packaging fixes, they should be used when you push 1.8.0 into the repos
+<clem> #80 can wait
+<clem> glebihan: we'll probably have 1.8.1 by then
+<AlbertP> mtwebster: indeed I haven't had a response from luyikei yet on this, so we should't merge it right now.
+<clem> #82 we should talk about it when we get a chance
+<mtwebster> https://github.com/linuxmint/nemo/pull/282  i'd like to see in, as technically it's a fix, but not a huge deal
+<glebihan> clem, ok, didn't know when you intended to push
+<AlbertP> clem: label #80 as [2.0], keep #82 for the moment, ok?
+<clem> ok AlbertP 
+<clem> ok mtwebster 
+<clem> I'll check with you later on on this one mtwebster 
+<AlbertP> clem: we should remove muffin suggesting the gnome-session package in the deb packages.
+<glebihan> AlbertP, why ?
+<clem> gnome-session-bin is needed, not gnome-session
+<AlbertP> glebihan: gnome-session is the session of Gnome Shell. gnome-session-bin is the gnome session manager which we're using.
+<glebihan> ok
+<clem> do you want to make a pull AlbertP? or glebihan you want to commit that quickly?
+<glebihan> as a matter of fact, shouldn't we consider getting rid of the muffin package at some point ?
+<clem> yes
+<clem> but in the future :))
+<AlbertP> clem: we'd better have it recommend Cinnamon instead of a gnome shell package.
+<glebihan> clem, I can do it. So I should just replace gnome-session with gnome-session-bin right ?
+<clem> glebihan: gnome-session-bin would be a depend I think
+<glebihan> ok
+<clem> glebihan: it's cinnamon which should depend on gnome-session-bin really
+<AlbertP> clem & glebihan: a dependency of cinnamon, not of muffin. Muffin is just recommending it.
+<glebihan> err
+<glebihan> no
+<glebihan> muffin shouldn't depend on gnome-session-bin, recommend is correct I think
+<glebihan> same for cinnamon
+<clem> glebihan: although technically yes, you don't "need" it
+<clem> glebihan: you only need it to use the cinnamon session def
+<AlbertP> I'd rather have Muffin recommend cinnamon, then cinnamon would depend or recommend gnome-session-bin.
+<glebihan> AlbertP, no, as long as we have the muffin package, it should recommend gnome-session-bin as well
+<glebihan> AlbertP, muffin can be run without cinnamon, it shouldn't count on what cinnamon defines as dependencies
+<clem> glebihan: muffin doesn't provide its own session
+<clem> glebihan: anyway we don't even install muffin...
+<glebihan> clem, exactly why I think we should get rid of it
+<clem> :))
+<clem> ok, anything else in regards to 1.8?
+<AlbertP> glebihan: I think this dependency was intended to have mutter recommend the whole gnome session including the Shell.
+<glebihan> so... remove gnome-session recommends in muffin and add gnome-session-bin recommends on cinnamon ?
+<AlbertP> Cinnamon also has some pulls that would need to be marked [2.0].
+<AlbertP> glebihan: for Muffin, remove it indeed please; I will take a look what cinnamon's depending on currently.
+<AlbertP> glebihan: gnome-session-bin is currently not mentioned at cinnamon's dependencies/recommends, so feel free to add it somewhere in debian/control.
+<clem> glebihan: yes
+<AlbertP> I think we'd mark Cinnamon #1953 as [2.0] too, https://github.com/linuxmint/Cinnamon/pull/1953
+<clem> yes
+<clem> and 1907
+<AlbertP> and #1968 is 2.0 too? I wasn't certain for this one.
+<clem> yes
+* GitHub100 (GitHub100@SpotChat-ddhug2.rs.github.com) has joined #linuxmint-dev
+<GitHub100> [muffin] glebihan pushed 1 new commit to master: http://git.io/nnmU2w
+<GitHub100> muffin/master 82cecd8 Gwendal Le Bihan: Remove useless recommends
+* GitHub100 (GitHub100@SpotChat-ddhug2.rs.github.com) has left #linuxmint-dev
+* Testing567 (Testing567@SpotChat-uprfnl.dyn.optonline.net) has joined #linuxmint-dev
+<AlbertP> And Muffin shouldn't suggest gnome-control-center anymore, shouldn't it?
+<clem> no
+* satellit_e has quit (Ping timeout: 121 seconds)
+* GitHub4 (GitHub4@SpotChat-ddhug2.rs.github.com) has joined #linuxmint-dev
+<GitHub4> [Cinnamon] glebihan pushed 1 new commit to master: http://git.io/EO2iuw
+<GitHub4> Cinnamon/master d619677 Gwendal Le Bihan: Add recommends on gnome-session-bin
+* GitHub4 (GitHub4@SpotChat-ddhug2.rs.github.com) has left #linuxmint-dev
+<AlbertP> clem & glebihan: I'll remove the gnome-control-center suggestion.
+<clem> ok
+<glebihan> AlbertP, I'll do it while I'm at it
+<clem> muffin isn't used so it's no big deal, but you're right, it shouldn't
+<AlbertP> glebihan: I already have the file open here, so no need to.
+* Garmine (Garmine@SpotChat-mt1omi.pool.telekom.hu) has joined #linuxmint-dev
+* GitHub130 (GitHub130@SpotChat-ddhug2.rs.github.com) has joined #linuxmint-dev
+<GitHub130> [muffin] glebihan pushed 1 new commit to master: http://git.io/iWH3Dg
+<GitHub130> muffin/master dd7d9ce Gwendal Le Bihan: Remove useless suggests
+* GitHub130 (GitHub130@SpotChat-ddhug2.rs.github.com) has left #linuxmint-dev
+<glebihan> AlbertP, too late
+<glebihan> :)
+<AlbertP> ok.
+<clem> anything else on 1.8?
+<clem> any "General Questions"?
+<mtwebster> clem: a few spices website things
+<clem> ok
+<mtwebster> another reminder to remove your applets and desklets that are already in cinnamon :)  and, maybe improve the developer side of it, like notifications for comments
+<mtwebster> because we'll certainly have people complaining to devs to fix their stuff that doesn't download properly from cinnamon settings
+<clem> which one you want to see removed in particular?
+<mtwebster> clem: any that are duplicated in cinnamon already.  for instance, the photo desklet online is older than what's in cinnamon
+<mtwebster> the one we package uses the settings api, the one on spices doesn't
+<mtwebster> yet the online one shows as an upgrade
+<mtwebster> so it would be confusing
+<clem> gone
+<clem> clock and launcher gone as well
+<mtwebster> ok
+<mtwebster> i think there area  few applets but maybe you don't own them
+<mtwebster> they have the @cinnamon.org uuid though
+<clem> nightlife mint version gone
+* DarkEra (DarkEra@SpotChat-ep7sqb.access.telenet.be) has joined #linuxmint-dev
+<AlbertP> clem: I think we should mark gnome 3.8 compatibility pulls as [2.0] too.
+<AlbertP> muffin#81 and Cinnamon#1888
+<mtwebster> recent documents, trash, a11y applets
+<clem> is recent in cinnamon?
+<AlbertP> clem: yes it's in 1.8 at least
+<mtwebster> clem: yes all those are
+<AlbertP> clem: the 1.8 translation of Applets in Dutch is horrible! Let me correct that before Mint 15 please.
+<mtwebster> hehe
+<clem> AlbertP: that's in LP
+<AlbertP> clem: I know, but I thought I'd let you know then you can pull new LP translations into cinnamon before the mint 15 release.
+<clem> I don't see recent in cinnamon...
+<clem> AlbertP: oh yes, I will anyway
+* blubb (blubb@SpotChat-6f0pqe.hsi7.kabel-badenwuerttemberg.de) has joined #linuxmint-dev
+<glebihan> clem, https://github.com/linuxmint/Cinnamon/tree/master/files/usr/share/cinnamon/applets/recent%40cinnamon.org
+<clem> it's there alright..
+<clem> oh ok.. it was hidden by the one I downloaded :))
+<clem> hehe, good point to illustrate the problem :)
+<clem> ok recent, trash, a11y are gone
+* satellit_e (satellit@SpotChat-ub2.d9o.0.72.IP) has joined #linuxmint-dev
+<clem> mtwebster: notifications on comments, yes, but that's for later
+<clem> anything other questions/remarks?
+<mtwebster> i think 1.8 came together nice in the end
+<clem> yes, it's a bit about the bumpmaps
+<clem> a "pity" sorry
+<AlbertP> do we really need to depend on libgnome2-common?
+<clem> it provides... /usr/share/gconf/schemas/desktop_gnome_background.schemas
+<clem> interesting :)
+<clem> and /usr/share/gconf/schemas/desktop_gnome_peripherals_mouse.schemas
+<glebihan> that feels a bit outdated :)
+<AlbertP> clem: huh? I don't see that file in "apt content libgnome2-common" on Mint 13.
+<AlbertP> clem: oops I did apt contains libgnome2-common instead.
+<AlbertP> gconf schemas can be thrown away if you ask it me.
+<clem> we can probably get rid of the dep
+* Oscar799 has quit (Quit: Leaving)
+<AlbertP> glebihan: I'll remove this dep from muffin ok?
+<mtwebster> speaking of dependencies, i'm gonna start having a look at cinnamon-s-d
+<glebihan> AlbertP, ok
+<clem> there's three things I'm worried about for Mint 15
+<clem> 1. DVDs don't play (probably something small)
+<clem> 2. MDM was fixed in regards to freezes but you're scaring me here on that glebihan :)
+<clem> 3. The super-awesome fly-through-the-sky MDM theme which was going to make everyone ditch Windows for Linux Mint relies on WebGL and doesn't work on all specs :(
+* GitHub116 (GitHub116@SpotChat-ddhug2.rs.github.com) has joined #linuxmint-dev
+<GitHub116> [muffin] AlbertJP pushed 1 new commit to master: http://git.io/_eAm7w
+<GitHub116> muffin/master 9944ab3 Albert Pool: Remove libgnome2-common dependency
+* GitHub116 (GitHub116@SpotChat-ddhug2.rs.github.com) has left #linuxmint-dev
+<clem> I'm planning to upload my ISOs for QA on Wednesday night
+<clem> hopefully everything will be fixed by then :)
+<clem> aiming for mid-month for the RC
+<AlbertP> clem: where's that MDM theme?
+<mtwebster> yeah webgl doesn't work on my quadro 2000 - apparently good enough for engineering 3d models, but not clouds
+<mtwebster> i was pissed
+<clem> AlbertP: in mint-mdm-themes
+<mtwebster> it barely runs on a sandybridge
+<mtwebster> like 4 fps
+<clem> mtwebster: I'll try to get a version of that same theme without using webGL
+<clem> mtwebster: samriggs animated themes run fine in Virtualbox without 3D accel, whereas the cloud theme doesn't
+<clem> mtwebster: his animations are 2D though
+<mtwebster> ah
+<clem> mtwebster: still, stuff moves in the background, people notice, that's the main thing really
+<AlbertP> clem: on mint 15? Don't see a cloud theme on Mint 14 mdm themes.
+<clem> AlbertP: Mint 15
+<mtwebster> AlbertP: there's a forum thread that he uploaded it to as well
+<clem> AlbertP: v1.0.8
+<mtwebster> lemme find it
+<clem> http://forums.linuxmint.com/viewtopic.php?f=25&t=126979
+<clem> Alright, we managed to fit the meeting without one hour for the VERY FIRST TIME! :)
+<mtwebster> yeah that
+<clem> congratulations everyone
+<mtwebster> lol
+<clem> and many thanks for being here
+<clem> the minutes and logs will be uploaded shortly, see you all next week for the next meeting ;)
+

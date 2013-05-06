@@ -2,15 +2,8 @@
 Upcoming
 =======================================================================
 
-Cinnamon 1.8
-------------
-
-  Blockers
-
-    - Artefacts in menu (app list). Sometimes it looks like two lists are rendered (you see app names written on top of others).
-    - Cinnamon crashes if you turn on "Only use workspaces on primary monitor"
-
-  Other
+Cinnamon
+--------
 
     - Couldn't find UUID when installing gtile... crash when uninstalling it.
     - Nemo: Add devices to MoveTo/CopyTo context menu

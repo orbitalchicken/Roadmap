@@ -1,0 +1,228 @@
+<clem> - Follow up on actions
+<clem> - Mint 15 RC
+<clem> - General questions
+<clem>  
+<clem> Actions:
+<clem> - @clem: Add rjanja, cobinja to the triaging team
+<clem> --> This wasn't done. I didn't really get the change to catch up with either of them yet.
+<clem> chance
+<clem> - @clem, @glebihan, @briand: Talk about pastebin and integration with xchat/DE
+<mtwebster> i'm here sorryu
+* glebihan whistles
+<clem> --> This is a low priority, nothing was done and it doesn't look like it will be done in time for Mint 15
+<clem> I'll remove this action and add it the list of points to look at for Mint 16
+<clem> Next topic: 
+<clem> - Mint 15 RC
+<clem> There's a few minor issues but the 4 ISOs were approved for an RC release today
+<cobinja> 4 isos? for cinnamon, mate and those for for 64 and 32 bit?
+<clem> yes
+<clem> it takes roughly 2 days for them to sync to all mirrors and for the announcements to be prepared, so we'll probably see them out publicly on the 15th
+<clem> the most sensitive/vulnerable part of the system I think is MDM
+<cobinja> that leaves 16 days for testing (if Final is to be released in May)
+<AlbertP> clem: can the keyboard shortcut for lock screen get fixed before final release?
+<clem> it stops plymouth, it launches Xorg, it handles the session process etc.. and it's also one of the projects we maintain that we know the least
+<clem> AlbertP: you mean ctrl-alt-L?
+<DarkEra> what prevents the system from shutting down by the way?
+<AlbertP> clem: not only that, also the lock screen key of HP laptops. Worked right in gnome-screensaver in its default configuration. cinnamon-screensaver does not respond to it, or maybe needs to be configured to respond to it.
+<clem> AlbertP: ctrl-alt-l works fine here on a laptop with C64RC
+<glebihan> works fine here too
+<clem> DarkEra: I don't know, I couldn't reproduce this problem
+<clem> DarkEra: I can restart/shutdown without problems in Mint 15
+<DarkEra> clem, weird. I still have that issue on the netbook
+<clem> one thing I can reproduce easily though.... if you leave MDM on for a little while, it goes to sleep and never wakes up
+<clem> you can still move the mouse but the greeter dies
+<mtwebster> i've seen that also
+<AlbertP> clem: The lock key may need to be added as keyboard shortcut in Cinnamon Settings. Still I'd like it to work out-of-the-box like it did with gnome-screensaver.
+<AlbertP> clem: cinnamon-screensaver in Mint 14 also does not respond to it.
+<clem> ok, that's something we can look at later AlbertP, when we backport it
+<clem> that issue with the greeter dying is a huge problem
+<AlbertP> clem: you mean backport to 14? cinnamon-screensaver is already in 15 where it also has this problem.
+<glebihan> clem, that's if you leave it at the login screen ?
+<clem> glebihan: yes
+<AlbertP> clem: or maybe you can't lock screen on a live dvd?
+<clem> glebihan: best way to test is to open a session, and switch user... 
+<cobinja> cinnamon-screensaver does responf to it in Fedora 18 (Though I forgot how to unlock it, had to kill it via text-login)
+<clem> glebihan: you'll have mdm on tty7 and your session on tty8
+<glebihan> clem, ok I'll have a look
+<clem> glebihan: after a while tty7 will only give you the mouse cursor and a black screen.. you can go back to tty8 with ctrl-alt-f8
+<AlbertP> cobinja: you mean a laptop's lock key?
+<clem> glebihan: the process list indicates that the greeter is defunct at that stage
+<cobinja> no, usual desktop pc
+<cobinja> AlbertP: ^^
+<clem> glebihan: I reproduce it ALWAYS in Mint 15, with both mdmgreeter and mdmwebkit, so it looks like it's to do with the slave
+<glebihan> clem, hmm, one more weird zombie issue with mdm, huh ?
+<clem> looks like it alright
+<clem> we still don't know why this is different in 13.04 but it's a major PITA
+<clem> a bug like this means you can't leave the computer on with the login screen... 
+<clem> if we can't fix it in time for Mint 15 stable, we'll need to use another DM in that release
+<AlbertP> cobinja: a desktop keyboard with lock screen key? I don't mean Ctrl-Alt-L.
+<cobinja> AlbertP: ok, i did mean that
+<clem> that would hurt the momentum of MDM right when it was about to get a bit of a boost with the new webkit greeter and other improvements
+* ilan_ (ilan@SpotChat-48v7tt.dynamic.ziggo.nl) a rejoint #linuxmint-dev
+<clem> AlbertP: the live session is particular
+<clem> AlbertP: I don't know for sure what's different in it, but I'm not sure the screensaver is operation in live mode
+<clem> operational
+<AlbertP> clem:  on an installed mint14 system the key didn't work either. It did work before installing cinnamon-screensaver there.
+<clem> AlbertP: also in live mode you're in a single-user environment with timed login
+<clem> AlbertP: did you restart?
+<clem> AlbertP: you'd need to make sure gnome-screensaver was dead and that the cinnamon-screensaver daemon had taken over the dbus interface
+<clem> another regression that was noted during QA is the lack of add-apt-repository command
+<clem> I'll add that quickly in mintsources
+<clem> the code is already to perform this graphically so it should be easy enough to add support for a command here
+<AlbertP> clem: yes, I have surely restarted... it was only some days later that I found this issue. Anyway I'll install 15rc anyway this week, then I can try it there in an installed, not live, system.
+<clem> there's a couple of other small problems here and there... the really big one is MDM though
+<glebihan> clem, why not use the already existing ass-apt-repository command ?
+<glebihan> *add
+<clem> glebihan: afaik it relies on software-properties
+<gaurav> lol
+<glebihan> clem, indeed, seems there are some weird dependencies involved there
+<clem> glebihan: I've seen issues with trivial repositories (used by mint-local-repository) and things getting mixed up between ubuntu and mint repos
+<clem> glebihan: the removal of software-properties is likely to solve a lot of problems
+<clem> glebihan: it wasn't designed for distros like Mint where the base is maintained by another project
+<glebihan> clem, right
+<AlbertP> clem: mixup is often due to 3rd party apps that want to add the universe or multiverse repository to the 1st line of sources.list (assuming that the main Ubuntu repo is there) to download something.
+<clem> AlbertP: we don't use /etc/apt/sources.list either anymore, so that should be solved as well
+<clem> AlbertP: also server-side we accept universe multiverse components, just so errors aren't thrown when that happens
+* blubb (blubb@SpotChat-6f0pqe.hsi7.kabel-badenwuerttemberg.de) a rejoint #linuxmint-dev
+<clem> are there any questions related to Mint 15 RC?
+<gaurav> yeah
+<gaurav> how many RCs will be there?
+<clem> hopefully just 1
+<gaurav> k
+<gaurav> bye
+* gaurav est parti (Quit: Leaving)
+<mtwebster> lol
+<clem> the issue on MDM is quite critical though
+<clem> I'm hoping all symptoms we observed are related..
+<clem> - greeter dying after a while
+<clem> - mdm unable to open new X on other tty
+<clem> - loss of sound until reboot
+* leigh123linux (kvirc@SpotChat-gvd8j4.dsl.as9105.com) a rejoint #linuxmint-dev
+<clem> - inability to start greeter
+<clem> we're in a difficult situation because the legacy MDM code does not work with 13.04
+<clem> something there is different at the very base level (select() calls don't behave like they did in the past)
+<clem> so it's not even a case of backtracking to the previous MDM and holding new features away from the new Mint
+<clem> we can only go forward here or look at alternatives
+<clem> and there aren't many...
+<leigh123linux> clem: lightdm
+<clem> lightdm is not configurable and misses important features
+<clem> the last time I reviewed it you couldn't even select your language
+<leigh123linux> clem: It's still the same
+<leigh123linux> There aren't many go dm's 
+<leigh123linux> ^good
+<clem> the two advantages of lightdm is that it can look good (it takes no effort to make Mint greeter based on the Ubuntu one) and we can assume it will work well.. since upstream Ubuntu and even Kubuntu are using it as well
+<glebihan> clem, about how would you say it takes for the greeter to die ?
+<glebihan> how *long*
+<clem> glebihan: on the laptop here about 10 minutes
+<clem> glebihan: the screen goes black, the mouse cursor stays
+<glebihan> k
+<AlbertP> select() is a call from the C library (libc6). It's very unlikely for libc to break existing userspace programs.
+<clem> I know AlbertP, I'm very intrigued by it
+<glebihan> AlbertP, it wouldn't be the only thing broken I've seen in libc6 2.17
+<AlbertP> clem: the manpage says select can in some cases report false positives
+<clem> AlbertP: all I know is that this code is inherited from GDM 2.20 (2008 or so) and it's been working great all the way to 2012... comes 13.04, it doesn't work anymore, forked processes go zombie, they're not ack'd to die anymore
+<clem> AlbertP: I don't know what's changed in 13.04 that causes that, but it's been a huge issue for MDM
+<clem> AlbertP: we fixed most of it, but as you can see we're not done yet
+<glebihan> clem, here (on my LMDE laptop), the greeter dies completely, no zombie, no black screen with a remaining cursor
+<clem> glebihan: and then what happens?
+<glebihan> I'll try on olivia after the meeting to see if it's the same
+<clem> glebihan: does the slave start a new one?
+<glebihan> clem, no
+<glebihan> clem, it just switched back to my opened session, the tty where mdm was running was left empty
+<clem> glebihan: ok same here, but it's defunct
+<clem> glebihan: i.e. session on tty8, defunct greeter on tty7, new greeter (after I switch user again) on tty9
+<glebihan> then it's slightly different, here when I switch user again, it re-uses the same tty
+<clem> glebihan: yes, I guess the main difference is that in 13.04 the greeter's death isn't ack'd by the slave
+<glebihan> but I guess that's the difference we've been observing between quantal and raring 
+<clem> glebihan: yes, it looks like a waitpid problem
+<clem> glebihan: still... from a design point of view, why would the greeter have to die?
+<clem> glebihan: shouldn't it wait until you log in?
+<glebihan> clem, there's definitely something wrong in mdm there
+<clem> glebihan: yes, it looks like there's a design issue as well as a waitpid one (the latter affecting raring only)
+<glebihan> clem, I'll have a closer look at it after the meeting
+<AlbertP> I agree, I don't think we can get this issue fixed instantly so let's discuss other matters first.
+<clem> ok
+<clem> any other questions re-Mint 15 RC?
+<clem> FlexiReapDelayMinutes=5
+<clem> And after how many minutes should we reap the flexible server if there is no
+<clem> # activity and no one logged on.  Set to 0 to turn off the reaping.  Does not
+<clem> # affect nested flexiservers.
+<clem> ^^ that looks suspicious :)
+<glebihan> indeed
+<clem> if turning it to 0 means we're rid of the problem for Mint 15 and we've got 6 month to design this a bit better, I think we should consider it :)
+<clem> I'll test that after the meeting too :)
+<clem> ok, next topic.. General questions
+<clem> is there anything anyone wants to address or talk about?
+<mtwebster> clem: we may need to implement a last minute feature in cinnamon
+<mtwebster> in fact i'm pretty sure we do
+<mtwebster> there was a muffin change some time back that moved a bunch of window types into the toplevel window group.  it has spawned numerous issues, mostly resulting in unresponsive panel in many situations
+<clem> yes
+<mtwebster> it was at the time to make sure ime/ibus popups for text entry showed up properly
+<clem> we moved DND away from that group right?
+<glebihan> clem, yes but it's not enough
+<clem> ok
+<mtwebster> clem: yes, but there are issues with notifications, as well as override windows - basically we need to revert that whole echange
+<glebihan> clem, there's a pull request from AlbertP to completely revert that commit
+<clem> oh boy...
+<mtwebster> and implement a cinnamon/clutter-based ime popup
+<clem> to replace the gtk one?
+<mtwebster> clem: yes
+<clem> can't we make the gtk one work?
+<mtwebster> clem: i did a lot of testing on it, the gtk popup is classified as window type "normal" by the program
+<clem> ok
+<mtwebster> if they properly classified it with the X server it wouldn't be a problem
+<mtwebster> like popup, etc..
+<AlbertP> clem: yes. We've had some discussion about it (feel free to call it an argument) and it became clear that we need to do it the same way Gnome Shell did it: our own popup.
+<clem> can we identify it via its title or something else?
+<clem> or its appname
+<mtwebster> clem: no - i tried all that
+<mtwebster> 'main.py'
+<clem> ah ffs :))
+<mtwebster> you wanna gamble on that? :)
+<AlbertP> but... how would other window managers (not forked off mutter) get this on top then?
+<AlbertP> I assume there must be some DE where the gtk popup is working.
+<cobinja> other wm's don't have that kind of window grouping as we do (since our UI is not in an X11 window)
+<glebihan> AlbertP, our problem comes from clutter and the chrome used for panels/menus/..., other DEs have no problem with that
+<AlbertP> OK.
+<clem> just to confirm, ibus is needed to input non-latin chars, like for instance if you want to write Kanji or something?
+<mtwebster> clem: correct - i have it set up and working on my pc
+<mtwebster> you hit the hotkey, then double-tap space, and a popup appears
+<clem> and this gtk popup is provided by the ibus guys?
+<mtwebster> with options
+<AlbertP> clem: I'd also consider merging #1995 https://github.com/linuxmint/Cinnamon/pull/1995
+<cobinja> there's a mutter/muffin window type called "override_other" which is used for all windows that specifically say "override_redirect" and are not of a type that is "override-redirect" by default. when using "override_other" we throw away the original type and therefore can't know, which windows can go to top window group and which don't.
+<mtwebster> i think so - i followed some directions i found online, i'd have to retrace my steps.  afaik, sudo apt-get install ibus
+<clem> it uses dbus to pop up?
+<clem> AlbertP: ok
+<mtwebster> cobinja: the problem is the original type of this popup is 'normal' - based on the x type atom
+<cobinja> yeah, right, there was that problem, too
+<clem> mtwebster: so what's the solution then? we pull the commit the shell guys did to implement their own popup?
+<AlbertP> clem: it's not as easy as that, keyboard.js changed a lot upstream
+<clem> mtwebster: we end up with a clutter popup which intercepts the dbus call to the gtk popup?
+<mtwebster> clem: i think it's that or we fork the gtk provider.  either one is quite a bit of work
+<mtwebster> the cinnamon solution is less so i think
+<clem> what happens right now?
+<clem> I mean, if you use ibus with cinnamon 1.8
+<mtwebster> exactly right now, it pops up like it should
+<clem> so what's the problem?
+<mtwebster> but other insidious things are broken
+<clem> like what for instance?
+<mtwebster> frozen panels from notifications
+<mtwebster> frozen panels from fullscreen apps
+<cobinja> remmina
+<glebihan> steam
+<mtwebster> remmina is useless
+<mtwebster> if you go to fullscreen mode
+<mtwebster> gtk-recordmydesktop (just an example)
+<clem> I see..
+<AlbertP> those are OVERRIDE_OTHER windows too.
+<mtwebster> clem: i haven't looked closely at the gnome-shell solution yet, but i assume it intercepts like you said
+<mtwebster> and we get a boxpointer popup
+<clem> well, we can put that in 1.8.x when we have a working solution
+<clem> it's a bug fix more than a feature really
+<clem> we'll need to test it heavily though
+<mtwebster> i was going to volunteer since i have ime working already
+<mtwebster> you can use it regardless of what locale you're on
+<clem> ok
+<clem> I'm going to focus on MDM
+<clem> thanks everyone for being here and see you all next week :)

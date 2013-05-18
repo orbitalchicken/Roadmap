@@ -69,16 +69,13 @@ Bugs found in Mint 15 RC
     - I can’t reach some settings simply by typing a keyword in the Mint menu like it was possible in the previous versions, ie in Mint 14, when I would type Screen in the mint menu, I could reach the screen manager and manage my dual screens. Now, that setting was hidden in the advanced cinnamon settings and I had a hard time finding it.
     - Theres is a major bug with cinnamon 1.8. I have an nvidia gtx660 video card. In Cinnamon 1.8 vsync does not work
     
-7 mintMenu    
+4 mintMenu    
 ----------
-
-    - if you enable GTK “favourites” in MintMenu it wont show them and it tends to bug out a bit until you deactivate them
+    
     - korean doesn't show right in mintmenu http://4.bp.blogspot.com/-as_e0DHueFY/UZMcMVXqV8I/AAAAAAAAGSI/8tIJYnNxkvk/s1600/min-olivia-7.png
-    - mintMenu crashed once for no reason (I wasn’t using it at that time)
-    - I can’t find the Gnome Network Manager in the Mint Menu, it used to be in 14    
+    - mintMenu crashed once for no reason (I wasn’t using it at that time)    
     - My keyboard freezes up when I try using the Super key too often (or Ctrl+Super, as I like to use for mintMenu). When it happens, it seems to think I always have Ctrl pressed down, and trying to use any command that calls `gksu` will cause `gksu` to mention being unable to detect my keyboard.
     - In accessibility, enable OSK and click on MintMenu. Any attempt to enter text into the MintMenu search will close the menu and OSK
-    - MATE:  In nearly every other Mint I’ve used, the default view for “Menu” is “Favorites”, however in Mint 15 the first click pops up the “All” Applications menu. Just out of curiosity, why the change?
         
 7 MATE    
 ------
@@ -113,7 +110,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-64 Total (started at 82 ;))
+61 Total (started at 82 ;))
 ---------------------------
 
 

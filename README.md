@@ -1,20 +1,7 @@
 =======================================================================
 Bugs found in Mint 15 RC
 =======================================================================
-
-9 mintSources 
--------------
-
-    - Add-apt-repository missing
-    - mintSources doesn’t react to clicking on maximize window button. The border changes a little as if the window is maximizing – but it stays within the same boundaries as before.
-    - mintSources window’s minimal width is larger than 1024 so it’s not convenient for testing in 1024×768 and may be an issue for some netbooks
-    - When choosing a mirror, clicking on the “Country” column header does nothing, I guess it should’ve sorted it by country instead
-    - mintSources doesn’t show when it’s done measuring speeds
-    - mintSources seems to get the speed wrong: I get 20 kB/s when fetching the package lists from the mirror that was shown as the fastest one. Or maybe I wasn’t patient enough, but I couldn’t know how long I should wait (see the previous issue)
-    - mintSources freezed a couple of times while measuring mirror speeds. Had to kill the application
-    - The speed test of sources sometimes seems to take a while, but it’s actually working in the background from my experience. The list is just pretty long, so you have to be a bit patient. On the other hand, one should have to do it only once, right?
-    - the mirror speed evaluation software seems to hang indefinitely if (when) it finds an unresponsive mirror. 
-        
+         
 4 MDM 
 -----
 
@@ -142,7 +129,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-81 Total   
+72 Total   
 --------
 
 

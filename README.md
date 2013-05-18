@@ -81,11 +81,10 @@ Bugs found in Mint 15 RC
     - In accessibility, enable OSK and click on MintMenu. Any attempt to enter text into the MintMenu search will close the menu and OSK
     - MATE:  In nearly every other Mint I’ve used, the default view for “Menu” is “Favorites”, however in Mint 15 the first click pops up the “All” Applications menu. Just out of curiosity, why the change?
         
-8 MATE    
+7 MATE    
 ------
 
-    - Disk utility (gnome-disks) is listed twice in the mintMenu.
-    - I would like gnome-system-tools installed as standard in order to be able to add user(s).
+    - Disk utility (gnome-disks) is listed twice in the mintMenu.    
     - MATE 64: Every java app with maximized window is unusable, for example josm or jdownloader: menus are not working!
     - MATE 64: Every maximized program, for example eye of mate, shows crap borders in the corner
     - MATE 64: No raw image files thumbnails
@@ -108,12 +107,7 @@ Bugs found in Mint 15 RC
     - apparently medibuntu has been dropped by the maintainer. https://launchpad.net/medibuntu/+announcements
     - Mint-mdm-themes takes way too much space on HDD
         
-1 mintDrivers 
--------------
-
-    - Device Drivers/Driver Manager closes straight after launch
-                
-        
+       
 2 Totem
 -------
 
@@ -121,11 +115,13 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-67 Total   
+65 Total   
 --------
 
 
+To test:
 
+    - MATE: mate-system-tools installed (users, network etc..)
 
 
 =======================================================================

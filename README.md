@@ -30,7 +30,7 @@ Bugs found in Mint 15 RC
     - Please update the plymouth theme, its too outdated to match the awesomeness of cinnamom. yes i am talking about the fade-in of the Mint logo, please give it a new design. You can take a look at elementary os Luna’s boot up theme    
     - OMG there is no shutdown plymouth animation! I would like the LM logo from the boot to turn back off just like luna
         
-28 Cinnamon 
+26 Cinnamon 
 -----------
 
     - Cinnamon: dim mai 5 instead of dim 5 mai (MATE gets it right)
@@ -41,17 +41,16 @@ Bugs found in Mint 15 RC
     - One small remark though, i couldn’t help but notice that the text on title window on top isn’t centered. It looks like it is shifted regarding position of the minimize, maximize and close buttons. Is this intented behavior?
     - Cairo-dock session no longer works out of box, and simply installing it at this time BREAKS CINNAMON, and leaves you with a cairo-dock session with no windows manager by default
     - Show/Hide delay for the panel (in autohide mode) doesn’t work. Didn’t work in LM14, either, btw.
-    - Keyboard shortcuts for custom launchers using the Windows key (Super) do not work. (They’re good e.g. for switching workspaces, so in principle they do work.) This was reported months ago, and it’s a little disappointing to see this bug still alive and well.
+    - Keyboard shortcuts for custom launchers using the Windows key (Super) do not work. (They’re good e.g. for switching workspaces, so in principle they do work.) 
     - Nemo: If you ‘X’ a file transfer dialog for a large file, there is no way of bringing it back from notification area.
     - "/usr/lib/cinnamon-settings/bin/ExtensionCore.py
         Replace
         showTypes.append([SHOW_ALL, _(""All %s"") % (self.pl_noun)])
         to
         showTypes.append([SHOW_ALL, _(""All %s"").decode(""utf-8"") % (self.pl_noun)])"
-    - Do not work themes, desklets, extations and applets. empty window in system settings. sorrow.
     - * Screenshot button doesn’t work?!
     - New nemo is *extremely* cool. Looks amazing but won’t remember the last opened tree location and there is no option to rename folders and files in the save dialog. I don’t know of any other OS that won’t - allow this to be done. If I can create a new file or folder on the spot, I could be able to rename existing files and folders in the location of concern on the fly.
-    - I’ve intalled today and it’s awesome, my laptop’s battery life is much longer now, however I’ve found a bug: when I close my laptop I have it configured to suspend, no problem here, but when I open it, the screensaver does not appear and don’t ask for my password. Hope you can fix this before the final release.
+    - when I close my laptop I have it configured to suspend, no problem here, but when I open it, the screensaver does not appear and don’t ask for my password. Hope you can fix this before the final release.
     - The Configure cog button doesn’t work in the Desklets area or the Themes selection area. A padlock icon appears too which doesn’t do anything?
     - If you try to set SUPER + E or SUPER + T to home folder and terminal in the keyboard shortcut area, the shortcut will never work. This has really irked me since Mint 13. It’s never been fixed. I’ve reported a bug numerous times.
     - Using ALT and left click won’t move the window (this works in every other version of Linux I’ve ever used. The same is true for ALT + middle click for window resizing
@@ -60,7 +59,6 @@ Bugs found in Mint 15 RC
     - it would be nice if I set proxy settings in "System Settings / Networking: Proxy" to set proxy settings also in the files etc/environment and /etc/apt/apt.conf e. g. with a option "set proxy systemwide"
     - Bug with this Cinnamon x64: Wi-Fi access point setup… I click to open and set up for hidden wireless access point, it always closes immediately. Need to fix for hidden wireless access point.
     - The cinnamon brightness and volume icon that appears on screen when I use the keyboard shortcut on my laptop does not show any bar, is that normal? Also, the brightness icon appears and disappears with a noticeable delay while the volume one has no such issue.
-    - i was just curious on mint 15 cinnamon is there an option im missing to enable the lockscreen after closing laptop to suspend
     - Desklets luncher only lunches system settings, even if edited to start firefox then it crushes cinnamon
     - when I unistall a theme (right click-unistall), the theme is removed from the list but a new grey pop up window appears and doesn’t dissolve away. to solve I need to restart cinnamon.
     - I can’t reach some settings simply by typing a keyword in the Mint menu like it was possible in the previous versions, ie in Mint 14, when I would type Screen in the mint menu, I could reach the screen manager and manage my dual screens. Now, that setting was hidden in the advanced cinnamon settings and I had a hard time finding it.
@@ -96,7 +94,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-52 Total (started at 82 ;))
+50 Total (started at 82 ;))
 ---------------------------
 
 
@@ -104,13 +102,7 @@ To test:
 
     - MATE: mate-system-tools installed (users, network etc..)
     - MATE: mozo installed (edit mintmenu)
-
-To communicate to MATE team:
-
-    - keyboard shortcut like ctrl alt t for terminal is missing.    
-    - Every java app with maximized window is unusable, for example josm or jdownloader: menus are not working! (this was fixed in Muffin by telling Java Muffin was Mutter.. looks like the guys at Oracle have some hacks hardcoded to make things work in various environments and they never heard of Muffin/Marco )
-    - No raw image files thumbnails
-    - drawer applet is broken. Try to add another applet into it or in the panel, makes it disappear.
+    
 
 =======================================================================
 Upcoming

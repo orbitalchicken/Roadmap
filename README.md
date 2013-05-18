@@ -16,14 +16,11 @@ Bugs found in Mint 15 RC
         I confirm the problem with bumblebee. It does not start with mdm but well with any other display manager (lightdm, gdm,…)
     - Enable remote logins via XDMCP causes Xauthority error dialog on login.
     
-3 mintInstall 
+2 mintInstall 
 -------------
 
-    - mintinstall navigation broken in breadcrumb when going to reviews/screenshots
-    - mintinstall freezes at startup    
-    - "It all looks great again, but I can’t get the software manager to work.
-        It hangs in the startup-screen, saying it is gathering information on packages.
-        Cinnamon 64"
+    DONE - mintinstall navigation broken in breadcrumb when going to reviews/screenshots    
+    - mintinstall hangs in the startup-screen, saying it is gathering information on packages. Cinnamon 64
         
 4 Cosmetic    
 ----------
@@ -76,18 +73,7 @@ Bugs found in Mint 15 RC
     - mintMenu crashed once for no reason (I wasn’t using it at that time)    
     - My keyboard freezes up when I try using the Super key too often (or Ctrl+Super, as I like to use for mintMenu). When it happens, it seems to think I always have Ctrl pressed down, and trying to use any command that calls `gksu` will cause `gksu` to mention being unable to detect my keyboard.
     - In accessibility, enable OSK and click on MintMenu. Any attempt to enter text into the MintMenu search will close the menu and OSK
-        
-7 MATE    
-------
-
-    - Disk utility (gnome-disks) is listed twice in the mintMenu.    
-    - MATE 64: Every java app with maximized window is unusable, for example josm or jdownloader: menus are not working!
-    - MATE 64: Every maximized program, for example eye of mate, shows crap borders in the corner
-    - MATE 64: No raw image files thumbnails
-    - MATE 64: A standard keyboard shortcut like ctrl alt t for terminal is missing.
-    - JAVA problems in MATE: http://forums.linuxmint.com/viewtopic.php?f=47&t=134097&p=720249#p719854
-    - I add a drawer to the panel. When I add an applet to the drawer, the drawer icon disappears from the panel. Clicking on the place in the panel where the icon was will show the drawer and the added applet. - The applet will run at this time. Logoff and login and the drawer icon is again showing on the panel, but clicking on it does not show the added applet, so said applet can not be started.
-               
+                     
     
 9  System  
 ----------
@@ -110,7 +96,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-61 Total (started at 82 ;))
+52 Total (started at 82 ;))
 ---------------------------
 
 
@@ -119,6 +105,12 @@ To test:
     - MATE: mate-system-tools installed (users, network etc..)
     - MATE: mozo installed (edit mintmenu)
 
+To communicate to MATE team:
+
+    - keyboard shortcut like ctrl alt t for terminal is missing.    
+    - Every java app with maximized window is unusable, for example josm or jdownloader: menus are not working! (this was fixed in Muffin by telling Java Muffin was Mutter.. looks like the guys at Oracle have some hacks hardcoded to make things work in various environments and they never heard of Muffin/Marco )
+    - No raw image files thumbnails
+    - drawer applet is broken. Try to add another applet into it or in the panel, makes it disappear.
 
 =======================================================================
 Upcoming

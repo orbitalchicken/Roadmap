@@ -26,13 +26,12 @@ Bugs found in Mint 15 RC
         It hangs in the startup-screen, saying it is gathering information on packages.
         Cinnamon 64"
         
-5 Cosmetic    
+4 Cosmetic    
 ----------
 
     - ubiquity icon is missing
     - print test page shows ubuntu logo
-    - Please update the plymouth theme, its too outdated to match the awesomeness of cinnamom. yes i am talking about the fade-in of the Mint logo, please give it a new design. You can take a look at elementary os Luna’s boot up theme
-    - The part in the installation review of LM where it talks about videos shows the included software are VLC,Totem and Video Codecs, only there is no VLC included preinstalled. So you should update the pic to show VLC as featured
+    - Please update the plymouth theme, its too outdated to match the awesomeness of cinnamom. yes i am talking about the fade-in of the Mint logo, please give it a new design. You can take a look at elementary os Luna’s boot up theme    
     - OMG there is no shutdown plymouth animation! I would like the LM logo from the boot to turn back off just like luna
         
 28 Cinnamon 
@@ -101,13 +100,12 @@ Bugs found in Mint 15 RC
     - No explanatory password sentence
         
         
-11  System  
+10  System  
 ----------
 
     - no sound?
     - gksu doesn’t offer to remember the password. Well, it’s not a new issue, all recent Ubuntu-based Mints are like that, I’m just used to that feature in LMDE. Is there any configuration option I’ve missed?
-    - MATE 32: after update im stuck in an ubuntu login screen and cant boot
-    - If I hit enter during the countdown the boot menu comes up okay. It’s just if I wait for the countdown to finish that it hangs.
+    - MATE 32: after update im stuck in an ubuntu login screen and cant boot    
     - Compiz Fusion icon does not start
     - Anyone have an issue using openVPN through the network manager in Cinnamon 15rc 64 bit? Also, I can’t delete any of the VPN entries in Network Manager using the “-”. openvpn connects via command line, though.
     - Synaptic freezes computer, also following the use of apt in terminal. Nothing found in var/logs.
@@ -129,7 +127,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-72 Total   
+70 Total   
 --------
 
 
@@ -143,7 +141,6 @@ Upcoming
 Cinnamon
 --------
 
-    - Couldn't find UUID when installing gtile... crash when uninstalling it.
     - Nemo: Add devices to MoveTo/CopyTo context menu
     - Nemo: when the breadcrumb is full, and you use the back button to show the start of it.. the forward button doesn't do anything so you can't get back to the end. Also, the last two items on the first page are not clickable.
     - Desklet position is lost after killing MDM
@@ -152,19 +149,14 @@ MDM 1.2
 -------
     
     - Performance improvements
-    - GDM Greeter: Add a "border" property to "entry" objects so themes can get borders around text fields
-    - HTML Greeter: Remove white screen appearing before the theme is loaded
     - HTML Greeter: When there's a lot of languages the whole theme itself gets a scrollbar instead of just the language menu
     
-Mint 15
+Mint 16
 -------
 
     - UI Improvements for Software Management    
-    - Implement nemo actions
-    - Nightlife: Upgrade to 1.8, improve the title of the selected window in the scale plugin, improve look of widgets in notifications    
-    - Finalize artwork
-    - Can't remove software-properties-gtk because apturl requires it (hack apturl to cope with the loss)
     - Check if xterm is needed (by xinit)
+    - update ubiquity-slideshow (mentions vlc, giver, pdf printer etc..)
 
 
 =======================================================================

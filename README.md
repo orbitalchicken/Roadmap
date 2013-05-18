@@ -29,13 +29,12 @@ Bugs found in Mint 15 RC
     - I confirm the problem with bumblebee. It does not start with mdm but well with any other display manager (lightdm, gdm,…)
     - Enable remote logins via XDMCP causes Xauthority error dialog on login.
     
-5 mintInstall 
+4 mintInstall 
 -------------
 
     - mintinstall navigation broken in breadcrumb when going to reviews/screenshots
     - mintinstall freezes at startup
     - No explanatory password sentence
-    - Interesting, in Software Manager the acroread package has -81 reviews.
     - "It all looks great again, but I can’t get the software manager to work.
         It hangs in the startup-screen, saying it is gathering information on packages.
         Cinnamon 64"
@@ -143,7 +142,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-82 Total   
+81 Total   
 --------
 
 

@@ -2,10 +2,10 @@
 Bugs found in Mint 15 RC
 =======================================================================
          
-4 MDM 
+3 MDM 
 -----
 
-    - MDM can't shutdown/restart/suspend
+    DONE - MDM can't shutdown/restart/suspend
     - "Why can not Bumblebee work with Cinnamon? with MDM login screen.
         When I replace MDM Login Screen with LightDM login screen then it works
         with bumblebee.Bumblebee loads on startup.
@@ -13,15 +13,14 @@ Bugs found in Mint 15 RC
         Other operating systems I’ve tried has worked
         Zorin Os works
         Ubuntu works"
-    - I confirm the problem with bumblebee. It does not start with mdm but well with any other display manager (lightdm, gdm,…)
+        I confirm the problem with bumblebee. It does not start with mdm but well with any other display manager (lightdm, gdm,…)
     - Enable remote logins via XDMCP causes Xauthority error dialog on login.
     
-4 mintInstall 
+3 mintInstall 
 -------------
 
     - mintinstall navigation broken in breadcrumb when going to reviews/screenshots
-    - mintinstall freezes at startup
-    - No explanatory password sentence
+    - mintinstall freezes at startup    
     - "It all looks great again, but I can’t get the software manager to work.
         It hangs in the startup-screen, saying it is gathering information on packages.
         Cinnamon 64"
@@ -93,13 +92,8 @@ Bugs found in Mint 15 RC
     - MATE 64: A standard keyboard shortcut like ctrl alt t for terminal is missing.
     - JAVA problems in MATE: http://forums.linuxmint.com/viewtopic.php?f=47&t=134097&p=720249#p719854
     - I add a drawer to the panel. When I add an applet to the drawer, the drawer icon disappears from the panel. Clicking on the place in the panel where the icon was will show the drawer and the added applet. - The applet will run at this time. Logoff and login and the drawer icon is again showing on the panel, but clicking on it does not show the added applet, so said applet can not be started.
-        
-1 mintUpdate  
-------------
+               
     
-    - No explanatory password sentence
-        
-        
 10  System  
 ----------
 
@@ -127,7 +121,7 @@ Bugs found in Mint 15 RC
     - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
         
         
-70 Total   
+67 Total   
 --------
 
 

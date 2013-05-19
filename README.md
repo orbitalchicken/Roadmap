@@ -5,15 +5,7 @@ Bugs found in Mint 15 RC
 2 MDM 
 -----
     
-    - "Why can not Bumblebee work with Cinnamon? with MDM login screen.
-        When I replace MDM Login Screen with LightDM login screen then it works
-        with bumblebee.Bumblebee loads on startup.
-        And I can choose the Nvidia card with optirun
-        Other operating systems I’ve tried has worked
-        Zorin Os works
-        Ubuntu works"
-        I confirm the problem with bumblebee. It does not start with mdm but well with any other display manager (lightdm, gdm,…)
-        bumblebee does not autostart I had to make an autorun script in init.d (with the command “service bumblebeed start”).
+    - Bumblebee does not autostart with MDM (does with other DMs). I had to make an autorun script in init.d (with the command “service bumblebeed start”).
     - Enable remote logins via XDMCP causes Xauthority error dialog on login.
     
 2 mintInstall 
@@ -30,18 +22,10 @@ Bugs found in Mint 15 RC
     - Please update the plymouth theme, its too outdated to match the awesomeness of cinnamom. yes i am talking about the fade-in of the Mint logo, please give it a new design. You can take a look at elementary os Luna’s boot up theme    
     - OMG there is no shutdown plymouth animation! I would like the LM logo from the boot to turn back off just like luna
         
-13 Cinnamon 
------------
-        
-    - DONE Xlets: Desklets launcher only lunches system settings, even if edited to start firefox then it crushes cinnamon
-    - DONE Settings: Unicode support issues        
-    - DONE Panel: Show/Hide delay for the panel (in autohide mode) doesn’t work. Didn’t work in LM14, either.
-    - DONE Xlets: Confusing icons for active/locked
-    - DONE Keybindings: If you try to set SUPER + E or SUPER + T to home folder and terminal in the keyboard shortcut area, the shortcut will never work. (same since Mint 13).
+5 Cinnamon 
+-----------        
     - Screensaver: doesn't forget away_message
     - Screensaver: after suspend, the screensaver does not appear and doesn’t ask for a password.
-    - Settings: it would be nice if proxy settings also set files etc/environment and /etc/apt/apt.conf e. g. with a option "set proxy systemwide"        
-    - WM: DND layers in Cinnamon/muffin    
     - WM: text on title window on top isn’t centered.    
     - Panel: dim mai 5 instead of dim 5 mai (MATE gets it right)
     - nvidia gtx660 video card, vsync does not work?    
@@ -74,7 +58,7 @@ Bugs found in Mint 15 RC
     - Since the new “mintsources” does not show a list of the “Official” repos, the Medibuntu repos entries are no longer shown anywhere in “mintsources” even though it’s there and enabled. Unfortunately, the “Medibuntu” download server is frequently off-line preventing a complete refresh of the package cache when opening MintUpdate. Now there’s no way to open Software Sources (mintsources) and un-check the Medibuntu repositories as it is not listed, you have to manually edit your source file to disable it.
         
         
-35 Total (started at 82 ;))
+27 Total (started at 82 ;))
 ---------------------------
 
 

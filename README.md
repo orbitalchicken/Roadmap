@@ -14,6 +14,7 @@ Bugs found in Mint 15 RC
         Zorin Os works
         Ubuntu works"
         I confirm the problem with bumblebee. It does not start with mdm but well with any other display manager (lightdm, gdm,…)
+        bumblebee does not autostart I had to make an autorun script in init.d (with the command “service bumblebeed start”).
     - Enable remote logins via XDMCP causes Xauthority error dialog on login.
     
 2 mintInstall 
@@ -30,39 +31,26 @@ Bugs found in Mint 15 RC
     - Please update the plymouth theme, its too outdated to match the awesomeness of cinnamom. yes i am talking about the fade-in of the Mint logo, please give it a new design. You can take a look at elementary os Luna’s boot up theme    
     - OMG there is no shutdown plymouth animation! I would like the LM logo from the boot to turn back off just like luna
         
-26 Cinnamon 
+17 Cinnamon 
 -----------
-
-    - Cinnamon: dim mai 5 instead of dim 5 mai (MATE gets it right)
-    - Cinnamon: Screensaver doesn't forget away_message
-    - DND layers in Cinnamon/muffin
-    - expo distorts image bg http://imgur.com/Arzksxc
-    - The only niggle so far is panel autohide never comes back after hide (Baldr, VBox FWIW).
-    - One small remark though, i couldn’t help but notice that the text on title window on top isn’t centered. It looks like it is shifted regarding position of the minimize, maximize and close buttons. Is this intented behavior?
-    - Cairo-dock session no longer works out of box, and simply installing it at this time BREAKS CINNAMON, and leaves you with a cairo-dock session with no windows manager by default
-    - Show/Hide delay for the panel (in autohide mode) doesn’t work. Didn’t work in LM14, either, btw.
-    - Keyboard shortcuts for custom launchers using the Windows key (Super) do not work. (They’re good e.g. for switching workspaces, so in principle they do work.) 
-    - Nemo: If you ‘X’ a file transfer dialog for a large file, there is no way of bringing it back from notification area.
-    - "/usr/lib/cinnamon-settings/bin/ExtensionCore.py
-        Replace
-        showTypes.append([SHOW_ALL, _(""All %s"") % (self.pl_noun)])
-        to
-        showTypes.append([SHOW_ALL, _(""All %s"").decode(""utf-8"") % (self.pl_noun)])"
-    - * Screenshot button doesn’t work?!
-    - New nemo is *extremely* cool. Looks amazing but won’t remember the last opened tree location and there is no option to rename folders and files in the save dialog. I don’t know of any other OS that won’t - allow this to be done. If I can create a new file or folder on the spot, I could be able to rename existing files and folders in the location of concern on the fly.
-    - when I close my laptop I have it configured to suspend, no problem here, but when I open it, the screensaver does not appear and don’t ask for my password. Hope you can fix this before the final release.
-    - The Configure cog button doesn’t work in the Desklets area or the Themes selection area. A padlock icon appears too which doesn’t do anything?
-    - If you try to set SUPER + E or SUPER + T to home folder and terminal in the keyboard shortcut area, the shortcut will never work. This has really irked me since Mint 13. It’s never been fixed. I’ve reported a bug numerous times.
-    - Using ALT and left click won’t move the window (this works in every other version of Linux I’ve ever used. The same is true for ALT + middle click for window resizing
-    - * Settings Advanced/Normal button is confusing and it’s toggle setting shouldn’t impact Mint Menu search results IMO. AFAIK if you know what you’re searching for, you shouldn’t need extra steps to see it.
-    - why is Keyboard only shown in Advanced Mode? I like to change my keyboard repeat delay to a faster value. This is no advanced thing.
-    - it would be nice if I set proxy settings in "System Settings / Networking: Proxy" to set proxy settings also in the files etc/environment and /etc/apt/apt.conf e. g. with a option "set proxy systemwide"
-    - Bug with this Cinnamon x64: Wi-Fi access point setup… I click to open and set up for hidden wireless access point, it always closes immediately. Need to fix for hidden wireless access point.
-    - The cinnamon brightness and volume icon that appears on screen when I use the keyboard shortcut on my laptop does not show any bar, is that normal? Also, the brightness icon appears and disappears with a noticeable delay while the volume one has no such issue.
-    - Desklets luncher only lunches system settings, even if edited to start firefox then it crushes cinnamon
-    - when I unistall a theme (right click-unistall), the theme is removed from the list but a new grey pop up window appears and doesn’t dissolve away. to solve I need to restart cinnamon.
-    - I can’t reach some settings simply by typing a keyword in the Mint menu like it was possible in the previous versions, ie in Mint 14, when I would type Screen in the mint menu, I could reach the screen manager and manage my dual screens. Now, that setting was hidden in the advanced cinnamon settings and I had a hard time finding it.
-    - Theres is a major bug with cinnamon 1.8. I have an nvidia gtx660 video card. In Cinnamon 1.8 vsync does not work
+    
+    - DONE Settings: Network Settings -> Connect to hidden wireless access point, closes immediately.
+    - DONE Xlets: Desklets launcher only lunches system settings, even if edited to start firefox then it crushes cinnamon
+    - DONE Settings: Unicode support issues
+    - DONE Settings: C modules should provice menu items in /usr/share/applications so that they can be found from the menu    
+    - DONE Panel: Show/Hide delay for the panel (in autohide mode) doesn’t work. Didn’t work in LM14, either.
+    - DONE Xlets: Confusing icons for active/locked
+    - Screensaver: doesn't forget away_message
+    - Screensaver: after suspend, the screensaver does not appear and doesn’t ask for a password.
+    - Settings: it would be nice if proxy settings also set files etc/environment and /etc/apt/apt.conf e. g. with a option "set proxy systemwide"        
+    - WM: DND layers in Cinnamon/muffin    
+    - WM: text on title window on top isn’t centered.    
+    - Panel: dim mai 5 instead of dim 5 mai (MATE gets it right)
+    - OSD: No progress info in volume/brightness OSDs
+    - OSD: Opaque instead of semi-transparent            
+    - Keybindings: If you try to set SUPER + E or SUPER + T to home folder and terminal in the keyboard shortcut area, the shortcut will never work. (same since Mint 13).
+    - Keybindings: Keyboard shortcuts for custom launchers using the Windows key (Super) do not work. (They’re good e.g. for switching workspaces, so in principle they do work.)                 
+    - nvidia gtx660 video card, vsync does not work?    
     
 4 mintMenu    
 ----------
@@ -73,28 +61,26 @@ Bugs found in Mint 15 RC
     - In accessibility, enable OSK and click on MintMenu. Any attempt to enter text into the MintMenu search will close the menu and OSK
                      
     
-9  System  
+8  System  
 ----------
 
     - no sound?    
     - MATE 32: after update im stuck in an ubuntu login screen and cant boot    
-    - Compiz Fusion icon does not start
-    - Anyone have an issue using openVPN through the network manager in Cinnamon 15rc 64 bit? Also, I can’t delete any of the VPN entries in Network Manager using the “-”. openvpn connects via command line, though.
+    - Compiz Fusion icon does not start    
     - Synaptic freezes computer, also following the use of apt in terminal. Nothing found in var/logs.
-    - Love it great work. I noticed Daniel says HDMI audio is not working for him on nvidia drivers, well, HDMI audio is unfortunately not working for me either (intel hd 4000). When I click in the volume/sound menu on the taskbar there is no option to switch outputs, nor in the regular menu. Hope this gets fixed.
-    - On the live system and after install, Network Manager crashes after selecting ‘connect to hidden network’. 
-    - apparently medibuntu has been dropped by the maintainer. https://launchpad.net/medibuntu/+announcements
-    - Mint-mdm-themes takes way too much space on HDD
-        
-       
-2 Totem
--------
+    - HDMI audio is not working (intel hd 4000 or nvidia). There is no option to switch outputs in the taskbar.
+    - medibuntu has been dropped by the maintainer. https://launchpad.net/medibuntu/+announcements
+    - Mint-mdm-themes takes too much space on HDD        
+    - Totem: crashes when going to next song. no visual effects displayed.           
 
-    - First, Totem crashes after it finishes the first song and goes to the next in a playlist or just by pressing the next button to go to the next song. Secondly, it does not display any visual effects rather than a blank screen. The mp3 files are read from a SD card if that matters which I believe is irrelevant.
-    - Totem crashes a lot. I tried to download subs with the plugin and as soon as I pressed ‘Play with Subtitle’ it crushed again.
+2 New
+-----
+
+    - where is “Desktop Sharing”
+    - Since the new “mintsources” does not show a list of the “Official” repos, the Medibuntu repos entries are no longer shown anywhere in “mintsources” even though it’s there and enabled. Unfortunately, the “Medibuntu” download server is frequently off-line preventing a complete refresh of the package cache when opening MintUpdate. Now there’s no way to open Software Sources (mintsources) and un-check the Medibuntu repositories as it is not listed, you have to manually edit your source file to disable it.
         
         
-50 Total (started at 82 ;))
+40 Total (started at 82 ;))
 ---------------------------
 
 

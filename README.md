@@ -2,10 +2,9 @@
 Bugs found in Mint 15 RC
 =======================================================================
          
-2 MDM 
+1 MDM 
 -----
     
-    DONE - Bumblebee does not autostart with MDM (does with other DMs). I had to make an autorun script in init.d (with the command “service bumblebeed start”).
     - Enable remote logins via XDMCP causes Xauthority error dialog on login.
     
 3 mintInstall 
@@ -15,13 +14,11 @@ Bugs found in Mint 15 RC
     - mintinstall hangs in the startup-screen, saying it is gathering information on packages. Cinnamon 64
     - mintInstall (Software Center) sometimes seems to have crashed. It doesn’t react to mouse clicks. After waiting for maybe 1 minute it started working again. In my case this happened after typing one single letter into the search field.
         
-4 Cosmetic    
+2 Cosmetic    
 ----------
 
     - ubiquity icon is missing
-    - print test page shows ubuntu logo
-    - Please update the plymouth theme, its too outdated to match the awesomeness of cinnamom. yes i am talking about the fade-in of the Mint logo, please give it a new design. You can take a look at elementary os Luna’s boot up theme    
-    DONE - OMG there is no shutdown plymouth animation! I would like the LM logo from the boot to turn back off just like luna
+    - print test page shows ubuntu logo    
         
 7 Cinnamon 
 -----------        
@@ -31,7 +28,7 @@ Bugs found in Mint 15 RC
     - Panel: dim mai 5 instead of dim 5 mai (MATE gets it right)
     - nvidia gtx660 video card, vsync does not work?    
     - the audio input level monitor in the cinnamon version does not work (light up), whereas it does in the gnome version. Actually, if I look very closely it seems that one of the vertical bars may light up, but it is incredibly hard to see.
-    - Settings: cinnamon-settings user-accounts --> segmentation fault
+    DONE - Settings: cinnamon-settings user-accounts --> segmentation fault
     
 5 mintMenu    
 ----------
@@ -69,7 +66,7 @@ Change #load-module module-alsa-sink to load-module module-alsa-sink device=hw:3
     - ubiquity not hacked to install local grub2-efi yet (EFI install only works when live session is online)
         
         
-37 Total (started at 82 ;))
+34 Total (started at 82 ;))
 ---------------------------
 
 

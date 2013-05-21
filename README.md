@@ -11,38 +11,53 @@ Bugs found in Mint 15 RC
 -------------
     
     - hangs at the startup-screen, saying it is gathering information on packages. Cinnamon 64
-        
-2 Cosmetic    
-----------
-
-    - ubiquity icon is missing
-    - print test page shows ubuntu logo    
-        
+               
 5 Cinnamon 
 -----------        
     - Screensaver: doesn't forget away_message
     - Screensaver: after suspend, the screensaver does not appear and doesn’t ask for a password.
     - WM: text on title window on top isn’t centered.
-    - the audio input level monitor in the cinnamon settings is incredibly hard to see.
+    DONE - the audio input level monitor in the cinnamon settings is incredibly hard to see.
     DONE - Settings: cinnamon-settings user-accounts --> segmentation fault
                        
-3  System  
+2  System  
 ----------
-
-    - MATE 32: after update im stuck in an ubuntu login screen and cant boot    
+    
     - Update mint-mdm-themes with newer themes
-    - Can't play DVDs (add a gstreamer0.10 capable media player which handles DVD navigation, gnome-mplayer for instance)
+    - Install smplayer2 for DVD playback?
 
-3 New
+7 New
 -----
+    - The network manager doesn’t allow lead to the network settings in order to set up a mobile broadband connection. It simply stops at ‘add new connection’.
+        I have tried Ubuntu 13.04 with Cinnamon desktop on that very same laptop and it does everything perfectly, like Mint 14, 13 & 12 used to do before.  I had to go over network connections from the settings to add my external 3g modem connection.
+    
+    - No EFI El-Torito entry in the ISO. Verified with "dumpet -i file.iso". Ubuntu can boot on UEFI. Mint only has 0×00, so it only boots on BIOS(or CSM for UEFI) but not UEFI.
+        
+    - updating of the mockturtl-Wheater-applet does not work. I get this error-message: An error occurred during installation or updating. You may wish to report this incident to the developer of weather@mockturtl. If this was an update, the previous installation is unchanged Details: ‘ascii’ codec can’t decode byte 0xc3 in position 12: ordinal not in range(128) 
 
-    - Medibuntu can't be disabled in mintsources. We should probably stop using the repository too (https://launchpad.net/medibuntu/+announcements)    
-    - ubiquity not hacked to install local grub2-efi yet (EFI install only works when live session is online)
-    - There is still no EFI El-Torito booting entry in the ISO file. It can be verified by using “dumpet -i the_64_bit_cd_image.iso” against Mint and Ubuntu. The Ubuntu ISO contains two booting entry, with PlatformId 0×00 for X86 BIOS and 0xef for EFI. So it can be burned to a DVD and boot off a UEFI machine. But Mind only has 0×00, so it only boots off BIOS(or CSM for UEFI) but not UEFI. I think it’s not difficult to add the UEFI booting entry just like Ubuntu when building the 64 bit ISO file.  
-        
-        
-15 Total (started at 82 ;))
+    - Now after the update this day about 15:00 local time. I got back exactly the same issue with MintMenu I had during the QA-testing of MATE-32. I goes wrong when I select Swedish language but goes OK when selecting American English.
+
+    - W: waited for dpgk –assert-multi-arch, but was not present dpkgGo (10:no child-processes) [/code] This shows up after each update in Mint-Update now. Why is that??
+
+    - a number of packages receive “403 Forbidden” error. they’re ‘libmuffin0 i386 1.8.2+olivia’, ‘muffin-common all 1.8.2+olivia’, ‘gir1.2-muffin-30 i386 1.8.2+olivia’
+
+    - mintmenu 5.4.8:
+        File "/usr/lib/linuxmint/mintMenu/mintMenu.py", line 331, in PopulatePlugins
+            MyPlugin.do_plugin() 
+          File "/usr/lib/linuxmint/mintMenu/plugins/applications.py", line 1331, in do_plugin
+            self.Todos() 
+          File "/usr/lib/linuxmint/mintMenu/plugins/applications.py", line 585, in Todos
+            self.buildButtonList() 
+          File "/usr/lib/linuxmint/mintMenu/plugins/applications.py", line 605, in buildButtonList
+            self.updateBoxes(False) 
+          File "/usr/lib/linuxmint/mintMenu/plugins/applications.py", line 1742, in updateBoxes
+            sortedApplicationList.sort() 
+        UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+
+16 Total (started at 82 ;))
 ---------------------------
+
+    - w32codecs, w64codecs, libdvdcss2 (previously hosted by medibuntu) are not in the repositories.
 
 
 =======================================================================

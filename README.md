@@ -1,12 +1,7 @@
 =======================================================================
 Bugs found in Mint 15 RC
 =======================================================================
-         
-1 MDM 
------
-    
-    - Enable remote logins via XDMCP causes Xauthority error dialog on login.
-                 
+                        
 5 Cinnamon 
 -----------        
     - Screensaver: doesn't forget away_message
@@ -15,13 +10,12 @@ Bugs found in Mint 15 RC
     DONE - the audio input level monitor in the cinnamon settings is incredibly hard to see.
     DONE - Settings: cinnamon-settings user-accounts --> segmentation fault
                        
-2  System  
+1  System  
 ----------
     
-    - Update mint-mdm-themes with newer themes
     - Install smplayer2 for DVD playback?
 
-5 New
+3 New
 -----
     - The networking module can't create a new mobile broadband connection: https://bugs.launchpad.net/linuxmint/+bug/1182511. It simply stops at ‘add new connection’.
         I have tried Ubuntu 13.04 with Cinnamon desktop on that very same laptop and it does everything perfectly, like Mint 14, 13 & 12 used to do before.  I had to go over network connections from the settings to add my external 3g modem connection.
@@ -29,12 +23,8 @@ Bugs found in Mint 15 RC
     - No EFI El-Torito entry in the ISO. Verified with "dumpet -i file.iso". Ubuntu can boot on UEFI. Mint only has 0×00, so it only boots on BIOS(or CSM for UEFI) but not UEFI.
         
     - updating of the mockturtl-Wheater-applet does not work. I get this error-message: An error occurred during installation or updating. You may wish to report this incident to the developer of weather@mockturtl. If this was an update, the previous installation is unchanged Details: ‘ascii’ codec can’t decode byte 0xc3 in position 12: ordinal not in range(128) 
-    
-    - Add skype 4.2 to repos.
 
-    - Nemo 1.8 is crash with segmentation fault. I use it Turkish locale. If I run following code, Nemo not crash. env LC_ALL=C nemo    
-
-13 Total (started at 82 ;))
+9 Total (started at 82 ;))
 ---------------------------
 
     - w32codecs, w64codecs, libdvdcss2 (previously hosted by medibuntu) are not in the repositories.

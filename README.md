@@ -14,15 +14,7 @@ Bugs found in Mint 15 RC
     - The networking module can't create a new mobile broadband connection: https://bugs.launchpad.net/linuxmint/+bug/1182511. It simply stops at ‘add new connection’.
         I have tried Ubuntu 13.04 with Cinnamon desktop on that very same laptop and it does everything perfectly, like Mint 14, 13 & 12 used to do before.  I had to go over network connections from the settings to add my external 3g modem connection.
     DONE - the audio input level monitor in the cinnamon settings is incredibly hard to see.
-
-
-2 Cinnamon Screensaver
-----------------------
-    
-    - Screensaver: doesn't forget away_message
-    - Screensaver: after suspend, the screensaver does not appear and doesn’t ask for a password.
-
-                       
+                     
 2  System
 ---------
     
@@ -30,7 +22,7 @@ Bugs found in Mint 15 RC
     - No EFI El-Torito entry in the ISO. Verified with "dumpet -i file.iso". Ubuntu can boot on UEFI. Mint only has 0×00, so it only boots on BIOS(or CSM for UEFI) but not UEFI.
             
 
-8 Total (started at 82 ;))
+6 Total (started at 82 ;))
 ---------------------------
 
     - w32codecs, w64codecs, libdvdcss2 (previously hosted by medibuntu) are not in the repositories.

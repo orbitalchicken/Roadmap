@@ -1,0 +1,296 @@
+Topics:
+
+- General questions
+
+Actions:
+
+- @clem: add dependencies to Mint packaging for cinnamon in 1.8.x
+- @clem: update nemo's translations in 1.8.x
+- @clem: check all pull requests and finalize 1.8.x before 1.9 starts on the 1st June.
+
+Logs: 
+
+<clem> Welcome everyone to this week's meeting
+* autarkper (pang@SpotChat-hdol0m.cust.tele2.se) a rejoint #linuxmint-dev
+<clem> there are no defined topics for this week
+<glebihan> hi 
+<autarkper> hi
+<clem> there's a couple of things I'd like to talk about though...
+<clem> 1. l10n quality checking
+<clem> 2. package dependencies in cinnamon
+<clem> 3. start of 1.9 development
+<clem> I'll tackle them in reverse order ... :)
+<clem> #3... as promised, we'll start developing 1.9 on the master branch on the 1st of June
+<clem> this week-end basically
+<clem> so if you're already bored and waiting for this to happen, it's only a matter of days :)
+<clem> #2, regarding dependencies... the biggest issue imo is the fact that cinnamon doesn't depend on cinnamon-common
+<clem> and that some muffin packages necessary for cinnamon to work aren't in the deps either
+<clem> I think that's something we should fix in 1.8.x
+* AlbertP (albert@SpotChat-aofquv.solcon.nl) a rejoint #linuxmint-dev
+<clem> #1, regarding l10n... we have bad translations in Nemo (in Turkish) and that makes Nemo segfaults when Turkish users copy files...
+<clem> ideally we would test the quality of po or mo files within our packaging and the packages would not build if a problem was found
+<clem> that's something we can address in 2.0, and in the meantime Nemo should get newer translations in 1.8.x
+<clem> I'm putting two actions on myself:
+<clem> - adding dependencies to Mint packaging for cinnamon in 1.8.x
+<clem> - updating nemo's translations in 1.8.x
+<clem> that's it from me :)
+<clem> any comments? questions?
+<mtwebster> clem: are you talking about make some sort of parse tool to check translation files?
+<clem> mtwebster: yes, either that or using a gettext tool (if there's one that's suitable)
+<clem> mtwebster: the main thing would be for arguments to match
+<mtwebster> ie decompile .mo then check result file for validity
+<clem> mtwebster: for instance yes
+<d[-_-]b> can't you simply grep that?
+<clem> d[-_-]b: msgunfmt produces the po output afaik
+<clem> I'd also like to simplify how we package translations...
+<clem> it's a real pita to update each package like that
+<clem> in Mint none of the tools ship with their translations, they all use mint-translations
+<clem> in Cinnamon, we've got translations in nemo, in cinnamon, etc etc... and the more tools we support the more work that's going to be
+<d[-_-]b> clem: well you could use a tool that allows translators to push translations into version control directly
+<clem> d[-_-]b: you'd still need to bump the versions and package it up
+<clem> d[-_-]b: you'd lose the ability to freeze content too
+<clem> that's a question we don't need to ask ourselves right now... but within the 2.0 cycle, we should consider whether it makes sense to simplify l10n
+<d[-_-]b> then how do other projects handle it?
+<clem> the way we do now
+<clem> it's tedious though
+<clem> when I upgrade translations, I basically take them from LP and update nemo, cinnamon, mdm, mint-translations
+* DarkEra est parti (Quit: Leaving)
+<clem> and that's ok... but tomorrow if I need to do it for each cinnamon component (ccc, csd, screensaver, etc etc..), I don't know...
+<clem> at some stage I don't really care about people running nemo 1.6 with cinnamon 1.8 or running nemo without cinnamon
+<clem> at some stage it might make more sense to simply have cinnamon translations, and all cinnamon components use the cinnamon gettext domain
+<d[-_-]b> so if you could just upgrade the version control with a single click that would make things easier? i'm not sure bout putting everything together
+<AlbertP> I'm sorry but I need to help somebody else with a computer problem. I have to go now.
+<clem> the only gain we get from having it the way it is now, is that all components include their own translations... and are thus usable individually
+<clem> that's not something we should really care about though, since they were developed for the sole reason to make cinnamon better
+* AlbertP est parti (Quit: Ik ga weg)
+<d[-_-]b> i personally would prefer to keep it that way. i would find it weird if someone decided to use nemo on unity and can't because translations are missing
+* Oscar799 est parti (Quit: Leaving)
+<clem> d[-_-]b: they could
+<glebihan> d[-_-]b, translations wouldn't be misssing
+<clem> d[-_-]b: but it would show up in English
+<clem> d[-_-]b: or they'd have to install cinnamon as well (which is already the case I think)
+<d[-_-]b> now who of you is right?
+<glebihan> d[-_-]b, they would have to install cinnamon-translations (or something like that)
+<d[-_-]b> glebihan: i see. seems not right to me in a way
+<clem> d[-_-]b: why not?
+<glebihan> d[-_-]b, as clem mentioned, we're developing as a part of cinnamon, if some people want to use it outside of cinnamon, that's their choice
+<glebihan> developing *nemo*
+<d[-_-]b> because you will have to install things you don't really need
+<glebihan> if it's only a translations packages, I don't see what the problem is
+<d[-_-]b> glebihan: i know. but thinking what might happen sometime in the future. let's say people decide to fork certain stuff
+<glebihan> d[-_-]b, let them deal with that then
+<clem> d[-_-]b: indeed, but we've never portrayed any of the cinnamon components as independent software developed for the Linux community
+<briand> fwiw, i agree...  seems to make more sense to do the translations once, rather than for each and every component
+<clem> d[-_-]b: in a way we let cinnamon be portrayed like that, but not nemo, not the cinnamon-screensaver (which even wears the name)
+<clem> so if tomorrow I hear some unity users replaced gnome-screensaver with cinnamon-screensaver, that's great.. but they're on their own
+<clem> because I won't have them in mind in my design
+<clem> that's not a responsibility we ever accepted
+<briand> like glebihan said, they just download/install cinnamon-translations as well, and they should be fine in that regard
+<clem> note also that this is mostly a packaging thing
+<d[-_-]b> clem: but it's only to make life easier right? if there was a chance to develop everything with its own translation at the same amount of work you would do that?
+<clem> Mint might use cinnamon-translations while fedora say, might continue to ship translations as part of nemo/cinnamon-common/ etc...
+<clem> d[-_-]b: I wouldn't break things for people without reasons, whether it's within our outside my audience
+<d[-_-]b> clem: ok so the translations will still come seperated (lets say seperated po's)
+<clem> d[-_-]b: updating translations at the moment is ok... I don't do it very often because it's a bit of a pain... but if we continue to develop more tools, at some stage I'll want to factorize
+<d[-_-]b> and no possibility to put them all to packages automatically?
+<clem> d[-_-]b: from a pure pragmatic point of view too... a translation package is an all package... it doesn't need compiling.
+<clem> d[-_-]b: so it's much easier to maintain
+<clem> d[-_-]b: right now for instance I'd much prefer to update cinnamon-translations than to release a new nemo
+<clem> d[-_-]b: from LP to github directly?
+<d[-_-]b> eg
+<clem> d[-_-]b: it can be done from LP to bazaar I think, but I'm not really interested in that
+<d[-_-]b> clem: eg pootle can do that
+<clem> d[-_-]b: I can also automate it on my end, but it's more a problem of maintaining multiple translations than the fact that it's manual
+<clem> d[-_-]b: having new translations should translate as having new translations... not a new nemo, a new screensaver, a new cinnamon etc..
+<clem> anyway, food for thought, let's talk about this later when we get into 2.0
+<d[-_-]b> i totally agree with that. i thought it was if there are nemo-translation and screensaver-translation or just cinnamon-translation
+<clem> any other questions/topics/remarks/comments?
+<d[-_-]b> just a quick note: the missing translations for synaptic are done already. but they don't get reviewed for whatever reason
+<clem> d[-_-]b: in what language?
+<d[-_-]b> german
+<clem> d[-_-]b: wait, synaptic.. we don't maintain these
+<clem> d[-_-]b: that's part of either synaptic or language-packs
+<d[-_-]b> i know. just because i recognised they were missing (that's why i asked mtwebster earlier)
+<clem> ok
+<autarkper> clem: last week I think you said you were going to have a look at https://github.com/linuxmint/Cinnamon/pull/2048, or am I mistaken?
+<clem> autarkper: you're right :)
+<clem> autarkper: I'll add an action on myself for this
+<autarkper> clem: I'm not insisting personally
+<clem> autarkper: hehe :)
+<clem> autarkper: I'll have a look and probably push it to 1.8.x
+<mtwebster> there are a number of others that are probably good for 1.8
+<autarkper> clem: sounds good
+<clem> I'll have a look
+<clem> I'm not as much in a hurry to get them in as before, as you probably know Mint 15 is on its way
+<clem> the ISOs were approved and are syncing with mirrors as we speak
+<clem> so the ETA for these is this week-end, since we start 1.9 on the 1st
+<d[-_-]b> did cinnamon-translations make it in?
+<clem> d[-_-]b: no, that's 2.0
+* acewin est parti (Ping timeout: 121 seconds)
+<clem> d[-_-]b: it's the first time we dicussed it
+<clem> discussed
+<d[-_-]b> discussed what?
+<clem> d[-_-]b: factorizing translations
+<glebihan> clem, you say the ISOs are syncing ? I don't see them on heanet ?
+<d[-_-]b> clem: sorry i don't get it. so the translations eg for cinnamon-settings do not get in because there is no factorization yet?
+<clem> glebihan: they start at pub.linuxmint.com then go onto heanet
+<glebihan> clem, ok
+<clem> d[-_-]b: no, each package contains its own translations right now
+<d[-_-]b> clem: yes. i'm only asking if the translations that were missing for cinnamon got into the new iso's^^
+<d[-_-]b> (not talking about any cinnamon-translations package)
+* acewin (acewin@SpotChat-0te.ap6.217.98.IP) a rejoint #linuxmint-dev
+<clem> d[-_-]b: oh, no
+<clem> d[-_-]b: even the turkish segfault came too late
+<clem> d[-_-]b: they'll be available as updates though
+<d[-_-]b> ok
+<clem> I don't know if you've all followed the feedback on Mint 15 RC, but it's been really impressive
+<clem> I've never seen so much positive vibes personally
+<mtwebster> it should be easy to make sure tokens match up.  I would think launchpad would complain if quotes mismatch
+<mtwebster> but i don't know for sure
+<mtwebster> there's a python lib - polib, that lets you parse through po and mo files, i'm messing with it now
+<clem> some people had no sound, others had no bumblebee, couldn't join hidden essid networks and so on... we had bad critical issues...
+<clem> yet people didn't mind too much
+<d[-_-]b> because it's sexy
+<clem> 1.8 brought its fair share of new features, but I think the big thing here is that it's more tightly integrated than before
+<clem> it's not just a shell anymore
+<clem> nemo isn't just better now, it looks better
+<clem> and there's screensaver, control center modules, desklets... you really feel like you're running a DE
+<clem> even though you aren't... yet
+<clem> mtwebster: in the case of nemo's TR po, I think it was because of quotes..
+<clem> mtwebster: afaik the arguments matched and to me even the quotes looked fine
+<mtwebster> clem: the args are reversed
+<clem> mtwebster: let me find the string..
+<mtwebster> the quotes are fine
+<mtwebster> 38651:msgid "Moving file %'d of %'d (in \"%B\") to \"%B\""
+<mtwebster> 38704-msgstr "Dosya(\"%B\") 'den \"%B\" 'ye  ta..n.yor %'d / %'d"
+<clem> msgid "Moving file %'d of %'d (in \"%B\") to \"%B\""
+<clem> msgstr "Dosya(\"%B\") 'den \"%B\" 'ye  taşınıyor %'d / %'d"
+<clem> hehe :)
+<mtwebster> %B is a custom token, of a string
+<d[-_-]b> mtwebster: why is it done with %s and so on? i know in libreoffice they do it like ($HEIGHT)x($WIDTH). so you can push args around as you like
+<clem> I don't understand why it fails
+<mtwebster> clem: because it's putting an integer where it expects a string
+<mtwebster> and vise versa
+<clem> mtwebster: why?
+<glebihan> because our  l10n strings aren't good
+<mtwebster> the argument list is unchanged (, int, int, string, string)
+<mtwebster> but our tokens in the translated string are string, string, int, int
+<glebihan> we should specify the argument index in the string
+<glebihan> ie %1$s instead of %s
+<clem> well we can name them right?
+<d[-_-]b> look at my post?
+<clem> in python you can %(somename)s
+<mtwebster> not sure
+<glebihan> clem, should be possible, I've never used that, i always use indexes
+* chattr est parti (Connection closed)
+* chattr (regnad_kcin@old.same.place) a rejoint #linuxmint-dev
+<glebihan> d[-_-]b, that's messy
+<d[-_-]b> glebihan: well it avoids the problem.
+<clem> _("%(mystring)s blah %(myint)d" % {mystring: myval; myint: 2})
+<clem> we use dicts in python for that
+<glebihan> d[-_-]b, it's also much more trouble code-wise, when there are native solutions to workround it
+* shantorn (Shantorn@SpotChat-6jgom3.cust.wildblue.net) a rejoint #linuxmint-dev
+<d[-_-]b> glebihan: i don't think they invented it on their own like that on libreoffice..
+<clem> actually, my example is broken :))
+<clem> but heh, we use dicts anyway :)
+<glebihan> d[-_-]b, maybe they did, maybe they didn't, it's still messy
+<glebihan> d[-_-]b, that would mean we stop using gettext functions and rely on some replace function
+<mtwebster> regardless how we solve it, we have to make sure translators understand, and have a way to check mo files
+<clem> mtwebster: so you're saying any language where the arguments aren't in the same order is going to produce segfaults if they're of different types?
+<mtwebster> the check utility is simple to do, explaining to translators i dunno
+<mtwebster> clem: yes, it doesn't know any different
+<clem> omg...
+<mtwebster> you're giving it an int where it expects a string
+<mtwebster> it makes perfect sense to me :)
+<clem> you should have been born a computer mtwebster 
+<mtwebster> lol
+<glebihan> clem, but that's because using several arguments in an l10n string without indexes is bad practise
+<clem> segfaulting in the user's face is considered bad manner too :)
+<d[-_-]b> and even if you add indices noone will ever know what will be inserted (you can only guess)
+<clem> right, we need to fix that in 2.0 :)
+<clem> we can't go on using unnamed/unindexed args in the same l10n string :)
+<glebihan> clem, right, but even if the arguments were of the same type, it would still be an issue. There wouldn't be segfaults, but words in the wrong order
+<clem> glebihan: yes, that much more ok though
+<glebihan> clem, agreed
+<clem> progress: 100 out of 34 files were copied so far.. 
+<clem> in the mint tools there are occurences like that...
+<clem> some are named others aren't
+<clem> python doesn't care about types as much though
+<clem> so it's more a problem for translators than for us
+<mtwebster> yeah python just tries to make sense of it
+* autarkper est parti (Ping timeout: 121 seconds)
+<clem> ok let's tackle these in 2.0, for now I'll update the translations for nemo
+<glebihan> d[-_-]b, they will know just as well as they do now
+<clem> the Turkish translators basically turned their sentence around to match our argument order...
+<d[-_-]b> glebihan: yes. that's part of the problem
+<clem> it probably sounds weird in Turkish now, but at least they'll get to read something :)
+* kaie (kaie@SpotChat-sot7hh.dip0.t-ipconnect.de) a rejoint #linuxmint-dev
+<glebihan> d[-_-]b, well, translating always requires to know where the strings are being used, you can't just blindly translate without seeing the applicaiton
+<clem> until another translator "fixes" it and it segfaults again :)
+<glebihan> d[-_-]b, I don't see that as a problem, it's just how it is
+<d[-_-]b> glebihan: it's still slower than if you knew what the arguments mean directly
+<clem> mtwebster: you want to talk about csd?
+<mtwebster> clem: sure
+<glebihan> d[-_-]b, not really, because you often can't know what a sentence means outside of its context (whether there are arguments or not)
+<mtwebster> i've got it operational in mint 15, and it compiles in lmde.  I have branches for nemo, cinnamon, cinnamon-control-center that implement changes to use c-s-d instead of g-s-d
+<mtwebster> i'm going to start work on porting media keys into cinnamon
+<clem> same with people, to be taken within their context... some guys around here don't make any sense outside of the pub for instance, we tried to talk a few times, and we always ended up agreeing we'd meet in the pub instead...
+<glebihan> lol
+<clem> mtwebster: so, one we use csd... other than gnome-session, are we still using any part of GNOME?
+<mtwebster> clem: gnome-desktop is used a great deal - that's mostly libraries though
+<mtwebster> i don't think we need to fork at this point
+<clem> mtwebster: these are utility libs, if they don't change often there's no need to fork them
+<clem> mtwebster: I don't know if they do though
+<clem> if we look at the issues we had with arch/fedora, we're mostly talking GSD... and then after there's regressions in what? gjs? cogl, clutter?
+<mtwebster> i haven't been able to get c-s-d actually start with the session in lmde - i don't know enough about debian though, it seems /etc/xdg/autostart isn't used
+<mtwebster> clutter, gjs so far i think
+<clem> mtwebster: no, it shouldn't use it
+<clem> mtwebster: the session starts components according to their session tags (in their desktop file)
+<clem> mtwebster: I'm definitely having a look at gnome-session to see if we're better off having our own session though...
+<mtwebster> well - it's behaving differently than ubuntu, regardless
+<clem> mtwebster: not necessarily a fork of gnome-session.. it could be a simple binary or even a script to start the cinnamon session
+<mtwebster> for now, I'm having cinnamon call itself "X-Cinnamon" in the session startup, that prevents gnome-s-d from starting
+<mtwebster> then in main.c of cinnamon, I re-set XDG_CURRENT_DESKTOP back to GNOME so we get our applications back
+<clem> mtwebster: that's got "ditch gnome-session" written all over it
+<mtwebster> the only regression i've seen is the gnome-keyring stuff
+<mtwebster> i.e. it's asking me to unlock it when i fire up chromium
+<mtwebster> but that's probably something simple
+<mtwebster> and to do with my session name not being GNOME
+<mtwebster> anyhow, i wanted to get a head start on this for 2.0.  and so far it's been a good decision to fork it, imo
+<clem> oh yes, I don't think there's a choice here
+<mtwebster> it'll eliminate a lot of fixes currently in that gnome-3.8 rollup also
+<mtwebster> eliminate the need for i mean
+<clem> it's the weakest point in Cinnamon at the moment, it makes no sense to use the GNOME backend
+<clem> long term it means we're going to have to maintain these configuration tools of course
+<mtwebster> i've got a cinnamon-settings-daemon branch in my nemo, cinnamon, and cinnamon-control-center repos on github
+<clem> so that's more work for us, but we can all agree on the fact that some of them suck, so that's an opportunity to improve things as well
+<mtwebster> yes
+<clem> I wouldn't mind downgrading some actually... the printers module for instance
+<clem> or porting the simple ones to python
+<clem> anyway, we've got 6 months for all that :)
+<mtwebster> i planned on porting media-keys and the OSD popups to cinnamon
+<clem> well, we need to talk about the panel
+<clem> whether we want one or not
+<clem> and what that means to things like OSD and all
+<mtwebster> what panel?
+<clem> a gtk panel that works when cinnamon crashes
+<clem> at the moment it's called gnome-panel
+<mtwebster> oh yeah
+<clem> CSD would run everywhere whereas cinnamon would only work on some specs
+<clem> so there's pros and cons to porting things to cinnamon
+* kaie est parti (Quit: Leaving)
+<mtwebster> how critical is osd if you're in emergency mode though?
+<clem> also, people might want to use CSD with unity
+<clem> :))
+<clem> I'm kidding... :)) I heard the same joke about nemo though
+<d[-_-]b> *not laughing at all :P*
+<mtwebster> well that's perfectly valid :)
+* o0ze (ooze@lookup.failed) a rejoint #linuxmint-dev
+* o0ze est parti (Connection closed)
+<clem> mtwebster: without OSD you cant' see the name of the song you're playing.. I'd say that's pretty CRITICAL! :)
+<glebihan> yes, because : oh my desktop just crashed, I'm in some kind of fallback mode, let me listen to some music while I fix that (and don't you dare telling me I won't see which song is playing)
+<clem> mtwebster: I don't know about you but I'd rather use OSD than Shazam when my computer plays a song I like...
+* d[-_-]b est parti (Quit: Leaving.)
+<clem> anyway, I guess we can discuss this outside the meeting :))
+<mtwebster> lol
+<clem> thanks everybody for being here, see you all at the next meeting ;)

@@ -5,7 +5,6 @@ Bugs found in Mint 15 RC
 2  System
 ---------
     
-    - Install smplayer2 for DVD playback?
     - No EFI El-Torito entry in the ISO. Verified with "dumpet -i file.iso". Ubuntu can boot on UEFI. Mint only has 0×00, so it only boots on BIOS(or CSM for UEFI) but not UEFI.
             
 
@@ -13,6 +12,8 @@ Bugs found in Mint 15 RC
 ---------------------------
 
     - w32codecs, w64codecs, libdvdcss2 (previously hosted by medibuntu) are not in the repositories.
+
+    - Now I need to explicitly state “apt-get install skype:i386″ if I want to upgrade to skype 4.2 from the Mint repo, or either apt-get won’t know it can be updated. Since this is not the same package, apt-get will also want to remove skype and skype-bin:i386.
 
 
 =======================================================================

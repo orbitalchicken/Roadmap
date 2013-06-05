@@ -3,7 +3,8 @@ MDM
     
     - Performance improvements
     - HTML Greeter: When there's a lot of languages the whole theme itself gets a scrollbar instead of just the language menu
-    
+    - Allow password-only login (for single user) and/or remember last user
+
 Mint 16
 -------
 
@@ -12,6 +13,7 @@ Mint 16
     - update ubiquity-slideshow (mentions vlc, giver, pdf printer etc..)
     - Review mintupdate design
     - Review mintbackup design
+    - Consider default installation using separate home/root partitions - figure a nice formula, root must be minimum up to xx%, remaining home.  We could possibly offer a pseudo-upgrade path which installs a fresh system, but also reinstalls existing programs and user(s) during installation.
 
 Cinnamon 2.0
 ------------

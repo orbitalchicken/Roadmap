@@ -19,5 +19,4 @@ Cinnamon 2.0
     - Review all outstanding pull requests
     - Review translations within cinnamon-translations and warnings from mocheck    
     - Critical: crashes when switching users and coming back
-    - Critical: crashes on DND (Steam fix) and considers HUD as window  
     - Date format: The Clock applet should show the date in the user's locale by default. Bonus points for making it customizable.

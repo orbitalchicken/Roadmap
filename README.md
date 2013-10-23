@@ -53,7 +53,7 @@ Package selection
 	[Fixed] Remove ndisgtk
 	Remove zeitgeist and activity log manager
 	Remove unity
-	Remove gparted post-install
+	[Fixed] Remove gparted post-install
 	[Fixed] Remove olivia backgrounds
 	[Fixed] Remove aptoncd
 	Hide OpenJDK Java7 Policy Tool and IcedTea Web Control Panel from menus
@@ -92,6 +92,7 @@ Cinnamon
 	Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
 	User applet : clicking on avatar/name should launch « cinnamon-settings user »
 	update cinnamon-translations
+	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."
 
 MATE
 ----
@@ -100,13 +101,13 @@ MATE
 	
 GNOME/GTK
 ---------
-	Fix fugly menus in gnome-calc
-	Fix fugly menus in evince
-	Fix fugly menus in file-roller
-	Fix fugly menus in gnome-disks
-	Fix fugly menus in font viewer
-	Fix fugly menus in system logs
-	Fix fugly menus in system monitor
+	gcalctool downgraded to 6.4.1.1 (menubar regression)
+	evince downgraded to 3.6 (menu + UI regressions)
+	file-roller downgraded to 3.6 (menubar)
+	gnome-disk-utility downgraded to 3.0.2 (UI regression)
+	gnome-system-log downgraded to 3.4 (menu + UI)
+	gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
+	baobab downgraded to 3.4Fix fugly menus in gnome-calc	
 	
 Mint Tools
 ----------

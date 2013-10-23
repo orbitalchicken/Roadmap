@@ -82,9 +82,9 @@ Cinnamon
 --------
 	Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
 	Cinnamon-screensaver : date is not 12H.
-	Applet API : put a gap between icon and text in TextIconApplet
+	[Fixed in git] Applet API : put a gap between icon and text in TextIconApplet
 	[Fixed] Cinnamon-screensaver shows last used custom msg when activated by csd
-	changing panel size resets the menu icon
+	[Fixed in git] changing panel size resets the menu icon
 	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)
 	Show week numbers should be in calendar's settings, not in cinnamon-settings
 	Calendar would be better named Date and Time and use the Faenza icon for it

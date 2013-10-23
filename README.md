@@ -92,6 +92,11 @@ Cinnamon
 	Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
 	User applet : clicking on avatar/name should launch « cinnamon-settings user »
 	update cinnamon-translations
+
+MATE
+----
+	nm-applet isn't started automatically
+	x-caja-desktop windows bug at session start
 	
 GNOME/GTK
 ---------

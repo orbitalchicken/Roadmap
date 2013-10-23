@@ -102,13 +102,12 @@ MATE
 	
 GNOME/GTK
 ---------
-	gcalctool downgraded to 6.4.1.1 (menubar regression)
+	extend Canonical patch to all DE for gnome-calculator (menubar regression)
 	evince downgraded to 3.6 (menu + UI regressions)
 	file-roller downgraded to 3.6 (menubar)
 	gnome-disk-utility downgraded to 3.0.2 (UI regression)
 	gnome-system-log downgraded to 3.4 (menu + UI)
 	gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
-	baobab downgraded to 3.4
 	
 Mint Tools
 ----------

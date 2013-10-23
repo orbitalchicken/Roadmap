@@ -47,15 +47,15 @@ Look and Feel
 	
 Package selection
 -----------------
-	Remove lintian
+	[Fixed] Remove lintian
 	Remove yelp or hide « Help » in menu
-	Remove gnome-control-center
+	[Fixed] Remove gnome-control-center
 	[Fixed] Remove ndisgtk
 	Remove zeitgeist and activity log manager
 	Remove unity
 	Remove gparted post-install
-	Remove olivia backgrounds
-	Remove aptoncd
+	[Fixed] Remove olivia backgrounds
+	[Fixed] Remove aptoncd
 	Hide OpenJDK Java7 Policy Tool and IcedTea Web Control Panel from menus
 	Remove ubuntu-system-settings
 	

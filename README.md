@@ -44,6 +44,7 @@ Look and Feel
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons
 	Mintupdate : update icons
 	In cinnamon-settings many widgets have a darker background
+	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough        
 	
 Package selection
 -----------------
@@ -94,6 +95,7 @@ Cinnamon
 	update cinnamon-translations
 	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."
 	[Fixed in git] background draw faulty in VB
+	panel hides during gksu dialogs
 
 MATE
 ----

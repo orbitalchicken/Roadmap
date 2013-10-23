@@ -83,7 +83,7 @@ Cinnamon
 	Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
 	Cinnamon-screensaver : date is not 12H.
 	Applet API : put a gap between icon and text in TextIconApplet
-	Cinnamon-screensaver shows last used custom msg when activated by csd
+	[Fixed] Cinnamon-screensaver shows last used custom msg when activated by csd
 	changing panel size resets the menu icon
 	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)
 	Show week numbers should be in calendar's settings, not in cinnamon-settings
@@ -93,6 +93,7 @@ Cinnamon
 	User applet : clicking on avatar/name should launch « cinnamon-settings user »
 	update cinnamon-translations
 	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."
+	[Fixed in git] background draw faulty in VB
 
 MATE
 ----
@@ -107,10 +108,11 @@ GNOME/GTK
 	gnome-disk-utility downgraded to 3.0.2 (UI regression)
 	gnome-system-log downgraded to 3.4 (menu + UI)
 	gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
-	baobab downgraded to 3.4Fix fugly menus in gnome-calc	
+	baobab downgraded to 3.4
 	
 Mint Tools
 ----------
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
+	[Fixed in git] mintwelcome crashes

@@ -15,8 +15,8 @@ Infra
 	
 ISO	
 ---
-	CAPS in isolinux
-	CAPS in ISO name
+	[Fixed] CAPS in isolinux
+	[Fixed] CAPS in ISO name
 	
 MDM
 ---	
@@ -50,7 +50,7 @@ Package selection
 	Remove lintian
 	Remove yelp or hide « Help » in menu
 	Remove gnome-control-center
-	Remove ndisgtk
+	[Fixed] Remove ndisgtk
 	Remove zeitgeist and activity log manager
 	Remove unity
 	Remove gparted post-install

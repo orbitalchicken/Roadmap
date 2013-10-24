@@ -97,10 +97,10 @@ Cinnamon
 	[Fixed] Cinnamon-screensaver shows last used custom msg when activated by csd
 	Cinnamon-screensaver : date is not 12H.	
 	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)
-	Show week numbers should be in calendar's settings, not in cinnamon-settings
+	[Fixed in git] Show week numbers should be in calendar's settings, not in cinnamon-settings
 	Calendar would be better named Date and Time and use the Faenza icon for it
-	Cinnamon-settings : Firewall should be in Administration section
-	Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
+	[Fixed in git] Cinnamon-settings : Firewall should be in Administration section
+	[Fixed in git] Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
 	User applet : clicking on avatar/name should launch « cinnamon-settings user »
 	update cinnamon-translations
 	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	

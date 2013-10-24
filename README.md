@@ -104,6 +104,7 @@ Cinnamon
 	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	
 	panel hides during gksu dialogs
 	mintupload file-uploader icon in alt-tab is pixelated
+	snapped/tiled window keep rounded corners against the edge
 
 MATE
 ----

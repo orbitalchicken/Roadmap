@@ -44,19 +44,20 @@ Look and Feel
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons
 	Mintupdate : update icons
 	In cinnamon-settings many widgets have a darker background
-	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough        
+	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough   
+	mint-themes-gtk3: No padding in context menu leads to accidental operations     
 	
 Package selection
 -----------------
 	[Fixed] Remove lintian
-	Remove yelp or hide « Help » in menu
 	[Fixed] Remove gnome-control-center
 	[Fixed] Remove ndisgtk
-	Remove zeitgeist and activity log manager
-	Remove unity
 	[Fixed] Remove gparted post-install
 	[Fixed] Remove olivia backgrounds
 	[Fixed] Remove aptoncd
+	Remove yelp or hide « Help » in menu	
+	Remove zeitgeist and activity log manager
+	Remove unity	
 	Hide OpenJDK Java7 Policy Tool and IcedTea Web Control Panel from menus
 	Remove ubuntu-system-settings
 	
@@ -69,7 +70,7 @@ Missing
 	
 System
 ------	
-	Power button shuts down computer instead of showing quit dialog
+	Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there)
 	Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
 	Add missing search engines
 	xhost+ and ctrl_alt_backspace have no description in xdg autostart
@@ -78,14 +79,21 @@ System
 	Update mint-translations
 	Upgrade webkitgtk to v2.x
 	Update mint-mirrors
+	command-not-found looks in /etc/apt/sources.list, should be fixed
+	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)
+	ll alias to ls
+	Move adjustment for ATI amdccle from KDE to all editions?
+	ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
+	Add libimobiledevice-utils and ifuse?
 	
 Cinnamon
 --------
-	[Fixed in git] Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
-	Cinnamon-screensaver : date is not 12H.
-	[Fixed in git] Applet API : put a gap between icon and text in TextIconApplet
+	[Fixed] Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
+	[Fixed] Applet API : put a gap between icon and text in TextIconApplet
+	[Fixed] changing panel size resets the menu icon
+	[Fixed] background draw faulty in VB
 	[Fixed] Cinnamon-screensaver shows last used custom msg when activated by csd
-	[Fixed in git] changing panel size resets the menu icon
+	Cinnamon-screensaver : date is not 12H.	
 	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)
 	Show week numbers should be in calendar's settings, not in cinnamon-settings
 	Calendar would be better named Date and Time and use the Faenza icon for it
@@ -93,30 +101,35 @@ Cinnamon
 	Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
 	User applet : clicking on avatar/name should launch « cinnamon-settings user »
 	update cinnamon-translations
-	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."
-	[Fixed in git] background draw faulty in VB
+	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	
 	panel hides during gksu dialogs
+	mintupload file-uploader icon in alt-tab is pixelated
 
 MATE
 ----
 	nm-applet isn't started automatically
 	x-caja-desktop windows bug at session start
+	use generic names in MATE packages
+
+KDE
+---
+	In "system-config-samba" desktop file needs to use kdesudo and needs to be shown in KDE
 	
 GNOME/GTK
 ---------
-	[Fixed in git] extend Canonical patch to all DE for gnome-calculator (menubar regression)
-	[Fixed in git] evince downgraded to 3.6 (menu + UI regressions)
-	[Fixed in git] file-roller downgraded to 3.6 (menubar)
-	[Fixed in git] gnome-disk-utility downgraded to 3.0.2 (UI regression)
-	[Fixed in git] gnome-system-log downgraded to 3.4 (menu + UI)
-	[Fixed in git] gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
-	[Fixed in git] gedit icon in about dialog
-	[Fixed in git] gedit generic name in menu
+	[Fixed] extend Canonical patch to all DE for gnome-calculator (menubar regression)
+	[Fixed] evince downgraded to 3.6 (menu + UI regressions)
+	[Fixed] file-roller downgraded to 3.6 (menubar)	
+	[Fixed] gnome-system-log downgraded to 3.4 (menu + UI)
+	[Fixed] gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
+	[Fixed] gedit icon in about dialog
+	[Fixed] gedit generic name in menu
 	gnome-terminal resets position / crashes when cinnamon restarts
 	
 Mint Tools
 ----------
+	[Fixed] mintwelcome crashes
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
-	[Fixed in git] mintwelcome crashes
+	

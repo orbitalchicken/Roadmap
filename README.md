@@ -81,7 +81,7 @@ System
 	
 Cinnamon
 --------
-	Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
+	[Fixed in git] Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
 	Cinnamon-screensaver : date is not 12H.
 	[Fixed in git] Applet API : put a gap between icon and text in TextIconApplet
 	[Fixed] Cinnamon-screensaver shows last used custom msg when activated by csd

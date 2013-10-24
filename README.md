@@ -46,6 +46,8 @@ Look and Feel
 	In cinnamon-settings many widgets have a darker background
 	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough   
 	mint-themes-gtk3: No padding in context menu leads to accidental operations     
+	nemo: when renaming a file, the extension is hard to read
+	dialog windows use symbolic icons (to reproduce: connect to ssh in terminal, close terminal)
 	
 Package selection
 -----------------
@@ -55,11 +57,11 @@ Package selection
 	[Fixed] Remove gparted post-install
 	[Fixed] Remove olivia backgrounds
 	[Fixed] Remove aptoncd
-	Remove yelp or hide « Help » in menu	
-	Remove zeitgeist and activity log manager
-	Remove unity	
-	Hide OpenJDK Java7 Policy Tool and IcedTea Web Control Panel from menus
-	Remove ubuntu-system-settings
+	[Fixed] Remove yelp or hide « Help » in menu	
+	[Fixed] Remove zeitgeist and activity log manager
+	[Fixed] Remove unity	
+	[Fixed] Hide OpenJDK Java7 Policy Tool and IcedTea Web Control Panel from menus
+	[Fixed] Remove ubuntu-system-settings
 	
 Missing
 -------
@@ -108,7 +110,7 @@ Cinnamon
 
 MATE
 ----
-	nm-applet isn't started automatically
+	[Fixed] nm-applet isn't started automatically
 	x-caja-desktop windows bug at session start
 	use generic names in MATE packages
 

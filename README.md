@@ -111,7 +111,7 @@ GNOME/GTK
 	[Fixed in git] gnome-system-log downgraded to 3.4 (menu + UI)
 	[Fixed in git] gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
 	[Fixed in git] gedit icon in about dialog
-	gedit generic name in menu
+	[Fixed in git] gedit generic name in menu
 	gnome-terminal resets position / crashes when cinnamon restarts
 	
 Mint Tools

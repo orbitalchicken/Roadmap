@@ -13,11 +13,6 @@ Infra
 	Remove youtube from FF RSS feed ?
 	rel_notes point to rel_petra_cinnamon.php
 	
-ISO	
----
-	[Fixed] CAPS in isolinux
-	[Fixed] CAPS in ISO name
-	
 MDM
 ---	
 	2 mdm instances, one is fine, the other launches mdmKeepsCrashing
@@ -49,20 +44,6 @@ Look and Feel
 	nemo: when renaming a file, the extension is hard to read
 	dialog windows use symbolic icons (to reproduce: connect to ssh in terminal, close terminal)
 	
-Package selection
------------------
-	[Fixed] Remove lintian
-	[Fixed] Remove gnome-control-center
-	[Fixed] Remove ndisgtk
-	[Fixed] Remove gparted post-install
-	[Fixed] Remove olivia backgrounds
-	[Fixed] Remove aptoncd
-	[Fixed] Remove yelp or hide « Help » in menu	
-	[Fixed] Remove zeitgeist and activity log manager
-	[Fixed] Remove unity	
-	[Fixed] Hide OpenJDK Java7 Policy Tool and IcedTea Web Control Panel from menus
-	[Fixed] Remove ubuntu-system-settings
-	
 Missing
 -------
 	Mintify and pin unity-greeter
@@ -90,18 +71,13 @@ System
 	
 Cinnamon
 --------
-	[Fixed] Notifications show 2nd string twice. Reproduce with « notify-send 'Wireless Networks Available' 'Use the network menu to connect to one of them.' »
-	[Fixed] Applet API : put a gap between icon and text in TextIconApplet
-	[Fixed] changing panel size resets the menu icon
-	[Fixed] background draw faulty in VB
-	[Fixed] Cinnamon-screensaver shows last used custom msg when activated by csd
-	Cinnamon-screensaver : date is not 12H.	
-	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)
 	[Fixed in git] Show week numbers should be in calendar's settings, not in cinnamon-settings
-	Calendar would be better named Date and Time and use the Faenza icon for it
 	[Fixed in git] Cinnamon-settings : Firewall should be in Administration section
 	[Fixed in git] Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
-	User applet : clicking on avatar/name should launch « cinnamon-settings user »
+	[Fixed in git] User applet : clicking on avatar/name should launch « cinnamon-settings user »
+	[Fixed in git] Calendar would be better named Date and Time and use the Faenza icon for it
+	Cinnamon-screensaver : date is not 12H.	
+	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)	
 	update cinnamon-translations
 	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	
 	panel hides during gksu dialogs
@@ -120,18 +96,12 @@ KDE
 	
 GNOME/GTK
 ---------
-	[Fixed] extend Canonical patch to all DE for gnome-calculator (menubar regression)
-	[Fixed] evince downgraded to 3.6 (menu + UI regressions)
-	[Fixed] file-roller downgraded to 3.6 (menubar)	
-	[Fixed] gnome-system-log downgraded to 3.4 (menu + UI)
-	[Fixed] gnome-system-monitor downgraded to 3.6 with system tab removed (menu + UI)	
-	[Fixed] gedit icon in about dialog
-	[Fixed] gedit generic name in menu
+	Extend Canonical patch to all DE for gnome-calculator (menubar regression)
 	gnome-terminal resets position / crashes when cinnamon restarts
+	evince should be in accessories, not graphics and not office
 	
 Mint Tools
 ----------
-	[Fixed] mintwelcome crashes
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel

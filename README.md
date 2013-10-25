@@ -13,7 +13,6 @@ Infra
 	
 MDM
 ---	
-	[Fixed] 2 mdm instances, one is fine, the other launches mdmKeepsCrashing
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
 
 Possibly fixed by latest MDM (need to reproduce again)
@@ -43,9 +42,6 @@ Look and Feel
 	
 Missing
 -------
-	[Fixed] Add cinnamon-bluetooth
-	[Fixed] Add 32bit Flash support for Steam out of the box
-	[Fixed] Add lintian (gdebi shows the lintian tab whether it's installed or not, so better show techie info than an error message)
 	Mintify and pin unity-greeter
 	Support for Wacom tablet missing	
 	
@@ -67,17 +63,10 @@ System
 	ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
 	Add libimobiledevice-utils and ifuse?	
 	
+	
 Cinnamon
 --------
-	[Fixed] Show week numbers should be in calendar's settings, not in cinnamon-settings
-	[Fixed] Cinnamon-settings : Firewall should be in Administration section
-	[Fixed] Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
-	[Fixed] User applet : clicking on avatar/name should launch « cinnamon-settings user »
-	[Fixed] Calendar would be better named Date and Time and use the Faenza icon for it
-	[Fixed] if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	
-	[Fixed] Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)	
-	[Fixed] Draw the background twice when launching session (immediately and then 3 sec later).
-	[Fixed] Add icons to default applet context menu items
+	cinnamon-settings: if we're the live session user, start in advanced mode
 	Cinnamon-screensaver : date is not 12H.		
 	update cinnamon-translations	
 	panel hides during gksu dialogs
@@ -85,6 +74,8 @@ Cinnamon
 	snapped/tiled window keep rounded corners against the edge
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
 	cinnamon-session-properties isn't visible in the menu (missing desktop file?)
+	mint packaging : replace /usr/share/cinnamon/theme/menu.png with mint logo
+	cinnamon-bluetooth desktop file uses wrong icon
 	
 MATE
 ----
@@ -100,11 +91,7 @@ KDE
 	
 GNOME/GTK
 ---------
-	[Fixed] menubar in gnome-calculator
-	[Fixed] gnome-terminal resets position / crashes when cinnamon restarts
-	[Fixed] gnome-terminal : semi-transparent
-	[Fixed] gnome-terminal : don't show menubar by default
-	[Fixed] evince should be in accessories, not graphics and not office
+	menubar in gnome-calculator
 	
 Mint Tools
 ----------

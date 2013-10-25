@@ -7,29 +7,26 @@ Repository
 	
 Infra	
 -----
-	Add Petra start page
 	Add Petra rel notes
 	Add Petra new features page
-	Remove youtube from FF RSS feed ?
 	rel_notes point to rel_petra_cinnamon.php
 	
 MDM
 ---	
-	2 mdm instances, one is fine, the other launches mdmKeepsCrashing
+	[Fixed] 2 mdm instances, one is fine, the other launches mdmKeepsCrashing
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
-	in live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
-	
-Session issues	
---------------
+
+Possibly fixed by latest MDM (need to reproduce again)
+-------------------------------------------------------
+	In live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
+	No sound in session
 	Menu->Quit proceeds to shutdown instead of showing Quit dialog
 	Driver falls back to llvmpipe half of the time
-	Alt+Fx switches tty...
+	Alt+Fx switches tty...	
 	
 Look and Feel
 -------------	
-	No menu borders under llvmpipe
-	Gnome-terminal : semi-transparent
-	Gnome-terminal : don't show menubar by default
+	No menu borders under llvmpipe	
 	Mint-x-icons pull from corbin
 	Update slideshow
 	Cinnamon : Review default sounds
@@ -46,10 +43,11 @@ Look and Feel
 	
 Missing
 -------
+	[Fixed] Add cinnamon-bluetooth
+	[Fixed] Add 32bit Flash support for Steam out of the box
+	[Fixed] Add lintian (gdebi shows the lintian tab whether it's installed or not, so better show techie info than an error message)
 	Mintify and pin unity-greeter
-	Add cinnamon-bluetooth
-	Support for Wacom tablet missing
-	Add 32bit Flash support for Steam out of the box
+	Support for Wacom tablet missing	
 	
 System
 ------	
@@ -67,38 +65,46 @@ System
 	ll alias to ls
 	Move adjustment for ATI amdccle from KDE to all editions?
 	ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
-	Add libimobiledevice-utils and ifuse?
+	Add libimobiledevice-utils and ifuse?	
 	
 Cinnamon
 --------
-	[Fixed in git] Show week numbers should be in calendar's settings, not in cinnamon-settings
-	[Fixed in git] Cinnamon-settings : Firewall should be in Administration section
-	[Fixed in git] Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
-	[Fixed in git] User applet : clicking on avatar/name should launch « cinnamon-settings user »
-	[Fixed in git] Calendar would be better named Date and Time and use the Faenza icon for it
-	Cinnamon-screensaver : date is not 12H.	
-	Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)	
-	update cinnamon-translations
-	if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	
+	[Fixed] Show week numbers should be in calendar's settings, not in cinnamon-settings
+	[Fixed] Cinnamon-settings : Firewall should be in Administration section
+	[Fixed] Cinnamon-settings : If user is a sudoer/admin, start in advanced mode
+	[Fixed] User applet : clicking on avatar/name should launch « cinnamon-settings user »
+	[Fixed] Calendar would be better named Date and Time and use the Faenza icon for it
+	[Fixed] if an icon is used in an applet context menu item, it looks out of place and clashes in alignment with "Configure..."	
+	[Fixed] Cinnamon-settings : test sound doesn't work (same in gcc, probably missing a package or something)	
+	[Fixed] Draw the background twice when launching session (immediately and then 3 sec later).
+	[Fixed] Add icons to default applet context menu items
+	Cinnamon-screensaver : date is not 12H.		
+	update cinnamon-translations	
 	panel hides during gksu dialogs
 	mintupload file-uploader icon in alt-tab is pixelated
 	snapped/tiled window keep rounded corners against the edge
-
+	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
+	cinnamon-session-properties isn't visible in the menu (missing desktop file?)
+	
 MATE
 ----
 	[Fixed] nm-applet isn't started automatically
-	x-caja-desktop windows bug at session start
-	use generic names in MATE packages
+	[Fixed] use generic names in MATE packages
+	x-caja-desktop windows bug at session start	
 
 KDE
 ---
-	In "system-config-samba" desktop file needs to use kdesudo and needs to be shown in KDE
+	[Fixed] In "system-config-samba" desktop file needs to use kdesudo and needs to be shown in KDE
+	Add samba-mounter to new features page for KDE
+	Missing comments in KDE menu items for mintinstall, mintupdate, mintstick-format and mintstick-iso
 	
 GNOME/GTK
 ---------
-	Extend Canonical patch to all DE for gnome-calculator (menubar regression)
-	gnome-terminal resets position / crashes when cinnamon restarts
-	evince should be in accessories, not graphics and not office
+	[Fixed] menubar in gnome-calculator
+	[Fixed] gnome-terminal resets position / crashes when cinnamon restarts
+	[Fixed] gnome-terminal : semi-transparent
+	[Fixed] gnome-terminal : don't show menubar by default
+	[Fixed] evince should be in accessories, not graphics and not office
 	
 Mint Tools
 ----------

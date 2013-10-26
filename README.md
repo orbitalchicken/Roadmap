@@ -63,9 +63,9 @@ System
 	
 Cinnamon
 --------
-	[Fixed in Git] cinnamon-bluetooth desktop file uses wrong icon
-	[Fixed in Git] cinnamon-session-properties isn't visible in the menu (missing desktop file?)
-	[Fixed in Git] Cinnamon-screensaver : date is not 12H.
+	[Fixed] cinnamon-bluetooth desktop file uses wrong icon
+	[Fixed] cinnamon-session-properties isn't visible in the menu (missing desktop file?)
+	[Fixed] Cinnamon-screensaver : date is not 12H.
 	cinnamon-settings: if we're the live session user, start in advanced mode	
 	update cinnamon-translations
 	panel hides during gksu dialogs

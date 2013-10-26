@@ -40,25 +40,25 @@ Look and Feel
 	
 Missing
 -------
-	Mintify and pin unity-greeter
-	Support for Wacom tablet missing	
+	Mintify and pin unity-greeter	
 	
 System
 ------	
 	[Fixed] remove gnome-session-common
-	Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there)
-	Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
+	[Fixed] ll alias to ls
+	[Fixed] ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
+	[Fixed] ctrl_alt_backspace have no description in xdg autostart
+	[Fixed] remove xhost+?
+	[Fixed] Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
+	Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there)	
 	Add missing search engines
-	xhost+ and ctrl_alt_backspace have no description in xdg autostart
 	Review linux-kernel and which kernel to point to.
 	Review uefi compatibility and efi boot path
 	Update mint-translations
 	Upgrade webkitgtk to v2.x
 	Update mint-mirrors
-	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)
-	ll alias to ls
-	Move adjustment for ATI amdccle from KDE to all editions?
-	ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
+	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)	
+	Move adjustment for ATI amdccle from KDE to all editions?	
 	Add libimobiledevice-utils and ifuse?	
 	
 Cinnamon
@@ -68,8 +68,7 @@ Cinnamon
 	[Fixed] Cinnamon-screensaver : date is not 12H.
 	cinnamon-settings: if we're the live session user, start in advanced mode	
 	update cinnamon-translations
-	panel hides during gksu dialogs
-	mintupload file-uploader icon in alt-tab is pixelated
+	Pixelated alt-tab icon for mintupload file-uploader
 	snapped/tiled window keep rounded corners against the edge
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
 	bg drawing is buggy in VB with no 3D accel
@@ -89,10 +88,15 @@ KDE
 GNOME/GTK
 ---------
 	menubar in gnome-calculator
+	gnome-screenshot has a broken help button, remove it
 	
 Mint Tools
 ----------
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
-	
+
+Might not happen (de-scope?)
+----------------------------
+	Gksu covers cinnamon panel and clutter layer
+	Support for Wacom tablet

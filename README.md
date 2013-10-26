@@ -25,7 +25,6 @@ Possibly fixed by latest MDM (need to reproduce again)
 	
 Look and Feel
 -------------	
-	No menu borders under llvmpipe	
 	Mint-x-icons pull from corbin
 	Update slideshow
 	Cinnamon : Review default sounds
@@ -37,7 +36,6 @@ Look and Feel
 	In cinnamon-settings many widgets have a darker background
 	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough   
 	mint-themes-gtk3: No padding in context menu leads to accidental operations     
-	nemo: when renaming a file, the extension is hard to read
 	dialog windows use symbolic icons (to reproduce: connect to ssh in terminal, close terminal)
 	
 Missing
@@ -47,6 +45,7 @@ Missing
 	
 System
 ------	
+	[Fixed] remove gnome-session-common
 	Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there)
 	Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
 	Add missing search engines
@@ -56,26 +55,24 @@ System
 	Update mint-translations
 	Upgrade webkitgtk to v2.x
 	Update mint-mirrors
-	command-not-found looks in /etc/apt/sources.list, should be fixed
 	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)
 	ll alias to ls
 	Move adjustment for ATI amdccle from KDE to all editions?
 	ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
 	Add libimobiledevice-utils and ifuse?	
 	
-	
 Cinnamon
 --------
-	cinnamon-settings: if we're the live session user, start in advanced mode
-	Cinnamon-screensaver : date is not 12H.		
-	update cinnamon-translations	
+	[Fixed in Git] cinnamon-bluetooth desktop file uses wrong icon
+	[Fixed in Git] cinnamon-session-properties isn't visible in the menu (missing desktop file?)
+	[Fixed in Git] Cinnamon-screensaver : date is not 12H.
+	cinnamon-settings: if we're the live session user, start in advanced mode	
+	update cinnamon-translations
 	panel hides during gksu dialogs
 	mintupload file-uploader icon in alt-tab is pixelated
 	snapped/tiled window keep rounded corners against the edge
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
-	cinnamon-session-properties isn't visible in the menu (missing desktop file?)
-	mint packaging : replace /usr/share/cinnamon/theme/menu.png with mint logo
-	cinnamon-bluetooth desktop file uses wrong icon
+	bg drawing is buggy in VB with no 3D accel
 	
 MATE
 ----

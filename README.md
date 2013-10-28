@@ -25,10 +25,10 @@ Possibly fixed by latest MDM (need to reproduce again)
 	
 Look and Feel
 -------------	
+	[Fixed] Backgrounds : change xxRapeKxx name to rapciu
 	Mint-x-icons pull from corbin
 	Update slideshow
-	Cinnamon : Review default sounds
-	Backgrounds : change xxRapeKxx name to rapciu
+	Cinnamon : Review default sounds	
 	Backgrounds : Review selection and default choice
 	Background : optimize for size/quality
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons
@@ -50,7 +50,7 @@ System
 	[Fixed] ctrl_alt_backspace have no description in xdg autostart
 	[Fixed] remove xhost+?
 	[Fixed] Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
-	Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there)	
+	[Fixed] Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there	
 	Add missing search engines
 	Review linux-kernel and which kernel to point to.
 	Review uefi compatibility and efi boot path
@@ -86,17 +86,21 @@ KDE
 	Missing comments in KDE menu items for mintinstall, mintupdate, mintstick-format and mintstick-iso
 	
 GNOME/GTK
----------
-	menubar in gnome-calculator
-	gnome-screenshot has a broken help button, remove it
+---------	
+	[Fixed] gnome-screenshot has a broken help button, remove it
 	
 Mint Tools
 ----------
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
+	mintStick progress bar isn't fixed yet
 
 Might not happen (de-scope?)
-----------------------------
-	Gksu covers cinnamon panel and clutter layer
+----------------------------	
 	Support for Wacom tablet
+
+De-scoped
+---------
+	gksu covers cinnamon panel and clutter layer (code is in libgksu)
+	gnome-calculator menubar

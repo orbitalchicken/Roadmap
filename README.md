@@ -25,7 +25,6 @@ Possibly fixed by latest MDM (need to reproduce again)
 	
 Look and Feel
 -------------	
-	[Fixed] Backgrounds : change xxRapeKxx name to rapciu
 	Mint-x-icons pull from corbin
 	Update slideshow
 	Cinnamon : Review default sounds	
@@ -44,13 +43,9 @@ Missing
 	
 System
 ------	
-	[Fixed] remove gnome-session-common
-	[Fixed] ll alias to ls
-	[Fixed] ls colors? https://github.com/linuxmint/community.linuxmint.com/issues/120
-	[Fixed] ctrl_alt_backspace have no description in xdg autostart
-	[Fixed] remove xhost+?
-	[Fixed] Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
-	[Fixed] Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there	
+	Yelp shows debug notification
+	Yelp doesn't work for ghelp:gedit
+	[Fix didn't work :)] Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there	
 	Upgrade webkitgtk to v2.x	
 	Add missing search engines
 	Review linux-kernel and which kernel to point to.
@@ -63,9 +58,6 @@ System
 	
 Cinnamon
 --------
-	[Fixed] cinnamon-bluetooth desktop file uses wrong icon
-	[Fixed] cinnamon-session-properties isn't visible in the menu (missing desktop file?)
-	[Fixed] Cinnamon-screensaver : date is not 12H.
 	cinnamon-settings: if we're the live session user, start in advanced mode	
 	update cinnamon-translations
 	Pixelated alt-tab icon for mintupload file-uploader
@@ -84,10 +76,6 @@ KDE
 	[Fixed] In "system-config-samba" desktop file needs to use kdesudo and needs to be shown in KDE
 	Add samba-mounter to new features page for KDE
 	Missing comments in KDE menu items for mintinstall, mintupdate, mintstick-format and mintstick-iso
-	
-GNOME/GTK
----------	
-	[Fixed] gnome-screenshot has a broken help button, remove it
 	
 Mint Tools
 ----------

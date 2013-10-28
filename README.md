@@ -51,11 +51,11 @@ System
 	[Fixed] remove xhost+?
 	[Fixed] Yelp should be more selective to show help for selected items and redirect to linuxmint.com for others
 	[Fixed] Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there	
+	Upgrade webkitgtk to v2.x	
 	Add missing search engines
 	Review linux-kernel and which kernel to point to.
 	Review uefi compatibility and efi boot path
-	Update mint-translations
-	Upgrade webkitgtk to v2.x
+	Update mint-translations	
 	Update mint-mirrors
 	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)	
 	Move adjustment for ATI amdccle from KDE to all editions?	
@@ -102,5 +102,6 @@ Might not happen (de-scope?)
 
 De-scoped
 ---------
-	gksu covers cinnamon panel and clutter layer (code is in libgksu)
-	gnome-calculator menubar
+	gksu covers cinnamon panel and clutter layer (offending code is in libgksu, won't fix, likely to migrate to pkexec instead)
+	GTK dialogs use symbolic icons (offending code is in GTK, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit. Long run decision on whether to patch/freeze gtk or to migrate to a fork/alternative toolkit. No action taken in this cycle.)
+	gnome-calculator menubar (minor cosmestic issue, won't fix)

@@ -16,26 +16,26 @@ MDM
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
 	In live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
 
-Possibly fixed by latest MDM (need to reproduce again)
--------------------------------------------------------	
-	No sound in session
-	Menu->Quit proceeds to shutdown instead of showing Quit dialog
-	Driver falls back to llvmpipe half of the time
-	Alt+Fx switches tty...	
+Need to reproduce again
+-----------------------
+	No sound in session (seems fixed by MDM)
+	Menu->Quit proceeds to shutdown instead of showing Quit dialog (seems fixed by MDM)
+	Driver falls back to llvmpipe half of the time (seems fixed by MDM)
+	Alt+Fx switches tty...	(seems fixed by MDM)
+	Segfault in MDMWebkit when repeatedly switching languages (Fixed in Mint 15 by upgrading webkitgtk to v2.x, doesn't seem to happen in Mint 16)
 	
 Look and Feel
 -------------	
 	[Fixed] Update slideshow
+	[Fixed] In cinnamon-settings many widgets have a darker background
 	Mint-x-icons pull from corbin	
 	Cinnamon : Review default sounds
 	Backgrounds : Review selection and default choice
 	Background : optimize for size/quality
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons
-	Mintupdate : update icons
-	In cinnamon-settings many widgets have a darker background
+	Mintupdate : update icons	
 	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough
 	mint-themes-gtk3: No padding in context menu leads to accidental operations
-	dialog windows use symbolic icons (to reproduce: connect to ssh in terminal, close terminal)
 
 Translations
 ------------
@@ -49,17 +49,15 @@ Missing
 	
 System
 ------	
-	[Fix didn't work :)] Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there	
-	Yelp shows debug notification
-	Yelp doesn't work for ghelp:gedit	
-	Upgrade webkitgtk to v2.x	
+	[Fixed] Power button shuts down computer instead of showing quit dialog 
+	[Fixed] Power button action should be ask by default
+	[Fixed] Yelp shows debug notification
+	[Fixed] Yelp doesn't work for ghelp:gedit
+	[Fixed] Add libimobiledevice-utils, ideviceinstaller and ifuse
+	[Fixed] Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)
 	Add missing search engines
-	Review linux-kernel and which kernel to point to.
 	Review uefi compatibility and efi boot path
-	Update mint-mirrors
-	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)	
-	Move adjustment for ATI amdccle from KDE to all editions?	
-	Add libimobiledevice-utils and ifuse?	
+	Update mint-mirrors	
 	
 Cinnamon
 --------

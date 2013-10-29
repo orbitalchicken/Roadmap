@@ -26,12 +26,6 @@ MDM
 	
 System
 ------	
-	[Fixed] Power button shuts down computer instead of showing quit dialog 
-	[Fixed] Power button action should be ask by default
-	[Fixed] Yelp shows debug notification
-	[Fixed] Yelp doesn't work for ghelp:gedit
-	[Fixed] Add libimobiledevice-utils, ideviceinstaller and ifuse
-	[Fixed] Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)
 	Add missing search engines
 	Review uefi compatibility and efi boot path
 	Update mint-mirrors	
@@ -64,9 +58,6 @@ KDE
 
 Look and Feel
 -------------	
-	[Fixed] Update slideshow
-	[Fixed] In cinnamon-settings many widgets have a darker background
-	[Fixed] Cinnamon : Review default sounds	
 	Backgrounds : Review selection and default choice
 	Background : optimize for size/quality
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons

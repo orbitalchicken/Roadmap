@@ -23,6 +23,7 @@ MDM
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
 	In live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
 	New theme + remove cloudGL
+	Segfault in MDMWebkit - error 4 in libjavascriptcoregtk-1.0.so.0.13.11
 	
 System
 ------	
@@ -70,8 +71,7 @@ Need to reproduce again
 	No sound in session (seems fixed by MDM)
 	Menu->Quit proceeds to shutdown instead of showing Quit dialog (seems fixed by MDM)
 	Driver falls back to llvmpipe half of the time (seems fixed by MDM)
-	Alt+Fx switches tty...	(seems fixed by MDM)
-	Segfault in MDMWebkit when repeatedly switching languages (Fixed in Mint 15 by upgrading webkitgtk to v2.x, doesn't seem to happen in Mint 16)
+	Alt+Fx switches tty...	(seems fixed by MDM)	
 
 De-scoped
 ---------

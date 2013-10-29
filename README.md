@@ -28,8 +28,8 @@ Look and Feel
 -------------	
 	[Fixed] Update slideshow
 	[Fixed] In cinnamon-settings many widgets have a darker background
+	[Fixed] Cinnamon : Review default sounds
 	Mint-x-icons pull from corbin	
-	Cinnamon : Review default sounds
 	Backgrounds : Review selection and default choice
 	Background : optimize for size/quality
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons
@@ -86,12 +86,9 @@ Mint Tools
 	Review mintWelcome look and feel
 	mintStick progress bar isn't fixed yet
 
-Might not happen (de-scope?)
-----------------------------	
-	Support for Wacom tablet
-
 De-scoped
 ---------
 	gksu covers cinnamon panel and clutter layer (offending code is in libgksu, won't fix, likely to migrate to pkexec instead)
 	GTK dialogs use symbolic icons (offending code is in GTK, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit. Long run decision on whether to patch/freeze gtk or to migrate to a fork/alternative toolkit. No action taken in this cycle.)
 	gnome-calculator menubar (minor cosmestic issue, won't fix)
+	Support for Wacom tablet (configurable via the command line, will need to join forces with Xfce/MATE if we want to develop a cross DE UI. This doesn't justify pulling resources to make a Cinnamon specific solution)

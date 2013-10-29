@@ -14,10 +14,10 @@ Infra
 MDM
 ---	
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
+	In live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
 
 Possibly fixed by latest MDM (need to reproduce again)
--------------------------------------------------------
-	In live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
+-------------------------------------------------------	
 	No sound in session
 	Menu->Quit proceeds to shutdown instead of showing Quit dialog
 	Driver falls back to llvmpipe half of the time
@@ -25,17 +25,23 @@ Possibly fixed by latest MDM (need to reproduce again)
 	
 Look and Feel
 -------------	
-	Mint-x-icons pull from corbin
-	Update slideshow
-	Cinnamon : Review default sounds	
+	[Fixed] Update slideshow
+	Mint-x-icons pull from corbin	
+	Cinnamon : Review default sounds
 	Backgrounds : Review selection and default choice
 	Background : optimize for size/quality
 	Mint-themes : remove highlight on hover for checkboxes and radio buttons
 	Mintupdate : update icons
 	In cinnamon-settings many widgets have a darker background
-	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough   
-	mint-themes-gtk3: No padding in context menu leads to accidental operations     
+	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough
+	mint-themes-gtk3: No padding in context menu leads to accidental operations
 	dialog windows use symbolic icons (to reproduce: connect to ssh in terminal, close terminal)
+
+Translations
+------------
+	Update cinnamon translations
+	Update mint translations
+	Update mint-slideshow translations
 	
 Missing
 -------
@@ -43,14 +49,13 @@ Missing
 	
 System
 ------	
-	Yelp shows debug notification
-	Yelp doesn't work for ghelp:gedit
 	[Fix didn't work :)] Power button shuts down computer instead of showing quit dialog (in /etc/acpi/powerbtn.sh, the file checks for gnome-settings-daemon... add support for MATE and Cinnamon there	
+	Yelp shows debug notification
+	Yelp doesn't work for ghelp:gedit	
 	Upgrade webkitgtk to v2.x	
 	Add missing search engines
 	Review linux-kernel and which kernel to point to.
 	Review uefi compatibility and efi boot path
-	Update mint-translations	
 	Update mint-mirrors
 	Priority 700 for ppas and known 3rd party sources (getdeb, mate-desktop?)	
 	Move adjustment for ATI amdccle from KDE to all editions?	
@@ -59,7 +64,6 @@ System
 Cinnamon
 --------
 	cinnamon-settings: if we're the live session user, start in advanced mode	
-	update cinnamon-translations
 	Pixelated alt-tab icon for mintupload file-uploader
 	snapped/tiled window keep rounded corners against the edge
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	

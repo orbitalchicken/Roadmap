@@ -1,16 +1,15 @@
 Repository
 ----------
-	Add Tomahawk
-	Add Handbrake
-	Add all known missing packages from import
 	Pin all missing upstream packages
-	Mintify and pin unity-greeter
+	[Fixed] Mintify and pin unity-greeter
 	
 Infra	
 -----
 	Add Petra rel notes
 	Add Petra new features page
 	rel_notes point to rel_petra_cinnamon.php
+	Make sure firefox and firefox-locale-xx match post-install
+	Review ubuntu-updates (systemd, upower) changes
 
 Translations
 ------------
@@ -20,26 +19,24 @@ Translations
 	
 MDM
 ---	
+	[Fixed] Segfault in MDMWebkit - error 4 in libjavascriptcoregtk-1.0.so.0.13.11
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
-	In live mode mdm shows timed login even though it's configured for automatic login... auto should superseed timed and log in immediately
-	New theme + remove cloudGL
-	Segfault in MDMWebkit - error 4 in libjavascriptcoregtk-1.0.so.0.13.11
+	When both timed and automatic login are enabled, mdm uses timed login instead of autologin
+	New theme + remove cloudGL	
 	
 System
 ------	
-	Add missing search engines
-	Review uefi compatibility and efi boot path
+	Review uefi compatibility and efi boot path (check if we need to add efibootmgr to the target)
 	Update mint-mirrors	
 	
 Cinnamon
 --------
-	cinnamon-settings: if we're the live session user, start in advanced mode	
+	[Fixed] cinnamon-settings: if we're the live session user, start in advanced mode	
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]
 	bg drawing is buggy in VB with no 3D accel
 
 Mint Tools
 ----------
-	[Fixed in Git] Pixelated alt-tab icon for mintupload file-uploader	
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
@@ -47,8 +44,8 @@ Mint Tools
 	
 MATE
 ----
-	[Fixed] nm-applet isn't started automatically
-	[Fixed] use generic names in MATE packages
+	nm-applet isn't started automatically
+	use generic names in MATE packages
 	x-caja-desktop windows bug at session start	
 
 KDE
@@ -59,12 +56,14 @@ KDE
 
 Look and Feel
 -------------	
-	Backgrounds : Review selection and default choice
-	Background : optimize for size/quality
-	Mint-themes : remove highlight on hover for checkboxes and radio buttons
-	Mintupdate : update icons
-	Cinnamon theme "Linux Mint", window list, selected window isn't noticeable enough
-	mint-themes-gtk3: No padding in context menu leads to accidental operations
+	Backgrounds: Review selection and default choice
+	Background: optimize for size/quality	
+	Mintupdate: update icons
+
+
+
+
+
 
 Need to reproduce again
 -----------------------
@@ -73,8 +72,13 @@ Need to reproduce again
 	Driver falls back to llvmpipe half of the time (seems fixed by MDM)
 	Alt+Fx switches tty...	(seems fixed by MDM)	
 
+Minor
+-----
+	Pixelated alt-tab icon for mintupload file-uploader
+	mint-themes-gtk3: No padding in context menu leads to accidental operations
+
 De-scoped
----------
+---------	
 	gksu covers cinnamon panel and clutter layer (offending code is in libgksu, won't fix, likely to migrate to pkexec instead)
 	GTK dialogs use symbolic icons (offending code is in GTK, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit. Long run decision on whether to patch/freeze gtk or to migrate to a fork/alternative toolkit. No action taken in this cycle.)
 	gnome-calculator menubar (minor cosmestic issue, won't fix)

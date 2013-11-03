@@ -8,7 +8,7 @@ Infra
 	Add Petra rel notes
 	Add Petra new features page
 	rel_notes point to rel_petra_cinnamon.php
-	Make sure firefox and firefox-locale-xx match post-install
+	Make sure firefox and firefox-locale-xx match post-install (Live features FF 25, FF-locale-en 25, cache thinks FF-locale-fr is at 24)
 	Review ubuntu-updates (systemd, upower) changes
 
 Translations
@@ -19,21 +19,20 @@ Translations
 	
 MDM
 ---	
-	[Fixed] Segfault in MDMWebkit - error 4 in libjavascriptcoregtk-1.0.so.0.13.11
 	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
-	When both timed and automatic login are enabled, mdm uses timed login instead of autologin
 	New theme + remove cloudGL	
 	
 System
 ------	
-	Review uefi compatibility and efi boot path (check if we need to add efibootmgr to the target)
+	[Fixed] Remove btrfs-tools and make sure ubiquity doesn't list it as an option
+	EFI Installation is broken (possible leads: check if efibootmgr and grub-efi install properly)
 	Update mint-mirrors	
 	
 Cinnamon
 --------
 	[Fixed] cinnamon-settings: if we're the live session user, start in advanced mode	
-	Launching keepass + xsel freezes Cinnamon [wrouesnel]
-	bg drawing is buggy in VB with no 3D accel
+	[Fixed] bg drawing is buggy in VB with no 3D accel
+	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
 
 Mint Tools
 ----------
@@ -56,12 +55,10 @@ KDE
 
 Look and Feel
 -------------	
-	Backgrounds: Review selection and default choice
-	Background: optimize for size/quality	
+	[Fixed] Backgrounds: Review selection and default choice
+	[Fixed] Background: optimize for size/quality	
+	[Fixed] Added mint-x cinnamon theme
 	Mintupdate: update icons
-
-
-
 
 
 

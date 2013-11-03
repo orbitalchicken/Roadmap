@@ -24,13 +24,13 @@ MDM
 	
 System
 ------	
-	[Fixed] Remove btrfs-tools and make sure ubiquity doesn't list it as an option
+	[Fixed in Git] Remove btrfs support in ubiquity
+	Upgrade systemd to get the missing hwdb.bin (impact of the bug is missing vendor info in Driver Manager)
 	EFI Installation is broken (possible leads: check if efibootmgr and grub-efi install properly)
-	Update mint-mirrors	
+	Update mint-mirrors		
 	
 Cinnamon
 --------
-	[Fixed] cinnamon-settings: if we're the live session user, start in advanced mode	
 	[Fixed] bg drawing is buggy in VB with no 3D accel
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
 
@@ -55,10 +55,8 @@ KDE
 
 Look and Feel
 -------------	
-	[Fixed] Backgrounds: Review selection and default choice
-	[Fixed] Background: optimize for size/quality	
-	[Fixed] Added mint-x cinnamon theme
 	Mintupdate: update icons
+	cinnamon-themes: don't use OFF/ON switches
 
 
 

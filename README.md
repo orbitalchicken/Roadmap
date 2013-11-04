@@ -18,7 +18,9 @@ Translations
 	
 MDM
 ---	
-	Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
+	[Fixed in git] Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
+	mdmwebkit entry/ok_button sometimes get stuck in disabled state
+	With mint-x mdmwebkit theme, cinnamon session fails to start and user goes back to greeter
 	New theme + remove cloudGL	
 	
 System

@@ -9,7 +9,6 @@ Infra
 	Add Petra new features page
 	rel_notes point to rel_petra_cinnamon.php
 	Make sure firefox and firefox-locale-xx match post-install (Live features FF 25, FF-locale-en 25, cache thinks FF-locale-fr is at 24)
-	Review ubuntu-updates (systemd, upower) changes
 
 Translations
 ------------
@@ -24,14 +23,14 @@ MDM
 	
 System
 ------	
-	[Fixed in Git] Remove btrfs support in ubiquity
-	Upgrade systemd to get the missing hwdb.bin (impact of the bug is missing vendor info in Driver Manager)
-	EFI Installation is broken (possible leads: check if efibootmgr and grub-efi install properly)
-	Update mint-mirrors		
+	[Fixed] Remove btrfs support in ubiquity
+	[Fixed] EFI: Set GRUB_DISTRIBUTOR to Ubuntu
+	[Fixed] Switch DDG to HTTPS
+	Check EFI booth path
+	Update mint-mirrors	
 	
 Cinnamon
 --------
-	[Fixed] bg drawing is buggy in VB with no 3D accel
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
 
 Mint Tools
@@ -39,7 +38,7 @@ Mint Tools
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
-	mintStick progress bar isn't fixed yet
+	[Fixed] mintStick progress bar isn't fixed yet
 	
 MATE
 ----
@@ -56,7 +55,7 @@ KDE
 Look and Feel
 -------------	
 	Mintupdate: update icons
-	cinnamon-themes: don't use OFF/ON switches
+	[Fixed] cinnamon-themes: don't use OFF/ON switches
 
 
 

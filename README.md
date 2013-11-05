@@ -8,7 +8,7 @@ Infra
 	Add Petra rel notes
 	Add Petra new features page
 	rel_notes point to rel_petra_cinnamon.php
-	Make sure firefox and firefox-locale-xx match post-install (Live features FF 25, FF-locale-en 25, cache thinks FF-locale-fr is at 24)
+	[Fixed] Make sure firefox and firefox-locale-xx match post-install (Live features FF 25, FF-locale-en 25, cache thinks FF-locale-fr is at 24)
 
 Translations
 ------------
@@ -18,17 +18,18 @@ Translations
 	
 MDM
 ---	
-	[Fixed in git] Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
-	[Fixed in git] mdmwebkit entry/ok_button sometimes get stuck in disabled state
-	[Fixed in git] With mint-x mdmwebkit theme, cinnamon session fails to start and user goes back to greeter
-	New theme + remove cloudGL	
+	[Fixed] Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
+	[Fixed] mdmwebkit entry/ok_button sometimes get stuck in disabled state
+	[Fixed] With mint-x mdmwebkit theme, cinnamon session fails to start and user goes back to greeter
+	[Fixed] New theme + remove cloudGL	
+	[Fixed] Remove mdm theme
 	
 System
 ------	
 	[Fixed] Remove btrfs support in ubiquity
 	[Fixed] EFI: Set GRUB_DISTRIBUTOR to Ubuntu
 	[Fixed] Switch DDG to HTTPS
-	Check EFI booth path
+	[Fixed] Check EFI booth path
 	Update mint-mirrors	
 	
 Cinnamon
@@ -58,7 +59,7 @@ Look and Feel
 -------------	
 	Mintupdate: update icons
 	[Fixed] cinnamon-themes: don't use OFF/ON switches
-	Work on metacity borders and tiling from JosephM
+	[Fixed] Work on metacity borders and tiling from JosephM
 
 
 

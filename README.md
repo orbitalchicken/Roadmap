@@ -8,7 +8,6 @@ Infra
 	Add Petra rel notes
 	Add Petra new features page
 	rel_notes point to rel_petra_cinnamon.php
-	[Fixed] Make sure firefox and firefox-locale-xx match post-install (Live features FF 25, FF-locale-en 25, cache thinks FF-locale-fr is at 24)
 
 Translations
 ------------
@@ -17,37 +16,32 @@ Translations
 	Update mint-slideshow translations
 	
 MDM
----	
-	[Fixed] Bugs with user preselection, needs testing/fixing, the greeter gets confused sometimes
-	[Fixed] mdmwebkit entry/ok_button sometimes get stuck in disabled state
-	[Fixed] With mint-x mdmwebkit theme, cinnamon session fails to start and user goes back to greeter
-	[Fixed] New theme + remove cloudGL	
-	[Fixed] Remove mdm theme
+---		
+	theme isn't completely l10n'd
 	
 System
 ------	
-	[Fixed] Remove btrfs support in ubiquity
 	[Fixed] EFI: Set GRUB_DISTRIBUTOR to Ubuntu
-	[Fixed] Switch DDG to HTTPS
 	[Fixed] Check EFI booth path
 	Update mint-mirrors	
 	
 Cinnamon
 --------
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
+	bg rendering delay
 
 Mint Tools
 ----------
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
-	[Fixed] mintStick progress bar isn't fixed yet
+	mintStick progress bar isn't fixed yet
 	
 MATE
 ----
 	nm-applet isn't started automatically
 	use generic names in MATE packages
-	x-caja-desktop windows bug at session start	
+	x-caja-desktop windows bug at session start
 
 KDE
 ---
@@ -58,9 +52,6 @@ KDE
 Look and Feel
 -------------	
 	Mintupdate: update icons
-	[Fixed] cinnamon-themes: don't use OFF/ON switches
-	[Fixed] Work on metacity borders and tiling from JosephM
-
 
 
 Need to reproduce again

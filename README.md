@@ -1,13 +1,13 @@
 Repository
 ----------
 	Pin all missing upstream packages
-	[Fixed] Mintify and pin unity-greeter
 	
 Infra	
 -----
 	Add Petra rel notes
 	Add Petra new features page
 	rel_notes point to rel_petra_cinnamon.php
+	rel_notes explain about apt recommends
 
 Translations
 ------------
@@ -20,9 +20,8 @@ MDM
 	theme isn't completely l10n'd
 	
 System
-------	
-	[Fixed] EFI: Set GRUB_DISTRIBUTOR to Ubuntu
-	[Fixed] Check EFI booth path
+------		
+	EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
 	Update mint-mirrors	
 	
 Cinnamon
@@ -52,6 +51,7 @@ KDE
 Look and Feel
 -------------	
 	Mintupdate: update icons
+	Remove fuzzy border in mdm's mint-x?
 
 
 Need to reproduce again

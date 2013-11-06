@@ -22,12 +22,15 @@ MDM
 System
 ------		
 	EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
-	Update mint-mirrors	
+	Update mint-mirrors
+	[Fixed] KDE apps get installed during the installation (k3b, nepomuk..etc)
 	
 Cinnamon
 --------
 	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
-	bg rendering delay
+	[Fixed in git] bg rendering delay
+	[Fixed in git] squary window borders on tiled/snapped windows
+	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)
 
 Mint Tools
 ----------
@@ -35,12 +38,13 @@ Mint Tools
 	review pending pull requests
 	Review mintWelcome look and feel
 	mintStick progress bar isn't fixed yet
+	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)
 	
 MATE
 ----
-	nm-applet isn't started automatically
-	use generic names in MATE packages
-	x-caja-desktop windows bug at session start
+	[Fixed] nm-applet isn't started automatically
+	[Fixed] use generic names in MATE packages
+	x-caja-desktop windows bug at session start --> try to apply patch: https://github.com/clefebvre/caja/commit/e916c945e86842b63e17c322b76ab47e1538c233
 
 KDE
 ---
@@ -50,8 +54,9 @@ KDE
 
 Look and Feel
 -------------	
+	[Fixed] Remove fuzzy border in mdm's mint-x?
 	Mintupdate: update icons
-	Remove fuzzy border in mdm's mint-x?
+	
 
 
 Need to reproduce again

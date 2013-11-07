@@ -15,25 +15,24 @@ Translations
 	Update mint translations
 	Update mint-slideshow translations
 	
-MDM
----		
-	theme isn't completely l10n'd
-	
 System
 ------		
-	EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
-	Update mint-mirrors
 	[Fixed] KDE apps get installed during the installation (k3b, nepomuk..etc)
+	EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
+	Update mint-mirrors	
 	
 Cinnamon
 --------
-	Launching keepass + xsel freezes Cinnamon [wrouesnel]	
+		
 	[Fixed in git] bg rendering delay
 	[Fixed in git] squary window borders on tiled/snapped windows
+	[Fixed in Git] tiled window keep rounded corners
 	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)
+	
 
 Mint Tools
 ----------
+	[Fixed] Pixelated alt-tab icon for mintupload file-uploader
 	mintInstall improvements
 	review pending pull requests
 	Review mintWelcome look and feel
@@ -57,24 +56,12 @@ Look and Feel
 	[Fixed] Remove fuzzy border in mdm's mint-x?
 	Mintupdate: update icons
 	
-
-
-Need to reproduce again
------------------------
-	No sound in session (seems fixed by MDM)
-	Menu->Quit proceeds to shutdown instead of showing Quit dialog (seems fixed by MDM)
-	Driver falls back to llvmpipe half of the time (seems fixed by MDM)
-	Alt+Fx switches tty...	(seems fixed by MDM)	
-
-Minor
------
-	Pixelated alt-tab icon for mintupload file-uploader
-	mint-themes-gtk3: No padding in context menu leads to accidental operations
-
 De-scoped
----------	
-	gksu covers cinnamon panel and clutter layer (offending code is in libgksu, won't fix, likely to migrate to pkexec instead)
-	GTK dialogs use symbolic icons (offending code is in GTK, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit. Long run decision on whether to patch/freeze gtk or to migrate to a fork/alternative toolkit. No action taken in this cycle.)
-	gnome-calculator menubar (minor cosmestic issue, won't fix)
-	Support for Wacom tablet (configurable via the command line, will need to join forces with Xfce/MATE if we want to develop a cross DE UI. This doesn't justify pulling resources to make a Cinnamon specific solution)
-	Snapped/tiled window keep rounded corners against the edge (2.2)
+---------		
+	Cinnamon: Launching keepass + xsel freezes Cinnamon [wrouesnel] (unknown cause/solution)	
+	GTK3: dialogs use symbolic icons (offending code is in GTK3, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit.)
+	GTK3: No padding in context menu leads to accidental operations (bug reported upstream in GTK3, temp workaround/fix unlikely/tedious)
+	GNOME: gnome-calculator menubar (minor cosmestic issue, won't fix)
+	System: gksu covers cinnamon panel and clutter layer (offending code is in libgksu, won't fix, likely to migrate to pkexec instead)
+	System: Support for Wacom tablet (configurable via the command line, will need to join forces with Xfce/MATE if we want to develop a cross DE UI. This doesn't justify pulling resources to make a Cinnamon specific solution)	
+	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).

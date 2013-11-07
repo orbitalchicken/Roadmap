@@ -11,33 +11,32 @@ Infra
 
 Translations
 ------------
-	Update cinnamon translations
-	Update mint translations
-	Update mint-slideshow translations
+	[Fixed] Update cinnamon translations
+	[Fixed] Update mint translations
+	[Fixed] Update mint-slideshow translations
 	
 System
 ------		
-	[Fixed] KDE apps get installed during the installation (k3b, nepomuk..etc)
-	EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
+	[Fixed] KDE apps get installed during the installation (k3b, nepomuk..etc)	
 	Update mint-mirrors	
 	
 Cinnamon
 --------
 		
-	[Fixed in git] bg rendering delay
-	[Fixed in git] squary window borders on tiled/snapped windows
-	[Fixed in Git] tiled window keep rounded corners
+	[Fixed] bg rendering delay
+	[Fixed] squary window borders on tiled/snapped windows	
 	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)
 	
 
 Mint Tools
 ----------
 	[Fixed] Pixelated alt-tab icon for mintupload file-uploader
+	[Fixed] mintupdate: autostart delay
+	[Fixed] mintstick icons	
 	mintInstall improvements
-	review pending pull requests
 	Review mintWelcome look and feel
 	mintStick progress bar isn't fixed yet
-	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)
+	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
 	
 MATE
 ----
@@ -53,8 +52,25 @@ KDE
 
 Look and Feel
 -------------	
-	[Fixed] Remove fuzzy border in mdm's mint-x?
-	Mintupdate: update icons
+	[Fixed] Remove fuzzy border in mdm's mint-x?	
+	[Fixed] gtk2-like buttons in gtk3
+
+Cinnamon QA
+-----------
+	MDM: Session choices suggests remote connexion
+	apturl missing support in Firefox
+	mintstick filechooser pre-selection doesn't work
+	F1 key in gnome-terminal launches BOTH an empty yelp section and documentation.php
+	Java didn't work
+	MP3 online doesn't work
+
+KDE QA
+------
+	Ubiquity, clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
+	Ubiquity shows "update installer"
+	KDE backgrounds + needs blue versions
+	MDM Blue theme
+	Network Manager isn't starting
 	
 De-scoped
 ---------		
@@ -64,4 +80,9 @@ De-scoped
 	GNOME: gnome-calculator menubar (minor cosmestic issue, won't fix)
 	System: gksu covers cinnamon panel and clutter layer (offending code is in libgksu, won't fix, likely to migrate to pkexec instead)
 	System: Support for Wacom tablet (configurable via the command line, will need to join forces with Xfce/MATE if we want to develop a cross DE UI. This doesn't justify pulling resources to make a Cinnamon specific solution)	
+	System: EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
 	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).
+
+
+
+

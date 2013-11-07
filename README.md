@@ -9,30 +9,16 @@ Infra
 	rel_notes point to rel_petra_cinnamon.php
 	rel_notes explain about apt recommends
 
-Translations
-------------
-	[Fixed] Update cinnamon translations
-	[Fixed] Update mint translations
-	[Fixed] Update mint-slideshow translations
-	
 System
 ------		
-	[Fixed] KDE apps get installed during the installation (k3b, nepomuk..etc)	
 	Update mint-mirrors	
 	
 Cinnamon
---------
-		
-	[Fixed] bg rendering delay
-	[Fixed] squary window borders on tiled/snapped windows	
-	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)
-	
+--------		
+	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)	
 
 Mint Tools
 ----------
-	[Fixed] Pixelated alt-tab icon for mintupload file-uploader
-	[Fixed] mintupdate: autostart delay
-	[Fixed] mintstick icons	
 	mintInstall improvements
 	Review mintWelcome look and feel
 	mintStick progress bar isn't fixed yet
@@ -52,8 +38,7 @@ KDE
 
 Look and Feel
 -------------	
-	[Fixed] Remove fuzzy border in mdm's mint-x?	
-	[Fixed] gtk2-like buttons in gtk3
+	gtk3 buttons are green when active
 
 Cinnamon QA
 -----------

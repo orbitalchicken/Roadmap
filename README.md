@@ -1,7 +1,4 @@
-Repository
-----------
-	[Fixed] Pin all missing upstream packages
-	
+
 Infra	
 -----
 	Add Petra rel notes
@@ -34,16 +31,8 @@ KDE
 ---
 	Add samba-mounter to new features page for KDE
 
-Look and Feel
--------------	
-	[Fixed] gtk3 buttons are green when active
-
 Cinnamon QA
 -----------	
-	[Fixed] F1 key in gnome-terminal launches BOTH an empty yelp section and documentation.php
-	[Fixed] Yelp on gnome apps should work when gnome-user-guide is installed, link to PDF doc otherwise
-	[Fixed] nemo-md5 doesn't work if filename contains spaces	
-	[Fixed] mintstick filechooser pre-selection doesn't work if filename contains spaces
 	apturl missing support in Firefox
 
 KDE QA

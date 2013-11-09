@@ -8,14 +8,18 @@ Infra
 
 System
 ------	
-	Update mint-mirrors		
-	apturl missing support in Firefox	
+	apturl missing support in Firefox
 
 Mint Tools
 ----------
-	mintInstall improvements
+	[Fixed] mintInstall improvements
 	mintStick progress bar isn't fixed yet
 	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
+
+Look and Feel
+-------------
+	cinnamon-mint-x-theme: Check latest pull request from Bernard
+	cinnamon-mint-x-theme: User applet shows username/gecos in white
 
 Cinnamon
 --------		
@@ -31,7 +35,29 @@ KDE
 	Add samba-mounter to new features page for KDE
 	Ubiquity, clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
 	Ubiquity shows "update installer"
-	
+
+Feedback from Corbin
+--------------------
+    Installing Nvidia drivers makes tty and boot screen lo-res (http://www.conanblog.me/it/how-to-get-the-high-resolution-for-tty-back-after-nvidia-driver-update-in-ubuntu/)    
+    Brasero Wont open after burning a disk
+    In Spices the "Updates Available!" button is visually glitchy
+    Moving applets in cinnamon panel edit mode on, glitches out systray icons when it is shifted
+    Cinnamon Settings start in advanced mode on fresh install even if not in admin mode
+    Cannot Middle click most toolbar items in Nemo
+    User Applet is visually off in MintX Cinnamon theme
+    Changing Wallpaper somtimes freezes cinnamon
+    Calender Applet should link to "cinnamon-settings calendar"
+    When a maximized window is minimized, and you activate the hot corner or expo, it makes a split second glitch view of that window
+    The mint logo is a bitmap(png) and is blurry when the panel is resized, it should be svg
+    Mounted disks shouldest show by default one the desktop?
+    In Applets/Desklet config, the more actions button icon makes no sense, should be cog
+    Volume change sound is terribly high pitched, it should be the bubble sound
+    LibreOffice Loading bar is orange
+    Rename file/folder field can be hard to read in some cases, eg. the desktop
+    Changing default applications does nothing
+    Copying large files (< 200mb), nemo reports 99% the whole time.    
+    gnome-disk-utility 3.8.2 is fugly
+
 De-scoped
 ---------		
 	Cinnamon: Launching keepass + xsel freezes Cinnamon [wrouesnel] (unknown cause/solution)	

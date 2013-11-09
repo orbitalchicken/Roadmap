@@ -9,16 +9,17 @@ Infra
 System
 ------	
 	Update mint-mirrors		
-	
-Cinnamon
---------		
-	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)	
+	apturl missing support in Firefox	
 
 Mint Tools
 ----------
 	mintInstall improvements
 	mintStick progress bar isn't fixed yet
 	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
+
+Cinnamon
+--------		
+	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)	
 	
 MATE
 ----	
@@ -28,16 +29,6 @@ MATE
 KDE
 ---
 	Add samba-mounter to new features page for KDE
-
-Cinnamon QA
------------	
-	apturl missing support in Firefox
-
-KDE QA
-------
-	[Fixed] KDE backgrounds + needs blue versions
-	[Fixed] MDM Blue theme
-	[Fixed] Network Manager isn't starting
 	Ubiquity, clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
 	Ubiquity shows "update installer"
 	
@@ -52,6 +43,3 @@ De-scoped
 	System: EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
 	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).
 	MP3 online doesn't work (known limitation with totem)
-
-
-

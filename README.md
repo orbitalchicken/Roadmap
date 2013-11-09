@@ -7,9 +7,7 @@ Infra
 	rel_notes explain about apt recommends
 
 System
-------		
-	[Fixed] mdm: don't just pre-select once
-	[Fixed] MDM: Session choices suggests remote connexion
+------	
 	Update mint-mirrors		
 	
 Cinnamon

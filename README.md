@@ -13,18 +13,14 @@ System
 	DVD Playback doesn't work with new gstreamer: The stream is in the wrong format (using Totem).. works with VLC	
 	mint4win: can't find CD (using autorun)
 	mint4win: shows version 14 instead of 16	
+	Banshee tries to rip a CD to FLAC by default
 
 To be Fixed prior to RC
 -----------------------
-	[Fixed] mdm: first boot post-install, mdm pre-selects a username that doesn't exist.. user can't log in, even if he selects his username
-	[Fixed] remove gufw
-	[Fixed] remove aptoncd
 	[Fixed] mate: missing petra bgs
 	[Fixed] mate: missing libcanberra-pulse (used to test speaker in sound module)
-	[Fixed] F1 on desktop in Cinnamon -> help:gnome-help/index not found error	
 	[Fixed] C64/C32: medibuntu is there in the official sources, although commented out..
 	[Fixed] Remove mint4win from the RC
-	[Fixed] mint-info rel notes point to old URL schemes...
 	mintinstall uses network and takes time before showing package page	
 
 Mint Tools
@@ -57,6 +53,10 @@ KDE
 	Add samba-mounter to new features page for KDE
 	Ubiquity, clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
 	Ubiquity shows "update installer"
+
+Xfce
+----
+	VLC missing
 
 Feedback from Corbin
 --------------------

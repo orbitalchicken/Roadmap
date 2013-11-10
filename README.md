@@ -16,7 +16,7 @@ System
 
 To be Fixed prior to RC
 -----------------------
-	[Fixed in git] mdm: first boot post-install, mdm pre-selects a username that doesn't exist.. user can't log in, even if he selects his username
+	[Fixed] mdm: first boot post-install, mdm pre-selects a username that doesn't exist.. user can't log in, even if he selects his username
 	[Fixed] remove gufw
 	[Fixed] remove aptoncd
 	[Fixed] mate: missing petra bgs

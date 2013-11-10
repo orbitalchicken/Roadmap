@@ -2,10 +2,8 @@
 Infra	
 -----
 	Add Petra rel notes
-	Add Petra new features page
-	rel_notes point to rel_petra_cinnamon.php
-	rel_notes explain about apt recommends
-	mint-info rel notes point to old URL schemes...
+	Add Petra new features page	
+	rel_notes explain about apt recommends	
 
 System
 ------	
@@ -13,6 +11,8 @@ System
 	Shutdown sequence in live-session is all black	
 	cinnamon: inserting an Audio CD suggests Brasero and VLC, not Banshee
 	DVD Playback doesn't work with new gstreamer: The stream is in the wrong format (using Totem).. works with VLC	
+	mint4win: can't find CD (using autorun)
+	mint4win: shows version 14 instead of 16	
 
 To be Fixed prior to RC
 -----------------------
@@ -23,9 +23,9 @@ To be Fixed prior to RC
 	[Fixed] mate: missing libcanberra-pulse (used to test speaker in sound module)
 	[Fixed] F1 on desktop in Cinnamon -> help:gnome-help/index not found error	
 	[Fixed] C64/C32: medibuntu is there in the official sources, although commented out..
-	mint4win: can't find CD (using autorun)
-	mint4win: shows version 14 instead of 16	
-	mintinstall uses network and takes time before showing package page
+	[Fixed] Remove mint4win from the RC
+	[Fixed] mint-info rel notes point to old URL schemes...
+	mintinstall uses network and takes time before showing package page	
 
 Mint Tools
 ----------	

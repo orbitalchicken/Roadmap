@@ -17,9 +17,10 @@ System
 
 To be Fixed prior to RC
 -----------------------		
-	mdm: can't select another user
-	cinnamon: menu and calendar applets, problem parsing file for menu@cinnamon.org while preparing to perform upgrade...
-	mate: x-caja-desktop windows bug at session start	
+	[Fixed in git] mdm: can't select another user
+	[Fixed in git] cinnamon: menu and calendar applets, problem parsing file for menu@cinnamon.org while preparing to perform upgrade...
+	[Fixed] mate: x-caja-desktop windows bug at session start	
+	[Fixed in git] Menu entries for module names aren't localized (Network, Sound, Displays, Color, Firewall Configuration, Region & Language, Power)
 	mintinstall uses network and takes time before showing package page	
 
 Mint Tools
@@ -37,8 +38,7 @@ Look and Feel
 
 Cinnamon
 --------		
-	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)	
-	Menu entries for module names aren't localized (Network, Sound, Displays, Color, Firewall Configuration, Region & Language, Power)
+	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)		
 	
 MATE
 ----	

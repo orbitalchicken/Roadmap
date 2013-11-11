@@ -15,6 +15,7 @@ System
 	mint4win: can't find CD (using autorun)
 	mint4win: shows version 14 instead of 16	
 	Banshee tries to rip a CD to FLAC by default
+	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
 
 To be Fixed prior to RC
 -----------------------		
@@ -30,6 +31,8 @@ Mint Tools
 	mintStick progress bar isn't fixed yet
 	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
 	mintmenu pull requests	
+	[Fixed] mintdesktop: remove mintfortune support
+	[Fixed] mintsystem: remove mintfortune support
 
 Look and Feel
 -------------	

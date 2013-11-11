@@ -16,11 +16,10 @@ System
 	Banshee tries to rip a CD to FLAC by default
 
 To be Fixed prior to RC
------------------------
-	[Fixed] mate: missing petra bgs
-	[Fixed] mate: missing libcanberra-pulse (used to test speaker in sound module)
-	[Fixed] C64/C32: medibuntu is there in the official sources, although commented out..
-	[Fixed] Remove mint4win from the RC
+-----------------------		
+	mdm: can't select another user
+	cinnamon: menu and calendar applets, problem parsing file for menu@cinnamon.org while preparing to perform upgrade...
+	mate: x-caja-desktop windows bug at session start	
 	mintinstall uses network and takes time before showing package page	
 
 Mint Tools
@@ -43,8 +42,7 @@ Cinnamon
 	
 MATE
 ----	
-	Use generic names in MATE packages
-	x-caja-desktop windows bug at session start	
+	Use generic names in MATE packages	
 	mintmenu category didn't appear (M64), did when clicked "Reload plugins"	
 	use mint logo as mintmenu icon
 

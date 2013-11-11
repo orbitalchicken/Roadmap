@@ -4,6 +4,7 @@ Infra
 	Add Petra rel notes
 	Add Petra new features page	
 	rel_notes explain about apt recommends	
+	rel_notes explain systemd regression on pam / XDG_RUNTIME_DIR
 
 System
 ------	
@@ -17,11 +18,12 @@ System
 
 To be Fixed prior to RC
 -----------------------		
-	[Fixed in git] mdm: can't select another user
-	[Fixed in git] cinnamon: menu and calendar applets, problem parsing file for menu@cinnamon.org while preparing to perform upgrade...
+	[Fixed] mdm: can't select another user
+	[Fixed] cinnamon: menu and calendar applets, problem parsing file for menu@cinnamon.org while preparing to perform upgrade...
 	[Fixed] mate: x-caja-desktop windows bug at session start	
-	[Fixed in git] Menu entries for module names aren't localized (Network, Sound, Displays, Color, Firewall Configuration, Region & Language, Power)
-	mintinstall uses network and takes time before showing package page	
+	[Fixed] Menu entries for module names aren't localized (Network, Sound, Displays, Color, Firewall Configuration, Region & Language, Power)
+	[Fixed] nemo: create new launcher (and other actions..) isn't l10n'd
+	[Fixed] mintinstall uses network and takes time before showing package page	
 
 Mint Tools
 ----------	
@@ -30,11 +32,9 @@ Mint Tools
 	mintmenu pull requests	
 
 Look and Feel
--------------
-	cinnamon-mint-x-theme: Check latest pull request from Bernard
-	cinnamon-mint-x-theme: User applet shows username/gecos in white
-	mint-x-gtk3: Buttons default and hover effect look a bit glitchy
-	mint-x-gtk3: radio-check buttons have outline on selection
+-------------	
+	[Fixed] mint-x-gtk3: Buttons default and hover effect look a bit glitchy
+	[Fixed] mint-x-gtk3: radio-check buttons have outline on selection
 
 Cinnamon
 --------		
@@ -60,13 +60,11 @@ Feedback from Corbin
 --------------------
     Installing Nvidia drivers makes tty and boot screen lo-res (http://www.conanblog.me/it/how-to-get-the-high-resolution-for-tty-back-after-nvidia-driver-update-in-ubuntu/)    
     Brasero Wont open after burning a disk
-    In Spices the "Updates Available!" button is visually glitchy    
     Cannot Middle click most toolbar items in Nemo    
     Calender Applet should link to "cinnamon-settings calendar"
     When a maximized window is minimized, and you activate the hot corner or expo, it makes a split second glitch view of that window
     The mint logo is a bitmap(png) and is blurry when the panel is resized, it should be svg
     Mounted disks shouldest show by default one the desktop?
-    In Applets/Desklet config, the more actions button icon makes no sense, should be cog
     Changing default applications does nothing
     Copying large files (< 200mb), nemo reports 99% the whole time.    
 
@@ -76,8 +74,9 @@ Known Cinnamon bugs
 	Moving applets in cinnamon panel edit mode on, glitches out systray icons when it is shifted
 
 De-scoped
----------		
-	Cinnamon: Launching keepass + xsel freezes Cinnamon [wrouesnel] (unknown cause/solution)	
+---------	
+	System: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root (upstream bug in systemd, affects all distributions. The decision was taken not to hack XDG_RUNTIME_DIR and not to hack /etc/pam.d.. i.e. bringing back xdg_support.so in replacement to systemd.so as it could create further regressions with systemd)
+	Cinnamon: Launching keepass + xsel freezes Cinnamon [wrouesnel] (unknown cause/solution, could be related to XDG_RUNTIME_DIR bug)	
 	GTK3: dialogs use symbolic icons (offending code is in GTK3, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit.)
 	GTK3: No padding in context menu leads to accidental operations (bug reported upstream in GTK3, temp workaround/fix unlikely/tedious)
 	GNOME: gnome-calculator menubar (minor cosmestic issue, won't fix)

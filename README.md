@@ -16,12 +16,18 @@ System
 	mint4win: shows version 14 instead of 16	
 	banshee: tries to rip a CD to FLAC by default
 	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
-	plymouth : Installing Nvidia drivers makes tty and boot screen lo-res (http://www.conanblog.me/it/how-to-get-the-high-resolution-for-tty-back-after-nvidia-driver-update-in-ubuntu/)    
     brasero: Brasero Wont open after burning a disk
+
+
+pre-RC Fixes
+------------
+    [Fixed] missing casper uuid.conf in ISO images
+    [Fixed] mate: usr/bin/startcaja breaks open-as-root
 
 Mint Tools
 ----------		
 	mintstick: progress bar isn't fixed yet		
+	mintdrivers: doesn't apply ATI icon to "Advanced Micro Devices, Inc. [AMD/ATI]: Wrestler [Radeon HD 6290]"
 
 Cinnamon
 --------	
@@ -40,7 +46,7 @@ Cinnamon
 	mint-themes-gtk3: nemo sidebar buttons are too large
 	
 MATE
-----	
+----		
 	mate: Use generic names in MATE packages	
 	mintmenu: category didn't appear (M64), did when clicked "Reload plugins"	
 	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	

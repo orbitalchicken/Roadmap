@@ -8,73 +8,53 @@ Infra
 
 System
 ------	
-	apturl missing support in Firefox
+	apturl/firefox: apturl missing support in Firefox
 	Shutdown sequence in live-session is all black	
 	cinnamon: inserting an Audio CD suggests Brasero and VLC, not Banshee
-	DVD Playback doesn't work with new gstreamer: The stream is in the wrong format (using Totem).. works with VLC	
+	libdvdcss2: DVD Playback doesn't work with new gstreamer: The stream is in the wrong format (using Totem).. works with VLC	
 	mint4win: can't find CD (using autorun)
 	mint4win: shows version 14 instead of 16	
-	Banshee tries to rip a CD to FLAC by default
+	banshee: tries to rip a CD to FLAC by default
 	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
-
-To be Fixed prior to RC
------------------------		
-	[Fixed] mdm: can't select another user
-	[Fixed] cinnamon: menu and calendar applets, problem parsing file for menu@cinnamon.org while preparing to perform upgrade...
-	[Fixed] mate: x-caja-desktop windows bug at session start	
-	[Fixed] Menu entries for module names aren't localized (Network, Sound, Displays, Color, Firewall Configuration, Region & Language, Power)
-	[Fixed] nemo: create new launcher (and other actions..) isn't l10n'd
-	[Fixed] mintinstall uses network and takes time before showing package page	
+	plymouth : Installing Nvidia drivers makes tty and boot screen lo-res (http://www.conanblog.me/it/how-to-get-the-high-resolution-for-tty-back-after-nvidia-driver-update-in-ubuntu/)    
+    brasero: Brasero Wont open after burning a disk
 
 Mint Tools
-----------	
-	mintStick progress bar isn't fixed yet
-	mintmenu show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
-	mintmenu pull requests	
-	[Fixed] mintdesktop: remove mintfortune support
-	[Fixed] mintsystem: remove mintfortune support
-
-Look and Feel
--------------	
-	[Fixed] mint-x-gtk3: Buttons default and hover effect look a bit glitchy
-	[Fixed] mint-x-gtk3: radio-check buttons have outline on selection
+----------		
+	mintstick: progress bar isn't fixed yet		
 
 Cinnamon
---------		
+--------	
+	nemo: Use sudo/gksu/gksudo to "open as root" instead of pkexec? to work around the XDG_RUNTIME_DIR bug?
+	User applet: name/pic are centered, should be left-aligned (shows with small gecos)
 	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)		
-	
-MATE
-----	
-	Use generic names in MATE packages	
-	mintmenu category didn't appear (M64), did when clicked "Reload plugins"	
-	use mint logo as mintmenu icon
-
-KDE
----
-	Add samba-mounter to new features page for KDE
-	Ubiquity, clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
-	Ubiquity shows "update installer"
-
-Xfce
-----
-	VLC missing
-
-Feedback from Corbin
---------------------
-    Installing Nvidia drivers makes tty and boot screen lo-res (http://www.conanblog.me/it/how-to-get-the-high-resolution-for-tty-back-after-nvidia-driver-update-in-ubuntu/)    
-    Brasero Wont open after burning a disk
-    Cannot Middle click most toolbar items in Nemo    
-    Calender Applet should link to "cinnamon-settings calendar"
+	Calendar applet should link to "cinnamon-settings calendar"
+    Changing default applications does nothing
     When a maximized window is minimized, and you activate the hot corner or expo, it makes a split second glitch view of that window
     The mint logo is a bitmap(png) and is blurry when the panel is resized, it should be svg
     Mounted disks shouldest show by default one the desktop?
-    Changing default applications does nothing
-    Copying large files (< 200mb), nemo reports 99% the whole time.    
+    Cannot Middle click most toolbar items in Nemo    
+    Copying large files (< 200mb), nemo reports 99% the whole time.
+    Changing Wallpaper sometimes freezes cinnamon
+	Moving applets in cinnamon panel edit mode on, glitches out systray icons when it is shifted    
+	mint-themes-gtk3: nemo sidebar buttons are too large
+	
+MATE
+----	
+	mate: Use generic names in MATE packages	
+	mintmenu: category didn't appear (M64), did when clicked "Reload plugins"	
+	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
+	mintmenu: pull requests		
 
-Known Cinnamon bugs
--------------------
-	Changing Wallpaper sometimes freezes cinnamon
-	Moving applets in cinnamon panel edit mode on, glitches out systray icons when it is shifted
+KDE
+---
+	rel_notes: Add samba-mounter to new features page for KDE
+	ubiquity: clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
+	ubiquity: shows "update installer"
+
+Xfce
+----
+	VLC missing             
 
 De-scoped
 ---------	

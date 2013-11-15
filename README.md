@@ -1,10 +1,17 @@
+Fixed Issues since Mint 16 RC
+======================
 
-Infra	
------
-	Add Petra rel notes
-	Add Petra new features page	
-	rel_notes explain about apt recommends	
-	rel_notes explain systemd regression on pam / XDG_RUNTIME_DIR
+All editions
+------------
+
+Cinnamon Edition
+----------------
+
+MATE Edition
+------------
+
+Confirmed Issues
+=============
 
 System
 ------	
@@ -17,12 +24,6 @@ System
 	banshee: tries to rip a CD to FLAC by default
 	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
     brasero: Brasero Wont open after burning a disk
-
-
-pre-RC Fixes
-------------
-    [Fixed] missing casper uuid.conf in ISO images
-    [Fixed] mate: usr/bin/startcaja breaks open-as-root
 
 Mint Tools
 ----------		
@@ -56,7 +57,7 @@ KDE
 ---
 	rel_notes: Add samba-mounter to new features page for KDE
 	ubiquity: clicking on "Release notes" link opens an error dialog saying "can't launch Firefox"
-	ubiquity: shows "update installer"
+	mintstick KDE action shows also for DVD and floppy disks
 
 Xfce
 ----
@@ -74,3 +75,21 @@ De-scoped
 	System: EFI booth path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
 	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).
 	MP3 online doesn't work (known limitation with totem)
+
+New Bug Reports
+=============
+
+Cinnamon Edition 
+----------------
+
+MATE Edition
+------------
+
+Triaged Reports
+============
+
+Cinnamon Edition 
+----------------
+
+MATE Edition
+------------

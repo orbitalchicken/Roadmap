@@ -95,7 +95,7 @@ All editions
 	wine: Same issue with Wine in Mate as in Cinnamon. Installer pops up some dialogs, they are transparent, and then crash. The Wine issue I reported disappears when I switch from multimonitor mode to single monitor. Haven’t tested that in Cinnamon. To replicate, create a multi-monitor setup where one monitor is ABOVE the other, and then run some wine apps. Haven’t tried to setup side by side.
 	Update manager, Software Manager and some other applications that ask for password, when they open they make the system freeze for 30” and then they ask the password.
 	language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.
-	
+	apt-get dist-upgrade wants to install shim*, it's for secure boot, i don't think, it should be available for installation
 
 Cinnamon Edition - last processed comment: #62
 ----------------

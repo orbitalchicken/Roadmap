@@ -24,6 +24,7 @@ System
 	banshee: tries to rip a CD to FLAC by default
 	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
     brasero: Brasero Wont open after burning a disk
+    Update all translations
 
 Mint Tools
 ----------		
@@ -82,36 +83,68 @@ New Bug Reports
 All editions
 -------------
 	there’s no “United States” setting available in “Cinnamon Settings/Regional Settings” under the “Format” tab and it can’t be added via the “+” button
-- Nvidia drivers dont automaticaly install nvidia-settings (Tested with nvidia-319 and nvidi-319-updates)
-- Banshee will segfault after playing ~30 mp3 songs
+	Nvidia drivers dont automaticaly install nvidia-settings (Tested with nvidia-319 and nvidi-319-updates)
+ 	Banshee will segfault after playing ~30 mp3 songs
+	Update manager, Software Manager and some other applications that ask for password, when they open they make the system freeze for 30” and then they ask the password.
+	language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.
+	System settings / Regional settings / Language = Unable to add/remove any languages.
+	System settings / Regional settings / Formats = Unable to add/remove region formats.
+	System settings / Regional settings / System = Cannot change anything
+	broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg
+	Installed Wine, few other packages, when I go to open a windows app (civ2 for the record), it opens the wine gecko installer, and then that window turns “clear” and I just see the desktop behind it.
+	Synaptic package manager crashes when you try to delete any repository
+	in at least 64 bits to see in System Monitor have a high consumption of CPU (2) and Memory
+	UEFI boot and GPT partition tables, the installer crashes when installing grub. I have installed Ubuntu 13.10 on both of those UEFI systems with no problem.
+	There appears to be a bug when logging out then back in as another user – the system just hangs
+	Synaptic issues: [1] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1178024 [2] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687 [3] https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/1216045 [4] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687/comments/6
+	After resizing Synaptic Package Manager window, the mouse cursor froze in resize style. I could not click on any window any more. No response. The GUI was unusable, and I had to reboot using the reset button on the PC.
+	Same issue with Wine in Mate as in Cinnamon. Installer pops up some dialogs, they are transparent, and then crash. The Wine issue I reported disappears when I switch from multimonitor mode to single monitor. Haven’t tested that in Cinnamon. To replicate, create a multi-monitor setup where one monitor is ABOVE the other, and then run some wine apps. Haven’t tried to setup side by side.
 
 
-Cinnamon Edition - 
+Cinnamon Edition - last processed comment: #62
 ----------------
-- Cinnamon Settings is advanced mode by default always
-- cinnamon-desktop-editor Choose an icon dialog does not have image previews
-- Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
+	Cinnamon Settings is advanced mode by default always
+	cinnamon-desktop-editor Choose an icon dialog does not have image previews
+	Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
+	I go to system settings to change the default applications to the ones of my choice but it does not work. I tried to change media application for music and video to VLC but Totem remains as the default media player.
+	Installed Cinnamon and could not install nemo-dropbox. It downloads, but after displaying “100%”, it hangs. I was able to install dropbox from dropbox.com – even though it said it would work with thunar ( and I had nemo). I tried to install gnome, but it errored out: “Could not apply changes. Fix broken packages first.”
+	Onscreen keyboard activates when clicking the menu on the panel
+	Account details is in the appearance section of the control center…I would have thought it would be in preferences or administration.
 
-MATE Edition
+MATE Edition - last processed comment: #43
 ------------
-
+	nm-applet crashed, stopped working
+	Login Window for pw on encrypted disks starts too far left with ***,,,should be centered
+	mate-systm-monitor under recourses doesn’t look great with the default GTK theme
+	After Installing an application, the category icons in mint-menu do not show
+	mate-terminal still has a menu bar and is not transparent
+	The notification will sometimes appear in the bottom right corner of the screen in a position it will be invisible
+	installed driver for my nvidia 210 using mintdrivers - looking at system info it looks like it made it i can go into admin/nvidia x server settings and it shows BUT if i click it nothing happens ( doesn’t launch the nvidia control panel) - i use system monitor and shows processor activity for just a sec then flat lines
+	Clicking “help” on most mate applications opens yelp to an error page
+	MOC (music on console) does not work Segmentation fault
+	Xorg does not start on my ati r128 video card. This seems to be an upstream issue in xorg 1.14, but you did mention the b43 hang issue in Maya.
 
 Triaged Reports
 ============
 
 Not a bug 
 ---------
-- Git is not installed by default
+	Git is not installed by default
+	The new login screen (Mint X default) looks really great but displays both the user name and real name. Is this intentional? (Yes, it's ok because the user can choose other themes, it wouldn't if MDM wasn't themeable)
 
 Outside of the scope
 --------------------
 
-- Magnet links for torrents are not working in Firefox
+	Magnet links for torrents are not working in Firefox
+	Still no wacom tablet support?
+	include a powerful search (like in Windows) in Cinnamon without using Synapse. As you type, it will automatically display the files that you’re looking for.
 
-Not enough info
----------------
+Not enough info / Can't reproduce
+---------------------------------
 
-- On/Off switch for networking applet is visually glitchy
+	On/Off switch for networking applet is visually glitchy
+	No login screen has no where to put in login information. Background, works.
+	Sometimes the ethernet network connection is lost without any evident reason.
 
 Upstream won't fix
 ------------------

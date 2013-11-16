@@ -79,17 +79,44 @@ De-scoped
 New Bug Reports
 =============
 
-Cinnamon Edition 
+All editions
+-------------
+	there’s no “United States” setting available in “Cinnamon Settings/Regional Settings” under the “Format” tab and it can’t be added via the “+” button
+- Nvidia drivers dont automaticaly install nvidia-settings (Tested with nvidia-319 and nvidi-319-updates)
+- Banshee will segfault after playing ~30 mp3 songs
+
+
+Cinnamon Edition - 
 ----------------
+- Cinnamon Settings is advanced mode by default always
+- cinnamon-desktop-editor Choose an icon dialog does not have image previews
+- Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
 
 MATE Edition
 ------------
 
+
 Triaged Reports
 ============
 
-Cinnamon Edition 
-----------------
+Not a bug 
+---------
+- Git is not installed by default
+
+Outside of the scope
+--------------------
+
+- Magnet links for torrents are not working in Firefox
+
+Not enough info
+---------------
+
+- On/Off switch for networking applet is visually glitchy
+
+Upstream won't fix
+------------------
+
+
 
 MATE Edition
 ------------

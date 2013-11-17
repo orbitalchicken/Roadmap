@@ -93,19 +93,34 @@ All editions
 	mdm: There appears to be a bug when logging out then back in as another user – the system just hangs
 	synaptic: Synaptic issues: [1] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1178024 [2] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687 [3] https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/1216045 [4] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687/comments/6
 	wine: Same issue with Wine in Mate as in Cinnamon. Installer pops up some dialogs, they are transparent, and then crash. The Wine issue I reported disappears when I switch from multimonitor mode to single monitor. Haven’t tested that in Cinnamon. To replicate, create a multi-monitor setup where one monitor is ABOVE the other, and then run some wine apps. Haven’t tried to setup side by side.
+	Wine doesn’t work. Tried to install Picasa through Playonlinux, but the installation has failed. When I try to launch some wine application, I see the program window without any text and warning window without a text and then all this crashes. But there are no problem with ubuntu 13.10 at work at all.
 	Update manager, Software Manager and some other applications that ask for password, when they open they make the system freeze for 30” and then they ask the password.
 	language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.
 	apt-get dist-upgrade wants to install shim*, it's for secure boot, i don't think, it should be available for installation
+	No support for AMD Kabrini chipset or embeded video output on 64 bit edition, both mint and cinn. For ref. ubuntu does have the support in all since 12.04
+	have installed openvpn, when I click on on “configure a VPN” from the wireless applet, then on the “Add” but I cant see any option for creating a “OpenVPN” connection type. This did work fine in Linux Mint 15, do you have any ideas?
+	Java apps are almost unusable when maximized. http://forums.linuxmint.com/viewtopic.php?f=47&t=112470&p=709183
+	In the “Install Software” slide of the installation slideshow, it shows Picasa under “Features software”, but Google dropped Picasa for Linux a little over a year ago
+	editing the software sources via Synaptic ends up in corrupted software sources.
 
-Cinnamon Edition - last processed comment: #62
+Cinnamon Edition - last processed comment: #85
 ----------------
 	cinnamon-desktop-editor Choose an icon dialog does not have image previews
 	Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
 	I go to system settings to change the default applications to the ones of my choice but it does not work. I tried to change media application for music and video to VLC but Totem remains as the default media player.
 	Installed Cinnamon and could not install nemo-dropbox. It downloads, but after displaying “100%”, it hangs. I was able to install dropbox from dropbox.com – even though it said it would work with thunar ( and I had nemo). I tried to install gnome, but it errored out: “Could not apply changes. Fix broken packages first.”
 	Onscreen keyboard activates when clicking the menu on the panel
+	the update manager loads at startup even after it has been removed from the startup list 
+	the network manager hasn’t any ability to add ADSL connection. From the pop-up list i can chose vpn only. https://bugs.launchpad.net/community.linuxmint.com/+bug/1251530 When you open network manager – standing in wired – click on options – then you seeing window “Editing wired”, but if you don’t close this window and click on “options” one more – it will be opened another window “Network connections”. Where i was able to set my dsl settings. But, in LM 16 it doesn’t work, the second window with “Network connections” doesn’t appear.
+	menu requires Logout/restart before new application links are displayed.
+	installing nemo-dropbox sends cinnamon into meltdown. If you restart Cinnamon afterwards, or log out and back in, or reboot, Cinnamon crashes, and resorts to software rendering permananently. It just won’t restart. Uninstalling nemo-dropbox, sets things back to normal again, and cinnamon works fine.
+	when I click on the window list to minimize and maximize sometimes the windows don’trespond and so I have to maximize another window so that I can mainimize or maximize the previous one!!
+	Icons keep disappearing from desktop especially when I log out then log in!!
+	radio tray and kazam are not working. i can’t say why and if this thing has something to do with the system or only with cinnamon 2.
+	Logout sound missing from the sound events
+	remove certifications from spices
 
-MATE Edition - last processed comment: #43
+MATE Edition - last processed comment: #65
 ------------
 	nm-applet crashed, stopped working
 	Login Window for pw on encrypted disks starts too far left with ***,,,should be centered
@@ -116,6 +131,9 @@ MATE Edition - last processed comment: #43
 	installed driver for my nvidia 210 using mintdrivers - looking at system info it looks like it made it i can go into admin/nvidia x server settings and it shows BUT if i click it nothing happens ( doesn’t launch the nvidia control panel) - i use system monitor and shows processor activity for just a sec then flat lines
 	Clicking “help” on most mate applications opens yelp to an error page
 	Xorg does not start on my ati r128 video card. This seems to be an upstream issue in xorg 1.14, but you did mention the b43 hang issue in Maya.
+	MATE sound preview not work correctly, bug is like on LMDE before some package updates – file manager just disappear and sound continues play.
+	Not yet fixed MATE mintMenu bug where it isn’t transparent when user set panel with solid color – all panel adjusts transparent but mintMenu remains with default gray color.
+
 
 Triaged Reports
 ============

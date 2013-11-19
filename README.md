@@ -107,11 +107,8 @@ All editions
 	mintdrivers: Nvidia drivers dont automaticaly install nvidia-settings (Tested with nvidia-319 and nvidi-319-updates)
  	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg	
 	mintdrivers: Driver manager list is always empty even Nvidia-319 driver installed (I’m also not sure if it should allow installation for detected hardware)			
-	apps/drivers: synaptic: Synaptic issues: [1] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1178024 [2] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687 [3] https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/1216045 [4] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687/comments/6
-	apps/drivers: wine: Same issue with Wine in Mate as in Cinnamon. Installer pops up some dialogs, they are transparent, and then crash. The Wine issue I reported disappears when I switch from multimonitor mode to single monitor. Haven’t tested that in Cinnamon. To replicate, create a multi-monitor setup where one monitor is ABOVE the other, and then run some wine apps. Haven’t tried to setup side by side.
-	apps/drivers: Wine doesn’t work. Tried to install Picasa through Playonlinux, but the installation has failed. When I try to launch some wine application, I see the program window without any text and warning window without a text and then all this crashes. But there are no problem with ubuntu 13.10 at work at all.
-	apps/drivers: wine: Installed Wine, few other packages, when I go to open a windows app (civ2 for the record), it opens the wine gecko installer, and then that window turns “clear” and I just see the desktop behind it.
-	apps/drivers: language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.	
+	apps/drivers: synaptic: Synaptic issues: [1] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1178024 [2] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687 [3] https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/1216045 [4] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687/comments/6	
+	apps/drivers: language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.		
 	mdm: always uses English keyboard layout?		
 	mdm: With nvidia-current installed attempting to shutdown or restart from mdm hangs with black screen. Have to shutdown with the power button.
 
@@ -169,6 +166,7 @@ Can't reproduce
 	apps/drivers: Please, add bcmwl-kernel-source_6.30.223.30+bdcom-0ubuntu3_amd64	(already there on the live medium)
 	apps/drivers: gnome-system-monitor: in at least 64 bits to see in System Monitor have a high consumption of CPU (2) and Memory
 	apps/drivers: editing the software sources via Synaptic ends up in corrupted software sources.	
+	apps/drivers: Wine doesn’t work. Tried to install Picasa through Playonlinux, but the installation has failed. When I try to launch some wine application, I see the program window without any text and warning window without a text and then all this crashes. But there are no problem with ubuntu 13.10 at work at all. (possibly due to PPA 700 priority)
 	system: Sometimes the ethernet network connection is lost without any evident reason.		
 	Integrity check give no result. After the check process, no ‘ok’ or ‘error’ message, only ‘press any key to reboot’ message visible.
 	mdm: Login window does not have focus on startup (You have to click into the window before you can type the password in)	

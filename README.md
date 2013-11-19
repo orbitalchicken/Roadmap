@@ -2,6 +2,7 @@ Confirmed issues
 
 System
 ------	
+	system: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root
 	upgrade notes: Explain how to remove priority 700 for PPA
 	apturl/firefox: apturl missing support in Firefox
 	Shutdown sequence in live-session is all black	

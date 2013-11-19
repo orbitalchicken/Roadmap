@@ -13,7 +13,6 @@ System
 	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
     brasero: Brasero Wont open after burning a disk
     Update all translations
-    mdm: sets locale incorrectly (breaks apps like radiotray)
     mdm: mdm-theme-emulator provides no icon and places itself in "other" in menu
     mdm: nvidia-319 installed, login works fine. Log out and different user logs in --> blank screen with a mouse pointer. Switch users works ok.
 

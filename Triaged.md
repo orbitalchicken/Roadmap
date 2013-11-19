@@ -16,6 +16,7 @@ Outside of the scope
 
 Can't reproduce
 ---------------------------------	
+    apps/drivers: radiotray doesn't start (probably because of wrong locale setup, check with "locale" command)
 	apps/drivers: Minitube window control and menu bar moved to the right side!!!	
 	apps/drivers: Please, add bcmwl-kernel-source_6.30.223.30+bdcom-0ubuntu3_amd64	(already there on the live medium)
 	apps/drivers: gnome-system-monitor: in at least 64 bits to see in System Monitor have a high consumption of CPU (2) and Memory

@@ -17,14 +17,10 @@ All editions
 
 Cinnamon Edition - last processed comment: #218
 ----------------
-	cinnamon-settings: cant access the settings for Network, every time i click on it, its appears shortly and crashes…
-	cinnamon-settings: select Networking /usr/lib/cinnamon-settings/modules/cs_user.py:112: Warning: g_object_unref: assertion ‘G_IS_OBJECT (object)’ failed network-cc-panel:ERROR:rfkill-glib.c:83:type_to_string: code should not be reached Aborted New kernels use rfkill types. This bug is related to the confirmed and solved RFkill issue see the following links for details: https://lkml.org/lkml/2013/5/27/386 https://mail.gnome.org/archives/commits-list/2013-May/msg04543.html https://bugzilla.redhat.com/show_bug.cgi?id=969784 committed fix (and patch) from the Ubuntu side. https://bugs.launchpad.net/ubuntu/+source/gnome-control-center/+bug/1209092 commit from gnome side: https://mail.gnome.org/archives/commits-list/2013-May/msg04543.html
 	cinnamon: Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
 	cinnamon: Icons keep disappearing from desktop especially when I log out then log in!!		
 	cinnamon: The Mint logo/icon that should appear next to the “Start” menu disappeared from the panel after the first reboot.	
 	system: Mint Splash screen is not appearing, and seems to be defaulting to the Ubuntu 13.10 splash screen.
-	system: the network manager hasn’t any ability to add ADSL connection. From the pop-up list i can chose vpn only. https://bugs.launchpad.net/community.linuxmint.com/+bug/1251530 When you open network manager – standing in wired – click on options – then you seeing window “Editing wired”, but if you don’t close this window and click on “options” one more – it will be opened another window “Network connections”. Where i was able to set my dsl settings. But, in LM 16 it doesn’t work, the second window with “Network connections” doesn’t appear.	
-	translations: There are a few issues with the translations (Danish, which is 100% translated): - In System Settings “Date & Time” is in English – In “Date & Time” the months are in English as well - If I go to Menu/Administration there is a “program” called “Logind-skærm”. However, if I go to System Settings the same “program” is called “Login-skærm”. I can only find one translation of “Login Screen” in Cinnamon in Launchpad and that is “Login-skærm”, so where does this “Logind-skærm” come from? Also, the tab names are in English.		
 
 MATE Edition - last processed comment: #87
 ------------

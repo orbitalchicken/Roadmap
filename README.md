@@ -24,13 +24,13 @@ Mint Tools
 
 Cinnamon
 --------	
+	cinnamon-settings: Network module crash, new kernels use rfkill types. https://mail.gnome.org/archives/commits-list/2013-May/msg04543.html
+	cinnamon-settings: “Date & Time” module name not translated, and months in combo not translated
 	nemo: Set folders to open each in their own window. Open a folder that has several sub-folders. Lasso two or more sub-folders in that window.  Right-click and choose Open. Nemo crashes!	
 	nemo: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com	
 	muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)
 	cinnamon: sometimes icons change from default Mint icons to some other (maybe some fallback icons?)
 	Clock says 15:38. Go to time settings. Turn off network time. Turn it back on. Wait for 10 seconds or so.. time updates to correct time and says 16:38. (either Cinnamon loses track of ntp when disconnected/reconnected to network, or it fails to use it at login time)		
-	Calendar applet should link to "cinnamon-settings calendar"
-    When a maximized window is minimized, and you activate the hot corner or expo, it makes a split second glitch view of that window
     The mint logo is a bitmap(png) and is blurry when the panel is resized, it should be svg
     Mounted disks shouldest show by default one the desktop?
     Cannot Middle click most toolbar items in Nemo    

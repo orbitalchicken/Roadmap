@@ -5,6 +5,8 @@ Not a bug
 	system: Git is not installed by default
 	mdm: displays both the user name and real name. (ok because the user can choose other themes)
 	system: have installed openvpn, when I click on on “configure a VPN” from the wireless applet, then on the “Add” but I cant see any option for creating a “OpenVPN” connection type. (solved by installing network-manager-openvpn and network-manager-openvpn-gnome)
+	cinnamon-settings: the network manager hasn’t any ability to add ADSL connection. (go to menu->network connections and then click Add and choose DSL) 
+	translations: I can only find one translation of “Login Screen” in Cinnamon in Launchpad and that is “Login-skærm”, so where does this “Logind-skærm” come from? (comes from mdm)
 
 Outside of the scope
 --------------------
@@ -37,6 +39,7 @@ Can't reproduce
 	nemo: Nemo will open 3 instances of the new-launcher action when activated in the context menu	
 	cinnamon-settings: Cinnamon Settings is advanced mode by default always
 	cinnamon-settings: When I choose custom sounds (I used .wav files and they worked for a bit as they should), it does not remember them.
+    cinnamon: When a maximized window is minimized, and you activate the hot corner or expo, it makes a split second glitch view of that window
 	cinnamon: The sound applet does not close Banshee by clicking on the close icon.	
 	cinnamon: When I press Super_L (Windows key) to open the mint-menu, the menu opens, but the overview of workspaces (which should actually open via Ctrl+Alt+Up and does this, too) opens, too. So it is not possible to enter something into the menus search field. I already checked thed the shortcut for the workspace overview in the cinnamon settings, but there is only Ctrl+Alt+Up written.	
 	cinnamon: The cursor can be scrolled way past the right border of the screen. On the left side, it stops at the edge.

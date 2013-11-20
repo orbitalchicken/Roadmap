@@ -23,8 +23,7 @@ Cinnammon
 	cinnamon-settings: Time zone selection, 12vs24 hour clock, easier custom format selection
 	cinnamon-settings: Add sound events for logout
 	applet: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…
-	applets: when I click on the window list to minimize and maximize sometimes the windows don’trespond and so I have to maximize another window so that I can mainimize or maximize the previous one!!
-	nemo: The spacing in the Nemo side bar between the folders such as Downloads, Documents etc seems to be a bit small.
+	applets: when I click on the window list to minimize and maximize sometimes the windows don’trespond and so I have to maximize another window so that I can mainimize or maximize the previous one!!	
 	window-list: Can't minimize windows which have a modal dialog (for example: Synaptic while installing a package). It's possible via the titlebar, but not via the window list
 	applets: On/Off switch for networking applet is visually glitchy
 	spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)

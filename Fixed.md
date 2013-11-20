@@ -4,6 +4,7 @@ All editions
 ------------
 	[RFT] apps/drivers: some packages (wine for instance) can't be installed after using the xorg-edgers PPA (caused by priority 700 on PPA)	
 	[RTF] mintupdate: not visible in Startup Applications
+	[Fix pending] system: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root - https://bugzilla.redhat.com/show_bug.cgi?id=753882
 
 Cinnamon Edition
 ----------------
@@ -14,6 +15,12 @@ Cinnamon Edition
     [Fixed in Git] cinnamon-settings: Network module crash, new kernels use rfkill types. https://mail.gnome.org/archives/commits-list/2013-May/msg04543.html
 	[Fixed in Git] cinnamon-settings: “Date & Time” module name not translated, and months in combo not translated
 	[Fixed in Git] cinnamon-settings: missing timezone selection
+	[Fixed in Git] nemo: mime commands show up in the menu (add nodisplay)
+	[Fixed in Git] nemo: Set folders to open each in their own window. Open a folder that has several sub-folders. Lasso two or more sub-folders in that window.  Right-click and choose Open. Nemo crashes!	
+	[Fixed in Git] mint-themes-gtk3: nemo sidebar buttons are too large
+	[Fixed in Git] Account details is in the appearance section of the control center... I would have thought it would be in preferences or administration.
+	[Fixed pending] nemo: The spacing in the Nemo side bar between the folders such as Downloads, Documents etc seems to be a bit small.
+	[Fixed pending] cinnamon: tooltip on Power applet says "Keyboard" or "Mouse"
 
 MATE Edition
 ------------

@@ -1,8 +1,7 @@
 Confirmed issues
 
 System
-------	
-	system: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root - https://bugzilla.redhat.com/show_bug.cgi?id=753882
+------		
 	upgrade notes: Explain how to remove priority 700 for PPA
 	apturl/firefox: apturl missing support in Firefox
 	Shutdown sequence in live-session is all black	
@@ -23,8 +22,6 @@ Mint Tools
 
 Cinnamon
 --------	
-	nemo: mime commands show up in the menu (add nodisplay)
-	nemo: Set folders to open each in their own window. Open a folder that has several sub-folders. Lasso two or more sub-folders in that window.  Right-click and choose Open. Nemo crashes!	
 	nemo: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com	
 	muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)
 	cinnamon: sometimes icons change from default Mint icons to some other (maybe some fallback icons?)
@@ -35,11 +32,8 @@ Cinnamon
     Copying large files (< 200mb), nemo reports 99% the whole time.
     Changing Wallpaper sometimes freezes cinnamon
 	Moving applets in cinnamon panel edit mode on, glitches out systray icons when it is shifted    
-	mint-themes-gtk3: nemo sidebar buttons are too large
-	Account details is in the appearance section of the control center... I would have thought it would be in preferences or administration.
 	tooltips in Cinnamon settings “jump” from left top corner of screen (created there and then moved to the right place)
 	"Send by email" is showing when right clicking Computer, Home, Trash or removable drives icons on Desktop (also another really minor issue is that “Send by email” and “Format” should have “…” on the end)
-	tooltip on Power applet says “Keyboard” (I am using wireless Keyboard)
 	I miss the working WIN+D keyboard shortcut to go to desktop.
 	remove certifications from spices
 	cinnamon menu doesn't listen to menu changes outside /usr/share/applications? install shotwell for instance (uses /usr/share/menu)	

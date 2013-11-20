@@ -14,8 +14,7 @@ System
 
 Mint Tools
 ----------		
-	[Minor] mintstick: progress bar isn't fixed yet		
-	[Minor] mintdrivers: doesn't apply ATI icon to "Advanced Micro Devices, Inc. [AMD/ATI]: Wrestler [Radeon HD 6290]"	
+	[Minor] mintstick: progress bar isn't fixed yet			
 
 Cinnamon
 --------	

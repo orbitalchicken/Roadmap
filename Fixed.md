@@ -5,6 +5,8 @@ All editions
 	[RFT] apps/drivers: some packages (wine for instance) can't be installed after using the xorg-edgers PPA (caused by priority 700 on PPA)	
 	[RTF] mintupdate: not visible in Startup Applications
 	[Fix pending] system: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root - https://bugzilla.redhat.com/show_bug.cgi?id=753882
+	[Fixed] mintdrivers: doesn't apply ATI icon to "Advanced Micro Devices, Inc. [AMD/ATI]: Wrestler [Radeon HD 6290]"	
+	[Fixed] mintdrivers: Nvidia drivers dont automaticaly install nvidia-settings (Tested with nvidia-319 and nvidi-319-updates)
 
 Cinnamon Edition
 ----------------

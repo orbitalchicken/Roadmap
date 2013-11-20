@@ -11,8 +11,9 @@ All editions
 	mintdrivers: Driver manager list is always empty even Nvidia-319 driver installed (I’m also not sure if it should allow installation for detected hardware)			
 	apps/drivers: synaptic: Synaptic issues: [1] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1178024 [2] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687 [3] https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/1216045 [4] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687/comments/6	
 	apps/drivers: language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.		
+	apps/drivers: Brasero Wont open after burning a disk
 	mdm: always uses English keyboard layout?
-	mdm: With nvidia-current installed attempting to shutdown or restart from mdm hangs with black screen. Have to shutdown with the power button.
+	mdm: With nvidia-current installed attempting to shutdown or restart from mdm hangs with black screen. Have to shutdown with the power button.	
 
 Cinnamon Edition - last processed comment: #218
 ----------------

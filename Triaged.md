@@ -18,6 +18,9 @@ Outside of the scope
 
 Can't reproduce
 ---------------------------------
+	apps/drivers: Brasero Wont open after burning a disk
+	mdm: always uses English keyboard layout? (flag indicates locale, not keyboard layout)
+	mintdrivers: Driver manager list is always empty even Nvidia-319 driver installed (works fine)				
 	system: No support for AMD Kabini chipset or embeded video output on 64 bit edition, both mint and cinn. For ref. ubuntu does have the support in all since 12.04 (need more info)
     apps/drivers: radiotray doesn't start (probably because of wrong locale setup, check with "locale" command)
 	apps/drivers: Minitube window control and menu bar moved to the right side!!!	

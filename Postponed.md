@@ -16,6 +16,8 @@ Mint 17
 	mintsources: doesn’t show any progress bar and it seems to test mirrors one by one instead of doing it in parallel.
 	system: migrate from gksu/kdesu to pkexec
 	ubiquity-slideshow: In the “Install Software” slide of the installation slideshow, it shows Picasa under “Features software”, but Google dropped Picasa for Linux a little over a year ago
+	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg
+	apps/drivers: im-config should not be installed by default (agreed, but it's needed by language-selector-gnome, we'll replace both in Mint 17)
 
 Cinnammon
 ---------

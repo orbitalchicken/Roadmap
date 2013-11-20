@@ -14,7 +14,7 @@ System
 
 Mint Tools
 ----------		
-	[Minor] mintstick: progress bar isn't fixed yet			
+	[Minor] mintstick: progress bar isn't fixed yet	
 
 Cinnamon
 --------	

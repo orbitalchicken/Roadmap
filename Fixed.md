@@ -22,6 +22,8 @@ Cinnamon Edition
 	[Fixed in Git] mint-themes-gtk3: nemo sidebar buttons are too large
 	[Fixed in Git] Account details is in the appearance section of the control center... I would have thought it would be in preferences or administration.	
 	[Fixed in Git] cinnamon: tooltip on Power applet says "Keyboard" or "Mouse"
+	[Fixed in Git] "Send by email" is showing when right clicking Computer, Home, Trash or removable drives icons on Desktop (also another really minor issue is that “Send by email” and “Format” should have “…” on the end)
+	[Fixed in Git] nemo: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com	
 
 MATE Edition
 ------------

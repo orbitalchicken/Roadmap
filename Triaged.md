@@ -17,7 +17,8 @@ Outside of the scope
 	spices: Coverflow extension configure button does nothing
 
 Can't reproduce
----------------------------------	
+---------------------------------
+	system: No support for AMD Kabini chipset or embeded video output on 64 bit edition, both mint and cinn. For ref. ubuntu does have the support in all since 12.04 (need more info)
     apps/drivers: radiotray doesn't start (probably because of wrong locale setup, check with "locale" command)
 	apps/drivers: Minitube window control and menu bar moved to the right side!!!	
 	apps/drivers: Please, add bcmwl-kernel-source_6.30.223.30+bdcom-0ubuntu3_amd64	(already there on the live medium)

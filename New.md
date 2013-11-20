@@ -3,16 +3,15 @@ New bug reports in Mint 16 RC
 All editions
 -------------	
 	system: grub/efi: UEFI boot and GPT partition tables, the installer crashes when installing grub. I have installed Ubuntu 13.10 on both of those UEFI systems with no problem.	
-	system: grub/efi: Mint16 cannot install package grub-efi-amd64-signed. Why it try to do that if I have not EFI, UEFI and so on? Also I can’t install grub after from terminal but receiving other errors (something about “unable to determine /cow path”)	
+	system: grub/efi: Mint16 cannot install package grub-efi-amd64-signed. Why it try to do that if I have not EFI, UEFI and so on? Also I can’t install grub after from terminal but receiving other errors (something about “unable to determine /cow path”)
 	system: apt-get dist-upgrade wants to install shim*, it's for secure boot, i don't think, it should be available for installation
-	system: No support for AMD Kabrini chipset or embeded video output on 64 bit edition, both mint and cinn. For ref. ubuntu does have the support in all since 12.04	
 	system:	Xorg does not start on my ati r128 video card. This seems to be an upstream issue in xorg 1.14, but you did mention the b43 hang issue in Maya.
 	mintdrivers: Nvidia drivers dont automaticaly install nvidia-settings (Tested with nvidia-319 and nvidi-319-updates)
  	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg	
 	mintdrivers: Driver manager list is always empty even Nvidia-319 driver installed (I’m also not sure if it should allow installation for detected hardware)			
 	apps/drivers: synaptic: Synaptic issues: [1] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1178024 [2] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687 [3] https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/1216045 [4] https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1135687/comments/6	
 	apps/drivers: language input short cut is terrible as it did on the saucy salamander If our linux mint is not going to focus on the ubuntu-tablet then I suggest to our linux mint team to abandon this very uncomfortable input method for other non-english countries including Korea super + space brings malfunction for menu, everytime I input super + space for type in korean then I meet menu pops up , and even it works not welll either.		
-	mdm: always uses English keyboard layout?		
+	mdm: always uses English keyboard layout?
 	mdm: With nvidia-current installed attempting to shutdown or restart from mdm hangs with black screen. Have to shutdown with the power button.
 
 Cinnamon Edition - last processed comment: #218
@@ -27,7 +26,7 @@ MATE Edition - last processed comment: #87
 	marco: Java apps are almost unusable when maximized. http://forums.linuxmint.com/viewtopic.php?f=47&t=112470&p=709183 https://bugzilla.redhat.com/show_bug.cgi?id=918055	
 	nm-applet crashed, stopped working
 	Login Window for pw on encrypted disks starts too far left with ***,,,should be centered
-	mate-systm-monitor under recourses doesn’t look great with the default GTK theme
+	mate-system-monitor under recourses doesn’t look great with the default GTK theme
 	After Installing an application, the category icons in mint-menu do not show
 	mate-terminal still has a menu bar and is not transparent
 	The notification will sometimes appear in the bottom right corner of the screen in a position it will be invisible

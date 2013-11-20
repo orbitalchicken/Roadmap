@@ -2,7 +2,7 @@ Confirmed issues
 
 System
 ------	
-	system: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root
+	system: crashes/freezes	due to /run/user/<uid>/dconf/user being owned by root - https://bugzilla.redhat.com/show_bug.cgi?id=753882
 	upgrade notes: Explain how to remove priority 700 for PPA
 	apturl/firefox: apturl missing support in Firefox
 	Shutdown sequence in live-session is all black	
@@ -14,7 +14,6 @@ System
 	mintdesktop/mintsystem: port mintfortune to filesystem flag and away from gsettings
     brasero: Brasero Wont open after burning a disk
     Update all translations
-    mdm: mdm-theme-emulator provides no icon and places itself in "other" in menu
     mdm: nvidia-319 installed, login works fine. Log out and different user logs in --> blank screen with a mouse pointer. Switch users works ok.
 
 Mint Tools
@@ -23,7 +22,8 @@ Mint Tools
 	mintdrivers: doesn't apply ATI icon to "Advanced Micro Devices, Inc. [AMD/ATI]: Wrestler [Radeon HD 6290]"	
 
 Cinnamon
---------		
+--------	
+	nemo: mime commands show up in the menu (add nodisplay)
 	nemo: Set folders to open each in their own window. Open a folder that has several sub-folders. Lasso two or more sub-folders in that window.  Right-click and choose Open. Nemo crashes!	
 	nemo: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com	
 	muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)

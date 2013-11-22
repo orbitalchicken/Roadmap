@@ -10,6 +10,7 @@ Not a bug
 
 Outside of the scope
 --------------------
+	mint-x (metacity): 1 px frame around windows prevents the rightmost pixel of the right scroll bar from being clickable. Open nemo full screen, with Adwaita you can throw your mouse to the right edge of the screen and start scrolling, with mint-x you need to move 1px left
 	Magnet links for torrents are not working in Firefox
 	Still no wacom tablet support?
 	include a powerful search (like in Windows) in Cinnamon without using Synapse. As you type, it will automatically display the files that you’re looking for.	
@@ -32,7 +33,6 @@ Can't reproduce
 	Integrity check give no result. After the check process, no ‘ok’ or ‘error’ message, only ‘press any key to reboot’ message visible.
 	mdm: Login window does not have focus on startup (You have to click into the window before you can type the password in)	
 	mdm: No login screen has no where to put in login information. Background, works.
-	apps/drivers: When using full screen mode in Chromium or Virtualbox (non-free) it is impossible return to the window mode.	
 	apps/drivers: Why does Chrome render fonts differently in Linuxmint than it does Ubuntu 13.10?
 	apps/drivers: Netflix will not load in Mint 16. probably because of missing gecko (should be fixed with fixes to ppa priority)
 	apps/drivers: Problems with gnome15.org drivers. (Application does not start after installation – worked with Mint 15 (regressions?))	

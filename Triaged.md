@@ -64,3 +64,5 @@ Upstream
 	vlc: In Virtualbox plays videos in monochrome when GPU enabled and black when disabled (solved by changing VLC video plugin to X11)
 	banshee: segfaults after playing ~30 mp3 songs (disable plugins you don't need, reduces the probability of crashes)
 	amd driver: AMD 13.11 (13.25.18) Beta Drivers refuses to build. I use the command “./amd-catalyst-13.11-beta6-linux-x86.x86_64.run –buildpkg Ubuntu/saucy” and I get comments replying back saying that the distro unsupported however it is supported because I have installed the 13.11 drivers on Ubuntu saucy several times and on linux mint 16 rc I cant for some reason.	(AMD needs to add support for Mint codenames saucy -> petra, LSB returns Petra here)
+	font viewer:  4 font files (bold, Normal, Italic, bold-italic)...  choose them all and open in font viewer. They open in the same window.. with 4 install/back/info buttons i.imgur.com/EMbzh9v.png
+	cups-pdf produces only a blank pdf page when I print to PDF

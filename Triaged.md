@@ -8,6 +8,9 @@ Not a bug
 	cinnamon-settings: the network manager hasn’t any ability to add ADSL connection. (go to menu->network connections and then click Add and choose DSL) 
 	translations: I can only find one translation of “Login Screen” in Cinnamon in Launchpad and that is “Login-skærm”, so where does this “Logind-skærm” come from? (comes from mdm)
 	I think libnss3-1d:i386 should be installed by default in the final release if possible so that we can install adobeair without having to muck around in random forums and xchat to find this solution. 
+	Two ‘Network’ items in mate-session-properties. (It's there as a workaround to force the upstream nm-applet to work with MATE)
+	mate: In mintmenu, “Applications” is badly translated in french. It should be replaced by “Logiciels” instead of “Applications” that means nothing. ("Application" est Francais, provient du Latin, est courrament utilise en informatique (on parlait d'applis deja dans les annees 90 quand j'etais petit) et signifie: Programme ou ensemble de programmes destiné à aider l'utilisateur d'un ordinateur pour le traitement d'une tâche précise.). 
+	mate: I cannot set the pointer size. The slider in Appearance/Customize/Pointer is greyed out (this features is available on cursor themes which support it)
 
 Outside of the scope
 --------------------
@@ -70,6 +73,16 @@ Can't reproduce
 	I’ve installed LM16 Cinnamon twice now on 2 separate machines and both times the Icon “LM” picture disappears where the Menu button is… (probably due to existing /home configuration)
 	After all upgrades from Mint 15 to 16, Mate doesn’t work. There is a message in the window, something like: Missing row “Exec” in file mate-session.
 	installed driver for my nvidia 210 using mintdrivers - looking at system info it looks like it made it i can go into admin/nvidia x server settings and it shows BUT if i click it nothing happens ( doesn’t launch the nvidia control panel) - i use system monitor and shows processor activity for just a sec then flat lines
+	mate: mate panel doesn’t do autohide after locking and unlocking screen.
+	mate: x-caja-desktop issue when opening “Trash” from the menu. (probably related to xdg_runtime_dir issue, fixed in systemd update)
+	mate: Could not install network printer.
+	mate: network settings forgets DNS entries
+	mate: Regardless how I set the screen shut down in Power Management, it always shuts down after a very short time. I tried ‘Never” and ’1 hour” but it did not work.
+	mate: Mate power manager doesn’t force computer to suspend / hibernate when running on battery and the settings are set to sleep after a set period of time. This feature does work when running on a/c.
+	mate: Mintmenu has a scrolling problem when the ALL-Tab was clicked and dragged quickly. This is a small problem.	
+	mate: The notification will sometimes appear in the bottom right corner of the screen in a position it will be invisible
+	mate: If you add a few keyboard layouts and set the CapsLock key to switch them, after reboot CapsLock stops switching the layouts.	(works fine, tested with fr and ie)
+	mate: sound preview not work correctly, bug is like on LMDE before some package updates – file manager just disappear and sound continues play.
 
 Upstream
 --------

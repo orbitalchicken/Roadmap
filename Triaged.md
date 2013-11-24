@@ -55,6 +55,16 @@ Can't reproduce
 	cinnamon: Press alt-tab to bring up the program switcher then roll the mouse wheel. The selector always moves to the right with wheel-up or wheel-down, in LM15 the selector would move in relation to the wheel direction (wheel up = selector left)(wheel down = selector right).
 	system: the update manager loads at startup even after it has been removed from the startup list 
 	apps/drivers: The following packages have unmet dependencies: libgl1-mesa-glx:i386 : Depends: libglapi-mesa:i386 (= 9.2.0~git20131002+9.2.2eb55601-0ubuntu0sarvatt) but it is not going to be installed E: Unable to correct problems, you have held broken packages. When attempting to install libglapi-mesa:i386, many of the default packages are removed.	
+	system: apt-get dist-upgrade wants to install shim*, it's for secure boot, i don't think, it should be available for installation
+	gparted is missing on the live DVD.
+	cinnamon: any choice of the ‘suspend when inactive for’ parameter lets the computer never go to suspend mode
+	cinnamon: any choice of the ‘when the lid is closed’ parameter: the computer always suspends
+	cinnamon: any choice of ‘power button action’ leads to an immediate shutdown when pressed
+	cinnamon: The keyboard shortcut for “hide all normal windows” is broke. I can’t get any shortcut to work with it. The ubuntu website shows that there are issues going on with some keyboard shortcuts not working right. 
+	cinnamon: Tapping showed as being enabled in control panel. Ran dconf-editor and found that tap-to-click wasn’t checked, once I checked it I was able to tap again.	
+	system: Mint Splash screen is not appearing, and seems to be defaulting to the Ubuntu 13.10 splash screen.
+	cinnamon: Icons keep disappearing from desktop especially when I log out then log in!!		
+
 
 Upstream
 --------
@@ -66,3 +76,4 @@ Upstream
 	amd driver: AMD 13.11 (13.25.18) Beta Drivers refuses to build. I use the command “./amd-catalyst-13.11-beta6-linux-x86.x86_64.run –buildpkg Ubuntu/saucy” and I get comments replying back saying that the distro unsupported however it is supported because I have installed the 13.11 drivers on Ubuntu saucy several times and on linux mint 16 rc I cant for some reason.	(AMD needs to add support for Mint codenames saucy -> petra, LSB returns Petra here)
 	font viewer:  4 font files (bold, Normal, Italic, bold-italic)...  choose them all and open in font viewer. They open in the same window.. with 4 install/back/info buttons i.imgur.com/EMbzh9v.png
 	cups-pdf produces only a blank pdf page when I print to PDF
+	system-config-lvm: invoke-rc.d: unknown initscript, /etc/init.d/lvm2 not found.	

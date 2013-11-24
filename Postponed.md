@@ -57,7 +57,11 @@ Cinnammon
 	llvmpiped session after a suspend-resume
 	In gThumb, select a picture, right-click on it, select “Set as Desktop Background”, once applied, click the “Preferences” button on the green banner that just appeared at the bottom of the gThumb window and you’ll get the error message “Failed to execute child process “gnome-control-center” (No such file or directory)”	
 	cinnamon: Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
-	
+	Cinnamon menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
+	l10n: In System Settings\Windows the options (Toggle Shade etc.) for the first four entries are not translated.
+	l10n: In System Settings\Fonts “None”, “Greyscale”, “Slight”, “Medium” and “Full” are not translated to Danish though Danish is 100% translated.
+	cinnamon-screensaver: If click “Lock screen” in Cinnamon, background don’t show full name year (only 20 without end) PL language
+
 MATE
 ----
 	When panel is at the top, notifications show on top of it. https://dl.dropboxusercontent.com/u/54450962/%ED%99%94%EB%A9%B4-5.png

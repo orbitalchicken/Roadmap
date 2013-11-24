@@ -5,6 +5,7 @@ System
 	[Major] rel notes: Announce that mint4win is discontinued
 	[Major] upgrade notes: Explain how to remove priority 700 for PPA
 	[Major] Update all translations
+	[Major] can't install in EFI mode without Internet connection
 	[Medium] libdvdcss2: DVD Playback doesn't work with new gstreamer: The stream is in the wrong format (using Totem).. works with VLC
 	[Minor] cinnamon: inserting an Audio CD suggests Brasero and VLC, not Banshee
 	[Minor] banshee: tries to rip a CD to FLAC by default
@@ -20,7 +21,6 @@ Mint Tools
 Cinnamon
 --------		
 	[Minor] remove certifications from spices
-	I’ve installed LM16 Cinnamon twice now on 2 separate machines and both times the Icon “LM” picture disappears where the Menu button is…
 
 MATE
 ----			

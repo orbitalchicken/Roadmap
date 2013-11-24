@@ -7,6 +7,7 @@ Not a bug
 	system: have installed openvpn, when I click on on “configure a VPN” from the wireless applet, then on the “Add” but I cant see any option for creating a “OpenVPN” connection type. (solved by installing network-manager-openvpn and network-manager-openvpn-gnome)
 	cinnamon-settings: the network manager hasn’t any ability to add ADSL connection. (go to menu->network connections and then click Add and choose DSL) 
 	translations: I can only find one translation of “Login Screen” in Cinnamon in Launchpad and that is “Login-skærm”, so where does this “Logind-skærm” come from? (comes from mdm)
+	I think libnss3-1d:i386 should be installed by default in the final release if possible so that we can install adobeair without having to muck around in random forums and xchat to find this solution. 
 
 Outside of the scope
 --------------------
@@ -19,6 +20,7 @@ Outside of the scope
 
 Can't reproduce
 ---------------------------------
+	l10n: “Enter your password to perform administrative tasks” isn't l10n'd (not enough info)
 	apps/drivers: Brasero Wont open after burning a disk
 	mdm: always uses English keyboard layout? (flag indicates locale, not keyboard layout)
 	mintdrivers: Driver manager list is always empty even Nvidia-319 driver installed (works fine)				
@@ -64,7 +66,10 @@ Can't reproduce
 	cinnamon: Tapping showed as being enabled in control panel. Ran dconf-editor and found that tap-to-click wasn’t checked, once I checked it I was able to tap again.	
 	system: Mint Splash screen is not appearing, and seems to be defaulting to the Ubuntu 13.10 splash screen.
 	cinnamon: Icons keep disappearing from desktop especially when I log out then log in!!		
-
+	mate: nm-applet crashed, stopped working
+	I’ve installed LM16 Cinnamon twice now on 2 separate machines and both times the Icon “LM” picture disappears where the Menu button is… (probably due to existing /home configuration)
+	After all upgrades from Mint 15 to 16, Mate doesn’t work. There is a message in the window, something like: Missing row “Exec” in file mate-session.
+	installed driver for my nvidia 210 using mintdrivers - looking at system info it looks like it made it i can go into admin/nvidia x server settings and it shows BUT if i click it nothing happens ( doesn’t launch the nvidia control panel) - i use system monitor and shows processor activity for just a sec then flat lines
 
 Upstream
 --------
@@ -77,3 +82,4 @@ Upstream
 	font viewer:  4 font files (bold, Normal, Italic, bold-italic)...  choose them all and open in font viewer. They open in the same window.. with 4 install/back/info buttons i.imgur.com/EMbzh9v.png
 	cups-pdf produces only a blank pdf page when I print to PDF
 	system-config-lvm: invoke-rc.d: unknown initscript, /etc/init.d/lvm2 not found.	
+	When battery charges to 100% it displays 0% and sends the laptop to hibernate - fixed in upower 0.9.22-1ubuntu2 - https://bugs.launchpad.net/ubuntu/+source/upower/+bug/1240673

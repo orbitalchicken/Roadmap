@@ -13,6 +13,7 @@ All editions
 	gtk: dialogs use symbolic icons (offending code is in GTK3, won't fix. Small issue but linked to GTK3 becoming a GNOME Shell specific toolkit.)
 	gtk: No padding in context menu leads to accidental operations (bug reported upstream in GTK3, temp workaround/fix unlikely/tedious)
 	gtk: noDisplay=true desktop entries don't appear in MIME lists
+	Package ‘mintsources’ should depend on ‘python-pycurl’, as line 14 of ‘/usr/lib/linuxmint/mintSources/mintSources.py’ imports ‘pycurl’.	
 
 Cinnamon Edition
 ----------------
@@ -35,6 +36,8 @@ Cinnamon Edition
 	nemo: "Send by email" is showing when right clicking Computer, Home, Trash or removable drives icons on Desktop (also another really minor issue is that “Send by email” and “Format” should have “…” on the end)	
 	[Fixed] muffin: When using full screen mode in Chromium or Virtualbox (non-free) it is impossible return to the window mode.	
 	[Fixed] muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)	
+	[Fixed] When I right-click an item, the menu entry “Send by Email” is not translated
+	[Fixed in Git] In System Settings\Applets on the Tab “Get more online” the middle button (Select updated) is not translated.
 
 MATE Edition
 ------------

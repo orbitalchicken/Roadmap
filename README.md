@@ -33,8 +33,6 @@ MATE
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	mate-terminal still has a menu bar and is not transparent
 	Clicking “help” on most mate applications opens yelp to an error page
-	mate-system-monitor under recourses doesn’t look great with the default GTK theme
-
 
 KDE
 ---

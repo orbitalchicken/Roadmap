@@ -7,7 +7,6 @@ System
 	rel_notes: for skype explain to add ia32-libs or to install with --install-recommends
 	upgrade notes: explain how to remove priority 700 for PPA
 	upgrade notes: explain how to downgrade synaptic
-	remove certifications from spices website
 	Update all translations
 	can't install in EFI mode without Internet connection	
 

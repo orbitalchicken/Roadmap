@@ -14,10 +14,6 @@ System
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 	rel_notes: for skype explain to add :i386 versions of libasound2 and libasound2-plugins or to install with --install-recommends
 
-Mint Tools
-----------		
-	[Minor] mintstick: progress bar isn't fixed yet
-
 Cinnamon
 --------		
 	[Minor] remove certifications from spices
@@ -27,7 +23,6 @@ MATE
 	mintmenu: category didn't appear (M64), did when clicked "Reload plugins"
 	mintmenu: After Installing an application, the category icons in mint-menu do not show
 	mintmenu: pull requests
-	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
 	caja: dng and raw images thumbnails in caja
 	caja: 1. Open caja window 2. Click right mouse to some file or dir, select Properties. 3. Go to Emblems tab, enable some emblem, press Close. 4. Click right mouse to the file/dir, select Properties. 5. Go to Emblems tab, disable the enabled emblem, press Close. 6. Caja is crashed.
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.

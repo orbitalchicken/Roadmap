@@ -14,6 +14,7 @@ All editions
 	gtk: No padding in context menu leads to accidental operations (bug reported upstream in GTK3, temp workaround/fix unlikely/tedious)
 	gtk: noDisplay=true desktop entries don't appear in MIME lists
 	Package ‘mintsources’ should depend on ‘python-pycurl’, as line 14 of ‘/usr/lib/linuxmint/mintSources/mintSources.py’ imports ‘pycurl’.	
+	[Fixed in Git] mintstick: progress bar isn't fixed yet
 
 Cinnamon Edition
 ----------------

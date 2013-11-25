@@ -83,6 +83,7 @@ Can't reproduce
 	mate: The notification will sometimes appear in the bottom right corner of the screen in a position it will be invisible
 	mate: If you add a few keyboard layouts and set the CapsLock key to switch them, after reboot CapsLock stops switching the layouts.	(works fine, tested with fr and ie)
 	mate: sound preview not work correctly, bug is like on LMDE before some package updates – file manager just disappear and sound continues play.
+	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
 
 Upstream
 --------

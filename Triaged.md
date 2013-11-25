@@ -85,6 +85,7 @@ Can't reproduce
 	mate: sound preview not work correctly, bug is like on LMDE before some package updates – file manager just disappear and sound continues play.
 	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
 	installing in russian doesn't apply locale properly (/etc/default/locale does indeed show quotes around ru_RU.UTF-8 but that's normal/expected. When testing Russian installation, system and desktop are properly l10n'd in Russian here.)
+	system:	Xorg does not start on my ati r128 video card. This seems to be an upstream issue in xorg 1.14, but you did mention the b43 hang issue in Maya.
 	
 Upstream
 --------

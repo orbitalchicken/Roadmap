@@ -19,9 +19,9 @@ Mint 17
 	Shutdown sequence in live-session is all black	
 	mdm: Cant set login screen time to 24hr (changing the option doesnt work)
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
-	Can’t play TS video files	
-	cinnamon: inserting an Audio CD suggests Brasero and VLC, not Banshee
+	Can’t play TS video files		
 	banshee: tries to rip a CD to FLAC by default
+	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 
 Cinnammon
 ---------	

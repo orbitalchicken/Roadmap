@@ -16,6 +16,7 @@ All editions
 	Package ‘mintsources’ should depend on ‘python-pycurl’, as line 14 of ‘/usr/lib/linuxmint/mintSources/mintSources.py’ imports ‘pycurl’.	
 	[Fixed in Git] mintstick: progress bar isn't fixed yet
 	can't install picasa / google-earth-stable from repositories
+	apps/drivers: synaptic freezes (excessive output on stderr makes gksu crash) and segfaults (when deleting a repository) - downgraded synaptic to version 0.75.12build1.
 
 Cinnamon Edition
 ----------------
@@ -39,7 +40,8 @@ Cinnamon Edition
 	[Fixed] muffin: When using full screen mode in Chromium or Virtualbox (non-free) it is impossible return to the window mode.	
 	[Fixed] muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)	
 	[Fixed] When I right-click an item, the menu entry “Send by Email” is not translated
-	[Fixed in Git] In System Settings\Applets on the Tab “Get more online” the middle button (Select updated) is not translated.
+	[Fixed in Git] cinnamon: In System Settings\Applets on the Tab “Get more online” the middle button (Select updated) is not translated.
+	[Fixed in Git] csd: inserting an Audio CD suggests Brasero and VLC, not Banshee
 
 MATE Edition
 ------------

@@ -84,7 +84,8 @@ Can't reproduce
 	mate: If you add a few keyboard layouts and set the CapsLock key to switch them, after reboot CapsLock stops switching the layouts.	(works fine, tested with fr and ie)
 	mate: sound preview not work correctly, bug is like on LMDE before some package updates – file manager just disappear and sound continues play.
 	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
-
+	installing in russian doesn't apply locale properly (/etc/default/locale does indeed show quotes around ru_RU.UTF-8 but that's normal/expected. When testing Russian installation, system and desktop are properly l10n'd in Russian here.)
+	
 Upstream
 --------
 	synaptic: crashes when you try to delete any repository - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=720605

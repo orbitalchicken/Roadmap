@@ -15,6 +15,7 @@ All editions
 	gtk: noDisplay=true desktop entries don't appear in MIME lists
 	Package ‘mintsources’ should depend on ‘python-pycurl’, as line 14 of ‘/usr/lib/linuxmint/mintSources/mintSources.py’ imports ‘pycurl’.	
 	[Fixed in Git] mintstick: progress bar isn't fixed yet
+	can't install picasa / google-earth-stable from repositories
 
 Cinnamon Edition
 ----------------
@@ -44,4 +45,5 @@ MATE Edition
 ------------
 	[Fixed] mintdesktop/mintsystem: reinstate mintfortune
 	[Fixed] mate: Use generic names in MATE packages
-	
+	caja: segfault when closing properties dialog on directory with emblem
+	[Fixed] mintmenu: multiple fixes, xdg location entry path, zombie processes, category icons, custom place creation, race conditions, mouse focus/search text lost	

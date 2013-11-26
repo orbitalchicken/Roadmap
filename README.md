@@ -1,14 +1,9 @@
 Confirmed issues
 
 System
-------		
-	rel notes: Announce that mint4win is discontinued
-	rel notes: DVD Playback doesn't work with new gstreamer: The stream is in the wrong format (using Totem).. works with VLC
-	rel_notes: for skype explain to add ia32-libs or to install with --install-recommends
+------	
 	upgrade notes: explain how to remove priority 700 for PPA
-	upgrade notes: explain how to downgrade synaptic
-	Update all translations
-	can't install in EFI mode without Internet connection	
+	upgrade notes: explain how to downgrade synaptic	
 
 Cinnamon
 --------		

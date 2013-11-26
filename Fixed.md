@@ -36,12 +36,12 @@ Cinnamon Edition
 	nemo: Set folders to open each in their own window. Open a folder that has several sub-folders. Lasso two or more sub-folders in that window.  Right-click and choose Open. Nemo crashes!
 	nemo: "Send by email" is showing when right clicking Computer, Home, Trash or removable drives icons on Desktop (also another really minor issue is that “Send by email” and “Format” should have “…” on the end)
 	When I right-click an item, the menu entry “Send by Email” is not translated
+	csd: inserting an Audio CD suggests Brasero and VLC, not Banshee
+	cinnamon: Changing default applications does nothing
+	cinnamon: tooltip on Power applet says "Keyboard" or "Mouse"
 	[Fixed] cinnamon: In System Settings\Applets on the Tab “Get more online” the middle button (Select updated) is not translated.
-	[Fixed] csd: inserting an Audio CD suggests Brasero and VLC, not Banshee
-	[Fixed] nemo-dropbox: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com		
-	[Fixed] cinnamon: cinnamon-desktop-editor Choose an icon dialog does not have image previews	
-    [Fixed] cinnamon: Changing default applications does nothing
-    [Fixed] cinnamon: tooltip on Power applet says "Keyboard" or "Mouse"	
+	[Fixed] nemo-dropbox: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com
+	[Fixed] cinnamon: cinnamon-desktop-editor Choose an icon dialog does not have image previews    
 	[Fixed] muffin: When using full screen mode in Chromium or Virtualbox (non-free) it is impossible return to the window mode.
 	[Fixed] muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)
 	

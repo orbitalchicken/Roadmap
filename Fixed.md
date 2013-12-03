@@ -18,7 +18,7 @@ All editions
 	can't install picasa / google-earth-stable from repositories
 	apps/drivers: synaptic freezes (excessive output on stderr makes gksu crash) and segfaults (when deleting a repository) - downgraded synaptic to version 0.75.12build1.
 	Update all translations
-	can't install in EFI mode without Internet connection	
+	can't install in EFI mode without Internet connection
 
 Cinnamon Edition
 ----------------
@@ -40,14 +40,14 @@ Cinnamon Edition
 	cinnamon: Changing default applications does nothing
 	cinnamon: tooltip on Power applet says "Keyboard" or "Mouse"
 	[Fixed] cinnamon: In System Settings\Applets on the Tab “Get more online” the middle button (Select updated) is not translated.
-	[Fixed] nemo-dropbox: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com
-	[Fixed] cinnamon: cinnamon-desktop-editor Choose an icon dialog does not have image previews    
+	nemo-dropbox: could not install nemo-dropbox. downloads, displays “100%”, hangs. I was able to install dropbox from dropbox.com
+	cinnamon: cinnamon-desktop-editor Choose an icon dialog does not have image previews    
 	[Fixed] muffin: When using full screen mode in Chromium or Virtualbox (non-free) it is impossible return to the window mode.
 	[Fixed] muffin: delete file on desktop, confirmation dialog doesn't show in middle of the primary screen, but in middle of the workspace (i.e. if you have two screens, it shows on the right hand side of the left screen)
 	
 MATE Edition
 ------------
 	caja: segfault when closing properties dialog on directory with emblem
-	[Fixed] mintdesktop/mintsystem: reinstate mintfortune
-	[Fixed] mate: Use generic names in MATE packages	
-	[Fixed] mintmenu: multiple fixes, xdg location entry path, zombie processes, category icons, custom place creation, race conditions, mouse focus/search text lost	
+	mintdesktop/mintsystem: reinstate mintfortune
+	mate: Use generic names in MATE packages	
+	mintmenu: multiple fixes, xdg location entry path, zombie processes, category icons, custom place creation, race conditions, mouse focus/search text lost	

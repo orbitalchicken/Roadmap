@@ -22,6 +22,7 @@ Mint 17
 	Can’t play TS video files		
 	banshee: tries to rip a CD to FLAC by default
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
+	mintinstall "show all results" not l10n	
 
 Cinnammon
 ---------	
@@ -79,3 +80,4 @@ MATE
 	mate-system-monitor under resourses doesn’t look great with the default GTK theme (need to give the notebook at widget class name or style name so we can make it flat in Mint-X, alternatively, we could try and make the cairo elements transparent)
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	caja: dng and raw images thumbnails in caja
+	switch to default notification theme

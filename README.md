@@ -11,9 +11,4 @@ KDE
 
 Xfce
 ----
-	[fixed] mint-meta-codecs/VLC missing
-	[fixed] xfce4-whiskermenu-plugin missing
-	[fixed] whisker menu config
-	[fixed] backgrounds
-	[fixed] sound indicator not working
-	[fixed] terminal colors suck
+	[fixed] whisker menu category buttons

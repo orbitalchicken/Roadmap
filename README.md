@@ -3,15 +3,7 @@ Confirmed issues
 KDE
 ---
 	rel_notes: Add samba-mounter to new features page for KDE
-	[Fixed] mintstick KDE action shows also for DVD and floppy disks
-	[Fixed] Mint bgs authors should be "Linux Mint"
-	[Fixed] bgs capitalization
-	[Fixed] mintinstall: in app view, main icon can be huge (check filezilla for instance)
-	[Fixed] icons: use oxymentary instead of oxygen
-	[Fixed] apps sorted alphabetically in menu
-	[Fixed] menu -> show apps by name
-	[Fixed] add libreoffice
-	[Fixed] mintbackup in menu
+	[Fixed] mintstick KDE action shows also for DVD and floppy disks		
 
 Xfce
 ----

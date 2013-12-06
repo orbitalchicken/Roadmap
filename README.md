@@ -15,9 +15,10 @@ Xfce
     [Fixed] catfish missing
     [Fixed] remove print thunar action
     [Fixed] use std md5 action
-    mdm: can't switch user (greeter doesn't show up)
+    [Fixed] mdm: can't switch user (greeter doesn't show up)
     [Fixed] on battery power, set default to suspend when lid is closed
     [Fixed] mint-x-icon: Mail reader icon (internet-mail) undefined in mint-x-icons
+    [Fixed] Don't save session by default
 
 Mint 17
 -------	

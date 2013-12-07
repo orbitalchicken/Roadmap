@@ -8,17 +8,8 @@ KDE
 Xfce
 ----
     Xfce doesn't seem to detect DVD insertion, doesn't run VLC
-	Can't use the trash in live mode
-    [Fixed] gnome-screensaver is installed and should be removed    
-    [Fixed] Missing space char in volume ID
-    [Fixed] Thunar now features a delete option, we no longer need "Permanently Remove".    
-    [Fixed] catfish missing
-    [Fixed] remove print thunar action
-    [Fixed] use std md5 action
-    [Fixed] mdm: can't switch user (greeter doesn't show up)
-    [Fixed] on battery power, set default to suspend when lid is closed
-    [Fixed] mint-x-icon: Mail reader icon (internet-mail) undefined in mint-x-icons
-    [Fixed] Don't save session by default
+	Can't use the trash in live mode    
+	There are no GTK bookmarks by default
 
 Mint 17
 -------	

@@ -2,12 +2,11 @@ Confirmed issues
 
 KDE
 ---
-	rel_notes: Add samba-mounter to new features page for KDE
 	[Fixed] mintstick KDE action shows also for DVD and floppy disks		
 
 Xfce
 ----
-    Xfce doesn't seem to detect DVD insertion, doesn't run VLC
+    Xfce doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
 	Can't use the trash in live mode    
 	There are no GTK bookmarks by default
 

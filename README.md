@@ -19,3 +19,4 @@ Mint 17
 	cinnamon: enable touchpad tapping by default
 	mintbackup, mintnanny, mintupload, mintdrivers, mintsources: remove KDE adjustment, add a specific KDE .desktop file
 	mintdesktop: When Compiz is active with MATE, WM preferences have to go to Metacity gconf settings instead of Marco ones to work.
+	mintdrivers: should we re-add a systray icon to notify users at session startup?

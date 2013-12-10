@@ -3,7 +3,8 @@ Confirmed issues
 KDE
 ---
 	[Fixed] mintstick KDE action shows also for DVD and floppy disks	
-	remove openssh	
+	remove openssh
+	consider using https instead of http for Amazon queries	
 
 Xfce
 ----

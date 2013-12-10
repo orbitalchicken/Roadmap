@@ -2,7 +2,8 @@ Confirmed issues
 
 KDE
 ---
-	[Fixed] mintstick KDE action shows also for DVD and floppy disks		
+	[Fixed] mintstick KDE action shows also for DVD and floppy disks	
+	remove openssh	
 
 Xfce
 ----

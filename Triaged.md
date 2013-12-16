@@ -86,7 +86,10 @@ Can't reproduce
 	mintmenu: show duplicates when item is in multiple categories (LibreOffice, gnome-disks)	
 	installing in russian doesn't apply locale properly (/etc/default/locale does indeed show quotes around ru_RU.UTF-8 but that's normal/expected. When testing Russian installation, system and desktop are properly l10n'd in Russian here.)
 	system:	Xorg does not start on my ati r128 video card. This seems to be an upstream issue in xorg 1.14, but you did mention the b43 hang issue in Maya.
-	
+	KDE: After reboot, I can’t seem to find Update Manager icon.
+	KDE: Can’t log out properly. It just goes to a black screen and all I can do is ctrl alt bksp and restart from the prompt.
+	KDE: Just noticed a dead (sort of) link. When changing my Appearance, the Theme tab has a link “Get more themes online”, the url is https://wiki.gnome.org/Personalizationthemes/. That page gives you a nice message “This page does not exist yet.”
+
 Upstream
 --------
 	synaptic: crashes when you try to delete any repository - http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=720605
@@ -99,3 +102,4 @@ Upstream
 	cups-pdf produces only a blank pdf page when I print to PDF
 	system-config-lvm: invoke-rc.d: unknown initscript, /etc/init.d/lvm2 not found.	
 	When battery charges to 100% it displays 0% and sends the laptop to hibernate - fixed in upower 0.9.22-1ubuntu2 - https://bugs.launchpad.net/ubuntu/+source/upower/+bug/1240673
+	kde: The Network Management Icon in the System Tray doesn’t change when the network is disconnected.

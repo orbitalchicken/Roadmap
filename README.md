@@ -5,6 +5,14 @@ KDE
 	[Fixed] mintstick KDE action shows also for DVD and floppy disks	
 	remove openssh
 	consider using https instead of http for Amazon queries	
+	After reboot, I can’t seem to find Update Manager icon.
+	Can’t log out properly. It just goes to a black screen and all I can do is ctrl alt bksp and restart from the prompt.
+	Just noticed a dead (sort of) link. When changing my Appearance, the Theme tab has a link “Get more themes online”, the url is https://wiki.gnome.org/Personalizationthemes/. That page gives you a nice message “This page does not exist yet.”
+	The Network Management Icon in the System Tray doesn’t change when the network is disconnected.	
+	plain text redirect of all Amazon search terms to the Mint server
+	If ~/.kde/env directory exists I cannot log in. http://userbase.kde.org/Session_Environment_Variables The file ~/.kde/env/path.sh is no longer honored by the rewritten /usr/bin/startkde program. If I rename the env directory to env_hold, I can log in. If I rename it back to env, I get caught in the loop that asks me about qdbus again, and I cannot login. I looks as though the person who rewrote the startkde program was unable to completely test it. Posts from last August are here: http://forums.linuxmint.com/viewtopic.php?f=109&t=143649
+	[127]mint@mint:~ > mintBackup You do not have the required dependencies Traceback (most recent call last): File “/usr/lib/linuxmint/mintBackup/mintBackup.py”, line 88, in class MessageDialog(apt.progress.gtk2.GOpProgress): AttributeError: ‘module’ object has no attribute ‘gtk2′ 
+	Translation leak, install with non english language (I used spanish), once installed, open Firefox, go to File menu, Open file, the dialog box is not translated, not the places section, not even the buttons.
 
 Xfce
 ----

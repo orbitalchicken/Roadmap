@@ -19,6 +19,7 @@ Xfce
 	There are no GTK bookmarks by default
 	whenever the screen locks after a period of unuse i am unable to get the log in screen back.	
 	power manager is faulty as in the do nothing command when closing lid does not work computer always goes to standby	
+	consider using system-wide configuration set
 
 Mint 17
 -------	

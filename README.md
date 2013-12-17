@@ -11,9 +11,14 @@ KDE
 
 Xfce
 ----
+    [Fixed] icons on the desktop have black font…and when I use a dark background I don’t see the text	
+    [Fixed] Add xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra
+    [confirmed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)	
     Xfce doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
-	Can't use the trash in live mode    
+	Can't use the trash in live mode
 	There are no GTK bookmarks by default
+	whenever the screen locks after a period of unuse i am unable to get the log in screen back.	
+	power manager is faulty as in the do nothing command when closing lid does not work computer always goes to standby	
 
 Mint 17
 -------	
@@ -21,6 +26,8 @@ Mint 17
 	mdm: In OEM mode, MDM preselects the "oem" user (user no longer active but still present in AccountsServices) :)
 	mdm: When loggin in an existing session, doesn't unlock kde screensaver, xscreensaver or gnome-screensaver (works fine with cinnamon-screensaver and mate-screensaver)
 	mdm: dep on numlockx... when numlockx gets installed it activates numlock. Cinnamon remembers that state. On laptop this results in the inability to login or to use some keys on the keyboard. not all laptops have an obvious num lock indicator/switch. Consider removing that feature or enabling it as an opt-in. Right now, although the feature is disabled by default, it does bring numlockx as a dependency.
+	mdm: Allow logins without a password? http://forums.linuxmint.com/viewtopic.php?f=90&t=127829
+	mdm: should depend on mdm-themes... in Mint, we should use our themes, so make mint-mdm-themes provide mdm-themes.
 	system: switch to adobe-flashplugin
 	banshee: use mp3 decoding by default
 	cinnamon: enable touchpad tapping by default
@@ -28,3 +35,5 @@ Mint 17
 	mintdesktop: When Compiz is active with MATE, WM preferences have to go to Metacity gconf settings instead of Marco ones to work.
 	mintdrivers: should we re-add a systray icon to notify users at session startup?
 	consider using https instead of http for Amazon queries			
+	ubiquity: https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1038522
+	cinnamon: option to disable HUD

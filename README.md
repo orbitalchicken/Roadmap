@@ -14,6 +14,7 @@ Xfce
     [Fixed] icons on the desktop have black font…and when I use a dark background I don’t see the text	
     [Fixed] Add xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra
     [Fixed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)			
+    [Fixed]: switch to system-wide configuration set 
 	
 Mint 17
 -------	
@@ -31,8 +32,7 @@ Mint 17
 	mintdrivers: should we re-add a systray icon to notify users at session startup?
 	consider using https instead of http for Amazon queries			
 	ubiquity: https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1038522
-	cinnamon: option to disable HUD
-	xfce: switch to system-wide configuration set (similar to xubuntu-default-settings + set MDM's default session to our own session + hide xfce4 session in /usr/share/xsession)
+	cinnamon: option to disable HUD	
 	xfce: doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
 	xfce: Can't use the trash in live mode
 	xfce: There are no GTK bookmarks by default

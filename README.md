@@ -2,12 +2,7 @@ Confirmed issues
 
 KDE
 ---
-	Upgrade note to explain about plasma-nm
-	[Fixed] mintstick KDE action shows also for DVD and floppy disks	
-	[Fixed] mintbackup doesn't run
-	[Fixed] remove openssh
-	[Fixed] network manager applet missing
-	[Fixed] ~/.kde/env directory prevents login http://forums.linuxmint.com/viewtopic.php?f=109&t=143649
+	Upgrade note to explain about plasma-nm	
 
 Xfce
 ----
@@ -36,3 +31,4 @@ Mint 17
 	xfce: doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
 	xfce: Can't use the trash in live mode
 	xfce: There are no GTK bookmarks by default
+	mintmenu: panel applet transparency

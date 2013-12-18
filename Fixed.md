@@ -51,3 +51,11 @@ MATE Edition
 	mintdesktop/mintsystem: reinstate mintfortune
 	mate: Use generic names in MATE packages	
 	mintmenu: multiple fixes, xdg location entry path, zombie processes, category icons, custom place creation, race conditions, mouse focus/search text lost	
+
+KDE Edition
+-----------
+	mintbackup doesn't run
+	remove openssh
+	network manager applet missing after upgrading plasma-nm
+	~/.kde/env directory prevents login http://forums.linuxmint.com/viewtopic.php?f=109&t=143649
+	mintstick KDE action shows also for DVD and floppy disks			

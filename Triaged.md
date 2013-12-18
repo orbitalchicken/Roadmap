@@ -89,6 +89,8 @@ Can't reproduce
 	KDE: After reboot, I can’t seem to find Update Manager icon.
 	KDE: Can’t log out properly. It just goes to a black screen and all I can do is ctrl alt bksp and restart from the prompt.
 	KDE: Just noticed a dead (sort of) link. When changing my Appearance, the Theme tab has a link “Get more themes online”, the url is https://wiki.gnome.org/Personalizationthemes/. That page gives you a nice message “This page does not exist yet.”
+	xfce: whenever the screen locks after a period of unuse i am unable to get the log in screen back.	
+	xfce: power manager is faulty as in the do nothing command when closing lid does not work computer always goes to standby	
 
 Upstream
 --------

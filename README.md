@@ -13,21 +13,15 @@ Xfce
 ----
     [Fixed] icons on the desktop have black font…and when I use a dark background I don’t see the text	
     [Fixed] Add xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra
-    [confirmed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)	
-    Xfce doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
-	Can't use the trash in live mode
-	There are no GTK bookmarks by default
-	whenever the screen locks after a period of unuse i am unable to get the log in screen back.	
-	power manager is faulty as in the do nothing command when closing lid does not work computer always goes to standby	
-	consider using system-wide configuration set
-
+    [Fixed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)			
+	
 Mint 17
 -------	
 	KDE: The installer doesn't install language-pack-gnome-xx resulting in GTK apps/dialogs showing in English
 	mdm: In OEM mode, MDM preselects the "oem" user (user no longer active but still present in AccountsServices) :)
 	mdm: When loggin in an existing session, doesn't unlock kde screensaver, xscreensaver or gnome-screensaver (works fine with cinnamon-screensaver and mate-screensaver)
 	mdm: dep on numlockx... when numlockx gets installed it activates numlock. Cinnamon remembers that state. On laptop this results in the inability to login or to use some keys on the keyboard. not all laptops have an obvious num lock indicator/switch. Consider removing that feature or enabling it as an opt-in. Right now, although the feature is disabled by default, it does bring numlockx as a dependency.
-	mdm: Allow logins without a password? http://forums.linuxmint.com/viewtopic.php?f=90&t=127829
+	mdm: Allow logins without a password? http://forums.linuxmint.com/viewtopic.php?f=90&t=127829 --- check lightdm's postinst, it creates the nopasswdlogin user group
 	mdm: should depend on mdm-themes... in Mint, we should use our themes, so make mint-mdm-themes provide mdm-themes.
 	system: switch to adobe-flashplugin
 	banshee: use mp3 decoding by default
@@ -38,3 +32,7 @@ Mint 17
 	consider using https instead of http for Amazon queries			
 	ubiquity: https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1038522
 	cinnamon: option to disable HUD
+	xfce: switch to system-wide configuration set (similar to xubuntu-default-settings + set MDM's default session to our own session + hide xfce4 session in /usr/share/xsession)
+	xfce: doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
+	xfce: Can't use the trash in live mode
+	xfce: There are no GTK bookmarks by default

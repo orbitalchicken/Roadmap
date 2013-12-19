@@ -59,3 +59,9 @@ KDE Edition
 	network manager applet missing after upgrading plasma-nm
 	~/.kde/env directory prevents login http://forums.linuxmint.com/viewtopic.php?f=109&t=143649
 	mintstick KDE action shows also for DVD and floppy disks			
+
+Xfce Edition
+------------
+	Add xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra
+	icons on the desktop have black font…and when I use a dark background I don’t see the text
+    switch to system-wide configuration set 

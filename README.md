@@ -5,11 +5,8 @@ KDE
 	Upgrade note to explain about plasma-nm	
 
 Xfce
-----
-    [Fixed] icons on the desktop have black font…and when I use a dark background I don’t see the text	
-    [Fixed] Add xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra
-    [Fixed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)			
-    [Fixed]: switch to system-wide configuration set 
+----    
+    [Fixed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)			    
 	
 Mint 17
 -------	
@@ -32,3 +29,5 @@ Mint 17
 	xfce: Can't use the trash in live mode
 	xfce: There are no GTK bookmarks by default
 	mintmenu: panel applet transparency
+	mintsources: consider changing the way opt-in works for romeo and backport
+	cinnamon: add major version deps on various components (libmuffin in particular)

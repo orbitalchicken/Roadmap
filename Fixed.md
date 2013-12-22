@@ -65,3 +65,4 @@ Xfce Edition
 	Add xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra
 	icons on the desktop have black font…and when I use a dark background I don’t see the text
     switch to system-wide configuration set 
+    ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)

@@ -1,13 +1,5 @@
 Confirmed issues
 
-KDE
----
-	Upgrade note to explain about plasma-nm	
-
-Xfce
-----    
-    [Fixed] ‘Super’ button does not open whisker menu. (add a shortcut to xfce4-popup-whiskermenu command)			    
-	
 Mint 17
 -------	
 	KDE: The installer doesn't install language-pack-gnome-xx resulting in GTK apps/dialogs showing in English
@@ -16,6 +8,7 @@ Mint 17
 	mdm: dep on numlockx... when numlockx gets installed it activates numlock. Cinnamon remembers that state. On laptop this results in the inability to login or to use some keys on the keyboard. not all laptops have an obvious num lock indicator/switch. Consider removing that feature or enabling it as an opt-in. Right now, although the feature is disabled by default, it does bring numlockx as a dependency.
 	mdm: Allow logins without a password? http://forums.linuxmint.com/viewtopic.php?f=90&t=127829 --- check lightdm's postinst, it creates the nopasswdlogin user group
 	mdm: should depend on mdm-themes... in Mint, we should use our themes, so make mint-mdm-themes provide mdm-themes.
+	mdm: When the specified theme isn't found, don't default to circles, use the GTK greeter!
 	system: switch to adobe-flashplugin
 	banshee: use mp3 decoding by default
 	cinnamon: enable touchpad tapping by default
@@ -31,3 +24,6 @@ Mint 17
 	mintmenu: panel applet transparency
 	mintsources: consider changing the way opt-in works for romeo and backport
 	cinnamon: add major version deps on various components (libmuffin in particular)
+	cinnamon: consider using "XDG_MENU_PREFIX=cinnamon- alacarte" instead of cme - coordinate with upstream to get cme improvements into alacarte
+	cinnamon-bluetooth: bring compatibility to GNOME 3.10
+	

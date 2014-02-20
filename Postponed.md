@@ -1,7 +1,6 @@
 De-scoped
 ---------		
 	GNOME: gnome-calculator menubar (minor cosmestic issue, won't fix)
-	System: Support for Wacom tablet (configurable via the command line, will need to join forces with Xfce/MATE if we want to develop a cross DE UI. This doesn't justify pulling resources to make a Cinnamon specific solution)	
 	System: EFI boot path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
 	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).
 	MP3 online doesn't work (known limitation with totem)	
@@ -26,9 +25,6 @@ Mint 17
 
 Cinnammon
 ---------	
-	cinnamon-settings: Cinnamon Regional settings is completely broken/useless/unintuitive, redesign from scratch in 2.2
-	cinnamon-settings: 12vs24 hour clock, easier custom format selection
-	cinnamon-settings: Add sound events for logout
 	applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…
 	applets: The mint logo is a bitmap(png) and is blurry when the panel is resized, it should be svg
 	applets: when I click on the window list to minimize and maximize sometimes the windows don’trespond and so I have to maximize another window so that I can mainimize or maximize the previous one!!	

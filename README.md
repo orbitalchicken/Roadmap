@@ -59,5 +59,4 @@ Cinnamon 2.2
 		consider using "XDG_MENU_PREFIX=cinnamon- alacarte" instead of cme - coordinate with upstream to get cme improvements into alacarte
 		cinnamon-bluetooth: bring compatibility to GNOME 3.10
 		cinnamon-settings-users: add support for nopasswdlogin	
-		cinnamon-settings-daemon: don't set locale / ditch org.cinnamon.locale.region in cinnamon-desktop
 		

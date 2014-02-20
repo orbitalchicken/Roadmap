@@ -26,6 +26,7 @@ Mint 17
 	windows compatibility layer
 	mint-x: MATE Panel transparency
 	mintmenu pulls https://github.com/linuxmint/mintmenu/pulls
+	mintlocale: set .pam_environment
 
 Cinnamon 2.2
 ------------
@@ -58,4 +59,5 @@ Cinnamon 2.2
 		consider using "XDG_MENU_PREFIX=cinnamon- alacarte" instead of cme - coordinate with upstream to get cme improvements into alacarte
 		cinnamon-bluetooth: bring compatibility to GNOME 3.10
 		cinnamon-settings-users: add support for nopasswdlogin	
+		cinnamon-settings-daemon: don't set locale / ditch org.cinnamon.locale.region in cinnamon-desktop
 		

@@ -1,9 +1,8 @@
 De-scoped
 ---------		
 	GNOME: gnome-calculator menubar (minor cosmestic issue, won't fix)
-	System: EFI boot path isn't standard (EFI installation in Virtualbox works fine, but upon reboot it loses its NVRAM and isn't able to find the EFI boot files)
 	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).
-	MP3 online doesn't work (known limitation with totem)	
+	MP3 online doesn't work (known limitation with totem)
 
 Improvements selected for the future
 =====================================
@@ -16,7 +15,6 @@ Mint 17
 	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg
 	apps/drivers: im-config should not be installed by default (agreed, but it's needed by language-selector-gnome, we'll replace both in Mint 17)	
 	Shutdown sequence in live-session is all black	
-	mdm: Cant set login screen time to 24hr (changing the option doesnt work)
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files		
 	banshee: tries to rip a CD to FLAC by default
@@ -59,7 +57,6 @@ Cinnammon
 	Cinnamon menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
 	l10n: In System Settings\Windows the options (Toggle Shade etc.) for the first four entries are not translated.
 	l10n: In System Settings\Fonts “None”, “Greyscale”, “Slight”, “Medium” and “Full” are not translated to Danish though Danish is 100% translated.
-	cinnamon-screensaver: If click “Lock screen” in Cinnamon, background don’t show full name year (only 20 without end) PL language
 
 MATE
 ----

@@ -37,6 +37,7 @@ Mint 17 [end of May]
 	make sure /etc/xdg/autostart/user-dirs-update-gtk.desktop works in MATE and Xfce (it uses OnlyShowIn)
 	check APT to avoid mergelist issues - i.e. automatically delete/re-download corrupted files on apt-get update calls
 	Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504.
+	make sure synaptic calls mintsources
 
 Cinnamon 2.2 [end of April]
 ---------------------------	 
@@ -45,40 +46,43 @@ Cinnamon 2.2 [end of April]
 		http://pkgs.fedoraproject.org/cgit/cinnamon-control-center.git/plain/region.patch 
 		http://pkgs.fedoraproject.org/cgit/cinnamon.git/plain/keyboard_applet.patch
 		http://pkgs.fedoraproject.org/cgit/cinnamon-control-center.git/tree/region_cleanup.patch
-		https://github.com/linuxmint/cinnamon-control-center/pull/51
-	hidpi support
+		https://github.com/linuxmint/cinnamon-control-center/pull/51	
 	look and feel
-		logout sound
 		bumpmaps
 		consider using bernard's theme
-		activate/discover hud and corner zones
 		startup animation
-	menu
-		highlight newly installed items
+	menu		
 		search providers
-	little things		
+	little things
 		screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
-		Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked		
-		add major version deps on various components (libmuffin in particular)
+		Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
 		consider using "XDG_MENU_PREFIX=cinnamon- alacarte" instead of cme - coordinate with upstream to get cme improvements into alacarte
-		cinnamon-bluetooth: bring compatibility to GNOME 3.10
-		cinnamon-settings-users: add support for nopasswdlogin		
-		does CSD remember the brightness level across sessions?
-		does CSD remember the sound level across sessions?
-		inhibit systemd power management		
-		cinnamon-screensaver: background doesn't show up		
-		date gets revered automatically in cinnamon-settings, even when ntp is off
-		tiling left tiles right-left
 		port cinnamon-menu-editor fixes to alacarte upstream
+		cinnamon-bluetooth: bring compatibility to GNOME 3.10
+		cinnamon-settings-users: add support for nopasswdlogin
+		does CSD remember the brightness level across sessions?
+		inhibit systemd power management
+		cinnamon-screensaver: background doesn't show up	
 		expo: set overview mode to true by default
 		expo: lag on dnd
 		nemo mounts as read-only after formatting a live stick back to vfat
+		cs: hotcorner shows entry for custom ..		
+		right-click Run/Open with blah in nemo, on executable files
+
 	Done
+		hidpi support
 		locales: remove region module
 		locales: move keyboard layouts to keyboard settings
-		date and time: 12vs24 hour clock, show seconds, show date		
+		date and time: 12vs24 hour clock, show seconds, show date, date settings module, bug fixes
 		small things: stop using session-migration
-
+		cinnamon-settings: don't load all the modules
+		cinnamon-settings: UI improvements
+		cjs: don't let calls to gsettings segfault Cinnamon when the key/schema isn't found
+		add major version deps on various components (libmuffin in particular)
+		logout sound
+		shutdown sequence fixes
+		menu: highlight newly installed items
+		menu: uninstall applications
 
 LMDE
 ----

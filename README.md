@@ -68,6 +68,7 @@ Cinnamon 2.2 [end of April]
 		nemo mounts as read-only after formatting a live stick back to vfat
 		cs: hotcorner shows entry for custom ..		
 		right-click Run/Open with blah in nemo, on executable files
+		Fix duplicate automount managers, one in CSD (which showErrorDialog dialogs can't be dismissed sometimes... really annoying), one in Cinnamon's JS layer (which only knows about Consolekit so is unlikely to work outside of Mint..)
 
 	Done
 		hidpi support

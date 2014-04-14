@@ -59,6 +59,8 @@ Mint 17 [end of May]
 	regenerate desktop files post-translations
 	verify mintfortune bug and bashrc settings
 	don't include bash return codes in prompt
+	regression in screensaver (drawing_area or clear())
+	ping disabled in trusty?
 	done
 		mintwelcome redesign
 		mintlocale

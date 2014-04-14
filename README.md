@@ -46,7 +46,13 @@ Mint 17 [end of May]
 	mint-x: window buttons
 	mint-x: center window title
 	KDE: Consider not using oxygen for GTK (check with mintBackup filechooser)
-
+	mintmenu: port remove functionality to mint-common
+	mdm doesn't login post-install (regression with session selection)
+	default mdm theme doesn't let you input username
+	artwork: backgrounds and mdm theme
+	factorize mdm themes
+	packages to sync between github and repo: mdm, mint-mdm-themes, mint-mdm-themes-kde, mint-translations, cinnamon-translations, webkit-gtk, gnome-apps, gtk, xchat, unity-greeter, gedit, systemd
+	cinnamon-session-properties 2.2 "delay" isn't l10n
 	done
 		mintwelcome redesign
 		mintlocale

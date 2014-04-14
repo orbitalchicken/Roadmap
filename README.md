@@ -53,6 +53,10 @@ Mint 17 [end of May]
 	factorize mdm themes
 	packages to sync between github and repo: mdm, mint-mdm-themes, mint-mdm-themes-kde, mint-translations, cinnamon-translations, webkit-gtk, gnome-apps, gtk, xchat, unity-greeter, gedit, systemd
 	cinnamon-session-properties 2.2 "delay" isn't l10n
+	mintlocale missing ibus activation support
+	cinnamon translations
+	mint translations
+	regenerate desktop files post-translations
 	done
 		mintwelcome redesign
 		mintlocale

@@ -57,6 +57,8 @@ Mint 17 [end of May]
 	cinnamon translations
 	mint translations
 	regenerate desktop files post-translations
+	verify mintfortune bug and bashrc settings
+	don't include bash return codes in prompt
 	done
 		mintwelcome redesign
 		mintlocale

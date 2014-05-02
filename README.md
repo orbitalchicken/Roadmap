@@ -57,10 +57,7 @@ Mint 17 [end of May]
 	cinnamon translations
 	mint translations
 	regenerate desktop files post-translations
-	verify mintfortune bug and bashrc settings
-	don't include bash return codes in prompt
-	regression in screensaver (drawing_area or clear())
-	ping disabled in trusty?
+	mintinstall -resync server db
 	done
 		mintwelcome redesign
 		mintlocale
@@ -87,10 +84,9 @@ Cinnamon 2.2 [end of April]
 		screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
 		Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
 		cinnamon-bluetooth: bring compatibility to GNOME 3.10
-		cinnamon-settings-users: add support for nopasswdlogin
-		does CSD remember the brightness level across sessions?
+		cinnamon-settings-users: add support for nopasswdlogin		
 		expo: set overview mode to true by default
-		expo: lag on dnd		
+		expo: lag on dnd
 		right-click Run/Open with blah in nemo, on executable files		
 		applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…
 		applets: Can't minimize windows which have a modal dialog (for example: Synaptic while installing a package). It's possible via the titlebar, but not via the window list
@@ -101,6 +97,7 @@ Cinnamon 2.2 [end of April]
 		when 'open menu when i move my mouse over it' is enabled, the tooltip still shows when i move the mouse over the menu
 		https://git.gnome.org/browse/gnome-control-center/commit/panels/network?id=63756458b2de0d730763cc2acbd510659e4d00a5
 		show frequency in displays
+		background shows all black in virtualbox
 
 	Done
 		hidpi support

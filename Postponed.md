@@ -12,13 +12,14 @@ Mint 17
 	mintsources: doesn’t show any progress bar and it seems to test mirrors one by one instead of doing it in parallel.
 	system: migrate from gksu/kdesu to pkexec
 	ubiquity-slideshow: In the “Install Software” slide of the installation slideshow, it shows Picasa under “Features software”, but Google dropped Picasa for Linux a little over a year ago
-	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg
-	apps/drivers: im-config should not be installed by default (agreed, but it's needed by language-selector-gnome, we'll replace both in Mint 17)	
+	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg	
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files		
 	banshee: tries to rip a CD to FLAC by default
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 	mintinstall "show all results" not l10n	
+	windows compatibility layer
+	mintdrivers: should we re-add a systray icon to notify users at session startup?
 
 Cinnammon
 ---------
@@ -49,6 +50,18 @@ Cinnammon
 	l10n: In System Settings\Windows the options (Toggle Shade etc.) for the first four entries are not translated.
 	l10n: In System Settings\Fonts “None”, “Greyscale”, “Slight”, “Medium” and “Full” are not translated to Danish though Danish is 100% translated.
 
+	ibus support		
+			http://pkgs.fedoraproject.org/cgit/cinnamon-settings-daemon.git/plain/keyboard.patch 
+			http://pkgs.fedoraproject.org/cgit/cinnamon-control-center.git/plain/region.patch 
+			http://pkgs.fedoraproject.org/cgit/cinnamon.git/plain/keyboard_applet.patch
+			http://pkgs.fedoraproject.org/cgit/cinnamon-control-center.git/tree/region_cleanup.patch
+			https://github.com/linuxmint/cinnamon-control-center/pull/51	
+		look and feel
+			bumpmaps		
+			startup animation
+		menu		
+			search providers
+
 MATE
 ----
 	mate-terminal still has a menu bar and is not transparent	
@@ -65,3 +78,19 @@ MATE
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	caja: dng and raw images thumbnails in caja
 	switch to default notification theme
+
+LMDE
+----
+	Review live-installer from Tanglu (https://gitorious.org/tanglu/tanglu-live-installer) and Manjaro (http://git.manjaro.org/core/live-installer)
+	Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
+	Triple mint-fortune issue with bash.bashrc
+	Systemd runtime dir with gksu/pkexec
+
+Post 17
+--------
+	cinnamon: consider using "XDG_MENU_PREFIX=cinnamon- alacarte" instead of cme - coordinate with upstream to get cme improvements into alacarte
+	cinnamon: port cinnamon-menu-editor fixes to alacarte upstream
+	cinnamon: switch to Cinnamon XDG name
+	uxa: switch to UXA apps in Cinnamon, MATE and Xfce editions
+	revive Giver project?
+	integrate user guide in yelp help content

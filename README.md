@@ -17,48 +17,23 @@ Mint 17
 		Can't use the trash in live mode
 		There are no GTK bookmarks by default
 		missing indicator-sound indicator-sound-gtk2
-
-	artwork:
-		backgrounds
-		mdm theme
-
-	Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504.	
-	Add upstream info to /etc/upstream-release/lsb-release and patch lsb-release: http://jolios.org/docs/core-modifications.html, https://github.com/jolicloud/lsb/commit/fde07bfec0935784e5caa6cd6a2ff5f81c3d0ad4
-		
-	missing packages:		
-		unity-greeter		
-		gedit-plugins
-
-	mint tools:
+			
+	Cinnamon/MATE:		
+		unity-greeter pkg
+		gedit-plugins pkg
+		artwork: backgrounds
+		artwork: mdm theme
 		mintlocale missing ibus activation support		
-		https://github.com/linuxmint/mintmenu/pull/89
-		mintupdate pulls
-	
-	translations
-		update translations for mintupdate, mintsources and mdm
-		cinnamon-session-properties 2.2 "delay" isn't l10n	
-
-	cinnamon bugs
-		cinnamon tooltips	
-		cinnamon panel icon size..
-		cinnamon-settings-daemon crash when mounting stuff
-		OK-git cinnamon-screensaver alt+f2 bug..
-		cinnamon-screensaver dialog size seems fixed	
-
-	system:
-		efi name is ubuntu?
+		https://github.com/linuxmint/mintmenu/pull/89			
 		can't access apt-cdrom post-install
-		OK-git mdm: don't select last login in recovery mode
+		Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504. Add upstream info to /etc/upstream-release/lsb-release and patch lsb-release: http://jolios.org/docs/core-modifications.html, https://github.com/jolicloud/lsb/commit/fde07bfec0935784e5caa6cd6a2ff5f81c3d0ad4
 
-	.desktop files
-		OK adjust evince to go to accessories
-		OK oo-math puts itself in education as well as in office
+	RFT:
+		
+		OK efi name is ubuntu?		
+		OK mdm: don't select last login in recovery mode
 		OK vino server autostart has onlyshowin
-		OK two upload manager in menu (cinnamon)
-
-	software selection
-		OK missing mintlocale
-		OK remove language tool from ubuntu
+		OK cinnamon has region and languages launcher
 
 	done
 		mintwelcome redesign
@@ -90,6 +65,9 @@ Cinnamon 2.2
 		nemo: package description for nemo-data it reads  "Nemo is the official file manager and graphical shell for the GNOME desktop."
 		cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 		
 		when 'open menu when i move my mouse over it' is enabled, the tooltip still shows when i move the mouse over the menu		
+		cinnamon tooltips sometimes show at 0x0
+		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
+		cinnamon-settings-daemon sometimes crash when failing to mount and we dismiss the error dialog
 
 	descoped:
 		consider using bernard's theme
@@ -101,3 +79,4 @@ Cinnamon 2.2
 		expo: set overview mode to true by default
 		expo: lag on dnd
 		network applet https://git.gnome.org/browse/gnome-control-center/commit/panels/network?id=63756458b2de0d730763cc2acbd510659e4d00a5
+		cinnamon-screensaver dialog is all shrunk in hi-dpi

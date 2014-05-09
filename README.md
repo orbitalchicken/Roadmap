@@ -23,17 +23,15 @@ Mint 17
 		gedit-plugins pkg
 		artwork: backgrounds
 		artwork: mdm theme
-		mintlocale missing ibus activation support		
-		https://github.com/linuxmint/mintmenu/pull/89			
-		can't access apt-cdrom post-install
-		Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504. Add upstream info to /etc/upstream-release/lsb-release and patch lsb-release: http://jolios.org/docs/core-modifications.html, https://github.com/jolicloud/lsb/commit/fde07bfec0935784e5caa6cd6a2ff5f81c3d0ad4
+		mintlocale missing ibus activation support
+		https://github.com/linuxmint/mintmenu/pull/89				
+		update translations for mintdrivers			
 
 	RFT:
-		
-		OK efi name is ubuntu?		
-		OK mdm: don't select last login in recovery mode
-		OK vino server autostart has onlyshowin
 		OK cinnamon has region and languages launcher
+		OK improved offline installation of drivers (mintdrivers)
+		OK pkexec fr and de translations in /usr/share/polkit-1/actions/com.ubuntu.pkexec.synaptic.policy
+		OK cinnamon tooltips sometimes show at 0x0
 
 	done
 		mintwelcome redesign
@@ -49,7 +47,6 @@ Mint 17
 		mint-x: MATE Panel transparency
 		mdm shutdown sequence
 		mdm recovery
-		
 
 	maintenance:
 		reopen LMDE rsyncd
@@ -62,12 +59,10 @@ Cinnamon 2.2
 		applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…
 		applets: Can't minimize windows which have a modal dialog (for example: Synaptic while installing a package). It's possible via the titlebar, but not via the window list
 		prefs: I miss the working WIN+D keyboard shortcut to go to desktop.
-		nemo: package description for nemo-data it reads  "Nemo is the official file manager and graphical shell for the GNOME desktop."
-		cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 		
-		when 'open menu when i move my mouse over it' is enabled, the tooltip still shows when i move the mouse over the menu		
-		cinnamon tooltips sometimes show at 0x0
+		cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 				
 		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
 		cinnamon-settings-daemon sometimes crash when failing to mount and we dismiss the error dialog
+		cinnamon hi-dpi autodetection gives false positives
 
 	descoped:
 		consider using bernard's theme
@@ -80,3 +75,4 @@ Cinnamon 2.2
 		expo: lag on dnd
 		network applet https://git.gnome.org/browse/gnome-control-center/commit/panels/network?id=63756458b2de0d730763cc2acbd510659e4d00a5
 		cinnamon-screensaver dialog is all shrunk in hi-dpi
+		Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504. 

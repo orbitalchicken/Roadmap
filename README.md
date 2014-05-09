@@ -17,6 +17,7 @@ Mint 17
 		Can't use the trash in live mode
 		There are no GTK bookmarks by default
 		missing indicator-sound indicator-sound-gtk2
+
 			
 	Cinnamon/MATE:		
 		unity-greeter pkg
@@ -25,7 +26,10 @@ Mint 17
 		artwork: mdm theme
 		mintlocale missing ibus activation support
 		https://github.com/linuxmint/mintmenu/pull/89				
-		update translations for mintdrivers			
+		update translations for mintdrivers
+		mozo doesn't start
+		mate-shares-admin doesn't start
+		mate-maximus is in autostart apps - it should be removed
 
 	RFT:
 		OK cinnamon has region and languages launcher

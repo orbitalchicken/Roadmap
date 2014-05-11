@@ -17,30 +17,24 @@ Mint 17
 		Can't use the trash in live mode
 		There are no GTK bookmarks by default
 		missing indicator-sound indicator-sound-gtk2
-
 			
-	Cinnamon/MATE:		
-		unity-greeter pkg
-		gedit-plugins pkg
-		artwork: backgrounds
-		artwork: mdm theme
-		mintlocale missing ibus activation support
-		https://github.com/linuxmint/mintmenu/pull/89				
-		update translations for mintdrivers
+	Cinnamon:
+		changing Wallpaper sometimes freezes cinnamon
+
+	MATE: 
+		https://github.com/linuxmint/mintmenu/pull/89
 		mozo doesn't start
 		mate-shares-admin doesn't start --> mate-system-tools doesn't depend on mate-system-tools-common
 		mate-maximus is in autostart apps - it should be removed
 		mate-system-monitor-common not installed
-		do we need libmatewnck?
-
+	
+	Other:
+		unity-greeter pkg
+		gedit-plugins pkg				
+		mintlocale missing ibus activation support	
+		update translations for mintdrivers
 
 	RFT:
-		OK cinnamon has region and languages launcher
-		OK improved offline installation of drivers (mintdrivers)
-		OK pkexec fr and de translations in /usr/share/polkit-1/actions/com.ubuntu.pkexec.synaptic.policy
-		OK cinnamon tooltips sometimes show at 0x0
-		OK cinnamon-settings-daemon sometimes crash when failing to mount and we dismiss the error dialog
-		OK cinnamon magnifier bugs
 		OK applets: Can't minimize windows which have a modal dialog (for example: Synaptic while installing a package). It's possible via the titlebar, but not via the window list
 		OK prefs: I miss the working WIN+D keyboard shortcut to go to desktop.
 
@@ -62,24 +56,5 @@ Mint 17
 	maintenance:
 		reopen LMDE rsyncd
 
-Cinnamon 2.2
----------------------------	 
+
 	
-	little things		
-		right-click Run/Open with blah in nemo, on executable files		
-		applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…				
-		cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 				
-		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
-		
-	descoped:
-		consider using bernard's theme
-		show frequency in displays
-		screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
-		Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
-		cinnamon-bluetooth: bring compatibility to GNOME 3.10
-		cinnamon-settings-users: add support for nopasswdlogin
-		expo: set overview mode to true by default
-		expo: lag on dnd
-		network applet https://git.gnome.org/browse/gnome-control-center/commit/panels/network?id=63756458b2de0d730763cc2acbd510659e4d00a5
-		cinnamon-screensaver dialog is all shrunk in hi-dpi
-		Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504. 

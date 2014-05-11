@@ -29,13 +29,25 @@ Cinnammon
 	spices: If I select the radio box to choose an applet and then I’ll click the button to install it, the applet is installed but it’s not active: maybe a new user expects to have it immediately in the panel after the download… in fact forcing the user to come back in the list of the installed applet to enable the just downloaded applet is not user friendly, in my opinion.
 	nemo: if I press ALT+F2 and then enter “nemo ftp://ftp.mydomain.xyz” to access to my personal ftp server trough nemo, I’ll get a request of username and password: it’s OK. The problem is that if I select the option to remember forever the username and password, it will not have effect: if I reboot Linux Mint, the next time I’ll try to access my ftp trough nemo I’ll get the request of username e password. So… nemo doesn’t remember my credentials… it’s frustrating.
 	nemo: Entering the folder of long name , the path disappeared screen capture 1) it shows a folder of longname https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A19.png screen capture 2) entering the long name folder , meeting disappeared folder path of long name folder https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A34.png screen capture 3) But Actually It was still dsiplayed at max window https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A19%3A13.png	
-    cinnamon: changing Wallpaper sometimes freezes cinnamon
 	cinnamon: menu doesn't listen to menu changes outside /usr/share/applications? install shotwell for instance (uses /usr/share/menu)
 	Keyboard settings allow adding duplicate key combination for Cinnamon “Toggle Scale” and “Toggle Expo” (found these, didn’t go through all actions, most of them ok)
 	nemo: Create a thumbnailer in usr/share/thumbnailers for MimeType inode/directory – when you try to run Nemo, it crashes with the error:  (nemo:9078): CinnamonDesktop-WARNING **: Error reading from file:///home/simon/Desktop: Error reading from file descriptor: Is a directory Installing cover-thumbnailer is an easy way to reproduce it.
 	nemo-preview (not installed by default), doesn’t work: http://pastebin.com/Uaci0mzC
-	
-
+	consider using bernard's theme
+	show frequency in displays
+	screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
+	Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
+	cinnamon-bluetooth: bring compatibility to GNOME 3.10
+	cinnamon-settings-users: add support for nopasswdlogin
+	expo: set overview mode to true by default
+	expo: lag on dnd
+	network applet https://git.gnome.org/browse/gnome-control-center/commit/panels/network?id=63756458b2de0d730763cc2acbd510659e4d00a5
+	cinnamon-screensaver dialog is all shrunk in hi-dpi
+	Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504.
+	right-click Run/Open with blah in nemo, on executable files		
+	applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…				
+	cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 				
+	cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
 	cinnamon-settings: in French http://imagebin.org/277997
 	Creating a user without password (stupid but nothing prevents it): impossible for that user to set one himself in Account Details.
 	In the “Users and Groups”, when on “Groups” tab, it could be great to have a way to see the members of a selected group and add new members to the group as well. Currently, we can only edit the group name…

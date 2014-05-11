@@ -28,14 +28,21 @@ Mint 17
 		https://github.com/linuxmint/mintmenu/pull/89				
 		update translations for mintdrivers
 		mozo doesn't start
-		mate-shares-admin doesn't start
+		mate-shares-admin doesn't start --> mate-system-tools doesn't depend on mate-system-tools-common
 		mate-maximus is in autostart apps - it should be removed
+		mate-system-monitor-common not installed
+		do we need libmatewnck?
+
 
 	RFT:
 		OK cinnamon has region and languages launcher
 		OK improved offline installation of drivers (mintdrivers)
 		OK pkexec fr and de translations in /usr/share/polkit-1/actions/com.ubuntu.pkexec.synaptic.policy
 		OK cinnamon tooltips sometimes show at 0x0
+		OK cinnamon-settings-daemon sometimes crash when failing to mount and we dismiss the error dialog
+		OK cinnamon magnifier bugs
+		OK applets: Can't minimize windows which have a modal dialog (for example: Synaptic while installing a package). It's possible via the titlebar, but not via the window list
+		OK prefs: I miss the working WIN+D keyboard shortcut to go to desktop.
 
 	done
 		mintwelcome redesign
@@ -60,14 +67,10 @@ Cinnamon 2.2
 	
 	little things		
 		right-click Run/Open with blah in nemo, on executable files		
-		applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…
-		applets: Can't minimize windows which have a modal dialog (for example: Synaptic while installing a package). It's possible via the titlebar, but not via the window list
-		prefs: I miss the working WIN+D keyboard shortcut to go to desktop.
+		applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…				
 		cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 				
 		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
-		cinnamon-settings-daemon sometimes crash when failing to mount and we dismiss the error dialog
-		cinnamon hi-dpi autodetection gives false positives
-
+		
 	descoped:
 		consider using bernard's theme
 		show frequency in displays

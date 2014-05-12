@@ -18,16 +18,14 @@ Mint 17
 		There are no GTK bookmarks by default
 		missing indicator-sound indicator-sound-gtk2
 			
-	Cinnamon:
-		changing Wallpaper sometimes freezes cinnamon
+	Cinnamon:		
+		OK missing gimp
+		GIT first-run hidpi is broken
 
 	MATE: 
 		https://github.com/linuxmint/mintmenu/pull/89
-		mozo doesn't start
-		mate-shares-admin doesn't start --> mate-system-tools doesn't depend on mate-system-tools-common
-		mate-maximus is in autostart apps - it should be removed
-		mate-system-monitor-common not installed
-	
+		OK missing gnome-keyring				
+			
 	Other:
 		unity-greeter pkg
 		gedit-plugins pkg				

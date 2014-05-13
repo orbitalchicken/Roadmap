@@ -16,11 +16,7 @@ Mint 17
 		doesn't seem to detect DVD insertion, doesn't run VLC (works in 32bit, not 64bit)
 		Can't use the trash in live mode
 		There are no GTK bookmarks by default
-		missing indicator-sound indicator-sound-gtk2
-			
-	Cinnamon:		
-		OK missing gimp
-		GIT first-run hidpi is broken
+		missing indicator-sound indicator-sound-gtk2		
 
 	MATE: 
 		https://github.com/linuxmint/mintmenu/pull/89

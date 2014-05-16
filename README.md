@@ -17,14 +17,14 @@ Mint 17 RC
 		pkgs: gedit-plugins pkg					
 		mintlocale: missing ibus activation support	
 		mintdrivers: update translations
-		mintdrivers: remove the apt-cdrom repository when exiting	
-		mintsources: print(” %s” % (ppa_info["description"].encode(“utf-8″) or “”)) --> AttributeError: ‘NoneType’ object has no attribute ‘encode’
+		mintdrivers: remove the apt-cdrom repository when exiting			
 		mint-mirrors: update list of mirrors		
 	
 	RFT
 	
 	FIXED
 		mdm: login screen freezes for German speaking users
+		mintsources: print(” %s” % (ppa_info["description"].encode(“utf-8″) or “”)) --> AttributeError: ‘NoneType’ object has no attribute ‘encode’
 
 	TRIAGED
 

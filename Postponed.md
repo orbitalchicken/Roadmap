@@ -17,6 +17,12 @@ Mint 17
 
 Cinnammon
 ---------
+	settings: The buttons in the system settings seem to be sorted according the english names, but I’m using dutch, so the sorting looks really random.
+	settings: mintdrivers - The name “Device Drivers” is used in the main Cinnamon Control Centre but once you open it the name at the top of the window is “Driver Manager”. The names should be the same for consistency.
+	settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
+	settings: mouse - The Cinnamon drag threshold and GTK drag threshold input boxes are not aligned to each other but appended to the end of the wording. They should be aligned as per other similar examples in the Cinnamon Control Centre.
+	settings:  workspaces - OSD duration, OSD horizontal position and OSD vertical position are not aligned.
+	settings: Under Auto-hide panel, the input boxes for “show delay” and “hide delay” are not aligned. Many other such input boxes and drop down menu boxes are aligned with each other and not with the end of the text.
 	applets: when I click on the window list to minimize and maximize sometimes the windows don’t respond and so I have to maximize another window so that I can mainimize or maximize the previous one!!	
 	applets: On/Off switch for networking applet is visually glitchy
 	spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)

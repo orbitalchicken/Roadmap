@@ -3,14 +3,12 @@ Triaged reports
 Not a bug 
 ---------
 	L5 updates listed in the Update Manager, which others have already mentioned. Probably due to the fact that they are listed as security updates, that they are overriding the Visibility settings
-
+	The “tab” key cannot be used for keyboard shortcuts (as in Ctrl+Tab). Instead of registering as a shortcut, the tab key press moves the cursor focus out of the “Pick an accelerator” box, and down to the “Add custom shortcut” button.
 
 Outside of the scope
 --------------------
-	guvcview doesn’t record video. It just records weird stop motion kind of stuff.
 	virt-manager did not have the packages it needed on first boot.
 	Dolphin Wii Emulator is not in the repos.
-	If i watch a youtube video in full screen mode and come back to normal mode then my chrome is hiding the bottom panel/taskbar. This is not happening with firefox.
 
 Can't reproduce
 ---------------
@@ -20,9 +18,28 @@ Can't reproduce
 Upstream
 --------
 	Breadcrumbs in Nemo do not display correctly with Adwaita theme or High Contrast theme.
-	System lock ups with NVIDIA Corporation C61 [GeForce 7025 / nForce 630a] (rev a2) --> have to use nouveau.noaccel=1
-	NVIDIA Corp c51(Geforce 6150 LE) Hard freeze
-	NVIDIA GeForce 6150SE nForce 430 (rev a2) hard freeze
-	Nvidia 256 dedicated Geforce 6150SE nForce 430 Hard freeze
 	chromium and muffin hate each others..
-	AMD CPU + MSI Card - computer reboots https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1309578
+	I tried installing Qiana RC Cinnamon from a USB drive using the “Erase everything” partitioning option. It erased everything all right: including the USB drive it was installing from
+	The installer (LM16 RC 64bit) seems to be failing during this kind of install:  Manual, / onto sdd, Mounting /home (LUKS encrypted) from hdd. It just sits there without any cpu usage or anything after putting in the username and password page. Didn’t touch the existing install at all. Did the exact same thing with the 16 64bit previously which worked flawlessly.
+	LUKS password steps precedes keyboard layout selection.. leading to the user blindly inputting a password that doesn't correspond to what he thinks he's typing.
+	If i watch a youtube video in full screen mode and come back to normal mode then my chrome is hiding the bottom panel/taskbar. This is not happening with firefox.
+	Cairo Dock doesn’t select the openGL backend when adding to startup, even if you tell it to remember your choice when it asks. I had to manually go into Startup Applications and edit the command with cairo-dock -o for it to work
+	After each restart of the system Chromium can’t play Flash and I have to reinstall the plugin.
+	guvcview doesn’t record video. It just records weird stop motion kind of stuff.
+	
+Upstream critical
+-----------------	
+	Hard freeze:
+		NVIDIA Corp c51(Geforce 6150 LE) Hard freeze
+		NVIDIA GeForce 6150SE nForce 430 (rev a2) hard freeze
+		Nvidia 256 dedicated Geforce 6150SE nForce 430 Hard freeze
+		System lock ups with NVIDIA Corporation C61 [GeForce 7025 / nForce 630a] (rev a2) --> have to use nouveau.noaccel=1
+		NVIDIA Corporation C61 [GeForce 7025 / nForce 630a] (rev a2)
+	
+	computer reboots:
+		AMD CPU + MSI Card - computer reboots https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1309578
+
+	mouse/keyboard freeze
+		I believe I found the fix: https://bugs.launchpad.net/ubuntu/+source/nfs-utils/+bug/1270445
+		I had to blacklist rpcsec_gss_krb5. Since blacklisting and rebooting I have not had any freezes. So Happy, everything else appears to be working good.
+	

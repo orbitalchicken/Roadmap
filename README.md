@@ -18,7 +18,8 @@ Mint 17 RC
 		mintlocale: missing ibus activation support	
 		mintdrivers: update translations
 		mintdrivers: remove the apt-cdrom repository when exiting			
-		mint-mirrors: update list of mirrors		
+		mint-mirrors: update list of mirrors	
+		gparted missing from MATE edition	
 	
 	RFT
 	

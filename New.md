@@ -1,13 +1,13 @@
-New bug reports in Mint 16 RC
+New bug reports in Mint 17 RC
 
 All editions
 -------------		
 
-Cinnamon Edition - last processed comment: #433
-----------------				
+Cinnamon Edition - last processed comment: #0
+---------------------------------------------				
 	
 
-MATE Edition - last processed comment: #165
-------------
+MATE Edition - last processed comment: #0
+-----------------------------------------
 	
 

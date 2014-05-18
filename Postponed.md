@@ -1,8 +1,6 @@
 De-scoped
 ---------		
-	GNOME: gnome-calculator menubar (minor cosmestic issue, won't fix)
-	MDM: l10n doesn't cover new features (MDM 1.4 is still using the l10n it inherited from GDM. Decision was taken to migrate MDM entirely to Mint/LP translations in 1.6, not just mdmwebkit/mdmsetup).
-	MP3 online doesn't work (known limitation with totem)
+
 
 Improvements selected for the future
 =====================================
@@ -10,16 +8,12 @@ Improvements selected for the future
 Mint 17
 -------
 	mintsources: doesn’t show any progress bar and it seems to test mirrors one by one instead of doing it in parallel.
-	system: migrate from gksu/kdesu to pkexec
-	ubiquity-slideshow: In the “Install Software” slide of the installation slideshow, it shows Picasa under “Features software”, but Google dropped Picasa for Linux a little over a year ago
-	mintdrivers: broadcom wireless chipset is recognize well, but I can’t choose the upper button (it always go back to “do not use this device”) http://www.imagebanana.com/view/jx2lm7vz/drivermanager.jpg	
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files		
-	banshee: tries to rip a CD to FLAC by default
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 	mintinstall "show all results" not l10n	
 	windows compatibility layer
-	mintdrivers: should we re-add a systray icon to notify users at session startup?
+
 
 Cinnammon
 ---------
@@ -62,7 +56,6 @@ Cinnammon
 	Cinnamon menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
 	l10n: In System Settings\Windows the options (Toggle Shade etc.) for the first four entries are not translated.
 	l10n: In System Settings\Fonts “None”, “Greyscale”, “Slight”, “Medium” and “Full” are not translated to Danish though Danish is 100% translated.
-
 	ibus support		
 			http://pkgs.fedoraproject.org/cgit/cinnamon-settings-daemon.git/plain/keyboard.patch 
 			http://pkgs.fedoraproject.org/cgit/cinnamon-control-center.git/plain/region.patch 
@@ -77,15 +70,13 @@ Cinnammon
 
 MATE
 ----
-	mate-terminal still has a menu bar and is not transparent	
-	Clicking “help” on most mate applications opens yelp to an error page (fixed in 1.7)
+	mate-terminal still has a menu bar and is not transparent		
 	When panel is at the top, notifications show on top of it. https://dl.dropboxusercontent.com/u/54450962/%ED%99%94%EB%A9%B4-5.png
 	Would be nice if the mouse preference panel in Mate included a “natural scrolling” option
 	Add sound effects like in Cinnamon
 	The MATE user admin program (mate-users-admin), when setting a user’s type to “Administrative”, does not add the user to the “sudo” group. The workaround is to explicitly add the user to the sudo group
 	‘mate-screensaver’ still as flaky as it was in lm15 MATE 64-bit. Set to ‘Lock screen when screensaver is active’ sometimes upon resume after suspend I get a prompt for my password, other times NOT.
 	MPRIS support
-	mintmenu: Not yet fixed MATE mintMenu bug where it isn’t transparent when user set panel with solid color – all panel adjusts transparent but mintMenu remains with default gray color.		
 	marco: Java apps are almost unusable when maximized. http://forums.linuxmint.com/viewtopic.php?f=47&t=112470&p=709183 https://bugzilla.redhat.com/show_bug.cgi?id=918055 (won't fix in MATE, will try to convince the team or patch Marco in Mint 17)
 	mate-system-monitor under resourses doesn’t look great with the default GTK theme (need to give the notebook at widget class name or style name so we can make it flat in Mint-X, alternatively, we could try and make the cairo elements transparent)
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.

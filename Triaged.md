@@ -13,6 +13,7 @@ Outside of the scope
 Can't reproduce
 ---------------
 	when modifying settings in the Security Centre, I noticed that some minimized windows could not be maximized again. They were visible in the task bar but could not be selected.
+	cinnamon : the battery icon doesn’t show the percentage on the panel and i have to always click on the battery icon to show me the percentage.
 
 
 Upstream

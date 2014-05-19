@@ -13,10 +13,12 @@ Mint 17
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 	mintinstall "show all results" not l10n	
 	windows compatibility layer
-
+	mintupdate: when Update Manager has done it’s job successfully, the disk stops rumbling and the window just vanishes… it looks like it crashed. A pop-up ‘Your System Is Now Up To Date’ for ten seconds would be nice.
+	bring back hardinfo
 
 Cinnammon
 ---------
+	cinnamon-settings: network - proxy - button ON/OFF doesn't do anything
 	settings: The buttons in the system settings seem to be sorted according the english names, but I’m using dutch, so the sorting looks really random.
 	settings: mintdrivers - The name “Device Drivers” is used in the main Cinnamon Control Centre but once you open it the name at the top of the window is “Driver Manager”. The names should be the same for consistency.
 	settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.

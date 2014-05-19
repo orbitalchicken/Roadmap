@@ -20,10 +20,14 @@ Cinnamon Edition - last processed comment: #146
 	the zoom doesn’t zoom IN on a reboot after you activate it. however, if you first zoom OUT, all works as advertised after that.
 	screensaver: If using dark theme (I’m FlatStudioDark and I already tried with other dark theme too), there is black/dark horizontal box surrounding the clock and lock dialog. http://i.imgur.com/jrW5DoA.jpg
 	Cinnamon isn’t scaling user defined panel sizes properly. If I select Numix as my theme and set a customised panel size, when clicking Allow Cinnamon to Scale Panel Text and Icons, the text on the right side of the panel bar seems to go a bit blurry. This didn’t happen on the last release. The update shield sometimes goes wonky too which I assume is related.
+	In Cinnamon, desktop font (and only on desktop) looks like it’s antialiased wrong, like it’s using wrong pixel order – BGR instead of RGB. Font settings isn’t helping because desktop font isn’t changing no matter what option I choose.
 
-
-MATE Edition - last processed comment: #16
+MATE Edition - last processed comment: #82
 -----------------------------------------
 	firefox suggests mintinstall for tgz
 	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
-
+	You cant set display brightness on battery power mode, just on AC
+	Remove mate-user-share? In Control Center, Shared Folders and User Share seem to duplicate and don't work well together. I have noticed that Shared Folders (from the Control Centre) will not save any shares I add.
+	I can’t get any workspace switcher
+	when I use the ‘Fn’ key combos to adjust screen brightness there is _no_ helpful gui popup bar to indicate where I’m configured between minimum/maximum screen brightness.
+	The white on black background menu is not good for anyone with other than 20/20.

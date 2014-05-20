@@ -19,6 +19,7 @@ Mint 17
 
 Cinnammon
 ---------
+	cinnamon-settings-daemon: Super+e should open file manager
 	cinnamon-settings: network - proxy - button ON/OFF doesn't do anything
 	settings: The buttons in the system settings seem to be sorted according the english names, but I’m using dutch, so the sorting looks really random.
 	settings: mintdrivers - The name “Device Drivers” is used in the main Cinnamon Control Centre but once you open it the name at the top of the window is “Driver Manager”. The names should be the same for consistency.

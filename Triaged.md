@@ -4,6 +4,7 @@ Not a bug
 ---------
 	L5 updates listed in the Update Manager, which others have already mentioned. Probably due to the fact that they are listed as security updates, that they are overriding the Visibility settings
 	The “tab” key cannot be used for keyboard shortcuts (as in Ctrl+Tab). Instead of registering as a shortcut, the tab key press moves the cursor focus out of the “Pick an accelerator” box, and down to the “Add custom shortcut” button.
+	cinnamon-settings: themes - inconsistent aspect ratios for thumbnails
 
 Outside of the scope
 --------------------
@@ -15,6 +16,11 @@ Can't reproduce
 	when modifying settings in the Security Centre, I noticed that some minimized windows could not be maximized again. They were visible in the task bar but could not be selected.
 	cinnamon : the battery icon doesn’t show the percentage on the panel and i have to always click on the battery icon to show me the percentage.
 	HP D630 - Firefox address bar, the letters are replaced by grey and black squares.	
+	mate: firefox suggests mintinstall for tgz
+	mate: I can’t get any workspace switcher
+	mate: When printing something, print queue icon appears in the ‘notification area’ as expected. But then… The print queue icon gets ‘stuck’ in the notification area and becomes totally unresponsive (i.e., useless). Left or right clicks using the mouse yeild no result. Killing the ‘/usr/bin/python /usr/share/system-config-printer/scp-dbus-service.py’ process is the only way I’ve figured to get rid of the printer icon.
+	mate: You cant set display brightness on battery power mode, just on AC
+	mate: The white on black background menu is not good for anyone with other than 20/20.
 
 Upstream
 --------
@@ -31,6 +37,7 @@ Upstream
 	mate: Power Management Preferences Tabs – I think the ‘General’ tab should be the first tab, rather than the third.
 	mate: ‘Copy To’ Removable Drive – I plugged in my usb drive and it would be great to be able to right-click on a file and find the removable drive in the ‘copy to’ sub menu
 	mate: System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA.
+	mate: no OSD when changing brightness
 	
 Upstream critical
 -----------------	

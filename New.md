@@ -19,7 +19,7 @@ All editions
 
 Cinnamon Edition - last processed comment: #146
 ---------------------------------------------				
-	After watching a full screen video (for example on Youtube) the panels are disappearing (the browser window hides them). This problem seems to be related with Cinnamon 2.2 as I had the same issue when used Cinnamon 2.2 in Ubuntu via a PPA.
+	chromium: After watching a full screen video (for example on Youtube) the panels are disappearing (the browser window hides them).
 	Pidgin status icon is not showing (only a placeholder) even if in the settings it’s set to always show. (I use Mint-X dark icon theme). I found a workaround for it: I have to go to Pidgin settings and then set “Never show” and “Show always” again.		
 	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
 	the zoom doesn’t zoom IN on a reboot after you activate it. however, if you first zoom OUT, all works as advertised after that.
@@ -28,18 +28,9 @@ Cinnamon Edition - last processed comment: #146
 	In Cinnamon, desktop font (and only on desktop) looks like it’s antialiased wrong, like it’s using wrong pixel order – BGR instead of RGB. Font settings isn’t helping because desktop font isn’t changing no matter what option I choose.
 
 MATE Edition - last processed comment: #150
------------------------------------------
-	firefox suggests mintinstall for tgz
+-----------------------------------------	
 	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
-	You cant set display brightness on battery power mode, just on AC	
-	I can’t get any workspace switcher
-	when I use the ‘Fn’ key combos to adjust screen brightness there is _no_ helpful gui popup bar to indicate where I’m configured between minimum/maximum screen brightness.
-	The white on black background menu is not good for anyone with other than 20/20.
-	trackpad should have tap-to-click enabled.
-	When you choose a theme with a dark panel like Shiki-wise and enable “show hide buttons”, the panel itself changes to the dark theme, but the hide buttons keep the standard silvery look. So choosing a dark theme and enabling the hide button gives rather ugly and inconsistent results.
-	going CTRL-I (keyboard hotkey for the line selection tool) crashes pluma 1.8.0, but there is a new 1.8.1 pluma tag that fixes this.
-	When printing something, print queue icon appears in the ‘notification area’ as expected. But then… The print queue icon gets ‘stuck’ in the notification area and becomes totally unresponsive (i.e., useless). Left or right clicks using the mouse yeild no result. Killing the ‘/usr/bin/python /usr/share/system-config-printer/scp-dbus-service.py’ process is the only way I’ve figured to get rid of the printer icon.
-	there seems to be a bug in gthumb: pictures in preview are not sharpened, even if i set resolution to high in program settings.
-	ALSA and PULSEAUDIO still in conflict with Skype. Microphones will not work properly.
+	When you choose a theme with a dark panel like Shiki-wise and enable “show hide buttons”, the panel itself changes to the dark theme, but the hide buttons keep the standard silvery look. So choosing a dark theme and enabling the hide button gives rather ugly and inconsistent results.	
+	there seems to be a bug in gthumb: pictures in preview are not sharpened, even if i set resolution to high in program settings.	
 	hibernation mode is missing
 	in the appearance: you should be able to change the icon of the mouse pointer e.g. bigger or smaller, black or white, but this doesn’t work. It’s in Control Center -> Appearance Preferences -> Customize Theme -> Pointer.

@@ -15,6 +15,7 @@ Mint 17
 	windows compatibility layer
 	mintupdate: when Update Manager has done it’s job successfully, the disk stops rumbling and the window just vanishes… it looks like it crashed. A pop-up ‘Your System Is Now Up To Date’ for ten seconds would be nice.
 	bring back hardinfo
+	mintlocale: * Number/Dates/Currency Settings – i live in Dubai after installation, it will give me an english system with numbers, dates and currencies in arabic, which i used to be able to change into english from the ‘regional formats’ tab of ‘language support’. But with the current dialog, i can only set the full system to be english or arabic now.
 
 Cinnammon
 ---------

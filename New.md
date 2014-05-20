@@ -11,6 +11,11 @@ All editions
 	Modem manager: is evil and often delays shutdown – should it be disabled by default?	
 	MintStick (USB Image Writer): the file open dialog uses different icons to the rest of Cinnamon environment – it looks like Gnome/Nautilus..
 	Can't install epson printer https://bugs.launchpad.net/linuxmint/+bug/1320644
+	the data at /media/user/ doesn’t get deleted automatically when you eject the CD
+	is DNS lost after suspending?
+	mintlocale: mintlocale: Apply System-Wide Language – It is always displayed as ‘English, United States’, even if you change it in the list (try with Arabic - UAE)
+	mintlocale: Right-to-Left Dialogs – i changed the system language to ‘Arabic, United Arab Emirates’ and the ‘Language Settings’ dialog doesnt show things correctly – http://i.imgur.com/RhKKFhO.png
+	mintlocale: * No Keyboard Selection or Navigation – The dialog is only accessible with the mouse and its not possible to use the arrow keys to select an entry in the language list or use tab to jump through the dialog elements
 
 Cinnamon Edition - last processed comment: #146
 ---------------------------------------------				
@@ -22,12 +27,19 @@ Cinnamon Edition - last processed comment: #146
 	Cinnamon isn’t scaling user defined panel sizes properly. If I select Numix as my theme and set a customised panel size, when clicking Allow Cinnamon to Scale Panel Text and Icons, the text on the right side of the panel bar seems to go a bit blurry. This didn’t happen on the last release. The update shield sometimes goes wonky too which I assume is related.
 	In Cinnamon, desktop font (and only on desktop) looks like it’s antialiased wrong, like it’s using wrong pixel order – BGR instead of RGB. Font settings isn’t helping because desktop font isn’t changing no matter what option I choose.
 
-MATE Edition - last processed comment: #82
+MATE Edition - last processed comment: #150
 -----------------------------------------
 	firefox suggests mintinstall for tgz
 	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
-	You cant set display brightness on battery power mode, just on AC
-	Remove mate-user-share? In Control Center, Shared Folders and User Share seem to duplicate and don't work well together. I have noticed that Shared Folders (from the Control Centre) will not save any shares I add.
+	You cant set display brightness on battery power mode, just on AC	
 	I can’t get any workspace switcher
 	when I use the ‘Fn’ key combos to adjust screen brightness there is _no_ helpful gui popup bar to indicate where I’m configured between minimum/maximum screen brightness.
 	The white on black background menu is not good for anyone with other than 20/20.
+	trackpad should have tap-to-click enabled.
+	When you choose a theme with a dark panel like Shiki-wise and enable “show hide buttons”, the panel itself changes to the dark theme, but the hide buttons keep the standard silvery look. So choosing a dark theme and enabling the hide button gives rather ugly and inconsistent results.
+	going CTRL-I (keyboard hotkey for the line selection tool) crashes pluma 1.8.0, but there is a new 1.8.1 pluma tag that fixes this.
+	When printing something, print queue icon appears in the ‘notification area’ as expected. But then… The print queue icon gets ‘stuck’ in the notification area and becomes totally unresponsive (i.e., useless). Left or right clicks using the mouse yeild no result. Killing the ‘/usr/bin/python /usr/share/system-config-printer/scp-dbus-service.py’ process is the only way I’ve figured to get rid of the printer icon.
+	there seems to be a bug in gthumb: pictures in preview are not sharpened, even if i set resolution to high in program settings.
+	ALSA and PULSEAUDIO still in conflict with Skype. Microphones will not work properly.
+	hibernation mode is missing
+	in the appearance: you should be able to change the icon of the mouse pointer e.g. bigger or smaller, black or white, but this doesn’t work. It’s in Control Center -> Appearance Preferences -> Customize Theme -> Pointer.

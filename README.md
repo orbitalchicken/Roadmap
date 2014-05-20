@@ -10,6 +10,7 @@ All Editions
 	pkgs: unity-greeter pkg
 	pkgs: gedit-plugins pkg					
 	mintlocale: missing ibus activation support	
+		illustration: I tried to install Japanese as extra language. I could install Japanese, but the option to select an input manager like Ibus is gone. When I installed IBUS, ibus-Anthy and Japanese Takao fonts like takao mincho, takako gothic, I still could not select the input method from Ibus itself. On mint 13 no problem, here I am a little lost.
 	mintdrivers: update translations
 	mintdrivers: remove the apt-cdrom repository when exiting			
 	mint-mirrors: update list of mirrors			
@@ -34,9 +35,16 @@ Cinnamon
 MATE
 ----
 	OK - gparted is missing
+	OK - Remove mate-user-share? In Control Center, Shared Folders and User Share seem to duplicate and don't work well together. I have noticed that Shared Folders (from the Control Centre) will not save any shares I add.
 	mintmenu: https://github.com/linuxmint/mintmenu/pull/89
+		Mint menu is uncklickable when using compiz. It will open through mouse click and shortcut, but clicking on an entry in the menu will just close the menu without any action.
+		Using composition “When clicked”, the mintmenu feels like it is behind the panel. On the other hand the window of the panel indicators is above the panel. 
+	mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category
 	caja-dropbox depends on dropbox, which is missing in repository
 	When you open Banshee, and close the window, a notification is shown beyond borders of desktop. You can see only top left corner of notification.
+	remove ugly minimize effect "org.mate.interface enable-animations"
+	mint-meta-mate package still depends on mate-doc-utils, which has been replaced by yelp-tools in MATE 1.8.
+
 
 KDE
 ---

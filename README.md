@@ -7,6 +7,7 @@ Backports
 All Editions
 ------------
 	GIT - slideshow: Xchat still shown in the installer slideshow
+	GIT - mintlocale: * No Keyboard Selection or Navigation – The dialog is only accessible with the mouse and its not possible to use the arrow keys to select an entry in the language list or use tab to jump through the dialog elements
 	pkgs: unity-greeter pkg
 	pkgs: gedit-plugins pkg					
 	mintlocale: missing ibus activation support	

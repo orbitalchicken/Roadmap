@@ -21,6 +21,7 @@ Can't reproduce
 	mate: When printing something, print queue icon appears in the ‘notification area’ as expected. But then… The print queue icon gets ‘stuck’ in the notification area and becomes totally unresponsive (i.e., useless). Left or right clicks using the mouse yeild no result. Killing the ‘/usr/bin/python /usr/share/system-config-printer/scp-dbus-service.py’ process is the only way I’ve figured to get rid of the printer icon.
 	mate: You cant set display brightness on battery power mode, just on AC
 	mate: The white on black background menu is not good for anyone with other than 20/20.
+	mintlocale: mintlocale: Apply System-Wide Language – It is always displayed as ‘English, United States’, even if you change it in the list (try with Arabic - UAE)	
 
 Upstream
 --------

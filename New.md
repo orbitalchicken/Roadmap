@@ -12,10 +12,7 @@ All editions
 	MintStick (USB Image Writer): the file open dialog uses different icons to the rest of Cinnamon environment – it looks like Gnome/Nautilus..
 	Can't install epson printer https://bugs.launchpad.net/linuxmint/+bug/1320644
 	the data at /media/user/ doesn’t get deleted automatically when you eject the CD
-	is DNS lost after suspending?
-	mintlocale: mintlocale: Apply System-Wide Language – It is always displayed as ‘English, United States’, even if you change it in the list (try with Arabic - UAE)
-	mintlocale: Right-to-Left Dialogs – i changed the system language to ‘Arabic, United Arab Emirates’ and the ‘Language Settings’ dialog doesnt show things correctly – http://i.imgur.com/RhKKFhO.png
-	mintlocale: * No Keyboard Selection or Navigation – The dialog is only accessible with the mouse and its not possible to use the arrow keys to select an entry in the language list or use tab to jump through the dialog elements
+	is DNS lost after suspending?		
 
 Cinnamon Edition - last processed comment: #146
 ---------------------------------------------				

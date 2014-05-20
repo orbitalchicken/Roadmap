@@ -30,7 +30,7 @@ Cinnamon
 	OK - In keyboard settings -> User defined keyboard shortcuts, three phrases are shown when hovering above the keyboard binding. The first is translated, but “Press Escape or click again to cancel the operation” and “Press Backspace to clear the existing keybinding” are not translated though they have been translated in Launchpad (Danish).
 	OK - cinnamon: only 1 msgid for "Lock Screen" (action vs noun)	
 	Ok - If Open menu when mouse hovers is selected, right-clicking the menu and moving the mouse upwards to select Configure often leads to the menu opening and the right-click menu disappears before it can be clicked. Doing it a couple of times in succession finally allows one to clicking Configure – it varies how may times I have to try before I succeed.
-	cinnamon: regenerate cs desktop files with new translations		
+	cinnamon: regenerate cs desktop files with new translations	
 
 MATE
 ----

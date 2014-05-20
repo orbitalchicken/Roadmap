@@ -38,6 +38,8 @@ Upstream
 	mate: ‘Copy To’ Removable Drive – I plugged in my usb drive and it would be great to be able to right-click on a file and find the removable drive in the ‘copy to’ sub menu
 	mate: System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA.
 	mate: no OSD when changing brightness
+	pidgin: status icon is not showing (only a placeholder) even if in the settings it’s set to always show. (I use Mint-X dark icon theme). I found a workaround for it: I have to go to Pidgin settings and then set “Never show” and “Show always” again.		
+	themes: cinnamon-screensaver: If using dark theme (I’m FlatStudioDark and I already tried with other dark theme too), there is black/dark horizontal box surrounding the clock and lock dialog. http://i.imgur.com/jrW5DoA.jpg <-- probably the theme specifying a background color for event-boxes or other containers such as gtk.Box
 	
 Upstream critical
 -----------------	

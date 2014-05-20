@@ -19,6 +19,8 @@ Mint 17
 
 Cinnammon
 ---------
+	nemo: desktop font look like it’s antialiased wrong, like it’s using wrong pixel order – BGR instead of RGB. 
+	settings: nemo desktop font is not configurable in cinnamon-settings fonts
 	cinnamon-settings-daemon: Super+e should open file manager
 	cinnamon-settings: network - proxy - button ON/OFF doesn't do anything
 	settings: The buttons in the system settings seem to be sorted according the english names, but I’m using dutch, so the sorting looks really random.

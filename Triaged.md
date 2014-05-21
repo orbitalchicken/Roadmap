@@ -24,16 +24,13 @@ Can't reproduce
 	mintlocale: mintlocale: Apply System-Wide Language – It is always displayed as ‘English, United States’, even if you change it in the list (try with Arabic - UAE)	
 
 Upstream
---------
-	Breadcrumbs in Nemo do not display correctly with Adwaita theme or High Contrast theme.
-	chromium and muffin hate each others..
-	I tried installing Qiana RC Cinnamon from a USB drive using the “Erase everything” partitioning option. It erased everything all right: including the USB drive it was installing from
-	The installer (LM16 RC 64bit) seems to be failing during this kind of install:  Manual, / onto sdd, Mounting /home (LUKS encrypted) from hdd. It just sits there without any cpu usage or anything after putting in the username and password page. Didn’t touch the existing install at all. Did the exact same thing with the 16 64bit previously which worked flawlessly.
-	LUKS password steps precedes keyboard layout selection.. leading to the user blindly inputting a password that doesn't correspond to what he thinks he's typing.
-	If i watch a youtube video in full screen mode and come back to normal mode then my chrome is hiding the bottom panel/taskbar. This is not happening with firefox.
-	Cairo Dock doesn’t select the openGL backend when adding to startup, even if you tell it to remember your choice when it asks. I had to manually go into Startup Applications and edit the command with cairo-dock -o for it to work
-	After each restart of the system Chromium can’t play Flash and I have to reinstall the plugin.
-	guvcview doesn’t record video. It just records weird stop motion kind of stuff.
+--------		
+	ubiquity: I tried installing Qiana RC Cinnamon from a USB drive using the “Erase everything” partitioning option. It erased everything all right: including the USB drive it was installing from
+	ubiquity: The installer (LM16 RC 64bit) seems to be failing during this kind of install:  Manual, / onto sdd, Mounting /home (LUKS encrypted) from hdd. It just sits there without any cpu usage or anything after putting in the username and password page. Didn’t touch the existing install at all. Did the exact same thing with the 16 64bit previously which worked flawlessly.
+	ubiquity: LUKS password steps precedes keyboard layout selection.. leading to the user blindly inputting a password that doesn't correspond to what he thinks he's typing.	
+	cairo-dock: Cairo Dock doesn’t select the openGL backend when adding to startup, even if you tell it to remember your choice when it asks. I had to manually go into Startup Applications and edit the command with cairo-dock -o for it to work
+	chromium: After each restart of the system Chromium can’t play Flash and I have to reinstall the plugin.
+	guvcview:  doesn’t record video. It just records weird stop motion kind of stuff.
 	mate: mate-calc 1.8.0, mode advanced, not calculation correct. Example (1×10^-1)/(1×10^-2)= 10. This calculate correct. Bud 1×10^-1 / 1×10^-2 = 0.001 this is not correct, because 1×10^-1 is one number on science notation ( 1 plus function x10^y plus -1 )
 	mate: Power Management Preferences Tabs – I think the ‘General’ tab should be the first tab, rather than the third.
 	mate: ‘Copy To’ Removable Drive – I plugged in my usb drive and it would be great to be able to right-click on a file and find the removable drive in the ‘copy to’ sub menu

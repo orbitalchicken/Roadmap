@@ -6,31 +6,17 @@ Backports
 
 All Editions
 ------------
-	GIT - slideshow: Xchat still shown in the installer slideshow
-	GIT - mintlocale: * No Keyboard Selection or Navigation – The dialog is only accessible with the mouse and its not possible to use the arrow keys to select an entry in the language list or use tab to jump through the dialog elements
+	OK - slideshow: Xchat still shown in the installer slideshow
 	pkgs: unity-greeter pkg
-	pkgs: gedit-plugins pkg					
-	mintlocale: missing ibus activation support	
-		illustration: I tried to install Japanese as extra language. I could install Japanese, but the option to select an input manager like Ibus is gone. When I installed IBUS, ibus-Anthy and Japanese Takao fonts like takao mincho, takako gothic, I still could not select the input method from Ibus itself. On mint 13 no problem, here I am a little lost.
-	mintdrivers: update translations
-	mintdrivers: remove the apt-cdrom repository when exiting			
-	mint-mirrors: update list of mirrors			
-	mintsources: The button “No action required” is not aligned along the right boundary with the text window below it.
-	mdm: second login screen does not say “Please enter your password” – no instruction text appears.
-	As Linux Mint comes with VLC preinstalled, should we advise people that if they use external optical disk drives, in VLC, they should go into Tools -> Preferences -> Input & codecs -> then under optical drive -> change “/dev/dvd” to to “/dev/sr0″	
+	pkgs: gedit-plugins pkg
+	update translations
+	mintdrivers: remove the apt-cdrom repository when exiting
+	mint-mirrors: update list of mirrors
 	FF News Link points to var/www/syscpwebs/lm/planet
 	
 Cinnamon
 --------
 	OK - tomboy is missing
-	OK - libgksu: remove fade animation
-	OK - cinnamon-settings: datetime module doesn't fit in window
-	OK - cinnamon-settings: lockscreen - make the “Show this message when the screen is locked” input box larger and on its own row below.	
-	OK - cinnamon-settings: can't set hours in datetime module
-	OK - cinnamon-settings: desklets - left-align the note underneath “Decoration of desklets”
-	OK - In keyboard settings -> User defined keyboard shortcuts, three phrases are shown when hovering above the keyboard binding. The first is translated, but “Press Escape or click again to cancel the operation” and “Press Backspace to clear the existing keybinding” are not translated though they have been translated in Launchpad (Danish).
-	OK - cinnamon: only 1 msgid for "Lock Screen" (action vs noun)	
-	Ok - If Open menu when mouse hovers is selected, right-clicking the menu and moving the mouse upwards to select Configure often leads to the menu opening and the right-click menu disappears before it can be clicked. Doing it a couple of times in succession finally allows one to clicking Configure – it varies how may times I have to try before I succeed.
 	cinnamon: regenerate cs desktop files with new translations	
 
 MATE
@@ -47,7 +33,6 @@ MATE
 	mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category
 	caja-dropbox depends on dropbox, which is missing in repository	
 	going CTRL-I (keyboard hotkey for the line selection tool) crashes pluma 1.8.0, but there is a new 1.8.1 pluma tag that fixes this.	
-	ALSA and PULSEAUDIO still in conflict with Skype. Microphones will not work properly.
 
 KDE
 ---

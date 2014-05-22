@@ -5,6 +5,7 @@ Not a bug
 	L5 updates listed in the Update Manager, which others have already mentioned. Probably due to the fact that they are listed as security updates, that they are overriding the Visibility settings
 	The “tab” key cannot be used for keyboard shortcuts (as in Ctrl+Tab). Instead of registering as a shortcut, the tab key press moves the cursor focus out of the “Pick an accelerator” box, and down to the “Add custom shortcut” button.
 	cinnamon-settings: themes - inconsistent aspect ratios for thumbnails
+	Modem manager: is evil and often delays shutdown – should it be disabled by default?
 
 Outside of the scope
 --------------------
@@ -22,6 +23,8 @@ Can't reproduce
 	mate: You cant set display brightness on battery power mode, just on AC
 	mate: The white on black background menu is not good for anyone with other than 20/20.
 	mintlocale: mintlocale: Apply System-Wide Language – It is always displayed as ‘English, United States’, even if you change it in the list (try with Arabic - UAE)	
+	is DNS lost after suspending?
+	the data at /media/user/ doesn’t get deleted automatically when you eject the CD
 
 Upstream
 --------		
@@ -38,6 +41,7 @@ Upstream
 	mate: no OSD when changing brightness
 	pidgin: status icon is not showing (only a placeholder) even if in the settings it’s set to always show. (I use Mint-X dark icon theme). I found a workaround for it: I have to go to Pidgin settings and then set “Never show” and “Show always” again.		
 	themes: cinnamon-screensaver: If using dark theme (I’m FlatStudioDark and I already tried with other dark theme too), there is black/dark horizontal box surrounding the clock and lock dialog. http://i.imgur.com/jrW5DoA.jpg <-- probably the theme specifying a background color for event-boxes or other containers such as gtk.Box
+	Can't install epson printer https://bugs.launchpad.net/linuxmint/+bug/1320644
 	
 Upstream critical
 -----------------	

@@ -8,6 +8,7 @@ All editions
 	mintsources: The button "No action required" is not aligned along the right boundary with the text window below it.
 	mintdrivers: failed to start when connection to the Internet was slow
 	mintlocale: No keyboard navigation
+	mintinstall: don't allow installation of broken packages, or packages which don't install properly in mintinstall.
 	system: support for NVIDIA Optimus cards with nvidia-prime
 	skype: sound issues (added suggestion to install ia32-libs to release notes).
 	vlc: suggested to use “/dev/sr0″ for DVD playback in release notes

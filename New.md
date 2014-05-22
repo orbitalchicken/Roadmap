@@ -4,12 +4,7 @@ All editions
 -------------		
 	there is lag in the package manager when you make changes to the list its slow to update the list on screen its like visual tearing this happens in any Distro that uses the Synaptic Package Manager 0.81.1 the older 0.75 builds in fine can we go back to the older version
 	The FFmpeg plugin for GStreamer 0.10 is not in the repository and it affects Firefox H.264 playback and other applications you can see http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html for the PPA to install the package gstreamer0.10-ffmpeg all so included in that PPA is a much newer VLC version as well which is a extra bonus it is VLC 2.1.5	
-	https://bugs.launchpad.net/freetype/+bug/1310017 is a bug for Korean users, fixed but not yet released for Ubuntu 14.04. sudo add-apt-repository -y ppa:jincreator/freetype && sudo apt update && sudo apt install -y libfreetype6
-	Software Manager. I’ve tried installing Wine metapackage, Chromium and the Pepper flash plugin for Chromium. Downloading goes correctly. But installation of the programs hangs at 99% and does not finish in the Software Manager. Wine did install succesfully while the Software Manager kept hanging.
-	Modem manager: is evil and often delays shutdown – should it be disabled by default?		
-	Can't install epson printer https://bugs.launchpad.net/linuxmint/+bug/1320644
-	the data at /media/user/ doesn’t get deleted automatically when you eject the CD
-	is DNS lost after suspending?		
+	https://bugs.launchpad.net/freetype/+bug/1310017 is a bug for Korean users, fixed but not yet released for Ubuntu 14.04. sudo add-apt-repository -y ppa:jincreator/freetype && sudo apt update && sudo apt install -y libfreetype6	
 
 Cinnamon Edition - last processed comment: #146
 ---------------------------------------------					

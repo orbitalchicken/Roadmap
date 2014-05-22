@@ -28,10 +28,8 @@ MATE
 	OK - trackpad should have tap-to-click enabled.
 	OK - When you open Banshee, and close the window, a notification is shown beyond borders of desktop. You can see only top left corner of notification.
 	OK - going CTRL-I (keyboard hotkey for the line selection tool) crashes pluma 1.8.0, but there is a new 1.8.1 pluma tag that fixes this.	
-	mintmenu: https://github.com/linuxmint/mintmenu/pull/89
-		Mint menu is uncklickable when using compiz. It will open through mouse click and shortcut, but clicking on an entry in the menu will just close the menu without any action.
-		Using composition “When clicked”, the mintmenu feels like it is behind the panel. On the other hand the window of the panel indicators is above the panel. 
-	mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category
+	OK - mintmenu: multiple issues with compiz		
+	OK - mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category
 	caja-dropbox depends on dropbox, which is missing in repository	
 
 KDE

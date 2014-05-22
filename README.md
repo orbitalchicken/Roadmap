@@ -26,9 +26,8 @@ MATE
 	OK - mint-meta-mate package still depends on mate-doc-utils, which has been replaced by yelp-tools in MATE 1.8.
 	OK - remove ugly minimize effect "org.mate.interface enable-animations"
 	OK - trackpad should have tap-to-click enabled.
-	OK - When you open Banshee, and close the window, a notification is shown beyond borders of desktop. You can see only top left corner of notification.
-	OK - going CTRL-I (keyboard hotkey for the line selection tool) crashes pluma 1.8.0, but there is a new 1.8.1 pluma tag that fixes this.	
-	OK - mintmenu: multiple issues with compiz		
+	OK - When you open Banshee, and close the window, a notification is shown beyond borders of desktop. You can see only top left corner of notification.	
+	OK - mintmenu: multiple issues with compiz
 	OK - mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category
 	caja-dropbox depends on dropbox, which is missing in repository	
 

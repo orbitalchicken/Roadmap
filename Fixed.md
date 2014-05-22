@@ -33,6 +33,7 @@ Cinnamon Edition
 	
 MATE Edition
 ------------
+	pluma: crash when pressing CTRL+I
 	
 
 KDE Edition

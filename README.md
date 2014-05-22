@@ -13,6 +13,8 @@ All Editions
 	mintdrivers: remove the apt-cdrom repository when exiting
 	mint-mirrors: update list of mirrors
 	FF News Link points to var/www/syscpwebs/lm/planet
+	The FFmpeg plugin for GStreamer 0.10 is not in the repository and it affects Firefox H.264 playback and other applications you can see http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html for the PPA to install the package gstreamer0.10-ffmpeg all so included in that PPA is a much newer VLC version as well which is a extra bonus it is VLC 2.1.5	
+	
 	
 Cinnamon
 --------
@@ -29,7 +31,9 @@ MATE
 	OK - When you open Banshee, and close the window, a notification is shown beyond borders of desktop. You can see only top left corner of notification.	
 	OK - mintmenu: multiple issues with compiz
 	OK - mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category
-	caja-dropbox depends on dropbox, which is missing in repository	
+	OK - caja-dropbox depends on dropbox, which is missing in repository	
+	hibernation mode is missing
+	xdg-open /home --> opens Firefox instead of caja
 
 KDE
 ---

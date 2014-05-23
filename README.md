@@ -15,7 +15,6 @@ All Editions
 	update translations
 	mintdrivers: remove the apt-cdrom repository when exiting
 	mint-mirrors: update list of mirrors
-	synaptic - pin 0.81.2 from utopic and refix freeze bug
 	nvidia nomodeset then nvidia-304 -> release notes
 	
 Cinnamon

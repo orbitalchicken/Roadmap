@@ -17,6 +17,7 @@ All editions
 	file-roller: Only one instance can run at a time
 	gtk: symbolic icons in open dialogs
 	gtk: scrollbars should not warp
+	synaptic: freezes, and rendering issues
 
 Cinnamon Edition
 ----------------

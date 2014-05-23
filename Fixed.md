@@ -34,6 +34,7 @@ Cinnamon Edition
 MATE Edition
 ------------
 	pluma: crash when pressing CTRL+I
+	dropbox: caja-dropbox not installable
 	
 
 KDE Edition

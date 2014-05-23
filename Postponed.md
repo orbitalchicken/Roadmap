@@ -21,6 +21,28 @@ Mint 17
 
 Cinnammon
 ---------
+	The cinnamon-sound-applet’s icon renders incorrectly in i3wm’s system tray (it was fine with the version of cinnamon that shipped with LM16 and the same version of i3 (4.7.2)). I was able to get it working via brute force specifying the path to the icon, but it would be nice if it worked out of the box.
+	System Settings/ Panel/ Auto Hide Options (either checked), System Settings/ Applets/ Menu/ Configure/ (check “open the menu when I move my mouse over it”). With these two options checked together the menu will preform a disconcerting bounce up or down, usually away from the user.
+	When trying to connect my ext.hard drive via smb when double clicking on the globe icon (workgroup) nemo closes down
+	System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA. This is related to a very longstanding issue of Mint always opening dialogs on the left (wrong) monitor
+	Network setting does not let me to set Proxy.. The button “set system wide” is not there.
+	Cinnamon popups for brightness and volume adjust seem to flash when repeatedly hitting the key. In Mint 16, the popups stayed smoothly on the screen for the duration of the adjustment.
+	menu:  I like the way the panel icons and those on the desktop change subtly when you hover over them. Any reason why the menu icons could not behave the same way for consistency ?
+	I can’t seem to create a new item in Menu Editor. After typing in the name of the new item and the command, the OK button is not available to click.
+	With autohide on and Show delay above 0 the window will autohide the moment the cursor goes over a icon (launcher, apps, window tabs) making it impossible to click anything.
+	l10n:
+		System Settings -> Windows: The options in the four drop-down boxes “Action on title bar double-click”, “Action on title bar double-click”, “Action on title bar right-click” and “Window focus mode”.
+		Language Settings: “Apply System-Wide”, “Install / Remove Languages”, the associated tool tips and all the text.
+		System Settings -> Network -> Proxy: The options under Method.
+		System Settings -> Graphics Tablet: “No tablet detected – please plug in or turn on your graphics tablet”
+		System Settings -> Software Sources: Text in Maintenance button
+		System Settings -> Fonts: Options in the two drop-down boxes Antialiasing and Hinting.
+		System Settings -> Applets/Desklets/Extensions/Themes: Blue text “More info” (right-clicking opens a menu that is translated)
+		System Settings -> Monitor: Options in the drop-down box Rotation
+		System Settings -> Desklets: The buttons Highlight and Remove (configuring a desklet).
+	l10n: Menu Editor: “Main Menu” (title bar), “New Menu”, New Item”, “Move Up”, “Move Down”, “Restore System Configuration”.
+	settings: The search box in System Settings displays “Search…” next to the magnifier.
+	cinnamon-settings: datetime module, months, regions, lot of things aren't l10n'd
 	nemo: desktop font look like it’s antialiased wrong, like it’s using wrong pixel order – BGR instead of RGB. 
 	settings: nemo desktop font is not configurable in cinnamon-settings fonts
 	cinnamon-settings-daemon: Super+e should open file manager
@@ -103,6 +125,8 @@ LMDE
 	Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
 	Triple mint-fortune issue with bash.bashrc
 	Systemd runtime dir with gksu/pkexec
+	XFS won't boot because of missing fsck.xfs https://bugs.launchpad.net/bugs/1322164
+	check fsck presence for ALL other FS'es
 
 Post 17
 --------

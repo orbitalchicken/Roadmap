@@ -47,6 +47,9 @@ Upstream
 	themes: cinnamon-screensaver: If using dark theme (I’m FlatStudioDark and I already tried with other dark theme too), there is black/dark horizontal box surrounding the clock and lock dialog. http://i.imgur.com/jrW5DoA.jpg <-- probably the theme specifying a background color for event-boxes or other containers such as gtk.Box
 	Can't install epson printer https://bugs.launchpad.net/linuxmint/+bug/1320644
 	https://bugs.launchpad.net/freetype/+bug/1310017 is a bug for Korean users, fixed but not yet released for Ubuntu 14.04. sudo add-apt-repository -y ppa:jincreator/freetype && sudo apt update && sudo apt install -y libfreetype6	
+	mate: When 1 user is logged in, and you switch to a second user, then insert a usb flash drive, Linux Mint tries to automount that flash drive on the first user’s account, instead of the second user who inserted the drive. The second user cannot access the drive unless he/she switches back to the first users account (hopefully having the password).
+	mate: system can’t remember the last backlight brightness, I need to adjust it by hand each time after reboot
+	mate: The keyboard shortcut program seems to hang when committing a new shortcut to the system. The machine doesn’t crash, but it gets stuck for nearly a minute.
 	
 Upstream critical
 -----------------	

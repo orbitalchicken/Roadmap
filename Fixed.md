@@ -18,6 +18,7 @@ All editions
 	gtk: symbolic icons in open dialogs
 	gtk: scrollbars should not warp
 	synaptic: freezes, and rendering issues
+	vpn: Unable to set up VPN or import a VPN config file
 
 Cinnamon Edition
 ----------------

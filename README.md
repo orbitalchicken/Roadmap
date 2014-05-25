@@ -16,10 +16,16 @@ All Editions
 	mintdrivers: remove the apt-cdrom repository when exiting
 	mint-mirrors: update list of mirrors
 	nvidia nomodeset then nvidia-304 -> release notes
-	
+	newly created used with no password set, can log in but can't log out (MDM autoselects it)
+	https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504
+
 Cinnamon
 --------
 	OK - tomboy is missing
+	OK - Battery applet not showing time or percentage.
+	OK - battery applet tooltip is AC Adapter?
+	OK - systray icons aren't clickable
+	OK - pidgin status icon is not displayed. I have to do Alt+F2 -> “r” to make it visible.
 	cinnamon: regenerate cs desktop files with new translations	
 	certify the themes available in spices for 2.2?
 
@@ -35,6 +41,7 @@ MATE
 	OK - mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category	
 	OK - xdg-open /home --> opens Firefox instead of caja
 	hibernation mode is missing
+	mintmenu regression
 
 KDE
 ---

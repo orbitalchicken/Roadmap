@@ -21,6 +21,12 @@ Mint 17
 
 Cinnammon
 ---------
+	desktop icons text color is too dark and barely visible on a dark background
+	Bluetooth headset connects, but cannot stream audio and does not show up in pulseaudio as valid output device.	
+	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
+	the zoom doesn’t zoom IN on a reboot after you activate it. however, if you first zoom OUT, all works as advertised after that.		
+	Cinnamon isn’t scaling user defined panel sizes properly. If I select Numix as my theme and set a customised panel size, when clicking Allow Cinnamon to Scale Panel Text and Icons, the text on the right side of the panel bar seems to go a bit blurry. This didn’t happen on the last release. The update shield sometimes goes wonky too which I assume is related.		
+	The power button set to “shut down immediately” still ‘asks’
 	The cinnamon-sound-applet’s icon renders incorrectly in i3wm’s system tray (it was fine with the version of cinnamon that shipped with LM16 and the same version of i3 (4.7.2)). I was able to get it working via brute force specifying the path to the icon, but it would be nice if it worked out of the box.
 	System Settings/ Panel/ Auto Hide Options (either checked), System Settings/ Applets/ Menu/ Configure/ (check “open the menu when I move my mouse over it”). With these two options checked together the menu will preform a disconcerting bounce up or down, usually away from the user.
 	When trying to connect my ext.hard drive via smb when double clicking on the globe icon (workgroup) nemo closes down
@@ -106,6 +112,7 @@ Cinnammon
 
 MATE
 ----
+	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
 	mate-terminal still has a menu bar and is not transparent		
 	When panel is at the top, notifications show on top of it. https://dl.dropboxusercontent.com/u/54450962/%ED%99%94%EB%A9%B4-5.png
 	Would be nice if the mouse preference panel in Mate included a “natural scrolling” option

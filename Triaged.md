@@ -50,6 +50,7 @@ Upstream
 	mate: When 1 user is logged in, and you switch to a second user, then insert a usb flash drive, Linux Mint tries to automount that flash drive on the first user’s account, instead of the second user who inserted the drive. The second user cannot access the drive unless he/she switches back to the first users account (hopefully having the password).
 	mate: system can’t remember the last backlight brightness, I need to adjust it by hand each time after reboot
 	mate: The keyboard shortcut program seems to hang when committing a new shortcut to the system. The machine doesn’t crash, but it gets stuck for nearly a minute.
+	upstart: Could not install “refracta snapshot” due to “live-config” not able to be installed. This is a deal-breaker for me as I use Refracta Tools.
 	
 Upstream critical
 -----------------	

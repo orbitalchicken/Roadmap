@@ -11,12 +11,10 @@ All Editions
 	OK - The FFmpeg plugin for GStreamer 0.10 is not in the repository and it affects Firefox H.264 playback and other applications you can see http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html for the PPA to install the package gstreamer0.10-ffmpeg all so included in that PPA is a much newer VLC version as well which is a extra bonus it is VLC 2.1.5	
 	OK - backgrounds: wrong author credited for "Flame" background	
 	pkgs: unity-greeter pkg
-	pkgs: gedit-plugins pkg
-	update translations
+	pkgs: gedit-plugins pkg	
 	mintdrivers: remove the apt-cdrom repository when exiting
 	mint-mirrors: update list of mirrors
-	nvidia nomodeset then nvidia-304 -> release notes
-	newly created used with no password set, can log in but can't log out (MDM autoselects it)
+	nvidia nomodeset then nvidia-304 -> release notes	
 	https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504
 
 Cinnamon
@@ -25,9 +23,10 @@ Cinnamon
 	OK - Battery applet not showing time or percentage.
 	OK - battery applet tooltip is AC Adapter?
 	OK - systray icons aren't clickable
-	OK - pidgin status icon is not displayed. I have to do Alt+F2 -> “r” to make it visible.
-	cinnamon: regenerate cs desktop files with new translations	
+	OK - pidgin status icon is not displayed. I have to do Alt+F2 -> “r” to make it visible.	
+	Ok - nopassdlogin support in cinnamon-settings-user
 	certify the themes available in spices for 2.2?
+	systray crashes cinnamon
 
 MATE
 ----
@@ -40,8 +39,8 @@ MATE
 	OK - mintmenu: multiple issues with compiz
 	OK - mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category	
 	OK - xdg-open /home --> opens Firefox instead of caja
-	hibernation mode is missing
-	mintmenu regression
+	OK - mintmenu regression
+	hibernation mode is missing	
 
 KDE
 ---

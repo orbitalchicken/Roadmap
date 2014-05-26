@@ -7,6 +7,9 @@ Improvements selected for the future
 
 Mint 17
 -------
+	mintupdate: package descriptions aren't l10n (they are when using "apt show pkgname").
+	mintsources: missing a key.
+	mintsources: doesn't show name of "cdrom" correctly.
 	mintsources: doesn’t show any progress bar and it seems to test mirrors one by one instead of doing it in parallel.
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files		
@@ -21,6 +24,7 @@ Mint 17
 
 Cinnammon
 ---------
+	systray icons aren't clickable
 	desktop icons text color is too dark and barely visible on a dark background
 	Bluetooth headset connects, but cannot stream audio and does not show up in pulseaudio as valid output device.	
 	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
@@ -112,6 +116,7 @@ Cinnammon
 
 MATE
 ----
+	hard to resize window or to grab border
 	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
 	mate-terminal still has a menu bar and is not transparent		
 	When panel is at the top, notifications show on top of it. https://dl.dropboxusercontent.com/u/54450962/%ED%99%94%EB%A9%B4-5.png

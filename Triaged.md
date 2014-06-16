@@ -36,7 +36,7 @@ Upstream
 	ubiquity: LUKS password steps precedes keyboard layout selection.. leading to the user blindly inputting a password that doesn't correspond to what he thinks he's typing.	
 	cairo-dock: Cairo Dock doesn’t select the openGL backend when adding to startup, even if you tell it to remember your choice when it asks. I had to manually go into Startup Applications and edit the command with cairo-dock -o for it to work
 	chromium: After each restart of the system Chromium can’t play Flash and I have to reinstall the plugin.
-	guvcview:  doesn’t record video. It just records weird stop motion kind of stuff.
+	guvcview:  doesn’t record video. It just records weird stop motion kind of stuff.	
 	mate: mate-calc 1.8.0, mode advanced, not calculation correct. Example (1×10^-1)/(1×10^-2)= 10. This calculate correct. Bud 1×10^-1 / 1×10^-2 = 0.001 this is not correct, because 1×10^-1 is one number on science notation ( 1 plus function x10^y plus -1 )
 	mate: Power Management Preferences Tabs – I think the ‘General’ tab should be the first tab, rather than the third.
 	mate: ‘Copy To’ Removable Drive – I plugged in my usb drive and it would be great to be able to right-click on a file and find the removable drive in the ‘copy to’ sub menu

@@ -55,7 +55,8 @@ MATE Edition
 	When you open Banshee, and close the window, a notification is shown beyond borders of desktop. You can see only top left corner of notification.	
 	mintmenu: multiple issues with compiz
 	mintmenu: Multiple Menu Entries – The menu has two entries for gnome-disk, libreoffice draw, and mate-volume-control in the ‘All’ category. This will appear when you first log into the system, but will disappear if you search through the menu and then look in the ‘All’ category	
-	xdg-open /home --> opens Firefox instead of caja	
+	xdg-open /home --> opens Firefox instead of caja
+	hibernation mode is missing	
 
 KDE Edition
 -----------

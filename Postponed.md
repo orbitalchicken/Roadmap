@@ -15,6 +15,7 @@ Mint 17
 	Can’t play TS video files		
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 	mintinstall "show all results" not l10n	
+	mintinstall: show license info
 	windows compatibility layer
 	mintupdate: when Update Manager has done it’s job successfully, the disk stops rumbling and the window just vanishes… it looks like it crashed. A pop-up ‘Your System Is Now Up To Date’ for ten seconds would be nice.
 	bring back hardinfo

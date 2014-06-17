@@ -7,11 +7,12 @@ Backports
 All Editions
 ------------
 	pkgs: unity-greeter pkg
-	pkgs: gedit-plugins pkg
+	pkgs: gedit-plugins pkg https://bugs.launchpad.net/linuxmint/+bug/1186528
 	mint-mirrors: update list of mirrors
 	rel notes: format / partition
 	rel notes: wine libgl1
 	modemmanager hangs at shutdown
+	considering adding linux-firmware-nonfree and pepperflashplugin
 
 Cinnamon
 --------		

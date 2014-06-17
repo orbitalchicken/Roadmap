@@ -26,6 +26,14 @@ All editions
 	The FFmpeg plugin for GStreamer 0.10 is not in the repository and it affects Firefox H.264 playback and other applications you can see http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html for the PPA to install the package gstreamer0.10-ffmpeg all so included in that PPA is a much newer VLC version as well which is a extra bonus it is VLC 2.1.5		
 	mintdrivers: remove the apt-cdrom repository when exiting
 
+All editions (post stable release of MATE/Cinnamon Editions)
+------------------------------------------------------------
+	mdm: don't crash on GPUs not compatible with xrandr
+	ubiquity: renamed dangerously ambiguous option "Replace $OS with Linux Mint" with "Erase the disk and install Linux Mint"
+	ubiquity: prevented apt-clone from corrupting APT sources in the event where the / partition is not formatted
+	mintinstall, don't let broken apps be installed
+	mintinstall, don't clear search entry when searching within a category
+
 Cinnamon Edition
 ----------------
 	cinnamon-settings: datetime module doesn't fit in window

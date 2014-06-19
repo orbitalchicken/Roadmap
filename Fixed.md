@@ -31,8 +31,9 @@ All editions (post stable release of MATE/Cinnamon Editions)
 	mdm: don't crash on GPUs not compatible with xrandr
 	ubiquity: renamed dangerously ambiguous option "Replace $OS with Linux Mint" with "Erase the disk and install Linux Mint"
 	ubiquity: prevented apt-clone from corrupting APT sources in the event where the / partition is not formatted
-	mintinstall, don't let broken apps be installed
-	mintinstall, don't clear search entry when searching within a category
+	mintinstall: don't let broken apps be installed
+	mintinstall: don't clear search entry when searching within a category
+	mintdrivers: cannot enable/install linux-firmware-nonfree for devices which require it http://wstaw.org/m/2014/06/14/plasma-desktopQq2306.png
 
 Cinnamon Edition
 ----------------
@@ -68,7 +69,15 @@ MATE Edition
 
 KDE Edition
 -----------
-	
+	kdm: Installing KDM shows a Mint 15 background
+	gtk2-engines-oxygen:i386 can't be installed because of the differing /usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc
+	Added ia32-libs
+	Added libgl1-mesa
+	Replaced kaffeine with dragonplayer
+	Removed KRDC
+	Switched to gdebi GTK UI (KDE UI crashed after install every time).	
+	Refined font settings (antialias + switched font to DejaVu Sans 9)	
+	FF doesn't open folders with Dolphin	
 
 Xfce Edition
 ------------

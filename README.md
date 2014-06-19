@@ -11,8 +11,7 @@ All Editions
 	mint-mirrors: update list of mirrors
 	rel notes: format / partition
 	rel notes: wine libgl1
-	modemmanager hangs at shutdown
-	considering adding linux-firmware-nonfree and pepperflashplugin
+	modemmanager hangs at shutdown	
 
 Cinnamon
 --------		
@@ -22,8 +21,9 @@ MATE
 ----	
 
 KDE
----
+---	
 	mdm: When loging in an existing session, doesn't unlock kde screensaver
+	mintBackup works in Qiana but a backport is needed in Petra https://bugs.launchpad.net/linuxmint/+bug/1261693	
 	
 Xfce
 ----
@@ -36,6 +36,7 @@ Maintenance
 
 Next Release
 ------------
+	Consider adding pipelight
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
 	port mintmenu to gtk3
 	mintinstall: should show licenses
@@ -55,6 +56,7 @@ Next Release
 	cinnamon: fade-in at startup
 	cinnamon: ibus support
 	xfce: revive xfapplet
+	hexchat: -help is below -chat
 
 LMDE
 ----

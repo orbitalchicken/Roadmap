@@ -3,6 +3,12 @@ Backports
 ---------
 	x-caja-desktop fix for Maya
 
+Investigating
+-------------
+	Cinnamon freezing sometimes when using meld
+	Cinnamon freezing on background change
+	mdm login resulting in black screen when gnome-keyring gets locked? https://github.com/linuxmint/mdm/issues/92
+	mdm not setting the session name properly resulting in OnlyShowIn not working properly? https://github.com/linuxmint/mdm/issues/94
 
 All Editions
 ------------

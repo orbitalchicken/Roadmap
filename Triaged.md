@@ -51,6 +51,7 @@ Upstream
 	mate: system can’t remember the last backlight brightness, I need to adjust it by hand each time after reboot
 	mate: The keyboard shortcut program seems to hang when committing a new shortcut to the system. The machine doesn’t crash, but it gets stuck for nearly a minute.
 	upstart: Could not install “refracta snapshot” due to “live-config” not able to be installed. This is a deal-breaker for me as I use Refracta Tools.
+	xfce: open Preferences -> Window Manager -> Keyboard. Change Workspace2 to Alt+F2. Will be asked to replace “xfce4-appfinder –collapsed” application shortcut. Nothing happens when you do.
 	
 Upstream critical
 -----------------	

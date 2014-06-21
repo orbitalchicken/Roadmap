@@ -9,7 +9,6 @@ Investigating
 	Cinnamon freezing on background change
 	cinnamon freezing with infinite loop in eclipse https://bugs.launchpad.net/linuxmint/+bug/1331407
 	mdm login resulting in black screen when gnome-keyring gets locked? https://github.com/linuxmint/mdm/issues/92
-	mdm not setting the session name properly resulting in OnlyShowIn not working properly? https://github.com/linuxmint/mdm/issues/94
 
 All Editions
 ------------
@@ -34,8 +33,7 @@ KDE
 	
 Xfce
 ----
-	mdm: When loging in an existing session, doesn't unlock xscreensaver
-	whisker doesn't show appearance and other settings
+	mdm: When loging in an existing session, doesn't unlock xscreensaver	
 
 Maintenance
 -----------
@@ -63,7 +61,10 @@ Next Release
 	cinnamon: fade-in at startup
 	cinnamon: ibus support
 	xfce: revive xfapplet
+	xfce: Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
+	xfce: Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
 	hexchat: -help is below -chat
+	repository: provide translations or disable them?
 
 LMDE
 ----

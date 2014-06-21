@@ -29,11 +29,15 @@ All editions
 All editions (post stable release of MATE/Cinnamon Editions)
 ------------------------------------------------------------
 	mdm: don't crash on GPUs not compatible with xrandr
+	mdm not setting the session name properly resulting in OnlyShowIn not working properly? https://github.com/linuxmint/mdm/issues/94
 	ubiquity: renamed dangerously ambiguous option "Replace $OS with Linux Mint" with "Erase the disk and install Linux Mint"
 	ubiquity: prevented apt-clone from corrupting APT sources in the event where the / partition is not formatted
 	mintinstall: don't let broken apps be installed
 	mintinstall: don't clear search entry when searching within a category
 	mintdrivers: cannot enable/install linux-firmware-nonfree for devices which require it http://wstaw.org/m/2014/06/14/plasma-desktopQq2306.png
+	mdm: in the German default login screen, the text “Bitte geben Sie Ihren Benutzernamen ein” runs out of bottom of the grey box
+	flash: mint-flashplugin-10.2 containing the non-SSE2 version of adobe flash is missing
+
 
 Cinnamon Edition
 ----------------
@@ -81,4 +85,11 @@ KDE Edition
 
 Xfce Edition
 ------------
+	Can't open settings, appearance.. from whisker
+	Can't log out/shutdown from app menu
+	whisker doesn't show appearance and other settings
+	menu doesn't show common actions
+	system and settings categories show duplicates
+	32px semi-transparent panel with Mint logo
+	typo in the installer slidershow: “können mir VLC abgespielt werden” should be “können mit VLC abgespielt werden”.
 	

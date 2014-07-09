@@ -10,21 +10,23 @@ Investigating
 	cinnamon freezing with infinite loop in eclipse https://bugs.launchpad.net/linuxmint/+bug/1331407
 	mdm login resulting in black screen when gnome-keyring gets locked? https://github.com/linuxmint/mdm/issues/92
 
-All Editions
-------------
+Maintenance
+-----------
+	Update tapatalk API on forums
 	pkgs: unity-greeter pkg
 	pkgs: gedit-plugins pkg https://bugs.launchpad.net/linuxmint/+bug/1186528
 	mint-mirrors: update list of mirrors
-	rel notes: format / partition
-	rel notes: wine libgl1
-	modemmanager hangs at shutdown	
+	modemmanager hangs at shutdown
+	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552	
+	cinnamon 2.2.14, muffin 2.2.6, cinnamon-session 2.2.2, cinnamon-control-center 2.2.10, nemo 2.2.3
+	upgrade MATE packages to 1.8.x (marco and caja especially)
+	patch for MATE: https://github.com/linuxmint/mate-packages/pull/4
+	upgrade inxi to 2.1.28
+	upgrade xfce4-whiskermenu-plugin to 1.4.0?
 
 Cinnamon
 --------		
 	"Add to %s" for [desktop, panel, etc..] isn't translatable in some languages
-
-MATE
-----	
 
 KDE
 ---	
@@ -35,9 +37,7 @@ Xfce
 ----
 	mdm: When loging in an existing session, doesn't unlock xscreensaver	
 
-Maintenance
------------
-	Update tapatalk API on forums
+
 
 Next Release
 ------------

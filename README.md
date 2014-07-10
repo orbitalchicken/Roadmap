@@ -48,6 +48,7 @@ Next Release
 	mate: make compiz work out of the box?
 	ubiquity: https://bugs.launchpad.net/linuxmint/+bug/1325786
 	mintupdate: give kernel page a real table
+	mintupdate: proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116
 	oem: rephrase isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 	artwork: provide mint-x in a variation of colors
 	cinnamon: actual screensaver?

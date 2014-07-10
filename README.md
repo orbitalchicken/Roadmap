@@ -7,7 +7,6 @@ Investigating
 -------------
 	Cinnamon freezing sometimes when using meld
 	Cinnamon freezing on background change
-	cinnamon freezing with infinite loop in eclipse https://bugs.launchpad.net/linuxmint/+bug/1331407
 	mdm login resulting in black screen when gnome-keyring gets locked? https://github.com/linuxmint/mdm/issues/92
 
 Maintenance
@@ -19,10 +18,10 @@ Maintenance
 	modemmanager hangs at shutdown
 	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552	
 	cinnamon 2.2.14, muffin 2.2.6, cinnamon-session 2.2.2, cinnamon-control-center 2.2.10, nemo 2.2.3
-	upgrade MATE packages to 1.8.x (marco and caja especially)
 	patch for MATE: https://github.com/linuxmint/mate-packages/pull/4
 	upgrade inxi to 2.1.28
 	upgrade xfce4-whiskermenu-plugin to 1.4.0?
+
 
 Cinnamon
 --------		

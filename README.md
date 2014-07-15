@@ -68,6 +68,7 @@ Next Release
 
 LMDE
 ----
+	update virtualbox
 	update synaptic adjustment in mintsystem for lmde
 	live-installer: turn avatar selector into a nicer widget ala cinnamon-settings account details
 	live-installer: check free space on /target before installing

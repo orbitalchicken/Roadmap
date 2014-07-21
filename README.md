@@ -39,16 +39,17 @@ Xfce
 
 
 Next Release
-------------
+------------	
+	mintupdate: proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116
+	mintupdate: package descriptions aren't l10n (they are when using "apt show pkgname").
+	mintupdate: when Update Manager has done it’s job successfully, the disk stops rumbling and the window just vanishes… it looks like it crashed. A pop-up ‘Your System Is Now Up To Date’ for ten seconds would be nice.	
 	Consider adding pipelight
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
 	port mintmenu to gtk3
 	mintinstall: should show licenses
 	mintinstall: should separate impacts between installs and removals
 	mate: make compiz work out of the box?
-	ubiquity: https://bugs.launchpad.net/linuxmint/+bug/1325786
-	mintupdate: give kernel page a real table
-	mintupdate: proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116
+	ubiquity: https://bugs.launchpad.net/linuxmint/+bug/1325786	
 	oem: rephrase isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 	artwork: provide mint-x in a variation of colors
 	cinnamon: actual screensaver?
@@ -65,6 +66,13 @@ Next Release
 	xfce: Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
 	hexchat: -help is below -chat
 	repository: provide translations or disable them?
+	mintstick: Add % completion to window title
+	try fonts-noto
+	see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
+
+	done:
+		mintupdate: kernel page redesign
+
 
 LMDE
 ----

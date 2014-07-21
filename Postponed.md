@@ -6,22 +6,20 @@ Improvements selected for the future
 =====================================
 
 Mint 17
--------
-	mintupdate: package descriptions aren't l10n (they are when using "apt show pkgname").
-	mintsources: missing a key.
-	mintsources: doesn't show name of "cdrom" correctly.
-	mintsources: doesn’t show any progress bar and it seems to test mirrors one by one instead of doing it in parallel.
+-------	
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files		
 	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
 	mintinstall "show all results" not l10n	
 	mintinstall: show license info
-	windows compatibility layer
-	mintupdate: when Update Manager has done it’s job successfully, the disk stops rumbling and the window just vanishes… it looks like it crashed. A pop-up ‘Your System Is Now Up To Date’ for ten seconds would be nice.
+	windows compatibility layer	
 	bring back hardinfo
 	mintlocale: * Number/Dates/Currency Settings – i live in Dubai after installation, it will give me an english system with numbers, dates and currencies in arabic, which i used to be able to change into english from the ‘regional formats’ tab of ‘language support’. But with the current dialog, i can only set the full system to be english or arabic now.
 	mintlocale: Right-to-Left Dialogs – i changed the system language to ‘Arabic, United Arab Emirates’ and the ‘Language Settings’ dialog doesnt show things correctly – http://i.imgur.com/RhKKFhO.png
-	mintlocale: missing ibus activation support	
+	mintlocale: missing ibus activation support		
+	mintsources: missing a key.
+	mintsources: doesn't show name of "cdrom" correctly.
+	mintsources: doesn’t show any progress bar and it seems to test mirrors one by one instead of doing it in parallel.
 
 Cinnammon
 ---------

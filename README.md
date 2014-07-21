@@ -40,8 +40,7 @@ Xfce
 
 Next Release
 ------------	
-	mintupdate: proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116
-	mintupdate: package descriptions aren't l10n (they are when using "apt show pkgname").
+	mintupdate: proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116	
 	mintupdate: when Update Manager has done it’s job successfully, the disk stops rumbling and the window just vanishes… it looks like it crashed. A pop-up ‘Your System Is Now Up To Date’ for ten seconds would be nice.	
 	Consider adding pipelight
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
@@ -71,8 +70,9 @@ Next Release
 	see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
 
 	done:
-		mintupdate: kernel page redesign
-
+		mintupdate: 
+			kernel page redesign
+			package descriptions are now complete and l10n'd
 
 LMDE
 ----

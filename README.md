@@ -73,6 +73,8 @@ Next Release
 			kernel page redesign
 			package descriptions are now complete and l10n'd
 			proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116	
+		mintsources:
+			better repository names
 
 LMDE
 ----
@@ -80,3 +82,4 @@ LMDE
 	update synaptic adjustment in mintsystem for lmde
 	live-installer: turn avatar selector into a nicer widget ala cinnamon-settings account details
 	live-installer: check free space on /target before installing
+	mintsystem creates an order cycle when booting with systemd

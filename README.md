@@ -14,23 +14,22 @@ Maintenance
 	Update tapatalk API on forums
 	pkgs: unity-greeter pkg
 	pkgs: gedit-plugins pkg https://bugs.launchpad.net/linuxmint/+bug/1186528
-	mint-mirrors: update list of mirrors
 	modemmanager hangs at shutdown
 	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552	
-	cinnamon 2.2.14, muffin 2.2.6, cinnamon-session 2.2.2, cinnamon-control-center 2.2.10, nemo 2.2.3
 	patch for MATE: https://github.com/linuxmint/mate-packages/pull/4
 	upgrade inxi to 2.1.28
 	upgrade xfce4-whiskermenu-plugin to 1.4.0?
 
-
 Cinnamon
 --------		
 	"Add to %s" for [desktop, panel, etc..] isn't translatable in some languages
+	open with dialog does not set as default anymore. went to set an mp3 to open with vlc/banshee/clementine, click ‘set as default’, and the highlighted list item focus just jumps back to Videos under the Default Application header.
+	play around with the fonts in cinnamon sooner or later (usually sooner) the desktop crashes.
+	play around with the slider for panel size using the cursor keys for up and down making it bigger or smaller then sooner or later, usually quite quickly the whole desktop freezes.
 
 KDE
 ---	
 	mdm: When loging in an existing session, doesn't unlock kde screensaver
-	mintBackup works in Qiana but a backport is needed in Petra https://bugs.launchpad.net/linuxmint/+bug/1261693	
 	
 Xfce
 ----
@@ -75,6 +74,7 @@ Next Release
 			proxy support in changelog retrieval: https://bugs.launchpad.net/linuxmint/+bug/1335116	
 		mintsources:
 			better repository names
+			test mirrors in parallel
 
 LMDE
 ----

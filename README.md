@@ -21,21 +21,19 @@ Maintenance
 	upgrade xfce4-whiskermenu-plugin to 1.4.0?
 
 Cinnamon
---------		
+--------
 	"Add to %s" for [desktop, panel, etc..] isn't translatable in some languages
 	open with dialog does not set as default anymore. went to set an mp3 to open with vlc/banshee/clementine, click ‘set as default’, and the highlighted list item focus just jumps back to Videos under the Default Application header.
 	play around with the fonts in cinnamon sooner or later (usually sooner) the desktop crashes.
 	play around with the slider for panel size using the cursor keys for up and down making it bigger or smaller then sooner or later, usually quite quickly the whole desktop freezes.
 
 KDE
----	
+---
 	mdm: When loging in an existing session, doesn't unlock kde screensaver
-	
+
 Xfce
 ----
-	mdm: When loging in an existing session, doesn't unlock xscreensaver	
-
-
+	mdm: When loging in an existing session, doesn't unlock xscreensaver
 
 Next Release
 ------------		
@@ -58,6 +56,7 @@ Next Release
 	cinnamon: search providers
 	cinnamon: fade-in at startup
 	cinnamon: ibus support
+	cinnamon: integrate workspace management in nemo, panel, window-list, applet, muffin, settings
 	xfce: revive xfapplet
 	xfce: Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
 	xfce: Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
@@ -66,6 +65,9 @@ Next Release
 	mintstick: Add % completion to window title
 	try fonts-noto
 	see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
+	mintsystem: add APT priority definitions for known PPAs and repositories
+	mdm: new theme based on mdm-modern, with slideshow
+	mdm: add a preview button to theme selection
 
 	done:
 		mintupdate: 
@@ -75,6 +77,8 @@ Next Release
 		mintsources:
 			better repository names
 			test mirrors in parallel
+		cinnamon
+			cjs rebase
 
 LMDE
 ----

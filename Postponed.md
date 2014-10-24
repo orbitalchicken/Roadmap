@@ -14,17 +14,10 @@ Mint 17
 	mintinstall: show license info
 	windows compatibility layer	
 	bring back hardinfo
-	mintlocale: * Number/Dates/Currency Settings – i live in Dubai after installation, it will give me an english system with numbers, dates and currencies in arabic, which i used to be able to change into english from the ‘regional formats’ tab of ‘language support’. But with the current dialog, i can only set the full system to be english or arabic now.
-	mintlocale: Right-to-Left Dialogs – i changed the system language to ‘Arabic, United Arab Emirates’ and the ‘Language Settings’ dialog doesnt show things correctly – http://i.imgur.com/RhKKFhO.png
-	mintlocale: missing ibus activation support	
-
+	
 Cinnammon
 ---------
-	systray icons aren't clickable
-	desktop icons text color is too dark and barely visible on a dark background
-	Bluetooth headset connects, but cannot stream audio and does not show up in pulseaudio as valid output device.	
 	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
-	the zoom doesn’t zoom IN on a reboot after you activate it. however, if you first zoom OUT, all works as advertised after that.		
 	Cinnamon isn’t scaling user defined panel sizes properly. If I select Numix as my theme and set a customised panel size, when clicking Allow Cinnamon to Scale Panel Text and Icons, the text on the right side of the panel bar seems to go a bit blurry. This didn’t happen on the last release. The update shield sometimes goes wonky too which I assume is related.		
 	The power button set to “shut down immediately” still ‘asks’
 	The cinnamon-sound-applet’s icon renders incorrectly in i3wm’s system tray (it was fine with the version of cinnamon that shipped with LM16 and the same version of i3 (4.7.2)). I was able to get it working via brute force specifying the path to the icon, but it would be nice if it worked out of the box.
@@ -32,7 +25,6 @@ Cinnammon
 	When trying to connect my ext.hard drive via smb when double clicking on the globe icon (workgroup) nemo closes down
 	System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA. This is related to a very longstanding issue of Mint always opening dialogs on the left (wrong) monitor
 	Network setting does not let me to set Proxy.. The button “set system wide” is not there.
-	Cinnamon popups for brightness and volume adjust seem to flash when repeatedly hitting the key. In Mint 16, the popups stayed smoothly on the screen for the duration of the adjustment.
 	menu:  I like the way the panel icons and those on the desktop change subtly when you hover over them. Any reason why the menu icons could not behave the same way for consistency ?
 	I can’t seem to create a new item in Menu Editor. After typing in the name of the new item and the command, the OK button is not available to click.
 	With autohide on and Show delay above 0 the window will autohide the moment the cursor goes over a icon (launcher, apps, window tabs) making it impossible to click anything.
@@ -54,7 +46,6 @@ Cinnammon
 	cinnamon-settings-daemon: Super+e should open file manager
 	cinnamon-settings: network - proxy - button ON/OFF doesn't do anything
 	settings: The buttons in the system settings seem to be sorted according the english names, but I’m using dutch, so the sorting looks really random.
-	settings: mintdrivers - The name “Device Drivers” is used in the main Cinnamon Control Centre but once you open it the name at the top of the window is “Driver Manager”. The names should be the same for consistency.
 	settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
 	settings: mouse - The Cinnamon drag threshold and GTK drag threshold input boxes are not aligned to each other but appended to the end of the wording. They should be aligned as per other similar examples in the Cinnamon Control Centre.
 	settings:  workspaces - OSD duration, OSD horizontal position and OSD vertical position are not aligned.

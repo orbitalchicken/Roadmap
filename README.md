@@ -7,7 +7,6 @@ Maintenance
 -----------
 	Update tapatalk API on forums
 	pkgs: unity-greeter pkg
-	pkgs: gedit-plugins pkg https://bugs.launchpad.net/linuxmint/+bug/1186528
 	modemmanager hangs at shutdown
 	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552	
 	patch for MATE: https://github.com/linuxmint/mate-packages/pull/4
@@ -35,6 +34,7 @@ Next Release
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
 	fonts: try fonts-noto
 	fonts: Would Linux Mint mind changing the default CJK font in the future release?like Adobe’s source han sans. As a Traditional Chinese user, the default font Linux Mint now using is pretty awkward, and even didn’t follow the hand writing rules and education standard. The fedora team changed their default font to Adobe”s source han sans and it’s great.
+	fonts: ship with fonts-unfonts-core by default? Fixes https://code.google.com/p/chromium/issues/detail?id=82400
 	oem: rephrase isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 	see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
 	kde: MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
@@ -49,6 +49,7 @@ Next Release
 	ubiquity: keyboard layout selection sets itself back to EN when no click is done in the table
 	ubiquity: import upstream fixes
 	ubiquity: fix installation for Swiss German users (fixed upstream https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1182784)
+	ubiquity: make sure LC_TIME follows language choice, not timezone selection
 	mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196		
 	mintinstall: should show licenses
 	mintinstall: should separate impacts between installs and removals
@@ -65,14 +66,18 @@ Next Release
 	cinnamon: search providers
 	cinnamon: ibus support
 	cinnamon: integrate workspace management in nemo, panel, window-list, applet, muffin, settings	
-	cinnamon: world clock http://cinnamon-spices.linuxmint.com/applets/view/108	
 	mate: http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/
 	mate: make compiz work out of the box?
 	consider installing timeshift
 	grub background and full screen?
 	full screen bootsplash? check how it's done in Ubuntu
-	cinnamon-bluetooth: link to sound prefs doesn't work
-	cinnamon-bluetooth: rebase on gnome-bluetooth?
+	consider upgrading hunspell to 1.3.3 (LO gains twofold suffix stripping)
+	rename folder-color
+	GTK: Totem regression, can't skip forward
+	muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
+	mintlocale: handle all locales, not just UTF-8
+	lmde: upgrade tz-data
+	mintlocale: handle case where .pam_environment doesn't exist or LC_NUMERIC is not defined
 
 	gtk 3.12+
 		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
@@ -100,6 +105,8 @@ Next Release
 			new background selection + slideshow support + slideshow applet
 			configurable fonts in screensaver
 			startup animation
+			privacy settings
+			notification settings
 		nemo
 			highlight icons on hover in sidebar
 			toolbar UI changes
@@ -113,6 +120,10 @@ Next Release
 			better mdmsetup
 			slideshow in mint-x			
 		user guide
+		mintlocale
+			new UI
+			regional settings
+			im support
 
 LMDE
 ----

@@ -2,6 +2,8 @@
 Backports
 ---------
 	x-caja-desktop fix for Maya
+	LO 4.3?
+	KDE 4.14
 
 Maintenance
 -----------
@@ -57,6 +59,7 @@ Next Release
 	mintsystem: add APT priority definitions for known PPAs and repositories
 	mintsystem: make "apt download" download dependencies to the ./pkgname directory
 	mdm: include mdm-modern
+	mdm: include more HTML themes
 	cinnamon: improve window animations, based on GNOME SHELL 3.14 (windowmanager.js)
 	cinnamon: fix spacing between systray icons
 	cinnamon: network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg
@@ -70,14 +73,9 @@ Next Release
 	mate: make compiz work out of the box?
 	consider installing timeshift
 	grub background and full screen?
-	full screen bootsplash? check how it's done in Ubuntu
-	consider upgrading hunspell to 1.3.3 (LO gains twofold suffix stripping)
-	rename folder-color
-	GTK: Totem regression, can't skip forward
+	full screen bootsplash? check how it's done in Ubuntu	
 	muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
-	mintlocale: handle all locales, not just UTF-8
-	lmde: upgrade tz-data
-	mintlocale: handle case where .pam_environment doesn't exist or LC_NUMERIC is not defined
+	mintinstall: removing gnupg removes apt.. the info is there but it's far from obvious enough!
 
 	gtk 3.12+
 		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
@@ -107,6 +105,7 @@ Next Release
 			startup animation
 			privacy settings
 			notification settings
+			disabling compositing for fullscreen windows OFF by default and now configurable
 		nemo
 			highlight icons on hover in sidebar
 			toolbar UI changes
@@ -124,6 +123,7 @@ Next Release
 			new UI
 			regional settings
 			im support
+			handle all locales, not just UTF-8
 
 LMDE
 ----
@@ -131,5 +131,4 @@ LMDE
 	update synaptic adjustment in mintsystem for lmde
 	live-installer: turn avatar selector into a nicer widget ala cinnamon-settings account details
 	live-installer: check free space on /target before installing
-	jessie: patch gtk3.12 http://redmine.audacious-media-player.org/boards/1/topics/1135
 	glib 2.41 regression on mutex, PRs for mint tools and/or fix in GTK 3.14.1 and waiting for GTK2 fix https://github.com/GNOME/gtk/commit/fbf38d16bcc26630f0f721d266509f5bc292f606

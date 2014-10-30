@@ -15,13 +15,6 @@ Maintenance
 	upgrade inxi to 2.1.28
 	upgrade xfce4-whiskermenu-plugin to 1.4.0?
 
-Cinnamon
---------
-	"Add to %s" for [desktop, panel, etc..] isn't translatable in some languages
-	open with dialog does not set as default anymore. went to set an mp3 to open with vlc/banshee/clementine, click ‘set as default’, and the highlighted list item focus just jumps back to Videos under the Default Application header.
-	play around with the fonts in cinnamon sooner or later (usually sooner) the desktop crashes.
-	play around with the slider for panel size using the cursor keys for up and down making it bigger or smaller then sooner or later, usually quite quickly the whole desktop freezes.
-
 KDE
 ---
 	mdm: When loging in an existing session, doesn't unlock kde screensaver
@@ -31,7 +24,7 @@ Xfce
 	mdm: When loging in an existing session, doesn't unlock xscreensaver
 
 Next Release
-------------		
+------------
 	Consider adding pipelight
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
 	fonts: try fonts-noto
@@ -57,18 +50,9 @@ Next Release
 	mintinstall: should separate impacts between installs and removals
 	mintstick: Add % completion to window title
 	mintsystem: add APT priority definitions for known PPAs and repositories
-	mintsystem: make "apt download" download dependencies to the ./pkgname directory
-	mdm: include mdm-modern
-	mdm: include more HTML themes
-	cinnamon: improve window animations, based on GNOME SHELL 3.14 (windowmanager.js)
+	mintsystem: make "apt download" download dependencies to the ./pkgname directory		
 	cinnamon: fix spacing between systray icons
-	cinnamon: network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg
-	cinnamon: actual screensaver?	
-	cinnamon: frequency in monitor settings
-	cinnamon: improve network settings, applet
-	cinnamon: search providers
-	cinnamon: ibus support
-	cinnamon: integrate workspace management in nemo, panel, window-list, applet, muffin, settings	
+	cinnamon: improve network settings
 	mate: http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/
 	mate: make compiz work out of the box?
 	consider installing timeshift
@@ -76,6 +60,17 @@ Next Release
 	full screen bootsplash? check how it's done in Ubuntu	
 	muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
 	mintinstall: removing gnupg removes apt.. the info is there but it's far from obvious enough!
+	[RFT] firefox: don't preset browser.showQuitWarning
+
+	inconsistent names (menu vs cinnamon-settings):
+		Accessibilité (dans paramètres systèmes) → Accès universel (menu)
+		Programmes au démarrage (dans paramètres systèmes) → Applications au démarrage (menu)
+		Affichage (dans paramètres systèmes) → AffichageS (menu)
+		CouleurS (dans paramètres systèmes) → Couleur (menu)
+		Tablette graphique (dans paramètres systèmes) → Graphics Tablet (menu)
+		Pilotes de périphériques (dans paramètres systèmes) → Gestionnaire de pilotes (menu)
+		Écran de connexion (dans paramètres systèmes) → Fenêtre de connexion (menu)
+		Sources de mise à jour (dans paramètres systèmes) → Sources de logiciels (menu)
 
 	gtk 3.12+
 		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
@@ -106,6 +101,8 @@ Next Release
 			privacy settings
 			notification settings
 			disabling compositing for fullscreen windows OFF by default and now configurable
+			super+e opens home
+			desktop font configurable
 		nemo
 			highlight icons on hover in sidebar
 			toolbar UI changes
@@ -117,7 +114,9 @@ Next Release
 			color variations
 		mdm
 			better mdmsetup
-			slideshow in mint-x			
+			slideshow in mint-x
+			.xsession-errors limit and filtering			
+			include more HTML themes			
 		user guide
 		mintlocale
 			new UI

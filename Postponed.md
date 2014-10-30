@@ -17,17 +17,20 @@ Mint 17
 	
 Cinnammon
 ---------
+	actual screensaver?
+	network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg
+	improve window animations, based on GNOME SHELL 3.14 (windowmanager.js)
+	frequency in monitor settings
+	search providers
+	ibus support
+	integrate workspace management in nemo, panel, window-list, applet, muffin, settings
 	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
 	Cinnamon isn’t scaling user defined panel sizes properly. If I select Numix as my theme and set a customised panel size, when clicking Allow Cinnamon to Scale Panel Text and Icons, the text on the right side of the panel bar seems to go a bit blurry. This didn’t happen on the last release. The update shield sometimes goes wonky too which I assume is related.		
 	The power button set to “shut down immediately” still ‘asks’
 	The cinnamon-sound-applet’s icon renders incorrectly in i3wm’s system tray (it was fine with the version of cinnamon that shipped with LM16 and the same version of i3 (4.7.2)). I was able to get it working via brute force specifying the path to the icon, but it would be nice if it worked out of the box.
-	System Settings/ Panel/ Auto Hide Options (either checked), System Settings/ Applets/ Menu/ Configure/ (check “open the menu when I move my mouse over it”). With these two options checked together the menu will preform a disconcerting bounce up or down, usually away from the user.
 	When trying to connect my ext.hard drive via smb when double clicking on the globe icon (workgroup) nemo closes down
 	System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA. This is related to a very longstanding issue of Mint always opening dialogs on the left (wrong) monitor
 	Network setting does not let me to set Proxy.. The button “set system wide” is not there.
-	menu:  I like the way the panel icons and those on the desktop change subtly when you hover over them. Any reason why the menu icons could not behave the same way for consistency ?
-	I can’t seem to create a new item in Menu Editor. After typing in the name of the new item and the command, the OK button is not available to click.
-	With autohide on and Show delay above 0 the window will autohide the moment the cursor goes over a icon (launcher, apps, window tabs) making it impossible to click anything.
 	l10n:
 		System Settings -> Windows: The options in the four drop-down boxes “Action on title bar double-click”, “Action on title bar double-click”, “Action on title bar right-click” and “Window focus mode”.
 		Language Settings: “Apply System-Wide”, “Install / Remove Languages”, the associated tool tips and all the text.
@@ -40,32 +43,22 @@ Cinnammon
 		System Settings -> Desklets: The buttons Highlight and Remove (configuring a desklet).
 	l10n: Menu Editor: “Main Menu” (title bar), “New Menu”, New Item”, “Move Up”, “Move Down”, “Restore System Configuration”.
 	settings: The search box in System Settings displays “Search…” next to the magnifier.
-	cinnamon-settings: datetime module, months, regions, lot of things aren't l10n'd
-	nemo: desktop font look like it’s antialiased wrong, like it’s using wrong pixel order – BGR instead of RGB. 
-	settings: nemo desktop font is not configurable in cinnamon-settings fonts
-	cinnamon-settings-daemon: Super+e should open file manager
-	cinnamon-settings: network - proxy - button ON/OFF doesn't do anything
-	settings: The buttons in the system settings seem to be sorted according the english names, but I’m using dutch, so the sorting looks really random.
 	settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
 	settings: mouse - The Cinnamon drag threshold and GTK drag threshold input boxes are not aligned to each other but appended to the end of the wording. They should be aligned as per other similar examples in the Cinnamon Control Centre.
 	settings:  workspaces - OSD duration, OSD horizontal position and OSD vertical position are not aligned.
 	settings: Under Auto-hide panel, the input boxes for “show delay” and “hide delay” are not aligned. Many other such input boxes and drop down menu boxes are aligned with each other and not with the end of the text.
 	applets: when I click on the window list to minimize and maximize sometimes the windows don’t respond and so I have to maximize another window so that I can mainimize or maximize the previous one!!	
-	applets: On/Off switch for networking applet is visually glitchy
 	spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)
 	spices: If I select the radio box to choose an applet and then I’ll click the button to install it, the applet is installed but it’s not active: maybe a new user expects to have it immediately in the panel after the download… in fact forcing the user to come back in the list of the installed applet to enable the just downloaded applet is not user friendly, in my opinion.
 	nemo: if I press ALT+F2 and then enter “nemo ftp://ftp.mydomain.xyz” to access to my personal ftp server trough nemo, I’ll get a request of username and password: it’s OK. The problem is that if I select the option to remember forever the username and password, it will not have effect: if I reboot Linux Mint, the next time I’ll try to access my ftp trough nemo I’ll get the request of username e password. So… nemo doesn’t remember my credentials… it’s frustrating.
 	nemo: Entering the folder of long name , the path disappeared screen capture 1) it shows a folder of longname https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A19.png screen capture 2) entering the long name folder , meeting disappeared folder path of long name folder https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A34.png screen capture 3) But Actually It was still dsiplayed at max window https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A19%3A13.png	
 	cinnamon: menu doesn't listen to menu changes outside /usr/share/applications? install shotwell for instance (uses /usr/share/menu)
-	changing Wallpaper sometimes freezes cinnamon
 	Keyboard settings allow adding duplicate key combination for Cinnamon “Toggle Scale” and “Toggle Expo” (found these, didn’t go through all actions, most of them ok)
 	nemo: Create a thumbnailer in usr/share/thumbnailers for MimeType inode/directory – when you try to run Nemo, it crashes with the error:  (nemo:9078): CinnamonDesktop-WARNING **: Error reading from file:///home/simon/Desktop: Error reading from file descriptor: Is a directory Installing cover-thumbnailer is an easy way to reproduce it.
 	nemo-preview (not installed by default), doesn’t work: http://pastebin.com/Uaci0mzC
 	consider using bernard's theme
-	show frequency in displays
 	screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
 	Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
-	cinnamon-bluetooth: bring compatibility to GNOME 3.10
 	cinnamon-settings-users: add support for nopasswdlogin
 	expo: set overview mode to true by default
 	expo: lag on dnd

@@ -35,8 +35,10 @@ Todo for Mint 17.1
 		rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 		see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
 		[RFT] set up build system to build with updates
-		guarantee the same version of Firefox-l10n as Firefox itself is installed post-install
+		[RFT] guarantee the same version of Firefox-l10n as Firefox itself is installed post-install
 		select the new kernel for Rebecca
+		theme plymouth
+
 	ubiquity
 		https://bugs.launchpad.net/linuxmint/+bug/1325786	
 		keyboard layout selection sets itself back to EN when no click is done in the table
@@ -48,12 +50,12 @@ Todo for Mint 17.1
 		[RFT] firefox: don't preset browser.showQuitWarning
 		consider installing timeshift
 
-	cinnamon
-		fix spacing between systray icons
+	cinnamon		
 		fix regression on umounting HDD in Nemo
+		fix regression not possible to use Super_R for keyboard shortcuts
 		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
-		muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244		
-	
+		update cinnamon-translations
+			
 	mate
 		[RFT] mate 1.8.x
 		mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196
@@ -69,14 +71,13 @@ Todo for Mint 17.1
 	indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030	
 		
 	mint tools
-		mintinstall: should show licenses
-		mintinstall: should separate impacts between installs and removals
-		mintinstall: removing gnupg removes apt.. the info is there but it's far from obvious enough!
-		mintinstall "show all results" not l10n	
+		[RFT] mintinstall: should separate impacts between installs and removals
+		[RFT] mintinstall: removing gnupg removes apt.. the info is there but it's far from obvious enough!
 		mintstick: Add % completion to window title
 		mintsystem: add APT priority definitions for known PPAs and repositories
 		mintsystem: make "apt download" download dependencies to the ./pkgname directory		
 		mintdoc: finish user guide, package it etc..
+		update mint-translations
 	
 	docs
 		rel_notes
@@ -162,3 +163,4 @@ LMDE
 	gtk 3.12+
 		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
 		 fix ugly dialogs https://github.com/mate-desktop/marco/commit/42c63250abf2b4c7b1c704c907301bb5a5920b6e
+		 muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244	

@@ -17,6 +17,7 @@ Mint 17
 Cinnammon
 ---------
 	actual screensaver?
+	fix spacing between systray icons
 	don't show keybinding OSDs when notifications are off
 	network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg
 	improve window animations, based on GNOME SHELL 3.14 (windowmanager.js)

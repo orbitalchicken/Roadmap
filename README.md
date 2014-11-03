@@ -51,6 +51,7 @@ Todo for Mint 17.1
 	cinnamon
 		fix spacing between systray icons
 		fix regression on umounting HDD in Nemo
+		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
 		don't show keybinding OSDs when notifications are off
 		muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
 		inconsistent names (menu vs cinnamon-settings):

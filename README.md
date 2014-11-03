@@ -34,7 +34,7 @@ Todo for Mint 17.1
 	live
 		rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 		see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
-		set up build system to build with updates
+		[RFT] set up build system to build with updates
 		guarantee the same version of Firefox-l10n as Firefox itself is installed post-install
 		select the new kernel for Rebecca
 	ubiquity
@@ -51,32 +51,8 @@ Todo for Mint 17.1
 	cinnamon
 		fix spacing between systray icons
 		fix regression on umounting HDD in Nemo
-		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
-		don't show keybinding OSDs when notifications are off
-		muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
-		inconsistent names (menu vs cinnamon-settings):
-			Accessibilité (dans paramètres systèmes) → Accès universel (menu)
-			Programmes au démarrage (dans paramètres systèmes) → Applications au démarrage (menu)
-			Affichage (dans paramètres systèmes) → AffichageS (menu)
-			CouleurS (dans paramètres systèmes) → Couleur (menu)
-			Tablette graphique (dans paramètres systèmes) → Graphics Tablet (menu)
-			Pilotes de périphériques (dans paramètres systèmes) → Gestionnaire de pilotes (menu)
-			Écran de connexion (dans paramètres systèmes) → Fenêtre de connexion (menu)
-			Sources de mise à jour (dans paramètres systèmes) → Sources de logiciels (menu)	
-		l10n:
-			System Settings -> Windows: The options in the four drop-down boxes “Action on title bar double-click”, “Action on title bar double-click”, “Action on title bar right-click” and “Window focus mode”.
-			Language Settings: “Apply System-Wide”, “Install / Remove Languages”, the associated tool tips and all the text.
-			System Settings -> Network -> Proxy: The options under Method.
-			System Settings -> Graphics Tablet: “No tablet detected – please plug in or turn on your graphics tablet”
-			System Settings -> Software Sources: Text in Maintenance button
-			System Settings -> Fonts: Options in the two drop-down boxes Antialiasing and Hinting.
-			System Settings -> Applets/Desklets/Extensions/Themes: Blue text “More info” (right-clicking opens a menu that is translated)
-			System Settings -> Monitor: Options in the drop-down box Rotation
-			System Settings -> Desklets: The buttons Highlight and Remove (configuring a desklet).
-			Menu Editor: “Main Menu” (title bar), “New Menu”, New Item”, “Move Up”, “Move Down”, “Restore System Configuration”.
-			In System Settings\Windows the options (Toggle Shade etc.) for the first four entries are not translated.
-			In System Settings\Fonts “None”, “Greyscale”, “Slight”, “Medium” and “Full” are not translated to Danish though Danish is 100% translated.
-
+		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
+		muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244		
 	
 	mate
 		[RFT] mate 1.8.x

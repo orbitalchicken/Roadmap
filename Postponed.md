@@ -1,19 +1,18 @@
-De-scoped
----------		
-
-
 Improvements selected for the future
 =====================================
+
+Mint 17.2
+---------
+	Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin)
+	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
+	nemo: remove duplication between Eject and Safely Remove (for removable devices)	
+	hexchat: implement PR for /etc/hexchat for distro to set default list of networks https://github.com/hexchat/hexchat; http://anonscm.debian.org/cgit/collab-maint/hexchat.git/ (sney mailto:drubo@drubo.net)
 
 Mint 17
 -------	
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files		
-	The add-apt-repository command doesn’t work with “gksu” and “pkexec” which causes various scripts that require this to break under Linux Mint 16 (Y PPA Manager tool for instance).
-	mintinstall "show all results" not l10n	
-	mintinstall: show license info
-	windows compatibility layer	
-	bring back hardinfo
+	windows compatibility layer		
 	
 Cinnammon
 ---------
@@ -24,24 +23,11 @@ Cinnammon
 	search providers
 	ibus support
 	integrate workspace management in nemo, panel, window-list, applet, muffin, settings
-	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
 	Cinnamon isn’t scaling user defined panel sizes properly. If I select Numix as my theme and set a customised panel size, when clicking Allow Cinnamon to Scale Panel Text and Icons, the text on the right side of the panel bar seems to go a bit blurry. This didn’t happen on the last release. The update shield sometimes goes wonky too which I assume is related.		
-	The power button set to “shut down immediately” still ‘asks’
 	The cinnamon-sound-applet’s icon renders incorrectly in i3wm’s system tray (it was fine with the version of cinnamon that shipped with LM16 and the same version of i3 (4.7.2)). I was able to get it working via brute force specifying the path to the icon, but it would be nice if it worked out of the box.
 	When trying to connect my ext.hard drive via smb when double clicking on the globe icon (workgroup) nemo closes down
 	System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA. This is related to a very longstanding issue of Mint always opening dialogs on the left (wrong) monitor
 	Network setting does not let me to set Proxy.. The button “set system wide” is not there.
-	l10n:
-		System Settings -> Windows: The options in the four drop-down boxes “Action on title bar double-click”, “Action on title bar double-click”, “Action on title bar right-click” and “Window focus mode”.
-		Language Settings: “Apply System-Wide”, “Install / Remove Languages”, the associated tool tips and all the text.
-		System Settings -> Network -> Proxy: The options under Method.
-		System Settings -> Graphics Tablet: “No tablet detected – please plug in or turn on your graphics tablet”
-		System Settings -> Software Sources: Text in Maintenance button
-		System Settings -> Fonts: Options in the two drop-down boxes Antialiasing and Hinting.
-		System Settings -> Applets/Desklets/Extensions/Themes: Blue text “More info” (right-clicking opens a menu that is translated)
-		System Settings -> Monitor: Options in the drop-down box Rotation
-		System Settings -> Desklets: The buttons Highlight and Remove (configuring a desklet).
-	l10n: Menu Editor: “Main Menu” (title bar), “New Menu”, New Item”, “Move Up”, “Move Down”, “Restore System Configuration”.
 	settings: The search box in System Settings displays “Search…” next to the magnifier.
 	settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
 	settings: mouse - The Cinnamon drag threshold and GTK drag threshold input boxes are not aligned to each other but appended to the end of the wording. They should be aligned as per other similar examples in the Cinnamon Control Centre.
@@ -69,7 +55,6 @@ Cinnammon
 	applets: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet…				
 	cinnamon: Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu 				
 	cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
-	cinnamon-settings: in French http://imagebin.org/277997
 	Creating a user without password (stupid but nothing prevents it): impossible for that user to set one himself in Account Details.
 	In the “Users and Groups”, when on “Groups” tab, it could be great to have a way to see the members of a selected group and add new members to the group as well. Currently, we can only edit the group name…
  	Feature request: if a create a luncher on my desktop, I can select an icon for it (with preview)… instead, if a modify a launcher in the menu with the “menu editor”, I can select a different icon but without preview. Can you please add the preview feature?
@@ -79,9 +64,7 @@ Cinnammon
 	llvmpiped session after a suspend-resume
 	In gThumb, select a picture, right-click on it, select “Set as Desktop Background”, once applied, click the “Preferences” button on the green banner that just appeared at the bottom of the gThumb window and you’ll get the error message “Failed to execute child process “gnome-control-center” (No such file or directory)”	
 	cinnamon: Having links of files/folders on desktop from another hardrive at startup, then mounting the drive will usually crash then restart Cinnamon
-	Cinnamon menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
-	l10n: In System Settings\Windows the options (Toggle Shade etc.) for the first four entries are not translated.
-	l10n: In System Settings\Fonts “None”, “Greyscale”, “Slight”, “Medium” and “Full” are not translated to Danish though Danish is 100% translated.
+	Cinnamon menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.	
 	ibus support		
 			http://pkgs.fedoraproject.org/cgit/cinnamon-settings-daemon.git/plain/keyboard.patch 
 			http://pkgs.fedoraproject.org/cgit/cinnamon-control-center.git/plain/region.patch 
@@ -105,7 +88,6 @@ MATE
 	The MATE user admin program (mate-users-admin), when setting a user’s type to “Administrative”, does not add the user to the “sudo” group. The workaround is to explicitly add the user to the sudo group
 	‘mate-screensaver’ still as flaky as it was in lm15 MATE 64-bit. Set to ‘Lock screen when screensaver is active’ sometimes upon resume after suspend I get a prompt for my password, other times NOT.
 	MPRIS support
-	marco: Java apps are almost unusable when maximized. http://forums.linuxmint.com/viewtopic.php?f=47&t=112470&p=709183 https://bugzilla.redhat.com/show_bug.cgi?id=918055 (won't fix in MATE, will try to convince the team or patch Marco in Mint 17)
 	mate-system-monitor under resourses doesn’t look great with the default GTK theme (need to give the notebook at widget class name or style name so we can make it flat in Mint-X, alternatively, we could try and make the cairo elements transparent)
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	caja: dng and raw images thumbnails in caja
@@ -122,9 +104,4 @@ LMDE
 
 Post 17
 --------
-	cinnamon: consider using "XDG_MENU_PREFIX=cinnamon- alacarte" instead of cme - coordinate with upstream to get cme improvements into alacarte
-	cinnamon: port cinnamon-menu-editor fixes to alacarte upstream
-	cinnamon: switch to Cinnamon XDG name
-	uxa: switch to UXA apps in Cinnamon, MATE and Xfce editions
 	revive Giver project?
-	integrate user guide in yelp help content

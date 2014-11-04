@@ -27,17 +27,20 @@ Consider for Mint 17.1
 
 Todo for Mint 17.1
 ------------------
+
 	artwork
 		rebecca backgrounds
 		grub background and full screen?
 		full screen bootsplash? check how it's done in Ubuntu
+
 	live
 		rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 		see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
 		[RFT] set up build system to build with updates
 		[RFT] guarantee the same version of Firefox-l10n as Firefox itself is installed post-install
 		select the new kernel for Rebecca
-		theme plymouth
+		[RFT] theme plymouth
+		pin base-files?
 
 	ubiquity
 		https://bugs.launchpad.net/linuxmint/+bug/1325786	
@@ -45,6 +48,8 @@ Todo for Mint 17.1
 		import upstream fixes
 		fix installation for Swiss German users (fixed upstream https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1182784)
 		make sure LC_TIME follows language choice, not timezone selection
+		mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196
+
 	package selection / configuration
 		switch to fonts-noto
 		[RFT] firefox: don't preset browser.showQuitWarning
@@ -53,12 +58,12 @@ Todo for Mint 17.1
 	cinnamon		
 		fix regression on umounting HDD in Nemo
 		fix regression not possible to use Super_R for keyboard shortcuts
+		fix regression, keybindings loss during upgrade
 		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
 		update cinnamon-translations
 			
 	mate
-		[RFT] mate 1.8.x
-		mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196
+		[RFT] mate 1.8.x http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/	
 
 	kde
 		[RFT] kde 4.14
@@ -73,9 +78,8 @@ Todo for Mint 17.1
 	mint tools
 		[RFT] mintinstall: should separate impacts between installs and removals
 		[RFT] mintinstall: removing gnupg removes apt.. the info is there but it's far from obvious enough!
-		mintstick: Add % completion to window title
+		[RFT] mintstick: Add % completion to window title
 		mintsystem: add APT priority definitions for known PPAs and repositories
-		mintsystem: make "apt download" download dependencies to the ./pkgname directory		
 		mintdoc: finish user guide, package it etc..
 		update mint-translations
 	
@@ -83,15 +87,9 @@ Todo for Mint 17.1
 		rel_notes
 		start page
 		migrate documentation to mintdoc
-
-	mate
-		http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/
 		
 	upgrade path
-		implement visual upgrade path for Mint 17 users
-		folder-color-switcher
-		user-guide
-		nemo-emblems	
+		implement visual upgrade path for Mint 17 users (use mint-meta as a precondition)		
 
 Done:
 -----
@@ -107,6 +105,7 @@ Done:
 		retry mechanism on timeout, remove erroneous mirrors from the list
 	mintsystem
 		pastebin command
+		search now uses current folder by default
 	cinnamon
 		cjs rebase
 		super+e opens home

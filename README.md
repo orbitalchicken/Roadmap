@@ -18,48 +18,40 @@ Consider for Mint 17.1
 ----------------------
 	kde: MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
 	xfce: revive xfapplet
-	mdm: When loging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
+	mdm: When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
 	mate: make compiz work out of the box?
 	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
 	The power button set to “shut down immediately” still ‘asks’
 	remove modemmanager?
-	bring back hardinfo?
 
 Todo for Mint 17.1
 ------------------
 
 	artwork
 		rebecca backgrounds
-		grub background and full screen?
-		full screen bootsplash? check how it's done in Ubuntu
 
 	live
-		rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
-		see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
-		[RFT] set up build system to build with updates
-		[RFT] guarantee the same version of Firefox-l10n as Firefox itself is installed post-install
+		[Fred] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
+		[Fred] see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
 		select the new kernel for Rebecca
-		[RFT] theme plymouth
 		pin base-files?
+		plymouth doesn't look centered/nice
+		mdm + mdm-themes aren't up to date
+		re-move firefox-fr to version 33
 
 	ubiquity
-		https://bugs.launchpad.net/linuxmint/+bug/1325786	
-		keyboard layout selection sets itself back to EN when no click is done in the table
-		import upstream fixes
-		fix installation for Swiss German users (fixed upstream https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1182784)
-		make sure LC_TIME follows language choice, not timezone selection
-		mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196
-
-	package selection / configuration
-		switch to fonts-noto
-		[RFT] firefox: don't preset browser.showQuitWarning
-		consider installing timeshift
+		[RFT] fix KDE UI sidebar layout
+		[RFT] fix installation for Swiss German users (fixed upstream https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1182784)
+		[RFT] make sure LC_TIME follows language choice, not timezone selection
+		[RFT] mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196
 
 	cinnamon		
 		fix regression on umounting HDD in Nemo
 		fix regression not possible to use Super_R for keyboard shortcuts
 		fix regression, keybindings loss during upgrade
+		fix regression in nemo (missing history context menu on <- and -> nav buttons in the toolbar) https://github.com/linuxmint/nemo/issues/754
 		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
+		fix regression on nemo https://github.com/linuxmint/nemo/issues/757
 		update cinnamon-translations
 			
 	mate
@@ -75,13 +67,14 @@ Todo for Mint 17.1
 
 	indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030	
 		
-	mint tools
-		[RFT] mintinstall: should separate impacts between installs and removals
-		[RFT] mintinstall: removing gnupg removes apt.. the info is there but it's far from obvious enough!
+	mint tools		
 		[RFT] mintstick: Add % completion to window title
 		mintsystem: add APT priority definitions for known PPAs and repositories
 		mintdoc: finish user guide, package it etc..
 		update mint-translations
+		mintmenu PRs and issues
+		mintsystem
+		mint-mirrors
 	
 	docs
 		rel_notes
@@ -144,13 +137,21 @@ Done:
 		better mdmsetup
 		slideshow in mint-x
 		.xsession-errors limit and filtering			
-		include more HTML themes			
+		include more HTML themes
+		syndaemon called in Init
+		filter and limit .xsession-errors
+		pam_kwallet			
 	user guide
 	mintlocale
 		new UI
 		regional settings
 		im support
 		handle all locales, not just UTF-8
+	mintinstall
+		separates impacts between installs and removals
+		warns about removals
+	artwork
+		Noto Fonts
 
 LMDE
 ----

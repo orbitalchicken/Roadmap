@@ -20,7 +20,6 @@ Consider for Mint 17.1
 	xfce: revive xfapplet
 	mdm: When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
 	mate: make compiz work out of the box?
-	Nemo conflicts with fcitx, the best chinese input method. I can’t rename anything in Nemo with fcitx.
 	The power button set to “shut down immediately” still ‘asks’
 	remove modemmanager?
 
@@ -28,26 +27,23 @@ Todo for Mint 17.1
 ------------------
 
 	artwork
-		rebecca backgrounds
+		[RFT] rebecca backgrounds
+		plymouth doesn't look centered/nice
 
 	live
 		[Fred] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 		[Fred] see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
 		select the new kernel for Rebecca
 		pin base-files?
-		plymouth doesn't look centered/nice
-		mdm + mdm-themes aren't up to date
-		re-move firefox-fr to version 33
+		[RFT] mdm + mdm-themes aren't up to date
 
 	ubiquity
 		[RFT] fix KDE UI sidebar layout
 		[RFT] fix installation for Swiss German users (fixed upstream https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1182784)
 		[RFT] make sure LC_TIME follows language choice, not timezone selection
-		[RFT] mint 17 mate 32 edition: screensaver kicks in during install... port this to Mint https://github.com/linuxmint/live-installer/blob/master/usr/lib/live-installer/frontend/gtk_interface.py#L196
 
 	cinnamon		
 		fix regression on umounting HDD in Nemo
-		fix regression not possible to use Super_R for keyboard shortcuts
 		fix regression, keybindings loss during upgrade
 		fix regression in nemo (missing history context menu on <- and -> nav buttons in the toolbar) https://github.com/linuxmint/nemo/issues/754
 		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
@@ -68,7 +64,6 @@ Todo for Mint 17.1
 	indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030	
 		
 	mint tools		
-		[RFT] mintstick: Add % completion to window title
 		mintsystem: add APT priority definitions for known PPAs and repositories
 		mintdoc: finish user guide, package it etc..
 		update mint-translations
@@ -99,6 +94,8 @@ Done:
 	mintsystem
 		pastebin command
 		search now uses current folder by default
+	mintstick
+		Added % completion in titlebar
 	cinnamon
 		cjs rebase
 		super+e opens home
@@ -164,3 +161,5 @@ LMDE
 		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
 		 fix ugly dialogs https://github.com/mate-desktop/marco/commit/42c63250abf2b4c7b1c704c907301bb5a5920b6e
 		 muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244	
+	gtk 3.14
+		https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766100

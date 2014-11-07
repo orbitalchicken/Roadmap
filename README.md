@@ -28,27 +28,24 @@ Todo for Mint 17.1
 
 	artwork
 		[RFT] rebecca backgrounds
-		plymouth doesn't look centered/nice
+		[RFT] plymouth doesn't look centered/nice
 
 	live
 		[Fred] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 		[Fred] see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
-		select the new kernel for Rebecca
+		[RFT] select the new kernel for Rebecca
 		pin base-files?
-		[RFT] mdm + mdm-themes aren't up to date
-
-	ubiquity
-		[RFT] fix KDE UI sidebar layout
-		[RFT] fix installation for Swiss German users (fixed upstream https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1182784)
-		[RFT] make sure LC_TIME follows language choice, not timezone selection
+		[RFT] mdm + mdm-themes aren't up to date	
 
 	cinnamon		
-		fix regression on umounting HDD in Nemo
-		fix regression, keybindings loss during upgrade
-		fix regression in nemo (missing history context menu on <- and -> nav buttons in the toolbar) https://github.com/linuxmint/nemo/issues/754
-		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
+		[RFT] fix regression, keybindings loss during upgrade
+		rel_notes: Add to run /usr/bin/cinnamon-desktop-migrate-mediakeys
+		[Can't reproduce] fix regression on umounting HDD in Nemo
+		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
 		fix regression on nemo https://github.com/linuxmint/nemo/issues/757
+		Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
 		update cinnamon-translations
+		bring back logout timeout
 			
 	mate
 		[RFT] mate 1.8.x http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/	

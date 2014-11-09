@@ -21,16 +21,15 @@ Consider for Mint 17.1
 	mdm: When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
 	The power button set to “shut down immediately” still ‘asks’
 	remove modemmanager?
-	merge OEM ISOs?
 	[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo
 
 Todo for Mint 17.1
 ------------------
 
 	artwork
-		mdm theme slideshow delay is too small
-		duplicate bgs in mint-backgrounds-retro vs olivia
-		default bgs still show qiana and 17
+		[RFT] mdm theme slideshow delay is too small
+		[RFT] duplicate bgs in mint-backgrounds-retro vs olivia
+		[RFT] default bgs still show qiana and 17
 		mint-themes: eclipse UI https://bugs.launchpad.net/linuxmint/+bug/1168281
 
 	live
@@ -45,6 +44,7 @@ Todo for Mint 17.1
 		Regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
 		Regression in Nemo: Misplaced rename text entry https://github.com/linuxmint/nemo/issues/757
 		Regression in Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
+		Regression: DND minifreezes..
 		update cinnamon-translations
 			
 	mate

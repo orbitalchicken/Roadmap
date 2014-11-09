@@ -19,36 +19,37 @@ Consider for Mint 17.1
 	kde: MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
 	xfce: revive xfapplet
 	mdm: When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
-	mate: make compiz work out of the box?
 	The power button set to “shut down immediately” still ‘asks’
 	remove modemmanager?
+	merge OEM ISOs?
+	[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo
 
 Todo for Mint 17.1
 ------------------
 
 	artwork
-		[RFT] rebecca backgrounds
-		[RFT] plymouth doesn't look centered/nice
+		mdm theme slideshow delay is too small
+		duplicate bgs in mint-backgrounds-retro vs olivia
+		default bgs still show qiana and 17
+		mint-themes: eclipse UI https://bugs.launchpad.net/linuxmint/+bug/1168281
 
 	live
 		[Fred] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
 		[Fred] see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
-		[RFT] select the new kernel for Rebecca
 		pin base-files?
-		[RFT] mdm + mdm-themes aren't up to date	
+		inserting live-stick, stick isn't mounted automatically in /media
+		security option not recognized
 
-	cinnamon		
-		[RFT] fix regression, keybindings loss during upgrade
-		rel_notes: Add to run /usr/bin/cinnamon-desktop-migrate-mediakeys
-		[Can't reproduce] fix regression on umounting HDD in Nemo
-		fix possible regression with mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
-		fix regression on nemo https://github.com/linuxmint/nemo/issues/757
-		Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
+	cinnamon
+		[RFT] Regression: custom keybindings lost during upgrade		
+		Regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
+		Regression in Nemo: Misplaced rename text entry https://github.com/linuxmint/nemo/issues/757
+		Regression in Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
 		update cinnamon-translations
-		bring back logout timeout
 			
 	mate
-		[RFT] mate 1.8.x http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/	
+		[RFT] mate 1.8.x http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/
+		brightness OSD doesn't work (with Marco)
 
 	kde
 		[RFT] kde 4.14
@@ -125,6 +126,8 @@ Done:
 		emblem support
 	caja
 		folder-color
+	mate
+		compiz works out of the box, ability to switch between Marco and Compiz (on compatible GPUs, doesn't work in Virtualbox)
 	mint-x
 		color variations
 	mdm

@@ -7,6 +7,8 @@ Mint 17.2
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
 	nemo: remove duplication between Eject and Safely Remove (for removable devices)	
 	hexchat: implement PR for /etc/hexchat for distro to set default list of networks https://github.com/hexchat/hexchat; http://anonscm.debian.org/cgit/collab-maint/hexchat.git/ (sney mailto:drubo@drubo.net)
+	remove modemmanager?
+	pin base-files?
 
 Mint 17
 -------	

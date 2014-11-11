@@ -8,92 +8,102 @@ Maintenance
 -----------
 	Update tapatalk API on forums
 	pkgs: unity-greeter pkg
-	modemmanager hangs at shutdown
 	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552	
-	patch for MATE: https://github.com/linuxmint/mate-packages/pull/4
 	upgrade inxi to 2.1.28
-	upgrade xfce4-whiskermenu-plugin to 1.4.0?
+	
+
+KDE/Xfce Mint 17.1
+------------------
+	common:
+		When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver		
+	kde
+		MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
+		[RFT] kde 4.14
+		black screen on logout?
+	xfce
+		revive xfapplet
+		upgrade xfce4-whiskermenu-plugin to 1.4.0?
+		compiz support ootb?
+		Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
+		Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
+		switch datetime applet to Clock applet
+		indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030	
+
+		
 
 Consider for Mint 17.1
 ----------------------
-	kde: MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
-	xfce: revive xfapplet
-	mdm: When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
-	The power button set to “shut down immediately” still ‘asks’
-	remove modemmanager?
+	
 	[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo
+	inserting live-stick, stick isn't mounted automatically in /media
 
-Todo for Mint 17.1
-------------------
-
-	artwork
-		[RFT] mdm theme slideshow delay is too small
-		[RFT] duplicate bgs in mint-backgrounds-retro vs olivia
-		[RFT] default bgs still show qiana and 17
-		mint-themes: eclipse UI https://bugs.launchpad.net/linuxmint/+bug/1168281
-
-	live
-		[Fred] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
-		[Fred] see if we can make life easier for people using nonPAE kernels (live/boot args, and take kernel updates into account)
-		pin base-files?
-		inserting live-stick, stick isn't mounted automatically in /media
-		security option not recognized
-
-	cinnamon
-		[RFT] Regression: custom keybindings lost during upgrade		
+Release Mgmt + Post-RC Mint 17.1
+--------------------------------	
+	implement visual upgrade path for Mint 17 users (use mint-meta as a precondition)		
+	cinnamon: 
+		Regression: DND minifreezes..
 		Regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
 		Regression in Nemo: Misplaced rename text entry https://github.com/linuxmint/nemo/issues/757
+		Nemo: Zoom level changes over time on its own
 		Regression in Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
-		Regression: DND minifreezes..
-		update cinnamon-translations
-			
+	[RFT] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g		
+
+
+Todo for Mint 17.1
+------------------	
+
 	mate
-		[RFT] mate 1.8.x http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/
-		brightness OSD doesn't work (with Marco)
-
-	kde
-		[RFT] kde 4.14
-
-	xfce
-		Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
-		Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
-		switch datetime applet to Clock applet	
-
-	indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030	
-		
+		[Fred] mate 1.8.x http://mate-desktop.org/blog/2014-09-29-mate-1-8-updated/
+		-- brightness OSD doesn't work (with Marco)
+						
 	mint tools		
-		mintsystem: add APT priority definitions for known PPAs and repositories
-		mintdoc: finish user guide, package it etc..
-		update mint-translations
-		mintmenu PRs and issues
-		mintsystem
-		mint-mirrors
-	
-	docs
-		rel_notes
-		start page
-		migrate documentation to mintdoc
-		
-	upgrade path
-		implement visual upgrade path for Mint 17 users (use mint-meta as a precondition)		
+		[RFT] mintsystem: add APT priority definitions for known PPAs and repositories
+
+	mintdoc
+	mint-mirrors			
+	rel_notes
+	new features	
 
 Done:
 -----
-	mintupdate:
-		kernel page redesign
-		package descriptions are now complete and l10n'd
-		proxy support in changelog retrieval
-		handle source packages, not packages
-		window no longer hides after installing updates
-	mintsources:
-		better repository names
-		test mirrors in parallel
-		retry mechanism on timeout, remove erroneous mirrors from the list
-	mintsystem
-		pastebin command
-		search now uses current folder by default
-	mintstick
-		Added % completion in titlebar
+	common
+		mintupdate:
+			kernel page redesign
+			package descriptions are now complete and l10n'd
+			proxy support in changelog retrieval
+			handle source packages, not packages
+			window no longer hides after installing updates
+		mintsources:
+			better repository names
+			test mirrors in parallel
+			retry mechanism on timeout, remove erroneous mirrors from the list
+		mintsystem
+			pastebin command
+			search now uses current folder by default
+			bash completion on apt
+		mintstick
+			Added % completion in titlebar
+		mintlocale
+			new UI
+			regional settings
+			im support
+			handle all locales, not just UTF-8
+		mintinstall
+			separates impacts between installs and removals
+			warns about removals
+		mdm
+			better mdmsetup
+			slideshow in mint-x
+			.xsession-errors limit and filtering			
+			include more HTML themes
+			syndaemon called in Init
+			filter and limit .xsession-errors		
+		artwork
+			Noto Fonts
+			color variations (cinnamon themes, gtk themes, icon themes)	
+			folder-color-switcher (caja and nemo)	
+		user guide
+
 	cinnamon
 		cjs rebase
 		super+e opens home
@@ -118,37 +128,17 @@ Done:
 		privacy settings
 		notification settings
 		better theme settings						
-	nemo
-		smarter bookmark section in sidebar
-		highlight icons on hover in sidebar
-		new toolbar UI with configurable buttons
-		folder-color
-		emblem support
-	caja
-		folder-color
+		nemo
+			smarter bookmark section in sidebar
+			highlight icons on hover in sidebar
+			new toolbar UI with configurable buttons
+			folder-color
+			emblem support
 	mate
 		compiz works out of the box, ability to switch between Marco and Compiz (on compatible GPUs, doesn't work in Virtualbox)
-	mint-x
-		color variations
-	mdm
-		better mdmsetup
-		slideshow in mint-x
-		.xsession-errors limit and filtering			
-		include more HTML themes
-		syndaemon called in Init
-		filter and limit .xsession-errors
-		pam_kwallet			
-	user guide
-	mintlocale
-		new UI
-		regional settings
-		im support
-		handle all locales, not just UTF-8
-	mintinstall
-		separates impacts between installs and removals
-		warns about removals
-	artwork
-		Noto Fonts
+
+	kde
+		pam_kwallet support in MDM
 
 LMDE
 ----

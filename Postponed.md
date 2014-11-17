@@ -18,6 +18,9 @@ Mint 17
 	
 Cinnammon
 ---------
+	menu: keywords (for searching) aren't l10n'd
+	hidpi: screensaver is all messed up
+	hidpi: hidpi setting should be in Displays, not in General
 	actual screensaver?
 	fix spacing between systray icons
 	don't show keybinding OSDs when notifications are off

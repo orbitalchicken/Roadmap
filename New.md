@@ -19,21 +19,11 @@ Cinnamon Edition - last processed comment: #59
 	- cinnamon-settings-users should not let root modify user's passwords when their home is crypted	
 	- The wireless signal strength of the networks shown changes constantly and the percentage is almost all the time wrong (weak signal networks are shown with 80+% strength and strong signal ones with low percentage).
 	- When I refresh the Applets cache, the progress windows does not appear correctly, it was just a tiny gray window in the top left corner.
-	-  I disabled the recently used Files. After that the menu gets way to wide (it reach nearly to the 17.1 on the wallpaper. There is a text in the menu that says “recently used files are disabled…” (I don’t know the correct words, i use the german language)
-	-  I can’t select an alternative mirror for the Ubuntu-Trusty repository.
-	- systray icons (reproducible with mintupdate) in bottom panel does not scale with the size of the panel. Increasing the size of the panel does not increase the Update Manager icon (even when all the other icons increase in size…yes I ticked that box :) ).
-	- The login screen always defaults to “Login” rather than the user. In my case I have one user on the system and it should default to that user so I don’t have to continually click on my user to input the password.
-	- settings/backgrounds Gradient and Picture Aspect text not aligned on the left side.
-	- settings/backgrounds Consider aligning the dropdown boxes for Gradient and Picture Aspect to each other.
-	- settings/panel Under Auto-hide panel consider aligning the two input boxes to each other (+/- milliseconds input buttons) but keep Show Delay and Hide Delay aligned with each other on the left side.
-	- settings/preferedapps Consider little bit more spacing under the Terminal dropdown to balance the window elements a bit.
-	- If I disable the desktop icons with the first checkbox in cinnamon-settings the right mousebutton does not work on the desktop anymore…
-	- On screen keyboard applet – the tray button does not send the keyboard to the tray, otherwise the applet works fine.
-	- Accessibility settings, typing, turning on-screen keyboard on or off does not appear to do anything. 
-	- Screen reader did not appear to do anything, even after installing orca.
-	- Account details: Cinnamon 17, by default link: http://s26.postimg.org/armd84n21/Screenshot_from_2014_11_17_10_04_05.png, 17.1 by default: http://s26.postimg.org/gyxr8ait5/Screenshot_from_2014_11_17_10_35_12.png
-	- If changing the mouse pointer from default white to black (e.g Adwaita), it shows up as white during startup. After login, it changes to black.
-	- Usint mint-x aqua theme when you maximize windows they go behind panel. Default theme doesn’t do this. I haven’t tried others.
+	- I disabled the recently used Files. After that the menu gets way to wide (it reach nearly to the 17.1 on the wallpaper. There is a text in the menu that says “recently used files are disabled…” (I don’t know the correct words, i use the german language)
+	- I can’t select an alternative mirror for the Ubuntu-Trusty repository.
+	- systray icons (reproducible with mintupdate) in bottom panel does not scale with the size of the panel. Increasing the size of the panel does not increase the Update Manager icon (even when all the other icons increase in size…yes I ticked that box :) ).		
+	- Screen reader did not appear to do anything, even after installing orca.	
+	- If changing the mouse pointer from default white to black (e.g Adwaita), it shows up as white during startup. After login, it changes to black.	
 
 	
 MATE Edition - last processed comment: #26

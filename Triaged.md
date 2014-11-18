@@ -2,70 +2,18 @@ Triaged reports
 
 Not a bug 
 ---------
-	L5 updates listed in the Update Manager, which others have already mentioned. Probably due to the fact that they are listed as security updates, that they are overriding the Visibility settings
-	The “tab” key cannot be used for keyboard shortcuts (as in Ctrl+Tab). Instead of registering as a shortcut, the tab key press moves the cursor focus out of the “Pick an accelerator” box, and down to the “Add custom shortcut” button.
-	cinnamon-settings: themes - inconsistent aspect ratios for thumbnails
-	Modem manager: is evil and often delays shutdown – should it be disabled by default?
-	in the appearance: you should be able to change the icon of the mouse pointer e.g. bigger or smaller, black or white, but this doesn’t work. It’s in Control Center -> Appearance Preferences -> Customize Theme -> Pointer.
+	- settings/backgrounds Consider aligning the dropdown boxes for Gradient and Picture Aspect to each other.
 
 Outside of the scope
 --------------------
-	virt-manager did not have the packages it needed on first boot.
-	Dolphin Wii Emulator is not in the repos.
+	
 
 Can't reproduce
 ---------------
-	when modifying settings in the Security Centre, I noticed that some minimized windows could not be maximized again. They were visible in the task bar but could not be selected.
-	cinnamon : the battery icon doesn’t show the percentage on the panel and i have to always click on the battery icon to show me the percentage.
-	HP D630 - Firefox address bar, the letters are replaced by grey and black squares.	
-	mate: firefox suggests mintinstall for tgz
-	mate: I can’t get any workspace switcher
-	mate: When printing something, print queue icon appears in the ‘notification area’ as expected. But then… The print queue icon gets ‘stuck’ in the notification area and becomes totally unresponsive (i.e., useless). Left or right clicks using the mouse yeild no result. Killing the ‘/usr/bin/python /usr/share/system-config-printer/scp-dbus-service.py’ process is the only way I’ve figured to get rid of the printer icon.
-	mate: You cant set display brightness on battery power mode, just on AC
-	mate: The white on black background menu is not good for anyone with other than 20/20.
-	mintlocale: mintlocale: Apply System-Wide Language – It is always displayed as ‘English, United States’, even if you change it in the list (try with Arabic - UAE)	
-	is DNS lost after suspending?
-	the data at /media/user/ doesn’t get deleted automatically when you eject the CD
-	there is lag in the package manager when you make changes to the list its slow to update the list on screen its like visual tearing this happens in any Distro that uses the Synaptic Package Manager 0.81.1 the older 0.75 builds in fine can we go back to the older version
-	there seems to be a bug in gthumb: pictures in preview are not sharpened, even if i set resolution to high in program settings.		
+	- mdm: The login screen always defaults to “Login” rather than the user. In my case I have one user on the system and it should default to that user so I don’t have to continually click on my user to input the password.					
+	
 
 Upstream
 --------		
-	ubiquity: I tried installing Qiana RC Cinnamon from a USB drive using the “Erase everything” partitioning option. It erased everything all right: including the USB drive it was installing from
-	ubiquity: The installer (LM16 RC 64bit) seems to be failing during this kind of install:  Manual, / onto sdd, Mounting /home (LUKS encrypted) from hdd. It just sits there without any cpu usage or anything after putting in the username and password page. Didn’t touch the existing install at all. Did the exact same thing with the 16 64bit previously which worked flawlessly.
-	ubiquity: LUKS password steps precedes keyboard layout selection.. leading to the user blindly inputting a password that doesn't correspond to what he thinks he's typing.	
-	cairo-dock: Cairo Dock doesn’t select the openGL backend when adding to startup, even if you tell it to remember your choice when it asks. I had to manually go into Startup Applications and edit the command with cairo-dock -o for it to work
-	chromium: After each restart of the system Chromium can’t play Flash and I have to reinstall the plugin.
-	guvcview:  doesn’t record video. It just records weird stop motion kind of stuff.	
-	mate: mate-calc 1.8.0, mode advanced, not calculation correct. Example (1×10^-1)/(1×10^-2)= 10. This calculate correct. Bud 1×10^-1 / 1×10^-2 = 0.001 this is not correct, because 1×10^-1 is one number on science notation ( 1 plus function x10^y plus -1 )
-	mate: Power Management Preferences Tabs – I think the ‘General’ tab should be the first tab, rather than the third.
-	mate: ‘Copy To’ Removable Drive – I plugged in my usb drive and it would be great to be able to right-click on a file and find the removable drive in the ‘copy to’ sub menu
-	mate: System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA.
-	mate: no OSD when changing brightness
-	mate: When you choose a theme with a dark panel like Shiki-wise and enable “show hide buttons”, the panel itself changes to the dark theme, but the hide buttons keep the standard silvery look. So choosing a dark theme and enabling the hide button gives rather ugly and inconsistent results.
-	pidgin: status icon is not showing (only a placeholder) even if in the settings it’s set to always show. (I use Mint-X dark icon theme). I found a workaround for it: I have to go to Pidgin settings and then set “Never show” and “Show always” again.		
-	themes: cinnamon-screensaver: If using dark theme (I’m FlatStudioDark and I already tried with other dark theme too), there is black/dark horizontal box surrounding the clock and lock dialog. http://i.imgur.com/jrW5DoA.jpg <-- probably the theme specifying a background color for event-boxes or other containers such as gtk.Box
-	Can't install epson printer https://bugs.launchpad.net/linuxmint/+bug/1320644
-	https://bugs.launchpad.net/freetype/+bug/1310017 is a bug for Korean users, fixed but not yet released for Ubuntu 14.04. sudo add-apt-repository -y ppa:jincreator/freetype && sudo apt update && sudo apt install -y libfreetype6	
-	mate: When 1 user is logged in, and you switch to a second user, then insert a usb flash drive, Linux Mint tries to automount that flash drive on the first user’s account, instead of the second user who inserted the drive. The second user cannot access the drive unless he/she switches back to the first users account (hopefully having the password).
-	mate: system can’t remember the last backlight brightness, I need to adjust it by hand each time after reboot
-	mate: The keyboard shortcut program seems to hang when committing a new shortcut to the system. The machine doesn’t crash, but it gets stuck for nearly a minute.
-	upstart: Could not install “refracta snapshot” due to “live-config” not able to be installed. This is a deal-breaker for me as I use Refracta Tools.
-	xfce: open Preferences -> Window Manager -> Keyboard. Change Workspace2 to Alt+F2. Will be asked to replace “xfce4-appfinder –collapsed” application shortcut. Nothing happens when you do.
-	
-Upstream critical
------------------	
-	Hard freeze:
-		NVIDIA Corp c51(Geforce 6150 LE) Hard freeze
-		NVIDIA GeForce 6150SE nForce 430 (rev a2) hard freeze
-		Nvidia 256 dedicated Geforce 6150SE nForce 430 Hard freeze
-		System lock ups with NVIDIA Corporation C61 [GeForce 7025 / nForce 630a] (rev a2) --> have to use nouveau.noaccel=1
-		NVIDIA Corporation C61 [GeForce 7025 / nForce 630a] (rev a2)
-	
-	computer reboots:
-		AMD CPU + MSI Card - computer reboots https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1309578
+	- caribou: the tray button does not send the keyboard to the tray, otherwise the applet works fine.	
 
-	mouse/keyboard freeze
-		I believe I found the fix: https://bugs.launchpad.net/ubuntu/+source/nfs-utils/+bug/1270445
-		I had to blacklist rpcsec_gss_krb5. Since blacklisting and rebooting I have not had any freezes. So Happy, everything else appears to be working good.
-	

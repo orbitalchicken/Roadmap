@@ -55,8 +55,7 @@ Todo for Mint 17.1
 	cinnamon		
 		using CPU?
 
-	artwork
-		cinnamon-themes to use noto
+	artwork		
 		tomboy systray icon is black
 
 	nemo-emblems

@@ -16,13 +16,12 @@ All editions
 	
 Cinnamon Edition - last processed comment: #59
 ----------------------------------------------
-	- cinnamon-settings-users should not let root modify user's passwords when their home is crypted
-	- expo trash icon isn't sized properly
+	- cinnamon-settings-users should not let root modify user's passwords when their home is crypted	
 	- The wireless signal strength of the networks shown changes constantly and the percentage is almost all the time wrong (weak signal networks are shown with 80+% strength and strong signal ones with low percentage).
 	- When I refresh the Applets cache, the progress windows does not appear correctly, it was just a tiny gray window in the top left corner.
 	-  I disabled the recently used Files. After that the menu gets way to wide (it reach nearly to the 17.1 on the wallpaper. There is a text in the menu that says “recently used files are disabled…” (I don’t know the correct words, i use the german language)
 	-  I can’t select an alternative mirror for the Ubuntu-Trusty repository.
-	- Update Manager icon in bottom panel does not scale with the size of the panel. Increasing the size of the panel does not increase the Update Manager icon (even when all the other icons increase in size…yes I ticked that box :) ).
+	- systray icons (reproducible with mintupdate) in bottom panel does not scale with the size of the panel. Increasing the size of the panel does not increase the Update Manager icon (even when all the other icons increase in size…yes I ticked that box :) ).
 	- The login screen always defaults to “Login” rather than the user. In my case I have one user on the system and it should default to that user so I don’t have to continually click on my user to input the password.
 	- settings/backgrounds Gradient and Picture Aspect text not aligned on the left side.
 	- settings/backgrounds Consider aligning the dropdown boxes for Gradient and Picture Aspect to each other.

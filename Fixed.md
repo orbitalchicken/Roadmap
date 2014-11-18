@@ -5,6 +5,8 @@ All editions
 	
 Cinnamon Edition
 ----------------
+	- expo trash icon isn't sized properly
+	- cinnamon-themes to use noto fonts
 	
 MATE Edition
 ------------

@@ -16,8 +16,8 @@ Mint 17
 	Can’t play TS video files		
 	windows compatibility layer		
 	
-Cinnammon
----------
+Cinnamon
+--------
 	accessibility:
 		Screen reader did not appear to do anything, even after installing orca.		
 		on screen keyboard is close to unusable, redesign needed.

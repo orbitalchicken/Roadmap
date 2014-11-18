@@ -18,6 +18,9 @@ Mint 17
 	
 Cinnammon
 ---------
+	accessibility:
+		Screen reader did not appear to do anything, even after installing orca.		
+		on screen keyboard is close to unusable, redesign needed.
 	nemo: If I disable the desktop icons with the first checkbox in cinnamon-settings the right mousebutton does not work on the desktop anymore…
 	settings/panel Under Auto-hide panel consider aligning the two input boxes to each other (+/- milliseconds input buttons) but keep Show Delay and Hide Delay aligned with each other on the left side.
 	menu: keywords (for searching) aren't l10n'd

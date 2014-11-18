@@ -13,6 +13,9 @@ Cinnamon Edition
 		- Account details: Cinnamon 17, by default link: http://s26.postimg.org/armd84n21/Screenshot_from_2014_11_17_10_04_05.png, 17.1 by default: http://s26.postimg.org/gyxr8ait5/Screenshot_from_2014_11_17_10_35_12.png
 		- Accessibility settings, typing, turning on-screen keyboard on or off does not appear to do anything. 
 		- Usint mint-x aqua theme when you maximize windows they go behind panel. Default theme doesn’t do this. I haven’t tried others.
+		- I disabled the recently used Files. After that the menu gets way to wide (it reach nearly to the 17.1 on the wallpaper. There is a text in the menu that says “recently used files are disabled…” (I don’t know the correct words, i use the german language)	?
+		- systray icons (reproducible with mintupdate) in bottom panel does not scale with the size of the panel. Increasing the size of the panel does not increase the Update Manager icon (even when all the other icons increase in size…yes I ticked that box :) ).			
+		- cinnamon-settings-users should not let root modify user's passwords when their home is crypted	
 	
 MATE Edition
 ------------

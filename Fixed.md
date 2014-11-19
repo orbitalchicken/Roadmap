@@ -3,6 +3,9 @@ Fixed Issues since Mint 17.1 RC
 All editions
 ------------
 	- when resizing Software Sources window, its scale up and never scale down!
+	- LibreOffice theme is missing some sidebar icons
+	- please bring back the “Mint-X-Dark” icon set. its important for dark themes..	
+	- Help menu item launches linuxmint.com/documentation.php instead of mintdoc
 	
 Cinnamon Edition
 ----------------
@@ -24,6 +27,8 @@ Cinnamon Edition
 	
 MATE Edition
 ------------
+	- Ctrl+Alt+Backspace doesn't do anything.
+	- Caja still uses a 3 sec delay at launch. With partial fixes in systemd and caja on runtime dir issues we could probably remove this or reduce it to a single sec.	
 
 KDE Edition
 -----------

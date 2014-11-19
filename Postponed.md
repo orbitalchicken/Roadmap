@@ -9,6 +9,7 @@ Mint 17.2
 	hexchat: implement PR for /etc/hexchat for distro to set default list of networks https://github.com/hexchat/hexchat; http://anonscm.debian.org/cgit/collab-maint/hexchat.git/ (sney mailto:drubo@drubo.net)
 	remove modemmanager?
 	pin base-files?
+	for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.			
 
 Mint 17
 -------	
@@ -105,6 +106,7 @@ MATE
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	caja: dng and raw images thumbnails in caja
 	switch to default notification theme
+	mintdesktop: Use radiobuttons for marco vs compiz, with labels like "Marco (No desktop effects, compatible with all hardware)", "Compiz (Desktop effects, requires compatible hardware)"
 
 LMDE
 ----

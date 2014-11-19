@@ -18,6 +18,7 @@ Mint 17
 	
 Cinnamon
 --------
+	When I refresh the Applets cache, the progress windows does not appear correctly, it was just a tiny gray window in the top left corner.		
 	accessibility:
 		Screen reader did not appear to do anything, even after installing orca.		
 		on screen keyboard is close to unusable, redesign needed.

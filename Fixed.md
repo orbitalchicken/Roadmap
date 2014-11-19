@@ -2,6 +2,7 @@ Fixed Issues since Mint 17.1 RC
 
 All editions
 ------------
+	- when resizing Software Sources window, its scale up and never scale down!
 	
 Cinnamon Edition
 ----------------
@@ -16,6 +17,10 @@ Cinnamon Edition
 		- I disabled the recently used Files. After that the menu gets way to wide (it reach nearly to the 17.1 on the wallpaper. There is a text in the menu that says “recently used files are disabled…” (I don’t know the correct words, i use the german language)	?
 		- systray icons (reproducible with mintupdate) in bottom panel does not scale with the size of the panel. Increasing the size of the panel does not increase the Update Manager icon (even when all the other icons increase in size…yes I ticked that box :) ).			
 		- cinnamon-settings-users should not let root modify user's passwords when their home is crypted	
+		- mdm:
+			- mdmsetup Under the Welcome Message the text input area for Custom should align on the left hand side with the ‘Welcome’ text above it. Either ‘Welcome’ should be moved to the right or the text input area increased to the left to get the correct alignment.
+			- mdm https://github.com/linuxmint/mdm/pull/127
+
 	
 MATE Edition
 ------------

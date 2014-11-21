@@ -26,6 +26,7 @@ Upstream
 	- gcin couldn’t apply the change of its input method settings, and also the CTRL+SPACE(combine keys that used change bwtween English and Chinese input method) didn’t work well seems these could be fixed by simply update the gcin to ver 2.8.2 --> Please create an issue on github.com/linuxmint/mintlocale. We need directions to reproduce this.
 	- mate:
 		- a simple ctrl-alt-t shortcut by default for the terminal
-		- alt-mouse wheel desktop zoom	
+		- alt-mouse wheel desktop zoom
 		- Flash video in website doesn't inhibit monitor turning itself off	(https://github.com/mate-desktop/mate-screensaver/issues/57)
+		- brightness OSD doesn't work (with Marco) https://github.com/mate-desktop/mate-power-manager/issues/110
 	- Compiz GTK decorator segfaults in Virtualbox

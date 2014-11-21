@@ -10,6 +10,11 @@ Mint 17.2
 	remove modemmanager?
 	pin base-files?
 	for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.			
+	- mintmenu: 
+		After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
+		Please add a "delete selection" Button for the Search-Field.
+		Sometimes at first launch, icons don't appear.
+	mintupdate: safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages)	
 
 Mint 17
 -------	

@@ -6,6 +6,7 @@ All editions
 	- LibreOffice theme is missing some sidebar icons
 	- please bring back the “Mint-X-Dark” icon set. its important for dark themes..	
 	- Help menu item launches linuxmint.com/documentation.php instead of mintdoc
+	- artwork: tomboy systray icon is black
 	
 Cinnamon Edition
 ----------------
@@ -26,6 +27,7 @@ Cinnamon Edition
 		- mdm:
 			- mdmsetup Under the Welcome Message the text input area for Custom should align on the left hand side with the ‘Welcome’ text above it. Either ‘Welcome’ should be moved to the right or the text input area increased to the left to get the correct alignment.
 			- mdm https://github.com/linuxmint/mdm/pull/127
+			- mdm greeter (in preview mode): no icon on window, no easy way to exit, title of the window is very techy...
 
 	
 MATE Edition
@@ -34,6 +36,7 @@ MATE Edition
 	- Caja still uses a 3 sec delay at launch. With partial fixes in systemd and caja on runtime dir issues we could probably remove this or reduce it to a single sec.	
 	- Can't make CCSM changes stick	
 	- mintdesktop: mate-wm-recovery doesn't always work....
+	- apturl-gtk apt://pkname doesn't show in the window list
 
 KDE Edition
 -----------

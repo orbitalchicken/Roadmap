@@ -43,30 +43,14 @@ Release Mgmt + Post-RC Mint 17.1
 	implement visual upgrade path for Mint 17 users (use mint-meta as a precondition)
 	cinnamon:
 		Regression: DND minifreezes..
-		Regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
-		[RFT] Regression in Nemo: Misplaced rename text entry https://github.com/linuxmint/nemo/issues/757
+		Regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
 		Nemo: Zoom level changes over time on its own
-		[RFT] Regression in Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
-
 
 Todo for Mint 17.1
-------------------
-
-	cinnamon		
-		using CPU?
-
-	artwork		
-		tomboy systray icon is black
-
-	nemo-emblems
-		hide ubuntuone, dropbox icons		
+------------------	
 
 	mate				
 		[Fred] be able to provide /etc/apt/preferences.d in ISO
-		[Fred] rsync-packages sync
-		-- brightness OSD doesn't work (with Marco)
-	
-	mint-mirrors
 
 Done:
 -----

@@ -19,6 +19,7 @@ Mint 17
 	
 Cinnamon
 --------
+	an option to change the mouse scroll speed for the middle wheel in Mouse and Touchpad preferences
 	When I refresh the Applets cache, the progress windows does not appear correctly, it was just a tiny gray window in the top left corner.		
 	accessibility:
 		Screen reader did not appear to do anything, even after installing orca.		

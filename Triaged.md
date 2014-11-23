@@ -15,7 +15,6 @@ Can't reproduce
 	- mdm: The login screen always defaults to “Login” rather than the user. In my case I have one user on the system and it should default to that user so I don’t have to continually click on my user to input the password.					
 	- The wireless signal strength of the networks shown changes constantly and the percentage is almost all the time wrong (weak signal networks are shown with 80+% strength and strong signal ones with low percentage).	
 	- caja exits (“normally”) on clicking “smb-network”.
-	- In Nemo when I use the option “Open as Root” appears the ROOT icons of Computer and ROOT Home on the desktop and can browse the hole computer as root from there without any password even after I closed the original Nemo.
 
 Upstream
 --------		

@@ -8,14 +8,14 @@ Maintenance
 -----------
 	Update tapatalk API on forums
 	pkgs: unity-greeter pkg
-	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552	
+	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552
 	upgrade inxi to 2.1.28
-	
+
 
 KDE/Xfce Mint 17.1
 ------------------
 	common:
-		When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver		
+		When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
 	kde
 		MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
 		[RFT] kde 4.14
@@ -27,30 +27,11 @@ KDE/Xfce Mint 17.1
 		Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
 		Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
 		switch datetime applet to Clock applet
-		indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030	
+		indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030
 
-		
-
-Consider for Mint 17.1
-----------------------
-	
-	[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo
-	inserting live-stick, stick isn't mounted automatically in /media
-
-Release Mgmt + Post-RC Mint 17.1
---------------------------------	
-	[RFT] rephrase OEM isolinux/grub option --> s/Start Linux Mint/Preinstall Linux Mint/g
-	implement visual upgrade path for Mint 17 users (use mint-meta as a precondition)
-	cinnamon:
-		Regression: DND minifreezes..
-		Regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640		
-		Nemo: Zoom level changes over time on its own
 
 Todo for Mint 17.1
-------------------	
-
-	mate				
-		[Fred] be able to provide /etc/apt/preferences.d in ISO
+------------------
 
 Done:
 -----
@@ -68,7 +49,7 @@ LMDE
 	gtk 3.12+
 		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
 		 fix ugly dialogs https://github.com/mate-desktop/marco/commit/42c63250abf2b4c7b1c704c907301bb5a5920b6e
-		 muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244	
+		 muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
 	gtk 3.14
 		https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766100
 	bring back totem-mozilla or find alternative

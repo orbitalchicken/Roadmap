@@ -11,6 +11,8 @@ All editions
 		- mdmsetup Under the Welcome Message the text input area for Custom should align on the left hand side with the ‘Welcome’ text above it. Either ‘Welcome’ should be moved to the right or the text input area increased to the left to get the correct alignment.
 		- mdm https://github.com/linuxmint/mdm/pull/127
 		- mdm greeter (in preview mode): no icon on window, no easy way to exit, title of the window is very techy...
+	- search engines - extra n in dictionnary.com?
+	- update mint-mirrors
 
 Cinnamon Edition
 ----------------
@@ -28,6 +30,9 @@ Cinnamon Edition
 	- Regression in Nemo: Misplaced rename text entry https://github.com/linuxmint/nemo/issues/757
 	- Regression in Nemo: When switching the sidebar view to tree view and back, some entries in the “Devices” category are displaced/displayed incorrectly. On mouse-over they display correctly again.
 	- In Nemo when I use the option “Open as Root” appears the ROOT icons of Computer and ROOT Home on the desktop and can browse the hole computer as root from there without any password even after I closed the original Nemo.
+	- Nemo: Zoom level changes over time on its own
+	- Regression: DND minifreezes..
+	- rel-notes: add keybinding migration script
 
 MATE Edition
 ------------
@@ -36,6 +41,9 @@ MATE Edition
 	- Can't make CCSM changes stick
 	- mintdesktop: mate-wm-recovery doesn't always work....
 	- apturl-gtk apt://pkname doesn't show in the window list
+	- There are less than half the previously available keyboard shortcuts
+	- Ctrl-Alt-t shortcut by default for the terminal
+	- Workspace Switcher preferences do not include the ability to change the number of workspaces or change the names of workspaces.
 
 KDE Edition
 -----------

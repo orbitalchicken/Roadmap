@@ -16,10 +16,10 @@ KDE/Xfce Mint 17.1
 ------------------
 	common:
 		When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
+		add support for KDE/Xfce for mint-backgrounds-*
 	kde
 		MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
 		[RFT] kde 4.14
-		black screen on logout?
 	xfce
 		revive xfapplet
 		upgrade xfce4-whiskermenu-plugin to 1.4.0?

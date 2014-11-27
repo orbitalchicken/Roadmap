@@ -31,4 +31,5 @@ Upstream
 		- Flash video in website doesn't inhibit monitor turning itself off	(https://github.com/mate-desktop/mate-screensaver/issues/57)
 		- brightness OSD doesn't work (with Marco) https://github.com/mate-desktop/mate-power-manager/issues/110
 		- Movie Player’s screensaver/display-sleep-inhibit feature (still) doesn’t work. When enabled, either the screensaver and/or Powermanager’s display-sleep feature cuts in on queue.
+		- mcc->notifications->help button doesn't work
 	- Compiz GTK decorator segfaults in Virtualbox

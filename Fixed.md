@@ -33,6 +33,9 @@ Cinnamon Edition
 	- Nemo: Zoom level changes over time on its own
 	- Regression: DND minifreezes..
 	- rel-notes: add keybinding migration script
+	- Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
+	- startup animation
+	- session properties changes not always being applied
 
 MATE Edition
 ------------

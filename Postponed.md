@@ -27,7 +27,8 @@ Mint 17
 
 Cinnamon
 --------
-	cinnamon regression in Network Settings: Not possible to setup mobile broadband? https://github.com/linuxmint/Cinnamon/issues/3640
+	cinnamon regressions in Network Settings:
+		- I can view the various wireless networks that are available and when I select one from the applet the Networking windows is opened. All networks are shown with a ‘play’ button (arrow). When I select a protected network (mine), symbol turns infinitely without connecting. http://forums.linuxmint.com/viewtopic.php?f=53&t=182608
 	session dialog runs timer even when it's disabled
 	an option to change the mouse scroll speed for the middle wheel in Mouse and Touchpad preferences
 	When I refresh the Applets cache, the progress windows does not appear correctly, it was just a tiny gray window in the top left corner.

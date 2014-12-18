@@ -18,6 +18,8 @@ Mint 17.2
 	[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo
 	inserting live-stick, stick isn't mounted automatically in /media
 	mirrors: implement mirmon? http://salixos.org/mirmon.html
+	new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/
+	kde: New icon theme / UI look and feel
 
 Mint 17
 -------

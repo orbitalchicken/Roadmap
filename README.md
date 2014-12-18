@@ -2,7 +2,7 @@ Backports
 ---------
 	x-caja-desktop fix for Maya
 	LO 4.3?
-	KDE 4.14
+	MDM session limiting backported to Maya?s
 
 Maintenance
 -----------
@@ -10,34 +10,27 @@ Maintenance
 	pkgs: unity-greeter pkg
 	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552
 	upgrade inxi to 2.1.28
+	mate: The Mate Panel right side application indicator icons and clock, and when some other icons are pinned there scramble and get switched around and stay in the middle of the Panel sometimes – when changing Desktop resolution.
 
+	[Fixed in Git] CS THEMES: breaks when thumbnails' permission is wrong (no right to read)
+	[Fixed in Git] when I try to open cinnamon-settings (after the upgrade), I only get the message “cannot import name Notify”
+	nemo: can no longer handle desktop in root session
+	clicking on the base mirror in software sources does not work
+	On MATE version I have trouble with the screenshot action.. when I press printscreen on my keyboard always freezing… same thing happen when I open screenshot app manually..
+	mintupdate - option to show security doesn't work
+	Cinnamon: can't connect to WPA enterprise
 
 KDE/Xfce Mint 17.1
 ------------------
 	common:
 		When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
 		add support for KDE/Xfce for mint-backgrounds-*
-	kde
-		MintXKDE.colors https://dl.dropboxusercontent.com/u/11675431/MintXKDE.colors http://forums.linuxmint.com/viewtopic.php?f=153&t=61241
-		[RFT] kde 4.14
+		add support for KDE/Xfce for mint-backgrounds-maya
+
 	xfce
-		revive xfapplet
-		upgrade xfce4-whiskermenu-plugin to 1.4.0?
-		compiz support ootb?
 		Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
 		Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!)
-		switch datetime applet to Clock applet
 		indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030
-
-
-Todo for Mint 17.1
-------------------
-
-Done:
------
-
-	kde
-		pam_kwallet support in MDM
 
 LMDE
 ----

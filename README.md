@@ -1,8 +1,10 @@
 Backports
 ---------
-	x-caja-desktop fix for Maya
-	LO 4.3?
-	MDM session limiting backported to Maya?s
+	Maya
+		x-caja-desktop fix
+		MDM session limiting
+	17.x
+		libreoffice 4.3 in 17.x
 
 Maintenance
 -----------
@@ -15,9 +17,8 @@ Maintenance
 	[Fixed in Git] CS THEMES: breaks when thumbnails' permission is wrong (no right to read)
 	[Fixed in Git] when I try to open cinnamon-settings (after the upgrade), I only get the message “cannot import name Notify”
 	nemo: can no longer handle desktop in root session
-	clicking on the base mirror in software sources does not work
+	clicking on the base mirror in software sources does not work https://bugs.launchpad.net/linuxmint/+bug/1400096
 	On MATE version I have trouble with the screenshot action.. when I press printscreen on my keyboard always freezing… same thing happen when I open screenshot app manually..
-	mintupdate - option to show security doesn't work
 	Cinnamon: can't connect to WPA enterprise
 
 KDE/Xfce Mint 17.1

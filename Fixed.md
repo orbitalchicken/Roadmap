@@ -50,6 +50,8 @@ MATE Edition
 
 KDE Edition
 -----------
+	- default fonts should be noto fonts
+	- Add kamera (to add support for camera:/ protocol in Dolphin)
 
 Xfce Edition
 ------------

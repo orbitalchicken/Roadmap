@@ -17,6 +17,7 @@ Can't reproduce
 	- caja exits (“normally”) on clicking “smb-network”.
 	- mate: Audio-preview causes the window in question to freeze, requiring the user to forcibly close it. Just moving the mouse pointer over the audio file is enough to cause it to lock up at times. Happens 25-50% of the time.
 	- mate: Movie Player closes without an error message when switching from full-screen. This happens with both audio & video files and whether you double-click on Movie Player or select ‘Leave Fullscreen’. Happens about 50% of the time.
+	- kde: When running the live system it sees and connects to my wireless network (WPA2/PSK) with no problems and installation proceeds normally. On reboot, it fails to connect to the same SSID — just keeps attempting to connect and asking again for the password. I reinstalled and the bug was reproducable. It does not appear to affect Mint 17 KDE however; just 17.1RC. I wonder if it might be related to the new KWallet integration.
 
 Upstream
 --------
@@ -33,3 +34,5 @@ Upstream
 		- Movie Player’s screensaver/display-sleep-inhibit feature (still) doesn’t work. When enabled, either the screensaver and/or Powermanager’s display-sleep feature cuts in on queue.
 		- mcc->notifications->help button doesn't work
 	- Compiz GTK decorator segfaults in Virtualbox
+	- kde:
+		- problem with CalDAV/CardDAV-Servers… If I create an event in KOrganizer, it only works once and then is broken (no syncing) until I delete the calendar and add it again. Works fine in 17, using tine 2.0 WebDAV-Server - https://forum.kde.org/viewtopic.php?f=261&t=124072

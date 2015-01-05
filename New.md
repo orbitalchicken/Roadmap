@@ -14,10 +14,7 @@ MATE Edition - last processed comment: #79
 
 KDE Edition - last processed comment: #54
 -----------------------------------------
-	- default fonts should be noto fonts
-	- problem with CalDAV/CardDAV-Servers… If I create an event in KOrganizer, it only works once and then is broken (no syncing) until I delete the calendar and add it again. Works fine in 17, using tine 2.0 WebDAV-Server
-	- In Mint 17 KDE, just like in Mint 16 KDE, it’s not possible to access digital cameras with camera:/ protocol in Dolhpin or in Gwenview (although this operation is the suggested one once you plug in your digital camera to the USB port). The camera protocol support is missing. The workaround is to install the “kamera” package, but it’s not easy to find out this information on the Internet. In Mint 16 KDE there was an additional problem: the camera protocol was then usable only as root. Fortunately, at least this has been fixed in Mint 17 KDE, but the overall experience is still poor on this front.
-	- When running the live system it sees and connects to my wireless network (WPA2/PSK) with no problems and installation proceeds normally. On reboot, it fails to connect to the same SSID — just keeps attempting to connect and asking again for the password. I reinstalled and the bug was reproducable. It does not appear to affect Mint 17 KDE however; just 17.1RC. I wonder if it might be related to the new KWallet integration.
+
 
 Xfce Edition - last processed comment: 63
 -----------------------------------------

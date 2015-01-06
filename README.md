@@ -4,7 +4,7 @@ Backports
 		x-caja-desktop fix
 		MDM session limiting
 	17.x
-		libreoffice 4.3 in 17.x
+		libreoffice 4.3 in 17.x 
 
 Maintenance
 -----------

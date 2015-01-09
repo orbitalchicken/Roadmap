@@ -4,7 +4,7 @@ Backports
 		x-caja-desktop fix
 		MDM session limiting
 	17.x
-		libreoffice 4.3 in 17.x 
+		libreoffice 4.3 in 17.x
 
 Maintenance
 -----------
@@ -20,6 +20,7 @@ Maintenance
 	clicking on the base mirror in software sources does not work https://bugs.launchpad.net/linuxmint/+bug/1400096
 	On MATE version I have trouble with the screenshot action.. when I press printscreen on my keyboard always freezing… same thing happen when I open screenshot app manually..
 	Cinnamon: can't connect to WPA enterprise
+	Cinnamon: port this https://github.com/rgcjonas/gnome-shell-extension-appindicator
 
 KDE/Xfce Mint 17.1
 ------------------

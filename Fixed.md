@@ -55,3 +55,5 @@ KDE Edition
 
 Xfce Edition
 ------------
+	- Added ctrl-alt-t for terminal also here like in mate.
+	- Screenshot utility is missing locales.

@@ -20,6 +20,8 @@ Mint 17.2
 	mirrors: implement mirmon? http://salixos.org/mirmon.html
 	new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/
 	kde: New icon theme / UI look and feel
+	mintupdate: Upgrade tool, forcing people to click links is annoying everybody
+	nemo video thumbnails are blurry https://github.com/linuxmint/nemo/issues/825
 
 Mint 17
 -------
@@ -121,15 +123,6 @@ MATE
 	caja: dng and raw images thumbnails in caja
 	switch to default notification theme
 	mintdesktop: Use radiobuttons for marco vs compiz, with labels like "Marco (No desktop effects, compatible with all hardware)", "Compiz (Desktop effects, requires compatible hardware)"
-
-LMDE
-----
-	Review live-installer from Tanglu (https://gitorious.org/tanglu/tanglu-live-installer) and Manjaro (http://git.manjaro.org/core/live-installer)
-	Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
-	Triple mint-fortune issue with bash.bashrc
-	Systemd runtime dir with gksu/pkexec
-	XFS won't boot because of missing fsck.xfs https://bugs.launchpad.net/bugs/1322164
-	check fsck presence for ALL other FS'es
 
 Post 17
 --------

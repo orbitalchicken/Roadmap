@@ -13,14 +13,14 @@ Maintenance
 	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552
 	upgrade inxi to 2.1.28
 	mate: The Mate Panel right side application indicator icons and clock, and when some other icons are pinned there scramble and get switched around and stay in the middle of the Panel sometimes – when changing Desktop resolution.
-
-	[Fixed in Git] CS THEMES: breaks when thumbnails' permission is wrong (no right to read)
-	[Fixed in Git] when I try to open cinnamon-settings (after the upgrade), I only get the message “cannot import name Notify”
+	MDM: reinterpret "default" session.. DESKTOP_SESSION should be set properly
 	nemo: can no longer handle desktop in root session
-	clicking on the base mirror in software sources does not work https://bugs.launchpad.net/linuxmint/+bug/1400096
 	On MATE version I have trouble with the screenshot action.. when I press printscreen on my keyboard always freezing… same thing happen when I open screenshot app manually..
 	Cinnamon: can't connect to WPA enterprise
 	Cinnamon: port this https://github.com/rgcjonas/gnome-shell-extension-appindicator
+	kdeenlive: missing german translations
+	mintupdate: possibility to turn on a automatic disapear of the Update Manager window after it's successful done
+	kodi/xbmc instructions tell people to install python-software-properties and software-properties-common
 
 KDE/Xfce Mint 17.1
 ------------------
@@ -48,3 +48,34 @@ LMDE
 	gtk 3.14
 		https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766100
 	bring back totem-mozilla or find alternative
+
+	grub title isn't right
+	gnome-terminal needs to be downgraded to 3.6
+	patch/remove/downgrade CSD applications
+		gcalc
+		evince
+		system-monitor
+		fileroller
+		gedit
+	live-installer
+		PRs
+		multi-hdd install
+		Review live-installer from Tanglu (https://gitorious.org/tanglu/tanglu-live-installer) and Manjaro (http://git.manjaro.org/core/live-installer)
+		Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
+	cinnamon
+		settings->backgrounds doesn't list backgrounds
+	packages
+		backgrounds galore missing
+	yahoo urls are obsolete
+	imagemagik shows up in the menu
+	isolinux still points to initrd.img (we moved to lzma)
+	Gtk
+		Apply 17.x sauce
+		Remove CSD from dialogs
+	Fix yelp ala 17.x
+	System
+		Add ecryptfs and other crypt packages?
+		Triple mint-fortune issue with bash.bashrc
+		check fsck presence for ALL other FS'es
+		XFS won't boot because of missing fsck.xfs https://bugs.launchpad.net/bugs/1322164
+		Consider removing libpam-systemd

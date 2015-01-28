@@ -49,14 +49,12 @@ LMDE
 		https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766100
 	bring back totem-mozilla or find alternative
 
-	grub title isn't right
-	gnome-terminal needs to be downgraded to 3.6
 	patch/remove/downgrade CSD applications
 		gcalc
 		evince
 		system-monitor
 		fileroller
-		gedit
+	fix gedit-plugins
 	live-installer
 		PRs
 		multi-hdd install
@@ -64,18 +62,23 @@ LMDE
 		Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
 	cinnamon
 		settings->backgrounds doesn't list backgrounds
+		muffin: context menu on CSD titlebars https://github.com/linuxmint/muffin/commit/57680ced5d0989ff0810317e4ff0e2333b449488
 	packages
 		backgrounds galore missing
 	yahoo urls are obsolete
 	imagemagik shows up in the menu
+	gdebi is in the menu
 	isolinux still points to initrd.img (we moved to lzma)
 	Gtk
 		Apply 17.x sauce
 		Remove CSD from dialogs
 	Fix yelp ala 17.x
 	System
+		grub title isn't right
 		Add ecryptfs and other crypt packages?
 		Triple mint-fortune issue with bash.bashrc
 		check fsck presence for ALL other FS'es
 		XFS won't boot because of missing fsck.xfs https://bugs.launchpad.net/bugs/1322164
 		Consider removing libpam-systemd
+		Don't show error codes in bash prompt
+		isolinux: localboot won't work (chain it?)

@@ -57,7 +57,7 @@ LMDE
 	fix gedit-plugins
 	live-installer
 		PRs
-		multi-hdd install
+		[RFT] multi-hdd install
 		Review live-installer from Tanglu (https://gitorious.org/tanglu/tanglu-live-installer) and Manjaro (http://git.manjaro.org/core/live-installer)
 		Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
 	cinnamon
@@ -68,7 +68,6 @@ LMDE
 	yahoo urls are obsolete
 	imagemagik shows up in the menu
 	gdebi is in the menu
-	isolinux still points to initrd.img (we moved to lzma)
 	Gtk
 		Apply 17.x sauce
 		Remove CSD from dialogs
@@ -77,9 +76,17 @@ LMDE
 		grub title isn't right
 		Add ecryptfs and other crypt packages?
 		Triple mint-fortune issue with bash.bashrc
-		check fsck presence for ALL other FS'es
-		XFS won't boot because of missing fsck.xfs https://bugs.launchpad.net/bugs/1322164
 		Don't show error codes in bash prompt
-		isolinux: localboot won't work (chain it?)
-		when live-installer removes live packages, it switches the init system from sysv to systemd
-		installer seems to fail updating initramfs when the ISO is built with LZMA compression
+		isolinux title is "Welcome to Linux Mint Cinnamon 64-bit (2)"
+		installer isn't present on desktop
+		[RFT] broadcom support in local repository
+		do we want/need logind?
+	Installer
+		window isn't centered
+		black border around keyboard layout picture
+		username field isn't focused when page shows up
+		add the ability to encrypt the home directory?
+		install broadcom driver automatically?
+		remove expert mode?
+		improve header look
+		slideshow is broken (and fugly :))

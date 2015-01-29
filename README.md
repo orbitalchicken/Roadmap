@@ -79,6 +79,7 @@ LMDE
 		Triple mint-fortune issue with bash.bashrc
 		check fsck presence for ALL other FS'es
 		XFS won't boot because of missing fsck.xfs https://bugs.launchpad.net/bugs/1322164
-		Consider removing libpam-systemd
 		Don't show error codes in bash prompt
 		isolinux: localboot won't work (chain it?)
+		when live-installer removes live packages, it switches the init system from sysv to systemd
+		installer seems to fail updating initramfs when the ISO is built with LZMA compression

@@ -127,3 +127,7 @@ MATE
 Post 17
 --------
 	revive Giver project?
+
+LMDE
+----
+	add the ability to encrypt the home directory

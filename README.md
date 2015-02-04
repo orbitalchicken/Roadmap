@@ -4,7 +4,7 @@ Backports
 		x-caja-desktop fix
 		MDM session limiting
 	17.x
-		libreoffice 4.3 in 17.x
+		libreoffice 4.4 in 17.x
 
 Maintenance
 -----------
@@ -26,8 +26,6 @@ KDE/Xfce Mint 17.1
 ------------------
 	common:
 		When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver
-		add support for KDE/Xfce for mint-backgrounds-*
-		add support for KDE/Xfce for mint-backgrounds-maya
 
 	xfce
 		Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
@@ -36,57 +34,37 @@ KDE/Xfce Mint 17.1
 
 LMDE
 ----
-	update virtualbox
 	update synaptic adjustment in mintsystem for lmde
-	live-installer: turn avatar selector into a nicer widget ala cinnamon-settings account details
-	live-installer: check free space on /target before installing
-	glib 2.41 regression on mutex, PRs for mint tools and/or fix in GTK 3.14.1 and waiting for GTK2 fix https://github.com/GNOME/gtk/commit/fbf38d16bcc26630f0f721d266509f5bc292f606
-	gtk 3.12+
-		 invisible checkboxes, too thin horizontal progressbar, and gtk-warnings about symbolic icons in an "open file" dialog.
-		 fix ugly dialogs https://github.com/mate-desktop/marco/commit/42c63250abf2b4c7b1c704c907301bb5a5920b6e
-		 muffin: do we need this https://git.gnome.org/browse/metacity/commit/?id=a6b29b2d2f6a7787c59cfffdc2bed1b5b5b99244
-	gtk 3.14
-		https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766100
-	bring back totem-mozilla or find alternative
 
 	patch/remove/downgrade CSD applications
 		gcalc
 		evince
-		system-monitor
 		fileroller
 	fix gedit-plugins
-	live-installer
-		PRs
-		[RFT] multi-hdd install
-		Review live-installer from Tanglu (https://gitorious.org/tanglu/tanglu-live-installer) and Manjaro (http://git.manjaro.org/core/live-installer)
-		Review Cinnarch installer (https://github.com/Antergos/Cnchi) and Manjaro fork (https://github.com/manjaro/thus)
 	cinnamon
 		settings->backgrounds doesn't list backgrounds
-		muffin: context menu on CSD titlebars https://github.com/linuxmint/muffin/commit/57680ced5d0989ff0810317e4ff0e2333b449488
-	packages
-		backgrounds galore missing
-	yahoo urls are obsolete
-	imagemagik shows up in the menu
-	gdebi is in the menu
 	Gtk
 		Apply 17.x sauce
-		Remove CSD from dialogs
-	Fix yelp ala 17.x
+		theme CSD in Mint-X to look like our metacity windows
+		menu issue (visible with send-to-email nemo action) fixed in GTK 3.14.8 https://github.com/GNOME/gtk/commit/9466e8926d54798722b780de16128ed2bbf1f2ed
+	Firefox
+		yahoo urls are obsolete
+		yahoo is missing in en_US
 	System
 		grub title isn't right
-		Add ecryptfs and other crypt packages?
-		Triple mint-fortune issue with bash.bashrc
-		Don't show error codes in bash prompt
-		isolinux title is "Welcome to Linux Mint Cinnamon 64-bit (2)"
-		installer isn't present on desktop
-		[RFT] broadcom support in local repository
-		do we want/need logind?
 	Installer
-		window isn't centered
-		black border around keyboard layout picture
-		username field isn't focused when page shows up
-		add the ability to encrypt the home directory?
-		install broadcom driver automatically?
-		remove expert mode?
-		improve header look
 		slideshow is broken (and fugly :))
+		l10n
+		check free space on /target before installing
+	apps
+		missing VLC
+		bring back totem-mozilla or find alternative
+
+	missing thumbs for text files
+
+17.2
+----
+	Firefox
+		disable telemetry/reset/etc notifications
+	update bash.bashrc and .bashrc
+	support broadcom ootb

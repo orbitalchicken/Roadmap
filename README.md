@@ -48,21 +48,7 @@ LMDE
 		Remove mplayer
 	    Downgrade totem
 	    Quicktime playback not working
-	    Add gnome-disk-utility
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
-	    live-installer l10n: missing translations for:
-	        Log in automatically on system boot
-	        This will be shown in the About Me application
-	        Browse for more pictures (possibly also the string used for webcam capture)
-	        Click to change your picture
-	        Edit (partitioning context menu)
-	        Assign To (partitioning context menu)
-	        GB (sizes unit in free space column and size colum)
-	        Please select a root (/) partition.
-	        Please select an EFI partition.
-	        Copying (in installation step)
-	        Installation is now complete. Do you want..etc..
-	    live-installer: Mode Expert button isn't aligned properly
 	    grub: menu name isn't right
 	    help: User Guide is for Linux Mint 17
 	    ff: start page should be betsy not debian
@@ -70,7 +56,24 @@ LMDE
 	    No kernel metapackage and kernel selection in mintupdate isn't adapted to LMDE
 	    Hexchat doesn't autoconnect to #linuxmint-help
 	    plymouth: boot logo doesn't show up properly (might be specific to virtualbox)
-	    packages: vim should be removed
+	    [RFT] Add gnome-disk-utility
+	    [RFT] packages: vim should be removed
+	    [Fixed in Git, needs new version of live-installer and mint-translations] live-installer l10n: missing translations for:
+	        [Fixed] Log in automatically on system boot
+	        [Fixed] This will be shown in the About Me application
+	        [Fixed] Please select a root (/) partition.
+	        [Fixed] Please select an EFI partition.
+	        [Fixed] Installation is now complete. Do you want..etc..
+	        [Fixed in Git] Browse for more pictures (possibly also the string used for webcam capture)
+	        [Fixed in Git] Click to change your picture
+	        [Fixed in Git] Edit (partitioning context menu)
+	        [Fixed in Git] Assign To (partitioning context menu)
+	        [Fixed in Git] GB (sizes unit in free space column and size colum)
+	        [Fixed in Git] Mount Point (edit dialog)
+	        [Fixed in Git] Format as (edit dialog)
+	        [Fixed in Git] Copying (in installation step)
+	        [Fixed in Git] Formatting (in installation step)
+	    [Fixed in Git] live-installer: Mode Expert button isn't aligned properly
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth
@@ -90,8 +93,8 @@ LMDE
 	    compiz integration missing
 	    bash: prompt isn't set properly
 	    caja: it looks like caja briefly dies at session start just before reappearing again
-	    mintmenu: one slot is empty in the favorites
 	    marco: CSD are not properly rounded
+	    [Fixed] mintmenu: one slot is empty in the favorites
 
 17.2
 ----

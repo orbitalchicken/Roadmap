@@ -131,3 +131,5 @@ Post 17
 LMDE
 ----
 	add the ability to encrypt the home directory
+    Localization of the installer slideshow
+    Live media isn't ejected at live session shutdown

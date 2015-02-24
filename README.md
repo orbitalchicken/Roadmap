@@ -5,6 +5,8 @@ Backports
 		MDM session limiting
 	17.x
 		libreoffice 4.4 in 17.x
+		inkscape 0.9.1
+
 
 Maintenance
 -----------
@@ -34,33 +36,62 @@ KDE/Xfce Mint 17.1
 
 LMDE
 ----
-	update synaptic adjustment in mintsystem for lmde
-
-	patch/remove/downgrade CSD applications
-		gcalc
-		evince
-		fileroller
-	fix gedit-plugins
-	cinnamon
-		settings->backgrounds doesn't list backgrounds
-	Gtk
-		Apply 17.x sauce
-		theme CSD in Mint-X to look like our metacity windows
-		menu issue (visible with send-to-email nemo action) fixed in GTK 3.14.8 https://github.com/GNOME/gtk/commit/9466e8926d54798722b780de16128ed2bbf1f2ed
-	Firefox
+	COMMON
+		update synaptic adjustment in mintsystem for lmde
+		fix gedit-plugins
+		gtk apply 17.x sauce
+		gtk filechooser dialogs, too much vertical space between elements in the sidebar
 		yahoo urls are obsolete
-		yahoo is missing in en_US
-	System
-		grub title isn't right
-	Installer
-		slideshow is broken (and fugly :))
-		l10n
-		check free space on /target before installing
-	apps
-		missing VLC
-		bring back totem-mozilla or find alternative
+		yahoo is missing in en_US (sometimes?)
+		mintsources: doesn't know which country http://ftp.debian.org/debian is from
+		mintsources: Common LMDE apt keys aren't added to mintsources configuration
+		Remove mplayer
+	    Downgrade totem
+	    Quicktime playback not working
+	    Add gnome-disk-utility
+	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
+	    live-installer l10n: missing translations for:
+	        Log in automatically on system boot
+	        This will be shown in the About Me application
+	        Browse for more pictures (possibly also the string used for webcam capture)
+	        Click to change your picture
+	        Edit (partitioning context menu)
+	        Assign To (partitioning context menu)
+	        GB (sizes unit in free space column and size colum)
+	        Please select a root (/) partition.
+	        Please select an EFI partition.
+	        Copying (in installation step)
+	        Installation is now complete. Do you want..etc..
+	    live-installer: Mode Expert button isn't aligned properly
+	    grub: menu name isn't right
+	    help: User Guide is for Linux Mint 17
+	    ff: start page should be betsy not debian
+	    doc: rel and rel_new pages don't exist yet
+	    No kernel metapackage and kernel selection in mintupdate isn't adapted to LMDE
+	    Hexchat doesn't autoconnect to #linuxmint-help
+	    plymouth: boot logo doesn't show up properly (might be specific to virtualbox)
+	    packages: vim should be removed
 
-	missing thumbs for text files
+	CINNAMON SPECIFIC
+		port cinnamon-bluetooth
+
+	MATE SPECIFIC
+	    mint-x-theme: mate-system-monitor isn't properly themed
+	    mate: preferred apps either not set or badly set
+		No such key 'menus-have-icons' in schema 'org.gnome.desktop.interface' as specified in override file '/usr/share/glib-2.0/schemas/mint-artwork-mate.gschema.override'; ignoring override for this key.
+	    Relogin in MDM doesn't unlock mate-screensaver
+	    Missing blueman (need to test on real HW without bt adapter, we don't want BT to show up when no adapters are present, this was the reason it wasn't present in Mint 17.x).
+	    Missing mate-user-guide
+	    Add panel launchers (like in Cinnamon)
+	    Some MATE applications don't use generic names
+	    caja: renaming a file produces a black border
+	    mime: text files are associated with LibreOffice by default
+	    mime: html files open up with thunderbird
+	    compiz integration missing
+	    bash: prompt isn't set properly
+	    caja: it looks like caja briefly dies at session start just before reappearing again
+	    mintmenu: one slot is empty in the favorites
+	    marco: CSD are not properly rounded
 
 17.2
 ----

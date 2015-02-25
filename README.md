@@ -81,17 +81,17 @@ LMDE
 	MATE SPECIFIC
 	    mint-x-theme: mate-system-monitor isn't properly themed
 	    mate: preferred apps either not set or badly set
-		No such key 'menus-have-icons' in schema 'org.gnome.desktop.interface' as specified in override file '/usr/share/glib-2.0/schemas/mint-artwork-mate.gschema.override'; ignoring override for this key.
+		[RFT] No such key 'menus-have-icons' in schema 'org.gnome.desktop.interface' as specified in override file '/usr/share/glib-2.0/schemas/mint-artwork-mate.gschema.override'; ignoring override for this key.
 	    Relogin in MDM doesn't unlock mate-screensaver
 	    Missing blueman (need to test on real HW without bt adapter, we don't want BT to show up when no adapters are present, this was the reason it wasn't present in Mint 17.x).
 	    Missing mate-user-guide
-	    Add panel launchers (like in Cinnamon)
+	    [RFT] Add panel launchers (like in Cinnamon)
 	    Some MATE applications don't use generic names
 	    caja: renaming a file produces a black border
 	    mime: text files are associated with LibreOffice by default
 	    mime: html files open up with thunderbird
 	    compiz integration missing
-	    bash: prompt isn't set properly
+	    [RFT] bash: prompt isn't set properly
 	    caja: it looks like caja briefly dies at session start just before reappearing again
 	    marco: CSD are not properly rounded
 	    [Fixed] mintmenu: one slot is empty in the favorites

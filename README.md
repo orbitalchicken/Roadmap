@@ -64,16 +64,16 @@ LMDE
 	        [Fixed] Please select a root (/) partition.
 	        [Fixed] Please select an EFI partition.
 	        [Fixed] Installation is now complete. Do you want..etc..
-	        [Fixed in Git] Browse for more pictures (possibly also the string used for webcam capture)
-	        [Fixed in Git] Click to change your picture
-	        [Fixed in Git] Edit (partitioning context menu)
-	        [Fixed in Git] Assign To (partitioning context menu)
-	        [Fixed in Git] GB (sizes unit in free space column and size colum)
-	        [Fixed in Git] Mount Point (edit dialog)
-	        [Fixed in Git] Format as (edit dialog)
-	        [Fixed in Git] Copying (in installation step)
-	        [Fixed in Git] Formatting (in installation step)
-	    [Fixed in Git] live-installer: Mode Expert button isn't aligned properly
+	        [Fixed] Browse for more pictures (possibly also the string used for webcam capture)
+	        [Fixed] Click to change your picture
+	        [Fixed] Edit (partitioning context menu)
+	        [Fixed] Assign To (partitioning context menu)
+	        [Fixed] GB (sizes unit in free space column and size colum)
+	        [Fixed] Mount Point (edit dialog)
+	        [Fixed] Format as (edit dialog)
+	        [Fixed] Copying (in installation step)
+	        [Fixed] Formatting (in installation step)
+	    [Fixed] live-installer: Mode Expert button isn't aligned properly
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth

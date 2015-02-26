@@ -123,6 +123,8 @@ MATE
 	caja: dng and raw images thumbnails in caja
 	switch to default notification theme
 	mintdesktop: Use radiobuttons for marco vs compiz, with labels like "Marco (No desktop effects, compatible with all hardware)", "Compiz (Desktop effects, requires compatible hardware)"
+    caja: renaming a file produces a black border
+
 
 Post 17
 --------

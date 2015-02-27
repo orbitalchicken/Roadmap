@@ -42,15 +42,14 @@ LMDE
 		gtk apply 17.x sauce
 		gtk filechooser dialogs, too much vertical space between elements in the sidebar
 		yahoo urls are obsolete
-		yahoo is missing in en_US (sometimes?)
+		[Fixed] yahoo is missing in en_US (sometimes?)
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
 	    grub: menu name isn't right
-	    help: User Guide is for Linux Mint 17
-	    ff: start page should be betsy not debian
-	    doc: rel and rel_new pages don't exist yet
+	    [Fixed] help: User Guide is for Linux Mint 17
+	    [Fixed] ff: start page should be betsy not debian
 	    plymouth: boot logo doesn't show up properly (might be specific to virtualbox)
-	    firefox 36
-	    thunderbird 31.5.0
+	    [Fixed] firefox 36
+	    [Fixed] thunderbird 31.5.0
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth
@@ -59,8 +58,8 @@ LMDE
 	    mate: preferred apps either not set or badly set
 	    Relogin in MDM doesn't unlock mate-screensaver
 	    Missing blueman (need to test on real HW without bt adapter, we don't want BT to show up when no adapters are present, this was the reason it wasn't present in Mint 17.x).
-	    Missing mate-user-guide
-	    Some MATE applications don't use generic names
+	    [Fixed] Missing mate-user-guide
+	    [Fixed] Some MATE applications don't use generic names
 	    mime: text files are associated with LibreOffice by default
 	    mime: html files open up with thunderbird
 	    compiz integration missing

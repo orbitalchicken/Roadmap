@@ -38,12 +38,13 @@ LMDE
 ----
 	COMMON
 		[Fixed] update synaptic adjustment in mintsystem for lmde
-		fix gedit-plugins
+		[Fixed] fix gedit-plugins
 		gtk apply 17.x sauce
 		gtk filechooser dialogs, too much vertical space between elements in the sidebar
-		yahoo urls are obsolete
+		[Fixed] yahoo urls are obsolete
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
-	    plymouth "quiet splash" makes Betsy unbootable or using broken graphics on most hardware in BIOS mode
+	    [Fixed] plymouth "quiet splash" makes Betsy unbootable or using broken graphics on most hardware in BIOS mode
+	    missing plymouth-text theme
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth

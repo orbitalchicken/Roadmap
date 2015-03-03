@@ -135,3 +135,5 @@ LMDE
 	add the ability to encrypt the home directory
     Localization of the installer slideshow
     Live media isn't ejected at live session shutdown
+    compiz integration missing
+    caja: it looks like caja briefly dies at session start just before reappearing again

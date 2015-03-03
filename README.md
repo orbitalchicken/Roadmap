@@ -37,33 +37,19 @@ KDE/Xfce Mint 17.1
 LMDE
 ----
 	COMMON
-		update synaptic adjustment in mintsystem for lmde
+		[Fixed] update synaptic adjustment in mintsystem for lmde
 		fix gedit-plugins
 		gtk apply 17.x sauce
 		gtk filechooser dialogs, too much vertical space between elements in the sidebar
 		yahoo urls are obsolete
-		[Fixed] yahoo is missing in en_US (sometimes?)
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
-	    grub: menu name isn't right
-	    [Fixed] help: User Guide is for Linux Mint 17
-	    [Fixed] ff: start page should be betsy not debian
-	    plymouth: boot logo doesn't show up properly (might be specific to virtualbox)
-	    [Fixed] firefox 36
-	    [Fixed] thunderbird 31.5.0
+	    plymouth "quiet splash" makes Betsy unbootable or using broken graphics on most hardware in BIOS mode
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth
 
 	MATE SPECIFIC
-	    mate: preferred apps either not set or badly set
 	    Relogin in MDM doesn't unlock mate-screensaver
-	    Missing blueman (need to test on real HW without bt adapter, we don't want BT to show up when no adapters are present, this was the reason it wasn't present in Mint 17.x).
-	    [Fixed] Missing mate-user-guide
-	    [Fixed] Some MATE applications don't use generic names
-	    mime: text files are associated with LibreOffice by default
-	    mime: html files open up with thunderbird
-	    compiz integration missing
-	    caja: it looks like caja briefly dies at session start just before reappearing again
 
 17.2
 ----
@@ -71,3 +57,4 @@ LMDE
 		disable telemetry/reset/etc notifications
 	update bash.bashrc and .bashrc
 	support broadcom ootb
+	xfce 4.12

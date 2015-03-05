@@ -46,8 +46,8 @@ LMDE
 	    [Fixed] plymouth "quiet splash" makes Betsy unbootable or using broken graphics on most hardware in BIOS mode
 	    missing plymouth-text theme
 	    [Fixed] adding missing libpam-gnome-keyring results in being unable to login https://github.com/linuxmint/mdm/issues/92
-	    fstab is incorrect post-installation http://pastebin.com/QAt9Y0BH
-	    mintlocale doesn't show flags
+	    [Fixed] fstab is incorrect post-installation http://pastebin.com/QAt9Y0BH
+	    [Fixed] mintlocale doesn't show flags when used with lightDM
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth

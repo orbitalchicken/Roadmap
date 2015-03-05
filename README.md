@@ -45,7 +45,9 @@ LMDE
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
 	    [Fixed] plymouth "quiet splash" makes Betsy unbootable or using broken graphics on most hardware in BIOS mode
 	    missing plymouth-text theme
-	    adding missing libpam-gnome-keyring results in being unable to login https://github.com/linuxmint/mdm/issues/92
+	    [Fixed] adding missing libpam-gnome-keyring results in being unable to login https://github.com/linuxmint/mdm/issues/92
+	    fstab is incorrect post-installation http://pastebin.com/QAt9Y0BH
+	    mintlocale doesn't show flags
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth

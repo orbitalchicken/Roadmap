@@ -37,17 +37,10 @@ KDE/Xfce Mint 17.1
 LMDE
 ----
 	COMMON
-		[Fixed] update synaptic adjustment in mintsystem for lmde
-		[Fixed] fix gedit-plugins
 		gtk apply 17.x sauce
 		gtk filechooser dialogs, too much vertical space between elements in the sidebar
-		[Fixed] yahoo urls are obsolete
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
-	    [Fixed] plymouth "quiet splash" makes Betsy unbootable or using broken graphics on most hardware in BIOS mode
 	    missing plymouth-text theme
-	    [Fixed] adding missing libpam-gnome-keyring results in being unable to login https://github.com/linuxmint/mdm/issues/92
-	    [Fixed] fstab is incorrect post-installation http://pastebin.com/QAt9Y0BH
-	    [Fixed] mintlocale doesn't show flags when used with lightDM
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth

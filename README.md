@@ -20,6 +20,7 @@ Maintenance
 	On MATE version I have trouble with the screenshot action.. when I press printscreen on my keyboard always freezing… same thing happen when I open screenshot app manually..
 	Cinnamon: can't connect to WPA enterprise
 	Cinnamon: port this https://github.com/rgcjonas/gnome-shell-extension-appindicator
+	Cinnamon: factorize GVC code across multiple projects
 	kdeenlive: missing german translations
 	mintupdate: possibility to turn on a automatic disapear of the Update Manager window after it's successful done
 	kodi/xbmc instructions tell people to install python-software-properties and software-properties-common
@@ -37,7 +38,7 @@ KDE/Xfce Mint 17.1
 LMDE
 ----
 	COMMON
-		gtk apply 17.x sauce
+		[Fixed] gtk apply 17.x sauce
 		gtk filechooser dialogs, too much vertical space between elements in the sidebar
 	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
 	    missing plymouth-text theme

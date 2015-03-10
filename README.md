@@ -40,7 +40,7 @@ LMDE
 	COMMON
 		[Fixed] gtk apply 17.x sauce
 		gtk filechooser dialogs, too much vertical space between elements in the sidebar
-	    libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
+	    [Fixed] libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
 	    missing plymouth-text theme
 
 	CINNAMON SPECIFIC

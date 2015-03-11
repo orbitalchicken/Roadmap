@@ -41,12 +41,16 @@ LMDE
 		[Fixed] gtk apply 17.x sauce
 		[Fixed] gtk filechooser dialogs, too much vertical space between elements in the sidebar
 	    [Fixed] libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
+	    mintsources segfaults when choosing a base mirror
 
 	CINNAMON SPECIFIC
 		port cinnamon-bluetooth
 
 	MATE SPECIFIC
 	    [Fixed] Relogin in MDM doesn't unlock mate-screensaver
+	    [Fixed] sysmon applet launches mate-system-monitor
+	    [Fixed] remove blueman
+	    Marco doesn't provide WM context menu options for CSD apps
 
 17.2
 ----

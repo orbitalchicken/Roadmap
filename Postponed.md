@@ -137,3 +137,4 @@ LMDE
     Live media isn't ejected at live session shutdown
     compiz integration missing
     caja: it looks like caja briefly dies at session start just before reappearing again
+	missing plymouth-text theme

@@ -41,7 +41,7 @@ LMDE
 		[Fixed] gtk apply 17.x sauce
 		[Fixed] gtk filechooser dialogs, too much vertical space between elements in the sidebar
 	    [Fixed] libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
-	    mintsources segfaults when choosing a base mirror - python-pycurl timeouts
+	    [Fixed] mintsources segfaults when choosing a base mirror - python-pycurl timeouts
 	    ping only usable by root
 
 	CINNAMON SPECIFIC

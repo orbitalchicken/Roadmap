@@ -138,3 +138,4 @@ LMDE
     compiz integration missing
     caja: it looks like caja briefly dies at session start just before reappearing again
 	missing plymouth-text theme
+	Marco doesn't provide WM context menu options for CSD apps

@@ -45,13 +45,12 @@ LMDE
 	    ping only usable by root
 
 	CINNAMON SPECIFIC
-		port cinnamon-bluetooth
+		[Fixed] port cinnamon-bluetooth (added blueberry)
 
 	MATE SPECIFIC
 	    [Fixed] Relogin in MDM doesn't unlock mate-screensaver
 	    [Fixed] sysmon applet launches mate-system-monitor
-	    [Fixed] remove blueman
-	    Marco doesn't provide WM context menu options for CSD apps
+	    [Fixed] remove blueman (added blueberry)
 
 17.2
 ----

@@ -37,20 +37,17 @@ KDE/Xfce Mint 17.1
 
 LMDE
 ----
-	COMMON
-		[Fixed] gtk apply 17.x sauce
-		[Fixed] gtk filechooser dialogs, too much vertical space between elements in the sidebar
-	    [Fixed] libpam-systemd runtime dir collisions: (caja:10507): dconf-CRITICAL **: unable to create file '/run/user/1000/dconf/user': Permission non accordée.  dconf will not work properly.
-	    [Fixed] mintsources segfaults when choosing a base mirror - python-pycurl timeouts
-	    ping only usable by root
+	integrity check warns about malformed header
+	/.config/pulse present (found on MATE i386 ISO)
+	gnome-terminal freezes Cinnamon in HiDPI (fixed by https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc)
+	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
+	mintstick 100% CPU even after copy is finished
+	mintwelcome points to rel_betsy_mate and rel_betsy_cinnamon
+	live-installer doesn't manage to format partition?
 
-	CINNAMON SPECIFIC
-		[Fixed] port cinnamon-bluetooth (added blueberry)
-
-	MATE SPECIFIC
-	    [Fixed] Relogin in MDM doesn't unlock mate-screensaver
-	    [Fixed] sysmon applet launches mate-system-monitor
-	    [Fixed] remove blueman (added blueberry)
+	Cinnamon:
+		the suspend options are not in the power menu anymore, and setting the suspend timeout from System Settings –> Power Management doesn’t work. I can suspend manually from the commandline
+		Standby mode at closing lid notebook
 
 17.2
 ----

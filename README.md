@@ -42,7 +42,6 @@ LMDE
 	gnome-terminal freezes Cinnamon in HiDPI (fixed by https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc)
 	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
 	mintstick 100% CPU even after copy is finished
-	mintwelcome points to rel_betsy_mate and rel_betsy_cinnamon
 	live-installer doesn't manage to format partition?
 
 	Cinnamon:

@@ -43,10 +43,13 @@ LMDE
 	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
 	mintstick 100% CPU even after copy is finished
 	live-installer doesn't manage to format partition?
+	mintupdate changelog aren't retrieved for debian packages
 
 	Cinnamon:
-		the suspend options are not in the power menu anymore, and setting the suspend timeout from System Settings –> Power Management doesn’t work. I can suspend manually from the commandline
-		Standby mode at closing lid notebook
+		Suspend options are not in the power menu anymore [Fixed by switching CSM to logind mode]
+		Standby mode at closing lid notebook [Fixed by switching CSD to logind mode]
+		Suspend timeout doesn't do anything [Fixed by removing checks on idle timeout in CSD https://github.com/GNOME/gnome-settings-daemon/commit/32c9b5d7be4bbec52abb3547255846b6a40198f5]
+		Totem and FF-Youtube don't inhibit CSM
 
 17.2
 ----

@@ -42,17 +42,7 @@ LMDE
 	gnome-terminal freezes Cinnamon in HiDPI (fixed by https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc)
 	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
 	mintstick 100% CPU even after copy is finished
-	live-installer doesn't manage to format partition? (could be caused by mkfs->mk2efs https://github.com/linuxmint/live-installer/commit/e3b9a5144d3c2771b1de595a1607019bd974e9ad)
-	[Fixed] live-installer hangs at partitioning stage (unable to parse blkid output)
-	mintupdate changelog aren't retrieved for debian packages
-	the package ‘mint-stylish-addon’ is still broken. Please upgrade or kill it!
-
-	Cinnamon:
-		[Fixed] Suspend options are not in the power menu anymore [Fixed by switching CSM to logind mode]
-		[Fixed] Standby mode at closing lid notebook [Fixed by switching CSD to logind mode]
-		[Fixed] Suspend timeout doesn't do anything [Fixed by removing checks on idle timeout in CSD https://github.com/GNOME/gnome-settings-daemon/commit/32c9b5d7be4bbec52abb3547255846b6a40198f5]
-		Totem doesn't inhibit CSM (add totem-plugins)
-		Flash doesn't inhibit CSM [HTML5 does]
+	missing slovak language pack (something like thunderbird-l10n-sk) for Thunderbird mail client
 
 17.2
 ----

@@ -139,3 +139,4 @@ LMDE
     caja: it looks like caja briefly dies at session start just before reappearing again
 	missing plymouth-text theme
 	Marco doesn't provide WM context menu options for CSD apps
+	iphones can't be mounted (need more info on how to pull this off and with which versions of iOS?)

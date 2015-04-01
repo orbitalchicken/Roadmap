@@ -4,10 +4,10 @@ All editions
 ------------
 
 
-Cinnamon Edition - last processed comment: #67
+Cinnamon Edition - last processed comment: #95
 -----------------------------------------------
 
 
-MATE Edition - last processed comment: #63
+MATE Edition - last processed comment: #83
 ------------------------------------------
 

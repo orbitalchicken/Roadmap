@@ -37,12 +37,8 @@ KDE/Xfce Mint 17.1
 
 LMDE
 ----
-	integrity check warns about malformed header
-	/.config/pulse present (found on MATE i386 ISO)
-	gnome-terminal freezes Cinnamon in HiDPI (fixed by https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc)
-	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
-	mintstick 100% CPU even after copy is finished
-	missing slovak language pack (something like thunderbird-l10n-sk) for Thunderbird mail client
+	[Fixed] The xcursor-themes is set to adwaita cursors instead of the DMZ-White so you have inconsistent cursor colours when in mdm ie black cursor in login manager and white cursor in cinnamon.
+	[Fixed] lo start app points to missing lo base
 
 17.2
 ----
@@ -51,3 +47,4 @@ LMDE
 	update bash.bashrc and .bashrc
 	support broadcom ootb
 	xfce 4.12
+	lo start app points to missing lo-base

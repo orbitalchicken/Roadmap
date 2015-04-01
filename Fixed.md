@@ -8,6 +8,8 @@ All editions
 	mint-stylish-addon should be removed
 	mint-meta-debian-xfce and mint-meta-debian-kde should be removed
 	live-installer sometimes hangs when formating partitions
+	mintstick 100% CPU even after copy is finished
+	busy cursor when launching firefox
 
 Cinnamon Edition
 ----------------
@@ -15,6 +17,7 @@ Cinnamon Edition
 	Standby mode at closing lid notebook
 	Suspend timeout doesn't do anything
 	Totem doesn't inhibit CSM (added totem-plugins)
+	black bars in screensaver
 
 
 MATE Edition

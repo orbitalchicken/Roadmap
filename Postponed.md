@@ -140,3 +140,9 @@ LMDE
 	missing plymouth-text theme
 	Marco doesn't provide WM context menu options for CSD apps
 	iphones can't be mounted (need more info on how to pull this off and with which versions of iOS?)
+	Set the default debian repository to http.debian.net/debian instead of ftp.us.debian.org, which results in better performance for all users outside of the US
+	missing slovak language pack (something like thunderbird-l10n-sk) for Thunderbird mail client
+	gnome-terminal freezes Cinnamon in HiDPI (fixed by https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc)
+	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
+	integrity check warns about malformed header
+	/.config/pulse present (found on MATE i386 ISO)

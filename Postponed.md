@@ -146,3 +146,4 @@ LMDE
 	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
 	integrity check warns about malformed header
 	/.config/pulse present (found on MATE i386 ISO)
+	gnome-power-statistics.desktop doesn't show up in Cinnamon

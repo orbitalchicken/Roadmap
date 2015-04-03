@@ -6,6 +6,7 @@ Backports
 	17.x
 		libreoffice 4.4 in 17.x
 		inkscape 0.9.1
+		ubuntu-drivers-common can be updated to 0.2.94.7 from trusty-updates, http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/trusty/ubuntu-drivers-common/trusty-updates/changes/62?start_revid=62, https://github.com/linuxmint/ubuntu-drivers-common/commit/8677d116cc5da7facd6f170ef8b19f859be5cf5d is now upstream
 
 
 Maintenance
@@ -24,6 +25,7 @@ Maintenance
 	kdeenlive: missing german translations
 	mintupdate: possibility to turn on a automatic disapear of the Update Manager window after it's successful done
 	kodi/xbmc instructions tell people to install python-software-properties and software-properties-common
+	backport HPLIP 3.15.2
 
 KDE/Xfce Mint 17.1
 ------------------
@@ -37,8 +39,7 @@ KDE/Xfce Mint 17.1
 
 LMDE
 ----
-	[Fixed] The xcursor-themes is set to adwaita cursors instead of the DMZ-White so you have inconsistent cursor colours when in mdm ie black cursor in login manager and white cursor in cinnamon.
-	[Fixed] lo start app points to missing lo base
+
 
 17.2
 ----

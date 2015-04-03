@@ -10,6 +10,9 @@ All editions
 	live-installer sometimes hangs when formating partitions
 	mintstick 100% CPU even after copy is finished
 	busy cursor when launching firefox
+	The xcursor-themes is set to adwaita cursors instead of the DMZ-White
+	lo start app points to missing lo base
+	Add usbmuxd (to connect to IOS devices)
 
 Cinnamon Edition
 ----------------

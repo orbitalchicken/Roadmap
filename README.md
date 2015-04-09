@@ -39,6 +39,8 @@ KDE/Xfce Mint 17.1
 
 LMDE
 ----
+	Add va-driver-all to the list of installed packages (fixes black bands with Intel GPUs)
+	mintwelcome wants to install mint-meta-codecs instead of mint-meta-debian-codecs
 
 
 17.2

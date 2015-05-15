@@ -91,3 +91,5 @@ LMDE
 			nemo, do file operations in sequence, not in parallel
 			consider using search providers
 			refactor css theme to gain responsiveness
+			https://github.com/linuxmint/Cinnamon/issues/3223
+			nemo writing to .cache as root --> 100% CPU usage, mem-leaks? https://github.com/linuxmint/nemo/issues/777

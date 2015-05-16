@@ -1,7 +1,7 @@
 Improvements selected for the future
 =====================================
 
-Mint 17.2
+Mint 17.x
 ---------
 	Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin)
 	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
@@ -22,9 +22,6 @@ Mint 17.2
 	kde: New icon theme / UI look and feel
 	mintupdate: Upgrade tool, forcing people to click links is annoying everybody
 	nemo video thumbnails are blurry https://github.com/linuxmint/nemo/issues/825
-
-Mint 17
--------
 	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
 	Can’t play TS video files
 	windows compatibility layer

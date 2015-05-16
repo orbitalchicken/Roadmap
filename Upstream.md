@@ -1,4 +1,4 @@
-Bugs depending on apps outside of Mint team, many of these are solvables by the team but some others might depend on member of the other projects
+Bugs depending on apps outside of Mint, many of these are solvables by the team but some others might depend on the other projects
 
 Upstream bugs
 --------

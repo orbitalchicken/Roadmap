@@ -4,7 +4,6 @@ Other Backports
 		x-caja-desktop fix
 		MDM session limiting
 
-
 Maintenance
 -----------
 	Update tapatalk API on forums

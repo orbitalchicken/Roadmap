@@ -42,7 +42,7 @@ LMDE
 	nemo-preview should be rebuilt against jessie packages in order to depend on libmusicbrainz5-1 (instead of 5-0 which is not in jessie)
 	upgrade path:
 		Fix for gnome-terminal on hidpi https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc
-	debian-system-adjustments https://github.com/monsta/debian-system-adjustments/commits/master
+		debian-system-adjustments https://github.com/monsta/debian-system-adjustments/commits/master
 
 17.2
 ----

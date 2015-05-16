@@ -3,28 +3,38 @@ Improvements selected for the future
 
 Mint 17.x
 ---------
-	Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin)
-	Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce
-	nemo: remove duplication between Eject and Safely Remove (for removable devices)
-	hexchat: implement PR for /etc/hexchat for distro to set default list of networks https://github.com/hexchat/hexchat; http://anonscm.debian.org/cgit/collab-maint/hexchat.git/ (sney mailto:drubo@drubo.net)
-	remove modemmanager?
-	pin base-files?
-	for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
-	- mintmenu:
+	common:
+		Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin).
+		Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce.
+		new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
+		for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
+
+	nemo:
+		remove duplication between Eject and Safely Remove (for removable devices).
+		[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo.
+		video thumbnails are blurry https://github.com/linuxmint/nemo/issues/825.
+
+	internet/network:
+		hexchat: implement PR for /etc/hexchat for distro to set default list of networks https://github.com/hexchat/hexchat; http://anonscm.debian.org/cgit/collab-maint/hexchat.git/ (sney mailto:drubo@drubo.net).
+		remove modemmanager?
+		mirrors: implement mirmon? http://salixos.org/mirmon.html
+
+	mintupdate:
+		safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
+		Upgrade tool, forcing people to click links is annoying everybody.
+
+	others:
+		kde: New icon theme / UI look and feel.
+		mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
+		Can’t play TS video files.
+		windows compatibility layer.
+		pin base-files?
+		inserting live-stick, stick isn't mounted automatically in /media
+	
+	mintmenu:
 		After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
 		Please add a "delete selection" Button for the Search-Field.
 		Sometimes at first launch, icons don't appear.
-	mintupdate: safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages)
-	[Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo
-	inserting live-stick, stick isn't mounted automatically in /media
-	mirrors: implement mirmon? http://salixos.org/mirmon.html
-	new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/
-	kde: New icon theme / UI look and feel
-	mintupdate: Upgrade tool, forcing people to click links is annoying everybody
-	nemo video thumbnails are blurry https://github.com/linuxmint/nemo/issues/825
-	mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
-	Can’t play TS video files
-	windows compatibility layer
 
 Cinnamon
 --------

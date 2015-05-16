@@ -1,11 +1,8 @@
-Backports
+Other Backports
 ---------
 	Maya
 		x-caja-desktop fix
 		MDM session limiting
-	17.x
-		inkscape 0.9.1
-		ubuntu-drivers-common can be updated to 0.2.94.7 from trusty-updates, http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/trusty/ubuntu-drivers-common/trusty-updates/changes/62?start_revid=62, https://github.com/linuxmint/ubuntu-drivers-common/commit/8677d116cc5da7facd6f170ef8b19f859be5cf5d is now upstream
 
 
 Maintenance

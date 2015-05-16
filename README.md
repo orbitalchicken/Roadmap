@@ -71,6 +71,7 @@ LMDE
 		LibreOffice 4.4
 		Inkscape 0.9.1
 		HPLIP 3.15.2
+		ubuntu-drivers-common 0.2.94.7 (check http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/trusty/ubuntu-drivers-common/trusty-updates/changes/62?start_revid=62 & https://github.com/linuxmint/ubuntu-drivers-common/commit/8677d116cc5da7facd6f170ef8b19f859be5cf5d at upstream)
 
 	Xfce:
 		xfce 4.12

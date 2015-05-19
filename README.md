@@ -43,6 +43,10 @@ LMDE
 	upgrade path:
 		Fix for gnome-terminal on hidpi https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc
 	debian-system-adjustments https://github.com/monsta/debian-system-adjustments/commits/master
+	on upgrade, /etc/plymouth/plymouthd.conf -->  [Daemon]  Theme=mint-logo
+	on upgrade, logind.conf
+	on upgrade, two nm-applet?
+	on upgrade, 10_linux
 
 17.2
 ----
@@ -93,3 +97,4 @@ LMDE
 			refactor css theme to gain responsiveness
 			https://github.com/linuxmint/Cinnamon/issues/3223
 			nemo writing to .cache as root --> 100% CPU usage, mem-leaks? https://github.com/linuxmint/nemo/issues/777
+			mint-cinnamon-themes: make onscreen-keyboard semi-transparent

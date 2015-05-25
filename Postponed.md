@@ -30,7 +30,7 @@ Mint 17.x
 		windows compatibility layer.
 		pin base-files?
 		inserting live-stick, stick isn't mounted automatically in /media
-	
+
 	mintmenu:
 		After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
 		Please add a "delete selection" Button for the Search-Field.
@@ -97,10 +97,12 @@ Cinnamon
 		menu: keywords (for searching) aren't l10n'd
 		menu: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet...
 		menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
-		
+
 	other:
 		screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
 		In gThumb, select a picture, right-click on it, select “Set as Desktop Background”, once applied, click the “Preferences” button on the green banner that just appeared at the bottom of the gThumb window and you’ll get the error message “Failed to execute child process “gnome-control-center” (No such file or directory)”
+		refactor css theme to gain responsiveness.
+		consider using search providers.
 
 MATE
 ----

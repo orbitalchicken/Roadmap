@@ -88,10 +88,9 @@ LMDE
 
 	Cinnamon:
 		Cinnamon 2.6:
-			Fix network connectivity for eduroram.
-			nemo, do file operations in sequence, not in parallel.
-			consider using search providers.
-			refactor css theme to gain responsiveness.
-			https://github.com/linuxmint/Cinnamon/issues/3223.
-			nemo writing to .cache as root --> 100% CPU usage, mem-leaks? https://github.com/linuxmint/nemo/issues/777.
+			systray applet: pidgin status icon https://github.com/linuxmint/Cinnamon/issues/3223.
 			mint-cinnamon-themes: make onscreen-keyboard semi-transparent.
+			cinnamon-settings-daemon: on shutdown, the icon theme reverts to gnome before shutting down
+			calendar applet: The checkbox “Show week numbers in calendar” on Cinnamon Calendar applet settings doesn’t toggle the week number display on/off unless Cinnamon is restarted. On Cinnamon 2.4 it works without a restart (i.e. typing Cinnamon –replace in terminal).
+			network applet: VPN shows lock in network applet, but if connected automatically it doesn't show?
+			sound applet: can update position seeker every 100th of a second?

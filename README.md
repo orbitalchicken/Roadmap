@@ -88,6 +88,4 @@ LMDE
 
 	Cinnamon:
 		Cinnamon 2.6:
-			systray applet: pidgin status icon https://github.com/linuxmint/Cinnamon/issues/3223.
 			cinnamon-settings-daemon: on shutdown, the icon theme reverts to gnome before shutting down
-			sound applet: can update position seeker every 100th of a second?

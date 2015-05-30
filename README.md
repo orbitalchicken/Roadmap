@@ -53,10 +53,8 @@ LMDE
 
 	Common:
 		mintupdate:
-			option to hide/show UI after update.
 			screen when all updates are done vs empty table.
 			option to only show systray when updates are present.
-			split kernel info away from mintupdate.
 		mintinstall:
 			revamp UI.
 		software:
@@ -86,6 +84,7 @@ LMDE
 		remove all help buttons.
 		add context menu support for CSD headerbars in Marco.
 
-	Cinnamon:
-		Cinnamon 2.6:
-			cinnamon-settings-daemon: on shutdown, the icon theme reverts to gnome before shutting down
+	Cinnamon 2.6:
+		memory leak on minimize/map windows?
+		icon theme reverting to gnome on logout/login?
+		zombie screensaver processes: disable "Lock the computer when put to sleep" and "Lock the computer when the screen turns off", choose a webkit/xscreensaver, set screensaver to activate on idle timeout of 1 minute. Wait for screensaver to show up, move mouse, python screensaver process doesn't die properly (well.. parent probably doesn't ackownledge it properly)

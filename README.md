@@ -53,7 +53,3 @@ LMDE
 		add context menu support for CSD headerbars in Marco.
 		make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
 
-	TEST
-		fglrx should run as root
-		steam should close
-

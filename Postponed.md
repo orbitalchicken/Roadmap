@@ -5,7 +5,6 @@ Mint 17.x
 ---------
 	common:
 		Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin).
-		Consider porting cinnamon-bluetooth into gnome-bluetooth-frontend, for use in MATE and Xfce.
 		new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
 		for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
 
@@ -35,6 +34,9 @@ Mint 17.x
 		After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
 		Please add a "delete selection" Button for the Search-Field.
 		Sometimes at first launch, icons don't appear.
+
+	mintinstall:
+			revamp UI.
 
 Cinnamon
 --------
@@ -139,7 +141,6 @@ LMDE
 	iphones can't be mounted (need more info on how to pull this off and with which versions of iOS?)
 	Set the default debian repository to http.debian.net/debian instead of ftp.us.debian.org, which results in better performance for all users outside of the US
 	missing slovak language pack (something like thunderbird-l10n-sk) for Thunderbird mail client
-	gnome-terminal freezes Cinnamon in HiDPI (fixed by https://github.com/linuxmint/gnome-apps/commit/32e30807f98c8a5caf2cf16aedda608101cda4bc)
 	rfkill provides upstart config, but not init.d.. as a result RFKILL state isn't stored/restored
 	integrity check warns about malformed header
 	/.config/pulse present (found on MATE i386 ISO)

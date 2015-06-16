@@ -28,17 +28,13 @@ LMDE
 		logind.conf
 		two nm-applet?
 		10_linux
-	remove dep on mint-flashplugin-steam
-	add libhal-flash1 and dep on it
 	mate 1.10: add additional rename MATE desktop (take from ubuntu-system-adjustments)
 
 17.2
 ----
-	hexchat joins #linuxmint-chat and #linuxmint-help, would be better if it only joined #linuxmint-help
 	eom and mate-color-selector should go in Accessories
 	two-edge scrolling regression
 	32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
-
 
 	Xfce:
 		xfce 4.12.

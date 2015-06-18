@@ -37,7 +37,6 @@ LMDE
 	two-edge scrolling regression
 	32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
 
-	backport nvidia 346?
 
 	Xfce:
 		xfce 4.12.

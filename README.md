@@ -29,12 +29,15 @@ LMDE
 		two nm-applet?
 		10_linux
 	mate 1.10: add additional rename MATE desktop (take from ubuntu-system-adjustments)
+	history and completion in bashrc
 
 17.2
 ----
 	eom and mate-color-selector should go in Accessories
 	two-edge scrolling regression
 	32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
+
+	backport nvidia 346?
 
 	Xfce:
 		xfce 4.12.

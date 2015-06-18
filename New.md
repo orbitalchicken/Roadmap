@@ -1,13 +1,13 @@
-New bug reports in LMDE 2 Betsy RC
+New bug reports in Linux Mint 17.2 RC
 
 All editions
 ------------
 
 
-Cinnamon Edition - last processed comment: #95
------------------------------------------------
+Cinnamon Edition - last processed comment: #0
+---------------------------------------------
 
 
-MATE Edition - last processed comment: #83
+MATE Edition - last processed comment: #0
 ------------------------------------------
 

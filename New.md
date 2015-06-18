@@ -17,7 +17,6 @@ Cinnamon Edition - last processed comment: #53
 ----------------------------------------------
 	dual monitors full screen issue: https://github.com/linuxmint/Cinnamon/issues/4215
 	little issue with Settings stacks: https://github.com/linuxmint/cinnamon-control-center/issues/120
-	cinnamon-settings shows a bluetooth icon in docky
 
 
 MATE Edition - last processed comment: #32

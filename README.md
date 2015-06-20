@@ -33,10 +33,11 @@ LMDE
 
 17.2
 ----
-	eom and mate-color-selector should go in Accessories
-	two-edge scrolling regression
+	mate: eom and mate-color-selector should go in Accessories
+	cinnamon: two-edge scrolling regression
 	32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
-
+	[Fixed?] can't boot on ASUS laptops in EFI mode?
+	[Fixed] Could you enable “Copy to texture” with CCSM for solving Compiz window decorations render problem on Virtualbox.
 
 	Xfce:
 		xfce 4.12.

@@ -6,16 +6,17 @@ All editions
 	update translations
 	Add exfat support? exfat-utils exfat-fuse
 	backport nvidia 346?
+	mdm in live mode: can't log in using Mint and blank password
 
-	mintsources: Installed ppa:danielrichter2007/grub-customizer, then installed grub-customizer directly from the package list (works). Unabled PPA, downgrade foreign packages -> nothing to select from. Uninstalled PPA, refreshed APT cache -> still nothing to select from in downgrade foreign packages. Of course I can uninstall grub-customizer the old fashioned ways.
-
-
-Cinnamon Edition - last processed comment: #60
+Cinnamon Edition - last processed comment: #87
 ----------------------------------------------
 	dual monitors full screen issue: https://github.com/linuxmint/Cinnamon/issues/4215
 
+	Error with scale and expo in hot corners (tested in a VM): If you have one screen, two panels, the top hot corners don’t work (even with pointer pass through on). In 3.6.8 it’s worse than in 3.6.7.
 
-MATE Edition - last processed comment: #36
+	When attempting to connect to a WPA/WPA2-Enterprise network using either the NetworkManager panel applet or Network Settings dialogue. Expected behavior is that a configuration dialogue for security settings (identity, password, CA cert, etc.) should pop up, allowing user to configure network. NM should then connect to the network. Actual behavior is that NM displays the “connecting to network” animation but never connects, pops up the security dialogue, or gives any error message (at least in the GUI). However, configuring the same WPA2 Enterprise connection through the “Connect to a Hidden Network” dialogue (i.e., manually) works as expected.
+
+MATE Edition - last processed comment: #49
 ------------------------------------------
-	Could you enable “Copy to texture” with CCSM for solving Compiz window decorations render problem on Virtualbox.
+	epub support in atril
 

@@ -40,10 +40,8 @@ LMDE
 
 	Cinnamon:
 		When attempting to connect to a WPA/WPA2-Enterprise network using either the NetworkManager panel applet or Network Settings dialogue. Expected behavior is that a configuration dialogue for security settings (identity, password, CA cert, etc.) should pop up, allowing user to configure network. NM should then connect to the network. Actual behavior is that NM displays the “connecting to network” animation but never connects, pops up the security dialogue, or gives any error message (at least in the GUI). However, configuring the same WPA2 Enterprise connection through the “Connect to a Hidden Network” dialogue (i.e., manually) works as expected.
-		libgtkmm-2.4-1c2a is not in Cinnamon-64 post-install (it's there in the 32bit edition and in MATE 64) - This missing lib causes invisible menu options in VMware and custom themes.
+		[Fixed] libgtkmm-2.4-1c2a is not in Cinnamon-64 post-install (it's there in the 32bit edition and in MATE 64) - This missing lib causes invisible menu options in VMware and custom themes.
 
 	MATE:
-		eom and mate-color-selector should go in Accessories
 		epub support in atril
-		make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
 		mate-terminal: transparency in default profile

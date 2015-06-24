@@ -24,3 +24,4 @@ Cinnamon Edition
 MATE Edition
 ------------
 	compiz decorations now work in Virtualbox.
+	atril, mate-dict and mate-color-selector should go in Accessories

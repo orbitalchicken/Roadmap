@@ -138,6 +138,7 @@ MATE
     use a configuration runtime switch for logind support.
 	add context menu support for CSD headerbars in Marco.
 	some panel applets get wrong positions when resolution changes https://github.com/mate-desktop/mate-panel/issues/84
+	make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
 
 Post 17
 --------

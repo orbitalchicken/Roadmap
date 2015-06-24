@@ -1,16 +1,9 @@
 Maintenance
 -----------
 	Update tapatalk API on forums.
-	pkgs: unity-greeter pkg.
-	rel notes: no network after suspending? https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1286552.
-	upgrade inxi to 2.1.28.
-	mate: The Mate Panel right side application indicator icons and clock, and when some other icons are pinned there scramble and get switched around and stay in the middle of the Panel sometimes – when changing Desktop resolution.
-	nemo: can no longer handle desktop in root session.
-	On MATE version I have trouble with the screenshot action.. when I press printscreen on my keyboard always freezing… same thing happen when I open screenshot app manually..
-	kdeenlive: missing german translations.
 
-KDE/Xfce Mint 17.1
-------------------
+KDE/Xfce
+--------
 	common:
 		OK (maybe) - When logging in an existing session, doesn't unlock xscreensaver / of KDE screensaver.
 
@@ -18,6 +11,11 @@ KDE/Xfce Mint 17.1
 		Many config-type things in the menu are missing from xfce4-settings-manager. Examples are mdmsetup; Languages; and ‘Users and groups’.
 		Menu doesn’t update automatically to include KDE applications. Installed kate and krusader (most useful file manager ever!).
 		indicator-applet patch: https://bugzilla.gnome.org/show_bug.cgi?id=726030.
+		xfce 4.12.
+		consider this http://forums.linuxmint.com/viewtopic.php?f=152&t=195431.
+
+	KDE:
+		consider Plasma 5.
 
 LMDE
 ----
@@ -33,22 +31,24 @@ LMDE
 
 17.2
 ----
-	mate: eom and mate-color-selector should go in Accessories
-	cinnamon: two-edge scrolling regression
-	32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
-	[Fixed?] can't boot on ASUS laptops in EFI mode?
-	[Fixed] Could you enable “Copy to texture” with CCSM for solving Compiz window decorations render problem on Virtualbox.
+	common:
+		32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
+		update rel notes and new features to talk about prime support
+		ulimit -n different in Ubuntu?
+		review MDM slideshow, don't show bright colors there
+		Segfaults in FF/TB after upgrading linux-libc-dev
+		update translations
+		mint-X: add grey variation
 
-	Xfce:
-		xfce 4.12.
-		consider this http://forums.linuxmint.com/viewtopic.php?f=152&t=195431.
-
-	KDE:
-		consider Plasma 5.
+	Cinnamon:
+		When attempting to connect to a WPA/WPA2-Enterprise network using either the NetworkManager panel applet or Network Settings dialogue. Expected behavior is that a configuration dialogue for security settings (identity, password, CA cert, etc.) should pop up, allowing user to configure network. NM should then connect to the network. Actual behavior is that NM displays the “connecting to network” animation but never connects, pops up the security dialogue, or gives any error message (at least in the GUI). However, configuring the same WPA2 Enterprise connection through the “Connect to a Hidden Network” dialogue (i.e., manually) works as expected.
+		two-edge scrolling regression
+		libgtkmm-2.4-1c2a is not in Cinnamon-64 post-install (it's there in the 32bit edition and in MATE 64) - This missing lib causes invisible menu options in VMware and custom themes.
 
 	MATE:
-		use a configuration runtime switch for logind support.
-		remove all help buttons.
-		add context menu support for CSD headerbars in Marco.
+		eom and mate-color-selector should go in Accessories
+		The Mate Panel right side application indicator icons and clock, and when some other icons are pinned there scramble and get switched around and stay in the middle of the Panel sometimes – when changing Desktop resolution.
+		epub support in atril
 		make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
+		mate-terminal: transparency in default profile
 

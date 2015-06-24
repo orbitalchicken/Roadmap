@@ -7,6 +7,7 @@ Mint 17.x
 		Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin).
 		new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
 		for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
+		backport VLC 3
 
 	nemo:
 		remove duplication between Eject and Safely Remove (for removable devices).
@@ -36,7 +37,10 @@ Mint 17.x
 		Sometimes at first launch, icons don't appear.
 
 	mintinstall:
-			revamp UI.
+		revamp UI.
+
+	mdm:
+		mdm in live mode: can't log in using Mint and blank password
 
 Cinnamon
 --------
@@ -56,6 +60,7 @@ Cinnamon
 		improve window animations, based on GNOME SHELL 3.14 (windowmanager.js)
 		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
 		icons pixelated in alt-tab or panel after a suspend-resume
+		backgrounds could use EXIF metadata to rotate pictures automatically
 
 	networking:
 		network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg
@@ -75,6 +80,13 @@ Cinnamon
 		right-click Run/Open with blah in nemo, on executable files
 		Feature request: if I create a launcher on my desktop, I can select an icon for it (with preview)… instead, if a modify a launcher in the menu with the “menu editor”, I can select a different icon but without preview. Can you please add the preview feature?
 		if I launch from a bash script nemo to open an ftp server more than one time, with a command such as “nemo ftp://ftp.xxx.xyz“, I can get a duplicate icon on my desktop, see screenshot: https://dl.dropboxusercontent.com/u/573922/Schermata%20del%202013-11-21%2012%3A25%3A31.png
+		If you plug in a USB, it auto mounts in a location on the desktop but if you unplug it, plug in another, and re-insert the first, the desktop icons overlap each other. I've noticed a similar issue in previous Mint releases. It would be great if the icons could auto position.
+		small bug in all Linux Mint Cinnamon editions (maybe with Nemo). When I drag and drop some file(s) on an archive , my expectation is the files being added to it , but instead of that an error message pops out : “An error occurred while adding files to the archive. You can’t add an archive to itself.” . The Mate edition does not have this problem
+		when no panels are present -> right-click the desktop -> Add a panel
+		always handle the desktop (when no icons are to be shown, provide right-click features all the same)
+		nemo context menus -> expand/collapse mini-button in the top-right corner of context menu, remember whether it's collapsed/expanded.
+		If Nemo is open with 2 folder-panes the user can switch between both panes with F6, that is fine, if one uses the file-manager with keyboard only. The problem is, that F6 only works at once, if you have set Nemo to open with 2 panes. If Nemo opens with 1 pane (default setting) and the second pane gets opened via F3 (or menu), pressing F6 does at first nothing – no reaction at all. You can either click the second pane with the mouse (what is against a keyboard-only usage) or you have to navigate in the first pane anywhere (e.g. by pressing backspace), only after that F6 is reacting
+		nemo: can no longer handle desktop in root session.
 
 	window management:
 		expo: set overview mode to true by default
@@ -123,7 +135,9 @@ MATE
 	switch to default notification theme
 	mintdesktop: Use radiobuttons for marco vs compiz, with labels like "Marco (No desktop effects, compatible with all hardware)", "Compiz (Desktop effects, requires compatible hardware)"
     caja: renaming a file produces a black border
-
+    use a configuration runtime switch for logind support.
+	remove all help buttons.
+	add context menu support for CSD headerbars in Marco.
 
 Post 17
 --------

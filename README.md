@@ -34,21 +34,16 @@ LMDE
 	common:
 		32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
 		update rel notes and new features to talk about prime support
-		ulimit -n different in Ubuntu?
-		review MDM slideshow, don't show bright colors there
 		Segfaults in FF/TB after upgrading linux-libc-dev
 		update translations
 		mint-X: add grey variation
 
 	Cinnamon:
 		When attempting to connect to a WPA/WPA2-Enterprise network using either the NetworkManager panel applet or Network Settings dialogue. Expected behavior is that a configuration dialogue for security settings (identity, password, CA cert, etc.) should pop up, allowing user to configure network. NM should then connect to the network. Actual behavior is that NM displays the “connecting to network” animation but never connects, pops up the security dialogue, or gives any error message (at least in the GUI). However, configuring the same WPA2 Enterprise connection through the “Connect to a Hidden Network” dialogue (i.e., manually) works as expected.
-		two-edge scrolling regression
 		libgtkmm-2.4-1c2a is not in Cinnamon-64 post-install (it's there in the 32bit edition and in MATE 64) - This missing lib causes invisible menu options in VMware and custom themes.
 
 	MATE:
 		eom and mate-color-selector should go in Accessories
-		The Mate Panel right side application indicator icons and clock, and when some other icons are pinned there scramble and get switched around and stay in the middle of the Panel sometimes – when changing Desktop resolution.
 		epub support in atril
 		make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
 		mate-terminal: transparency in default profile
-

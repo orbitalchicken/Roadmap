@@ -10,6 +10,8 @@ All editions
 	nvidia-prime systray support
 	mintupdate: up-to-date screen hides otherwise visible, yet not-recommended, updates
 	Improved EFI support (particularly on ASUS laptop) by upgrading grub
+	MDM slideshow, don't show bright colors there
+	MDM slideshow, black background
 
 Cinnamon Edition
 ----------------
@@ -17,6 +19,7 @@ Cinnamon Edition
 	little issue with Settings stacks: https://github.com/linuxmint/cinnamon-control-center/issues/120
 	keyboard applet: when flag doesn't exist.. latam for instance
 	fixed cinnamon-settings-daemon crashing with some NVIDIA cards
+	two-edge scrolling regression
 
 MATE Edition
 ------------

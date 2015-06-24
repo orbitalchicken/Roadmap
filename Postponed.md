@@ -136,8 +136,8 @@ MATE
 	mintdesktop: Use radiobuttons for marco vs compiz, with labels like "Marco (No desktop effects, compatible with all hardware)", "Compiz (Desktop effects, requires compatible hardware)"
     caja: renaming a file produces a black border
     use a configuration runtime switch for logind support.
-	remove all help buttons.
 	add context menu support for CSD headerbars in Marco.
+	some panel applets get wrong positions when resolution changes https://github.com/mate-desktop/mate-panel/issues/84
 
 Post 17
 --------

@@ -9,6 +9,8 @@ All editions
 	MDM lets users switch NVIDIA Prime GPU via logout (as opposed to reboot)
 	nvidia-prime systray support
 	mintupdate: up-to-date screen hides otherwise visible, yet not-recommended, updates
+	mintupdate: don't show level 4/5 updates by default (security or not)
+	mintupdate: for visible levels, when security updates are set to non-visible but safe, they are not selected
 	Improved EFI support (particularly on ASUS laptop) by upgrading grub
 	MDM slideshow, don't show bright colors there
 	MDM slideshow, black background
@@ -25,3 +27,5 @@ MATE Edition
 ------------
 	compiz decorations now work in Virtualbox.
 	atril, mate-dict and mate-color-selector should go in Accessories
+	epub support in atril
+	mate-terminal: transparency in default profile

@@ -14,6 +14,9 @@ All editions
 	Improved EFI support (particularly on ASUS laptop) by upgrading grub
 	MDM slideshow, don't show bright colors there
 	MDM slideshow, black background
+	mint-X: add grey variation
+	mint-x: sharper window controls
+	updated translations
 
 Cinnamon Edition
 ----------------
@@ -29,3 +32,4 @@ MATE Edition
 	atril, mate-dict and mate-color-selector should go in Accessories
 	epub support in atril
 	mate-terminal: transparency in default profile
+	mint-x: metacity-2 support

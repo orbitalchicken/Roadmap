@@ -17,6 +17,7 @@ All editions
 	mint-X: add grey variation
 	mint-x: sharper window controls
 	updated translations
+	32-bit isolinux linux is one line short (have to scroll to see Boot from Hard Drive)
 
 Cinnamon Edition
 ----------------
@@ -25,6 +26,7 @@ Cinnamon Edition
 	keyboard applet: when flag doesn't exist.. latam for instance
 	fixed cinnamon-settings-daemon crashing with some NVIDIA cards
 	two-edge scrolling regression
+	libgtkmm-2.4-1c2a is missing post-install, causing invisible menu options in VMware and custom themes.
 
 MATE Edition
 ------------
@@ -33,3 +35,11 @@ MATE Edition
 	epub support in atril
 	mate-terminal: transparency in default profile
 	mint-x: metacity-2 support
+
+KDE Edition
+-----------
+
+Xfce Edition
+------------
+	QT apps don't use GTK theme theme.. compile xfce4-session with legacy support
+	keyboard shortcuts: adding a new command for an exiting keybinding works, removing it works as well.. but the command doesn't disappear from the settings window

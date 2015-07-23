@@ -13,6 +13,7 @@ Maintenance
 			mate-system-tools -> gnome-system-tools
 
 	mintupdate: failed: float division by zero when size of package is 0
+	the xfce4-whiskermenu-plugin is not installed through the meta-package
 
 LMDE
 ----
@@ -29,13 +30,9 @@ Common
 
 KDE
 ---
-	kinfocenter shows wrong version (4.13.2) for KDE SC
-	[Fixed] added missing baloo4
 
 Xfce
 ----
-	[Fixed] “search” contextual menu item doesn’t show the search box when you right-clic on file or folder
-	the xfce4-whiskermenu-plugin is not installed through the meta-package
 
 Next Release
 ------------

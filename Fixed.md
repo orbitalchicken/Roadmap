@@ -38,8 +38,10 @@ MATE Edition
 
 KDE Edition
 -----------
+	Fixed search not working in Dolphin
 
 Xfce Edition
 ------------
 	QT apps don't use GTK theme theme.. compile xfce4-session with legacy support
 	keyboard shortcuts: adding a new command for an exiting keybinding works, removing it works as well.. but the command doesn't disappear from the settings window
+	“search” contextual menu item doesn’t show the search box when you right-clic on file or folder

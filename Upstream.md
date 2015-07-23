@@ -10,3 +10,5 @@ Upstream bugs
 	gnome-calculator: huge context menu
 
 	xfce: Rubbish Bin context menu shows Empty Wastebasket (rather than Rubbish Bin)
+
+	kde: kinfocenter shows wrong version (4.13.2) for KDE SC

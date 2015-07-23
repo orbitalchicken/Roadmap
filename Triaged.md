@@ -8,6 +8,7 @@ Not a bug
 Outside of the scope
 --------------------
 	Build Xfwm4 with libepoxy0 and libepoxy-dev
+	No hibernation in MDM	
 
 Can't reproduce
 ---------------

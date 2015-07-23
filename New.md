@@ -9,8 +9,8 @@ Cinnamon Edition - last processed comment: #189
 MATE Edition - last processed comment: #85
 ------------------------------------------
 
-KDE Edition - last processed comment: #30
+KDE Edition - last processed comment: #41
 -----------------------------------------
 
-Xfce Edition - last processed comment: #30
+Xfce Edition - last processed comment: #45
 ------------------------------------------

@@ -8,3 +8,5 @@ Upstream bugs
 	kdeenlive: missing german translations.
 
 	gnome-calculator: huge context menu
+
+	xfce: Rubbish Bin context menu shows Empty Wastebasket (rather than Rubbish Bin)

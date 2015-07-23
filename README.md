@@ -12,18 +12,15 @@ Maintenance
 			mate-calc -> gcaltool
 			mate-system-tools -> gnome-system-tools
 
+	mintupdate: failed: float division by zero when size of package is 0
+
 LMDE
 ----
 	Add va-driver-all to the list of installed packages (fixes black bands with Intel GPUs).
 	upgrade path:
-		debian-system-adjustments https://github.com/monsta/debian-system-adjustments/commits/master.
 		/etc/plymouth/plymouthd.conf -->  [Daemon]  Theme=mint-logo
 		logind.conf
-		two nm-applet?
-		10_linux
-	mate 1.10: add additional rename MATE desktop (take from ubuntu-system-adjustments)
 	history and completion in bashrc
-
 
 Common
 ------
@@ -37,7 +34,8 @@ KDE
 
 Xfce
 ----
-
+	[Fixed] “search” contextual menu item doesn’t show the search box when you right-clic on file or folder
+	the xfce4-whiskermenu-plugin is not installed through the meta-package
 
 Next Release
 ------------

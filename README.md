@@ -44,8 +44,13 @@ Next Release
 	Cinnamon:
 		cjs: Don't crash when applets call non-existing functions
 
+	mintsources:
+		check that the added PPA supports the base codename (trusty for instance)
+
 	mintwelcome:
 		Point to mintdrivers
+
+	mintupload: FTPS
 
 
 

@@ -10,5 +10,8 @@ Upstream bugs
 	gnome-calculator: huge context menu
 
 	xfce: Rubbish Bin context menu shows Empty Wastebasket (rather than Rubbish Bin)
+	xfce: Settings > Panel > Indicator Plugin > Edit > Clear known indicators -> The [Clear] button has no text
+	xfce: desktop icons randomly get aligned/reordered after logout/login
 
 	kde: kinfocenter shows wrong version (4.13.2) for KDE SC
+

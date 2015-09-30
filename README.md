@@ -53,6 +53,7 @@
 	mintupdate
 		have two delays, one for initial update, and one for successive ones. That way we can reduce the initial one and increase the other.
 		float division by zero when size of package is 0
+		warn user when mirror is out of date
 
 	mintbackup:
 		consider using another alternative?

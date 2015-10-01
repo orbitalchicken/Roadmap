@@ -20,6 +20,7 @@
 		cjs: don't crash when applets call non-existing functions
 		muffin: add flickering fixes for NVIDIA cards (from mutter)
 		re-add bg-change fade effect
+		port MDM hidpi improvements
 		default settings:
 			window-list thumbs?
 			attached dialogs?
@@ -65,6 +66,9 @@
 
 	mintwelcome:
 		point to mintdrivers
+
+	mintdrivers:
+		update APT cache prior to checking drivers
 
 	mintupload:
 		ftps support

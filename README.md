@@ -11,6 +11,7 @@
 				echo “cryptswap$i UUID=$uuid /dev/urandom swap,offset=8,cipher=aes-cbc-essiv:sha256″ >> /etc/crypttab
 			without “offset=8″, a freshly installed Linuxmint finds the cryptswap and then destroys its UUID. On reboot, the UUID is gone and the swap partition cannot be found anymore. The offset should fix that problem.
 		ubiquity: select fastest repositories based on location
+		check if libgtkmm-2.4-1c2a should be installed (reported missing in Cinnamon 17.1 32-bit). Missing lib creates problems for VMware Player (missing menus) and changing Themes.
 
 	apps:
 		vlc: upgrade to 2.2. It supports HEVC/h265 (same quality at half the file size). PPA available at ppa:mc3man/trusty-media
@@ -30,6 +31,11 @@
 			make applications volume sliders expand fully
 		nemo:
 			in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
+			show icons per monitor..
+		don't show outdated spices
+		regression on alt-f2 box.. looks fine the first time, missing borders afterwards
+		review all usage of Gio/Glib
+		fix gnome bg change with same filename
 
 	mate:
 		alt-tab thumbs cost perf..
@@ -84,7 +90,16 @@
 			logind.conf
 		history and completion in bashrc
 		betsy, meld 3.12.1 doesn't work (shows a black background), upgrade it to 3.12.3
+		install libhal1-flash by default
+		consider activating http://backports.debian.org/changes/jessie-backports.html
 
 	website:
 		switch sensitive parts to https (md5 in particular)
 		Update tapatalk API on forums.
+
+	PIA:
+		command to set up connection
+		ca.crt
+		tutorial
+		support for openvpn
+

@@ -19,7 +19,7 @@
 
 	cinnamon:
 		cjs: don't crash when applets call non-existing functions
-		muffin: add flickering fixes for NVIDIA cards (from mutter)
+		muffin: add flickering fixes for NVIDIA cards (from mutter) -> patch available at https://github.com/linuxmint/muffin/issues/200
 		re-add bg-change fade effect
 		port MDM hidpi improvements
 		default settings:
@@ -33,13 +33,12 @@
 			in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
 			show icons per monitor..
 		don't show outdated spices
-		regression on alt-f2 box.. looks fine the first time, missing borders afterwards
 		review all usage of Gio/Glib
 		fix gnome bg change with same filename
+		catch up with gnome on various GSD plugins (XRANDR in particular)
 
 	mate:
 		alt-tab thumbs cost perf..
-		caja opens its first window on primary monitor
 		1.12: marco: center windows by default (was changed to false in git master)
 		caja: clicking on home [compact view] in sidebar then on filesystem [icon view], back and forth, eventually dir names disappear
 		make transitional packages for:

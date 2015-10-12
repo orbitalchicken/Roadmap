@@ -12,6 +12,9 @@
 			without “offset=8″, a freshly installed Linuxmint finds the cryptswap and then destroys its UUID. On reboot, the UUID is gone and the swap partition cannot be found anymore. The offset should fix that problem.
 		ubiquity: select fastest repositories based on location
 		check if libgtkmm-2.4-1c2a should be installed (reported missing in Cinnamon 17.1 32-bit). Missing lib creates problems for VMware Player (missing menus) and changing Themes.
+		integrate nemo-preview
+		ship with nemo extensions, disable them by default (using overrides)
+		restore menubar in terminals
 
 	apps:
 		vlc: upgrade to 2.2. It supports HEVC/h265 (same quality at half the file size). PPA available at ppa:mc3man/trusty-media
@@ -19,7 +22,6 @@
 
 	cinnamon:
 		cjs: don't crash when applets call non-existing functions
-		muffin: add flickering fixes for NVIDIA cards (from mutter) -> patch available at https://github.com/linuxmint/muffin/issues/200
 		re-add bg-change fade effect
 		port MDM hidpi improvements
 		default settings:
@@ -36,6 +38,8 @@
 		review all usage of Gio/Glib
 		fix gnome bg change with same filename
 		catch up with gnome on various GSD plugins (XRANDR in particular)
+		fix systray not showing icon (can reproduce with pidgin/shutter when clearing the disk cache with "echo 3 | sudo tee /proc/sys/vm/drop_caches")
+		retire preload?
 
 	mate:
 		alt-tab thumbs cost perf..

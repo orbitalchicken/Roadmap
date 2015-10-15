@@ -4,7 +4,6 @@ Improvements selected for the future
 Mint 17.x
 ---------
 	common:
-		Consider adding pipelight or freshplayerplugin (https://github.com/i-rinat/freshplayerplugin).
 		new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
 		for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
 		backport VLC 3
@@ -46,8 +45,6 @@ Cinnamon
 --------
 	accessibility:
 		Screen reader did not appear to do anything, even after installing orca.
-		on screen keyboard is close to unusable, redesign needed.
-		Onscreen keyboard activates when clicking the menu on the panel because text entry is focused... if onboard is used, entry should not focus when showing the menu
 
 	hidpi and display settings:
 		screensaver is all messed up
@@ -99,11 +96,9 @@ Cinnamon
 		cinnamon-settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
 		spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)
 		spices: If I select the radio box to choose an applet and then I’ll click the button to install it, the applet is installed but it’s not active: maybe a new user expects to have it immediately in the panel after the download… in fact forcing the user to come back in the list of the installed applet to enable the just downloaded applet is not user friendly, in my opinion.
-		spices: When I refresh the Applets cache, the progress windows does not appear correctly, it was just a tiny gray window in the top left corner.
 		keyboard: allow adding duplicate key combination for Cinnamon “Toggle Scale” and “Toggle Expo” (found these, didn’t go through all actions, most of them ok)
 		panels: Under Auto-hide panel consider aligning the two input boxes to each other (+/- milliseconds input buttons) but keep Show Delay and Hide Delay aligned with each other on the left side.
 		mouse/touchpad: an option to change the mouse scroll speed for the middle wheel in Mouse and Touchpad preferences
-		cinnamon-settings-users: add support for nopasswdlogin
 		cinnamon-settings-users: Creating a user without password (stupid but nothing prevents it): impossible for that user to set one himself in Account Details.
 		cinnamon-settings-users: In the “Users and Groups”, when on “Groups” tab, it could be great to have a way to see the members of a selected group and add new members to the group as well. Currently, we can only edit the group name…
 
@@ -123,22 +118,16 @@ MATE
 ----
 	hard to resize window or to grab border
 	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
-	mate-terminal still has a menu bar and is not transparent
 	When panel is at the top, notifications show on top of it. https://dl.dropboxusercontent.com/u/54450962/%ED%99%94%EB%A9%B4-5.png
-	Would be nice if the mouse preference panel in Mate included a “natural scrolling” option
 	Add sound effects like in Cinnamon
 	The MATE user admin program (mate-users-admin), when setting a user’s type to “Administrative”, does not add the user to the “sudo” group. The workaround is to explicitly add the user to the sudo group
 	‘mate-screensaver’ still as flaky as it was in lm15 MATE 64-bit. Set to ‘Lock screen when screensaver is active’ sometimes upon resume after suspend I get a prompt for my password, other times NOT.
 	MPRIS support
-	mate-system-monitor under resourses doesn’t look great with the default GTK theme (need to give the notebook at widget class name or style name so we can make it flat in Mint-X, alternatively, we could try and make the cairo elements transparent)
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	caja: dng and raw images thumbnails in caja
-	switch to default notification theme
-	mintdesktop: Use radiobuttons for marco vs compiz, with labels like "Marco (No desktop effects, compatible with all hardware)", "Compiz (Desktop effects, requires compatible hardware)"
     caja: renaming a file produces a black border
     use a configuration runtime switch for logind support.
 	add context menu support for CSD headerbars in Marco.
-	some panel applets get wrong positions when resolution changes https://github.com/mate-desktop/mate-panel/issues/84
 	make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
 
 Post 17

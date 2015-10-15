@@ -23,23 +23,20 @@
 	cinnamon:
 		cjs: don't crash when applets call non-existing functions
 		re-add bg-change fade effect
-		port MDM hidpi improvements
 		default settings:
 			window-list thumbs?
 			attached dialogs?
-		sound applet:
-			align close/raise buttons to the right
-			align device output origin info to the right
-			make applications volume sliders expand fully
 		nemo:
 			in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
 			show icons per monitor..
 		don't show outdated spices
 		review all usage of Gio/Glib
-		fix gnome bg change with same filename
-		catch up with gnome on various GSD plugins (XRANDR in particular)
-		fix systray not showing icon (can reproduce with pidgin/shutter when clearing the disk cache with "echo 3 | sudo tee /proc/sys/vm/drop_caches")
-		retire preload?
+		bugs:
+			Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
+			fix systray not showing icon (can reproduce with pidgin/shutter when clearing the disk cache with "echo 3 | sudo tee /proc/sys/vm/drop_caches")
+			sound applet:
+				align close/raise buttons to the right
+				make applications volume sliders expand fully
 
 	mate:
 		alt-tab thumbs cost perf..
@@ -49,6 +46,7 @@
 			mate-dialogs -> zenity
 			mate-calc -> gcaltool
 			mate-system-tools -> gnome-system-tools
+		some panel applets get wrong positions when resolution changes https://github.com/mate-desktop/mate-panel/issues/84
 
 	xfce:
 		the xfce4-whiskermenu-plugin is not installed through the meta-package

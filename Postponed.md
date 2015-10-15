@@ -54,7 +54,6 @@ Cinnamon
 
 	look and feel:
 		fix spacing between systray icons
-		improve window animations, based on GNOME SHELL 3.14 (windowmanager.js)
 		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
 		icons pixelated in alt-tab or panel after a suspend-resume
 		backgrounds could use EXIF metadata to rotate pictures automatically
@@ -68,6 +67,8 @@ Cinnamon
 		When attempting to connect to a WPA/WPA2-Enterprise network using either the NetworkManager panel applet or Network Settings dialogue. Expected behavior is that a configuration dialogue for security settings (identity, password, CA cert, etc.) should pop up, allowing user to configure network. NM should then connect to the network. Actual behavior is that NM displays the “connecting to network” animation but never connects, pops up the security dialogue, or gives any error message (at least in the GUI). However, configuring the same WPA2 Enterprise connection through the “Connect to a Hidden Network” dialogue (i.e., manually) works as expected.
 
 	nemo:
+		review all usage of Gio/Glib
+		re-add bg-change fade effect
 		if I press ALT+F2 and then enter “nemo ftp://ftp.mydomain.xyz” to access to my personal ftp server trough nemo, I’ll get a request of username and password: it’s OK. The problem is that if I select the option to remember forever the username and password, it will not have effect: if I reboot Linux Mint, the next time I’ll try to access my ftp trough nemo I’ll get the request of username e password. So… nemo doesn’t remember my credentials… it’s frustrating.
 		Entering the folder of long name , the path disappeared screen capture 1) it shows a folder of longname https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A19.png screen capture 2) entering the long name folder , meeting disappeared folder path of long name folder https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A34.png screen capture 3) But Actually It was still dsiplayed at max window https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A19%3A13.png
 		Create a thumbnailer in usr/share/thumbnailers for MimeType inode/directory – when you try to run Nemo, it crashes with the error:  (nemo:9078): CinnamonDesktop-WARNING **: Error reading from file:///home/simon/Desktop: Error reading from file descriptor: Is a directory Installing cover-thumbnailer is an easy way to reproduce it.
@@ -92,12 +93,12 @@ Cinnamon
 		Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
 
 	settings:
+		don't show outdated spices
 		cinnamon-settings: The search box in System Settings displays “Search…” next to the magnifier.
 		cinnamon-settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
 		spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)
 		spices: If I select the radio box to choose an applet and then I’ll click the button to install it, the applet is installed but it’s not active: maybe a new user expects to have it immediately in the panel after the download… in fact forcing the user to come back in the list of the installed applet to enable the just downloaded applet is not user friendly, in my opinion.
 		keyboard: allow adding duplicate key combination for Cinnamon “Toggle Scale” and “Toggle Expo” (found these, didn’t go through all actions, most of them ok)
-		panels: Under Auto-hide panel consider aligning the two input boxes to each other (+/- milliseconds input buttons) but keep Show Delay and Hide Delay aligned with each other on the left side.
 		mouse/touchpad: an option to change the mouse scroll speed for the middle wheel in Mouse and Touchpad preferences
 		cinnamon-settings-users: Creating a user without password (stupid but nothing prevents it): impossible for that user to set one himself in Account Details.
 		cinnamon-settings-users: In the “Users and Groups”, when on “Groups” tab, it could be great to have a way to see the members of a selected group and add new members to the group as well. Currently, we can only edit the group name…

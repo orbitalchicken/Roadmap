@@ -21,16 +21,12 @@
 		gnome-terminal/mate-terminal: bring back menubar by default
 
 	cinnamon:
-		cjs: don't crash when applets call non-existing functions
-		re-add bg-change fade effect
 		default settings:
 			window-list thumbs?
 			attached dialogs?
 		nemo:
 			in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
 			show icons per monitor..
-		don't show outdated spices
-		review all usage of Gio/Glib
 		bugs:
 			Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
 			fix systray not showing icon (can reproduce with pidgin/shutter when clearing the disk cache with "echo 3 | sudo tee /proc/sys/vm/drop_caches")

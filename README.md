@@ -29,10 +29,10 @@
 			show icons per monitor..
 		bugs:
 			Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
-			fix systray not showing icon (can reproduce with pidgin/shutter when clearing the disk cache with "echo 3 | sudo tee /proc/sys/vm/drop_caches")
 			sound applet:
 				align close/raise buttons to the right
 				make applications volume sliders expand fully
+			quassel indicator doesn't show on login, or on 2nd launch
 
 	mate:
 		alt-tab thumbs cost perf..

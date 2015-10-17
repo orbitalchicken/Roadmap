@@ -86,6 +86,8 @@ Cinnamon
 		nemo context menus -> expand/collapse mini-button in the top-right corner of context menu, remember whether it's collapsed/expanded.
 		If Nemo is open with 2 folder-panes the user can switch between both panes with F6, that is fine, if one uses the file-manager with keyboard only. The problem is, that F6 only works at once, if you have set Nemo to open with 2 panes. If Nemo opens with 1 pane (default setting) and the second pane gets opened via F3 (or menu), pressing F6 does at first nothing – no reaction at all. You can either click the second pane with the mouse (what is against a keyboard-only usage) or you have to navigate in the first pane anywhere (e.g. by pressing backspace), only after that F6 is reacting
 		nemo: can no longer handle desktop in root session.
+		in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
+		show icons per monitor..
 
 	window management:
 		expo: set overview mode to true by default
@@ -108,6 +110,7 @@ Cinnamon
 		menu: keywords (for searching) aren't l10n'd
 		menu: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet...
 		menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
+		sound: align close/raise buttons to the right
 
 	other:
 		screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)

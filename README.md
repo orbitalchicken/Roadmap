@@ -15,6 +15,7 @@
 		integrate nemo-preview
 		ship with nemo extensions, disable them by default (using overrides)
 		restore menubar in terminals
+		MATE/Xfce: provide QT5 override in /etc/X11/Xsession.d to make it use GTK style
 
 	apps:
 		vlc: upgrade to 2.2. It supports HEVC/h265 (same quality at half the file size). PPA available at ppa:mc3man/trusty-media
@@ -24,14 +25,8 @@
 		default settings:
 			window-list thumbs?
 			attached dialogs?
-		nemo:
-			in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
-			show icons per monitor..
 		bugs:
-			Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
-			sound applet:
-				align close/raise buttons to the right
-				make applications volume sliders expand fully
+			nemo: Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
 			quassel indicator doesn't show on login, or on 2nd launch
 
 	mate:
@@ -99,4 +94,3 @@
 		ca.crt
 		tutorial
 		support for openvpn
-

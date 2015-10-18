@@ -28,6 +28,7 @@
 		bugs:
 			nemo: Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
 			quassel indicator doesn't show on login, or on 2nd launch
+			Resized the panel a couple times, turned of "Use customized panel size" and crash
 
 	mate:
 		alt-tab thumbs cost perf..

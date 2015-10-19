@@ -22,12 +22,7 @@
 		gnome-terminal/mate-terminal: bring back menubar by default
 
 	cinnamon:
-		default settings:
-			window-list thumbs?
-			attached dialogs?
-		bugs:
-			nemo: Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
-			quassel indicator doesn't show on login, or on 2nd launch
+		nemo: Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
 
 	mate:
 		alt-tab thumbs cost perf..

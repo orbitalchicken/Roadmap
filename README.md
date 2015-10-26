@@ -16,23 +16,24 @@
 		ship with nemo extensions, disable them by default (using overrides)
 		restore menubar in terminals
 		MATE/Xfce: provide QT5 override in /etc/X11/Xsession.d to make it use GTK style
+		add LP PPA to list of 700 priorities
+		bashrc: # colored GCC warnings and errors --> export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01' (won't work until gcc 4.9)
+		apt memory fix: APT::Cache-Start "104857600"; https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=753941 or apply patch http://anonscm.debian.org/cgit/apt/apt.git/commit?id=4ea471ecb013d188d03a5c3efb9b21e58ef56065
 
 	apps:
 		vlc: upgrade to 2.2. It supports HEVC/h265 (same quality at half the file size). PPA available at ppa:mc3man/trusty-media
 		gnome-terminal/mate-terminal: bring back menubar by default
 
 	cinnamon:
-		nemo: Rename bug disables copy and paste https://github.com/linuxmint/nemo/issues/909
+		dh_install: usr/share/polkit-1/actions/org.cinnamon.settings-users.policy exists in debian/tmp but is not installed to anywhere
 
 	mate:
 		alt-tab thumbs cost perf..
-		1.12: marco: center windows by default (was changed to false in git master)
 		caja: clicking on home [compact view] in sidebar then on filesystem [icon view], back and forth, eventually dir names disappear
 		make transitional packages for:
 			mate-dialogs -> zenity
 			mate-calc -> gcaltool
 			mate-system-tools -> gnome-system-tools
-		some panel applets get wrong positions when resolution changes https://github.com/mate-desktop/mate-panel/issues/84
 
 	xfce:
 		the xfce4-whiskermenu-plugin is not installed through the meta-package

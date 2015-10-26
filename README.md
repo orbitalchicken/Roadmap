@@ -61,9 +61,6 @@
 	mintwelcome:
 		point to mintdrivers
 
-	mintdrivers:
-		update APT cache prior to checking drivers
-
 	mintupload:
 		ftps support
 

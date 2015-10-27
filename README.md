@@ -64,9 +64,6 @@
 	mintupload:
 		ftps support
 
-	mintlocale:
-		either hide im-config or have the menu item launch mintlocale's IM setup
-
 	lmde:
 		update grub (improves efi support)
 		Add va-driver-all to the list of installed packages (fixes black bands with Intel GPUs).

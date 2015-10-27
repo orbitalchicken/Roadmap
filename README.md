@@ -56,13 +56,13 @@
 	mintsources:
 		check that the added PPA supports the base codename (trusty for instance)
 		prefer local mirrors
-		window too wide in russian locale
 
 	mintwelcome:
 		point to mintdrivers
 
-	mintupload:
-		ftps support
+	artwork/config:
+		mint-themes-gtk3: fix gnome-calculator context-menu (right-click inside the calculator screen) being huge
+		cinnamon: increase panel height by 2 pixels (makes apps less blurry) http://www.pasteall.org/pic/show.php?id=92723
 
 	lmde:
 		update grub (improves efi support)

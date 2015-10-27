@@ -20,7 +20,9 @@ Mint 17.x
 
 	mintupdate:
 		safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
-		Upgrade tool, forcing people to click links is annoying everybody.
+
+	mintupload:
+		ftps support
 
 	others:
 		kde: New icon theme / UI look and feel.

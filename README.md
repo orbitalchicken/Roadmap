@@ -53,16 +53,12 @@
 	mintbackup:
 		consider using another alternative?
 
-	mintsources:
-		check that the added PPA supports the base codename (trusty for instance)
-		prefer local mirrors
-
 	mintwelcome:
 		point to mintdrivers
 
 	artwork/config:
 		mint-themes-gtk3: fix gnome-calculator context-menu (right-click inside the calculator screen) being huge
-		cinnamon: increase panel height by 2 pixels (makes apps less blurry) http://www.pasteall.org/pic/show.php?id=92723
+		cinnamon: increase panel height by 3 pixels (to a value of 28) (makes apps less blurry) http://www.pasteall.org/pic/show.php?id=92723
 
 	lmde:
 		update grub (improves efi support)

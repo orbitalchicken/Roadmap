@@ -26,6 +26,8 @@
 
 	cinnamon:
 		dh_install: usr/share/polkit-1/actions/org.cinnamon.settings-users.policy exists in debian/tmp but is not installed to anywhere
+		window preview stuck: https://github.com/linuxmint/Cinnamon/issues/4750
+		logout/shutdown message not translated
 
 	mate:
 		alt-tab thumbs cost perf..
@@ -44,11 +46,6 @@
 
 	mintdesktop
 		support compiz current-viewport setting https://bitbucket.org/ubuntu-mate/mate-tweak/commits/77cf0249efa723e8dca58db4905bd71745bdb690
-
-	mintupdate
-		have two delays, one for initial update, and one for successive ones. That way we can reduce the initial one and increase the other.
-		float division by zero when size of package is 0
-		warn user when mirror is out of date
 
 	mintbackup:
 		consider using another alternative?
@@ -74,6 +71,7 @@
 	website:
 		switch sensitive parts to https (md5 in particular)
 		Update tapatalk API on forums.
+		handle utf-8 on spices, see comments on http://cinnamon-spices.linuxmint.com/applets/view/171
 
 	PIA:
 		command to set up connection

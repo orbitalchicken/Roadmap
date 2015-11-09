@@ -42,6 +42,8 @@ Mint 17.x
 
 	mdm:
 		mdm in live mode: can't log in using Mint and blank password
+		preselect user if only one user is present in the list
+		configurable slideshow
 
 Cinnamon
 --------

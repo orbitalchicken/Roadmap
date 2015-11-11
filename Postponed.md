@@ -32,6 +32,12 @@ Mint 17.x
 		pin base-files?
 		inserting live-stick, stick isn't mounted automatically in /media
 
+	mintbackup:
+		consider using another alternative?
+
+	mintwelcome:
+		review UI
+
 	mintmenu:
 		After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
 		Please add a "delete selection" Button for the Search-Field.

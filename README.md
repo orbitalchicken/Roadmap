@@ -3,61 +3,33 @@
 
 	system:
 		ubiquity:
-			crypted swap: http://forums.linuxmint.com/viewtopic.php?f=90&t=201025#p1050041
-				replace
-					# Add crypttab entry
-					echo “cryptswap$i UUID=$uuid /dev/urandom swap,cipher=aes-cbc-essiv:sha256″ >> /etc/crypttab
-				with
-					# Add crypttab entry
-					echo “cryptswap$i UUID=$uuid /dev/urandom swap,offset=8,cipher=aes-cbc-essiv:sha256″ >> /etc/crypttab
-				without “offset=8″, a freshly installed Linuxmint finds the cryptswap and then destroys its UUID. On reboot, the UUID is gone and the swap partition cannot be found anymore. The offset should fix that problem.
-			select fastest repositories based on location
-			review upstream ubiquity patches
-			review github issues
-		[DONE] integrate nemo-preview
-		ship with nemo extensions, disable them by default (using overrides)
-		MATE/Xfce: provide QT5 override in /etc/X11/Xsession.d to make it use GTK style
-		[DONE] fixed mint-common
-		[DONE] restore menubar in terminals
-		[DONE] add LO and KDE PPA to list of 700 priorities
-		[DONE] apt memory fix: APT::Cache-Start "104857600"; https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=753941 or apply patch http://anonscm.debian.org/cgit/apt/apt.git/commit?id=4ea471ecb013d188d03a5c3efb9b21e58ef56065
-		[DONE] add network-manager-openvpn-gnome
-		[DONE] added orca
-		[DONE] install compton by default in MATE/Xfce
-		use LTS stack
-		update kernel
-		review/remove upstream pins no longer needed
+			[DONE] don't encrypt swap partitions
+			[DONE] select fastest repositories based on location
 
 	apps:
 		hplip: https://bugs.launchpad.net/hplip/+bug/1442734
-		vlc: upgrade to 2.2. It supports HEVC/h265 (same quality at half the file size). PPA available at ppa:mc3man/trusty-media
-		[DONE] LO5
-
-	mintbackup:
-		consider using another alternative?
-
-	mintwelcome:
-		review UI
 
 	cinnamon:
 		window preview stuck: https://github.com/linuxmint/Cinnamon/issues/4750
-		gnome-system-monitor moves out of the place in Expo
+		gnome-system-monitor moves out of place in Expo
 		When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
 		hovering over notifications which have buttons/widgets should not dim them ...
 		hidpi issues:
 			Windows previews are nice but they are too small (not sure if this is only on HiDPI) – is there a way to make them bigger?
 			Top of mint menu is cut off in HiDPI (1920×1280)
+		nemo:
+			remove pref for advanced context menu items
+			segfault when drag-n-dropping from host to guest nemo (in nemo-file.c -> nemo_file_get_filesystem_id())
 
 	mate:
-		alt-tab thumbs cost perf..
-		caja: clicking on home [compact view] in sidebar then on filesystem [icon view], back and forth, eventually dir names disappear
-		md5sum action
 		pass on translations
+		indicator-sound-gtk2 -> launch mate-volume-control when in MATE
 
 	artwork/config:
 		update 17.3 background (doesn't look good)
 		update backgrounds
 		switch mdm slideshow to rosa
+		review isolinux
 
 	Xfce/KDE
 	========
@@ -79,6 +51,10 @@
 			mate-dialogs -> zenity
 			mate-calc -> gcaltool
 			mate-system-tools -> gnome-system-tools
+		MATE/Xfce: provide QT5 override in /etc/X11/Xsession.d to make it use GTK style
+		alt-tab thumbs cost perf..
+		caja: clicking on home [compact view] in sidebar then on filesystem [icon view], back and forth, eventually dir names disappear
+		md5sum action
 
 	lmde:
 		bashrc: # colored GCC warnings and errors --> export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01' (won't work until gcc 4.9)

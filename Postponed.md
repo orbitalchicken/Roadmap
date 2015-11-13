@@ -114,6 +114,7 @@ Cinnamon
 		mouse/touchpad: an option to change the mouse scroll speed for the middle wheel in Mouse and Touchpad preferences
 		cinnamon-settings-users: Creating a user without password (stupid but nothing prevents it): impossible for that user to set one himself in Account Details.
 		cinnamon-settings-users: In the “Users and Groups”, when on “Groups” tab, it could be great to have a way to see the members of a selected group and add new members to the group as well. Currently, we can only edit the group name…
+		backgrounds: get more brackgrounds (find a way to make it easy to install more backgrounds)
 
 	applets:
 		menu: doesn't listen to menu changes outside /usr/share/applications? install shotwell for instance (uses /usr/share/menu)

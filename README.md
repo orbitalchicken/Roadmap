@@ -5,31 +5,46 @@
 		ubiquity:
 			[DONE] don't encrypt swap partitions
 			[DONE] select fastest repositories based on location
+		[DONE] gksu: switch to su mode to remember password
+		[DONE] gksu: removed transparency
+		[DONE] libpam-systemd: fix runtime collisions with gksu su mode
+
+	cinnamon:
+		nemo:
+			[DONE] remove pref for advanced context menu items
+			[DONE] segfault when drag-n-dropping from host to guest nemo (in nemo-file.c -> nemo_file_get_filesystem_id())
+
+	artwork/config:
+		[DONE] update 17.3 background (doesn't look good)
+		[DONE] update backgrounds
+		[DONE] switch mdm slideshow to rosa
+		[DONE] refreshed mintwelcome
+
+	17.3 RC
+	=======
+
+	artwork/config:
+		review isolinux
 
 	apps:
 		hplip: https://bugs.launchpad.net/hplip/+bug/1442734
 
 	cinnamon:
-		window preview stuck: https://github.com/linuxmint/Cinnamon/issues/4750
 		gnome-system-monitor moves out of place in Expo
 		When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
 		hovering over notifications which have buttons/widgets should not dim them ...
 		hidpi issues:
 			Windows previews are nice but they are too small (not sure if this is only on HiDPI) – is there a way to make them bigger?
 			Top of mint menu is cut off in HiDPI (1920×1280)
-		nemo:
-			remove pref for advanced context menu items
-			segfault when drag-n-dropping from host to guest nemo (in nemo-file.c -> nemo_file_get_filesystem_id())
 
 	mate:
+		updates (as of 11 Nov):
+			fixes: atril mcc
+			translations: mate-applets mnd
+			new features: mpm
 		pass on translations
 		indicator-sound-gtk2 -> launch mate-volume-control when in MATE
 
-	artwork/config:
-		update 17.3 background (doesn't look good)
-		update backgrounds
-		switch mdm slideshow to rosa
-		review isolinux
 
 	Xfce/KDE
 	========

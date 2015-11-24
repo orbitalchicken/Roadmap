@@ -1,33 +1,51 @@
+	18
+	==
+
+		artwork/config:
+			review isolinux
+			New artwork
+
+		system:
+			Restore brightness settings on reboot (killswitch does that for bluetooth state)
+
+		mate 1.14:
+			touchpad: tap actions should reflect click actions
+
+		cinnamon 3.0:
+			touchpad: tap actions should reflect click actions
 	17.3
 	=====
 
-	system:
-		ubiquity:
-			[DONE] don't encrypt swap partitions
-			[DONE] select fastest repositories based on location
-		[DONE] gksu: switch to su mode to remember password
-		[DONE] gksu: removed transparency
-		[DONE] libpam-systemd: fix runtime collisions with gksu su mode
+	release management:
+		screenshots
+		videos of each desktops
 
-	cinnamon:
-		nemo:
-			[DONE] remove pref for advanced context menu items
-			[DONE] segfault when drag-n-dropping from host to guest nemo (in nemo-file.c -> nemo_file_get_filesystem_id())
+	17.3 BETA
+	=========
 
-	artwork/config:
-		[DONE] update 17.3 background (doesn't look good)
-		[DONE] update backgrounds
-		[DONE] switch mdm slideshow to rosa
-		[DONE] refreshed mintwelcome
+	[GIT] Cinnamon Sound applet: Close menu after clicking X button
 
-	17.3 RC
-	=======
+	sources:
+		live.linuxmint.com might need priority over packages.linuxmint.com to keep FF locales in sync with live version of FF
+		consider not using extra.linuxmint.com
+		consider downgrading import/main priority to 500
 
-	artwork/config:
-		review isolinux
 
-	apps:
-		hplip: https://bugs.launchpad.net/hplip/+bug/1442734
+	mintupdate:
+		don't test up-to-date-ness if using packages.linuxmint.com..
+		when testing up-to-date-ness, check mirror first, don't check packages.linuxmint.com if age is less than 2 days
+		remember mint age across refreshes, only re-read it if up-to-date check fails for mirror
+
+	mintdrivers:
+		always mark bcmwl-kernel-source as recommended
+		mark b43 options as needing a connection to the Internet
+		maybe indicate a reboot is needed post-successful driver install
+
+	mintwelcome:
+		use semi-saturated icons, or use full-saturated icons with highlighted versions for hover
+
+	mintinstall:
+		when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
 
 	cinnamon:
 		gnome-system-monitor moves out of place in Expo
@@ -36,15 +54,6 @@
 		hidpi issues:
 			Windows previews are nice but they are too small (not sure if this is only on HiDPI) – is there a way to make them bigger?
 			Top of mint menu is cut off in HiDPI (1920×1280)
-
-	mate:
-		updates (as of 11 Nov):
-			fixes: atril mcc
-			translations: mate-applets mnd
-			new features: mpm
-		pass on translations
-		indicator-sound-gtk2 -> launch mate-volume-control when in MATE
-
 
 	Xfce/KDE
 	========

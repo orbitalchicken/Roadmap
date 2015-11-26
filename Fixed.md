@@ -5,6 +5,12 @@ All editions
 	mintsources: Fixed up-to-date checks
 	mintupdate: Setting broken icons breaks mintupdate
 	mdm: Don't let users with an encrypted home directory use auto/timed login
+	upower: Logitech mice battery not detected: https://bugs.launchpad.net/ubuntu/+source/upower/+bug/1448834
+	mint-themes-gtk3: first tick in a treeview is blurry
+	mdmsetup: crash when selecting 'blank' primary monitor
+	ubiquity: wrong version (16) of Linux Mint being reported
+	repositories: added spotify-client
+	repositories: added minecraft-installer
 
 Cinnamon Edition
 ----------------
@@ -12,7 +18,7 @@ Cinnamon Edition
 
 MATE Edition
 ------------
-	latest issues and translations in:
+	import latest fixes/translations for :
 		atril
 		mcc
 		mate-desktop
@@ -20,7 +26,7 @@ MATE Edition
 		mpm
 		caja
 		mate-applets
-	indicator-sound-gtk2 -> launch mate-volume-control when in MATE
+	indicator-sound-gtk2: launch mate-volume-control when in MATE
 
 
 KDE Edition

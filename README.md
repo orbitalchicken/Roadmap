@@ -10,9 +10,16 @@
 
 		mate 1.14:
 			touchpad: tap actions should reflect click actions
+			mcc: replace sound themes with sound events
 
 		cinnamon 3.0:
 			touchpad: tap actions should reflect click actions
+			multi-monitor: add an option to suspend on lid-close EVEN when external monitors are plugged
+			sound: add an option to switch sound to HDMI when an HDMI output device is plugged
+
+		mintupdate:
+			unattended updates? at least provide a CLI to do it via cron?
+
 	17.3
 	=====
 
@@ -26,9 +33,9 @@
 	[GIT] Cinnamon Sound applet: Close menu after clicking X button
 
 	sources:
-		live.linuxmint.com might need priority over packages.linuxmint.com to keep FF locales in sync with live version of FF
-		consider not using extra.linuxmint.com
-		consider downgrading import/main priority to 500
+		[DONE] live.linuxmint.com might need priority over packages.linuxmint.com to keep FF locales in sync with live version of FF
+		[DONE - need to add mintsystem to repository ] consider downgrading import/main priority to 500
+		[DONE] ISO: consider not removing security/updates from build list
 
 
 	mintupdate:

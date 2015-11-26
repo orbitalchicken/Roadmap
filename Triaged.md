@@ -6,7 +6,7 @@ Not a bug
 
 Outside of the scope
 --------------------
-
+	install openbox and obconf?
 
 Can't reproduce
 ---------------

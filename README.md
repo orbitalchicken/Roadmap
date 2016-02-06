@@ -19,7 +19,7 @@
             [done] xviewer
             xreader
             xar
-            xapps support in Cinnamon (replace default apps)
+            xapps support in Cinnamon
             xapps support in MATE
             xapps support in MIME defaults
 
@@ -72,15 +72,10 @@
 
 		hexchat: add notifications, hide in/out messages, by default
 
-
-	X-APPS
-	======
-
-		xplayer:
-			translations
-
 	17.3
 	=====
+
+    Cinnamon point releases
 
 	MATE updates:
 		http://pastebin.com/yELMqEz2

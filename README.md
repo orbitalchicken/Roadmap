@@ -33,8 +33,26 @@
 		mintinstall: when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
 		mintmenu: dark themes https://github.com/linuxmint/mintmenu/issues/87
 
+		people are led to believe the community website is the place for support:
+			change the order in FF bookmarks -> place Community at the end, after Forums/Blog.
+			place an info message in the sidebar (or headerbar), and on the registration page to explain the forums are the place to be.
+
+		gthumb tries to launch gnome-control-center when applying a background
+
+		hexchat: add notifications, hide in/out messages, by default
+
+
+	X-APPS
+	======
+
+		xplayer:
+			translations
+
 	17.3
 	=====
+
+	MATE updates:
+		http://pastebin.com/yELMqEz2
 
 	release management:
 		screenshots

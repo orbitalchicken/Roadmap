@@ -1,13 +1,44 @@
-	18
-	==
+	Linux Mint 18 Sarah
+	===================
 
-		artwork/config:
-			review isolinux
-			New artwork
+        Look and feel:
+            isolinux theme
+            plymouth theme
+            GTK 3.18 support in Mint-X
+                Sidebar issues
+                Pathbar buttons (visible in nemo)
+                Context menus don't look good
+            new GTK theme
+            new icon theme
+            consider making it easy to switch to old theme? (maybe a meta-theme and support for it in cinnamon?).
+            website revamp
 
-		system:
+        X-Apps:
+            [done] xed
+            [done] xplayer
+            [done] xviewer
+            xreader
+            xar
+            xapps support in Cinnamon (replace default apps)
+            xapps support in MATE
+            xapps support in MIME defaults
+
+        Regressions:
+            GTK/Cinnamon: window is mapped to top-left and then moves in position when minimizing and then restauring from the panel window list
+            GTK/Nemo: text entry out of place when renaming a file
+            GTK: Overlay scrollbars hide content (for instance the last line of text in a text editor when wrapping is disabled)
+
+        Mint apps:
+            Migrate to gsettings/gtk3/python3 and review shebangs
+
+        Software selection:
+            consider replacing/removing mintbackup
+            consider replacing/removing gthumb
+
+		System:
 			Restore brightness settings on reboot (killswitch does that for bluetooth state)
 			add "pwfeedback" to Defaults line in sudoers file, to show *** feedback when typing password
+            Upgrade path from Mint 17.3
 
 		mate 1.14:
 			touchpad: tap actions should reflect click actions

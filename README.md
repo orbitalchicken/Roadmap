@@ -17,7 +17,7 @@
             [done] xed
             [done] xplayer
             [done] xviewer
-            xreader
+            [done] xreader
             xar
             xapps support in Cinnamon
             xapps support in MATE

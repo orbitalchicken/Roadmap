@@ -42,9 +42,9 @@
                 [done] mintupload
                 [done] mintnanny
                 [done] mintbackup
+                [done] mint-dev-tools
                 mintdrivers
                 mintlocale
-                mint-dev-tools
             gtk3:
                 [done] mintdesktop
                 [done] mintsystem

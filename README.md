@@ -29,7 +29,53 @@
             GTK: Overlay scrollbars hide content (for instance the last line of text in a text editor when wrapping is disabled)
 
         Mint apps:
-            Migrate to gsettings/gtk3/python3 and review shebangs
+            review python shebangs:
+                [done] mint-common
+                [done] mintdesktop
+                [done] mintsystem
+                [done] mintwelcome
+                [done] mintinstall
+                [done] mintmenu
+                [done] mintsources
+                [done] mintstick
+                [done] mintupdate
+                [done] mintupload
+                [done] mintnanny
+                [done] mintbackup
+                mintdrivers
+                mintlocale
+                mint-dev-tools
+            gtk3:
+                [done] mintdesktop
+                [done] mintsystem
+                [done] mintwelcome
+                [done] mintlocale
+                [done] mintdrivers
+                [done] mintnanny
+                [done] mintstick
+                [done] mint-common
+                [glebihan] mintupdate
+                mintbackup
+                mintinstall
+                mintsources
+                mintupload
+            hidpi:
+                mintwelcome uses 32px png icons
+                mintlocale uses fixed-size flag icons
+            Full black-box testing on xenial:
+                mintdesktop
+                mintsystem
+                mintwelcome
+                mintinstall
+                mintmenu
+                mintsources
+                mintstick
+                mintupdate
+                mintupload
+                mintbackup
+                mintdrivers
+                mintlocale
+                mintnanny
 
         Software selection:
             consider replacing/removing mintbackup
@@ -63,6 +109,7 @@
 
 		mintinstall: when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
 		mintmenu: dark themes https://github.com/linuxmint/mintmenu/issues/87
+        mintsystem: review /usr/bin/apt and add missing features (list, search etc..)
 
 		people are led to believe the community website is the place for support:
 			change the order in FF bookmarks -> place Community at the end, after Forums/Blog.
@@ -71,6 +118,9 @@
 		gthumb tries to launch gnome-control-center when applying a background
 
 		hexchat: add notifications, hide in/out messages, by default
+
+        Ready:
+            mintsources: add-apt-repository now supports --remove
 
 	17.3
 	=====
@@ -118,3 +168,4 @@
 		ca.crt
 		tutorial
 		support for openvpn
+

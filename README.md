@@ -85,6 +85,7 @@
 			Restore brightness settings on reboot (killswitch does that for bluetooth state)
 			add "pwfeedback" to Defaults line in sudoers file, to show *** feedback when typing password
             Upgrade path from Mint 17.3
+            Don't disable ipv6 in Firefox
 
 		mate 1.14:
 			touchpad: tap actions should reflect click actions

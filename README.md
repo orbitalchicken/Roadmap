@@ -8,6 +8,7 @@
                 Sidebar issues
                 Pathbar buttons (visible in nemo)
                 Context menus don't look good
+                (also in 3.10) mintupdate: black line at the bottom of the window, toolbar separators not visible
             new GTK theme
             new icon theme
             consider making it easy to switch to old theme? (maybe a meta-theme and support for it in cinnamon?).
@@ -54,7 +55,7 @@
                 [done] mintnanny
                 [done] mintstick
                 [done] mint-common
-                [glebihan] mintupdate
+                [done] mintupdate
                 mintbackup
                 mintinstall
                 mintsources
@@ -62,6 +63,7 @@
             hidpi:
                 mintwelcome uses 32px png icons
                 mintlocale uses fixed-size flag icons
+                mintupdate uses fixed-size icons
             Full black-box testing on xenial:
                 mintdesktop
                 mintsystem

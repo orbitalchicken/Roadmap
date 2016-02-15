@@ -4,11 +4,6 @@
         Look and feel:
             isolinux theme
             plymouth theme
-            GTK 3.18 support in Mint-X
-                Sidebar issues
-                Pathbar buttons (visible in nemo)
-                Context menus don't look good
-                (also in 3.10) mintupdate: black line at the bottom of the window, toolbar separators not visible
             new GTK theme
             new icon theme
             consider making it easy to switch to old theme? (maybe a meta-theme and support for it in cinnamon?).
@@ -28,24 +23,10 @@
             GTK/Cinnamon: window is mapped to top-left and then moves in position when minimizing and then restauring from the panel window list
             GTK/Nemo: text entry out of place when renaming a file
             GTK: Overlay scrollbars hide content (for instance the last line of text in a text editor when wrapping is disabled)
+            GTK: Pathbar buttons (visible in nemo)
+            GTK3 (also happens with 3.10) mintupdate: black line at the bottom of the window, toolbar separators not visible
 
         Mint apps:
-            review python shebangs:
-                [done] mint-common
-                [done] mintdesktop
-                [done] mintsystem
-                [done] mintwelcome
-                [done] mintinstall
-                [done] mintmenu
-                [done] mintsources
-                [done] mintstick
-                [done] mintupdate
-                [done] mintupload
-                [done] mintnanny
-                [done] mintbackup
-                [done] mint-dev-tools
-                mintdrivers
-                mintlocale
             gtk3:
                 [done] mintdesktop
                 [done] mintsystem

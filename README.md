@@ -40,8 +40,8 @@
                 mintbackup
                 mintinstall
                 mintsources
-                mintupload
-            hidpi:
+                mintupload 
+           hidpi:
                 mintwelcome uses 32px png icons
                 mintlocale uses fixed-size flag icons
                 mintupdate uses fixed-size icons
@@ -112,7 +112,7 @@
     Cinnamon point releases
 
 	MATE updates:
-		http://pastebin.com/yELMqEz2
+		http://pastebin.ca/3374316
 
 	release management:
 		screenshots

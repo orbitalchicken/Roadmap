@@ -112,7 +112,7 @@
     Cinnamon point releases
 
 	MATE updates:
-		http://pastebin.ca/3374316
+		http://pastebin.ca/3374335
 
 	release management:
 		screenshots

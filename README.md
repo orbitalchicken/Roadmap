@@ -40,7 +40,7 @@
                 mintbackup
                 mintinstall
                 mintsources
-                mintupload 
+                mintupload
            hidpi:
                 mintwelcome uses 32px png icons
                 mintlocale uses fixed-size flag icons
@@ -69,6 +69,11 @@
 			add "pwfeedback" to Defaults line in sudoers file, to show *** feedback when typing password
             Upgrade path from Mint 17.3
             Don't disable ipv6 in Firefox
+            check that libdvdcss2 is no longer needed (test encrypted DVD playback, consider libdvd-pkg, or postinst installation from libdvdread4)
+            move extra pkgs to import
+            remove adobe-flashplugin from the repos (was put there temporarily as Ubuntu xenial partner repo doesn't have it yet)
+            update live grub
+            update ubuntu-drivers-common (possibly nvidia-prime)
 
 		mate 1.14:
 			touchpad: tap actions should reflect click actions
@@ -76,6 +81,8 @@
 			multi-monitor: caja doesn't always show the desktop on the primary monitor (using a laptop as main/left monitor, and HDMI screen with higher res on the right, it surprisingly ends up showing icons on the right screen)
 
 		cinnamon 3.0:
+            nemo: restore the ability to select files on the desktop by typing their name
+            provide cinnamon-desktop-environment and cinnamon-core metapackages
 			touchpad: tap actions should reflect click actions
 			multi-monitor: add an option to suspend on lid-close EVEN when external monitors are plugged
 			sound: add an option to switch sound to HDMI when an HDMI output device is plugged

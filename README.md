@@ -20,11 +20,9 @@
             xapps support in MIME defaults
 
         Regressions:
-            GTK/Cinnamon: window is mapped to top-left and then moves in position when minimizing and then restauring from the panel window list
             GTK/Nemo: text entry out of place when renaming a file
             GTK: Overlay scrollbars hide content (for instance the last line of text in a text editor when wrapping is disabled)
             GTK: Pathbar buttons (visible in nemo)
-            GTK3 (also happens with 3.10) mintupdate: black line at the bottom of the window, toolbar separators not visible
 
         Mint apps:
             gtk3:
@@ -74,6 +72,10 @@
             remove adobe-flashplugin from the repos (was put there temporarily as Ubuntu xenial partner repo doesn't have it yet)
             update live grub
             update ubuntu-drivers-common (possibly nvidia-prime)
+            mdm: don't let people type their username without clicking something
+            mintsources: https://github.com/linuxmint/mintsources/issues/59
+            meta: update fonts deps to fonts-dejavu, fonts-dejavu-extra, fonts-wqy-microhei.
+            mint-meta-mate: 1) no need to depend on gir1.2-mate-menu, it's not used anywhere and is half-broken; 2) need to drop mate-netspeed for mint 18 as this package is merged into mate-applets in 1.14 release.
 
 		mate 1.14:
 			touchpad: tap actions should reflect click actions
@@ -93,6 +95,7 @@
 			When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
 			hovering over notifications which have buttons/widgets should not dim them ...
 			accessibility: ability to select files by hovering them
+            menu: use search providers to search local files
 
 		mintupdate:
 			unattended updates? at least provide a CLI to do it via cron?
@@ -101,6 +104,9 @@
 		mintinstall: when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
 		mintmenu: dark themes https://github.com/linuxmint/mintmenu/issues/87
         mintsystem: review /usr/bin/apt and add missing features (list, search etc..)
+
+        mintmenu: https://github.com/linuxmint/mintmenu/issues/149
+        mintmenu: https://github.com/linuxmint/mintmenu/issues/145
 
 		people are led to believe the community website is the place for support:
 			change the order in FF bookmarks -> place Community at the end, after Forums/Blog.

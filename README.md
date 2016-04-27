@@ -57,6 +57,10 @@
                 mintdrivers
                 mintlocale
                 mintnanny
+            mintupdate: thicken numbers in status icons
+            mintupload: use icon names rather than path to SVG
+            mintinstall: add sarah to community, export pkg list to server-side infra
+            update mint-translations
 
         Software selection:
             consider replacing/removing mintbackup
@@ -73,6 +77,7 @@
             update live grub
             update ubuntu-drivers-common (possibly nvidia-prime)
             mdm: don't let people type their username without clicking something
+            mdm: Logitech keyboards support https://github.com/linuxmint/mdm/issues/5
             mintsources: https://github.com/linuxmint/mintsources/issues/59
             meta: update fonts deps to fonts-dejavu, fonts-dejavu-extra, fonts-wqy-microhei.
             mint-meta-mate: 1) no need to depend on gir1.2-mate-menu, it's not used anywhere and is half-broken; 2) need to drop mate-netspeed for mint 18 as this package is merged into mate-applets in 1.14 release.
@@ -166,3 +171,19 @@
 		tutorial
 		support for openvpn
 
+
+Linux Mint 18.1
+===============
+
+    cinnamon 3.2
+        vertical panels
+        retire boxpointers
+        remove plug/socket in screensaver
+        applets
+            menu: adopt this layout (https://raw.githubusercontent.com/The-Panacea-Projects/Gnomenu/master/Screenshot.png), same as ours/mintmenu, only better.
+            add a printer applet
+
+    libindicator++?
+
+    xed
+        sublime-like search bar

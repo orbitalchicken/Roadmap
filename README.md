@@ -4,6 +4,7 @@
         update translations
         update linuxmint-keyring
         consider enabling recommends
+        [DONE] fix apturl
 
         terminal:
             [Fixed in git] terminal makes sounds
@@ -62,12 +63,10 @@
             consider replacing/removing gthumb
 
 		System:
-			add "pwfeedback" to Defaults line in sudoers file, to show *** feedback when typing password
             Upgrade path from Mint 17.3
 
         mdm:
             don't let people type their username without clicking something
-            Logitech keyboards support https://github.com/linuxmint/mdm/issues/5
 
 		cinnamon 3.0:
             nemo: restore the ability to select files on the desktop by typing their name
@@ -82,10 +81,11 @@
 			accessibility: ability to select files by hovering them
             menu: use search providers to search local files
 
+        xapps:
+            xreader segfaults when opening file->properties on a PDF
+
 
 		gthumb tries to launch gnome-control-center when applying a background
-
-		hexchat: add notifications, hide in/out messages, by default
 
 
 Maintenance

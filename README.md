@@ -69,6 +69,7 @@
             don't let people type their username without clicking something
 
 		cinnamon 3.0:
+            upgrade issue? users reported dist-upgrade from Betsy vanilla to Cinnamon 3.0 removed the cinnamon package
             nemo: restore the ability to select files on the desktop by typing their name
 			multi-monitor: add an option to suspend on lid-close EVEN when external monitors are plugged
 			sound: add an option to switch sound to HDMI when an HDMI output device is plugged
@@ -125,7 +126,6 @@ Linux Mint 18.1
 
     mintupdate:
         provide a CLI (to let people upgrade automatically)
-        fix mergelist issues directly in mintupdate or checkAPT
 
 LMDE +1:
 =========

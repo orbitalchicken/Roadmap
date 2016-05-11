@@ -7,7 +7,6 @@
         [DONE] fix apturl
 
         terminal:
-            [Fixed in git] terminal makes sounds
             Shift+Ctrl+T to open a new tab... should be Ctrl+T
             no transparency?
             no new tab option in context menu
@@ -21,9 +20,6 @@
         artwork:
             update default background in mint-artwork-gnome
             mint-backgrounds-sarah
-
-        cinnamon screensaver:
-            https://github.com/linuxmint/Cinnamon/issues/5150#issuecomment-215728443
 
         Mint apps:
             gtk3:
@@ -64,9 +60,6 @@
 
 		System:
             Upgrade path from Mint 17.3
-
-        mdm:
-            don't let people type their username without clicking something
 
 		cinnamon 3.0:
             upgrade issue? users reported dist-upgrade from Betsy vanilla to Cinnamon 3.0 removed the cinnamon package

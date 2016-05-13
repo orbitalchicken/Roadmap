@@ -25,7 +25,6 @@
             gtk3:
                 mintinstall
                 mintsources
-                mintupload
            hidpi:
                 mintwelcome uses 32px png icons
                 mintlocale uses fixed-size flag icons
@@ -34,8 +33,6 @@
                 thicken numbers in status icons
             mintupload:
                 use icon names rather than path to SVG
-            mintinstall:
-                add sarah to community, export pkg list to server-side infra
             mintsources:
                 https://github.com/linuxmint/mintsources/issues/59
             mintinstall:
@@ -52,7 +49,6 @@
                 in mintsources, remove dep on synaptic
                 remove synaptic from default selection
                 remove synaptic from mintmenu's favorites
-            update mint-translations
 
         Software selection:
             consider replacing/removing mintbackup

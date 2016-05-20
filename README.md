@@ -2,17 +2,19 @@
 	===================
 
         update translations
-        update linuxmint-keyring
+        update linuxmint-keyring (and sign live repo)
         consider enabling recommends
-        [DONE] fix apturl
+
+        [done] mate-terminal lacks prompt colors
+        [done] hide imagemagick
+        [done] hide openjdk8
+        [done] mintmenu favorites
 
         terminal:
-            Shift+Ctrl+T to open a new tab... should be Ctrl+T
             no transparency?
             no new tab option in context menu
 
         firefox:
-            put packages in live repository
             update bookmarks (remove community or put it at the end)
             update DDG search engine
             consider not using default profile
@@ -21,62 +23,16 @@
             update default background in mint-artwork-gnome
             mint-backgrounds-sarah
 
-        Mint apps:
-            gtk3:
-                mintinstall
-                mintsources
-           hidpi:
-                mintwelcome uses 32px png icons
-                mintlocale uses fixed-size flag icons
-                mintupdate uses fixed-size icons
-            mintupdate:
-                thicken numbers in status icons
-            mintupload:
-                use icon names rather than path to SVG
-            mintsources:
-                https://github.com/linuxmint/mintsources/issues/59
-            mintinstall:
-                when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
-            mintmenu:
-                dark themes https://github.com/linuxmint/mintmenu/issues/87
-                https://github.com/linuxmint/mintmenu/issues/149
-                https://github.com/linuxmint/mintmenu/issues/145
-                prefs don't open?
-            use aptdaemon?
-                aptdaemon doesn't work in LMDE and is being abandoned upstream
-                in mintupdate, remove dep on synaptic, remove admin rights for checkAPT.py
-                in mintwelcome and codec menu entry, switch from apturl to aptdaemon
-                in mintsources, remove dep on synaptic
-                remove synaptic from default selection
-                remove synaptic from mintmenu's favorites
-
-        Software selection:
-            consider replacing/removing mintbackup
-            consider replacing/removing gthumb
+        mintupdate:
+            thicken numbers in status icons
 
 		System:
             Upgrade path from Mint 17.3
 
 		cinnamon 3.0:
+            menu doesn't seem to always update itself when installing/removing applications
             upgrade issue? users reported dist-upgrade from Betsy vanilla to Cinnamon 3.0 removed the cinnamon package
-            nemo: restore the ability to select files on the desktop by typing their name
-			multi-monitor: add an option to suspend on lid-close EVEN when external monitors are plugged
-			sound: add an option to switch sound to HDMI when an HDMI output device is plugged
 			menu: search on non-accentuated versions (for instance, "method" should find mintlocale's im in French)
-			hidpi issues: top of mint menu is cut off in HiDPI (1920×1280)
-			gnome-system-monitor moves out of place in Expo
-			when battery is very low, battery icon isn't red.. 2% charge, with less than 5 minutes to go, still not red.. bar is red in CCC, icon is red in notification.. but not in applet (and also not in the CCC icon itself either)
-			When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
-			hovering over notifications which have buttons/widgets should not dim them ...
-			accessibility: ability to select files by hovering them
-            menu: use search providers to search local files
-
-        xapps:
-            xreader segfaults when opening file->properties on a PDF
-
-
-		gthumb tries to launch gnome-control-center when applying a background
-
 
 Maintenance
 ===========
@@ -85,8 +41,9 @@ Maintenance
         reimplement css
 		handle utf-8, see comments on http://cinnamon-spices.linuxmint.com/applets/view/171
 
-    community website:
-        people are led to believe the community website is the place for support. place an info message in the sidebar (or headerbar), and on the registration page to explain the forums are the place to be.
+    upgrade LO to 5.0.6?
+
+    betsy: 3rd Cinnamon 3.0 update pack
 
 Linux Mint 18.1
 ===============
@@ -101,6 +58,13 @@ Linux Mint 18.1
         applets
             menu: adopt this layout (https://raw.githubusercontent.com/The-Panacea-Projects/Gnomenu/master/Screenshot.png), same as ours/mintmenu, only better.
             add a printer applet
+        sound: add an option to switch sound to HDMI when an HDMI output device is plugged
+        hidpi issues: top of mint menu is cut off in HiDPI (1920×1280)
+        gnome-system-monitor moves out of place in Expo
+        when battery is very low, battery icon isn't red.. 2% charge, with less than 5 minutes to go, still not red.. bar is red in CCC, icon is red in notification.. but not in applet (and also not in the CCC icon itself either)
+        When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
+        accessibility: ability to select files by hovering them
+        menu: use search providers to search local files
 
     mate 1.16
         swith MATE to GTK3
@@ -115,6 +79,36 @@ Linux Mint 18.1
 
     mintupdate:
         provide a CLI (to let people upgrade automatically)
+
+    gtk3:
+        mintsources
+
+    mintwelcome:
+        hidpi: don't use 32px png icons
+
+    mintlocale:
+        hidpi: don't use fixed-size flag icons
+
+    mintupload:
+        use icon names rather than path to SVG
+
+    mintsources:
+        port to GTK3
+        Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
+
+    mintinstall:
+        when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
+        port to GTK3
+        redesign main page to feature essential apps
+
+    use aptdaemon?
+        aptdaemon doesn't work in LMDE and is being abandoned upstream
+        in mintupdate, remove dep on synaptic, remove admin rights for checkAPT.py
+        in mintwelcome and codec menu entry, switch from apturl to aptdaemon
+        in mintsources, remove dep on synaptic
+        remove synaptic from default selection
+        remove synaptic from mintmenu's favorites
+
 
 LMDE +1:
 =========

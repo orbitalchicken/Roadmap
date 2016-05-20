@@ -66,7 +66,6 @@ Cinnamon
 		fix spacing between systray icons
 		cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
 		icons pixelated in alt-tab or panel after a suspend-resume
-		backgrounds could use EXIF metadata to rotate pictures automatically
 
 	networking:
 		network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg

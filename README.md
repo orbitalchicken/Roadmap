@@ -1,45 +1,45 @@
-	Linux Mint 18 Sarah
-	===================
+Linux Mint 18 Sarah
+===================
 
-        update translations
-        update linuxmint-keyring (and sign live repo)
-        consider enabling recommends
+    update translations
+    update linuxmint-keyring (and sign live repo)
+    consider enabling recommends
 
-        [done] mate-terminal lacks prompt colors
-        [done] hide imagemagick
-        [done] hide openjdk8
-        [done] mintmenu favorites
+    [done] mate-terminal lacks prompt colors
+    [done] hide imagemagick
+    [done] hide openjdk8
+    [done] mintmenu favorites
 
-        terminal:
-            no transparency?
-            no new tab option in context menu
+    terminal:
+        no transparency?
+        no new tab option in context menu
 
-        firefox:
-            update bookmarks (remove community or put it at the end)
-            update DDG search engine
-            consider not using default profile
+    firefox:
+        update bookmarks (remove community or put it at the end)
+        update DDG search engine
+        consider not using default profile
 
-        artwork:
-            update default background in mint-artwork-gnome
-            mint-backgrounds-sarah
+    artwork:
+        update default background in mint-artwork-gnome
+        mint-backgrounds-sarah
 
-        mintupdate:
-            thicken numbers in status icons
+    mintupdate:
+        thicken numbers in status icons
 
-		System:
-            Upgrade path from Mint 17.3
+    System:
+        Upgrade path from Mint 17.3
 
-		cinnamon 3.0:
-            menu doesn't seem to always update itself when installing/removing applications
-            upgrade issue? users reported dist-upgrade from Betsy vanilla to Cinnamon 3.0 removed the cinnamon package
-			menu: search on non-accentuated versions (for instance, "method" should find mintlocale's im in French)
+    cinnamon 3.0:
+        menu doesn't seem to always update itself when installing/removing applications
+        upgrade issue? users reported dist-upgrade from Betsy vanilla to Cinnamon 3.0 removed the cinnamon package
+        menu: search on non-accentuated versions (for instance, "method" should find mintlocale's im in French)
 
 Maintenance
 ===========
 
-	cinnamon-spices website:
+    cinnamon-spices website:
         reimplement css
-		handle utf-8, see comments on http://cinnamon-spices.linuxmint.com/applets/view/171
+        handle utf-8, see comments on http://cinnamon-spices.linuxmint.com/applets/view/171
 
     upgrade LO to 5.0.6?
 

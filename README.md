@@ -6,12 +6,8 @@ Linux Mint 18 Sarah
         rel notes
         new features
 
-    mate updates http://pub.mate-desktop.org/rss.xml
-    add mate-sensors
-
     The default background is missing (it should be ready next week)
     [DONE] The 2009 keyring is in the list of APT keys (it shouldn't be there by default)
-    [FIXED IN GIT] cinnamon translations http://nsa37.casimages.com/img/2016/05/30/160530062129436967.png
 
 Stable release
 =============
@@ -73,6 +69,7 @@ Linux Mint 18.1
 
     mintwelcome:
         hidpi: don't use 32px png icons
+        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
 
     mintlocale:
         hidpi: don't use fixed-size flag icons
@@ -88,9 +85,6 @@ Linux Mint 18.1
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
         port to GTK3
         redesign main page to feature essential apps
-
-    mintmenu:
-        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
 
     use aptdaemon?
         aptdaemon doesn't work in LMDE and is being abandoned upstream

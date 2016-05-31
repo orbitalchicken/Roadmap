@@ -1,38 +1,23 @@
 Linux Mint 18 Sarah
 ===================
 
-    update translations
-    update linuxmint-keyring (and sign live repo)
-    consider enabling recommends
+    release:
+        start page
+        rel notes
+        new features
 
-    [done] mate-terminal lacks prompt colors
-    [done] hide imagemagick
-    [done] hide openjdk8
-    [done] mintmenu favorites
+    mate updates http://pub.mate-desktop.org/rss.xml
+    add mate-sensors
 
-    terminal:
-        no transparency?
-        no new tab option in context menu
+    The default background is missing (it should be ready next week)
+    [DONE] The 2009 keyring is in the list of APT keys (it shouldn't be there by default)
+    [FIXED IN GIT] cinnamon translations http://nsa37.casimages.com/img/2016/05/30/160530062129436967.png
 
-    firefox:
-        update bookmarks (remove community or put it at the end)
-        update DDG search engine
-        consider not using default profile
-
-    artwork:
-        update default background in mint-artwork-gnome
-        mint-backgrounds-sarah
-
-    mintupdate:
-        thicken numbers in status icons
-
-    System:
+Stable release
+=============
+        update live repo and sign, with latest FF at time of release.
         Upgrade path from Mint 17.3
-
-    cinnamon 3.0:
-        menu doesn't seem to always update itself when installing/removing applications
-        upgrade issue? users reported dist-upgrade from Betsy vanilla to Cinnamon 3.0 removed the cinnamon package
-        menu: search on non-accentuated versions (for instance, "method" should find mintlocale's im in French)
+        no acceleration in virtualbox
 
 Maintenance
 ===========
@@ -43,13 +28,13 @@ Maintenance
 
     upgrade LO to 5.0.6?
 
-    betsy: 3rd Cinnamon 3.0 update pack
-
 Linux Mint 18.1
 ===============
 
     system
         consider adding snapd
+        consider adding support for xdg-apps, flatpack
+        consider enabling recommends
 
     cinnamon 3.2
         vertical panels
@@ -77,6 +62,9 @@ Linux Mint 18.1
     xed
         sublime-like search bar
 
+    xplayer/xviewer/xreader/pix
+        add a persistant option to blank other monitors when in full screen
+
     mintupdate:
         provide a CLI (to let people upgrade automatically)
 
@@ -100,6 +88,9 @@ Linux Mint 18.1
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
         port to GTK3
         redesign main page to feature essential apps
+
+    mintmenu:
+        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
 
     use aptdaemon?
         aptdaemon doesn't work in LMDE and is being abandoned upstream

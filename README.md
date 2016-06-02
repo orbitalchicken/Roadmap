@@ -11,21 +11,16 @@ Linux Mint 18 Sarah
         Xfce
         KDE
 
-    mintupdate: In French, in update policy screen, content is too close to left border (needs more margin).
+    [done] mintupdate: In French, in update policy screen, content is too close to left border (needs more margin).
 
-    In multimedia tests, applets and apple trailers fail to load. It's possible these websites are to blame though.
+    [done] Plymouth theme dots are a different shade of green than the logo.
 
-    Plymouth theme dots are a different shade of green than the logo.
+    [done] MDM default theme: Generic username box appears briefly during the page load. It should start hidden by default to avoid this cosmetic glitch.
 
-    MDM default theme: Generic username box appears briefly during the page load. It should start hidden by default to avoid this cosmetic glitch.
+    [done] update slideshow
+    slideshow translations
 
-    In the installation slideshow:
-        totem should be replaced with xed
-        gthumbs should be replaced with pix
-        codecs should be available (as opposed to included)
-        google-earth and picasa should be removed
-
-    Humanity and ubuntu mono themes are present.
+    [done] Humanity and ubuntu mono themes are present.
 
 
 Stable release

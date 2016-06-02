@@ -2,12 +2,31 @@ Linux Mint 18 Sarah
 ===================
 
     release:
-        start page
         rel notes
         new features
 
-    The default background is missing (it should be ready next week)
-    [DONE] The 2009 keyring is in the list of APT keys (it shouldn't be there by default)
+    review logind.conf changes in:
+        [DONE] Cinnamon
+        MATE
+        Xfce
+        KDE
+
+    mintupdate: In French, in update policy screen, content is too close to left border (needs more margin).
+
+    In multimedia tests, applets and apple trailers fail to load. It's possible these websites are to blame though.
+
+    Plymouth theme dots are a different shade of green than the logo.
+
+    MDM default theme: Generic username box appears briefly during the page load. It should start hidden by default to avoid this cosmetic glitch.
+
+    In the installation slideshow:
+        totem should be replaced with xed
+        gthumbs should be replaced with pix
+        codecs should be available (as opposed to included)
+        google-earth and picasa should be removed
+
+    Humanity and ubuntu mono themes are present.
+
 
 Stable release
 =============
@@ -64,26 +83,14 @@ Linux Mint 18.1
     mintupdate:
         provide a CLI (to let people upgrade automatically)
 
-    gtk3:
-        mintsources
-
     mintwelcome:
-        hidpi: don't use 32px png icons
         consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
 
-    mintlocale:
-        hidpi: don't use fixed-size flag icons
-
-    mintupload:
-        use icon names rather than path to SVG
-
     mintsources:
-        port to GTK3
         Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
 
     mintinstall:
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
-        port to GTK3
         redesign main page to feature essential apps
 
     use aptdaemon?
@@ -94,6 +101,13 @@ Linux Mint 18.1
         remove synaptic from default selection
         remove synaptic from mintmenu's favorites
 
+    HiDPI support:
+        pix: huge menubar
+        upstream apps using GTK2: Banshee, Gimp, Hexchat, VLC, Pidgin, Tomboy.
+        mint projects using GTK2: mdmsetup, mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
+        mintlocale: fixed-size flag icons
+        mintupload: use icon names rather than path to SVG
+        mintwelcome: don't use 32px png icons
 
 LMDE +1:
 =========

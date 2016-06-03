@@ -6,22 +6,11 @@ Linux Mint 18 Sarah
         new features
 
     review logind.conf changes in:
-        [DONE] Cinnamon
         MATE
         Xfce
         KDE
 
-    [done] mintupdate: In French, in update policy screen, content is too close to left border (needs more margin).
-
-    [done] Plymouth theme dots are a different shade of green than the logo.
-
-    [done] MDM default theme: Generic username box appears briefly during the page load. It should start hidden by default to avoid this cosmetic glitch.
-
-    [done] update slideshow
     slideshow translations
-
-    [done] Humanity and ubuntu mono themes are present.
-
 
 Stable release
 =============
@@ -47,6 +36,7 @@ Linux Mint 18.1
         consider enabling recommends
 
     cinnamon 3.2
+        add cinnamon-session and cinnamon-settings-daemon to Launchpad/cinnamon-translations
         vertical panels
         retire boxpointers
         remove plug/socket in screensaver

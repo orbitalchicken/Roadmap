@@ -10,8 +10,6 @@ Linux Mint 18 Sarah
         Xfce
         KDE
 
-    slideshow translations
-
 Stable release
 =============
         update live repo and sign, with latest FF at time of release.

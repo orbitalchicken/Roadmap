@@ -10,6 +10,15 @@ Linux Mint 18 Sarah
         Xfce
         KDE
 
+
+    [done] mint-y-darker theme def
+    [done] natural scroll
+    [done] metacity theme
+    [done] wrong compiz profile selected
+
+    Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353
+    mint-y-darker: caja toolbar is clear instead of dark
+
 Stable release
 =============
         update live repo and sign, with latest FF at time of release.
@@ -34,6 +43,7 @@ Linux Mint 18.1
         consider enabling recommends
 
     cinnamon 3.2
+        actions in panel launchers aren't translated if not present in .desktop file
         add cinnamon-session and cinnamon-settings-daemon to Launchpad/cinnamon-translations
         vertical panels
         retire boxpointers
@@ -60,8 +70,17 @@ Linux Mint 18.1
     xed
         sublime-like search bar
 
+    xreader
+        should place its menu item in the accessories category instead of office
+
     xplayer/xviewer/xreader/pix
         add a persistant option to blank other monitors when in full screen
+
+    xapps
+        should show their project name in the about dialog
+
+    pix
+        should use a generic name in the application menu
 
     mintupdate:
         provide a CLI (to let people upgrade automatically)

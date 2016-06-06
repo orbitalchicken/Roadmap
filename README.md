@@ -10,24 +10,8 @@ Linux Mint 18 Sarah
         Xfce
         KDE
 
-    LO menus show weird artefacts
-
-    mintsources: warning message should not mention backports
-    On session start, mintUpload doesn't run because of missing file. Its .desktop file is set to run non-existing binary: /usr/lib/linuxmint/mintUpload/launch-file-uploader.py
-    mintupdate prefs http://i.imgur.com/xBiPDmt.png
-
-    MATE:
-        [done] natural scroll
-        pkgs can be removed:  gnome-session-bin (has gnome-session-* binaries). libgnome2-bin (has gnome-open binary). libbonoboui2-0 libgnome2-0 libgnome2-perl libgnomeui-0 python-gnome2 libgnome-menu-3-0 libgnome2-canvas-perl libgnome2-common libgnome2-vfs-perl libgnomekbd-common libgnomekbd8 libgnomeui-common libgnomevfs2-0 libgnomevfs2-common libgnomevfs2-extra gkbd-capplet libbonobo2-0 libbonobo2-common libgtkmm-2.4-1v5 ndiswrapper ndiswrapper-utils-1.9 ndiswrapper-dkms gnome-session-canberra policykit-1-gnome
-        Synaptic entry in the left pane of mintMenu is apparently set to run it via gksu, while the menu entry in Applications pane uses synaptic-pkexec.
-        mate-session[6246]: EggSMClient-WARNING: Invalid Version string '0.9.4' in /home/monsta/.config/autostart/xfce-autostart-wm.desktop
-
-    Cinnamon:
-        mint-y and mint-y-dark are missing Cinnamon theme preview thumbs
-
-
     Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353
-    mint-y-darker: caja toolbar is clear instead of dark
+    mint-y-darker: gtk2 toolbars are clear instead of dark
 
 Stable release
 =============

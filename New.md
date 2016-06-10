@@ -8,7 +8,6 @@ All editions
 	nm connecting via WPA doesn't connect (no password passed).. using network connections to save the password -> works. Tested with MATE edition on a Lenovo Yoga 500.
 	Laptop is Alienware 13′ with Skylake CPU -> touchscreen isn't working
 	Laptop is Alienware 13′ with Skylake CPU -> wifi is not working
-	nmap scan found the microsoft-ds ports, open 443
 	login screen, no user selected, username don't show up very well on some of the backgrounds
 	Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
 	Black Themed Bar: Icons not vertically centered.

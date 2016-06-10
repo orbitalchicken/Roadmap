@@ -13,18 +13,16 @@ All editions
 	login screen, no user selected, username don't show up very well on some of the backgrounds
 	Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
 	Optimus Graphic: When right clicking on nvidia icon, the menu pops up in the top right
-	Black Theme: Grey font not readable e.g. additional driver window
 	Black Themed Bar: Icons not vertically centered.
 	Surface 4 Pro: Type Cover and Touchpad not working properly. Works from time to time. If I unplug the cover, both doesen't work any more.
 	Surface 4 Pro: Wlan not working -&gt; tries to connect but with no success. Asking for Passprase again and again. USB Wlan Dongle works
 	Surface 4 Pro: Touchscreen/pen not working
 	Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
-	mintsources: warning text uses hardcoded color (looks wrong in mint-y-dark)
 	ASRock skylake gpe6F bug: /var/log/syslog and var/log/kern.log are flooded with hundreds of gpe6F errors per second until the root partition runs out of space. Its a known issue with ASRock skylake boards. The workaround is o add [code] echo “disable” > /sys/firmware/acpi/interrupts/gpe6F [/code] to rc.local. more info at https://forums.linuxmint.com/viewtopic.php?f=49&t=223180
 	kernel updates wipe the vbox dkms module?
 	Intel Dual Band Wireless-AC 7265: unsupported splx structure
 	soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3)
-
+	Mint-Y themes Shade option is unavailable
 
 Cinnamon Edition - last processed comment: #64
 ----------------------------------------------

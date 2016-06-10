@@ -12,7 +12,6 @@ All editions
 	nmap scan found the microsoft-ds ports, open 443
 	login screen, no user selected, username don't show up very well on some of the backgrounds
 	Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
-	Optimus Graphic: When right clicking on nvidia icon, the menu pops up in the top right
 	Black Themed Bar: Icons not vertically centered.
 	Surface 4 Pro: Type Cover and Touchpad not working properly. Works from time to time. If I unplug the cover, both doesen't work any more.
 	Surface 4 Pro: Wlan not working -&gt; tries to connect but with no success. Asking for Passprase again and again. USB Wlan Dongle works

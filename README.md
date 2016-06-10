@@ -85,6 +85,9 @@ Linux Mint 18.1
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
         redesign main page to feature essential apps
 
+    blueberry:
+        cinnamon applet?
+
     use aptdaemon?
         aptdaemon doesn't work in LMDE and is being abandoned upstream
         in mintupdate, remove dep on synaptic, remove admin rights for checkAPT.py

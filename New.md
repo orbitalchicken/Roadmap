@@ -5,7 +5,6 @@ All editions
 
 	Update translations
 	Does not support Netgear A6210 wifi adapter.
-	mintbackup just hangs indefinitely when you try to restore software selection, terminal has no output, and mintbackup is using no cpu.
 	nm connecting via WPA doesn't connect (no password passed).. using network connections to save the password -> works. Tested with MATE edition on a Lenovo Yoga 500.
 	Laptop is Alienware 13′ with Skylake CPU -> touchscreen isn't working
 	Laptop is Alienware 13′ with Skylake CPU -> wifi is not working

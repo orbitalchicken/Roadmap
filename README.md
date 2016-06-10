@@ -1,23 +1,13 @@
 Linux Mint 18 Sarah
 ===================
 
-    release:
-        rel notes
-        new features
-
-    review logind.conf changes in:
-        MATE
-        Xfce
-        KDE
-
     Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353
     mint-y-darker: gtk2 toolbars are clear instead of dark
+    cinnamon misplaces tooltips initially in 0x0
 
-Stable release
-=============
-        update live repo and sign, with latest FF at time of release.
-        Upgrade path from Mint 17.3
-        no acceleration in virtualbox
+    update live repo and sign, with latest FF at time of release.
+    Upgrade path from Mint 17.3
+    no acceleration in virtualbox
 
 Maintenance
 ===========
@@ -30,6 +20,11 @@ Maintenance
 
 Linux Mint 18.1
 ===============
+
+    review logind.conf changes in:
+        MATE
+        Xfce
+        KDE
 
     system
         consider adding snapd
@@ -52,6 +47,7 @@ Linux Mint 18.1
         When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
         accessibility: ability to select files by hovering them
         menu: use search providers to search local files
+        launcher: check budgie app suggestions
 
     mate 1.16
         swith MATE to GTK3
@@ -80,7 +76,7 @@ Linux Mint 18.1
         provide a CLI (to let people upgrade automatically)
 
     mintwelcome:
-        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
+        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..) - check chalet OS' startpoint ideas
 
     mintsources:
         Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59

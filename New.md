@@ -1,16 +1,16 @@
-New bug reports in Linux Mint 17.3 BETA
+New bug reports in Linux Mint 18 BETA
 
 All editions
 ------------
 
-Cinnamon Edition - last processed comment: #187
+Cinnamon Edition - last processed comment: #0
 -----------------------------------------------
 
-MATE Edition - last processed comment: #82
+MATE Edition - last processed comment: #0
 ------------------------------------------
 
-KDE Edition - last processed comment: #30
+KDE Edition - last processed comment: #0
 -----------------------------------------
 
-Xfce Edition - last processed comment: #47
+Xfce Edition - last processed comment: #0
 ------------------------------------------

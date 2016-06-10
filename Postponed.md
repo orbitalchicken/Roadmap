@@ -1,7 +1,7 @@
 Improvements selected for the future
 =====================================
 
-Mint 17.x
+Mint 18.x
 ---------
 	common:
 		new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
@@ -41,7 +41,6 @@ Mint 17.x
 	mintmenu:
 		After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
 		Please add a "delete selection" Button for the Search-Field.
-		Sometimes at first launch, icons don't appear.
 
 	mintinstall:
 		revamp UI.
@@ -51,13 +50,11 @@ Mint 17.x
 		preselect user if only one user is present in the list
 		configurable slideshow
 
+	revive Giver project?
+
 Cinnamon
 --------
-	accessibility:
-		Screen reader did not appear to do anything, even after installing orca.
-
 	hidpi and display settings:
-		screensaver is all messed up
 		hidpi setting should be in Displays, not in General
 		frequency in monitor settings
 		System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA. This is related to a very longstanding issue of Mint always opening dialogs on the left (wrong) monitor
@@ -131,7 +128,6 @@ Cinnamon
 MATE
 ----
 	hard to resize window or to grab border
-	some of the MATE applications don’t have a mint-x icon. engrampa, eye of mate, atril. They could use the GNOME icons.
 	When panel is at the top, notifications show on top of it. https://dl.dropboxusercontent.com/u/54450962/%ED%99%94%EB%A9%B4-5.png
 	Add sound effects like in Cinnamon
 	The MATE user admin program (mate-users-admin), when setting a user’s type to “Administrative”, does not add the user to the “sudo” group. The workaround is to explicitly add the user to the sudo group
@@ -140,13 +136,8 @@ MATE
 	caja: If you set a black wallpaper, the text below desktop icons becomes unvisible after reboot or logout and login.
 	caja: dng and raw images thumbnails in caja
     caja: renaming a file produces a black border
-    use a configuration runtime switch for logind support.
 	add context menu support for CSD headerbars in Marco.
 	make MATE screensaver see OnlyShowIn=GNOME xscreensavers (/usr/share/applications/screensavers/*)
-
-Post 17
---------
-	revive Giver project?
 
 LMDE
 ----

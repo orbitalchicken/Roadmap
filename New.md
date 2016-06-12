@@ -29,7 +29,13 @@ All editions
 	Language Settings under System locale -> labels Language and Region seem to be set (probably done by installation procedure). When I changed language to UK English and clicked Apply Sytem-Wide, it got messed up (labels changed to “No locale defined” as already mentioned at Cinnamon). So the problem is most likely with the Apply System-Wide procedure.
 	Cannot change default System Locale by Language settings. Thus it can be changed manually by text editor. (file: /etc/default/locale)
 	Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
-	Banshee will not import media form folders causing hard locks, applies to both Mate and Cinn versions
+	Banshee will not import media form folders causing hard locks, applies to both Mate and Cinn versions (disable podcast plugin to fix this)
+	Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
+	‘Failed to retrieve share list from server’
+	networking to a shared epson x322 printer, it is no longer necessary to install epsons driver, I found out it wont install so used ‘printer-driver-escpr’ in synaptic.
+	in mintupload when editing a (non working – e.g. the default “suggested”) account, without changing something (and therefore closing the window with the top right X) the next time i just get an empty tiny Properties-window! you have close the Upload Manager (just the window – not even necessary to restart mintupload) and it is working again.
+	Tray icons are black with mint-y themes.
+	Auto login fails. User is required to select their name from login window even though they are the only account on the machine and have been selected for auto login in mdm. Password is not required but bootup will not proceed until user clicks on his/her name. That is not auto login.
 
 Cinnamon Edition - last processed comment: #64
 ----------------------------------------------
@@ -43,8 +49,10 @@ Cinnamon Edition - last processed comment: #64
 	cinnamon panel unresponsive when using nvidia 304 drivers?
 	Microphone level meter has color reverse. Shows red when low level and green when picking at high level. This is with build in microphone on Lenovo Carbon X1 4th generation 2016.
 	nemo-terminal: E: Package ‘gir1.2-vte-2.90’ has no installation candidate
+	Cant seem to be able to set the clock, unlock the setting and set it but it doesn’t hold.
+	Battery applet seems to stay at ‘charged ‘ even after power cord is removed, it MAY stay showing on charge or it may show on battery, its unpredictable.
 
-MATE Edition - last processed comment: #124
+MATE Edition - last processed comment: #142
 -------------------------------------------
 
 	mintmenu: use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)
@@ -63,6 +71,13 @@ MATE Edition - last processed comment: #124
 	In the date/time configuration, trying to change Manual by Synchronisation with NTP server. ntp package is not installed (in Ubuntu, it is), so, a message proposes to install it. I answer yes but it fails : “Could not install package GDBus.Error:org.freedesktop.Packagekit.Modify.NoPackagesFound:”
 	In the prefered applications(menu Preferences, “Prefered applications”), Caja isn’t the File manager by default. Must add it manually.
 	Another NetworkManager bug. Just tried to run the mint 18 MATE live on an old pc in my home and it wouldn’t recognize my Wi-Fi at all. It just looked as if I didn’t have Wi-Fi. Killing and restarting nm-applet didn’t help in this case, so the bug must be deeper. Sadly, this is a bug I’ve read about in Ubuntu MATE 16.04 so again, this might be a bug from upstream. For comparison, I had no problem of this sort when running mint cinnamon 18 live on this pc, and it is running mint Xfce (first 17.2, upgraded to 17.3) for a while and never had this problem.
+	mintmenu: when I install a piece of software it doesn’t show up until I log out from the desktop session and log back again, is it something normal or not?
+	Steam will not work at all in MATE.
+	Mate System Monitor was not visible in any of the Mate menus in my installation. It was however accessible through mate-system-monitor command. “apt reinstall mate-system-monitor” solved the problem (application showed up in the menus).
+	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme.
+	mintmenu: when editing the menu, the slide of an entry between a submenu to another crashes the menu editor and corrupt the menu (all applications disappear).  it is possible to retrieve the menu back ( delete /home/user/.config/menu/ and restart the computer) but this bug should be corrected. same problem when deleting a shortcut in the “other” submenu.
+	mintmenu 5.7.0 is transparent only one after reboot (first click on menu). Next click menu show not transparent
+	Clock on system bar is not modifiable (color, font) I need using script .gtkrc-2.0 etc.: style “my-panel-clock” { fg[NORMAL] = “#FFFFFF”  font_name = “sans bold 16” } widget “*.clock-applet-button.*” style “my-panel-clock”
 
 KDE Edition - last processed comment: #0
 -----------------------------------------

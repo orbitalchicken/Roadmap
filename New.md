@@ -54,7 +54,6 @@ Cinnamon Edition - last processed comment: #64
 
 MATE Edition - last processed comment: #142
 -------------------------------------------
-	panel applet which let us know the CPU and HDD/SSD devices’ temperature?
 	After I resume from suspend NetworkManager seems to work fine, Wifi connection is maintained, but nm-applet shows Wi-Fi Networks and other things grayed out. Running ‘pkill nm-applet’ and then ‘nm-applet’ fixes this.
 	Can't join WPA network (password not being passed), 3 people have this problem
 	after updates nm-applet shows ethernet icon instead of wifi for connections?
@@ -64,7 +63,6 @@ MATE Edition - last processed comment: #142
 	In the prefered applications(menu Preferences, “Prefered applications”), Caja isn’t the File manager by default. Must add it manually.
 	Another NetworkManager bug. Just tried to run the mint 18 MATE live on an old pc in my home and it wouldn’t recognize my Wi-Fi at all. It just looked as if I didn’t have Wi-Fi. Killing and restarting nm-applet didn’t help in this case, so the bug must be deeper. Sadly, this is a bug I’ve read about in Ubuntu MATE 16.04 so again, this might be a bug from upstream. For comparison, I had no problem of this sort when running mint cinnamon 18 live on this pc, and it is running mint Xfce (first 17.2, upgraded to 17.3) for a while and never had this problem.
 	Steam will not work at all in MATE.
-	Mate System Monitor was not visible in any of the Mate menus in my installation. It was however accessible through mate-system-monitor command. “apt reinstall mate-system-monitor” solved the problem (application showed up in the menus).
 	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme.
 	Clock on system bar is not modifiable (color, font) I need using script .gtkrc-2.0 etc.: style “my-panel-clock” { fg[NORMAL] = “#FFFFFF”  font_name = “sans bold 16” } widget “*.clock-applet-button.*” style “my-panel-clock”
 	[Fixed in Git] mintmenu: use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)

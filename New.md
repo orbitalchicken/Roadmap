@@ -21,7 +21,6 @@ All editions
 	soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3)
 	Mint-Y themes Shade option is unavailable
 	Could you update virtulbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
-	add curl to default selection
 	HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
 	Am testing on a lenovo w530. Bluetooth applet cant seem to pick any device. It will just display searching for devices and either provide an empty list or list devices i cannot setup. On 17.3 it worked like a charm
 	3c:00.0 Network controller: Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32), "wireless unavailable"
@@ -49,8 +48,6 @@ Cinnamon Edition - last processed comment: #64
 	cinnamon panel unresponsive when using nvidia 304 drivers?
 	Microphone level meter has color reverse. Shows red when low level and green when picking at high level. This is with build in microphone on Lenovo Carbon X1 4th generation 2016.
 	nemo-terminal: E: Package ‘gir1.2-vte-2.90’ has no installation candidate
-	Cant seem to be able to set the clock, unlock the setting and set it but it doesn’t hold.
-	Battery applet seems to stay at ‘charged ‘ even after power cord is removed, it MAY stay showing on charge or it may show on battery, its unpredictable.
 
 MATE Edition - last processed comment: #142
 -------------------------------------------
@@ -59,12 +56,9 @@ MATE Edition - last processed comment: #142
 	after updates nm-applet shows ethernet icon instead of wifi for connections?
 	very frequent “at-spi-registryd.desktop not responding” error at reboot/shutdown and it’s associated very slow reboot/shutdown
 	Lenovo Y700 no sound
-	In the date/time configuration, trying to change Manual by Synchronisation with NTP server. ntp package is not installed (in Ubuntu, it is), so, a message proposes to install it. I answer yes but it fails : “Could not install package GDBus.Error:org.freedesktop.Packagekit.Modify.NoPackagesFound:”
 	In the prefered applications(menu Preferences, “Prefered applications”), Caja isn’t the File manager by default. Must add it manually.
 	Another NetworkManager bug. Just tried to run the mint 18 MATE live on an old pc in my home and it wouldn’t recognize my Wi-Fi at all. It just looked as if I didn’t have Wi-Fi. Killing and restarting nm-applet didn’t help in this case, so the bug must be deeper. Sadly, this is a bug I’ve read about in Ubuntu MATE 16.04 so again, this might be a bug from upstream. For comparison, I had no problem of this sort when running mint cinnamon 18 live on this pc, and it is running mint Xfce (first 17.2, upgraded to 17.3) for a while and never had this problem.
-	Steam will not work at all in MATE.
 	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme.
-	Clock on system bar is not modifiable (color, font) I need using script .gtkrc-2.0 etc.: style “my-panel-clock” { fg[NORMAL] = “#FFFFFF”  font_name = “sans bold 16” } widget “*.clock-applet-button.*” style “my-panel-clock”
 	[Fixed in Git] mintmenu: use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)
 	mintmenu 5.7.0 is transparent only one after reboot (first click on menu). Next click menu show not transparent
 	mintmenu: weird org.mate.panel.applet.MintMenuAppletFactory in syslog when running synaptic

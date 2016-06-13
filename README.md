@@ -2,7 +2,6 @@ Linux Mint 18 Sarah
 ===================
 
     Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353
-    mint-y-darker: gtk2 toolbars are clear instead of dark
     cinnamon misplaces tooltips initially in 0x0
 
     update live repo and sign, with latest FF at time of release.
@@ -32,6 +31,7 @@ Linux Mint 18.1
         consider enabling recommends
 
     cinnamon 3.2
+        mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
         actions in panel launchers aren't translated if not present in .desktop file
         add cinnamon-session and cinnamon-settings-daemon to Launchpad/cinnamon-translations
         vertical panels

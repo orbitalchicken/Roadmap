@@ -10,31 +10,33 @@ All editions
 	Laptop is Alienware 13′ with Skylake CPU -> wifi is not working
 	login screen, no user selected, username don't show up very well on some of the backgrounds
 	Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
-	Black Themed Bar: Icons not vertically centered.
 	Surface 4 Pro: Type Cover and Touchpad not working properly. Works from time to time. If I unplug the cover, both doesen't work any more.
 	Surface 4 Pro: Wlan not working -&gt; tries to connect but with no success. Asking for Passprase again and again. USB Wlan Dongle works
 	Surface 4 Pro: Touchscreen/pen not working
-	Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
 	ASRock skylake gpe6F bug: /var/log/syslog and var/log/kern.log are flooded with hundreds of gpe6F errors per second until the root partition runs out of space. Its a known issue with ASRock skylake boards. The workaround is o add [code] echo “disable” > /sys/firmware/acpi/interrupts/gpe6F [/code] to rc.local. more info at https://forums.linuxmint.com/viewtopic.php?f=49&t=223180
 	kernel updates wipe the vbox dkms module?
 	Intel Dual Band Wireless-AC 7265: unsupported splx structure
 	soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3)
-	Mint-Y themes Shade option is unavailable
-	Could you update virtulbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
+	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
 	Am testing on a lenovo w530. Bluetooth applet cant seem to pick any device. It will just display searching for devices and either provide an empty list or list devices i cannot setup. On 17.3 it worked like a charm
 	3c:00.0 Network controller: Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32), "wireless unavailable"
 	xdg-user-dirs: I had set as system language “Deutsch” (German, Germany). When I started the computer next time the system language was English (UK). I was even asked, if I wish to translate the names of my folders to English (NO). And I can’t get the system back to German.
-	Language Settings under System locale -> labels Language and Region seem to be set (probably done by installation procedure). When I changed language to UK English and clicked Apply Sytem-Wide, it got messed up (labels changed to “No locale defined” as already mentioned at Cinnamon). So the problem is most likely with the Apply System-Wide procedure.
-	Cannot change default System Locale by Language settings. Thus it can be changed manually by text editor. (file: /etc/default/locale)
 	Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
 	Banshee will not import media form folders causing hard locks, applies to both Mate and Cinn versions (disable podcast plugin to fix this)
-	Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
 	‘Failed to retrieve share list from server’
 	networking to a shared epson x322 printer, it is no longer necessary to install epsons driver, I found out it wont install so used ‘printer-driver-escpr’ in synaptic.
-	in mintupload when editing a (non working – e.g. the default “suggested”) account, without changing something (and therefore closing the window with the top right X) the next time i just get an empty tiny Properties-window! you have close the Upload Manager (just the window – not even necessary to restart mintupload) and it is working again.
-	Tray icons are black with mint-y themes.
 	Auto login fails. User is required to select their name from login window even though they are the only account on the machine and have been selected for auto login in mdm. Password is not required but bootup will not proceed until user clicks on his/her name. That is not auto login.
+	artwork:
+		Tray icons are black with mint-y themes.
+		Mint-Y themes Shade option is unavailable
+		Black Themed Bar: Icons not vertically centered.
+		Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
+	mint-tools:
+		mintupload: when editing a (non working – e.g. the default “suggested”) account, without changing something (and therefore closing the window with the top right X) the next time i just get an empty tiny Properties-window! you have close the Upload Manager (just the window – not even necessary to restart mintupload) and it is working again.
+		mintlocale: Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
+		mintlocale: Cannot change default System Locale by Language settings. Thus it can be changed manually by text editor. (file: /etc/default/locale)
+		mintlocale: Language Settings under System locale -> labels Language and Region seem to be set (probably done by installation procedure). When I changed language to UK English and clicked Apply Sytem-Wide, it got messed up (labels changed to “No locale defined” as already mentioned at Cinnamon). So the problem is most likely with the Apply System-Wide procedure.
 
 Cinnamon Edition - last processed comment: #64
 ----------------------------------------------

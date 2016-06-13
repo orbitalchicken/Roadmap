@@ -3,6 +3,7 @@ Fixed Issues since Linux Mint 18 BETA
 All editions
 ------------
 	mintsources: warning text uses hardcoded color (looks wrong in mint-y-dark)
+	mintsources: can't browse PPA (relies on lsb_release -u)
 	mintdrivers: grey font not readable
 	Optimus Graphic: When right clicking on nvidia icon, the menu pops up in the top right
 	mintbackup just hangs indefinitely when you try to restore software selection, terminal has no output, and mintbackup is using no cpu.

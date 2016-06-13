@@ -24,8 +24,6 @@ All editions
 		networking to a shared epson x322 printer, it is no longer necessary to install epsons driver, I found out it wont install so used ‘printer-driver-escpr’ in synaptic.
 		Lenovo Y700 no sound
 	banshee: will not import media form folders causing hard locks (disable podcast plugin to fix this)
-	‘Failed to retrieve share list from server’
-	mdm: Auto login fails. User is required to select their name from login window even though they are the only account on the machine and have been selected for auto login in mdm. Password is not required but bootup will not proceed until user clicks on his/her name. That is not auto login.
 	artwork:
 		Tray icons are black with mint-y themes.
 		Mint-Y themes Shade option is unavailable

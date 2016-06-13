@@ -22,7 +22,9 @@ Can't reproduce
 	Steam will not work at all in MATE.
 	cinnamon: Battery applet seems to stay at ‘charged ‘ even after power cord is removed, it MAY stay showing on charge or it may show on battery, its unpredictable.
 	mintlocale: Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
+	mdm: Auto login fails (After testing, it works both from installer and from Login Window. Might not be obvious to users that they can't be auto-logged in if their home dir is encrypted..)
 
 Upstream
 --------
-	32bit version doesn’t support 32bit UEFI
+	grub: 32bit version doesn’t support 32bit UEFI
+	samba: ‘Failed to retrieve share list from server’

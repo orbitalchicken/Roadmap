@@ -10,6 +10,8 @@ All editions
 	add curl to default selection
 	In the date/time configuration, trying to change Manual by Synchronisation with NTP server. ntp package is not installed.
 	Cant seem to be able to set the clock, unlock the setting and set it but it doesn’t hold.
+	mintupload: when editing a (non working – e.g. the default “suggested”) account, without changing something (and therefore closing the window with the top right X) the next time i just get an empty tiny Properties-window! you have close the Upload Manager (just the window – not even necessary to restart mintupload) and it is working again.
+
 
 Cinnamon Edition
 ----------------

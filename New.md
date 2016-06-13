@@ -33,7 +33,6 @@ All editions
 		Black Themed Bar: Icons not vertically centered.
 		Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
 	mint-tools:
-		mintupload: when editing a (non working – e.g. the default “suggested”) account, without changing something (and therefore closing the window with the top right X) the next time i just get an empty tiny Properties-window! you have close the Upload Manager (just the window – not even necessary to restart mintupload) and it is working again.
 		mintlocale: Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
 		mintlocale: Cannot change default System Locale by Language settings. Thus it can be changed manually by text editor. (file: /etc/default/locale)
 		mintlocale: Language Settings under System locale -> labels Language and Region seem to be set (probably done by installation procedure). When I changed language to UK English and clicked Apply Sytem-Wide, it got messed up (labels changed to “No locale defined” as already mentioned at Cinnamon). So the problem is most likely with the Apply System-Wide procedure.

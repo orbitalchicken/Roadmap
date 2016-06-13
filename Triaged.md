@@ -21,6 +21,7 @@ Can't reproduce
 	mate: Mate System Monitor was not visible in any of the Mate menus in my installation. It was however accessible through mate-system-monitor command. “apt reinstall mate-system-monitor” solved the problem (application showed up in the menus).
 	Steam will not work at all in MATE.
 	cinnamon: Battery applet seems to stay at ‘charged ‘ even after power cord is removed, it MAY stay showing on charge or it may show on battery, its unpredictable.
+	mintlocale: Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
 
 Upstream
 --------

@@ -28,3 +28,4 @@ Upstream
 --------
 	grub: 32bit version doesn’t support 32bit UEFI
 	samba: ‘Failed to retrieve share list from server’
+	gtk (levelbar): Microphone level meter has color reverse. Shows red when low level and green when picking at high level. This is with build in microphone on Lenovo Carbon X1 4th generation 2016.

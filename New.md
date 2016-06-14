@@ -21,9 +21,7 @@ All editions
 		Am testing on a lenovo w530. Bluetooth applet cant seem to pick any device. It will just display searching for devices and either provide an empty list or list devices i cannot setup. On 17.3 it worked like a charm
 		3c:00.0 Network controller: Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32), "wireless unavailable"
 		Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
-		networking to a shared epson x322 printer, it is no longer necessary to install epsons driver, I found out it wont install so used ‘printer-driver-escpr’ in synaptic.
 		Lenovo Y700 no sound
-	banshee: will not import media form folders causing hard locks (disable podcast plugin to fix this)
 	artwork:
 		Tray icons are black with mint-y themes.
 		Mint-Y themes Shade option is unavailable
@@ -31,7 +29,7 @@ All editions
 		Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
 		login screen, no user selected, username don't show up very well on some of the backgrounds
 
-Cinnamon Edition - last processed comment: #64
+Cinnamon Edition - last processed comment: #86
 ----------------------------------------------
 	changing desktop font size segfaults nemo
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
@@ -41,8 +39,7 @@ Cinnamon Edition - last processed comment: #64
 	http://imgur.com/GdexG27
 	When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 	cinnamon panel unresponsive when using nvidia 304 drivers?
-	Microphone level meter has color reverse. Shows red when low level and green when picking at high level. This is with build in microphone on Lenovo Carbon X1 4th generation 2016.
-	nemo-terminal: E: Package ‘gir1.2-vte-2.90’ has no installation candidate
+	When using the Laptop with external Monitor, it isn’t possible to maximize windows on laptop panel. They will always maximize on the HDMI monitor instead. Same behaviour I had on my 17.3 Setup
 
 MATE Edition - last processed comment: #142
 -------------------------------------------

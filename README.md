@@ -6,7 +6,6 @@ Linux Mint 18 Sarah
 
     update live repo and sign, with latest FF at time of release.
     Upgrade path from Mint 17.3
-    no acceleration in virtualbox
 
 Maintenance
 ===========

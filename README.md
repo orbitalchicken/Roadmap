@@ -51,6 +51,7 @@ Linux Mint 18.1
         add gnome-screenshot to panel, right-click and select "Take screenshot of a selected area". This runs gnome-screenshot -a.. it should work but it doesn't. Is it because of the panel launcher capturing the click event or something?
         In Nemo, when I click on File System, followed by File and Properties, it gives me the details of the Home folder, not the File System, so it’s difficult to determine disk space of overall operating system. 
         In Nemo, if i select a new tab, the folder name that appears in the tab appears with a separation line underneath, separating the tab name from the list of files in the folder. This style of separation is onconsistent to XED, where the Tab name and content under that tab have no such visible horizontal separation line.
+        Setting the screensaver to turn on but not require a password is very confusing. I have to go to set “Lock the computer when put to sleep” to “No” (because I don’t want it to require a password); set “Lock the computer when the screen turns off” to “No” (because, again, I don’t want it to require a password); and then set “Lock the computer when inactive” to a time value to have the screensaver come on. (I’m not even sure that I’ve got that right.) The problem is that “lock the computer” implies that it’s going to require a password — but I don’t want that, I simply want the screensaver to kick in. This is a poorly worded dialog box.
 
     mate 1.16
         swith MATE to GTK3

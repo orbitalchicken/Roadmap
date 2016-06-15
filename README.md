@@ -47,6 +47,10 @@ Linux Mint 18.1
         accessibility: ability to select files by hovering them
         menu: use search providers to search local files
         launcher: check budgie app suggestions
+        Is there any reason why there are two names for the same item, eg. "Trash" and "Rubbish Bin"? Would it be better to standardise on only one name?
+        add gnome-screenshot to panel, right-click and select "Take screenshot of a selected area". This runs gnome-screenshot -a.. it should work but it doesn't. Is it because of the panel launcher capturing the click event or something?
+        In Nemo, when I click on File System, followed by File and Properties, it gives me the details of the Home folder, not the File System, so it’s difficult to determine disk space of overall operating system. 
+        In Nemo, if i select a new tab, the folder name that appears in the tab appears with a separation line underneath, separating the tab name from the list of files in the folder. This style of separation is onconsistent to XED, where the Tab name and content under that tab have no such visible horizontal separation line.
 
     mate 1.16
         swith MATE to GTK3
@@ -58,6 +62,7 @@ Linux Mint 18.1
 
     xed
         sublime-like search bar
+        some icons are named and other not, for example, Open, Save and Undo are named, yet Print, Cut and Paste are not.
 
     xreader
         should place its menu item in the accessories category instead of office
@@ -79,6 +84,7 @@ Linux Mint 18.1
 
     mintsources:
         Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
+        menu icon shouldn't be hardcoded
 
     mintinstall:
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.

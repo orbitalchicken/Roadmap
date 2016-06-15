@@ -29,8 +29,8 @@ All editions
 		Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
 		login screen, no user selected, username don't show up very well on some of the backgrounds
 
-Cinnamon Edition - last processed comment: #86
-----------------------------------------------
+Cinnamon Edition - last processed comment: #161
+-----------------------------------------------
 	changing desktop font size segfaults nemo
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
 	Context menu “Open with>other application…” displays duplicate applications.
@@ -40,6 +40,7 @@ Cinnamon Edition - last processed comment: #86
 	When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 	cinnamon panel unresponsive when using nvidia 304 drivers?
 	When using the Laptop with external Monitor, it isn’t possible to maximize windows on laptop panel. They will always maximize on the HDMI monitor instead. Same behaviour I had on my 17.3 Setup
+	panel: right-click -> paste applet configuration doesn't work
 
 MATE Edition - last processed comment: #142
 -------------------------------------------

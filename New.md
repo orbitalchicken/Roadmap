@@ -8,6 +8,7 @@ All editions
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	Can't switch sound to HDMI (in both MATE and Cinnamon, no matter what the hardware... Sound test works over HDMI though)
 	update mint-mirrors
+	mintstick in 17.3 doesn't work?
 	hardware:
 		Does not support Netgear A6210 wifi adapter.
 		Laptop is Alienware 13′ with Skylake CPU -> touchscreen isn't working
@@ -26,6 +27,10 @@ All editions
 		Lenovo Y700 no sound
 		Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
 		ath10k WiFi doesn’t work. 4.5 kernel needed (https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/1520343)
+		No sound (worked in 17.3): Audio: Card-1 Intel 8 Series/C220 Series High Definition Audio Controller, driver: snd_hda_intel bus-ID: 00:1b.0 Sound: Advanced Linux Sound Architecture v: k4.4.0-24-generic
+		My mic is not working. Lenovo C-440
+		Atheros wifi firmware did not load for install on Acer laptop. lspci = 03:00.0 Network controller: Qualcomm Atheros Device 0042 (rev 30) The fix is as follows: wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.158_all.deb sudo dpkg -i linux-firmware_1.158_all.deb
+		in Czech Search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
 	artwork:
 		Tray icons are black with mint-y themes.
 		Mint-Y themes Shade option is unavailable
@@ -39,7 +44,7 @@ All editions
 		can't restore software selection?
 
 
-Cinnamon Edition - last processed comment: #249
+Cinnamon Edition - last processed comment: #300
 -----------------------------------------------
 	changing desktop font size segfaults nemo
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
@@ -62,6 +67,7 @@ Cinnamon Edition - last processed comment: #249
 	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
 	“Automatically connect to VPN when using this connection” option for a WiFi network connection is failing upon startup. It then connects to the wifi without the VPN.
 	connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
+	system settings modules don't use the icon (in alt-tab, and window list) associated with the menu item
 
 MATE Edition - last processed comment: #142
 -------------------------------------------

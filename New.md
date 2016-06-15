@@ -39,14 +39,15 @@ All editions
 		login screen, no user selected, username don't show up very well on some of the backgrounds
 		Mint-Y Icon theme doesn’t show document contents. Mint-X icon variants can show the content of a text file without any problems, but this is not the case with Mint-Y. If Mint-Y will never support such a feature, I would suggest using an icon that indicates a text file, rather than the blank placeholder icon.
 		Mint-Y:  I dislike these borderless windows. When I snap applications next to each other on the screen, the content just seems to run into eachother and almost looks cut off. I know it’s not actually being cut off, but without even a thin border it gives off that impression.
+		The disabled items(options) in menus don’t look good and are hard to read in Mint-Y-DARK theme.
 	mintbackup:
 		can't save software selection (X error)
 		can't restore software selection?
 
 
-Cinnamon Edition - last processed comment: #300
+Cinnamon Edition - last processed comment: #351
 -----------------------------------------------
-	changing desktop font size segfaults nemo
+	changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
 	Context menu “Open with>other application…” displays duplicate applications.
 	I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
@@ -68,6 +69,7 @@ Cinnamon Edition - last processed comment: #300
 	“Automatically connect to VPN when using this connection” option for a WiFi network connection is failing upon startup. It then connects to the wifi without the VPN.
 	connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
 	system settings modules don't use the icon (in alt-tab, and window list) associated with the menu item
+	I downloaded an icon set, just to try it tout, from http://linuxmint-art.org/content/show.php/My+Mint+Elementary?content=169859 I put the extracted folder in /usr/share/icons Went back to Preferences/Theme to find that most choices of icons were gone ! I deleted the elementary-icons folder. Went back to preferences/theme/icons and the choices were all back.
 
 MATE Edition - last processed comment: #142
 -------------------------------------------

@@ -6,9 +6,9 @@ All editions
 	Update translations
 	kernel updates wipe the vbox dkms module?
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
-	Can't switch sound to HDMI (in both MATE and Cinnamon, no matter what the hardware... Sound test works over HDMI though)
 	update mint-mirrors
 	mintstick in 17.3 doesn't work?
+	mintdrivers https://github.com/linuxmint/mintdrivers/issues/23
 	hardware:
 		Does not support Netgear A6210 wifi adapter.
 		Laptop is Alienware 13′ with Skylake CPU -> touchscreen isn't working
@@ -30,7 +30,11 @@ All editions
 		No sound (worked in 17.3): Audio: Card-1 Intel 8 Series/C220 Series High Definition Audio Controller, driver: snd_hda_intel bus-ID: 00:1b.0 Sound: Advanced Linux Sound Architecture v: k4.4.0-24-generic
 		My mic is not working. Lenovo C-440
 		Atheros wifi firmware did not load for install on Acer laptop. lspci = 03:00.0 Network controller: Qualcomm Atheros Device 0042 (rev 30) The fix is as follows: wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.158_all.deb sudo dpkg -i linux-firmware_1.158_all.deb
-		in Czech Search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
+		Lenovo G50 80, core i5 broadwell, 2.2 ghz, GPU AMD Radeon 2GB, 500GB SSHD and 12GB of RAM. -> can't suspend -> black screen and never wakes up.
+		Dell Inspiron 15  i7-6700HQ Processor 6th Generation Intel Core (Skylake) 16 GB memory 128 GB SSD + 1TB HDD -> boots to black screen
+		Onboard audio for an Intel DQ965GF motherboard is not working.
+		WIFI issues with RTL8191SU (Rosewill-Wireless Lan-USB 2.0 Adapter-Model No. RNX-N180UBE)-(LSUSB-Bus 005 Device 003: ID 0bda:8172 Realtek Semiconductor Corp. RTL8191SU 802.11n WLAN Adapter)
+Nvidia Geforce Graphics
 	artwork:
 		Tray icons are black with mint-y themes.
 		Mint-Y themes Shade option is unavailable
@@ -40,12 +44,17 @@ All editions
 		Mint-Y Icon theme doesn’t show document contents. Mint-X icon variants can show the content of a text file without any problems, but this is not the case with Mint-Y. If Mint-Y will never support such a feature, I would suggest using an icon that indicates a text file, rather than the blank placeholder icon.
 		Mint-Y:  I dislike these borderless windows. When I snap applications next to each other on the screen, the content just seems to run into eachother and almost looks cut off. I know it’s not actually being cut off, but without even a thin border it gives off that impression.
 		The disabled items(options) in menus don’t look good and are hard to read in Mint-Y-DARK theme.
+		no border for any opened window which makes it like it’s mixed with any other window if we use the new mint dark theme in cinnamon.
 	mintbackup:
 		can't save software selection (X error)
 		can't restore software selection?
+	In /boot, Memtest86+ version is 4.20 but the last version of Memtest86+ is 5.10.
+	xplayer: visualizations don't work
+	in Czech Search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
+	mintinstall: Missing emus in Software Manager under Games / Emulators: Mupen64 Zsnes Higan is missing, but in synaptic Dolphin-emu is missing, but in synaptic
 
 
-Cinnamon Edition - last processed comment: #351
+Cinnamon Edition - last processed comment: #505
 -----------------------------------------------
 	changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
@@ -55,7 +64,6 @@ Cinnamon Edition - last processed comment: #351
 	http://imgur.com/GdexG27
 	When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 	cinnamon panel unresponsive when using nvidia 304 drivers?
-	When using the Laptop with external Monitor, it isn’t possible to maximize windows on laptop panel. They will always maximize on the HDMI monitor instead. Same behaviour I had on my 17.3 Setup
 	panel: right-click -> paste applet configuration doesn't work
 	nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
 	choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
@@ -70,8 +78,15 @@ Cinnamon Edition - last processed comment: #351
 	connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
 	system settings modules don't use the icon (in alt-tab, and window list) associated with the menu item
 	I downloaded an icon set, just to try it tout, from http://linuxmint-art.org/content/show.php/My+Mint+Elementary?content=169859 I put the extracted folder in /usr/share/icons Went back to Preferences/Theme to find that most choices of icons were gone ! I deleted the elementary-icons folder. Went back to preferences/theme/icons and the choices were all back.
+	Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3.
+	Bluetooth panel icon was nicer when it was monochromatic.
+	Update shield became so small.
+	network applet: the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
+	The notifications (e.g. when connecting to a wlan 😉 ) don’t look very nice for me, almost as if font hinting is disabled for them.
+	Notifications always appear in the panel even though they are disabled.
+	Removed Skype via Software manager but the program still showing up in the Menu. Tried to uninstall it via the Menu but same results. Restarted the system and terminal is no longer works. Skype is still in the Menu but marked as “Install” in Software Manager.
 
-MATE Edition - last processed comment: #142
+MATE Edition - last processed comment: #252
 -------------------------------------------
 	network-manager | nm-applet:
 		After I resume from suspend NetworkManager seems to work fine, Wifi connection is maintained, but nm-applet shows Wi-Fi Networks and other things grayed out. Running ‘pkill nm-applet’ and then ‘nm-applet’ fixes this.
@@ -85,7 +100,24 @@ MATE Edition - last processed comment: #142
 		weird org.mate.panel.applet.MintMenuAppletFactory in syslog when running synaptic
 	very frequent “at-spi-registryd.desktop not responding” error at reboot/shutdown and it’s associated very slow reboot/shutdown
 	In the prefered applications(menu Preferences, “Prefered applications”), Caja isn’t the File manager by default. Must add it manually.
-	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme.
+	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme. (check gsettings set org.mate.caja.preferences background-set false)
+	Can you somehow disable the audio file sound preview when you point your mouse pointer on it? It just often crashes the whole Caja file manager and the audio sometimes keeps playing even if I point mouse away from it (so i have to kill the proccess in proccess manager).
+	In the ‘Control Center’, when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
+	“connection established..” message always on front. no way to close
+	set as wallpaper doesn't work in pix and xviewer
+	in xview several extensions does not work:
+		-) “Date in statusbar” doesn’t work.
+		-) “Disable Dark Theme” doesn’t work, if i’m right when i assume it should do “gsettings set org.x.viewer.view use-background-color false”?
+		-) “Hide Titlebar” not sure what it should do…?
+		-) “Export to Folder”, “Fullscreen Background”, “Python Console” and “Slideshow Shuffle” can’t be activated. in the moment they get grayed out and a tool-tip says “The plugin ‘XXX’ could not be loaded – An error occurred: Plugin loader ‘python3’ was not found”
+	in xview after a fullscreen-view the sidebar is gone and must be enabled manually again.
+		–> by the way: please make the position (left/right, top/bottom won’t make much sense) of the sidebar configurable (like the gallery) at least via dconf!
+	in xed with the classic and default (tango) color-scheme there is nearly no differentiation (color or border) between the text and the line-numbers; and at the latest working on a file with numbers at the beginning of the lines this is a disaster.
+	Qt 5 apps in this beta. They use the Fusion theme by default rather than the GTK+ one, making them inconsistent with the rest of the desktop. Can this be changed? I managed to fix the problem using the qt5ct tool
+	my initial Firefox install (Linux Mint Sarah’s version always) didn’t have any search engine installed and that made the browser a little buggy (when I tried to type something in the address tab or when I opened the search tab of the preferences and when I was just trying to open a link in another tab), until I installed one search engine from the firefox addons site.. Then everything was ok and I was able to add other engines from the correspondent Linux Mint page
+	Check your own MATE screenshot. The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency. This issue never came up in Mint 17.3 because the MintMenu was squared off. Mint 18 needs to either give up the idea of rounded corners on the Main menu slab, or fix the intended transparency. 
+	caja: I can’t find hidden files in Caja file manager.
+	caja: I noticed that search result doesn’t appear till the end of search, this may take some time. it would be nice to improve search behavior like the search in nautilus so that the search results in the current folder appears instantly.
 
 KDE Edition - last processed comment: #0
 -----------------------------------------

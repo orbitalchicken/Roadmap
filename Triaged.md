@@ -23,6 +23,8 @@ Can't reproduce
 	cinnamon: Battery applet seems to stay at ‘charged ‘ even after power cord is removed, it MAY stay showing on charge or it may show on battery, its unpredictable.
 	mintlocale: Tried adding support for iBus and FCITX (in Languages > Input Method) -> broken packages
 	mdm: Auto login fails (After testing, it works both from installer and from Login Window. Might not be obvious to users that they can't be auto-logged in if their home dir is encrypted..)
+	cinnamon: When using the Laptop with external Monitor, it isn’t possible to maximize windows on laptop panel. They will always maximize on the HDMI monitor instead. Same behaviour I had on my 17.3 Setup
+	Can't switch sound to HDMI
 
 Upstream
 --------

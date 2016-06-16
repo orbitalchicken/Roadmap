@@ -8,7 +8,7 @@ All editions
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	update mint-mirrors
 	mintstick in 17.3 doesn't work?
-	mintdrivers https://github.com/linuxmint/mintdrivers/issues/23
+	gdebi: http://oi66.tinypic.com/2s9yqg5.jpg
 	hardware:
 		Ethernet:
 			Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
@@ -58,7 +58,6 @@ All editions
 	In /boot, Memtest86+ version is 4.20 but the last version of Memtest86+ is 5.10.
 	xplayer: visualizations don't work
 	in Czech Search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
-	mintinstall: Missing emus in Software Manager under Games / Emulators: Mupen64 Zsnes Higan is missing, but in synaptic Dolphin-emu is missing, but in synaptic
 	At the top of xreader, it is shown how many pages the PDF file has. With Mint-Y-Darker Theme it is impossible to read.
 
 Cinnamon Edition - last processed comment: #523
@@ -91,7 +90,6 @@ Cinnamon Edition - last processed comment: #523
 	network applet: the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
 	The notifications (e.g. when connecting to a wlan 😉 ) don’t look very nice for me, almost as if font hinting is disabled for them.
 	Notifications always appear in the panel even though they are disabled.
-	Removed Skype via Software manager but the program still showing up in the Menu. Tried to uninstall it via the Menu but same results. Restarted the system and terminal is no longer works. Skype is still in the Menu but marked as “Install” in Software Manager.
 	text in logout countdown isn't easily readable ... could be similar to Spices configuration module, when install 3rd party spices. Is it a missing style in Mint-X? To define the color of text in progress bars?
 
 MATE Edition - last processed comment: #261

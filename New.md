@@ -10,31 +10,38 @@ All editions
 	mintstick in 17.3 doesn't work?
 	mintdrivers https://github.com/linuxmint/mintdrivers/issues/23
 	hardware:
-		Does not support Netgear A6210 wifi adapter.
+		Ethernet:
+			Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
+		Wifi:
+			Atheros wifi firmware did not load for install on Acer laptop. lspci = 03:00.0 Network controller: Qualcomm Atheros Device 0042 (rev 30) The fix is as follows: wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.158_all.deb sudo dpkg -i linux-firmware_1.158_all.deb
+			ath10k WiFi doesn’t work. 4.5 kernel needed (https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/1520343)
+			Does not support Netgear A6210 wifi adapter.
+			Surface 4 Pro: Wlan not working -&gt; tries to connect but with no success. Asking for Passprase again and again. USB Wlan Dongle works
+			WIFI issues with RTL8191SU (Rosewill-Wireless Lan-USB 2.0 Adapter-Model No. RNX-N180UBE)-(LSUSB-Bus 005 Device 003: ID 0bda:8172 Realtek Semiconductor Corp. RTL8191SU 802.11n WLAN Adapter)
+			Intel Dual Band Wireless-AC 7265: unsupported splx structure
+			3c:00.0 Network controller: Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32), "wireless unavailable"
+		Bluetooth:
+			Am testing on a lenovo w530. Bluetooth applet cant seem to pick any device. It will just display searching for devices and either provide an empty list or list devices i cannot setup. On 17.3 it worked like a charm
 		Laptop is Alienware 13′ with Skylake CPU -> touchscreen isn't working
-		Laptop is Alienware 13′ with Skylake CPU -> wifi is not working
-		Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
-		Surface 4 Pro: Type Cover and Touchpad not working properly. Works from time to time. If I unplug the cover, both doesen't work any more.
-		Surface 4 Pro: Wlan not working -&gt; tries to connect but with no success. Asking for Passprase again and again. USB Wlan Dongle works
-		Surface 4 Pro: Touchscreen/pen not working
-		ASRock skylake gpe6F bug: /var/log/syslog and var/log/kern.log are flooded with hundreds of gpe6F errors per second until the root partition runs out of space. Its a known issue with ASRock skylake boards. The workaround is o add [code] echo “disable” > /sys/firmware/acpi/interrupts/gpe6F [/code] to rc.local. more info at https://forums.linuxmint.com/viewtopic.php?f=49&t=223180
-		Intel Dual Band Wireless-AC 7265: unsupported splx structure
-		soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3)
-		HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
-		Am testing on a lenovo w530. Bluetooth applet cant seem to pick any device. It will just display searching for devices and either provide an empty list or list devices i cannot setup. On 17.3 it worked like a charm
-		3c:00.0 Network controller: Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32), "wireless unavailable"
-		Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
-		Lenovo Y700 no sound
-		Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
-		ath10k WiFi doesn’t work. 4.5 kernel needed (https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/1520343)
-		No sound (worked in 17.3): Audio: Card-1 Intel 8 Series/C220 Series High Definition Audio Controller, driver: snd_hda_intel bus-ID: 00:1b.0 Sound: Advanced Linux Sound Architecture v: k4.4.0-24-generic
-		My mic is not working. Lenovo C-440
-		Atheros wifi firmware did not load for install on Acer laptop. lspci = 03:00.0 Network controller: Qualcomm Atheros Device 0042 (rev 30) The fix is as follows: wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.158_all.deb sudo dpkg -i linux-firmware_1.158_all.deb
-		Lenovo G50 80, core i5 broadwell, 2.2 ghz, GPU AMD Radeon 2GB, 500GB SSHD and 12GB of RAM. -> can't suspend -> black screen and never wakes up.
-		Dell Inspiron 15  i7-6700HQ Processor 6th Generation Intel Core (Skylake) 16 GB memory 128 GB SSD + 1TB HDD -> boots to black screen
-		Onboard audio for an Intel DQ965GF motherboard is not working.
-		WIFI issues with RTL8191SU (Rosewill-Wireless Lan-USB 2.0 Adapter-Model No. RNX-N180UBE)-(LSUSB-Bus 005 Device 003: ID 0bda:8172 Realtek Semiconductor Corp. RTL8191SU 802.11n WLAN Adapter)
-Nvidia Geforce Graphics
+			Laptop is Alienware 13′ with Skylake CPU -> wifi is not working
+		Boot:
+			Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
+			Dell Inspiron 15  i7-6700HQ Processor 6th Generation Intel Core (Skylake) 16 GB memory 128 GB SSD + 1TB HDD -> boots to black screen
+			soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3) (works with (acpi=off))
+		Suspend:
+			Lenovo G50 80, core i5 broadwell, 2.2 ghz, GPU AMD Radeon 2GB, 500GB SSHD and 12GB of RAM. -> can't suspend -> black screen and never wakes up.
+		Touchscreen/touchpad:
+			Surface 4 Pro: Touchscreen/pen not working
+			Surface 4 Pro: Type Cover and Touchpad not working properly. Works from time to time. If I unplug the cover, both doesen't work any more.
+		Sound:
+			Lenovo Y700 no sound
+			Onboard audio for an Intel DQ965GF motherboard is not working.
+			No sound (worked in 17.3): Audio: Card-1 Intel 8 Series/C220 Series High Definition Audio Controller, driver: snd_hda_intel bus-ID: 00:1b.0 Sound: Advanced Linux Sound Architecture v: k4.4.0-24-generic
+			My mic is not working. Lenovo C-440
+		Other:
+			ASRock skylake gpe6F bug: /var/log/syslog and var/log/kern.log are flooded with hundreds of gpe6F errors per second until the root partition runs out of space. Its a known issue with ASRock skylake boards. The workaround is o add [code] echo “disable” > /sys/firmware/acpi/interrupts/gpe6F [/code] to rc.local. more info at https://forums.linuxmint.com/viewtopic.php?f=49&t=223180
+			HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
+			Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
 	artwork:
 		Tray icons are black with mint-y themes.
 		Mint-Y themes Shade option is unavailable

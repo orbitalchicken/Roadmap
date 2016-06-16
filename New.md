@@ -52,9 +52,9 @@ Nvidia Geforce Graphics
 	xplayer: visualizations don't work
 	in Czech Search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
 	mintinstall: Missing emus in Software Manager under Games / Emulators: Mupen64 Zsnes Higan is missing, but in synaptic Dolphin-emu is missing, but in synaptic
+	At the top of xreader, it is shown how many pages the PDF file has. With Mint-Y-Darker Theme it is impossible to read.
 
-
-Cinnamon Edition - last processed comment: #505
+Cinnamon Edition - last processed comment: #523
 -----------------------------------------------
 	changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
@@ -85,8 +85,9 @@ Cinnamon Edition - last processed comment: #505
 	The notifications (e.g. when connecting to a wlan 😉 ) don’t look very nice for me, almost as if font hinting is disabled for them.
 	Notifications always appear in the panel even though they are disabled.
 	Removed Skype via Software manager but the program still showing up in the Menu. Tried to uninstall it via the Menu but same results. Restarted the system and terminal is no longer works. Skype is still in the Menu but marked as “Install” in Software Manager.
+	text in logout countdown isn't easily readable ... could be similar to Spices configuration module, when install 3rd party spices. Is it a missing style in Mint-X? To define the color of text in progress bars?
 
-MATE Edition - last processed comment: #252
+MATE Edition - last processed comment: #261
 -------------------------------------------
 	network-manager | nm-applet:
 		After I resume from suspend NetworkManager seems to work fine, Wifi connection is maintained, but nm-applet shows Wi-Fi Networks and other things grayed out. Running ‘pkill nm-applet’ and then ‘nm-applet’ fixes this.

@@ -21,6 +21,8 @@ All editions
 Cinnamon Edition
 ----------------
 	nemo-terminal: E: Package ‘gir1.2-vte-2.90’ has no installation candidate
+	white font? http://imgur.com/QBEM48H
+	text in logout countdown isn't easily readable ... could be similar to Spices configuration module, when install 3rd party spices. Is it a missing style in Mint-X? To define the color of text in progress bars?
 
 MATE Edition
 ------------

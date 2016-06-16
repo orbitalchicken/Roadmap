@@ -66,7 +66,6 @@ Cinnamon Edition - last processed comment: #523
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
 	Context menu “Open with>other application…” displays duplicate applications.
 	I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
-	white font? http://imgur.com/QBEM48H
 	http://imgur.com/GdexG27
 	When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 	cinnamon panel unresponsive when using nvidia 304 drivers?
@@ -90,7 +89,6 @@ Cinnamon Edition - last processed comment: #523
 	network applet: the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
 	The notifications (e.g. when connecting to a wlan 😉 ) don’t look very nice for me, almost as if font hinting is disabled for them.
 	Notifications always appear in the panel even though they are disabled.
-	text in logout countdown isn't easily readable ... could be similar to Spices configuration module, when install 3rd party spices. Is it a missing style in Mint-X? To define the color of text in progress bars?
 
 MATE Edition - last processed comment: #261
 -------------------------------------------

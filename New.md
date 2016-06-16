@@ -64,9 +64,7 @@ Cinnamon Edition - last processed comment: #523
 -----------------------------------------------
 	changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
 	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
-	Context menu “Open with>other application…” displays duplicate applications.
 	I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
-	http://imgur.com/GdexG27
 	When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 	cinnamon panel unresponsive when using nvidia 304 drivers?
 	panel: right-click -> paste applet configuration doesn't work
@@ -87,8 +85,6 @@ Cinnamon Edition - last processed comment: #523
 	Bluetooth panel icon was nicer when it was monochromatic.
 	Update shield became so small.
 	network applet: the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
-	The notifications (e.g. when connecting to a wlan 😉 ) don’t look very nice for me, almost as if font hinting is disabled for them.
-	Notifications always appear in the panel even though they are disabled.
 
 MATE Edition - last processed comment: #261
 -------------------------------------------

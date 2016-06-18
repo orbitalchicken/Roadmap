@@ -56,6 +56,7 @@ Linux Mint 18.1
         In Nemo, if i select a new tab, the folder name that appears in the tab appears with a separation line underneath, separating the tab name from the list of files in the folder. This style of separation is onconsistent to XED, where the Tab name and content under that tab have no such visible horizontal separation line.
         Setting the screensaver to turn on but not require a password is very confusing. I have to go to set “Lock the computer when put to sleep” to “No” (because I don’t want it to require a password); set “Lock the computer when the screen turns off” to “No” (because, again, I don’t want it to require a password); and then set “Lock the computer when inactive” to a time value to have the screensaver come on. (I’m not even sure that I’ve got that right.) The problem is that “lock the computer” implies that it’s going to require a password — but I don’t want that, I simply want the screensaver to kick in. This is a poorly worded dialog box.
         consider merging worldclock https://github.com/simonwiles/cinnamon_applets
+        network applet: if possible, add a little refresh icon to ask for a new scan
 
     mate 1.16
         swith MATE to GTK3

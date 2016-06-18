@@ -57,7 +57,6 @@ All editions
 		can't restore software selection?
 	In /boot, Memtest86+ version is 4.20 but the last version of Memtest86+ is 5.10.
 	xplayer: visualizations don't work
-	in Czech Search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
 	At the top of xreader, it is shown how many pages the PDF file has. With Mint-Y-Darker Theme it is impossible to read.
 
 Cinnamon Edition - last processed comment: #523

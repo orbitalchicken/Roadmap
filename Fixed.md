@@ -17,6 +17,7 @@ All editions
 	banshee: will not import media form folders causing hard locks (disabled daap plugin to fix this)
 	mintinstall: Missing emus in Software Manager under Games / Emulators: Higan is missing, but in synaptic Dolphin-emu is missing, but in synaptic
 	Removed Skype via Software manager but the program still showing up in the Menu. Tried to uninstall it via the Menu but same results. Restarted the system and terminal is no longer works. Skype is still in the Menu but marked as “Install” in Software Manager.
+	in Czech/Danish (and a few other languages), search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
 
 Cinnamon Edition
 ----------------

@@ -75,12 +75,21 @@ Linux Mint 18.1
 
     xplayer/xviewer/xreader/pix
         add a persistant option to blank other monitors when in full screen
+        visualizations don't work
 
     xapps
         should show their project name in the about dialog
 
     pix
         should use a generic name in the application menu
+
+    xviewer
+        “Date in statusbar” doesn’t work.
+        “Disable Dark Theme” doesn’t work, if i’m right when i assume it should do “gsettings set org.x.viewer.view use-background-color false”?
+        “Hide Titlebar” not sure what it should do…?
+        “Export to Folder”, “Fullscreen Background”, “Python Console” and “Slideshow Shuffle” can’t be activated. in the moment they get grayed out and a tool-tip says “The plugin ‘XXX’ could not be loaded – An error occurred: Plugin loader ‘python3’ was not found”
+        after a fullscreen-view the sidebar is gone and must be enabled manually again.
+        please make the position (left/right, top/bottom won’t make much sense) of the sidebar configurable (like the gallery) at least via dconf!
 
     mintupdate:
         provide a CLI (to let people upgrade automatically)
@@ -108,12 +117,14 @@ Linux Mint 18.1
         remove synaptic from mintmenu's favorites
 
     HiDPI support:
-        pix: huge menubar
         upstream apps using GTK2: Banshee, Gimp, Hexchat, VLC, Pidgin, Tomboy.
         mint projects using GTK2: mdmsetup, mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
         mintlocale: fixed-size flag icons
         mintupload: use icon names rather than path to SVG
         mintwelcome: don't use 32px png icons
+
+    artwork:
+        Tray icons are black with mint-y themes.
 
 LMDE +1:
 =========

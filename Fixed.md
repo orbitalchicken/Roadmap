@@ -18,6 +18,10 @@ All editions
 	mintinstall: Missing emus in Software Manager under Games / Emulators: Higan is missing, but in synaptic Dolphin-emu is missing, but in synaptic
 	Removed Skype via Software manager but the program still showing up in the Menu. Tried to uninstall it via the Menu but same results. Restarted the system and terminal is no longer works. Skype is still in the Menu but marked as “Install” in Software Manager.
 	in Czech/Danish (and a few other languages), search in firefox does not work. Both from adress bar and from search bar. Search setting is unaccessible?
+	At the top of xreader, it is shown how many pages the PDF file has. With Mint-Y-Darker Theme it is impossible to read.
+	Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
+	Mint-Y:  I dislike these borderless windows. When I snap applications next to each other on the screen, the content just seems to run into eachother and almost looks cut off. I know it’s not actually being cut off, but without even a thin border it gives off that impression.
+	no border for any opened window which makes it like it’s mixed with any other window if we use the new mint dark theme in cinnamon.
 
 Cinnamon Edition
 ----------------
@@ -27,6 +31,10 @@ Cinnamon Edition
 
 MATE Edition
 ------------
+	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme. (check gsettings set org.mate.caja.preferences background-set false)
+	Can you somehow disable the audio file sound preview when you point your mouse pointer on it? It just often crashes the whole Caja file manager and the audio sometimes keeps playing even if I point mouse away from it (so i have to kill the proccess in proccess manager).
+	Qt 5 apps use the Fusion theme by default rather than the GTK+ one.
+	set as wallpaper doesn't work in pix and xviewer
 
 KDE Edition
 -----------

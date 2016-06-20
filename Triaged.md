@@ -33,3 +33,10 @@ Upstream
 	grub: 32bit version doesn’t support 32bit UEFI
 	samba: ‘Failed to retrieve share list from server’
 	gtk (levelbar): Microphone level meter has color reverse. Shows red when low level and green when picking at high level. This is with build in microphone on Lenovo Carbon X1 4th generation 2016.
+	gdebi: http://oi66.tinypic.com/2s9yqg5.jpg (https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1581425)
+	libgtksourceview: in xed with the classic and default (tango) color-scheme there is nearly no differentiation (color or border) between the text and the line-numbers; and at the latest working on a file with numbers at the beginning of the lines this is a disaster.
+	mate: In the prefered applications(menu Preferences, “Prefered applications”), Caja isn’t the File manager by default. Must add it manually.
+	caja: I can’t find hidden files in Caja file manager.
+	caja: I noticed that search result doesn’t appear till the end of search, this may take some time. it would be nice to improve search behavior like the search in nautilus so that the search results in the current folder appears instantly.
+	mate-control-center: when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
+	mate-notification: “connection established..” message always on front. no way to close

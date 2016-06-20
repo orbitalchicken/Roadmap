@@ -7,8 +7,6 @@ All editions
 	kernel updates wipe the vbox dkms module?
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	update mint-mirrors
-	mintstick in 17.3 doesn't work?
-	gdebi: http://oi66.tinypic.com/2s9yqg5.jpg
 	hardware:
 		Ethernet:
 			Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
@@ -43,21 +41,11 @@ All editions
 			HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
 			Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
 	artwork:
-		Tray icons are black with mint-y themes.
 		Mint-Y themes Shade option is unavailable
-		Black Themed Bar: Icons not vertically centered.
-		Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
 		login screen, no user selected, username don't show up very well on some of the backgrounds
 		Mint-Y Icon theme doesn’t show document contents. Mint-X icon variants can show the content of a text file without any problems, but this is not the case with Mint-Y. If Mint-Y will never support such a feature, I would suggest using an icon that indicates a text file, rather than the blank placeholder icon.
-		Mint-Y:  I dislike these borderless windows. When I snap applications next to each other on the screen, the content just seems to run into eachother and almost looks cut off. I know it’s not actually being cut off, but without even a thin border it gives off that impression.
 		The disabled items(options) in menus don’t look good and are hard to read in Mint-Y-DARK theme.
-		no border for any opened window which makes it like it’s mixed with any other window if we use the new mint dark theme in cinnamon.
-	mintbackup:
-		can't save software selection (X error)
-		can't restore software selection?
 	In /boot, Memtest86+ version is 4.20 but the last version of Memtest86+ is 5.10.
-	xplayer: visualizations don't work
-	At the top of xreader, it is shown how many pages the PDF file has. With Mint-Y-Darker Theme it is impossible to read.
 
 Cinnamon Edition - last processed comment: #523
 -----------------------------------------------
@@ -95,28 +83,10 @@ MATE Edition - last processed comment: #261
 		Another NetworkManager bug. Just tried to run the mint 18 MATE live on an old pc in my home and it wouldn’t recognize my Wi-Fi at all. It just looked as if I didn’t have Wi-Fi. Killing and restarting nm-applet didn’t help in this case, so the bug must be deeper. Sadly, this is a bug I’ve read about in Ubuntu MATE 16.04 so again, this might be a bug from upstream. For comparison, I had no problem of this sort when running mint cinnamon 18 live on this pc, and it is running mint Xfce (first 17.2, upgraded to 17.3) for a while and never had this problem.
 	mintmenu:
 		[Fixed in Git] use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)
-		transparent only one after reboot (first click on menu). Next click menu show not transparent
+		transparent only once after reboot (first click on menu). Next click menu show not transparent
 		weird org.mate.panel.applet.MintMenuAppletFactory in syslog when running synaptic
+		Check your own MATE screenshot. The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency. This issue never came up in Mint 17.3 because the MintMenu was squared off. Mint 18 needs to either give up the idea of rounded corners on the Main menu slab, or fix the intended transparency. 
 	very frequent “at-spi-registryd.desktop not responding” error at reboot/shutdown and it’s associated very slow reboot/shutdown
-	In the prefered applications(menu Preferences, “Prefered applications”), Caja isn’t the File manager by default. Must add it manually.
-	when changing the appearance to Mint-Y-Dark the background in caja doesn’t change! you have to go to “Edit” -> “Backgrounds and Emblems” and reset it once manually. now it changes every time with the theme. (check gsettings set org.mate.caja.preferences background-set false)
-	Can you somehow disable the audio file sound preview when you point your mouse pointer on it? It just often crashes the whole Caja file manager and the audio sometimes keeps playing even if I point mouse away from it (so i have to kill the proccess in proccess manager).
-	In the ‘Control Center’, when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
-	“connection established..” message always on front. no way to close
-	set as wallpaper doesn't work in pix and xviewer
-	in xview several extensions does not work:
-		-) “Date in statusbar” doesn’t work.
-		-) “Disable Dark Theme” doesn’t work, if i’m right when i assume it should do “gsettings set org.x.viewer.view use-background-color false”?
-		-) “Hide Titlebar” not sure what it should do…?
-		-) “Export to Folder”, “Fullscreen Background”, “Python Console” and “Slideshow Shuffle” can’t be activated. in the moment they get grayed out and a tool-tip says “The plugin ‘XXX’ could not be loaded – An error occurred: Plugin loader ‘python3’ was not found”
-	in xview after a fullscreen-view the sidebar is gone and must be enabled manually again.
-		–> by the way: please make the position (left/right, top/bottom won’t make much sense) of the sidebar configurable (like the gallery) at least via dconf!
-	in xed with the classic and default (tango) color-scheme there is nearly no differentiation (color or border) between the text and the line-numbers; and at the latest working on a file with numbers at the beginning of the lines this is a disaster.
-	Qt 5 apps in this beta. They use the Fusion theme by default rather than the GTK+ one, making them inconsistent with the rest of the desktop. Can this be changed? I managed to fix the problem using the qt5ct tool
-	my initial Firefox install (Linux Mint Sarah’s version always) didn’t have any search engine installed and that made the browser a little buggy (when I tried to type something in the address tab or when I opened the search tab of the preferences and when I was just trying to open a link in another tab), until I installed one search engine from the firefox addons site.. Then everything was ok and I was able to add other engines from the correspondent Linux Mint page
-	Check your own MATE screenshot. The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency. This issue never came up in Mint 17.3 because the MintMenu was squared off. Mint 18 needs to either give up the idea of rounded corners on the Main menu slab, or fix the intended transparency. 
-	caja: I can’t find hidden files in Caja file manager.
-	caja: I noticed that search result doesn’t appear till the end of search, this may take some time. it would be nice to improve search behavior like the search in nautilus so that the search results in the current folder appears instantly.
 
 KDE Edition - last processed comment: #0
 -----------------------------------------

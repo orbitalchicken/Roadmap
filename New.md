@@ -49,20 +49,17 @@ All editions
 
 Cinnamon Edition - last processed comment: #523
 -----------------------------------------------
-	changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
-	Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
+	[Fixed in git] panel: right-click -> paste applet configuration doesn't work
+	[Fixed in git] virtual keyboard: I used to click on the applet “on-screen-keyboard” and it came in focus (and only then). For this to work I have to enable it in the accessibility settings. With Cinnamon 3.0.x, this woks too, but the keyboard is popping up every each and then (click on menu etc.) and not only if I use the applet. Could this be adjusted?
+	[Fixed in git] Ctrl+Alt+Shift+R video recording crashes and throws Cinnamon into fallback mode
 	I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
 	When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 	cinnamon panel unresponsive when using nvidia 304 drivers?
-	panel: right-click -> paste applet configuration doesn't work
 	nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
 	choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
 	switch user with mdmflexiserver, log back in -> mouse cursor doesn't show up (comes back after a while if you type on keyboard)
-	virtual keyboard: I used to click on the applet “on-screen-keyboard” and it came in focus (and only then). For this to work I have to enable it in the accessibility settings. With Cinnamon 3.0.x, this woks too, but the keyboard is popping up every each and then (click on menu etc.) and not only if I use the applet. Could this be adjusted?
-	When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
 	cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
 	in the new ubuntu 16.04, touchegg works with 3 finger gestures, if I put synclient disable ClickFinger3 & TapButton3, however, in linux mint it’s not recognizing it..! any plans to fix this?
-	Ctrl+Alt+Shift+R video recording crashes and throws Cinnamon into fallback mode
 	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
 	“Automatically connect to VPN when using this connection” option for a WiFi network connection is failing upon startup. It then connects to the wifi without the VPN.
 	connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
@@ -72,6 +69,10 @@ Cinnamon Edition - last processed comment: #523
 	Bluetooth panel icon was nicer when it was monochromatic.
 	Update shield became so small.
 	network applet: the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
+	nemo:
+		changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
+		When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
+		Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
 
 MATE Edition - last processed comment: #261
 -------------------------------------------

@@ -4,8 +4,7 @@ Not a bug
 ---------
 	nmap scan found the microsoft-ds ports, open 445 (samba)
 	cinnamon: Notifications always appear in the panel even though they are disabled.
-
-
+	cinnamon: Update shield became so small --> will move to new libindicator eventually
 
 Outside of the scope
 --------------------
@@ -30,6 +29,7 @@ Can't reproduce
 	In /boot, Memtest86+ version is 4.20 but the last version of Memtest86+ is 5.10. (version is 5.01, like in the repositories)
 	in the new ubuntu 16.04, touchegg works with 3 finger gestures, if I put synclient disable ClickFinger3 & TapButton3, however, in linux mint it’s not recognizing it..! (seems to work more or less, need more accurate issue description)
 	cinnamon: I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
+	Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3. (some tools went from GTK2 to GTK3, noto changed slightly, other than that...?)
 
 Upstream
 --------

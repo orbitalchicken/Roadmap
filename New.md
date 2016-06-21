@@ -40,6 +40,8 @@ All editions
 			ASRock skylake gpe6F bug: /var/log/syslog and var/log/kern.log are flooded with hundreds of gpe6F errors per second until the root partition runs out of space. Its a known issue with ASRock skylake boards. The workaround is o add [code] echo “disable” > /sys/firmware/acpi/interrupts/gpe6F [/code] to rc.local. more info at https://forums.linuxmint.com/viewtopic.php?f=49&t=223180
 			HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
 			Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
+		intel:
+			mouse cursor disappears (switch user with mdmflexiserver, log back in) https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/1568604
 	artwork:
 		Mint-Y themes Shade option is unavailable
 		login screen, no user selected, username don't show up very well on some of the backgrounds
@@ -54,12 +56,9 @@ Cinnamon Edition - last processed comment: #523
 	[Fixed in git] I downloaded an icon set, just to try it tout, from http://linuxmint-art.org/content/show.php/My+Mint+Elementary?content=169859 I put the extracted folder in /usr/share/icons Went back to Preferences/Theme to find that most choices of icons were gone ! I deleted the elementary-icons folder. Went back to preferences/theme/icons and the choices were all back.
 	[Fixed in git] nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
 	[Fixed in git] cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
-	[Fixed in git] Update shield became so small.
 	[Fixed in git] choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
 	cinnamon panel unresponsive when using nvidia 304 drivers?
-	*switch user with mdmflexiserver, log back in -> mouse cursor doesn't show up (comes back after a while if you type on keyboard)
 	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
-	*Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3.
 	network settings / network applet:
 		[Fixed in git] the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
 		[Fixed in git] connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.

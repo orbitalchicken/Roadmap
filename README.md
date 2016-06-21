@@ -47,7 +47,6 @@ Linux Mint 18.1
         gnome-system-monitor moves out of place in Expo
         when battery is very low, battery icon isn't red.. 2% charge, with less than 5 minutes to go, still not red.. bar is red in CCC, icon is red in notification.. but not in applet (and also not in the CCC icon itself either)
         When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
-        accessibility: ability to select files by hovering them
         menu: use search providers to search local files
         launcher: check budgie app suggestions
         Is there any reason why there are two names for the same item, eg. "Trash" and "Rubbish Bin"? Would it be better to standardise on only one name?
@@ -59,6 +58,8 @@ Linux Mint 18.1
         network applet: if possible, add a little refresh icon to ask for a new scan
         system settings modules don't use the icon (in alt-tab, and window list) associated with the menu item
         Bluetooth panel icon was nicer when it was monochromatic (do we need blueberry to provide a cinnamon applet?)
+        nemo: Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
+        When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
 
     mate 1.16
         swith MATE to GTK3
@@ -106,6 +107,9 @@ Linux Mint 18.1
     mintinstall:
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
         redesign main page to feature essential apps
+
+    mintmenu:
+        focus issues reported in /var/log/syslog
 
     blueberry:
         cinnamon applet?

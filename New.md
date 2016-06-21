@@ -53,24 +53,19 @@ Cinnamon Edition - last processed comment: #523
 	[Fixed in git] Ctrl+Alt+Shift+R video recording crashes and throws Cinnamon into fallback mode
 	[Fixed in git] I downloaded an icon set, just to try it tout, from http://linuxmint-art.org/content/show.php/My+Mint+Elementary?content=169859 I put the extracted folder in /usr/share/icons Went back to Preferences/Theme to find that most choices of icons were gone ! I deleted the elementary-icons folder. Went back to preferences/theme/icons and the choices were all back.
 	[Fixed in git] nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
+	[Fixed in git] cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
+	[Fixed in git] Update shield became so small.
+	[Fixed in git] choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
 	cinnamon panel unresponsive when using nvidia 304 drivers?
-	choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
-	switch user with mdmflexiserver, log back in -> mouse cursor doesn't show up (comes back after a while if you type on keyboard)
-	cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
-	in the new ubuntu 16.04, touchegg works with 3 finger gestures, if I put synclient disable ClickFinger3 & TapButton3, however, in linux mint it’s not recognizing it..! any plans to fix this?
+	*switch user with mdmflexiserver, log back in -> mouse cursor doesn't show up (comes back after a while if you type on keyboard)
 	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
-	Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3.
-	Update shield became so small.
+	*Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3.
 	network settings / network applet:
-		the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
-		connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
-		I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
-		When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
-		“Automatically connect to VPN when using this connection” option for a WiFi network connection is failing upon startup. It then connects to the wifi without the VPN.
+		[Fixed in git] the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
+		[Fixed in git] connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
 	nemo:
-		changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
-		When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
-		Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
+		[Fixed in git] changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
+		[Fixed in git] When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
 
 MATE Edition - last processed comment: #261
 -------------------------------------------
@@ -80,11 +75,6 @@ MATE Edition - last processed comment: #261
 		after updates nm-applet shows ethernet icon instead of wifi for connections?
 		nm connecting via WPA doesn't connect (no password passed).. using network connections to save the password -> works. Tested with MATE edition on a Lenovo Yoga 500.
 		Another NetworkManager bug. Just tried to run the mint 18 MATE live on an old pc in my home and it wouldn’t recognize my Wi-Fi at all. It just looked as if I didn’t have Wi-Fi. Killing and restarting nm-applet didn’t help in this case, so the bug must be deeper. Sadly, this is a bug I’ve read about in Ubuntu MATE 16.04 so again, this might be a bug from upstream. For comparison, I had no problem of this sort when running mint cinnamon 18 live on this pc, and it is running mint Xfce (first 17.2, upgraded to 17.3) for a while and never had this problem.
-	mintmenu:
-		[Fixed in Git] use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)
-		transparent only once after reboot (first click on menu). Next click menu show not transparent
-		weird org.mate.panel.applet.MintMenuAppletFactory in syslog when running synaptic
-		Check your own MATE screenshot. The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency. This issue never came up in Mint 17.3 because the MintMenu was squared off. Mint 18 needs to either give up the idea of rounded corners on the Main menu slab, or fix the intended transparency. 
 	very frequent “at-spi-registryd.desktop not responding” error at reboot/shutdown and it’s associated very slow reboot/shutdown
 
 KDE Edition - last processed comment: #0

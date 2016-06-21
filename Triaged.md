@@ -28,6 +28,8 @@ Can't reproduce
 	cinnamon: When using the Laptop with external Monitor, it isn’t possible to maximize windows on laptop panel. They will always maximize on the HDMI monitor instead. Same behaviour I had on my 17.3 Setup
 	Can't switch sound to HDMI
 	In /boot, Memtest86+ version is 4.20 but the last version of Memtest86+ is 5.10. (version is 5.01, like in the repositories)
+	in the new ubuntu 16.04, touchegg works with 3 finger gestures, if I put synclient disable ClickFinger3 & TapButton3, however, in linux mint it’s not recognizing it..! (seems to work more or less, need more accurate issue description)
+	cinnamon: I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
 
 Upstream
 --------

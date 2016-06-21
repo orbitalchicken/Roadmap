@@ -28,6 +28,7 @@ Cinnamon Edition
 	nemo-terminal: E: Package ‘gir1.2-vte-2.90’ has no installation candidate
 	white font? http://imgur.com/QBEM48H
 	text in logout countdown isn't easily readable ... could be similar to Spices configuration module, when install 3rd party spices. Is it a missing style in Mint-X? To define the color of text in progress bars?
+	“Automatically connect to VPN when using this connection” option for a WiFi network connection is failing upon startup. It then connects to the wifi without the VPN.
 
 MATE Edition
 ------------
@@ -35,6 +36,9 @@ MATE Edition
 	Can you somehow disable the audio file sound preview when you point your mouse pointer on it? It just often crashes the whole Caja file manager and the audio sometimes keeps playing even if I point mouse away from it (so i have to kill the proccess in proccess manager).
 	Qt 5 apps use the Fusion theme by default rather than the GTK+ one.
 	set as wallpaper doesn't work in pix and xviewer
+	mintmenu: use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)
+	mintmenu: transparent only once after reboot (first click on menu). Next click menu show not transparent
+	mintmenu: The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency.
 
 KDE Edition
 -----------

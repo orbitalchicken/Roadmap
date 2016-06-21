@@ -43,10 +43,7 @@ All editions
 		intel:
 			mouse cursor disappears (switch user with mdmflexiserver, log back in) https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/1568604
 	artwork:
-		Mint-Y themes Shade option is unavailable
 		login screen, no user selected, username don't show up very well on some of the backgrounds
-		Mint-Y Icon theme doesn’t show document contents. Mint-X icon variants can show the content of a text file without any problems, but this is not the case with Mint-Y. If Mint-Y will never support such a feature, I would suggest using an icon that indicates a text file, rather than the blank placeholder icon.
-		The disabled items(options) in menus don’t look good and are hard to read in Mint-Y-DARK theme.
 
 Cinnamon Edition - last processed comment: #523
 -----------------------------------------------
@@ -57,7 +54,6 @@ Cinnamon Edition - last processed comment: #523
 	[Fixed in git] nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
 	[Fixed in git] cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
 	[Fixed in git] choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
-	cinnamon panel unresponsive when using nvidia 304 drivers?
 	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
 	network settings / network applet:
 		[Fixed in git] the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.

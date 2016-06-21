@@ -30,6 +30,7 @@ Can't reproduce
 	in the new ubuntu 16.04, touchegg works with 3 finger gestures, if I put synclient disable ClickFinger3 & TapButton3, however, in linux mint it’s not recognizing it..! (seems to work more or less, need more accurate issue description)
 	cinnamon: I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
 	Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3. (some tools went from GTK2 to GTK3, noto changed slightly, other than that...?)
+	cinnamon panel unresponsive when using nvidia 304 drivers?
 
 Upstream
 --------

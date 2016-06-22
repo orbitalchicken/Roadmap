@@ -13,7 +13,7 @@ All editions
 	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html Thank you for looking into this. HPLIP worked with LM17.3.
 	pix: Doesn't seem to generate thumbnails until view is scrolled
 	pix: translations really poor (tested in dutch)
-	xed: you can’t do the easy moving of a block of text (select some lines and drag it to the new place with left mouse button) but you can do this in pluma (xed is based on it) and gedit (so I installed gedit until xed gets fixed on this).
+	xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
 	boot is noticeably slower for some people (is something hanging on some specs?)
 	hardware:
 		Ethernet:

@@ -7,17 +7,13 @@ All editions
 	kernel updates wipe the vbox dkms module?
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	update mint-mirrors
-	mintinstall http://imgur.com/VdxYEXq
-	mintinstall http://imgur.com/a/oh56T
 	mdm: autologin fails randomly (race condition at boot time?)
-	xed: you can’t do the easy moving of a block of text (select some lines and drag it to the new place with left mouse button) but you can do this in pluma (xed is based on it) and gedit (so I installed gedit until xed gets fixed on this).
-	pix: translations really poor (tested in dutch)
-	mint-y update issue: http://imgur.com/a/B14wG
 	AFAIK, libmad0 is illegal in the U.S. and Japan. I know Mint 18 has removed multimedia support out of the box partly to streamline global distribution. It seems you removed libmad0 from default amd64 images, but you left libmad0:i386 apparently by accident, since all other codecs seem to be cleaned out on the Beta image. I don’t want to see Mint run into any trouble in the U.S. or Japan, so libmad0:i386 ought to be removed before release.
-	mintmenu: select mint-logo.svg as icon to see what happens :)
 	announcements: change stated res to 1024, add hint about ALT key.
 	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html Thank you for looking into this. HPLIP worked with LM17.3.
 	pix: Doesn't seem to generate thumbnails until view is scrolled
+	pix: translations really poor (tested in dutch)
+	xed: you can’t do the easy moving of a block of text (select some lines and drag it to the new place with left mouse button) but you can do this in pluma (xed is based on it) and gedit (so I installed gedit until xed gets fixed on this).
 	boot is noticeably slower for some people (is something hanging on some specs?)
 	hardware:
 		Ethernet:
@@ -57,9 +53,6 @@ All editions
 	artwork:
 		login screen, no user selected, username don't show up very well on some of the backgrounds
 		mint-x: The xed editor has the icons in grey using the Mint-X icons so you don’t know if they are disabled or what
-	synaptic:
-		german:  When updating, the notification that the update is done has a “Close” button instead of a “Schließen” button.
-		german:  There’s “Show individual files” (in english) during the update process – it should read something like “Zeige individuelle Dateien”.
 
 Cinnamon Edition - last processed comment: #676
 -----------------------------------------------
@@ -94,9 +87,6 @@ MATE Edition - last processed comment: #356
 		nm connecting via WPA doesn't connect (no password passed).. using network connections to save the password -> works. Tested with MATE edition on a Lenovo Yoga 500.
 		Another NetworkManager bug. Just tried to run the mint 18 MATE live on an old pc in my home and it wouldn’t recognize my Wi-Fi at all. It just looked as if I didn’t have Wi-Fi. Killing and restarting nm-applet didn’t help in this case, so the bug must be deeper. Sadly, this is a bug I’ve read about in Ubuntu MATE 16.04 so again, this might be a bug from upstream. For comparison, I had no problem of this sort when running mint cinnamon 18 live on this pc, and it is running mint Xfce (first 17.2, upgraded to 17.3) for a while and never had this problem.
 	very frequent “at-spi-registryd.desktop not responding” error at reboot/shutdown and it’s associated very slow reboot/shutdown
-	mate-panel lacks borders: https://github.com/mate-desktop/mate-panel/issues/344
-	mint-x-icons: if I increase the mate panel size to anything above 28 pixels (which is truly necessary on a WQHD display) the network manager applet icon shows up with a black background color (instead of being transparent). It doesn’t seem to be themed for anything above 28 pixels.
-	https://github.com/mate-desktop/caja/issues/569
 
 KDE Edition - last processed comment: #0
 -----------------------------------------

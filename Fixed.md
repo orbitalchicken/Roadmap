@@ -22,6 +22,8 @@ All editions
 	Mint-Y needs a tiny window border or drop shadow. It can be very difficult to distinguish where one window ends and another begins.
 	Mint-Y:  I dislike these borderless windows. When I snap applications next to each other on the screen, the content just seems to run into eachother and almost looks cut off. I know it’s not actually being cut off, but without even a thin border it gives off that impression.
 	no border for any opened window which makes it like it’s mixed with any other window if we use the new mint dark theme in cinnamon.
+	mintinstall http://imgur.com/VdxYEXq
+	synaptic: in German, when updating, the notification that the update is done has a “Close” button instead of a “Schließen” button. Also, there’s “Show individual files” (in english) during the update process – it should read something like “Zeige individuelle Dateien”.
 
 Cinnamon Edition
 ----------------
@@ -39,6 +41,7 @@ MATE Edition
 	mintmenu: use custom color should be disabled by default (it makes mintmenu look really bad with mint-y-dark)
 	mintmenu: transparent only once after reboot (first click on menu). Next click menu show not transparent
 	mintmenu: The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency.
+	mintmenu: select mint-logo.svg as icon to see what happens :)
 
 KDE Edition
 -----------

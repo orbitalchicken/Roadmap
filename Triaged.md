@@ -5,6 +5,7 @@ Not a bug
 	nmap scan found the microsoft-ds ports, open 445 (samba)
 	cinnamon: Notifications always appear in the panel even though they are disabled.
 	cinnamon: Update shield became so small --> will move to new libindicator eventually
+	mate: https://github.com/mate-desktop/caja/issues/569
 
 Outside of the scope
 --------------------
@@ -30,6 +31,8 @@ Can't reproduce
 	cinnamon: I can disable mobile broadband using the switch in network preferences but it does have any effect. Next time I open up network preferences it is enabled again. I guess this could be a upstream problem though.
 	Why did you change from Noto Sans to Noto Sans Regular? Letters now look short and stretched. They are much more elegant on 17.3. (some tools went from GTK2 to GTK3, noto changed slightly, other than that...?)
 	cinnamon panel unresponsive when using nvidia 304 drivers?
+	mintinstall http://imgur.com/a/oh56T
+	mint-y update issue: http://imgur.com/a/B14wG
 
 Upstream
 --------
@@ -43,3 +46,4 @@ Upstream
 	caja: I noticed that search result doesn’t appear till the end of search, this may take some time. it would be nice to improve search behavior like the search in nautilus so that the search results in the current folder appears instantly.
 	mate-control-center: when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
 	mate-notification: “connection established..” message always on front. no way to close
+	mate-panel lacks borders: https://github.com/mate-desktop/mate-panel/issues/344

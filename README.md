@@ -138,6 +138,7 @@ Linux Mint 18.1
         Tray icons are black with mint-y themes.
         Mint-Y Icon theme doesn’t show document contents. Mint-X icon variants can show the content of a text file without any problems, but this is not the case with Mint-Y. If Mint-Y will never support such a feature, I would suggest using an icon that indicates a text file, rather than the blank placeholder icon.
         Mint-Y themes Shade option is unavailable
+        mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
 
 
 LMDE +1:

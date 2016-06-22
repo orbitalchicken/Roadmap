@@ -19,6 +19,8 @@ Maintenance
 Linux Mint 18.1
 ===============
 
+    consider removing samba stack (less and less functional upstream)
+
     review logind.conf changes in:
         MATE
         Xfce
@@ -60,6 +62,7 @@ Linux Mint 18.1
         Bluetooth panel icon was nicer when it was monochromatic (do we need blueberry to provide a cinnamon applet?)
         nemo: Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
         When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
+        ability to lock desklets?
 
     mate 1.16
         swith MATE to GTK3
@@ -72,6 +75,7 @@ Linux Mint 18.1
     xed
         sublime-like search bar
         some icons are named and other not, for example, Open, Save and Undo are named, yet Print, Cut and Paste are not.
+        Would like to see a RED warning bar with Xed when in root edit mode as with the former Gedit in 17.3.
 
     xreader
         should place its menu item in the accessories category instead of office
@@ -96,6 +100,7 @@ Linux Mint 18.1
 
     mintupdate:
         provide a CLI (to let people upgrade automatically)
+        add shortcut keys
 
     mintwelcome:
         consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..) - check chalet OS' startpoint ideas

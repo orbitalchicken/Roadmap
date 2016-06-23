@@ -6,6 +6,7 @@ Not a bug
 	cinnamon: Notifications always appear in the panel even though they are disabled.
 	cinnamon: Update shield became so small --> will move to new libindicator eventually
 	mate: https://github.com/mate-desktop/caja/issues/569
+	libmad0 is illegal in the U.S. and Japan --> No it's not (https://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-legal.html)
 
 Outside of the scope
 --------------------

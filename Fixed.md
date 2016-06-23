@@ -32,6 +32,20 @@ Cinnamon Edition
 	white font? http://imgur.com/QBEM48H
 	text in logout countdown isn't easily readable ... could be similar to Spices configuration module, when install 3rd party spices. Is it a missing style in Mint-X? To define the color of text in progress bars?
 	“Automatically connect to VPN when using this connection” option for a WiFi network connection is failing upon startup. It then connects to the wifi without the VPN.
+	panel: right-click -> paste applet configuration doesn't work
+	virtual keyboard: I used to click on the applet “on-screen-keyboard” and it came in focus (and only then). For this to work I have to enable it in the accessibility settings. With Cinnamon 3.0.x, this woks too, but the keyboard is popping up every each and then (click on menu etc.) and not only if I use the applet. Could this be adjusted?
+	Ctrl+Alt+Shift+R video recording crashes and throws Cinnamon into fallback mode
+	I downloaded an icon set, just to try it tout, from http://linuxmint-art.org/content/show.php/My+Mint+Elementary?content=169859 I put the extracted folder in /usr/share/icons Went back to Preferences/Theme to find that most choices of icons were gone ! I deleted the elementary-icons folder. Went back to preferences/theme/icons and the choices were all back.
+	nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
+	cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
+	choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
+	network settings / network applet: the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
+	network settings / network applet: connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
+	nemo: changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
+	nemo: When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
+	nemo: can't navigate with touchscreen
+	preferred applications settings seem to have an issue when setting the default app for music. I have vlc installed and deadfeef but when I set deadfeef to be the default app to play music, vlc opens all music instead.
+	I can’t set VLC as preferred video application. It seems set as preferred application in Cinnamon menu but Nemo keep opening all video format with Video.
 
 MATE Edition
 ------------

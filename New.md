@@ -8,12 +8,9 @@ All editions
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	update mint-mirrors
 	mdm: autologin fails randomly (race condition at boot time?)
-	AFAIK, libmad0 is illegal in the U.S. and Japan. I know Mint 18 has removed multimedia support out of the box partly to streamline global distribution. It seems you removed libmad0 from default amd64 images, but you left libmad0:i386 apparently by accident, since all other codecs seem to be cleaned out on the Beta image. I don’t want to see Mint run into any trouble in the U.S. or Japan, so libmad0:i386 ought to be removed before release.
-	announcements: change stated res to 1024, add hint about ALT key.
 	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html Thank you for looking into this. HPLIP worked with LM17.3.
 	pix: Doesn't seem to generate thumbnails until view is scrolled
 	[Fixed in git] xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
-	boot is noticeably slower for some people (is something hanging on some specs?)
 	does mdm need a respawn workaround? review lightdm changes in respect to systemd adoption (/dev/tty0, etc..)
 	hardware:
 		Ethernet:
@@ -56,24 +53,8 @@ All editions
 
 Cinnamon Edition - last processed comment: #676
 -----------------------------------------------
-	[Fixed in git] panel: right-click -> paste applet configuration doesn't work
-	[Fixed in git] virtual keyboard: I used to click on the applet “on-screen-keyboard” and it came in focus (and only then). For this to work I have to enable it in the accessibility settings. With Cinnamon 3.0.x, this woks too, but the keyboard is popping up every each and then (click on menu etc.) and not only if I use the applet. Could this be adjusted?
-	[Fixed in git] Ctrl+Alt+Shift+R video recording crashes and throws Cinnamon into fallback mode
-	[Fixed in git] I downloaded an icon set, just to try it tout, from http://linuxmint-art.org/content/show.php/My+Mint+Elementary?content=169859 I put the extracted folder in /usr/share/icons Went back to Preferences/Theme to find that most choices of icons were gone ! I deleted the elementary-icons folder. Went back to preferences/theme/icons and the choices were all back.
-	[Fixed in git] nemo-preview does not close properly, press space to open it, press space to close it... you end up with an empty window.
-	[Fixed in git] cinnamon: place two panels (bottom and top), add application menu applet to top panel, left zone. when menu is open, hover the applet icon.. it makes the applet flicker.
-	[Fixed in git] choose Mint-Y-Dark for controls: all blue “more info” links in spices’ online lists can’t be read on the dark background
 	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
-	network settings / network applet:
-		[Fixed in git] the list of available wlans contains my own wlan and another one of the same name with “auto” in front that has a black block where the connection strenght should appear.
-		[Fixed in git] connected to vpn (cisco to be exact), it doesn’t display network icon with lock when connected in the system tray compared to previous version.
-	nemo:
-		[Fixed in git] changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
-		[Fixed in git] When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
-		[Fixed in git] can't navigate with touchscreen
 	Nemo get blank icons after set “Show text in icons” to “Always” or “Local Files Only”.
-	preferred applications settings seem to have an issue when setting the default app for music. I have vlc installed and deadfeef but when I set deadfeef to be the default app to play music, vlc opens all music instead.
-	I can’t set VLC as preferred video application. It seems set as preferred application in Cinnamon menu but Nemo keep opening all video format with Video.
 	Cinnamon (3.05+sarah) crashed to Fallback while Winetricks was installing an app, Irfanview. It was in the procedure where the installer writes launchers to the desktop.
 	mouse motion settings reset themselves after a while?
 	constantly getting a NEMO “thumbnail error” when I open photo directories (no videos) I haven’t visited in a while.

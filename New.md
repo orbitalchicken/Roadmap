@@ -12,9 +12,9 @@ All editions
 	announcements: change stated res to 1024, add hint about ALT key.
 	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html Thank you for looking into this. HPLIP worked with LM17.3.
 	pix: Doesn't seem to generate thumbnails until view is scrolled
-	pix: translations really poor (tested in dutch)
-	xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
+	[Fixed in git] xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
 	boot is noticeably slower for some people (is something hanging on some specs?)
+	does mdm need a respawn workaround? review lightdm changes in respect to systemd adoption (/dev/tty0, etc..)
 	hardware:
 		Ethernet:
 			Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
@@ -70,6 +70,7 @@ Cinnamon Edition - last processed comment: #676
 	nemo:
 		[Fixed in git] changing desktop font size segfaults nemo (seems to only happen after a reboot. After nemo is restarted, this can't be reproduced anymore.)
 		[Fixed in git] When moving the panel, or resizing the panel, the desktop icons sometimes disappear. (Solution is to start/restart Nemo.)
+		[Fixed in git] can't navigate with touchscreen
 	Nemo get blank icons after set “Show text in icons” to “Always” or “Local Files Only”.
 	preferred applications settings seem to have an issue when setting the default app for music. I have vlc installed and deadfeef but when I set deadfeef to be the default app to play music, vlc opens all music instead.
 	I can’t set VLC as preferred video application. It seems set as preferred application in Cinnamon menu but Nemo keep opening all video format with Video.

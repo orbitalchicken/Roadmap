@@ -24,6 +24,7 @@ All editions
 	no border for any opened window which makes it like it’s mixed with any other window if we use the new mint dark theme in cinnamon.
 	mintinstall http://imgur.com/VdxYEXq
 	synaptic: in German, when updating, the notification that the update is done has a “Close” button instead of a “Schließen” button. Also, there’s “Show individual files” (in english) during the update process – it should read something like “Zeige individuelle Dateien”.
+	pix: translations really poor (tested in dutch) --> translations moved to LP
 
 Cinnamon Edition
 ----------------

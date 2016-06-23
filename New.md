@@ -4,14 +4,17 @@ All editions
 ------------
 
 	Update translations
-	kernel updates wipe the vbox dkms module?
 	Could you update virtualbox-guest packages from Debian sid repo (5.0.2 versions) for solving 3D acceleration.
 	update mint-mirrors
-	mdm: autologin fails randomly (race condition at boot time?)
-	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html Thank you for looking into this. HPLIP worked with LM17.3.
 	pix: Doesn't seem to generate thumbnails until view is scrolled
 	[Fixed in git] xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
-	does mdm need a respawn workaround? review lightdm changes in respect to systemd adoption (/dev/tty0, etc..)
+	boot time: remove samba (make sure NetworkManager-wait-online.service is inactive by default)
+	mdm:
+		[Fixed in git] wait for plymouth-quit
+		[Fixed in git] don't conflict with getty@tty0
+		support pam_kwallet5
+		set XDG_RUNTIME_DIR http://bazaar.launchpad.net/~lightdm-team/lightdm/trunk/revision/2272
+		login screen, no user selected, username don't show up very well on some of the backgrounds
 	hardware:
 		Ethernet:
 			Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
@@ -48,17 +51,11 @@ All editions
 		intel:
 			mouse cursor disappears (switch user with mdmflexiserver, log back in) https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/1568604, "gsettings set org.gnome.settings-daemon.plugins.cursor active false" helps??
 	artwork:
-		login screen, no user selected, username don't show up very well on some of the backgrounds
 		mint-x: The xed editor has the icons in grey using the Mint-X icons so you don’t know if they are disabled or what
 
 Cinnamon Edition - last processed comment: #676
 -----------------------------------------------
-	When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
-	Nemo get blank icons after set “Show text in icons” to “Always” or “Local Files Only”.
-	Cinnamon (3.05+sarah) crashed to Fallback while Winetricks was installing an app, Irfanview. It was in the procedure where the installer writes launchers to the desktop.
-	mouse motion settings reset themselves after a while?
-	constantly getting a NEMO “thumbnail error” when I open photo directories (no videos) I haven’t visited in a while.
-	Clock takes up about 30-60 seconds to update the hour after waking up the system from sleeping. Can we get a signal on wakeup?
+
 
 MATE Edition - last processed comment: #356
 -------------------------------------------

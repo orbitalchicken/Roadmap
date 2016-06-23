@@ -1,9 +1,7 @@
 Linux Mint 18 Sarah
 ===================
 
-    Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353
-    cinnamon misplaces tooltips initially in 0x0
-
+    Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353 (being fixed upstream)
     update live repo and sign, with latest FF at time of release.
     Upgrade path from Mint 17.3
     announcements: change stated res to 1024, add hint about ALT key.
@@ -64,6 +62,12 @@ Linux Mint 18.1
         nemo: Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
         When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
         ability to lock desklets?
+        When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
+        Nemo get blank icons after set “Show text in icons” to “Always” or “Local Files Only”.
+        cinnamon crashed to Fallback while Winetricks was installing an app, Irfanview. It was in the procedure where the installer writes launchers to the desktop.
+        mouse motion settings reset themselves after a while?
+        constantly getting a NEMO “thumbnail error” when I open photo directories (no videos) I haven’t visited in a while.
+        Clock takes up about 30-60 seconds to update the hour after waking up the system from sleeping. Can we get a signal on wakeup?
 
     mate 1.16
         swith MATE to GTK3

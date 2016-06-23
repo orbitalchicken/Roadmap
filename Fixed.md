@@ -46,6 +46,7 @@ Cinnamon Edition
 	nemo: can't navigate with touchscreen
 	preferred applications settings seem to have an issue when setting the default app for music. I have vlc installed and deadfeef but when I set deadfeef to be the default app to play music, vlc opens all music instead.
 	I can’t set VLC as preferred video application. It seems set as preferred application in Cinnamon menu but Nemo keep opening all video format with Video.
+	cinnamon misplaces tooltips initially in 0x0
 
 MATE Edition
 ------------

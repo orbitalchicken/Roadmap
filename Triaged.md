@@ -7,6 +7,7 @@ Not a bug
 	cinnamon: Update shield became so small --> will move to new libindicator eventually
 	mate: https://github.com/mate-desktop/caja/issues/569
 	libmad0 is illegal in the U.S. and Japan --> No it's not (https://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-legal.html)
+	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html --> already packaged and installed by default in Mint 18.
 
 Outside of the scope
 --------------------
@@ -34,6 +35,8 @@ Can't reproduce
 	cinnamon panel unresponsive when using nvidia 304 drivers?
 	mintinstall http://imgur.com/a/oh56T
 	mint-y update issue: http://imgur.com/a/B14wG
+	mdm: autologin fails randomly (race condition at boot time?)
+	kernel updates wipe the vbox dkms module?
 
 Upstream
 --------

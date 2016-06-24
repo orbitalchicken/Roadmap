@@ -25,6 +25,7 @@ All editions
 	mintinstall http://imgur.com/VdxYEXq
 	synaptic: in German, when updating, the notification that the update is done has a “Close” button instead of a “Schließen” button. Also, there’s “Show individual files” (in english) during the update process – it should read something like “Zeige individuelle Dateien”.
 	pix: translations really poor (tested in dutch) --> translations moved to LP
+	improve boot time
 
 Cinnamon Edition
 ----------------

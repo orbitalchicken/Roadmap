@@ -51,3 +51,15 @@ Upstream
 	mate-control-center: when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
 	mate-notification: “connection established..” message always on front. no way to close
 	mate-panel lacks borders: https://github.com/mate-desktop/mate-panel/issues/344
+	hardware:
+		Surface Pro: Type cover/touchpad/Touchscreen/pen not working -> https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1504618
+		Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
+		Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32), "wireless unavailable" --> https://bugs.launchpad.net/ubuntu/+source/linux-firmware/+bug/1520343
+		Ethernet - no connection - Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c) --> http://askubuntu.com/questions/763080/no-wifi-in-qualcom-atheros-ubuntu-16-04-acer-aspire-e-15
+		Does not support Netgear A6210 wifi adapter.
+		WIFI issues with RTL8191SU (Rosewill-Wireless Lan-USB 2.0 Adapter-Model No. RNX-N180UBE)-(LSUSB-Bus 005 Device 003: ID 0bda:8172 Realtek Semiconductor Corp. RTL8191SU 802.11n WLAN Adapter)
+		Bluetooth on Lenovo w530. Bluetooth applet cant seem to pick any device. It will just display searching for devices and either provide an empty list or list devices i cannot setup. On 17.3 it worked like a charm
+		Lenovo Y700 no sound
+		Onboard audio for an Intel DQ965GF motherboard is not working.
+		No sound (worked in 17.3): Audio: Card-1 Intel 8 Series/C220 Series High Definition Audio Controller, driver: snd_hda_intel bus-ID: 00:1b.0 Sound: Advanced Linux Sound Architecture v: k4.4.0-24-generic
+		My mic is not working. Lenovo C-440

@@ -18,7 +18,7 @@ Maintenance
 Linux Mint 18.1
 ===============
 
-    consider removing samba stack (less and less functional upstream)
+    switch ntp to chrony?
 
     review logind.conf changes in:
         MATE

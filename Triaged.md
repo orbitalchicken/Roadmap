@@ -49,8 +49,10 @@ Upstream
 	caja: I can’t find hidden files in Caja file manager.
 	caja: I noticed that search result doesn’t appear till the end of search, this may take some time. it would be nice to improve search behavior like the search in nautilus so that the search results in the current folder appears instantly.
 	mate-control-center: when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
+	mate-control-center: install gnome-system-tools, items aren't l10nd.
 	mate-notification: “connection established..” message always on front. no way to close
 	mate-panel lacks borders: https://github.com/mate-desktop/mate-panel/issues/344
+	mate: If a launcher is created from the desktop of type “application in terminal”, any command and attempting to execute the launcher results in the following error: “Details: Failed to execute child process “xterm” (No such file or directory)”
 	intel: mouse cursor disappears (switch user with mdmflexiserver, log back in) https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/1568604
 	Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353 (being fixed upstream)
 	hardware:

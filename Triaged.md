@@ -51,6 +51,8 @@ Upstream
 	mate-control-center: when using ‘Mint-Y-Dark’ theme, and then pressing an item in the ‘Groups’ menu (such as ‘Hardware’), it paints the group-block in a very light-green color, so the white text is not readable.
 	mate-notification: “connection established..” message always on front. no way to close
 	mate-panel lacks borders: https://github.com/mate-desktop/mate-panel/issues/344
+	intel: mouse cursor disappears (switch user with mdmflexiserver, log back in) https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/1568604
+	Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353 (being fixed upstream)
 	hardware:
 		Surface Pro: Type cover/touchpad/Touchscreen/pen not working -> https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1504618
 		Fatal resolution problem with all 16.04 derivatives https://answers.launchpad.net/ubuntu/+question/292402
@@ -63,3 +65,8 @@ Upstream
 		Onboard audio for an Intel DQ965GF motherboard is not working.
 		No sound (worked in 17.3): Audio: Card-1 Intel 8 Series/C220 Series High Definition Audio Controller, driver: snd_hda_intel bus-ID: 00:1b.0 Sound: Advanced Linux Sound Architecture v: k4.4.0-24-generic
 		My mic is not working. Lenovo C-440
+		HP LaserJet 5000 on parallel port – Device URI: parallel:/dev/lp0 Buffer overflow error when printing. hpcups 3.16.3. Works in Mint 13 and 15, but not in 17.x/18.
+		suspend: Lenovo G50 80, core i5 broadwell, 2.2 ghz, GPU AMD Radeon 2GB, 500GB SSHD and 12GB of RAM. -> can't suspend -> black screen and never wakes up.
+		Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
+		Dell Inspiron 15  i7-6700HQ Processor 6th Generation Intel Core (Skylake) 16 GB memory 128 GB SSD + 1TB HDD -> boots to black screen
+		soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3) (works with (acpi=off))

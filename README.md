@@ -1,7 +1,6 @@
 Linux Mint 18 Sarah
 ===================
 
-    Printer driver requires "lsb" package https://bugs.launchpad.net/ubuntu/+source/lsb/+bug/1536353 (being fixed upstream)
     update live repo and sign, with latest FF at time of release.
     Upgrade path from Mint 17.3
     announcements: change stated res to 1024, add hint about ALT key.

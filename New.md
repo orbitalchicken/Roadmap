@@ -4,15 +4,10 @@ All editions
 ------------
 
 	*update mint-mirrors
-	*[Fixed in git] xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
-	*[Fixed in git] xplayer: inhibits on video but not on audio? (although it is selected to do so for “Video or Audio” and “org.x.player lock-screensaver-on-audio true” is set).
-	*[Fixed in git] xviewer-plugins: couldn't load resource /org/x/viewer/plugins/exif-display/exif-display-config.ui (EXIF plugin)
-	*mdm:
-		[Fixed in git] wait for plymouth-quit
-		[Fixed in git] don't conflict with getty@tty0
+	*wifi: Qualcomm Atheros Device 0042 (rev 30) --> fixed by linux-firmware 1.157.1
+	mdm:
 		support pam_kwallet5
 		set XDG_RUNTIME_DIR http://bazaar.launchpad.net/~lightdm-team/lightdm/trunk/revision/2272
-	*wifi: Qualcomm Atheros Device 0042 (rev 30) --> fixed by linux-firmware 1.157.1
 	pix: Doesn't seem to generate thumbnails until view is scrolled
 
 	rel notes:

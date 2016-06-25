@@ -28,6 +28,11 @@ All editions
 	improve boot time
 	Synaptic search bar: yellow background
 	login screen, no user selected, username don't show up very well on some of the backgrounds
+	xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
+	xplayer: inhibits on video but not on audio? (although it is selected to do so for “Video or Audio” and “org.x.player lock-screensaver-on-audio true” is set).
+	xviewer-plugins: couldn't load resource /org/x/viewer/plugins/exif-display/exif-display-config.ui (EXIF plugin)
+	mdm: wait for plymouth-quit
+	mdm: don't conflict with getty@tty0
 
 Cinnamon Edition
 ----------------

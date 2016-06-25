@@ -72,3 +72,4 @@ Upstream
 		Intel Corporation Haswell-ULT Integrated Graphics Controller --> can't boot without recovery mode
 		Dell Inspiron 15  i7-6700HQ Processor 6th Generation Intel Core (Skylake) 16 GB memory 128 GB SSD + 1TB HDD -> boots to black screen
 		soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3) (works with (acpi=off))
+	update virtualbox-guest to Debian sid 5.0.2 to solve 3D acceleration?

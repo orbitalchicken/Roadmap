@@ -3,7 +3,6 @@ New bug reports in Linux Mint 18 BETA
 All editions
 ------------
 
-	*update translations
 	*update mint-mirrors
 	*[Fixed in git] xed: in gedit, and in pluma, you can select text and move it by dragging it with the mouse. That doesn't work in xed.
 	*[Fixed in git] xplayer: inhibits on video but not on audio? (although it is selected to do so for “Video or Audio” and “org.x.player lock-screensaver-on-audio true” is set).
@@ -13,9 +12,7 @@ All editions
 		[Fixed in git] don't conflict with getty@tty0
 		support pam_kwallet5
 		set XDG_RUNTIME_DIR http://bazaar.launchpad.net/~lightdm-team/lightdm/trunk/revision/2272
-		login screen, no user selected, username don't show up very well on some of the backgrounds
 	*wifi: Qualcomm Atheros Device 0042 (rev 30) --> fixed by linux-firmware 1.157.1
-	update virtualbox-guest to Debian sid 5.0.2 to solve 3D acceleration?
 	pix: Doesn't seem to generate thumbnails until view is scrolled
 
 	rel notes:

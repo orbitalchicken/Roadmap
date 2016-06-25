@@ -27,6 +27,7 @@ All editions
 	pix: translations really poor (tested in dutch) --> translations moved to LP
 	improve boot time
 	Synaptic search bar: yellow background
+	login screen, no user selected, username don't show up very well on some of the backgrounds
 
 Cinnamon Edition
 ----------------

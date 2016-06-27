@@ -33,6 +33,10 @@ All editions
 	xviewer-plugins: couldn't load resource /org/x/viewer/plugins/exif-display/exif-display-config.ui (EXIF plugin)
 	mdm: wait for plymouth-quit
 	mdm: don't conflict with getty@tty0
+	pix: Doesn't seem to generate thumbnails until view is scrolled
+	mint-x: The xed editor has the icons in grey using the Mint-X icons so you don’t know if they are disabled or what
+	nemo-preview needs to depend on gir1.2-clutter-gst-3.0
+	update mint-mirrors
 
 Cinnamon Edition
 ----------------

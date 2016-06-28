@@ -37,6 +37,8 @@ All editions
 	mint-x: The xed editor has the icons in grey using the Mint-X icons so you don’t know if they are disabled or what
 	nemo-preview needs to depend on gir1.2-clutter-gst-3.0
 	update mint-mirrors
+	wifi: Qualcomm Atheros Device 0042 (rev 30) --> fixed by linux-firmware 1.157.1
+	upgrade to nm 1.2
 
 Cinnamon Edition
 ----------------

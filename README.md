@@ -19,6 +19,10 @@ Linux Mint 18.1
 
     switch ntp to chrony?
 
+    firefox:
+        enable bookmark toolbar by default
+        enable plugins by default
+
     review logind.conf changes in:
         MATE
         Xfce

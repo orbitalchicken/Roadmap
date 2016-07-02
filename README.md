@@ -2,8 +2,6 @@ Linux Mint 18 Sarah
 ===================
 
     Upgrade path from Mint 17.3
-    announcements: change stated res to 1024, add hint about ALT key.
-    make a downloadable for mint-meta-codecs
 
 Maintenance
 ===========

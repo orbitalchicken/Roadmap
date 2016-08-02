@@ -147,6 +147,9 @@ Linux Mint 18.1
         mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
 
 
+    done:
+        cinnamon: sounds for notifications (needs to be configured in mint-artwork-cinnamon)
+
 LMDE +1:
 =========
 

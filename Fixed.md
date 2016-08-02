@@ -73,8 +73,15 @@ MATE Edition
 	mintmenu: The new MintMenu theme is supposed to have rounded corners, but the transparency is broken, leaving hideous white triangles where there ought to be transparency.
 	mintmenu: select mint-logo.svg as icon to see what happens :)
 
+Xfce Edition
+------------
+	in Compiz, window borders are Adwaita. Should be Mint-X.
+	Nautilus overwrites the desktop with its own settings, removing icons and background and the right click context menu.
+	qt4 apps look wrong (tested with backintime-qt4), you can change it by installing qtconfig-qt4
+	Qt apps Look and feel has become broken again (clementine e. g.). The way to fix it – add env variable DESKTOP_SESSION=gnome.
+	clock applet isn't able to save configuration, switch to datetime.
+	whisker: don't use generic names
+
 KDE Edition
 -----------
 
-Xfce Edition
-------------

@@ -37,6 +37,11 @@ Can't reproduce
 	mint-y update issue: http://imgur.com/a/B14wG
 	mdm: autologin fails randomly (race condition at boot time?)
 	kernel updates wipe the vbox dkms module?
+	xfce: Whisker menu buttons are highlighted bugzilla.xfce.org/show_bug.cgi?id=12402 (already fixed)
+	xfce: libindicator-plugin.so uses 10/20% CPU at idle. Removing the applet from the panel --> CPU usage goes down.
+	xfce: Mint-Y theme Desktop Icons-text is not centered (Mint-X theme is OK).
+	xfce: if I set it in Power Manager to just turn off screen or lock screen, when I open it back it works once BUT if I then close and open it again – the screen never comes back on and sometimes it seems whole system freezes( and other times it seems that just the screen doesn’t lit up, as it reacts to power button pressed).
+	xfce: ALWAYS happens, regardless what settings I have on closing the lid: after opening the lid back the system opens Display preferences.
 
 Upstream
 --------
@@ -74,3 +79,9 @@ Upstream
 		soft lookup cpu3 stuck for 22s, laptop is PE60 6QE, cpu is i7-6700HQ, vga card is Nvidia GTX 960M 2G (all worked fine in 17.3) (works with (acpi=off))
 	update virtualbox-guest to Debian sid 5.0.2 to solve 3D acceleration?
 	mint-x/mint-y: buttons aren't themed in gelemental
+	xfce:
+		Keyboard Layouts Text-font SIZE is not working (you can change the font of this task-bar applet but not its size).
+		clock applet: can't change settings (deletes configuration)
+		Thunar crashes when rename files. bugzilla.xfce.org/show_bug.cgi?id=12264
+		Thunar crashes sometimes when copy and paste files
+		Xfce4-task-manager toolbar style “Small” looks much better (maybe change default conf)

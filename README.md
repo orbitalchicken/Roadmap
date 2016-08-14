@@ -49,6 +49,9 @@ Linux Mint 18.1
 
     switch ntp to chrony?
 
+    mdm:
+        fix Logitech keyboard layout recognized as en_US
+
     firefox:
         enable bookmark toolbar by default
         enable plugins by default

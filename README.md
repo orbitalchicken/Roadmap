@@ -3,32 +3,17 @@ Linux Mint 18 Sarah
 
     KDE
         settings
-            [DONE] breeze dark panel
-            [DONE] kickoff favorites
             [DONE] kinfocenter distro info
-            [DONE] IRC channel
-            [DONE] Ubiquity in menu
-            [DONE] fix messy menu
-            [DONE] GTK2 apps in root mode don't use the right theme (ex: mintsources)
 
         mint tools
             indicator support in mintupdate
             indicator support in mintupload
             review worflow for mint-meta-codecs-kde
-            [DONE] mintsources absent from menu (or system settings)
-            [DONE] mintdrivers absent from menu (or system settings)
 
         ubiquity
             [DONE] app icon
             slideshow content
             slideshow background color
-            [DONE] sidebar icon
-
-        software selection
-            [DONE] review all
-
-        plasma maintenance
-            [DONE] delegate to Kubuntu backports PPA (5.6.5, might wait until 5.7?)
 
 Maintenance
 ===========

@@ -4,16 +4,17 @@ Linux Mint 18 Sarah
     KDE
         settings
             [DONE] kinfocenter distro info
+            [DONE] pastel in konsole
+            [DONE] wallpaper
+            [DONE] neutral grey color scheme
 
         mint tools
             indicator support in mintupdate
             indicator support in mintupload
-            review worflow for mint-meta-codecs-kde
 
         ubiquity
             [DONE] app icon
-            slideshow content
-            slideshow background color
+            [DONE] slideshow
 
 Maintenance
 ===========

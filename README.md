@@ -1,20 +1,3 @@
-Linux Mint 18 Sarah
-===================
-
-    KDE
-        settings
-            [DONE] kinfocenter distro info
-            [DONE] pastel in konsole
-            [DONE] wallpaper
-            [DONE] neutral grey color scheme
-
-        mint tools
-            indicator support in mintupdate
-            indicator support in mintupload
-
-        ubiquity
-            [DONE] app icon
-            [DONE] slideshow
 
 Maintenance
 ===========
@@ -54,9 +37,7 @@ Linux Mint 18.1
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
         actions in panel launchers aren't translated if not present in .desktop file
         add cinnamon-session and cinnamon-settings-daemon to Launchpad/cinnamon-translations
-        vertical panels
         retire boxpointers
-        remove plug/socket in screensaver
         applets
             menu: adopt this layout (https://raw.githubusercontent.com/The-Panacea-Projects/Gnomenu/master/Screenshot.png), same as ours/mintmenu, only better.
             add a printer applet
@@ -76,12 +57,10 @@ Linux Mint 18.1
         network applet: if possible, add a little refresh icon to ask for a new scan
         system settings modules don't use the icon (in alt-tab, and window list) associated with the menu item
         Bluetooth panel icon was nicer when it was monochromatic (do we need blueberry to provide a cinnamon applet?)
-        nemo: Touch screen clicks are not working in the icon and compact view section of Nemo, everywhere else seems fine.
         When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
         ability to lock desklets?
         When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
         Nemo get blank icons after set “Show text in icons” to “Always” or “Local Files Only”.
-        cinnamon crashed to Fallback while Winetricks was installing an app, Irfanview. It was in the procedure where the installer writes launchers to the desktop.
         mouse motion settings reset themselves after a while?
         constantly getting a NEMO “thumbnail error” when I open photo directories (no videos) I haven’t visited in a while.
         Clock takes up about 30-60 seconds to update the hour after waking up the system from sleeping. Can we get a signal on wakeup?
@@ -96,8 +75,6 @@ Linux Mint 18.1
 
     xed
         sublime-like search bar
-        some icons are named and other not, for example, Open, Save and Undo are named, yet Print, Cut and Paste are not.
-        Would like to see a RED warning bar with Xed when in root edit mode as with the former Gedit in 17.3.
 
     xreader
         should place its menu item in the accessories category instead of office
@@ -164,7 +141,15 @@ Linux Mint 18.1
 
 
     done:
-        cinnamon: sounds for notifications (needs to be configured in mint-artwork-cinnamon)
+        cinnamon:
+            sounds for notifications (needs to be configured in mint-artwork-cinnamon)
+            vertical panels
+            new screensaver
+            smoother bg handling
+        xed:
+            red warning bar when running as root
+        xplayer:
+            blank other monitors when in fullscreen
 
 LMDE +1:
 =========

@@ -60,7 +60,6 @@ Linux Mint 18.1
         When connecting with PEAP authentication, the network manager applet just gets stuck instead of prompting for credentials.
         ability to lock desklets?
         When scrolling down in the Menu smoothly, icons/items leave some “traces” behind, if you can call it that
-        Nemo get blank icons after set “Show text in icons” to “Always” or “Local Files Only”.
         mouse motion settings reset themselves after a while?
         constantly getting a NEMO “thumbnail error” when I open photo directories (no videos) I haven’t visited in a while.
         Clock takes up about 30-60 seconds to update the hour after waking up the system from sleeping. Can we get a signal on wakeup?
@@ -135,10 +134,8 @@ Linux Mint 18.1
 
     artwork:
         Tray icons are black with mint-y themes.
-        Mint-Y Icon theme doesn’t show document contents. Mint-X icon variants can show the content of a text file without any problems, but this is not the case with Mint-Y. If Mint-Y will never support such a feature, I would suggest using an icon that indicates a text file, rather than the blank placeholder icon.
         Mint-Y themes Shade option is unavailable
         mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
-
 
     done:
         cinnamon:

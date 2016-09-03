@@ -30,6 +30,9 @@ Linux Mint 18.1
         consider adding support for xdg-apps, flatpack
         consider enabling recommends
 
+    ubiquity:
+        inhibit sessions via presence API (need to do it in KDE too)
+
     mint-tools:
         in MATE, window icons aren't set properly when the icon is placed in /usr/share/pixmaps
 
@@ -143,6 +146,7 @@ Linux Mint 18.1
             vertical panels
             new screensaver
             smoother bg handling
+            menu: bumblebee support -> run with NVIDIA GPU
         xed:
             red warning bar when running as root
         xplayer:

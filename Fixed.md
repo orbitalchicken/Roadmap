@@ -39,6 +39,7 @@ All editions
 	update mint-mirrors
 	wifi: Qualcomm Atheros Device 0042 (rev 30) --> fixed by linux-firmware 1.157.1
 	upgrade to nm 1.2
+	oneconf (python -> help() -> modules) invalid distro: ‘LinuxMint’
 
 Cinnamon Edition
 ----------------
@@ -84,4 +85,12 @@ Xfce Edition
 
 KDE Edition
 -----------
+	view folder as root isn't themed properly (use right-click action )
+	During install I opted in to install codecs. It did install. After install when I go to Software Centre, under recommended apps, it shows as codecs not installed?
+	.deb files are open by default with Ark, they should be open with some software installer instead.
+	Ark (the KDE file archive manager) isn’t able to open ZIP files. The problem can be solved by installing “p7zip-full” (the base package “p7zip” is already installed).
+	For old KDE games to work users need to install “qml-module-org-kde-games-core”, for compatibility with QML.
+	Nothing shows up on “History” in startmenu.
+	can't edit/create/configure activities
+	Mint-Y/X themes shouldn't be included by default, as they're not compatible with KDE
 

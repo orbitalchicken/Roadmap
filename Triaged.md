@@ -8,11 +8,15 @@ Not a bug
 	mate: https://github.com/mate-desktop/caja/issues/569
 	libmad0 is illegal in the U.S. and Japan --> No it's not (https://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-legal.html)
 	installing HP Linux Printing Service HPLIP. It wants a library item libtool, which is already installed (I did sudo apt-get install libtool to verify). The HPLIP site is http://hplipopensource.com/hplip-web/index.html --> already packaged and installed by default in Mint 18.
+	kde: ufw-kde does not work (in 17.x works) --> the gtk frontend is provided as default
+	kde: please remove anything remotely related to akonadi. It is an abomination.
+	kde: tray:  Very big icons and text tip fonts. If you add a pager to maneuver multiple desktops, for example, the remaining space available for the task manager itself becomes limited, almost half of the total screen width (height can be modified if needed).
 
 Outside of the scope
 --------------------
 	xplayer + marco: while in full screen mode does not play video smoothly (use compton + mpv for better performance)
 	mate clock applet: font and color is not customizable
+	kde: can you include kolor-manager?
 
 Can't reproduce
 ---------------
@@ -42,6 +46,27 @@ Can't reproduce
 	xfce: Mint-Y theme Desktop Icons-text is not centered (Mint-X theme is OK).
 	xfce: if I set it in Power Manager to just turn off screen or lock screen, when I open it back it works once BUT if I then close and open it again – the screen never comes back on and sometimes it seems whole system freezes( and other times it seems that just the screen doesn’t lit up, as it reacts to power button pressed).
 	xfce: ALWAYS happens, regardless what settings I have on closing the lid: after opening the lid back the system opens Display preferences.
+	kde:
+		Whenever I selected to install 3rd party package, it stayed in that screen with wait cursor. Clicking back button didn’t bring it back to previous setup screen.
+		The installer says that VLC is included. It is not.
+		After adding any widget in desktop, desktop looks freeze for sometime.
+		When I shutdown the session using K-Menu->Leave->Shutdown, the computer simply reboots.
+		kwallet: Some sort of conflict between KDE wallet and the network manager. If KDE wallet is disabled passwords can’t be made persistent, you’ll have to type them every time you start. Similar if I recall to Kubuntu, but not in Manjaro KDE 32 bit.
+	 	kwallet: every time you log into the session kded5 application asks to enter wi-fi password for kwallet. I tried to disable kwallet and even delete it, but the problem remained. Did I do something wrong to do to set up? But in the previous version(17.x) and in other distributions KDE (Kubuntu, KDE neon) had no such problems.
+	 	kwallet: Found a cure for Kwallet and WiFi. Before you connect to your WiFi open Kwallet and disable it. Once disabled you can connect to your WiFi, enter your password then click on connect. It will now save your WiFi password and enable it each time you boot up without having to put in the password.
+	 	The default GTK3 theme is set to Mint-X instead of “Breeze”
+	 	The screenlocker is broken and unlocking is not possible anymore.
+	 	“Show desktop” widget/hot corner does not hide “Desktop Settings” window.
+	 	unable to download new themes “Loading of providers from http://download.kde.org/ocs/providers.xml failed”
+	 	desktop effects hot corners are not work
+	 	crash when blender is launched
+	 	konversation shows duplicate entry for “spell checking language” options. Screenshot http://i.imgur.com/yIvT4x3.png
+	 	The function key of the touchpad works, but there is no indication.
+		When adding a user, the existing home directory is not chowned. KDE will not start complaining about wrong permissions in .kde and .config directories.
+		changing to another user -> can't remember wifi password (asked twice)
+		dolphin still not automount iphones? works in nemo.
+		New bug just began yesterday. Opening MintUpdate and clicking refresh crashes Kwin.
+		Weather widget has stopped working; just sits there listing the target city name but no long shows weather details popup upon click.
 
 Upstream
 --------
@@ -85,3 +110,25 @@ Upstream
 		Thunar crashes when rename files. bugzilla.xfce.org/show_bug.cgi?id=12264
 		Thunar crashes sometimes when copy and paste files
 		Xfce4-task-manager toolbar style “Small” looks much better (maybe change default conf)
+	kde:
+		When changing resolution, after you press apply, there’s no confirmation window
+		Clicking on the clock brings up the calendar but I can’t enter anything into the calendar?
+		Under Virtualbox with 3D acceleration, parts of systemsettings are just black and fail to render (for instance Appearance)
+		Only right mouse button opens indicators
+		kwallet: If I set Gigolo to auto start and connect to five drives on my NAS, it starts before Wallet. I then have to enter my user name and password five times in Gigolo and once in Wallet. Disabling Wallet in settings then has the result of me needing to enter my wireless password every…..single….time. Why is Wallet needed?
+		kwallet: i create my own keyring with my gpg key. 1. Although the wallet itself (hopefully) works,the systray icon never shows up 2. I have “Allow always”-ed a few apps, chromium, networkmanager, kwalletmanager5, konversation. But “allow” is remembered only for single session. How do i permanently allow above apps to access wallet ?
+		Really Really missing the “Different Widgets for each desktop” option
+		In LibreOffice, toolbar icons are not displayed correctly. They look like skeletons and are hard to distinguish.
+		I can’t tell the difference between my desktops because they all have the same wallpaper
+		kmail: crashes mainly when I delete some messages
+		kmail: I can’t send email. Messages are moved to “Outgoing” and stuck there. In other distros, the solution was instalation of newer version of Kmail.
+		kmail: color scheme of white text on light background makes message headers impossible to read.
+		sddm does not display my profile pic at login. I have ensured/made the following changes without success – content in /var/lib/AccountsService/* configured “icon”. Added “FacesDir=/var/lib/AccountsService/icons” in /etc/sddm.conf. “accounts-daemon.service” up and running.
+		Video thumbnails do not work. Installing ffmpegthumbs/kdeffmpegthumbnailer does not help. Workaround: sudo ln -s /usr/lib/x86_64-linux-gnu/plugins/* /usr/lib/x86_64-linux-gnu/qt5/plugins/
+		no thumbnails for camera RAW files.
+		Installing different window decorations breaks the ability to resize windows.
+		Desktop settings > get new wallpaper,results in a blank box and the message “Some categories are missing”.
+		According to the Meta key does not open Kickoff. When installing ksuperkey problem is partially solved. Menu opens on the button, but do not closes when pressed again.
+		I had to manually put the slideshow directory to /usr/share/backgrounds/linuxmint-sarah [launched from desktop menu icon to top left], as otherwise turning the background slideshow on just gave a black screen.
+	indicator-cpufreq:
+		in KDE indicator-cpufreq doesn't show me conservative and powersave options. These are here in Linuxmint 18 Cinnamon and XFCE versions.

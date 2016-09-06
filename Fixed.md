@@ -93,4 +93,6 @@ KDE Edition
 	Nothing shows up on “History” in startmenu.
 	can't edit/create/configure activities
 	Mint-Y/X themes shouldn't be included by default, as they're not compatible with KDE
-
+	plymouth theme doesn't show disk-encryption password field
+	Slideshow translations need an update
+	in the “energy information” (KDE control module) the history graphs don’t show. Instead I get the message “This type of history is currently not available for this device”.

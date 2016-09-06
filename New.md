@@ -15,12 +15,6 @@ MATE Edition - last processed comment: #440
 Xfce Edition - last processed comment: #106
 -------------------------------------------
 
-KDE Edition - last processed comment: #198
+KDE Edition - last processed comment: #237
 -----------------------------------------
 
-	Mint:
-		Slideshow translations need an update
-		plymouth theme doesn't show disk-encryption password field
-
-	Software selection:
-		[DONE] in the “energy information” (KDE control module) the history graphs don’t show. Instead I get the message “This type of history is currently not available for this device”. works in manjaro.

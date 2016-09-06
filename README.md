@@ -36,6 +36,9 @@ Linux Mint 18.1
     mint-tools:
         in MATE, window icons aren't set properly when the icon is placed in /usr/share/pixmaps
 
+    mintsources:
+        add support for anycast IP worldwide global mirrors
+
     cinnamon 3.2
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
         actions in panel launchers aren't translated if not present in .desktop file

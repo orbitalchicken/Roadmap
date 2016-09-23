@@ -35,9 +35,13 @@ Linux Mint 18.1
 
     mint-tools:
         in MATE, window icons aren't set properly when the icon is placed in /usr/share/pixmaps
+        mintsystem: https://github.com/linuxmint/mintsystem/issues/49
 
     mintsources:
         add support for anycast IP worldwide global mirrors
+
+    xplayer:
+        focus window when a video file is opened
 
     cinnamon 3.2
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
@@ -78,9 +82,6 @@ Linux Mint 18.1
 
     libindicator++?
 
-    xed
-        sublime-like search bar
-
     xreader
         should place its menu item in the accessories category instead of office
 
@@ -95,10 +96,7 @@ Linux Mint 18.1
         should use a generic name in the application menu
 
     xviewer
-        “Date in statusbar” doesn’t work.
         “Disable Dark Theme” doesn’t work, if i’m right when i assume it should do “gsettings set org.x.viewer.view use-background-color false”?
-        “Hide Titlebar” not sure what it should do…?
-        “Export to Folder”, “Fullscreen Background”, “Python Console” and “Slideshow Shuffle” can’t be activated. in the moment they get grayed out and a tool-tip says “The plugin ‘XXX’ could not be loaded – An error occurred: Plugin loader ‘python3’ was not found”
         after a fullscreen-view the sidebar is gone and must be enabled manually again.
         please make the position (left/right, top/bottom won’t make much sense) of the sidebar configurable (like the gallery) at least via dconf!
 
@@ -152,8 +150,12 @@ Linux Mint 18.1
             menu: bumblebee support -> run with NVIDIA GPU
         xed:
             red warning bar when running as root
+            sublime-like search bar
         xplayer:
             blank other monitors when in fullscreen
+            enable rotation plugin by default
+        xviewer:
+            better interpolation on zoomed pictures
 
 LMDE +1:
 =========

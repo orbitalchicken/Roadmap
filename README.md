@@ -13,6 +13,14 @@ Linux Mint 18.1
 
     switch ntp to chrony?
 
+    xed:
+        sorting lines:
+            add a simple Edit->Sort Lines (F9), which sorts the selection or the entire file (if no selection is done)
+            make sure it's undoable
+            remove the sort plugin
+        import libpeas support from gedit, to allow python3 extensions
+        add word-wrap setting to View menu and buttons available in the toolbar customization
+
     mdm:
         fix Logitech keyboard layout recognized as en_US
 
@@ -147,7 +155,10 @@ Linux Mint 18.1
             vertical panels
             new screensaver
             smoother bg handling
-            menu: bumblebee support -> run with NVIDIA GPU
+            applets:
+                menu: bumblebee support -> run with NVIDIA GPU
+                show-desktop: peek at desktop
+                keyboard: uppercase letters
         xed:
             red warning bar when running as root
             sublime-like search bar

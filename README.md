@@ -155,6 +155,8 @@ Linux Mint 18.1
             vertical panels
             new screensaver
             smoother bg handling
+            accelerometer screen orientation changes via iio-sensor-proxy support
+            libinput support
             applets:
                 menu: bumblebee support -> run with NVIDIA GPU
                 show-desktop: peek at desktop

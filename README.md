@@ -18,6 +18,7 @@ Linux Mint 18.1
     release process:
         update screenshots for 18.x
         simplify steps and automate verify page information
+        update FF in live repo
     system:
         consider removing thermald? test impact of idle forcing on video playback (observed on macbook)
 

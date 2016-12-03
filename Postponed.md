@@ -20,6 +20,7 @@ Mint 18.x
 
 	mintupdate:
 		safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
+		prompt for reboot after kernel install?
 
 	mintupload:
 		ftps support

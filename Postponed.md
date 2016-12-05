@@ -51,6 +51,8 @@ Mint 18.x
 		preselect user if only one user is present in the list
 		configurable slideshow
 
+	xed: cannot mousewheel across tabs
+
 	revive Giver project?
 
 Cinnamon
@@ -75,7 +77,6 @@ Cinnamon
 
 	nemo:
 		review all usage of Gio/Glib
-		re-add bg-change fade effect
 		if I press ALT+F2 and then enter “nemo ftp://ftp.mydomain.xyz” to access to my personal ftp server trough nemo, I’ll get a request of username and password: it’s OK. The problem is that if I select the option to remember forever the username and password, it will not have effect: if I reboot Linux Mint, the next time I’ll try to access my ftp trough nemo I’ll get the request of username e password. So… nemo doesn’t remember my credentials… it’s frustrating.
 		Entering the folder of long name , the path disappeared screen capture 1) it shows a folder of longname https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A19.png screen capture 2) entering the long name folder , meeting disappeared folder path of long name folder https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A34.png screen capture 3) But Actually It was still dsiplayed at max window https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A19%3A13.png
 		Create a thumbnailer in usr/share/thumbnailers for MimeType inode/directory – when you try to run Nemo, it crashes with the error:  (nemo:9078): CinnamonDesktop-WARNING **: Error reading from file:///home/simon/Desktop: Error reading from file descriptor: Is a directory Installing cover-thumbnailer is an easy way to reproduce it.
@@ -89,12 +90,8 @@ Cinnamon
 		If you plug in a USB, it auto mounts in a location on the desktop but if you unplug it, plug in another, and re-insert the first, the desktop icons overlap each other. I've noticed a similar issue in previous Mint releases. It would be great if the icons could auto position.
 		small bug in all Linux Mint Cinnamon editions (maybe with Nemo). When I drag and drop some file(s) on an archive , my expectation is the files being added to it , but instead of that an error message pops out : “An error occurred while adding files to the archive. You can’t add an archive to itself.” . The Mate edition does not have this problem
 		when no panels are present -> right-click the desktop -> Add a panel
-		always handle the desktop (when no icons are to be shown, provide right-click features all the same)
-		nemo context menus -> expand/collapse mini-button in the top-right corner of context menu, remember whether it's collapsed/expanded.
 		If Nemo is open with 2 folder-panes the user can switch between both panes with F6, that is fine, if one uses the file-manager with keyboard only. The problem is, that F6 only works at once, if you have set Nemo to open with 2 panes. If Nemo opens with 1 pane (default setting) and the second pane gets opened via F3 (or menu), pressing F6 does at first nothing – no reaction at all. You can either click the second pane with the mouse (what is against a keyboard-only usage) or you have to navigate in the first pane anywhere (e.g. by pressing backspace), only after that F6 is reacting
 		nemo: can no longer handle desktop in root session.
-		in context menu, show expand/collapse button/arrow to toggle showing extra context menu options
-		show icons per monitor..
 
 	window management:
 		expo: set overview mode to true by default

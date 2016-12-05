@@ -5,7 +5,6 @@ All editions
 	mdm: Webkit preview, process doesn't die when window is closed
 	mdm: Webkit preview, mint-X doesn't show anything, only background
 	“unattended-upgrades” is installed by default. Why is this package running everyday, searching for packages in improperly-formated repos and fails every day as seen in ‘/var/log/unattended-upgrades’? This needs to be uninstalled or set the correct variables in /etc/apt/apt.conf.d/50unattended-upgrades!!
-	Still cannot mousewheel across tabs in Xed
 	kernel:
 		check critical bugs against -45/-47 or consider Dirty Cow patch in -31
 		consider offering 4.8?
@@ -15,9 +14,6 @@ All editions
 	check continue button greyed out if not enough HDD space?
 	ubiquity: If I come to the last dialog during the installer of Mint (Name, Computer name, Password) I enter at first my name, than I press several times the tab key, leaving computer name and user name at the prefilled values. If I am now in the first field for entering my password the field with the user name gets and stays completely marked, but this should not be the case.
 	I installed (64 bit) with German language. After booting the installed system I find in the language settings the message about incomplete language packs for 4 English and 2 German language variants. The annoying thing is, that each of those 6 language packs have to get installed separately, so this really wastes some time. I did several installs of Serena and found the problem reproducible.
-	in xed, when you have more than a page, scrolling down (or up) with the down (or up) arrow creates a jerky display; similarly, with a large document, going from the top to the bottom with Ctrl-End (or vice-versa with Ctrl-Home) seems to have an intermediate stage where it is displaying text from somewhere in the middle of the document; reminds me of “smooth” scrolling in Firefox; makes xed unusable for me except for short periods of time or for very short files
-	gnome-calculator takes way to long to exit (for a calculator); it also seems to be thrashing my HDD when it exits
-	Having more than one terminal open the command to close all terminals in the file menu (or shortcut ctrl-shift-q) does not work as expected. Only the current terminal gets closed, all the others remain open.
 	steam doesn't run out of the box.
 
 
@@ -47,6 +43,7 @@ Cinnamon Edition - last processed comment: #64
 		As this category delay has now been (erroneously?) removed the menu in 18.1 appears as a regression in usability. Please restore this option.
 	Bug Found: 24 hour format won’t change to 12 hour in vertical panel mode
 		To reproduce: Change panel to vertical panel, then change clock from 24 hour to 12 hour, the clock will display in 24 hour format still. If you change panel to horizontal, time will be correct, change back to vertical and it changes back to 24 hour format, but settings still say 12 hour
+	metacity fallback should include better settings, terminal, ability to reboot
 
 MATE Edition - last processed comment: #26
 ------------------------------------------

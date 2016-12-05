@@ -12,8 +12,8 @@ Linux Mint 18.1
     update translations
     installer slideshows -> banshee
     xed search:
-        typing shouldn't move to next result
-        pressing case button should perform the search
+        [Fixed in Git] typing shouldn't move to next result
+        [Fixed in Git] pressing case button should perform the search
     ubiquity: don't set the root password
     release process:
         update screenshots for 18.x

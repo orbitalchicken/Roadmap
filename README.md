@@ -10,17 +10,10 @@ Linux Mint 18.1
 ===============
 
     update translations
-    installer slideshows -> banshee
-    xed search:
-        [Fixed in Git] typing shouldn't move to next result
-        [Fixed in Git] pressing case button should perform the search
-    ubiquity: don't set the root password
     release process:
         update screenshots for 18.x
         simplify steps and automate verify page information
         update FF in live repo
-    system:
-        consider removing thermald? test impact of idle forcing on video playback (observed on macbook)
 
     xfce:
         upgrade whisker menu 1.6.1 / 2.0.2?

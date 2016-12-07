@@ -40,26 +40,12 @@ Cinnamon Edition - last processed comment: #119
         process name should be set
         RTL: http://imgur.com/a/0hqqY
         in 1152×864 the clock is over the password field
-        The volume control on the lock screen in the upper left hand corner looks like a glitch more than a feature. Especially with no media playing.
     Is the speed (not acceleration) of the mouse pointer finally changable via the settings? This did not work for years now
     When running cinnamon live session, attempting to do a restart via the button on the cinnamon menu causes the screen to hang on the cinnamon logo as the system begins to shut down.
-    By default the file name for the sound is my username (without ending like .oga). This file does not exist, so that by simply turning the option to play the notification sound will do nothing. Looks like a forgotten default value.
-    Configuration option for the menu urgently missed:
-        Until Mint 18 Sarah there was for the menu the option “menu hover delay”. This is not the same as the option with the same name in 18.1 Serena, as also the tool tip reveals, if you hover the option.
-        The new option delays the appearance of the menu, if you have the option to open the menu by hovering it in the panel activated.
-        The old option delayed switching the categories. This means, if you have selected a category and want now to move the pointer to the menu entry to the right, you can (with the delay set to e.g.150 ms) move the mouse diagonally over other categories without activating them by doing so. Without the delay the categories, touched by the mouse pointer get at once activated and the command in the right column is not more there.
-        This leads to the result, that without the delay you have to move the mouse at first properly to the right and then up or down to the needed command; diagonal (and far quicker and more logical) movements are without the delay not possible.
-        As this category delay has now been (erroneously?) removed the menu in 18.1 appears as a regression in usability. Please restore this option.
-    Bug Found: 24 hour format won’t change to 12 hour in vertical panel mode
-        To reproduce: Change panel to vertical panel, then change clock from 24 hour to 12 hour, the clock will display in 24 hour format still. If you change panel to horizontal, time will be correct, change back to vertical and it changes back to 24 hour format, but settings still say 12 hour
-    fallback mode:
-        give cinnamon-launcher support for mate-panel
-        install mate-panel mint-artwork-mate mintmenu by default
-        mintmenu:
-            add cinnamon favorites
-            add support for cinnamon-session-quit
-            add support for nemo
-            change label to Fallback Mode when in Cinnamon
+    [Fixed in Git] notification sound, by default the file name for the sound is my username (without ending like .oga). This file does not exist.
+    menu: bring back category hover delay option
+    [Fixed in Git] clock applet doesn't support custom formats in vertical mode
+    [Fixed in Git] use mate-panel in fallback mode
     vmware support (windows are translucent)
     Problem with the width of some configuration windows: E. G. with the configuration window for window list applet.
     Nemo/Cinnamon crash as Network sftp:// share opens. This seems to be a reappearance of https://bugs.launchpad.net/linuxmint/+bug/1111500 not sure that this was ever really sorted before, but its back again!

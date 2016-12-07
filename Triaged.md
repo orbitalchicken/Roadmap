@@ -15,6 +15,7 @@ Can't reproduce
     cinnamon:
         when installing themes https://justpaste.it/110ba
         If in panel edit mode right clicking the panel doesn’t do anything. This means, that you cannot turn off panel edit mode.
+    nemo: Nemo/Cinnamon crash when browsing sftp://
 
 Upstream
 --------

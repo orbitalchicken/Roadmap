@@ -21,9 +21,13 @@ Mint 18.x
     mintupdate:
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
         prompt for reboot after kernel install?
+        creates objects with wrong ownership. See https://github.com/linuxmint/mintupdate/issues/169
 
     mintupload:
         ftps support
+
+    mintlocale:
+        Add/remove alt-tab icon is blurry
 
     others:
         kde: New icon theme / UI look and feel.
@@ -32,6 +36,7 @@ Mint 18.x
         windows compatibility layer.
         pin base-files?
         inserting live-stick, stick isn't mounted automatically in /media
+        ubiquity: don't set the root password
 
     mintbackup:
         consider using another alternative?

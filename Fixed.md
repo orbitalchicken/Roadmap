@@ -15,6 +15,7 @@ Cinnamon Edition
 
 MATE Edition
 ------------
+    The brushed metal mintmenu background isn't set for some Mint-X color variants
 
 
 Xfce Edition

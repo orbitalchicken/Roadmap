@@ -114,6 +114,7 @@ Cinnamon
         cinnamon-settings-users: Creating a user without password (stupid but nothing prevents it): impossible for that user to set one himself in Account Details.
         cinnamon-settings-users: In the “Users and Groups”, when on “Groups” tab, it could be great to have a way to see the members of a selected group and add new members to the group as well. Currently, we can only edit the group name…
         backgrounds: get more brackgrounds (find a way to make it easy to install more backgrounds)
+        Is the speed (not acceleration) of the mouse pointer finally changable via the settings? This did not work for years now
 
     applets:
         menu: doesn't listen to menu changes outside /usr/share/applications? install shotwell for instance (uses /usr/share/menu)
@@ -121,6 +122,7 @@ Cinnamon
         menu: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet...
         menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
         sound: align close/raise buttons to the right
+        show-desktop: add the ability to DND to desktop by hovering with a file on the applet.
 
     other:
         screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)

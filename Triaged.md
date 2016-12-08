@@ -6,6 +6,8 @@ Not a bug
 
 Outside of the scope
 --------------------
+    In live session, a restart causes the screen to hang on shut down. --> long standing issue on some hardware.
+    “Show icons in menus” works with xed, but “Toolbar button labels” does not --> changes in GTK3 regarding menu icons force applications to enforce their presence
 
 Can't reproduce
 ---------------
@@ -21,3 +23,4 @@ Upstream
 --------
     gnome-terminal: the command to close all terminals in the file menu only closes all tabs.
     ubiquity: in user details screen, enter your name, then press tab all the way to the password field (using defaults for username and hostname), the text in the username entry stays selected.
+    mate-control-center: Some colors are hardcoded, visible with Mint-Y Dark theme

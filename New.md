@@ -14,11 +14,9 @@ All editions
     xed search:
         [Fixed in Git] typing shouldn't move to next result
         [Fixed in Git] pressing case button should perform the search
-    mintstick: http://pasteall.org/pic/show.php?id=109579
-    gdebi: http://pasteall.org/pic/show.php?id=109580
     ttf-mscorefonts-installer fails to install, /usr/share/fonts/truetype/mscore is empty
     isolinux splash http://pasteall.org/pic/show.php?id=109630
-    should ttf-ancient-fonts-symbola be installed by default?
+    [Fixed in Git] xplayer: https://github.com/linuxmint/xplayer/issues/53
 
 Cinnamon Edition - last processed comment: #157
 -----------------------------------------------
@@ -50,7 +48,6 @@ Cinnamon Edition - last processed comment: #157
         http://pasteall.org/pic/show.php?id=109574
         After around 9 minutes of high CPU usage the process reaches 3 GiB virtual memory then crashes, desktop resets and offending process memory drops to 1.5 KiB
     menu: recent icon is different than in nemo sidebar
-    When you open the calculator instead of saying “Calculator” on the panel, it says “gnome-calculator”.
 
 MATE Edition - last processed comment: #48
 ------------------------------------------

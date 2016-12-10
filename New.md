@@ -22,13 +22,13 @@ Cinnamon Edition - last processed comment: #191
     [Fixed in Git] System Info (Upload System Information) “This includes no personal information”, possibly shorten to ‘Includes no personal information’, or ‘No personal information included’?
     [Fixed in Git] window list applet -> ‘Close’ button should be near the panel
     [Fixed in Git] multiple fixes in screensaver
-    [collinss] Right-click an icon on the panel, select “options”, then “edit”. Try to choose a new icon. The new icon shows in the window. Try to click “OK”. It won’t click and the icon won’t change.
-    [mtwebster] menu: bring back category hover delay option
+
+    Right-click an icon on the panel, select “options”, then “edit”. Try to choose a new icon. The new icon shows in the window. Try to click “OK”. It won’t click and the icon won’t change.
+    menu: bring back category hover delay option
     I have a problem when i start Spotify from the sound icon Cinnamon crash. When i open it in the menu it works. I didnt have that problem with Mint 18.0
 
 MATE Edition - last processed comment: #56
 ------------------------------------------
-    when changing the track in rhythmbox: https://i.imgur.com/3ctHhPn.png
 
 Xfce Edition - last processed comment: #0
 -------------------------------------------

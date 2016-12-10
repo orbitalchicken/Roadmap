@@ -18,7 +18,6 @@ Cinnamon Edition
 ----------------
     Support for RTL languages in vertical panels
 
-
 MATE Edition
 ------------
     The brushed metal mintmenu background isn't set for some Mint-X color variants

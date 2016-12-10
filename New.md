@@ -14,7 +14,6 @@ All editions
     xed search:
         [Fixed in Git] typing shouldn't move to next result
         [Fixed in Git] pressing case button should perform the search
-    ttf-mscorefonts-installer fails to install, /usr/share/fonts/truetype/mscore is empty
     isolinux splash http://pasteall.org/pic/show.php?id=109630
     [Fixed in Git] xplayer: https://github.com/linuxmint/xplayer/issues/53
 

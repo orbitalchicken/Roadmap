@@ -11,6 +11,7 @@ All editions
     ttf-ancient-fonts-symbola added
     gdebi: http://pasteall.org/pic/show.php?id=109580
     When you open the calculator instead of saying “Calculator” on the panel, it says “gnome-calculator”.
+    ttf-mscorefonts-installer fails to install
 
 Cinnamon Edition
 ----------------

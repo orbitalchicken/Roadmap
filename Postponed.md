@@ -55,6 +55,8 @@ Mint 18.x
         mdm in live mode: can't log in using Mint and blank password
         preselect user if only one user is present in the list
         configurable slideshow
+        Webkit preview, process doesn't die when window is closed
+        Webkit preview, mint-X doesn't show anything, only background
 
     xed: cannot mousewheel across tabs
 
@@ -82,6 +84,7 @@ Cinnamon
 
     nemo:
         review all usage of Gio/Glib
+        Prefs > Display > Icon Caption > first option SIZE, and Prefs > Preview > Folders > options NEVER ---> results in "–" showing under directories (tested in icon view).
         if I press ALT+F2 and then enter “nemo ftp://ftp.mydomain.xyz” to access to my personal ftp server trough nemo, I’ll get a request of username and password: it’s OK. The problem is that if I select the option to remember forever the username and password, it will not have effect: if I reboot Linux Mint, the next time I’ll try to access my ftp trough nemo I’ll get the request of username e password. So… nemo doesn’t remember my credentials… it’s frustrating.
         Entering the folder of long name , the path disappeared screen capture 1) it shows a folder of longname https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A19.png screen capture 2) entering the long name folder , meeting disappeared folder path of long name folder https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A18%3A34.png screen capture 3) But Actually It was still dsiplayed at max window https://dl.dropboxusercontent.com/u/54450962/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C%202013-11-18%2002%3A19%3A13.png
         Create a thumbnailer in usr/share/thumbnailers for MimeType inode/directory – when you try to run Nemo, it crashes with the error:  (nemo:9078): CinnamonDesktop-WARNING **: Error reading from file:///home/simon/Desktop: Error reading from file descriptor: Is a directory Installing cover-thumbnailer is an easy way to reproduce it.
@@ -105,6 +108,7 @@ Cinnamon
 
     settings:
         don't show outdated spices
+        Problem with the width of some configuration windows: E. G. with the configuration window for window list applet.
         cinnamon-settings: The search box in System Settings displays “Search…” next to the magnifier.
         cinnamon-settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
         spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)
@@ -121,8 +125,12 @@ Cinnamon
         menu: keywords (for searching) aren't l10n'd
         menu: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet...
         menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
+        menu: recent icon is different than in nemo sidebar
         sound: align close/raise buttons to the right
         show-desktop: add the ability to DND to desktop by hovering with a file on the applet.
+
+    screensaver:
+        If the display for the time gets disabled, also the absence message does not get shown. I think, both should be independent from each other.
 
     other:
         screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)

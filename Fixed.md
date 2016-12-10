@@ -12,6 +12,7 @@ All editions
     gdebi: http://pasteall.org/pic/show.php?id=109580
     When you open the calculator instead of saying “Calculator” on the panel, it says “gnome-calculator”.
     ttf-mscorefonts-installer fails to install
+    steam doesn't run out of the box
 
 Cinnamon Edition
 ----------------
@@ -22,10 +23,8 @@ MATE Edition
 ------------
     The brushed metal mintmenu background isn't set for some Mint-X color variants
 
-
 Xfce Edition
 ------------
-
 
 KDE Edition (Plasma 5.8)
 ------------------------

@@ -9,11 +9,9 @@ Maintenance
 Linux Mint 18.1
 ===============
 
-    update translations
     release process:
         update screenshots for 18.x
         simplify steps and automate verify page information
-        update FF in live repo
 
     xfce:
         upgrade whisker menu 1.6.1 / 2.0.2?

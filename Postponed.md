@@ -62,8 +62,11 @@ Mint 18.x
 
     revive Giver project?
 
+    isolinux splash http://pasteall.org/pic/show.php?id=109630
+
 Cinnamon
 --------
+
     hidpi and display settings:
         hidpi setting should be in Displays, not in General
         frequency in monitor settings
@@ -121,11 +124,13 @@ Cinnamon
         Is the speed (not acceleration) of the mouse pointer finally changable via the settings? This did not work for years now
 
     applets:
+        menu: bring back category hover delay option
         menu: doesn't listen to menu changes outside /usr/share/applications? install shotwell for instance (uses /usr/share/menu)
         menu: keywords (for searching) aren't l10n'd
         menu: Even after setting org.cinnamon.desktop.lockdown.disable-lock-screen to true, the lock button still appears on cinnamon menu applet...
         menu: When creating a new menu item the icon does not appear. It is ok in the menu editor.
         menu: recent icon is different than in nemo sidebar
+        sound: I have a problem when i start Spotify from the sound icon Cinnamon crash. When i open it in the menu it works. I didnt have that problem with Mint 18.0
         sound: align close/raise buttons to the right
         show-desktop: add the ability to DND to desktop by hovering with a file on the applet.
 

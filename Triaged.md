@@ -32,4 +32,4 @@ Upstream
     mate-control-center: Some colors are hardcoded, visible with Mint-Y Dark theme
     vmware: windows are translucent -> https://github.com/linuxmint/Cinnamon/issues/4870
     deja-dup: since Linux Mint 18 MATE there is a issue with the tray-icon of deja-dup: deja-dup works like it should, but the tray-icon (to show progress, pause/resume, skip) is not visible… the notification area is extended but you see just the normal panel-background. in Linux Mint MATE prior to 18.x, Linux Mint Xfce 18 and Ubuntu MATE 16.04 the tray-icon is shown, so it unfortunately hast to do with Mint MATE! --> deja-dup needs to check for XDG_CURRENT_DESKTOP instead of creating race conditions with DBUS.. this issue is reported on so many DEs..
-    mate: when changing the track in rhythmbox: https://i.imgur.com/3ctHhPn.png (fixed in master, will come as an update with mate-notification-daemon 1.16.1)
+    kernel: Unrecognized audio devices “Dummy output”. ProBook 470 G4. Audio was fine in Sarah.

@@ -10,14 +10,19 @@ Linux Mint 18.1
 ===============
 
     release process:
-        update screenshots for 18.x
-        simplify steps and automate verify page information
+        add mini to store
+        add new hoods
 
-    xfce:
-        upgrade whisker menu 1.6.1 / 2.0.2?
+        csd: 100% CPU?
 
-    kde:
-        installer: continue button greyed out when not enough HDD
+    mdm:
+        utils scripts mdm-stop etc.. aren't in the package
+
+    cinnamon:
+        port https://github.com/mate-desktop/mate-session-manager/commit/3e8cab348e37b9879fa558e56e05069987c6c65a
+
+    mintdesktop:
+        https://github.com/linuxmint/mintdesktop/pull/16
 
 Linux Mint 18.2
 ===============
@@ -33,6 +38,10 @@ Linux Mint 18.2
     xplayer:
         focus window when a video file is opened
         visualizations don't work
+        keyboard shortcut:
+            s -> subtitles
+            l -> language
+            etc... try to follow other standards in other players
 
     xreader
         support gestures to zoom
@@ -148,7 +157,7 @@ LMDE +1:
 =========
 
     bashrc: # colored GCC warnings and errors --> export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01' (won't work until gcc 4.9)
-    update grub (improves efi support)
     history and completion in bashrc
-    install libhal1-flash by default
     consider activating http://backports.debian.org/changes/jessie-backports.html
+
+

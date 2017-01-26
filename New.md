@@ -11,13 +11,10 @@ Cinnamon Edition - last processed comment: #191
 MATE Edition - last processed comment: #56
 ------------------------------------------
 
-Xfce Edition - last processed comment: #0
+Xfce Edition - last processed comment: #68
 -------------------------------------------
 
-    mintupload: systray icon looks huge
-    issue with mdm? No right-click terminal and panel launchers don't work
-
-KDE Edition - last processed comment: #0
+KDE Edition - last processed comment: #39
 -----------------------------------------
 
     installer: continue button greyed out when not enough HDD

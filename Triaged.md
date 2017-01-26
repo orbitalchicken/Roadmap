@@ -8,6 +8,12 @@ Outside of the scope
 --------------------
     In live session, a restart causes the screen to hang on shut down. --> long standing issue on some hardware.
     “Show icons in menus” works with xed, but “Toolbar button labels” does not --> changes in GTK3 regarding menu icons force applications to enforce their presence
+    xfce:
+        when I put the Xfce panel into kiosk mode, I lose all changes to the panel that I’ve made previously. Kiosk mode does work well in Xubuntu 16.04.x, with preservation of the changes I made. But not in Linux Mint 18.1 Xfce: it just falls back to the installation defaults. This is the method I use for kiosk mode for the Xfce panel: https://sites.google.com/site/easylinuxtipsproject/xfce#TOC-Lock-the-panels-kiosk-mode- (item 7, right column)
+    kde:
+        Enhanced Desktop colour consistency idea: Before http://pasteall.org/pic/show.php?id=111473, After http://pasteall.org/pic/show.php?id=111474. --> Good idea, but Breeze is going through important changes and we're not frozen on Plasma (PPA Scheme) so let's stick to upstream as much as possible right now.
+        Wallpaper -> Positioning currently uses ‘Scaled’, may I recommend ‘Scaled and Cropped’ (matches Cinnamon’s ‘Picture aspect’ ‘Zoom’ functionality). Recommendation prevents image distortion for those using different aspect ratio display devices. --> Definitely, but this isn't directly configurable upstream without resorting to scripting.
+        enable two things in Dolphin? 1. Make Tab switch between panes, as KDEneon does, 2. Disable single-click activation of items.
 
 Can't reproduce
 ---------------
@@ -24,7 +30,9 @@ Can't reproduce
         http://pasteall.org/pic/show.php?id=109574
         After around 9 minutes of high CPU usage the process reaches 3 GiB virtual memory then crashes, desktop resets and offending process memory drops to 1.5 KiB
     cinnamon: Qt 5.7 looks bad
-
+    xfce:
+        “xfwm4 + compositing” cause screen tearing, changing it to “xfwm4 + compton” fixes that in 18.0. However, in 18.1 beta, compton doesn’t work anymore (as in: screen tearing remains).
+        Screensaver: setting ‘cycle after’ to 1 minute causes white screen, followed by lock-up.
 Upstream
 --------
     gnome-terminal: the command to close all terminals in the file menu only closes all tabs.
@@ -33,3 +41,4 @@ Upstream
     vmware: windows are translucent -> https://github.com/linuxmint/Cinnamon/issues/4870
     deja-dup: since Linux Mint 18 MATE there is a issue with the tray-icon of deja-dup: deja-dup works like it should, but the tray-icon (to show progress, pause/resume, skip) is not visible… the notification area is extended but you see just the normal panel-background. in Linux Mint MATE prior to 18.x, Linux Mint Xfce 18 and Ubuntu MATE 16.04 the tray-icon is shown, so it unfortunately hast to do with Mint MATE! --> deja-dup needs to check for XDG_CURRENT_DESKTOP instead of creating race conditions with DBUS.. this issue is reported on so many DEs..
     kernel: Unrecognized audio devices “Dummy output”. ProBook 470 G4. Audio was fine in Sarah.
+    firefox: issues with Mint-Y-Dark — on youtube, the number of thumbs up/down are *barely* visible

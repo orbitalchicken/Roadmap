@@ -41,6 +41,10 @@ MATE Edition
 
 Xfce Edition
 ------------
+    mintupload: systray icon looks huge
+    In “Removable Drives and Media”, multimedia tab, “play audio CD’s when inserted” should be “rhythmbox %d” or “vlc cdda:///dev/sr0/”
+    Reduce notifications time to 5 seconds.
+    The taskbar tray indicator icons become “janky” when you hover over them with the mint-y theme (dark or regular) selected
 
 KDE Edition (Plasma 5.8)
 ------------------------

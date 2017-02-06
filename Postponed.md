@@ -3,24 +3,15 @@ Improvements selected for the future
 
 Mint 18.x
 ---------
-    common:
-        new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
-        for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
-        backport VLC 3
 
     nemo:
-        remove duplication between Eject and Safely Remove (for removable devices).
         [Can't reproduce] Regression in Nemo: Umounting dual-partitioned HDD freezes Nemo.
         video thumbnails are blurry https://github.com/linuxmint/nemo/issues/825.
 
     internet/network:
-        hexchat: implement PR for /etc/hexchat for distro to set default list of networks https://github.com/hexchat/hexchat; http://anonscm.debian.org/cgit/collab-maint/hexchat.git/ (sney mailto:drubo@drubo.net).
         remove modemmanager?
-        mirrors: implement mirmon? http://salixos.org/mirmon.html
 
     mintupdate:
-        safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
-        prompt for reboot after kernel install?
         creates objects with wrong ownership. See https://github.com/linuxmint/mintupdate/issues/169
 
     mintupload:
@@ -29,61 +20,15 @@ Mint 18.x
     mintlocale:
         Add/remove alt-tab icon is blurry
 
-    others:
-        kde: New icon theme / UI look and feel.
-        mdm: stopping the MDM service prevents access to the TTYs. Using Ctrl+Alt+F2 only works when MDM is running. Thus, there’s no way to run anything in a TTY unless the X server is running.
-        Can’t play TS video files.
-        windows compatibility layer.
-        pin base-files?
-        inserting live-stick, stick isn't mounted automatically in /media
-        ubiquity: don't set the root password
-
-    mintbackup:
-        consider using another alternative?
-
-    mintwelcome:
-        review UI
-
-    mintmenu:
-        After typing when the list of matches accidentally disappears (hovering the mouse in the menu while moving up) there is no way of making it appear again without retyping.
-        Please add a "delete selection" Button for the Search-Field.
-
-    mintinstall:
-        revamp UI.
-
-    mdm:
-        mdm in live mode: can't log in using Mint and blank password
-        preselect user if only one user is present in the list
-        configurable slideshow
-        Webkit preview, process doesn't die when window is closed
-        Webkit preview, mint-X doesn't show anything, only background
-
-    xed: cannot mousewheel across tabs
-
-    revive Giver project?
-
-    isolinux splash http://pasteall.org/pic/show.php?id=109630
-
 Cinnamon
 --------
 
     hidpi and display settings:
-        hidpi setting should be in Displays, not in General
-        frequency in monitor settings
         System Settings > Display won’t let me set the one on the right as primary. The “Set as Primary” button is grayed. It’s connected as DVI. The other monitor’s “Set as Primary” is not grayed. It’s connected as VGA. This is related to a very longstanding issue of Mint always opening dialogs on the left (wrong) monitor
 
-    look and feel:
-        fix spacing between systray icons
-        cinnamon panel icon size sometimes show huge icons unless panel-scale-text-icons is set to true..
-        icons pixelated in alt-tab or panel after a suspend-resume
-
     networking:
-        network applet, consider this https://forum.kde.org/viewtopic.php?f=285&t=119742&sid=031f412655735293e130867c0fb1dbde https://dot.kde.org/sites/dot.kde.org/files/networkmanager.jpg
         Network setting does not let me to set Proxy.. The button “set system wide” is not there.
         network applet https://git.gnome.org/browse/gnome-control-center/commit/panels/network?id=63756458b2de0d730763cc2acbd510659e4d00a5
-        regression, I can view the various wireless networks that are available and when I select one from the applet the Networking windows is opened. All networks are shown with a ‘play’ button (arrow). When I select a protected network (mine), symbol turns infinitely without connecting. http://forums.linuxmint.com/viewtopic.php?f=53&t=182608
-        Can the upstream fix maybe be included in Mint somehow? Commit at upstream Gnome is https://git.gnome.org/browse/network-manager-applet/commit/?id=c798c40c5dce3bc6d9b615621cefe59660b5a504.
-        When attempting to connect to a WPA/WPA2-Enterprise network using either the NetworkManager panel applet or Network Settings dialogue. Expected behavior is that a configuration dialogue for security settings (identity, password, CA cert, etc.) should pop up, allowing user to configure network. NM should then connect to the network. Actual behavior is that NM displays the “connecting to network” animation but never connects, pops up the security dialogue, or gives any error message (at least in the GUI). However, configuring the same WPA2 Enterprise connection through the “Connect to a Hidden Network” dialogue (i.e., manually) works as expected.
 
     nemo:
         review all usage of Gio/Glib
@@ -110,7 +55,6 @@ Cinnamon
         Add common tiling options to window list context menu - Show Windows Side by Side, Cascade, Show windows stacked
 
     settings:
-        don't show outdated spices
         Problem with the width of some configuration windows: E. G. with the configuration window for window list applet.
         cinnamon-settings: The search box in System Settings displays “Search…” next to the magnifier.
         cinnamon-settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
@@ -139,9 +83,6 @@ Cinnamon
 
     other:
         screenshot filenames aren't handy (Screenshot from 2014-02-17 14:46:32.png)
-        In gThumb, select a picture, right-click on it, select “Set as Desktop Background”, once applied, click the “Preferences” button on the green banner that just appeared at the bottom of the gThumb window and you’ll get the error message “Failed to execute child process “gnome-control-center” (No such file or directory)”
-        refactor css theme to gain responsiveness.
-        consider using search providers.
 
 MATE
 ----
@@ -173,3 +114,6 @@ LMDE
     integrity check warns about malformed header
     /.config/pulse present (found on MATE i386 ISO)
     gnome-power-statistics.desktop doesn't show up in Cinnamon
+    bashrc: # colored GCC warnings and errors --> export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01' (won't work until gcc 4.9)
+    history and completion in bashrc
+    consider activating http://backports.debian.org/changes/jessie-backports.html

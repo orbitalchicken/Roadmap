@@ -51,3 +51,4 @@ KDE Edition (Plasma 5.8)
     theme needs support for logout/shutdown session background
     configure the SDDM theme background
     kmail fails because /var/lib/mysql-files doesn't exist
+    installer: continue button greyed out when not enough HDD

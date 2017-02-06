@@ -3,8 +3,6 @@ New bug reports in Linux Mint 18.1 BETA
 All editions
 ------------
 
-    mintupdate: changelog for 4.8 kernels doesn't work
-
 Cinnamon Edition - last processed comment: #191
 -----------------------------------------------
 
@@ -16,8 +14,6 @@ Xfce Edition - last processed comment: #68
 
 KDE Edition - last processed comment: #39
 -----------------------------------------
-
-    installer: continue button greyed out when not enough HDD
 
 LMDE - last processed comment: #0
 ---------------------------------

@@ -29,10 +29,10 @@ Linux Mint 18.2 [Planned]
                 previous/next page in xreader
 
             scroll:
-                sound-volume/seek in xviewer
+                sound-volume/seek in xplayer
 
             click:
-                pause/resume in xviewer
+                pause/resume in xplayer
 
         xed:
             sorting lines:

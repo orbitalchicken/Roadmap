@@ -12,6 +12,14 @@ Maintenance
     mintdesktop: https://github.com/linuxmint/mintdesktop/pull/16
     mintupdate: changelog for 4.8 kernels doesn't work
 
+Linux Mint 18.2 [Implemented]
+=============================
+
+    Mint tools:
+        mintsources:
+            Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
+
+
 Linux Mint 18.2 [Planned]
 =========================
 
@@ -71,9 +79,6 @@ Linux Mint 18.2 [Planned]
 
         mintwelcome:
             consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
-
-        mintsources:
-            Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
 
     Cinnamon performance:
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)

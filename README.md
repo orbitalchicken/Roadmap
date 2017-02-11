@@ -15,6 +15,19 @@ Maintenance
 Linux Mint 18.2 [Implemented]
 =============================
 
+    XAPPS:
+        xplayer:
+            option to prefer dark theme
+            now loads subtitles files automatically
+            no longer shows subtitles by default
+            fixed OSD
+            cycle through languages with L key
+            cycle through subtitles with S key
+            control playback speed with [], {}, Backspace
+            show seek position in OSD
+            removed visualizations
+            focus window when a video file is opened
+
     Mint tools:
         mintsources:
             Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
@@ -50,15 +63,6 @@ Linux Mint 18.2 [Planned]
             import libpeas support from gedit, to allow python3 extensions
             add word-wrap setting to View menu and buttons available in the toolbar customization
             mousewheel across tabs
-
-        xplayer:
-            focus window when a video file is opened
-            visualizations don't work
-            keyboard shortcut:
-                s -> subtitles
-                l -> language
-                etc... try to follow other standards in other players
-            Can’t play TS video files?
 
         pix
             doesn't rotate videos when playing them

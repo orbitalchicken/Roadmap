@@ -28,6 +28,9 @@ Linux Mint 18.2 [Implemented]
             removed visualizations
             focus window when a video file is opened
 
+        blueberry:
+            OBEX support
+
     Mint tools:
         mintsources:
             Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
@@ -54,6 +57,9 @@ Linux Mint 18.2 [Planned]
 
             click:
                 pause/resume in xplayer
+
+        xplayer:
+            implement simpler layout (ala Parole), all controls on one line, remove statusbar
 
         xed:
             sorting lines:
@@ -109,7 +115,6 @@ Linux Mint 18.2 [Planned]
         add frequency in monitor settings
 
     blueberry:
-        send files both ways over bluetooh
         cinnamon applet
 
     artwork:

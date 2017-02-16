@@ -27,6 +27,18 @@ Linux Mint 18.2 [Implemented]
             show seek position in OSD
             removed visualizations
             focus window when a video file is opened
+            implement simpler layout (ala Parole), all controls on one line, remove statusbar
+
+        xed:
+            sorting lines:
+                add a simple Edit->Sort Lines (F9), which sorts the selection or the entire file (if no selection is done)
+                make sure it's undoable
+                remove the sort plugin
+            import libpeas support from gedit, to allow python3 extensions
+            add word-wrap setting to View menu and buttons available in the toolbar customization
+            mousewheel across tabs
+            new UI, smart side/bottom bars
+            regex support in search
 
         blueberry:
             OBEX support
@@ -57,18 +69,6 @@ Linux Mint 18.2 [Planned]
 
             click:
                 pause/resume in xplayer
-
-        xplayer:
-            implement simpler layout (ala Parole), all controls on one line, remove statusbar
-
-        xed:
-            sorting lines:
-                add a simple Edit->Sort Lines (F9), which sorts the selection or the entire file (if no selection is done)
-                make sure it's undoable
-                remove the sort plugin
-            import libpeas support from gedit, to allow python3 extensions
-            add word-wrap setting to View menu and buttons available in the toolbar customization
-            mousewheel across tabs
 
         pix
             doesn't rotate videos when playing them

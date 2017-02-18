@@ -39,9 +39,13 @@ Linux Mint 18.2 [Implemented]
             mousewheel across tabs
             new UI, smart side/bottom bars
             regex support in search
+            text zoom
 
         blueberry:
             OBEX support
+            improved UI
+            ability to change adapter name
+            cinnamon applet
 
     Mint tools:
         mintsources:
@@ -113,9 +117,6 @@ Linux Mint 18.2 [Planned]
         spices: all spices should work
         hidpi setting should be in Displays, not in General
         add frequency in monitor settings
-
-    blueberry:
-        cinnamon applet
 
     artwork:
         Tray icons are black with mint-y themes.

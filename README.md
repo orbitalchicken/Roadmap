@@ -10,7 +10,6 @@ Maintenance
     mdm: utils scripts mdm-stop etc.. aren't in the package
     cinnamon-session: port https://github.com/mate-desktop/mate-session-manager/commit/3e8cab348e37b9879fa558e56e05069987c6c65a
     mintdesktop: https://github.com/linuxmint/mintdesktop/pull/16
-    mintupdate: changelog for 4.8 kernels doesn't work
 
 Linux Mint 18.2 [Implemented]
 =============================
@@ -40,6 +39,10 @@ Linux Mint 18.2 [Implemented]
             new UI, smart side/bottom bars
             regex support in search
             text zoom
+            sidebar filebrowser revamp
+
+        xviewer:
+            toolbar revamp
 
         blueberry:
             OBEX support
@@ -113,6 +116,7 @@ Linux Mint 18.2 [Planned]
         menu: use search providers to search local files
         review default panel layout
         network applet: airplane mode (quick way to rfkill all)
+        network applet: https://github.com/linuxmint/Cinnamon/issues/2746
         menu: look-n-feel, make searchbox seemless
         spices: all spices should work
         hidpi setting should be in Displays, not in General

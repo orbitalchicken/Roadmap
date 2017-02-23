@@ -54,6 +54,9 @@ Linux Mint 18.2 [Implemented]
         mintsources:
             Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
 
+        mintupdate:
+            provide a CLI for automated upgrades
+
 
 Linux Mint 18.2 [Planned]
 =========================
@@ -83,7 +86,6 @@ Linux Mint 18.2 [Planned]
 
     Mint tools:
         mintupdate:
-            provide a CLI and automated upgrades
             add shortcut keys
             mint notices
             implement rules and notification system:

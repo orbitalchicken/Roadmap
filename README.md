@@ -145,6 +145,9 @@ Linux Mint 18.2 [Planned]
 
     system:
         ubiquity: don't set the root password
+        bluetooth: investigate persistent state of software rfkill across reboots
+        bluetooth: investigate bt speakers/headphones connectivity/sound
+        compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
 Linux Mint 18.2 [Optional]
 ==========================

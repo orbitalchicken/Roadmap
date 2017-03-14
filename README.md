@@ -44,6 +44,13 @@ Linux Mint 18.2 [Implemented]
         xviewer:
             toolbar revamp
 
+        gestures support:
+            pinch:
+                zoom document in xreader
+
+            swipe:
+                previous/next page in xreader
+
         blueberry:
             OBEX support
             improved UI
@@ -64,21 +71,21 @@ Linux Mint 18.2 [Planned]
     XAPPS:
         gestures support:
             pinch:
-                zoom document in xreader
-                zoom document in xviewer
                 zoom document in pix
                 zoom view in nemo
 
             swipe:
-                previous/next document in xviewer
                 previous/next document in pix
-                previous/next page in xreader
 
             scroll:
                 sound-volume/seek in xplayer
 
             click:
                 pause/resume in xplayer
+
+            double-click:
+                full-screen in xplayer
+                full-screen in xviewer
 
         pix
             doesn't rotate videos when playing them
@@ -123,6 +130,10 @@ Linux Mint 18.2 [Planned]
         spices: all spices should work
         hidpi setting should be in Displays, not in General
         add frequency in monitor settings
+
+    mate 1.18
+        swith MATE to GTK3
+        switch mintmenu to GTK3
 
     artwork:
         Tray icons are black with mint-y themes.
@@ -185,9 +196,7 @@ Linux Mint 18.2 [Optional]
         redesign main page to feature essential apps
 
     mate 1.18
-        swith MATE to GTK3
-        switch mintmenu to GTK3
-        mintemenu: focus issues in /var/log/syslog
+        mintmenu: focus issues in /var/log/syslog
         sound events vs sound themes
         multi-monitor: caja doesn't always show the desktop on the primary monitor (using a laptop as main/left monitor, and HDMI screen with higher res on the right, it surprisingly ends up showing icons on the right screen)
 
@@ -195,8 +204,8 @@ Linux Mint 18.2 [Optional]
         new users: perms at 750 by default? http://www.techrepublic.com/blog/it-security/managing-default-unix-file-permissions-with-adduser-and-umask/.
         for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
 
-R&D:
-====
+R&D
+===
 
     mintbackup:
         consider using another alternative?
@@ -246,3 +255,16 @@ R&D:
         upstream apps using GTK2: Banshee, Gimp, Hexchat, VLC, Pidgin, Tomboy.
         mint projects using GTK2: mdmsetup, mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
 
+LMDE 3
+======
+
+    app icons missing for some mint apps:
+        mintnanny
+        mintlocale
+        mintlocale im
+        mintsources
+        mintinstall
+    gnome-calculator app title is "gnome-calculator"
+    mintsystem: /usr/local/bin/pastebin shadows xapps-common: /usr/bin/pastebin
+    mint-md5sum script in /usr/local/bin ?
+    live-installer should show partition labels

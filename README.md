@@ -218,7 +218,7 @@ R&D
 
     system
         consider adding snapd
-        consider adding support for xdg-apps, flatpack
+        consider adding flatpak
         consider enabling recommends
 
     review logind.conf changes in:

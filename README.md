@@ -7,7 +7,6 @@ Maintenance
         add new hoods
 
     csd: 100% CPU?
-    mdm: utils scripts mdm-stop etc.. aren't in the package
     cinnamon-session: port https://github.com/mate-desktop/mate-session-manager/commit/3e8cab348e37b9879fa558e56e05069987c6c65a
     mintdesktop: https://github.com/linuxmint/mintdesktop/pull/16
 
@@ -63,6 +62,11 @@ Linux Mint 18.2 [Implemented]
 
         mintupdate:
             provide a CLI for automated upgrades
+
+    system:
+        display manager:
+            switch to LightDM + unity-greeter
+            implement a settings tool
 
 
 Linux Mint 18.2 [Planned]
@@ -143,16 +147,8 @@ Linux Mint 18.2 [Planned]
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
         isolinux splash http://pasteall.org/pic/show.php?id=109630
-
-    display manager:
-        mdm:
-            consider moving prime support away from the logout sequence and place it fully in the login sequence
-            in live mode: can't log in using Mint and blank password
-            preselect user if only one user is present in the list
-            configurable slideshow
-            Webkit preview, process doesn't die when window is closed
-            Webkit preview, mint-X doesn't show anything, only background
-        ligtdm: experiment with implemeting a new alternative greeter
+        onboard shows ubuntu logo on super key
+        unity-greeter: padding issue when hovering session button
 
     system:
         ubiquity: don't set the root password
@@ -253,7 +249,7 @@ R&D
 
     HiDPI support:
         upstream apps using GTK2: Banshee, Gimp, Hexchat, VLC, Pidgin, Tomboy.
-        mint projects using GTK2: mdmsetup, mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
+        mint projects using GTK2: mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
 
 LMDE 3
 ======

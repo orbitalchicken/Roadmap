@@ -57,7 +57,6 @@ Cinnamon
     settings:
         Problem with the width of some configuration windows: E. G. with the configuration window for window list applet.
         cinnamon-settings: The search box in System Settings displays “Search…” next to the magnifier.
-        cinnamon-settings: mdm - The name of the login screen in the main Cinnamon Control Centre is different to the window when you open it (Login Screen in the main Cinnamon Control Centre vs Login Window Preferences). The names should be the same for consistency.
         spices: removing extensions, themes, desklets, applets is only possible using right click (maybe it would be better to have button for that in future relases)
         spices: If I select the radio box to choose an applet and then I’ll click the button to install it, the applet is installed but it’s not active: maybe a new user expects to have it immediately in the panel after the download… in fact forcing the user to come back in the list of the installed applet to enable the just downloaded applet is not user friendly, in my opinion.
         keyboard: allow adding duplicate key combination for Cinnamon “Toggle Scale” and “Toggle Expo” (found these, didn’t go through all actions, most of them ok)

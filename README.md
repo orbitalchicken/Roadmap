@@ -43,6 +43,9 @@ Linux Mint 18.2 [Implemented]
         xviewer:
             toolbar revamp
 
+        xreader:
+            toolbar revamp
+
         gestures support:
             pinch:
                 zoom document in xreader
@@ -97,6 +100,7 @@ Linux Mint 18.2 [Planned]
 
     Mint tools:
         mintupdate:
+            add ability to tick multiple updates by pressing Shift key
             add shortcut keys
             mint notices
             implement rules and notification system:
@@ -151,9 +155,12 @@ Linux Mint 18.2 [Planned]
         unity-greeter: padding issue when hovering session button
 
     system:
-        ubiquity: don't set the root password
-        bluetooth: investigate persistent state of software rfkill across reboots
-        bluetooth: investigate bt speakers/headphones connectivity/sound
+        ubiquity:
+            don't set the root password
+            fix issue when upgrading grub2-amd64-efi-signed
+        bluetooth:
+            investigate persistent state of software rfkill across reboots
+            investigate bt speakers/headphones connectivity/sound
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
 Linux Mint 18.2 [Optional]

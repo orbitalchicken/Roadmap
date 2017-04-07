@@ -8,7 +8,6 @@ Maintenance
 
     csd: 100% CPU?
     cinnamon-session: port https://github.com/mate-desktop/mate-session-manager/commit/3e8cab348e37b9879fa558e56e05069987c6c65a
-    mintdesktop: https://github.com/linuxmint/mintdesktop/pull/16
 
 Linux Mint 18.2 [Implemented]
 =============================
@@ -65,6 +64,8 @@ Linux Mint 18.2 [Implemented]
 
         mintupdate:
             provide a CLI for automated upgrades
+            much improved help
+            refined levels and recommendations
 
     system:
         display manager:
@@ -151,8 +152,7 @@ Linux Mint 18.2 [Planned]
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
         isolinux splash http://pasteall.org/pic/show.php?id=109630
-        onboard shows ubuntu logo on super key
-        unity-greeter: padding issue when hovering session button
+        slick-greeter: padding issue when hovering session button
 
     system:
         ubiquity:
@@ -162,6 +162,9 @@ Linux Mint 18.2 [Planned]
             investigate persistent state of software rfkill across reboots
             investigate bt speakers/headphones connectivity/sound
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
+        consider adjusting grub.cfg instead of 10_linux
+        should apt keep conf files by default
+        recheck possibility to unset grub_distributor (should default to LSB)
 
 Linux Mint 18.2 [Optional]
 ==========================

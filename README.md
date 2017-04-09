@@ -2,10 +2,6 @@
 Maintenance
 ===========
 
-    release process:
-        add mini to store
-        add new hoods
-
     csd: 100% CPU?
     cinnamon-session: port https://github.com/mate-desktop/mate-session-manager/commit/3e8cab348e37b9879fa558e56e05069987c6c65a
 

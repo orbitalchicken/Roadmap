@@ -68,6 +68,9 @@ Linux Mint 18.2 [Implemented]
             switch to LightDM + unity-greeter
             implement a settings tool
 
+    cinnamon:
+        split CSD into multiple processes
+
 
 Linux Mint 18.2 [Planned]
 =========================
@@ -117,9 +120,10 @@ Linux Mint 18.2 [Planned]
         nemo seeing RW volume as read-only and failing to write on it (in this case the user can write to the volume via command line but not via nemo)
         cinnamon slow to start after boot
         track/troubleshoot vsync, compositing, unredirected windows and policy
+        split nemo and desktop into multiple processes
+        switch cjs from mozjs24 to mozjs38
 
     Cinnamon features/issues:
-        implement basic global lockdown (i.e. locked by root)
         add cinnamon-session (present but inactive) and cinnamon-settings-daemon to Launchpad/cinnamon-translations
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
         add a printer applet

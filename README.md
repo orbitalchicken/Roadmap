@@ -121,12 +121,12 @@ Linux Mint 18.2 [Planned]
         cinnamon slow to start after boot
         track/troubleshoot vsync, compositing, unredirected windows and policy
         split nemo and desktop into multiple processes
+        nemo desktop grid
         switch cjs from mozjs24 to mozjs38
 
     Cinnamon features/issues:
         add cinnamon-session (present but inactive) and cinnamon-settings-daemon to Launchpad/cinnamon-translations
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
-        add a printer applet
         menu: consider adopting this layout (https://raw.githubusercontent.com/The-Panacea-Projects/Gnomenu/master/Screenshot.png), same as ours/mintmenu, only better.
         todo list applet/desklet
         calendar events applet/desklet
@@ -137,8 +137,6 @@ Linux Mint 18.2 [Planned]
         network applet: https://github.com/linuxmint/Cinnamon/issues/2746
         menu: look-n-feel, make searchbox seemless
         spices: all spices should work
-        hidpi setting should be in Displays, not in General
-        add frequency in monitor settings
 
     mate 1.18
         swith MATE to GTK3

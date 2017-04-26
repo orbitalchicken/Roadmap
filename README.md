@@ -37,6 +37,7 @@ Linux Mint 18.2 [Implemented]
 
         xviewer:
             toolbar revamp
+            fixed: after a fullscreen-view the sidebar is gone and must be enabled manually again.
 
         xreader:
             toolbar revamp
@@ -70,6 +71,11 @@ Linux Mint 18.2 [Implemented]
 
     cinnamon:
         split CSD into multiple processes
+        power applet: show different icon when battery is low
+        mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
+
+    artwork:
+        mintupload: use icon names rather than path to SVG
 
 
 Linux Mint 18.2 [Planned]
@@ -126,7 +132,6 @@ Linux Mint 18.2 [Planned]
 
     Cinnamon features/issues:
         add cinnamon-session (present but inactive) and cinnamon-settings-daemon to Launchpad/cinnamon-translations
-        mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
         menu: consider adopting this layout (https://raw.githubusercontent.com/The-Panacea-Projects/Gnomenu/master/Screenshot.png), same as ours/mintmenu, only better.
         todo list applet/desklet
         calendar events applet/desklet
@@ -146,7 +151,6 @@ Linux Mint 18.2 [Planned]
         Tray icons are black with mint-y themes.
         Mint-Y themes Shade option is unavailable
         mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
-        mintupload: use icon names rather than path to SVG
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
         isolinux splash http://pasteall.org/pic/show.php?id=109630
@@ -177,7 +181,6 @@ Linux Mint 18.2 [Optional]
         sound: add an option to switch sound to HDMI when an HDMI output device is plugged
         hidpi issues: top of mint menu is cut off in HiDPI (1920×1280)
         gnome-system-monitor moves out of place in Expo
-        when battery is very low, battery icon isn't red.. 2% charge, with less than 5 minutes to go, still not red.. bar is red in CCC, icon is red in notification.. but not in applet (and also not in the CCC icon itself either)
         When using Cinnamon bar at top, and secondary monitor with higher height than the main display, some apps like KDE Apps (Krita, Kdenlive) or Wine Based Apps (teamviewer) will display menus from toolbar in the wrong place. Being more specific: The menus will be displayed in the position that they should be displayed at main monitor, however in this case the window is maximized in the secondary monitor.
         Is there any reason why there are two names for the same item, eg. "Trash" and "Rubbish Bin"? Would it be better to standardise on only one name?
         add gnome-screenshot to panel, right-click and select "Take screenshot of a selected area". This runs gnome-screenshot -a.. it should work but it doesn't. Is it because of the panel launcher capturing the click event or something?
@@ -186,8 +189,6 @@ Linux Mint 18.2 [Optional]
         system settings modules should be singletons (only one possible instance) and have their window use their own icon (in alt-tab, and window list)
 
     xviewer
-        “Disable Dark Theme” doesn’t work, if i’m right when i assume it should do “gsettings set org.x.viewer.view use-background-color false”?
-        after a fullscreen-view the sidebar is gone and must be enabled manually again.
         please make the position (left/right, top/bottom won’t make much sense) of the sidebar configurable (like the gallery) at least via dconf!
 
     xapps

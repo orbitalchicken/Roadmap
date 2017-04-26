@@ -79,6 +79,7 @@ Linux Mint 18.2 [Implemented]
         split CSD into multiple processes
         power applet: show different icon when battery is low
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
+        switch cjs from mozjs24 to mozjs38
 
     artwork:
         mintupload: use icon names rather than path to SVG
@@ -132,7 +133,6 @@ Linux Mint 18.2 [Planned]
         track/troubleshoot vsync, compositing, unredirected windows and policy
         split nemo and desktop into multiple processes
         nemo desktop grid
-        switch cjs from mozjs24 to mozjs38
 
     Cinnamon features/issues:
         add cinnamon-session (present but inactive) and cinnamon-settings-daemon to Launchpad/cinnamon-translations

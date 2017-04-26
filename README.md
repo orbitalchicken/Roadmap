@@ -34,6 +34,7 @@ Linux Mint 18.2 [Implemented]
             regex support in search
             text zoom
             sidebar filebrowser revamp
+            inhibit session when files aren't saved
 
         xviewer:
             toolbar revamp
@@ -63,6 +64,9 @@ Linux Mint 18.2 [Implemented]
             provide a CLI for automated upgrades
             much improved help
             refined levels and recommendations
+
+        mintwelcome:
+            support for dark themes
 
     system:
         display manager:

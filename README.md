@@ -64,6 +64,8 @@ Linux Mint 18.2 [Implemented]
             provide a CLI for automated upgrades
             much improved help
             refined levels and recommendations
+            add ability to tick multiple updates by pressing Shift key
+            add shortcut keys
 
         mintwelcome:
             support for dark themes
@@ -110,8 +112,6 @@ Linux Mint 18.2 [Planned]
 
     Mint tools:
         mintupdate:
-            add ability to tick multiple updates by pressing Shift key
-            add shortcut keys
             mint notices
             implement rules and notification system:
                 dmesg errors

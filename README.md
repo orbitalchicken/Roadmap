@@ -59,6 +59,7 @@ Linux Mint 18.2 [Implemented]
     Mint tools:
         mintsources:
             Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
+            support for pkexec
 
         mintupdate:
             provide a CLI for automated upgrades
@@ -80,6 +81,12 @@ Linux Mint 18.2 [Implemented]
         power applet: show different icon when battery is low
         mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
         switch cjs from mozjs24 to mozjs38
+        split nemo and desktop into multiple processes
+        nemo desktop grid
+
+    mate 1.18
+        swith MATE to GTK3
+        switch mintmenu to GTK3
 
     artwork:
         mintupload: use icon names rather than path to SVG
@@ -131,8 +138,6 @@ Linux Mint 18.2 [Planned]
         nemo seeing RW volume as read-only and failing to write on it (in this case the user can write to the volume via command line but not via nemo)
         cinnamon slow to start after boot
         track/troubleshoot vsync, compositing, unredirected windows and policy
-        split nemo and desktop into multiple processes
-        nemo desktop grid
 
     Cinnamon features/issues:
         add cinnamon-session (present but inactive) and cinnamon-settings-daemon to Launchpad/cinnamon-translations
@@ -146,10 +151,6 @@ Linux Mint 18.2 [Planned]
         network applet: https://github.com/linuxmint/Cinnamon/issues/2746
         menu: look-n-feel, make searchbox seemless
         spices: all spices should work
-
-    mate 1.18
-        swith MATE to GTK3
-        switch mintmenu to GTK3
 
     artwork:
         Tray icons are black with mint-y themes.

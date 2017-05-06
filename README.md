@@ -2,8 +2,8 @@
 Maintenance
 ===========
 
-    csd: 100% CPU?
-    cinnamon-session: port https://github.com/mate-desktop/mate-session-manager/commit/3e8cab348e37b9879fa558e56e05069987c6c65a
+    update installation slideshows
+    update translations
 
 Linux Mint 18.2 [Implemented]
 =============================

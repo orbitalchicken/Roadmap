@@ -4,6 +4,11 @@ Maintenance
 
     update installation slideshows
     update translations
+    make gksu dialog more sexy
+    backgrounds
+    ubiquity upstream
+    mint-mirrors
+    kernel selection
 
 Linux Mint 18.2 [Implemented]
 =============================
@@ -75,6 +80,7 @@ Linux Mint 18.2 [Implemented]
         display manager:
             switch to LightDM + unity-greeter
             implement a settings tool
+        mintsystem: markauto/markmanual
 
     cinnamon:
         split CSD into multiple processes
@@ -83,6 +89,7 @@ Linux Mint 18.2 [Implemented]
         switch cjs from mozjs24 to mozjs38
         split nemo and desktop into multiple processes
         nemo desktop grid
+        nemo seeing RW volume as read-only and failing to write on it (in this case the user can write to the volume via command line but not via nemo)
 
     mate 1.18
         swith MATE to GTK3
@@ -135,7 +142,6 @@ Linux Mint 18.2 [Planned]
     Cinnamon performance:
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)
         nemo thumbnail error happens too often (too picky, does it always require root perms?)
-        nemo seeing RW volume as read-only and failing to write on it (in this case the user can write to the volume via command line but not via nemo)
         cinnamon slow to start after boot
         track/troubleshoot vsync, compositing, unredirected windows and policy
 

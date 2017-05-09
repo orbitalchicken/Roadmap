@@ -27,14 +27,9 @@ Planned
         don't set the root password
         check upstream changes
 
-    bluetooth:
-        investigate persistent state of software rfkill across reboots
-        investigate bt speakers/headphones connectivity/sound
-
     consider adjusting grub.cfg instead of 10_linux
     should apt keep conf files by default
     recheck possibility to unset grub_distributor (should default to LSB)
-    make gksu dialog more sexy
 
 Considered
 ==========

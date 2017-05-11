@@ -17,9 +17,6 @@ RC Blockers
     cinnamon:
         all spices should work
 
-    ubiquity:
-        fix issue when upgrading grub2-amd64-efi-signed
-
 Planned
 ==========
 
@@ -27,9 +24,7 @@ Planned
         don't set the root password
         check upstream changes
 
-    consider adjusting grub.cfg instead of 10_linux
     should apt keep conf files by default
-    recheck possibility to unset grub_distributor (should default to LSB)
 
 Considered
 ==========
@@ -72,9 +67,6 @@ Considered
         Choose places icons for Mint-Y
         isolinux splash http://pasteall.org/pic/show.php?id=109630
         slick-greeter: padding issue when hovering session button
-
-    system:
-        compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
 Linux Mint 18.3
 ===============
@@ -135,6 +127,7 @@ Linux Mint 18.3
     system:
         for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
         implement a crash-intercepter
+        compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
 R&D
 ===
@@ -258,6 +251,7 @@ Linux Mint 18.2 [Implemented]
             switch to LightDM + unity-greeter
             implement a settings tool
         mintsystem: markauto/markmanual
+        removed brasero
 
     cinnamon:
         split CSD into multiple processes

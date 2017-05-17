@@ -2,7 +2,6 @@ Release
 =======
     rel notes
     whatsnew
-    start pages
     FF in live repo
     mint-mirrors
     kernel selection
@@ -11,20 +10,7 @@ Release
 RC Blockers
 ===========
 
-    update installation slideshows
-    new backgrounds
-
-    cinnamon:
-        all spices should work
-
-Planned
-==========
-
-    ubiquity:
-        don't set the root password
-        check upstream changes
-
-    should apt keep conf files by default
+    cinnamon: all spices should work
 
 Considered
 ==========
@@ -57,7 +43,6 @@ Considered
 
     cinnamon:
         review default panel layout
-        menu: look-n-feel, make searchbox seemless
 
     artwork:
         Tray icons are black with mint-y themes.
@@ -65,7 +50,6 @@ Considered
         mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
-        isolinux splash http://pasteall.org/pic/show.php?id=109630
         slick-greeter: padding issue when hovering session button
 
 Linux Mint 18.3
@@ -248,10 +232,13 @@ Linux Mint 18.2 [Implemented]
 
     system:
         display manager:
-            switch to LightDM + unity-greeter
+            switch to LightDM + slick-greeter
             implement a settings tool
+            guest sessions
         mintsystem: markauto/markmanual
         removed brasero
+        random root password
+        apparmor
 
     cinnamon:
         split CSD into multiple processes

@@ -5,55 +5,17 @@ Release
     FF in live repo
     mint-mirrors
     kernel selection
-    update translations
-
-RC Blockers
-===========
-
     cinnamon: all spices should work
-
-Considered
-==========
-
-    xapps:
-        gestures support:
-            pinch:
-                zoom document in pix
-                zoom view in nemo
-
-            swipe:
-                previous/next document in pix
-
-            scroll:
-                sound-volume/seek in xplayer
-
-            click:
-                pause/resume in xplayer
-
-            double-click:
-                full-screen in xplayer
-                full-screen in xviewer
-
-        pix
-            doesn't rotate videos when playing them
-            should use a generic name in the application menu
-
-    mintwelcome:
-        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
-
-    cinnamon:
-        review default panel layout
-
-    artwork:
-        Tray icons are black with mint-y themes.
-        Mint-Y themes Shade option is unavailable
-        mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
-        mintwelcome: don't use 32px png icons
-        Choose places icons for Mint-Y
-        slick-greeter: padding issue when hovering session button
+        applets
+        [DONE] desklets
+        extensions
+        themes
 
 Linux Mint 18.3
 ===============
+
+    implement an alarm clock
+    add a dictionary
 
     cinnamon:
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)
@@ -89,10 +51,37 @@ Linux Mint 18.3
         add an option to blank other monitors when in full screen in xviewer/xreader/pix
         implement an app-sharing protocol to quickly move a document from one app to another
 
+        gestures support:
+            pinch:
+                zoom document in pix
+                zoom view in nemo
+
+            swipe:
+                previous/next document in pix
+
+            scroll:
+                sound-volume/seek in xplayer
+
+            click:
+                pause/resume in xplayer
+
+            double-click:
+                full-screen in xplayer
+                full-screen in xviewer
+
+        pix
+            doesn't rotate videos when playing them
+            should use a generic name in the application menu
+            vignettes should look better, and the same in all themes
+            support prefer-dark-themes
+
     mintinstall:
         UI redesign
         when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
         redesign main page to feature essential apps
+
+    mintwelcome:
+        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
 
     mintupdate:
         mint notices
@@ -112,6 +101,14 @@ Linux Mint 18.3
         for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
         implement a crash-intercepter
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
+
+    artwork:
+        Tray icons are black with mint-y themes.
+        Mint-Y themes Shade option is unavailable
+        mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
+        mintwelcome: don't use 32px png icons
+        Choose places icons for Mint-Y
+        slick-greeter: padding issue when hovering session button
 
 R&D
 ===
@@ -167,94 +164,9 @@ R&D
 Linux Mint 18.2 [Implemented]
 =============================
 
-    XAPPS:
-        xplayer:
-            option to prefer dark theme
-            now loads subtitles files automatically
-            no longer shows subtitles by default
-            fixed OSD
-            cycle through languages with L key
-            cycle through subtitles with S key
-            control playback speed with [], {}, Backspace
-            show seek position in OSD
-            removed visualizations
-            focus window when a video file is opened
-            implement simpler layout (ala Parole), all controls on one line, remove statusbar
-
-        xed:
-            sorting lines:
-                add a simple Edit->Sort Lines (F9), which sorts the selection or the entire file (if no selection is done)
-                make sure it's undoable
-                remove the sort plugin
-            import libpeas support from gedit, to allow python3 extensions
-            add word-wrap setting to View menu and buttons available in the toolbar customization
-            mousewheel across tabs
-            new UI, smart side/bottom bars
-            regex support in search
-            text zoom
-            sidebar filebrowser revamp
-            inhibit session when files aren't saved
-
-        xviewer:
-            toolbar revamp
-            fixed: after a fullscreen-view the sidebar is gone and must be enabled manually again.
-
-        xreader:
-            toolbar revamp
-
-        gestures support:
-            pinch:
-                zoom document in xreader
-
-            swipe:
-                previous/next page in xreader
-
-        blueberry:
-            OBEX support
-            improved UI
-            ability to change adapter name
-            cinnamon applet
-
-    Mint tools:
-        mintsources:
-            Select all button in foreign pkgs: https://github.com/linuxmint/mintsources/issues/59
-            support for pkexec
-
-        mintupdate:
-            provide a CLI for automated upgrades
-            much improved help
-            refined levels and recommendations
-            add ability to tick multiple updates by pressing Shift key
-            add shortcut keys
-
-        mintwelcome:
-            support for dark themes
-
-    system:
-        display manager:
-            switch to LightDM + slick-greeter
-            implement a settings tool
-            guest sessions
-        mintsystem: markauto/markmanual
-        removed brasero
-        random root password
-        apparmor
-
-    cinnamon:
-        split CSD into multiple processes
-        power applet: show different icon when battery is low
-        mouse/touchpad: fix sensitivity settings (shouldn't be inverted... should be described as motion-threshold or even better, as what they actually do). Also, add a way to reset their value.
-        switch cjs from mozjs24 to mozjs38
-        split nemo and desktop into multiple processes
-        nemo desktop grid
-        nemo seeing RW volume as read-only and failing to write on it (in this case the user can write to the volume via command line but not via nemo)
-
     mate 1.18
         swith MATE to GTK3
         switch mintmenu to GTK3
-
-    artwork:
-        mintupload: use icon names rather than path to SVG
 
 LMDE 3
 ======

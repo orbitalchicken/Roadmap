@@ -3,8 +3,6 @@ Release
     rel notes
     whatsnew
     FF in live repo
-    mint-mirrors
-    kernel selection
     cinnamon: all spices should work
         applets
         [DONE] desklets

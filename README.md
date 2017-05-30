@@ -9,6 +9,31 @@ Release
         extensions
         themes
 
+    kernel 4.8.0
+        i2c not detected
+        Buffer I/O error on dev sdb, logical block 22220, lost async page write
+
+    cinnamon:
+        would battery be better swapped with user applet?
+        looking for display in menu shows color first
+        display resolution change freezes cinnamon
+
+    Slick greeter session badges look blurry in HiDPI
+
+    DONE:
+        lightdm-settings new filepickers
+        Slick greeter doesn't show any background in live mode
+        mintupdate help: index/about aren't localized.
+        Better screenshots in installation slideshow
+
+    FIXED:
+        EFI grub version is incorrect
+        mintupdate:
+            meta update kernel should know the right name
+            when new mintupdate and new kernel, only show new mintupdate
+
+
+
 Linux Mint 18.3
 ===============
 

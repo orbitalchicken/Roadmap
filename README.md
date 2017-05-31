@@ -20,20 +20,6 @@ Release
 
     Slick greeter session badges look blurry in HiDPI
 
-    DONE:
-        lightdm-settings new filepickers
-        Slick greeter doesn't show any background in live mode
-        mintupdate help: index/about aren't localized.
-        Better screenshots in installation slideshow
-
-    FIXED:
-        EFI grub version is incorrect
-        mintupdate:
-            meta update kernel should know the right name
-            when new mintupdate and new kernel, only show new mintupdate
-
-
-
 Linux Mint 18.3
 ===============
 

@@ -21,6 +21,8 @@ Release
 
     mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg
 
+    mintmenu: apparmor prevents mintmenu from loading in guest session
+
 Linux Mint 18.3
 ===============
 

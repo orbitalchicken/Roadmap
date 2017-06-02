@@ -2,7 +2,6 @@ Release
 =======
     rel notes
     whatsnew
-    FF in live repo
     cinnamon: all spices should work
         applets
         [DONE] desklets
@@ -19,6 +18,8 @@ Release
         display resolution change freezes cinnamon
 
     Slick greeter session badges look blurry in HiDPI
+
+    mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg
 
 Linux Mint 18.3
 ===============
@@ -114,10 +115,12 @@ Linux Mint 18.3
     artwork:
         Tray icons are black with mint-y themes.
         Mint-Y themes Shade option is unavailable
-        mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg like other icons.
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
         slick-greeter: padding issue when hovering session button
+
+    xplayer:
+        add CD+G support
 
 R&D
 ===

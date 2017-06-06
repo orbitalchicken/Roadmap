@@ -1,15 +1,7 @@
 Release
 =======
-    rel notes
-    whatsnew
-    cinnamon: all spices should work
-        applets
-        [DONE] desklets
-        extensions
-        themes
 
     kernel 4.8.0
-        i2c not detected
         Buffer I/O error on dev sdb, logical block 22220, lost async page write
 
     cinnamon:
@@ -21,7 +13,15 @@ Release
 
     mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg
 
-    mintmenu: apparmor prevents mintmenu from loading in guest session
+    apparmor:
+        guest user can't initiate connection to the Internet
+        mintmenu is blocked in guest session
+
+    mate font viewer should be called font viewer, and its app icon isn't found.
+
+    http://people.canonical.com/~ubuntu-security/cve/pkg/vlc.html
+
+    blueberry: add a way to disable the autostart
 
 Linux Mint 18.3
 ===============

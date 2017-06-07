@@ -9,7 +9,9 @@ Release
         looking for display in menu shows color first
         display resolution change freezes cinnamon
 
-    Slick greeter session badges look blurry in HiDPI
+    Slick greeter:
+        session badges look blurry in HiDPI
+        file pickers don't seem to show gsettings value when no value is defined in .conf
 
     mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg
 
@@ -23,11 +25,26 @@ Release
 
     blueberry: add a way to disable the autostart
 
+    Xfce:
+        light-locker
+        whisker menu 1.7.2
+        xfwm4 4.13
+
+    KDE:
+        plasma 5.8.5
+        SDDM stays in autologin after OEM install
+
+    MATE:
+        nm-applet can't be left-clicked
+
 Linux Mint 18.3
 ===============
 
     implement an alarm clock
     add a dictionary
+
+    slick-greeter:
+        in live mode, show live-related info? (could be used to show the live login/password)
 
     cinnamon:
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)

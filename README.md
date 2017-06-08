@@ -7,11 +7,7 @@ Release
     cinnamon:
         would battery be better swapped with user applet?
         looking for display in menu shows color first
-        display resolution change freezes cinnamon
-
-    Slick greeter:
-        session badges look blurry in HiDPI
-        file pickers don't seem to show gsettings value when no value is defined in .conf
+        display resolution change freezes cinnamon https://github.com/linuxmint/Cinnamon/issues/6224
 
     mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg
 

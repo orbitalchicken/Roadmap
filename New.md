@@ -5,13 +5,13 @@ All editions
 
 	mintupdate:
 		In the past when updating packages completed the ‘Details’ window would stay open until I clicked the ‘Closed’ button. This is no longer true.
-		shouldn't show up in guest session
 		kernel headers for 4.4 confuse ppl
 		update policy choice doesn't stick
 		Clicking Linux kernel headers 4.4, and selecting ‘Ignore updates for this package’ has no effect. Understandable for newer kernel/kernel headers update?
 
-	mintwelcome:
-		shouldn't show up in guest session
+	guest sessions:
+		don't block mintmenu
+		[FIXED in GIT] don't start mintupdate
 
 	mintinstall:
 		can't access office category
@@ -22,17 +22,16 @@ All editions
         background color doesn't seem to work
         wrong logitech keyboard layout: https://github.com/linuxmint/slick-greeter/issues/46
 
-    onboard: Even though the OnBoard software is installed by default, when searching the applications menu OnBoard is not listed.
-
     synaptic: https://github.com/linuxmint/synaptic/issues/12
 
     xplayer: wrong aspect ratio http://pasteall.org/pic/show.php?id=114543
 
-    pix: No Update for Pix with Fujifilm RAW-Files (the X-T1 is a 4 years old camera!).
+    [FIXED IN GIT] pix: No Update for Pix with Fujifilm RAW-Files (the X-T1 is a 4 years old camera!).
 
 Cinnamon Edition - last processed comment: #79
 -----------------------------------------------
- 	nemo-preview: Can’t preview pic,txt,music… file with pressing “space key” on file manager.
+ 	bg gets erased after suspend? https://bugzilla.gnome.org/show_bug.cgi?id=739178
+ 	[FIXED IN GIT] screensaver should not activate for guest sessions
 
 MATE Edition - last processed comment: #49
 ------------------------------------------

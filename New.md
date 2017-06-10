@@ -18,15 +18,11 @@ All editions
 
     Slick greeter / lightdm-settings:
         session badges look blurry in HiDPI
-        file pickers don't seem to show gsettings value when no value is defined in .conf
-        background color doesn't seem to work
-        wrong logitech keyboard layout: https://github.com/linuxmint/slick-greeter/issues/46
+        [FIXED IN GIT] wrong logitech keyboard layout: https://github.com/linuxmint/slick-greeter/issues/46
 
     synaptic: https://github.com/linuxmint/synaptic/issues/12
 
     xplayer: wrong aspect ratio http://pasteall.org/pic/show.php?id=114543
-
-    [FIXED IN GIT] pix: No Update for Pix with Fujifilm RAW-Files (the X-T1 is a 4 years old camera!).
 
 Cinnamon Edition - last processed comment: #79
 -----------------------------------------------

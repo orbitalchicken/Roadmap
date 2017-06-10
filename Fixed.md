@@ -8,6 +8,13 @@ All editions
     guest sessions:
         don't start mintwelcome
 
+    slick-greeter/lightdm-settings:
+        background color doesn't seem to work
+
+    pix:
+        Support for Fujifilm RAW files
+        Support for EXIF orientation in RAW files
+
 Cinnamon Edition
 ----------------
     nemo-preview doesn't work

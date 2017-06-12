@@ -14,19 +14,19 @@ All editions
 	mintinstall:
 		can't access office category (happens in MATE but not in Cinnamon, issue in Pixbuf SVG support..)
 
-    Slick greeter / lightdm-settings:
-        session badges look blurry in HiDPI
-        [FIXED IN GIT] wrong logitech keyboard layout: https://github.com/linuxmint/slick-greeter/issues/46
+	Slick greeter / lightdm-settings:
+		session badges look blurry in HiDPI
+		[FIXED IN GIT] wrong logitech keyboard layout: https://github.com/linuxmint/slick-greeter/issues/46
 
-    xplayer: wrong aspect ratio http://pasteall.org/pic/show.php?id=114543
+	xplayer: wrong aspect ratio http://pasteall.org/pic/show.php?id=114543
 
 Cinnamon Edition - last processed comment: #79
 -----------------------------------------------
- 	bg gets erased after suspend? https://bugzilla.gnome.org/show_bug.cgi?id=739178
- 	would battery be better swapped with user applet?
-    looking for display in menu shows color first
-    display resolution change freezes cinnamon https://github.com/linuxmint/Cinnamon/issues/6224
-    [FIXED IN GIT] screensaver should not activate for guest sessions
+	bg gets erased after suspend? https://bugzilla.gnome.org/show_bug.cgi?id=739178
+	would battery be better swapped with user applet?
+	looking for display in menu shows color first
+	display resolution change freezes cinnamon https://github.com/linuxmint/Cinnamon/issues/6224
+	[FIXED IN GIT] screensaver should not activate for guest sessions
 
 MATE Edition - last processed comment: #49
 ------------------------------------------

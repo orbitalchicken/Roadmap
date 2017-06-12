@@ -10,10 +10,13 @@ All editions
 
     slick-greeter/lightdm-settings:
         background color doesn't seem to work
+        padding issue when hovering session button
 
     pix:
         Support for Fujifilm RAW files
         Support for EXIF orientation in RAW files
+
+    blueberry: add a way to disable the autostart
 
 Cinnamon Edition
 ----------------
@@ -22,6 +25,8 @@ Cinnamon Edition
 
 MATE Edition
 ------------
+    guest session blocks mintmenu
+    mate-panel freezes everytime I try to add or move a launcher (icon) to it.
 
 
 Xfce Edition

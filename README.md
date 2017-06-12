@@ -1,37 +1,6 @@
 Release
 =======
 
-    kernel 4.8.0
-        Buffer I/O error on dev sdb, logical block 22220, lost async page write
-
-    cinnamon:
-        would battery be better swapped with user applet?
-        looking for display in menu shows color first
-        display resolution change freezes cinnamon https://github.com/linuxmint/Cinnamon/issues/6224
-
-    mint-x-icons: in MATE (with a high panel), network status icons have a dark background in 32px and bigger. they would look much better in the panel with a transparent bg
-
-    apparmor:
-        guest user can't initiate connection to the Internet
-        mintmenu is blocked in guest session
-
-    mate font viewer should be called font viewer, and its app icon isn't found.
-
-    http://people.canonical.com/~ubuntu-security/cve/pkg/vlc.html
-
-    blueberry: add a way to disable the autostart
-
-    Xfce:
-        light-locker
-        whisker menu 1.7.2
-        xfwm4 4.13
-
-    KDE:
-        plasma 5.8.5
-        SDDM stays in autologin after OEM install
-
-    MATE:
-        nm-applet can't be left-clicked
 
 Linux Mint 18.3
 ===============
@@ -132,7 +101,6 @@ Linux Mint 18.3
         Mint-Y themes Shade option is unavailable
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
-        slick-greeter: padding issue when hovering session button
 
     xplayer:
         add CD+G support

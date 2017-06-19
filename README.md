@@ -164,7 +164,7 @@ Linux Mint 18.2 [Implemented]
 =============================
 
     mate 1.18
-        swith MATE to GTK3
+        switch MATE to GTK3
         switch mintmenu to GTK3
 
 LMDE 3

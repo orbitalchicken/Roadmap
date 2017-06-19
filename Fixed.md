@@ -11,12 +11,23 @@ All editions
     slick-greeter/lightdm-settings:
         background color doesn't seem to work
         padding issue when hovering session button
+        wrong logitech keyboard layout
 
     pix:
         Support for Fujifilm RAW files
         Support for EXIF orientation in RAW files
 
-    blueberry: add a way to disable the autostart
+    mintupdate:
+        kernel headers for 4.4 confuse ppl
+        Clicking Linux kernel headers 4.4, and selecting ‘Ignore updates for this package’ has no effect. Understandable for newer kernel/kernel headers update?
+        update policy choice doesn't stick
+        don't start mintupdate in guest sessions
+
+    blueberry:
+        add a way to disable the autostart
+
+    mintinstall:
+        can't access office category (happens in MATE but not in Cinnamon, issue in Pixbuf SVG support..)
 
 Cinnamon Edition
 ----------------
@@ -26,7 +37,9 @@ Cinnamon Edition
 MATE Edition
 ------------
     guest session blocks mintmenu
-    mate-panel freezes everytime I try to add or move a launcher (icon) to it.
+    mate-panel:
+        freezes everytime I try to add or move a launcher (icon) to it.
+        when applying a bg color, the “Window List” remains unchanged.
 
 
 Xfce Edition

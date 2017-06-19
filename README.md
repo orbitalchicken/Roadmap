@@ -10,6 +10,7 @@ Linux Mint 18.3
 
     slick-greeter:
         in live mode, show live-related info? (could be used to show the live login/password)
+        session badges look blurry in HiDPI
 
     cinnamon:
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)
@@ -68,6 +69,7 @@ Linux Mint 18.3
             should use a generic name in the application menu
             vignettes should look better, and the same in all themes
             support prefer-dark-themes
+            treeview in sidebar shows unecessary "(empty)" when dirs have no subdirs
 
     mintinstall:
         UI redesign
@@ -101,9 +103,11 @@ Linux Mint 18.3
         Mint-Y themes Shade option is unavailable
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
+        mint-x-icons: network status icons have a dark background in panel 33px and bigger (sound icon looks wrong in 41px and bigger).
 
     xplayer:
         add CD+G support
+        wrong aspect ratio http://pasteall.org/pic/show.php?id=114543
 
 R&D
 ===

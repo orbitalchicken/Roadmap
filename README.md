@@ -88,6 +88,7 @@ Linux Mint 18.3
             slow boot sequence
             slow shutdown sequence
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
+        notice to reboot the computer when appropriate
 
     mate 1.20
         sound events vs sound themes

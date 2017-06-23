@@ -32,6 +32,7 @@ All editions
 Cinnamon Edition
 ----------------
     nemo-preview doesn't work
+    screensaver should not activate for guest sessions
 
 
 MATE Edition

@@ -1,5 +1,7 @@
-Release
-=======
+Maintenance
+===========
+
+    http://people.canonical.com/~ubuntu-security/cve/pkg/vlc.html
 
 
 Linux Mint 18.3
@@ -7,12 +9,16 @@ Linux Mint 18.3
 
     implement an alarm clock
     add a dictionary
+    install mp3 support without codecs?
 
     slick-greeter:
         in live mode, show live-related info? (could be used to show the live login/password)
         session badges look blurry in HiDPI
 
     cinnamon:
+        menu keywords: looking for display in menu shows color first
+        ccc display doesn't always show screen ID windows
+        preferences > keyboard > custom shortcuts. Used with a Spanish keyboard layout. Recorded: crtl+number and ctrl+Shift+number (e.g. ctrl+1 and ctrl+shift+1 = ctrl+!) they are recorded correctly. When using the shortcut the command defined in the shift combination is triggered with just ctrl+number (i.e. ctrl+1). The complete combination triggers nothing (i.e. ctrl+shift+1 does nothing) and the comand defined in ctrl+number can never be used. This worked in 17.3.
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)
         nemo thumbnail error happens too often (too picky, does it always require root perms?)
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
@@ -38,6 +44,7 @@ Linux Mint 18.3
         In Nemo, right-click on "File System" -> "Properties" gives the details of the Home folder, not the File System, making it difficult to determine the overal disk space available.
         In Nemo, if i select a new tab, the folder name that appears in the tab appears with a separation line underneath, separating the tab name from the list of files in the folder. This style of separation is onconsistent to XED, where the Tab name and content under that tab have no such visible horizontal separation line.
         system settings modules should be singletons (only one possible instance) and have their window use their own icon (in alt-tab, and window list)
+        [Michael] bg gets erased after suspend? https://bugzilla.gnome.org/show_bug.cgi?id=739178
 
     xviewer
         make the position (left/right, top/bottom won’t make much sense) of the sidebar configurable (like the gallery) at least via dconf!
@@ -89,6 +96,10 @@ Linux Mint 18.3
             slow shutdown sequence
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
         notice to reboot the computer when appropriate
+        kernelwindow: make kernel series column desc-sorted and select the active series
+
+    mintdrivers:
+        microcode package description is misleading in driver manager, should it be removed?
 
     mate 1.20
         sound events vs sound themes
@@ -98,6 +109,7 @@ Linux Mint 18.3
         for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.
         implement a crash-intercepter
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
+        kernel 4.8: screen rotates 90º counter-clockwise automatically.
 
     artwork:
         Tray icons are black with mint-y themes.
@@ -105,10 +117,18 @@ Linux Mint 18.3
         mintwelcome: don't use 32px png icons
         Choose places icons for Mint-Y
         mint-x-icons: network status icons have a dark background in panel 33px and bigger (sound icon looks wrong in 41px and bigger).
+        mint-y The maximize/restore window control button doesn’t change visually between in maximized and restored state (default theme and Mint-Y-Dark)
 
     xplayer:
         add CD+G support
         wrong aspect ratio http://pasteall.org/pic/show.php?id=114543
+        remove xplayer-mozilla
+
+    xreader:
+        History buttons confuse users (they think they're Next Page and Previous Page buttons)
+
+    synaptic:
+        window titled “Could not download all repository indexes" is way too tall on a 1366×768 laptop screen
 
 R&D
 ===

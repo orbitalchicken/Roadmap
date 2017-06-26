@@ -22,17 +22,32 @@ All editions
         Clicking Linux kernel headers 4.4, and selecting ‘Ignore updates for this package’ has no effect. Understandable for newer kernel/kernel headers update?
         update policy choice doesn't stick
         don't start mintupdate in guest sessions
+        Don't use Ctrl+C as shortcut to empty the list (needed to copy text e.g. from the description of changes)
+        Firefox should always be flagged as a security update
+        Fit policy page within 800x600
 
     blueberry:
         add a way to disable the autostart
+        Button on popup to open/view file just received via Bluetooth is not translated
+        unicode issue when receiving file
 
     mintinstall:
         can't access office category (happens in MATE but not in Cinnamon, issue in Pixbuf SVG support..)
+
+    codecs:
+        remove xplayer-mozilla
+        remove icedtea
+        gstreamer fails to install codecs
+
+    artwork:
+        xfce window buttons in mint-y
 
 Cinnamon Edition
 ----------------
     nemo-preview doesn't work
     screensaver should not activate for guest sessions
+    In Mint menu Nemo (Files) is not translated
+    can't run onboard in cinnamon -> hide it from menu and implement a menu entry for cinnamon's built-in keyboard
 
 
 MATE Edition
@@ -45,6 +60,7 @@ MATE Edition
 
 Xfce Edition
 ------------
+    install light-locker-settings by default
 
 
 KDE Edition (Plasma 5.8)

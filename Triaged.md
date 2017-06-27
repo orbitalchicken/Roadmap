@@ -19,8 +19,6 @@ Can't reproduce
 
 Upstream
 --------
-    indicator-keylock doesn't work properly, always shows whether a lock is enabled or not
-
     GNOME:
         gnome-system-tools: date-time, the Help show the option “choose the server” for NTP which no longer exists.
 
@@ -39,4 +37,3 @@ Upstream
 
         mate font viewer should be called font viewer, and its app icon isn't found.
 
-        nm-applet (indicators in general) can't be left-clicked

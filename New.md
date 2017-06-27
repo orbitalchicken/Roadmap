@@ -4,6 +4,8 @@ All editions
 ------------
     update translations
     FF 54 in live repo
+    mintupdate:
+        count all visible updates in totals and when defining the status
 
 Cinnamon Edition - last processed comment: #177
 -----------------------------------------------

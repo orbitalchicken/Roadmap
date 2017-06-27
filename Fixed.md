@@ -56,7 +56,11 @@ MATE Edition
     mate-panel:
         freezes everytime I try to add or move a launcher (icon) to it.
         when applying a bg color, the “Window List” remains unchanged.
-
+    Battery may be broken notification is annoying.
+    mintmenu https://abload.de/img/lm182recentvisgb.jpg
+    mint-y-theme:
+        When adding “Workspace Switcher” to panel it displays in blue color and does not follow default theme color green?
+        Text in the panel (including window-list and clock applet) seems to be in bold style when it should be normal style?
 
 Xfce Edition
 ------------

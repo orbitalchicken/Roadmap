@@ -104,6 +104,7 @@ Linux Mint 18.3
     mate 1.20
         sound events vs sound themes
         multi-monitor: caja doesn't always show the desktop on the primary monitor (using a laptop as main/left monitor, and HDMI screen with higher res on the right, it surprisingly ends up showing icons on the right screen)
+        Right-click on the desktop -> No templates installed
 
     system:
         for non-english speaking people, it is not possible to change language, nor keyboard settings, when starting livemedia.

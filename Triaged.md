@@ -4,7 +4,7 @@ Not a bug
 ---------
     lightdm-settings: It seems that the user-defined logo settings inside the login dialog have no effect right now. --> only visible with multiple monitors
     mate-control-center: appearance Interface tab Ticking and unticking “Show icons in menus” doesn’t change anything in the Preview below (same as option in mintdesktop, GTK3 requires explicit menu icon to be set, thus code changes as GNOME tried to obsolete the use of icons in menus)
-
+    mate: Calendar doesn’t auto-close when losing focus like when clicking on the desktop.
 
 Outside of the scope
 --------------------
@@ -30,9 +30,8 @@ Upstream
 
     MATE:
         mate-applets:
-            Calendar doesn’t auto-close when losing focus like when clicking on the desktop.
             The ‘netspeed-applet 1.18.1’ now continuously resizes as the bitrate changes. Installed between the ‘Clock’ and ‘Notification Area’ means all the icons in the notification area jump around a lot.
-            Sticky Notes: no marking, copy possible – double clicking now opens “Sticky Notes Properties”
+            Sticky Notes: no marking, copy possible – https://github.com/mate-desktop/mate-applets/issues/236
 
         caja:
             list-view zoom issue https://github.com/mate-desktop/caja/issues/790

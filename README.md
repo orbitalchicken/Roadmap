@@ -131,6 +131,9 @@ Linux Mint 18.3
     synaptic:
         window titled “Could not download all repository indexes" is way too tall on a 1366×768 laptop screen
 
+    kde:
+        SDDM stays in autologin after OEM install
+
 R&D
 ===
 

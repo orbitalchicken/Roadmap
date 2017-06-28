@@ -2,7 +2,6 @@ New bug reports in Linux Mint 18.2 BETA
 
 All editions
 ------------
-    FF 54 in live repo
 
 Cinnamon Edition - last processed comment: #177
 -----------------------------------------------

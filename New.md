@@ -2,11 +2,7 @@ New bug reports in Linux Mint 18.2 BETA
 
 All editions
 ------------
-    update translations
     FF 54 in live repo
-    mintupdate:
-        count all visible updates in totals and when defining the status
-        review update levels for Firefox and Flash
 
 Cinnamon Edition - last processed comment: #177
 -----------------------------------------------

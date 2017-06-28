@@ -3,7 +3,7 @@ Fixed Issues since Linux Mint 18.2 BETA
 All editions
 ------------
     redshift-gtk should depend on geoclue-2.0
-    onboard is not visible in the app menu
+        onboard is not visible in the app menu
 
     guest sessions:
         don't start mintwelcome
@@ -40,7 +40,7 @@ All editions
         gstreamer fails to install codecs
 
     artwork:
-        xfce window buttons in mint-y
+            xfce window buttons in mint-y
 
 Cinnamon Edition
 ----------------
@@ -50,24 +50,24 @@ Cinnamon Edition
     can't run onboard in cinnamon -> hide it from menu and implement a menu entry for cinnamon's built-in keyboard
 
 
-MATE Edition
-------------
-    guest session blocks mintmenu
-    mate-panel:
-        freezes everytime I try to add or move a launcher (icon) to it.
-        when applying a bg color, the “Window List” remains unchanged.
-        indicator-keylock doesn't work properly, always shows whether a lock is enabled or not
-        nm-applet (indicators in general) can't be left-clicked
-    Battery may be broken notification is annoying.
-    mintmenu https://abload.de/img/lm182recentvisgb.jpg
-    mint-y-theme:
-        When adding “Workspace Switcher” to panel it displays in blue color and does not follow default theme color green?
-        Text in the panel (including window-list and clock applet) seems to be in bold style when it should be normal style?
-    mintdesktop winrules offset https://bugs.launchpad.net/compiz/+bug/1419346
+    MATE Edition
+    ------------
+        guest session blocks mintmenu
+        mate-panel:
+            freezes everytime I try to add or move a launcher (icon) to it.
+            when applying a bg color, the “Window List” remains unchanged.
+            indicator-keylock doesn't work properly, always shows whether a lock is enabled or not
+            nm-applet (indicators in general) can't be left-clicked
+        Battery may be broken notification is annoying.
+        mintmenu https://abload.de/img/lm182recentvisgb.jpg
+        mint-y-theme:
+            When adding “Workspace Switcher” to panel it displays in blue color and does not follow default theme color green?
+            Text in the panel (including window-list and clock applet) seems to be in bold style when it should be normal style?
+        mintdesktop winrules offset https://bugs.launchpad.net/compiz/+bug/1419346
 
-Xfce Edition
-------------
-    install light-locker-settings by default
+    Xfce Edition
+    ------------
+        install light-locker-settings by default
 
 
 KDE Edition (Plasma 5.8)

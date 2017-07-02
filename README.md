@@ -14,8 +14,10 @@ Linux Mint 18.3
     slick-greeter:
         in live mode, show live-related info? (could be used to show the live login/password)
         session badges look blurry in HiDPI
+        expose more settings via lightdm-settings (hiding user list, letting user type his username, autologin etc..)
 
     cinnamon:
+        ccc: wacom - when no tablet is detected, remove fugly frame around content and fix bt settings button not linking towards blueberry
         menu keywords: looking for display in menu shows color first
         ccc display doesn't always show screen ID windows
         preferences > keyboard > custom shortcuts. Used with a Spanish keyboard layout. Recorded: crtl+number and ctrl+Shift+number (e.g. ctrl+1 and ctrl+shift+1 = ctrl+!) they are recorded correctly. When using the shortcut the command defined in the shift combination is triggered with just ctrl+number (i.e. ctrl+1). The complete combination triggers nothing (i.e. ctrl+shift+1 does nothing) and the comand defined in ctrl+number can never be used. This worked in 17.3.
@@ -184,13 +186,6 @@ R&D
     HiDPI support:
         upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.
         mint projects using GTK2: mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
-
-Linux Mint 18.2 [Implemented]
-=============================
-
-    mate 1.18
-        switch MATE to GTK3
-        switch mintmenu to GTK3
 
 LMDE 3
 ======

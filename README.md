@@ -3,6 +3,15 @@ Maintenance
 
     http://people.canonical.com/~ubuntu-security/cve/pkg/vlc.html
 
+Implemented
+===========
+
+    Cinnamon:
+        Support for HybridSleep
+
+    Slick:
+        badges tooltips
+        support for numlockx
 
 Linux Mint 18.3
 ===============
@@ -15,9 +24,10 @@ Linux Mint 18.3
         in live mode, show live-related info? (could be used to show the live login/password)
         session badges look blurry in HiDPI
         expose more settings via lightdm-settings (hiding user list, letting user type his username, autologin etc..)
-        consider adding numlockx support
+        in lightdm-settings, add x.dm.slick-greeter idle-timeout
 
     cinnamon:
+        settings: ability to enable hybrid sleep
         ccc: wacom - when no tablet is detected, remove fugly frame around content and fix bt settings button not linking towards blueberry
         menu keywords: looking for display in menu shows color first
         consider: notifications stay on desktop until mouse is moved + a few secs

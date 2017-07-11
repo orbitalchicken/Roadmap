@@ -15,10 +15,13 @@ Linux Mint 18.3
         in live mode, show live-related info? (could be used to show the live login/password)
         session badges look blurry in HiDPI
         expose more settings via lightdm-settings (hiding user list, letting user type his username, autologin etc..)
+        consider adding numlockx support
 
     cinnamon:
         ccc: wacom - when no tablet is detected, remove fugly frame around content and fix bt settings button not linking towards blueberry
         menu keywords: looking for display in menu shows color first
+        consider: notifications stay on desktop until mouse is moved + a few secs
+        reconsider inhibiting onscreen keyboards (our keyboard doesn't do locales layouts and it's quite ugly)
         ccc display doesn't always show screen ID windows
         preferences > keyboard > custom shortcuts. Used with a Spanish keyboard layout. Recorded: crtl+number and ctrl+Shift+number (e.g. ctrl+1 and ctrl+shift+1 = ctrl+!) they are recorded correctly. When using the shortcut the command defined in the shift combination is triggered with just ctrl+number (i.e. ctrl+1). The complete combination triggers nothing (i.e. ctrl+shift+1 does nothing) and the comand defined in ctrl+number can never be used. This worked in 17.3.
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)

@@ -10,8 +10,11 @@ Implemented
         Support for HybridSleep
 
     Slick:
-        badges tooltips
+        indicator tooltips
         support for numlockx
+        optional panel indicators
+        LDAP options (hiding user list, manual login)
+        Added option for auto login
 
 Linux Mint 18.3
 ===============
@@ -19,12 +22,6 @@ Linux Mint 18.3
     implement an alarm clock
     add a dictionary
     install mp3 support without codecs?
-
-    slick-greeter:
-        in live mode, show live-related info? (could be used to show the live login/password)
-        session badges look blurry in HiDPI
-        expose more settings via lightdm-settings (hiding user list, letting user type his username, autologin etc..)
-        in lightdm-settings, add x.dm.slick-greeter idle-timeout
 
     cinnamon:
         settings: ability to enable hybrid sleep

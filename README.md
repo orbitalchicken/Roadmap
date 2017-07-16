@@ -16,6 +16,8 @@ Implemented
         LDAP options (hiding user list, manual login)
         Added option for auto login
 
+    mintsources ported to GTK3
+
 Linux Mint 18.3
 ===============
 
@@ -24,6 +26,7 @@ Linux Mint 18.3
     install mp3 support without codecs?
 
     cinnamon:
+        hidpi: consider setting default to auto again
         settings: ability to enable hybrid sleep
         ccc: wacom - when no tablet is detected, remove fugly frame around content and fix bt settings button not linking towards blueberry
         menu keywords: looking for display in menu shows color first
@@ -195,7 +198,7 @@ R&D
 
     HiDPI support:
         upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.
-        mint projects using GTK2: mintinstall, mintsources, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
+        mint projects using GTK2: mintinstall, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
 
 LMDE 3
 ======

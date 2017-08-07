@@ -18,6 +18,12 @@ Implemented
 
     mintsources ported to GTK3
 
+    mintinstall:
+        UI and nagivation revamp
+        GTK3 + HiDPI
+        User mode + aptdaemon backend
+        speed improvements
+
 Linux Mint 18.3
 ===============
 
@@ -92,11 +98,6 @@ Linux Mint 18.3
             vignettes should look better, and the same in all themes
             support prefer-dark-themes
             treeview in sidebar shows unecessary "(empty)" when dirs have no subdirs
-
-    mintinstall:
-        UI redesign
-        when apt cache is missing, it just says not available. Instead it could tell the user or even help the user to refresh the cache.
-        redesign main page to feature essential apps
 
     mintwelcome:
         consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
@@ -198,7 +199,7 @@ R&D
 
     HiDPI support:
         upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.
-        mint projects using GTK2: mintinstall, gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
+        mint projects using GTK2: gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
 
 LMDE 3
 ======

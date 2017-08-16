@@ -24,12 +24,22 @@ Implemented
         User mode + aptdaemon backend
         speed improvements
 
+    mintbackup:
+        complete revamp
+        user mode + aptdaemon backend
+        revamped UI
+        revamped threading and performance
+        restricted to home dir
+        always preserves perms/times
+
 Linux Mint 18.3
 ===============
 
     implement an alarm clock
     add a dictionary
     install mp3 support without codecs?
+
+    remove mintnanny and mintupload from default software selection
 
     cinnamon:
         hidpi: consider setting default to auto again
@@ -152,9 +162,6 @@ Linux Mint 18.3
 
 R&D
 ===
-
-    mintbackup:
-        consider using another alternative?
 
     mintupdate:
         prompt for reboot after kernel install?

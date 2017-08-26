@@ -212,6 +212,4 @@ LMDE 3
 ======
 
     gnome-calculator app title is "gnome-calculator"
-    mintsystem: /usr/local/bin/pastebin shadows xapps-common: /usr/bin/pastebin
-    mint-md5sum script in /usr/local/bin ?
     live-installer should show partition labels

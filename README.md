@@ -34,6 +34,7 @@ Implemented
 
     Xapp window-progress now supported by:
         cinnamon
+        nemo
         mintinstall
         mintstick
         mintdrivers

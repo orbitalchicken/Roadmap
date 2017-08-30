@@ -202,7 +202,7 @@ R&D
         easy out-of-the-box interactions (messaging/presence/file-sharing) over the LAN
 
     windows compatibility layer:
-        seemless wine integration
+        seamless wine integration
 
     HiDPI support:
         upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.

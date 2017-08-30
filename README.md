@@ -32,6 +32,13 @@ Implemented
         restricted to home dir
         always preserves perms/times
 
+    Xapp window-progress now supported by:
+        cinnamon
+        mintinstall
+        mintstick
+        mintdrivers
+        mintbackup
+
 Linux Mint 18.3
 ===============
 

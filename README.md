@@ -1,13 +1,12 @@
-Maintenance
-===========
-
-    http://people.canonical.com/~ubuntu-security/cve/pkg/vlc.html
-
 Implemented
 ===========
 
     Cinnamon:
         Support for HybridSleep
+        network applet: Rescan for wireless network
+        cinnamon-settings: spices revamp
+        nemo-preview support animated gifs
+        better translations for cinnamon-session, cinnamon-settings-daemon, nemo-extensions
 
     Slick:
         indicator tooltips
@@ -40,6 +39,17 @@ Implemented
         mintdrivers
         mintbackup
 
+    xplayer:
+        removed xplayer-mozilla
+        better fullscreen statusbar
+
+Done - Awaiting repos/build
+====================
+
+    remove mintnanny and mintupload from default software selection
+    cinnamon:
+        enable hidpi by default
+
 Linux Mint 18.3
 ===============
 
@@ -47,10 +57,16 @@ Linux Mint 18.3
     add a dictionary
     install mp3 support without codecs?
 
-    remove mintnanny and mintupload from default software selection
+    xed: support opening at particular line number, like sublime does
+
+    nemo: ability to search string within files and open xed at line number
+
+    mintbackup:
+        place backups in .backup or exclude them by default?
+        need user confirmation before overwriting existing files
+        consider including some settings by default?
 
     cinnamon:
-        hidpi: consider setting default to auto again
         settings: ability to enable hybrid sleep
         ccc: wacom - when no tablet is detected, remove fugly frame around content and fix bt settings button not linking towards blueberry
         menu keywords: looking for display in menu shows color first
@@ -62,7 +78,6 @@ Linux Mint 18.3
         nemo thumbnail error happens too often (too picky, does it always require root perms?)
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
         track/troubleshoot vsync, compositing, unredirected windows and policy
-        add cinnamon-session (present but inactive) and cinnamon-settings-daemon to Launchpad/cinnamon-translations
         menu: consider adopting this layout (https://raw.githubusercontent.com/The-Panacea-Projects/Gnomenu/master/Screenshot.png), same as ours/mintmenu, only better.
         todo list applet/desklet
         calendar events applet/desklet
@@ -71,7 +86,6 @@ Linux Mint 18.3
         network applet: airplane mode (quick way to rfkill all)
         network applet: https://github.com/linuxmint/Cinnamon/issues/2746
         nemo: retire computer:/// place (which is completely useless) or revamp it into something better
-        network applet: if possible, add a little refresh icon to ask for a new scan
         alt-tab and panel use icon provided by appsys, ignoring icon set by the application itself (example: a python window using widow.set_icon_name())
         actions in panel launchers aren't translated if not present in .desktop file
         sound: add an option to switch sound to HDMI when an HDMI output device is plugged
@@ -112,7 +126,6 @@ Linux Mint 18.3
 
         pix
             doesn't rotate videos when playing them
-            should use a generic name in the application menu
             vignettes should look better, and the same in all themes
             support prefer-dark-themes
             treeview in sidebar shows unecessary "(empty)" when dirs have no subdirs
@@ -168,6 +181,9 @@ Linux Mint 18.3
     kde:
         SDDM stays in autologin after OEM install
 
+    xfce:
+        upgrade xfce-terminal to 0.8.0?
+
 R&D
 ===
 
@@ -190,10 +206,6 @@ R&D
     ubiquity:
         inhibit sessions via libxapp (need to do it in KDE too)
 
-    firefox:
-        enable bookmark toolbar by default
-        enable plugins by default
-
     libindicator++?
         client-rendered icon/menu (ala libindicator)
         support all the features from GTK statusicon (tooltips, left/right clicks etc..)
@@ -214,7 +226,7 @@ R&D
 
     HiDPI support:
         upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.
-        mint projects using GTK2: gksu, cinnamon's mount dialog (seen when asking for a password for an encrypted external HDD).
+        mint projects using GTK2: gksu
 
 LMDE 3
 ======

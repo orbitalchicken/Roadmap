@@ -65,7 +65,6 @@ Cinnamon 3.6
     cinnamon:
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
         reconsider inhibiting onscreen keyboards (our keyboard doesn't do locales layouts and it's quite ugly)
-        ccc: wacom - when no tablet is detected, remove fugly frame around content and fix bt settings button not linking towards blueberry
 
     nemo:
         Mouse-cursor lag when moving files

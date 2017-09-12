@@ -48,6 +48,9 @@ Implemented
         removed xplayer-mozilla
         better fullscreen statusbar
 
+    xreader:
+        Move history to Go menu, bring back navigation buttons into toolbar
+
     nemo:
         provide configure button for extensions
 
@@ -90,7 +93,7 @@ Linux Mint 18.3
         translations
 
     mintwelcome:
-        don't use 32px png icons
+        blurry icons in HiDPI
         consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
 
     mintupdate:
@@ -110,10 +113,6 @@ Linux Mint 18.3
     system:
         implement a crash-intercepter
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
-
-    xreader:
-        History buttons confuse users (they think they're Next Page and Previous Page buttons)
-
 
 Roadmap
 =======

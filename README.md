@@ -31,6 +31,10 @@ Implemented
         restricted to home dir
         always preserves perms/times
 
+    mintdrivers:
+        better HiDPI support
+        better CPU microcode detection/presentation
+
     Xapp window-progress now supported by:
         cinnamon
         nemo
@@ -43,6 +47,9 @@ Implemented
     xplayer:
         removed xplayer-mozilla
         better fullscreen statusbar
+
+    nemo:
+        provide configure button for extensions
 
 Done - Awaiting repos/build
 ===========================
@@ -69,7 +76,6 @@ Cinnamon 3.6
     nemo:
         Mouse-cursor lag when moving files
         Skip GVFS when possible
-        Provide configure button for extensions
         ability to search string within files and open xed at line number
 
 Linux Mint 18.3
@@ -101,18 +107,12 @@ Linux Mint 18.3
         slow boot sequence
         slow shutdown sequence
 
-    mintdrivers:
-        microcode package description is misleading in driver manager, should it be removed?
-
     system:
         implement a crash-intercepter
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
     xreader:
         History buttons confuse users (they think they're Next Page and Previous Page buttons)
-
-    synaptic:
-        window titled “Could not download all repository indexes" is way too tall on a 1366×768 laptop screen
 
 
 Roadmap

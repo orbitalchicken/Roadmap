@@ -54,6 +54,9 @@ Implemented
     nemo:
         provide configure button for extensions
 
+    mintreport:
+        software crash troubleshooting
+
 Done - Awaiting repos/build
 ===========================
 
@@ -68,6 +71,8 @@ Done - Awaiting repos/build
         ensure the presence of google-earth and skype in repo/featured
         add timeshift
         install mp3 support without codecs
+
+    chromium default config isn't applied (and DDG is set without https)
 
 Cinnamon 3.6
 ============
@@ -101,7 +106,7 @@ Linux Mint 18.3
         notice to reboot the computer when appropriate
         kernelwindow: make kernel series column desc-sorted and select the active series
 
-    troubleshooting-tool:
+    mintreport:
         mint notices
         implement rules and notification system:
         dmesg errors
@@ -111,7 +116,6 @@ Linux Mint 18.3
         slow shutdown sequence
 
     system:
-        implement a crash-intercepter
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
 Roadmap

@@ -44,6 +44,9 @@ Implemented
         mintbackup
         synaptic dialogs (mintlocale, mintsources, mintupdate)
 
+    mintupdate:
+        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
+
     xplayer:
         removed xplayer-mozilla
         better fullscreen statusbar

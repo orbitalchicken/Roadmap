@@ -7,6 +7,7 @@ Implemented
         cinnamon-settings: spices revamp
         nemo-preview support animated gifs
         better translations for cinnamon-session, cinnamon-settings-daemon, nemo-extensions
+        HiDPI mode set to Auto
 
     Slick:
         indicator tooltips
@@ -44,9 +45,6 @@ Implemented
         mintbackup
         synaptic dialogs (mintlocale, mintsources, mintupdate)
 
-    mintupdate:
-        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
-
     xplayer:
         removed xplayer-mozilla
         better fullscreen statusbar
@@ -60,22 +58,10 @@ Implemented
     mintreport:
         software crash troubleshooting
 
-Done - Awaiting repos/build
-===========================
-
-    remove mintnanny and mintupload from default software selection
-
-    cinnamon:
-        enable hidpi by default
-    xfce:
-        upgrade xfce-terminal to 0.8.0?
-
-    software/repo:
-        ensure the presence of google-earth and skype in repo/featured
+    software selection:
         add timeshift
-        install mp3 support without codecs
-
-    chromium default config isn't applied (and DDG is set without https)
+        remove mintnanny and mintupload
+        add dbg packages (cinnamon + xapps)
 
 Cinnamon 3.6
 ============
@@ -91,6 +77,16 @@ Cinnamon 3.6
 
 Linux Mint 18.3
 ===============
+
+    xfce:
+        upgrade xfce-terminal to 0.8.0?
+
+    software/repo:
+        ensure the presence of google-earth and skype in repo/featured
+        install mp3 support without codecs
+
+    mintupdate:
+        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
 
     desktop-search:
         local files
@@ -120,6 +116,9 @@ Linux Mint 18.3
 
     system:
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
+
+    nemo:
+        video thumbnails are blurry?
 
 Roadmap
 =======

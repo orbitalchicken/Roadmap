@@ -54,6 +54,7 @@ Implemented
 
     nemo:
         provide configure button for extensions
+        fixed nemo-media-columns makes nemo 5 times slower to list directories
 
     mintreport:
         software crash troubleshooting
@@ -71,9 +72,15 @@ Cinnamon 3.6
         reconsider inhibiting onscreen keyboards (our keyboard doesn't do locales layouts and it's quite ugly)
 
     nemo:
-        Mouse-cursor lag when moving files
         Skip GVFS when possible
         ability to search string within files and open xed at line number
+        Performance issues:
+            File operations:
+                Mouse-cursor lag
+            Loading views:
+                switching views is slower than reloading them
+                existing thumbs are loaded asynchronously
+                loading is slower than with ls (could be Gvfs, could be the way we render view in GTK. For 25k elements, 0.4s with ls, up to 6s in icon view for Nemo/Caja)
 
 Linux Mint 18.3
 ===============
@@ -84,9 +91,6 @@ Linux Mint 18.3
     software/repo:
         ensure the presence of google-earth and skype in repo/featured
         install mp3 support without codecs
-
-    mintupdate:
-        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
 
     desktop-search:
         local files
@@ -104,15 +108,7 @@ Linux Mint 18.3
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
         notice to reboot the computer when appropriate
         kernelwindow: make kernel series column desc-sorted and select the active series
-
-    mintreport:
-        mint notices
-        implement rules and notification system:
-        dmesg errors
-        foreign packages if pinned by mint
-        wrong lsb info..etc.
-        slow boot sequence
-        slow shutdown sequence
+        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
 
     system:
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
@@ -122,6 +118,15 @@ Linux Mint 18.3
 
 Roadmap
 =======
+
+    mintreport:
+        mint notices
+        implement rules and notification system:
+        dmesg errors
+        foreign packages if pinned by mint
+        wrong lsb info..etc.
+        slow boot sequence
+        slow shutdown sequence
 
     implement an alarm clock
 

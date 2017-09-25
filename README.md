@@ -49,6 +49,9 @@ Implemented
         removed xplayer-mozilla
         better fullscreen statusbar
 
+    xed:
+        minimap
+
     xreader:
         Move history to Go menu, bring back navigation buttons into toolbar
 

@@ -64,6 +64,7 @@ Implemented
 
     software selection:
         add timeshift
+        add redshift-gtk
         remove mintnanny and mintupload
         add dbg packages (cinnamon + xapps)
 
@@ -76,7 +77,11 @@ Cinnamon 3.6
 
     nemo:
         Skip GVFS when possible
-        ability to search string within files and open xed at line number
+        File search:
+            full-text search
+            async search
+            simplify UI/features
+            ability to search string within files and open xed at line number
         Performance issues:
             File operations:
                 Mouse-cursor lag

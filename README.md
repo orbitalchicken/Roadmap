@@ -68,6 +68,8 @@ Implemented
         remove mintnanny and mintupload
         add dbg packages (cinnamon + xapps)
 
+    pia-manager in user mode
+
 Cinnamon 3.6
 ============
 
@@ -89,6 +91,9 @@ Cinnamon 3.6
                 switching views is slower than reloading them
                 existing thumbs are loaded asynchronously
                 loading is slower than with ls (could be Gvfs, could be the way we render view in GTK. For 25k elements, 0.4s with ls, up to 6s in icon view for Nemo/Caja)
+        video thumbnails are blurry
+
+    support for gnome-online-accounts?
 
 Linux Mint 18.3
 ===============
@@ -120,9 +125,6 @@ Linux Mint 18.3
 
     system:
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
-
-    nemo:
-        video thumbnails are blurry?
 
 Roadmap
 =======

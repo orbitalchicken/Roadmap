@@ -8,6 +8,10 @@ Implemented
         nemo-preview support animated gifs
         better translations for cinnamon-session, cinnamon-settings-daemon, nemo-extensions
         HiDPI mode set to Auto
+        window list can show windows from other workspaces
+        secondaryActivate on middle-click in indicators (when indicator support is enabled)
+        goa/google-drive/owncloud support
+        touchpads: full libinput/synaptic support with automatic mode for clickpad/scrolling
 
     Slick:
         indicator tooltips
@@ -61,6 +65,7 @@ Implemented
 
     mintreport:
         software crash troubleshooting
+        info notices
 
     software selection:
         add timeshift
@@ -92,8 +97,6 @@ Cinnamon 3.6
                 existing thumbs are loaded asynchronously
                 loading is slower than with ls (could be Gvfs, could be the way we render view in GTK. For 25k elements, 0.4s with ls, up to 6s in icon view for Nemo/Caja)
         video thumbnails are blurry
-
-    support for gnome-online-accounts?
 
 Linux Mint 18.3
 ===============
@@ -130,8 +133,6 @@ Roadmap
 =======
 
     mintreport:
-        mint notices
-        implement rules and notification system:
         dmesg errors
         foreign packages if pinned by mint
         wrong lsb info..etc.

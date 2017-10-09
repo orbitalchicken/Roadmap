@@ -75,6 +75,8 @@ Implemented
 
     pia-manager in user mode
 
+    flatpak support
+
 Cinnamon 3.6
 ============
 
@@ -98,8 +100,12 @@ Cinnamon 3.6
                 loading is slower than with ls (could be Gvfs, could be the way we render view in GTK. For 25k elements, 0.4s with ls, up to 6s in icon view for Nemo/Caja)
         video thumbnails are blurry
 
+    cinnamon extension core contains non-translatable msgids
+
 Linux Mint 18.3
 ===============
+
+    hunspell-en-gb not installed for UK installed (similar issue for other languages)
 
     xfce:
         upgrade xfce-terminal to 0.8.0?
@@ -207,8 +213,6 @@ R&D
         remove duplication between Eject and Safely Remove (for removable devices).
 
     system
-        consider adding snapd
-        consider adding flatpak
         consider enabling recommends
 
     review logind.conf changes in:

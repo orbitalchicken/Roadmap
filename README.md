@@ -12,6 +12,7 @@ Implemented
         secondaryActivate on middle-click in indicators (when indicator support is enabled)
         goa/google-drive/owncloud support
         touchpads: full libinput/synaptic support with automatic mode for clickpad/scrolling
+        on-screen keyboard: size and position configurable, no animations, fixed response to at-spi, no longer blocks onboard
 
     Slick:
         indicator tooltips
@@ -82,7 +83,6 @@ Cinnamon 3.6
 
     cinnamon:
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
-        reconsider inhibiting onscreen keyboards (our keyboard doesn't do locales layouts and it's quite ugly)
 
     nemo:
         Skip GVFS when possible

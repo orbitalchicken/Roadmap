@@ -13,6 +13,7 @@ Implemented
         goa/google-drive/owncloud support
         touchpads: full libinput/synaptic support with automatic mode for clickpad/scrolling
         on-screen keyboard: size and position configurable, no animations, fixed response to at-spi, no longer blocks onboard
+        alt-tab can show windows from all workspaces
 
     Slick:
         indicator tooltips
@@ -59,6 +60,7 @@ Implemented
 
     xreader:
         Move history to Go menu, bring back navigation buttons into toolbar
+        100% zoom means real document size
 
     nemo:
         provide configure button for extensions

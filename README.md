@@ -125,6 +125,10 @@ Linux Mint 18.3
 
     Xfce
         [DONE] upgrade xfce-terminal to 0.8.0
+        task manager 1.2
+        notifyd 0.3.6
+        dict 0.8
+        panel 4.12.1
 
     Release
         new_features

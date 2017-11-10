@@ -96,14 +96,13 @@ Linux Mint 18.3
         Cinnamon
             menu doesn't go all the way down
             cinnamon network status notification icon looks wrong
-            disable away message in cinnamon by default
-            [FIXED IN GIT] cinnamon-settings-users misses a polkit policy
-            [FIXED IN GIT - needs new cinnamon-l10n] goa desktop file misses l10n
+            [FIXED in GIT (cdesktop)] disable away message in cinnamon by default
+            [FIXED IN GIT (cinnamon)] cinnamon-settings-users misses a polkit policy
+            [FIXED IN GIT (ccc) - needs new cinnamon-l10n] goa desktop file misses l10n
 
         hidpi
             mintwelcome icons are blurry
             cinnamon startup apps icons are blurry
-
 
         mintdrivers
             processor microcode isn't l10n'd
@@ -121,8 +120,7 @@ Linux Mint 18.3
         mintreport
             go back and forth between two info and you see the source
 
-        mintupdate
-            review kernel warning wording
+        update mint-translations
 
     MATE
         1.18 updates

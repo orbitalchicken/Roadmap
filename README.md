@@ -14,6 +14,7 @@ Implemented
         touchpads: full libinput/synaptic support with automatic mode for clickpad/scrolling
         on-screen keyboard: size and position configurable, no animations, fixed response to at-spi, no longer blocks onboard
         alt-tab can show windows from all workspaces
+        alt-tab no longer places minimized windows to the end of the list (configurable)
 
     Slick:
         indicator tooltips
@@ -80,8 +81,93 @@ Implemented
 
     flatpak support
 
-Cinnamon 3.6
-============
+    out of the box support for synonyms/spell-check/hyphenation in many languages
+
+    xfce:
+        upgrade xfce-terminal to 0.8.0
+
+Linux Mint 18.3
+===============
+
+    Maintenance
+        backport CSR 3.4.4 in Sonya
+
+    Issues
+        Cinnamon
+            menu doesn't go all the way down
+            cinnamon network status notification icon looks wrong
+            disable away message in cinnamon by default
+            [FIXED IN GIT] cinnamon-settings-users misses a polkit policy
+            [FIXED IN GIT - needs new cinnamon-l10n] goa desktop file misses l10n
+
+        hidpi
+            mintwelcome icons are blurry
+            cinnamon startup apps icons are blurry
+
+
+        mintdrivers
+            processor microcode isn't l10n'd
+
+        redshift
+            doesn't die when logging out
+
+        Artwork
+            would be nice if slick showed our release number
+
+        mintinstall
+            Google Earth should be featured
+            Skype should be featured
+
+        mintreport
+            go back and forth between two info and you see the source
+
+        mintupdate
+            review kernel warning wording
+
+    MATE
+        1.18 updates
+        mintmenu PR
+
+    Xfce
+        [DONE] upgrade xfce-terminal to 0.8.0
+
+    Release
+        new_features
+        rel_notes
+            Add instructions to upgrade to HWE Xorg 1.19
+            explain EFI boot violations
+                [PASS] secureboot OFF
+                [PASS] secureboot OFF, no network
+                [PASS] secureboot ON, no codecs
+                [FAIL] secureboot ON, no network -> violation
+                [FAIL] secureboot ON, codecs, turn off secureboot in installer -> violation
+                [FAIL] secureboot ON, codecs, don't turn off secureboot in installer -> violation
+            explain efibootmgr
+
+Linux Mint 19
+=============
+
+    desktop-search:
+        local files
+        web engines
+        recent
+        apps
+        dictionary
+        translations
+
+    mintwelcome:
+        UI revamp, guide user and hint at things he/she might want to do (codecs, popular settings, popular apps etc..)
+
+    mintreport:
+        detect missing l10n packages and hint at mintlocale
+
+    mintupdate:
+        safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
+        notice to reboot the computer when appropriate
+        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
+
+    system:
+        compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
 
     cinnamon:
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
@@ -102,41 +188,6 @@ Cinnamon 3.6
                 loading is slower than with ls (could be Gvfs, could be the way we render view in GTK. For 25k elements, 0.4s with ls, up to 6s in icon view for Nemo/Caja)
         video thumbnails are blurry
 
-    cinnamon extension core contains non-translatable msgids
-
-Linux Mint 18.3
-===============
-
-    hunspell-en-gb not installed for UK installed (similar issue for other languages)
-
-    xfce:
-        upgrade xfce-terminal to 0.8.0?
-
-    software/repo:
-        ensure the presence of google-earth and skype in repo/featured
-        install mp3 support without codecs
-
-    desktop-search:
-        local files
-        web engines
-        recent
-        apps
-        dictionary
-        translations
-
-    mintwelcome:
-        blurry icons in HiDPI
-        consider accompanying the user and hinting at things he/she might want to do (codecs, popular settings, popular apps etc..)
-
-    mintupdate:
-        safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
-        notice to reboot the computer when appropriate
-        kernelwindow: make kernel series column desc-sorted and select the active series
-        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
-
-    system:
-        compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
-
 Roadmap
 =======
 
@@ -150,6 +201,7 @@ Roadmap
     implement an alarm clock
 
     cinnamon:
+        CSD: support mouse wheel speed? Evdev scrolling distance?
         menu keywords: looking for display in menu shows color first
         consider: notifications stay on desktop until mouse is moved + a few secs
         preferences > keyboard > custom shortcuts. Used with a Spanish keyboard layout. Recorded: crtl+number and ctrl+Shift+number (e.g. ctrl+1 and ctrl+shift+1 = ctrl+!) they are recorded correctly. When using the shortcut the command defined in the shift combination is triggered with just ctrl+number (i.e. ctrl+1). The complete combination triggers nothing (i.e. ctrl+shift+1 does nothing) and the comand defined in ctrl+number can never be used. This worked in 17.3.
@@ -201,9 +253,6 @@ Roadmap
         Mint-Y themes Shade option is unavailable
         mint-x-icons: network status icons have a dark background in panel 33px and bigger (sound icon looks wrong in 41px and bigger).
         mint-y The maximize/restore window control button doesn’t change visually between in maximized and restored state (default theme and Mint-Y-Dark)
-
-    kde:
-        SDDM stays in autologin after OEM install
 
 R&D
 ===

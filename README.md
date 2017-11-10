@@ -104,9 +104,6 @@ Linux Mint 18.3
             mintwelcome icons are blurry
             cinnamon startup apps icons are blurry
 
-        mintdrivers
-            processor microcode isn't l10n'd
-
         redshift
             doesn't die when logging out
 

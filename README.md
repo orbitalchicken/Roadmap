@@ -71,6 +71,9 @@ Implemented
         software crash troubleshooting
         info notices
 
+    mintmenu:
+        show recently used apps
+
     software selection:
         add timeshift
         add redshift-gtk
@@ -86,19 +89,14 @@ Implemented
     xfce:
         upgrade xfce-terminal to 0.8.0
 
+    Easy installation of Skype, Google Earth, WhatsApp
+
 Linux Mint 18.3
 ===============
-
-    Maintenance
-        backport CSR 3.4.4 in Sonya
 
     Issues
         Cinnamon
             menu doesn't go all the way down
-            cinnamon network status notification icon looks wrong
-            [FIXED in GIT (cdesktop)] disable away message in cinnamon by default
-            [FIXED IN GIT (cinnamon)] cinnamon-settings-users misses a polkit policy
-            [FIXED IN GIT (ccc) - needs new cinnamon-l10n] goa desktop file misses l10n
 
         hidpi
             mintwelcome icons are blurry
@@ -110,18 +108,8 @@ Linux Mint 18.3
         Artwork
             would be nice if slick showed our release number
 
-        mintinstall
-            Google Earth should be featured
-            Skype should be featured
-
         mintreport
             go back and forth between two info and you see the source
-
-        update mint-translations
-
-    MATE
-        1.18 updates
-        mintmenu PR
 
     Xfce
         [DONE] upgrade xfce-terminal to 0.8.0

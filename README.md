@@ -1,95 +1,8 @@
 Implemented
 ===========
 
-    Cinnamon:
-        Support for HybridSleep
-        network applet: Rescan for wireless network
-        cinnamon-settings: spices revamp
-        nemo-preview support animated gifs
-        better translations for cinnamon-session, cinnamon-settings-daemon, nemo-extensions
-        HiDPI mode set to Auto
-        window list can show windows from other workspaces
-        secondaryActivate on middle-click in indicators (when indicator support is enabled)
-        goa/google-drive/owncloud support
-        touchpads: full libinput/synaptic support with automatic mode for clickpad/scrolling
-        on-screen keyboard: size and position configurable, no animations, fixed response to at-spi, no longer blocks onboard
-        alt-tab can show windows from all workspaces
-        alt-tab no longer places minimized windows to the end of the list (configurable)
-
-    Slick:
-        indicator tooltips
-        support for numlockx
-        optional panel indicators
-        LDAP options (hiding user list, manual login)
-        Added option for auto login
-
-    mintsources ported to GTK3
-
-    mintinstall:
-        UI and nagivation revamp
-        GTK3 + HiDPI
-        User mode + aptdaemon backend
-        speed improvements
-
-    mintbackup:
-        complete revamp
-        user mode + aptdaemon backend
-        revamped UI
-        revamped threading and performance
-        restricted to home dir
-        always preserves perms/times
-
-    mintdrivers:
-        better HiDPI support
-        better CPU microcode detection/presentation
-
-    Xapp window-progress now supported by:
-        cinnamon
-        nemo
-        mintinstall
-        mintstick
-        mintdrivers
-        mintbackup
-        synaptic dialogs (mintlocale, mintsources, mintupdate)
-
-    xplayer:
-        removed xplayer-mozilla
-        better fullscreen statusbar
-
-    xed:
-        minimap
-
-    xreader:
-        Move history to Go menu, bring back navigation buttons into toolbar
-        100% zoom means real document size
-
-    nemo:
-        provide configure button for extensions
-        fixed nemo-media-columns makes nemo 5 times slower to list directories
-
-    mintreport:
-        software crash troubleshooting
-        info notices
-
-    mintmenu:
-        show recently used apps
-
-    software selection:
-        add timeshift
-        add redshift-gtk
-        remove mintnanny and mintupload
-        add dbg packages (cinnamon + xapps)
-
-    pia-manager in user mode
-
-    flatpak support
-
-    out of the box support for synonyms/spell-check/hyphenation in many languages
-
     xfce:
         upgrade xfce-terminal to 0.8.0
-
-    Easy installation of Skype, Google Earth, WhatsApp
 
 Linux Mint 18.3
 ===============
@@ -119,7 +32,6 @@ Linux Mint 18.3
         panel 4.12.1
 
     Release
-        new_features
         rel_notes
             Add instructions to upgrade to HWE Xorg 1.19
             explain EFI boot violations

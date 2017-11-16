@@ -9,7 +9,7 @@ Linux Mint 18.3
 
     Issues
         Cinnamon
-            menu doesn't go all the way down
+            menu doesn't go all the way down -> fix https://github.com/linuxmint/Cinnamon/commit/a3435176cf3eb9d023ce0e18a9b020d87818af9d
 
         hidpi
             mintwelcome icons are blurry

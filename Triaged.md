@@ -22,5 +22,7 @@ Can't reproduce
         running a live session under VirtualBox with two monitors defined. Playing with the login window settings, just to see what happens. Under “Optional pictures > Other monitors”, selected a different image than the background. Logoff. The second monitor shows the optional picture. The main monitor shows half of each picture.
     gdebi:
         can't install opera with gdebi -> debconf support is there in the terminal dropdown
+
 Upstream
 --------
+    goa: https://imgur.com/a/hCLZe

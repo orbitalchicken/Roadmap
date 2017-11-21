@@ -21,8 +21,6 @@ Cinnamon Edition - last processed comment: https://blog.linuxmint.com/?p=3445#co
 	gnome-keyring-daemon delays session quit
 	switch audio to HDMI, disconnect HDMI, it's not possible to switch back then
 	startup apps: 1) install Caffeine or any other software that will appear in Startup Applications, 2) uninstall it, 3) Open Startup Application and the link is still there
-	CCC:
-		https://imgur.com/a/hCLZe
 	nemo:
 		https://github.com/linuxmint/nemo/issues/1622
 

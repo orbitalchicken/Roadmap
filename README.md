@@ -8,19 +8,6 @@ Linux Mint 18.3
 ===============
 
     Issues
-        Cinnamon
-            menu doesn't go all the way down -> fix https://github.com/linuxmint/Cinnamon/commit/a3435176cf3eb9d023ce0e18a9b020d87818af9d
-
-        hidpi
-            mintwelcome icons are blurry
-            cinnamon startup apps icons are blurry
-
-        redshift
-            doesn't die when logging out
-
-        Artwork
-            would be nice if slick showed our release number
-
         mintreport
             go back and forth between two info and you see the source
 
@@ -43,8 +30,34 @@ Linux Mint 18.3
                 [FAIL] secureboot ON, codecs, don't turn off secureboot in installer -> violation
             explain efibootmgr
 
+Maintenance
+===========
+
+    timeshift:
+        Add a polkit policy file so pkexec doesn't refer to Timeshift as /usr/bin/env
+
+    pia-manager:
+        Doesn't remember username (could remember password as well, if user agreed to it)
+
+    mintinstall:
+        continue to show window-progress even when app page isn't visible
+
 Linux Mint 19
 =============
+
+    mint-y:
+        missing icon for input-method
+
+
+    hidpi
+        mintwelcome icons are blurry
+        cinnamon startup apps icons are blurry
+
+    redshift
+        doesn't die when logging out
+
+    Artwork
+        would be nice if slick showed our release number
 
     desktop-search:
         local files

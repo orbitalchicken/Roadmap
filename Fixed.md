@@ -13,6 +13,7 @@ All editions
         missing xdg-desktop-portal-gtk
         fix flatpaks not showing up in menus on first login
         can't install steam (debconf)
+        flatpak spinner should indicate that it will take some time...
     mintbackup:
         the icon for Personal data (home directory) should be the same as home directory icon
 

@@ -2,7 +2,8 @@ Triaged reports
 
 Not a bug
 ---------
-    Software Manager: remove a package with dependencies, Software Manager continues to show the dependencies as installed. -> we only rebuild 
+    Software Manager: remove a package with dependencies, Software Manager continues to show the dependencies as installed. -> we only rebuild
+    startup apps: 1) install Caffeine or any other software that will appear in Startup Applications, 2) uninstall it, 3) Open Startup Application and the link is still there -> need to apt purge since it's a conf file
 
 Outside of the scope
 --------------------

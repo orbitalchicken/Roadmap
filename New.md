@@ -18,14 +18,6 @@ All editions
 Cinnamon Edition - last processed comment: https://blog.linuxmint.com/?p=3445#comment-138080
 --------------------------------------------------------------------------------------------
 	gnome-keyring-daemon delays session quit
-	switch audio to HDMI, disconnect HDMI, it's not possible to switch back then
-	startup apps: 1) install Caffeine or any other software that will appear in Startup Applications, 2) uninstall it, 3) Open Startup Application and the link is still there
-	nemo:
-		https://github.com/linuxmint/nemo/issues/1622
-
-	I don't see the point for the energy-setting switch "enable hibernate" - it's available in different menus already, even if the switch is disabled.
-	If you remove an active theme, it's not switched to the default theme as it was before.
-	The menu-applet animation is still very sluggish (if enabled). Why not use a simple fade in effect like in the good old days? All other transitions look great!
 
 MATE Edition - last processed comment: https://blog.linuxmint.com/?p=3446#comment-138072
 ----------------------------------------------------------------------------------------

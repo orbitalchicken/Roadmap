@@ -2,7 +2,9 @@ Fixed Issues since Linux Mint 18.3 BETA
 
 All editions
 ------------
-    mintsources doesn't start in some locales due to unicode error (German, Russian..etc)
+    mintsources:
+        doesn't start in some locales due to unicode error (German, Russian..etc) + various unicode issues
+        can't add PPA
     Xed has some untranslated items for pt_BR in the “View, Larger Text, Smaller Text, Normal size” option.
     mintinstall:
         flatpaks do not install when they miss dependencies (discord for instance)
@@ -25,6 +27,7 @@ Cinnamon Edition
     Panel edit mode - Applets can not be repositioned, except in central green area, left (red) and right (blue) areas appear grey and non-functional
     I can’t put any applets at all to the panel, just remove the existing.
     menu makes cinnamon crash https://github.com/linuxmint/Cinnamon/issues/7021
+    switch audio to HDMI, disconnect HDMI, it's not possible to switch back then
 
 MATE Edition
 ------------

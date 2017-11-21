@@ -42,6 +42,9 @@ Maintenance
     mintinstall:
         continue to show window-progress even when app page isn't visible
 
+    nemo:
+        https://github.com/linuxmint/nemo/issues/1622
+
 Linux Mint 19
 =============
 

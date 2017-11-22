@@ -7,12 +7,7 @@ Implemented
 Linux Mint 18.3
 ===============
 
-    Issues
-        mintreport
-            go back and forth between two info and you see the source
-
     Xfce
-        [DONE] upgrade xfce-terminal to 0.8.0
         task manager 1.2
         notifyd 0.3.6
         dict 0.8

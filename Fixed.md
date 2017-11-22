@@ -2,10 +2,13 @@ Fixed Issues since Linux Mint 18.3 BETA
 
 All editions
 ------------
+
     mintsources:
         doesn't start in some locales due to unicode error (German, Russian..etc) + various unicode issues
         can't add PPA
+
     Xed has some untranslated items for pt_BR in the “View, Larger Text, Smaller Text, Normal size” option.
+
     mintinstall:
         flatpaks do not install when they miss dependencies (discord for instance)
         the installation/removal progress needs to show more info than just the progressbar
@@ -16,9 +19,12 @@ All editions
         fix flatpaks not showing up in menus on first login
         can't install steam (debconf)
         flatpak spinner should indicate that it will take some time...
+
     mintbackup:
         the icon for Personal data (home directory) should be the same as home directory icon
 
+    mintupdate:
+        no window progress when installing/removing kernel
 
 Cinnamon Edition
 ----------------

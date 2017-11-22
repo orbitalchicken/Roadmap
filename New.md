@@ -4,14 +4,19 @@ All editions
 ------------
 	compatibility mode in EFI?
 	remove virtualbox packages? are they still needed?
+	mint-y: add shutdown/logout icons
+	blueberry commits
+	translations
+	cinnamon commits
+	mintreport PR
+	mintsources PR
+
+	mintreport
+		go back and forth between two info and you see the source
 
 	mintinstall
 		some flatpaks are missing icons
-		if you use the tab key to move between the Featured application, Editors’ Picks and Categories, you can find yourself in a position where you have one from each selected category simultaneously – so you can’t hit the Enter key. There are in all likelihood shortcut keys for the Software Manager that i’m unaware of, but just saying this isn’t great. Related to this, when i try to install a package, i have to use my mouse – is that correct, i can’t seem to be able to select Install by tabbing over to it or selecting CTRL+I.
-
-	mintupdate:
-		no window progress when installing/removing kernel
-		check window size in 1024x768 with panel
+		keyboard navigation issues
 
 Cinnamon Edition - last processed comment: 2017/11/22 at 11:07 am
 ----------------------------------------------------------------

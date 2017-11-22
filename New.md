@@ -3,6 +3,7 @@ New bug reports in Linux Mint 18.3 BETA
 All editions
 ------------
 	compatibility mode in EFI?
+	remove virtualbox packages? are they still needed?
 
 	mintinstall
 		some flatpaks are missing icons
@@ -15,14 +16,14 @@ All editions
 		no window progress when installing/removing kernel
 		check window size in 1024x768 with panel
 
-Cinnamon Edition - last processed comment: https://blog.linuxmint.com/?p=3445#comment-138080
---------------------------------------------------------------------------------------------
+Cinnamon Edition - last processed comment: 2017/11/22 at 11:07 am
+----------------------------------------------------------------
 	gnome-keyring-daemon delays session quit
 
-MATE Edition - last processed comment: https://blog.linuxmint.com/?p=3446#comment-138072
-----------------------------------------------------------------------------------------
+MATE Edition - last processed comment: 2017/11/22 at 11:07 am
+------------------------------------------------------------
 	map in calendar applet is stretched
-	emblems/colors don't work?
+	emblems/colors don't work? https://github.com/mate-desktop/caja/issues/506
 
 Xfce Edition - last processed comment:
 ------------------------------------------

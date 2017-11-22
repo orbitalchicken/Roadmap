@@ -8,15 +8,7 @@ All editions
 	blueberry commits
 	translations
 	cinnamon commits
-	mintreport PR
-	mintsources PR
-
-	mintreport
-		go back and forth between two info and you see the source
-
-	mintinstall
-		some flatpaks are missing icons
-		keyboard navigation issues
+	FF 57 in live repo
 
 Cinnamon Edition - last processed comment: 2017/11/22 at 11:07 am
 ----------------------------------------------------------------

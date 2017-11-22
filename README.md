@@ -37,6 +37,7 @@ Maintenance
     mintinstall:
         continue to show window-progress even when app page isn't visible
         install flatpak deps via API to better report progress
+        keyboard navigation issues
 
     mintsources:
         rewrite code with python3, review unicode and multithreading

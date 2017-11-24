@@ -48,9 +48,11 @@ Maintenance
 Linux Mint 19
 =============
 
+    make the GOA frontend an Xapp (it should be cross-DE), disable buggy/irrelevant services
+
     mint-y:
         missing icon for input-method
-
+        add shutdown/logout/action icons
 
     hidpi
         mintwelcome icons are blurry

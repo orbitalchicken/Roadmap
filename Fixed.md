@@ -9,6 +9,7 @@ All editions
         segfault in base repository speed tests
 
     Xed has some untranslated items for pt_BR in the “View, Larger Text, Smaller Text, Normal size” option.
+    virtualbox guest support removed (no longer needed, well done Oracle ;))
 
     mintinstall:
         flatpaks do not install when they miss dependencies (discord for instance)
@@ -31,6 +32,10 @@ All editions
     mintreport
         go back and forth between two info and you see the source
 
+    blueberry:
+        rfkill survives logout
+        double-tray when toggling systray switch
+
 Cinnamon Edition
 ----------------
     menu doesn't go all the way down
@@ -39,12 +44,3 @@ Cinnamon Edition
     I can’t put any applets at all to the panel, just remove the existing.
     menu makes cinnamon crash https://github.com/linuxmint/Cinnamon/issues/7021
     switch audio to HDMI, disconnect HDMI, it's not possible to switch back then
-
-MATE Edition
-------------
-
-Xfce Edition
-------------
-
-KDE Edition
------------

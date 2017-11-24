@@ -19,6 +19,7 @@ Can't reproduce
         Desklets in the Download option, the download failed with the following message “A problem occurred while trying to access the server, please try again later. Details: HTTP Error 400: Bad Request ”
     cinnamon:
         crash when restarting nm: https://blog.linuxmint.com/?p=3445#comment-137946
+        gnome-keyring-daemon delays session quit
     slick:
         running a live session under VirtualBox with two monitors defined. Playing with the login window settings, just to see what happens. Under “Optional pictures > Other monitors”, selected a different image than the background. Logoff. The second monitor shows the optional picture. The main monitor shows half of each picture.
     gdebi:
@@ -27,3 +28,6 @@ Can't reproduce
 Upstream
 --------
     goa: https://imgur.com/a/hCLZe
+    mate:
+        map in calendar applet is stretched
+        emblems/colors don't work https://github.com/mate-desktop/caja/issues/506

@@ -1,29 +1,10 @@
-Implemented
-===========
-
-    xfce:
-        upgrade xfce-terminal to 0.8.0
 
 Linux Mint 18.3
 ===============
 
-    Xfce
-        task manager 1.2
-        notifyd 0.3.6
-        dict 0.8
-        panel 4.12.1
-
     Release
         rel_notes
             Add instructions to upgrade to HWE Xorg 1.19
-            explain EFI boot violations
-                [PASS] secureboot OFF
-                [PASS] secureboot OFF, no network
-                [PASS] secureboot ON, no codecs
-                [FAIL] secureboot ON, no network -> violation
-                [FAIL] secureboot ON, codecs, turn off secureboot in installer -> violation
-                [FAIL] secureboot ON, codecs, don't turn off secureboot in installer -> violation
-            explain efibootmgr
 
 Maintenance
 ===========
@@ -44,6 +25,12 @@ Maintenance
 
     nemo:
         https://github.com/linuxmint/nemo/issues/1622
+
+    installation-guide:
+        Add section on root password
+
+    mintreport:
+        warn about root password if not set
 
 Linux Mint 19
 =============
@@ -82,6 +69,7 @@ Linux Mint 19
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
         notice to reboot the computer when appropriate
         purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
+        systray icon or infobar to notify user of new Mint versions
 
     system:
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps

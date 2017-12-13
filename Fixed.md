@@ -44,3 +44,8 @@ Cinnamon Edition
     I can’t put any applets at all to the panel, just remove the existing.
     menu makes cinnamon crash https://github.com/linuxmint/Cinnamon/issues/7021
     switch audio to HDMI, disconnect HDMI, it's not possible to switch back then
+
+Xfce Edition
+------------
+    Fix focus stealing prevention for whisker menu
+    Add xed, calculator, task manager to menu favorites.

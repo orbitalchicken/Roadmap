@@ -24,6 +24,7 @@ Can't reproduce
         running a live session under VirtualBox with two monitors defined. Playing with the login window settings, just to see what happens. Under “Optional pictures > Other monitors”, selected a different image than the background. Logoff. The second monitor shows the optional picture. The main monitor shows half of each picture.
     gdebi:
         can't install opera with gdebi -> debconf support is there in the terminal dropdown
+    Mint Backup crashes when trying to save to another drive other then the home drive. It will get to 13% and crash every time. If you save it to the home drive it works fine. 
 
 Upstream
 --------
@@ -31,3 +32,4 @@ Upstream
     mate:
         map in calendar applet is stretched
         emblems/colors don't work https://github.com/mate-desktop/caja/issues/506
+    Xfce the network manager applet pop up window from the indicator plugin is very small, uncomfortable. --> GTK menu popups.. known limitation in the toolkit.

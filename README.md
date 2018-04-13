@@ -1,4 +1,75 @@
 
+Implemented
+===========
+
+cinnamon
+    new combo options for spices settings (combo options, valid values)
+    sound applet:
+        can now also mute input on middle-click
+        next/previous track on right/left scroll
+        album art keep aspect ratio
+    sound volume can go all the way to 150%
+    better CSD windows support: titlebar click actions and button layouts
+    faster to map windows
+    better window animations
+    better window list thumbnails
+    notifications:
+        can be shown at the bottom of the screen
+        close button
+        no more fade-effect
+        no longer vanish when focusing caller app
+    ability to show desklets on top of windows thanks to show-desklets applet, or Super+Tab
+
+nemo:
+    symbolic icons
+    faster view render
+    stronger extension code
+    File search:
+        async search
+        simplify UI/features
+
+improvements to mint-y-icons
+    improved icons
+    backports from moka
+    crisper HiDPI with @2x icons
+
+xreader
+    recent view
+    preferences, optional toolbar buttons
+    remove annotations
+    epub support (thumbs fixed, allow to save document)
+    thumbnail zoom
+    smooth scrolling
+
+xed
+    refined look/feel with GTK 3.22 support
+    shortcuts window
+    new preference window (from xapps)
+
+mintsources:
+    PPA: show already installed packages
+
+mintupdate:
+    can be backported (locales ...)
+    shortcut window
+    timeshift integration replace levels/policy
+    kernel install rely on meta
+    automatic updates
+
+mintwelcome:
+    new layout
+
+pia-manager:
+    remembers username/password/gateway
+
+docs
+    translation guide
+    troubleshooting guide
+
+hidpi:
+    2x icons
+    pkexec instead of gksu
+
 Linux Mint 18.3
 ===============
 
@@ -9,25 +80,12 @@ Linux Mint 18.3
 Maintenance
 ===========
 
-    timeshift:
-        Add a polkit policy file so pkexec doesn't refer to Timeshift as /usr/bin/env
-
-    pia-manager:
-        Doesn't remember username (could remember password as well, if user agreed to it)
+    update cinnamon-translations
 
     mintinstall:
         continue to show window-progress even when app page isn't visible
         install flatpak deps via API to better report progress
         keyboard navigation issues
-
-    mintsources:
-        rewrite code with python3, review unicode and multithreading
-
-    nemo:
-        https://github.com/linuxmint/nemo/issues/1622
-
-    installation-guide:
-        Add section on root password
 
     mintreport:
         warn about root password if not set
@@ -35,14 +93,12 @@ Maintenance
 Linux Mint 19
 =============
 
+    cinnamon:
+        investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
+
     make the GOA frontend an Xapp (it should be cross-DE), disable buggy/irrelevant services
 
-    mint-y:
-        missing icon for input-method
-        add shutdown/logout/action icons
-
     hidpi
-        mintwelcome icons are blurry
         cinnamon startup apps icons are blurry
 
     redshift
@@ -50,6 +106,7 @@ Linux Mint 19
 
     Artwork
         would be nice if slick showed our release number
+        remove preload of cinnamon themes
 
     desktop-search:
         local files
@@ -60,7 +117,7 @@ Linux Mint 19
         translations
 
     mintwelcome:
-        UI revamp, guide user and hint at things he/she might want to do (codecs, popular settings, popular apps etc..)
+        write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
 
     mintreport:
         detect missing l10n packages and hint at mintlocale
@@ -76,14 +133,10 @@ Linux Mint 19
 
     cinnamon:
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
+        enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
 
     nemo:
         Skip GVFS when possible
-        File search:
-            full-text search
-            async search
-            simplify UI/features
-            ability to search string within files and open xed at line number
         Performance issues:
             File operations:
                 Mouse-cursor lag
@@ -108,7 +161,6 @@ Roadmap
     cinnamon:
         CSD: support mouse wheel speed? Evdev scrolling distance?
         menu keywords: looking for display in menu shows color first
-        consider: notifications stay on desktop until mouse is moved + a few secs
         preferences > keyboard > custom shortcuts. Used with a Spanish keyboard layout. Recorded: crtl+number and ctrl+Shift+number (e.g. ctrl+1 and ctrl+shift+1 = ctrl+!) they are recorded correctly. When using the shortcut the command defined in the shift combination is triggered with just ctrl+number (i.e. ctrl+1). The complete combination triggers nothing (i.e. ctrl+shift+1 does nothing) and the comand defined in ctrl+number can never be used. This worked in 17.3.
         track/troubleshoot shutdown sequence (user should know what is happening when shutdown isn't immediate)
         track/troubleshoot vsync, compositing, unredirected windows and policy
@@ -126,7 +178,6 @@ Roadmap
         add gnome-screenshot to panel, right-click and select "Take screenshot of a selected area". This runs gnome-screenshot -a.. it should work but it doesn't. Is it because of the panel launcher capturing the click event or something?
 
     xapps
-        add an option to blank other monitors when in full screen in xviewer/xreader/pix
         implement an app-sharing protocol to quickly move a document from one app to another
 
         gestures support:
@@ -162,34 +213,16 @@ Roadmap
 R&D
 ===
 
-    mintupdate:
-        prompt for reboot after kernel install?
-
-    nemo:
-        remove duplication between Eject and Safely Remove (for removable devices).
-
     system
         consider enabling recommends
 
     review logind.conf changes in:
         MATE
         Xfce
-        KDE
-
-    ubiquity:
-        inhibit sessions via libxapp (need to do it in KDE too)
 
     libindicator++?
         client-rendered icon/menu (ala libindicator)
         support all the features from GTK statusicon (tooltips, left/right clicks etc..)
-
-    use aptdaemon?
-        aptdaemon doesn't work in LMDE and is being abandoned upstream
-        in mintupdate, remove dep on synaptic, remove admin rights for checkAPT.py
-        in mintwelcome and codec menu entry, switch from apturl to aptdaemon
-        in mintsources, remove dep on synaptic
-        remove synaptic from default selection
-        remove synaptic from mintmenu's favorites
 
     network discovery:
         easy out-of-the-box interactions (messaging/presence/file-sharing) over the LAN
@@ -199,10 +232,3 @@ R&D
 
     HiDPI support:
         upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.
-        mint projects using GTK2: gksu
-
-LMDE 3
-======
-
-    gnome-calculator app title is "gnome-calculator"
-    live-installer should show partition labels

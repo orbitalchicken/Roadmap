@@ -127,6 +127,8 @@ Linux Mint 19
         notice to reboot the computer when appropriate
         purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
         systray icon or infobar to notify user of new Mint versions
+        new type to mark updates from other PPA/repos
+        switch type icons to symbolics
 
     system:
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
@@ -136,6 +138,7 @@ Linux Mint 19
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
 
     nemo:
+        rubber banding issue: https://github.com/linuxmint/nemo/issues/1261
         Skip GVFS when possible
         Performance issues:
             File operations:
@@ -148,6 +151,9 @@ Linux Mint 19
 
 Roadmap
 =======
+
+    mate:
+        switch mozo for menulibre
 
     mintreport:
         dmesg errors
@@ -206,7 +212,6 @@ Roadmap
 
     artwork:
         Tray icons are black with mint-y themes.
-        Mint-Y themes Shade option is unavailable
         mint-x-icons: network status icons have a dark background in panel 33px and bigger (sound icon looks wrong in 41px and bigger).
         mint-y The maximize/restore window control button doesn’t change visually between in maximized and restored state (default theme and Mint-Y-Dark)
 

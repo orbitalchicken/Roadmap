@@ -13,10 +13,6 @@ Linux Mint 19
         rtd security guide
         remove local user guide
 
-    codecs
-        assess gstreamer1.0-vaapi
-        assess gstreamer0.10-ffmpeg
-
     ubiquity
         set LC_TIME
         encrypted home dir (works, but won't unmount on logout)
@@ -102,6 +98,21 @@ Linux Mint 19
         migrate to pkexec
         make sure timeshift config is in place
         make sure mdm isn't in use anymore
+
+Linux Mint 19.1
+===============
+
+    artwork
+        add dark variant to Mint-Y
+
+    cinnamon
+        muffin to render titlebars with GTK themes (i.e. drop support for metacity themes)
+
+    mate
+        marco: add support for GTK dark variants
+
+    system
+        plymouth: center text, hide "None" value
 
 Roadmap
 =======

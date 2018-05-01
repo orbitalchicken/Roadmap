@@ -36,6 +36,10 @@ Linux Mint 19
             would be nice to show release number
             test user bg
             no guest accounts?
+        mint-y color variations
+        flatpak support for mint-x/y
+        tara backrounds package
+        tara backgrounds
 
     mate:
         caja is missing an open-as-root option
@@ -59,27 +63,23 @@ Linux Mint 19
         switch type icons to symbolics
         upgrader uses gksu
 
-    cinnamon:
+    cinnamon 3.8:
         notifications spam
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
         investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
-
-    nemo:
-        rubber banding issue: https://github.com/linuxmint/nemo/issues/1261
-        video thumbnails are blurry
+        crash on login in LMDE/Arch/Fedora: gdk_window_impl(), get_xid() (in cinnamon-tray-icon.c)
+        PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
+        update translations
+        nemo
+            rubber banding issue: https://github.com/linuxmint/nemo/issues/1261
+            video thumbnails are blurry
+            crash in LMDE: nemo list-view crashes all the time
 
     need_update:
         ubiquity
-        flatpak/ostree/etc…
-        sublime-text
         minecraft-installer
-        gstreamer0.10-ffmpeg
-        libhal1-flash
         whatsapp-desktop
         spotify-client
-        awf
-        libdvdcss-dev
-        libdvdcss2
         dropbox
         google-earth-pro-stable
         skypeforlinux
@@ -98,6 +98,13 @@ Linux Mint 19
         migrate to pkexec
         make sure timeshift config is in place
         make sure mdm isn't in use anymore
+
+LMDE 3
+======
+
+    Backports
+        flatpak/ostree/appstream?
+        meson/debhelper/dh_autoreconf?
 
 Linux Mint 19.1
 ===============

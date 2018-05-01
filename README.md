@@ -2,7 +2,6 @@ Linux Mint 19
 =============
 
     remove ntp/ntpdate in Cinnamon edition?
-    bring back cinnamon-dbg and nemo-preview, nemo-share, nemo-emblems
     [DONE] QT look and feel
     gist-paste still used in xapps/mintsystem
     boot time delay (35s or so for kernel phase)
@@ -67,7 +66,6 @@ Linux Mint 19
         notifications spam
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
         investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
-        crash on login in LMDE/Arch/Fedora: gdk_window_impl(), get_xid() (in cinnamon-tray-icon.c)
         PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
         update translations
         nemo

@@ -20,12 +20,6 @@ Linux Mint 19
         polkit message is ugly and not l10n
         pkexec doesn’t work when double-clicking from nemo
 
-    hidpi
-        cinnamon startup apps icons are blurry
-
-    redshift
-        doesn't die when logging out
-
     Artwork
         remove preload of cinnamon themes
         lack of borders without compositing
@@ -42,25 +36,21 @@ Linux Mint 19
 
     mate:
         caja is missing an open-as-root option
+        consider brisk menu
 
     mintwelcome:
         write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
+        fix icon in autostart file
 
     mintreport:
         detect missing l10n packages and hint at mintlocale
         warn about root password if not set
-
-    mintdrivers:
-        infobar uses a fullcolor warning icon (looks too small and ugly)
 
     mintupdate:
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
         notice to reboot the computer when appropriate
         purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
         systray icon or infobar to notify user of new Mint versions
-        new type to mark updates from other PPA/repos
-        switch type icons to symbolics
-        upgrader uses gksu
 
     cinnamon 3.8:
         notifications spam
@@ -68,10 +58,11 @@ Linux Mint 19
         investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
         PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
         update translations
+        ++show-desklets shortcut not in system settings, and default doesn't work
+        crash on filemonitor/gmenus https://github.com/linuxmint/Cinnamon/issues/5882
+        startup settings: add unit beside delay
         nemo
-            rubber banding issue: https://github.com/linuxmint/nemo/issues/1261
             video thumbnails are blurry
-            crash in LMDE: nemo list-view crashes all the time
 
     need_update:
         ubiquity
@@ -91,6 +82,10 @@ Linux Mint 19
         mailspring
         gnome-system-logs → gnome-logs ?    check MATE and XFCE
         gnome-calendar?
+        tomboy -> bijiben or gnote
+
+    HiDPI support:
+        upstream apps using GTK2: Gimp, Hexchat, Tomboy.
 
     release upgrade tool
         migrate to pkexec
@@ -219,9 +214,6 @@ R&D
     windows compatibility layer:
         seamless wine integration
 
-    HiDPI support:
-        upstream apps using GTK2: Gimp, Hexchat, VLC, Pidgin, Tomboy.
-
 
 Implemented
 ===========
@@ -279,6 +271,8 @@ mintupdate:
     timeshift integration replace levels/policy
     kernel install rely on meta
     automatic updates
+    new type to mark updates from other PPA/repos
+    switch type icons to symbolics
 
 mintwelcome:
     new layout
@@ -293,3 +287,6 @@ docs
 hidpi:
     2x icons
     pkexec instead of gksu
+
+software selection:
+    pidgin removed

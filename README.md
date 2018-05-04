@@ -53,14 +53,11 @@ Linux Mint 19
         systray icon or infobar to notify user of new Mint versions
 
     cinnamon 3.8:
-        notifications spam
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
         investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
         PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
         update translations
-        ++show-desklets shortcut not in system settings, and default doesn't work
         crash on filemonitor/gmenus https://github.com/linuxmint/Cinnamon/issues/5882
-        startup settings: add unit beside delay
         nemo
             video thumbnails are blurry
 
@@ -77,9 +74,6 @@ Linux Mint 19
     considered:
         gnome-usage
         gnome-todo
-        wavebok
-        hiri
-        mailspring
         gnome-system-logs → gnome-logs ?    check MATE and XFCE
         gnome-calendar?
         tomboy -> bijiben or gnote

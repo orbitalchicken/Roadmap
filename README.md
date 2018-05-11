@@ -11,6 +11,8 @@ Linux Mint 19
     gist-paste still used in xapps/mintsystem
     boot time delay (35s or so for kernel phase)
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
+    gnome-calendar: support Cinnamon GOA in preferences
+    gnome-logs: window doesn't fit in 1024x768, can't maximize
 
     help
         rtd dev guide
@@ -23,10 +25,9 @@ Linux Mint 19
 
     gdebi
         polkit message is ugly and not l10n
-        pkexec doesn’t work when double-clicking from nemo
+        pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
 
     Artwork
-        lack of borders without compositing
         mint-y color variations
         tara backgrounds
         LO is not themed
@@ -51,20 +52,6 @@ Linux Mint 19
         dropbox
         google-earth-pro-stable
         skypeforlinux
-
-    considered:
-        gnome-usage
-        gnome-todo
-        gnome-system-logs → gnome-logs ?    check MATE and XFCE
-        gnome-calendar
-            requires GOA (only for Cinnamon then..)
-            if added cinnamon calendar applet should use it
-            not fully l10n'd
-            in preferences -> tries to launch GNOME GOA, doesn't manage to launch Cinnamon GOA
-        tomboy -> bijiben or gnote
-
-    HiDPI support:
-        upstream apps using GTK2: Gimp, Hexchat, Tomboy.
 
     release upgrade tool
         migrate to pkexec
@@ -104,7 +91,8 @@ Linux Mint 19.1
         warn about root password if not set
 
     artwork
-        add dark variant to Mint-Y
+        add dark variant support to Mint-Y (needs fixes in Caja)
+        mint-y lack of borders without compositing
 
     cinnamon
         muffin to render titlebars with GTK themes (i.e. drop support for metacity themes)
@@ -204,6 +192,9 @@ Roadmap
 
     system:
         compiler optimization: consider optimizing compiled binaries for Cinnamon/Xapps
+
+    HiDPI support:
+        upstream apps using GTK2: Gimp, Hexchat, Tomboy.
 
 R&D
 ===
@@ -324,9 +315,12 @@ hidpi:
 software selection:
     pidgin removed
     ntp/ntpdate removed in Cinnamon (done by systemd)
+    gnome-calendar added
+    gnome-logs replaces gnome-system-logs in Cinnamon
 
 slick-greeter:
     user can specify which monitor to use
 
 xfce:
     whisker 2.1.7
+    added gnome-logs

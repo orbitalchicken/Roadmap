@@ -1,8 +1,13 @@
 Linux Mint 19
 =============
 
-    remove ntp/ntpdate in Cinnamon edition?
-    [DONE] QT look and feel
+    [DONE]
+        QT look and feel
+        slick: mate doesn't have grid
+        folder-color slow with mint-y icons
+        mintinstall: install Mint-Y flatpak when installing a flatpak
+        caja is missing an open-as-root option
+
     gist-paste still used in xapps/mintsystem
     boot time delay (35s or so for kernel phase)
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
@@ -21,43 +26,20 @@ Linux Mint 19
         pkexec doesn’t work when double-clicking from nemo
 
     Artwork
-        remove preload of cinnamon themes
         lack of borders without compositing
-        slick
-            mate doesn't have grid
-            choose between mint-x and mint-y
-            would be nice to show release number
-            test user bg
-            no guest accounts?
         mint-y color variations
-        flatpak support for mint-x/y
-        tara backrounds package
         tara backgrounds
-
-    mate:
-        caja is missing an open-as-root option
-        consider brisk menu
+        LO is not themed
 
     mintwelcome:
         write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
         fix icon in autostart file
-
-    mintreport:
-        detect missing l10n packages and hint at mintlocale
-        warn about root password if not set
-
-    mintupdate:
-        safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
-        notice to reboot the computer when appropriate
-        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
-        systray icon or infobar to notify user of new Mint versions
 
     cinnamon 3.8:
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
         investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
         PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
         update translations
-        crash on filemonitor/gmenus https://github.com/linuxmint/Cinnamon/issues/5882
         nemo
             video thumbnails are blurry
 
@@ -69,13 +51,16 @@ Linux Mint 19
         dropbox
         google-earth-pro-stable
         skypeforlinux
-        xfce4-whiskermenu-plugin
 
     considered:
         gnome-usage
         gnome-todo
         gnome-system-logs → gnome-logs ?    check MATE and XFCE
-        gnome-calendar?
+        gnome-calendar
+            requires GOA (only for Cinnamon then..)
+            if added cinnamon calendar applet should use it
+            not fully l10n'd
+            in preferences -> tries to launch GNOME GOA, doesn't manage to launch Cinnamon GOA
         tomboy -> bijiben or gnote
 
     HiDPI support:
@@ -85,9 +70,18 @@ Linux Mint 19
         migrate to pkexec
         make sure timeshift config is in place
         make sure mdm isn't in use anymore
+        suggestions:
+            Re-enable 3rd party repositories after upgrade. A backup of the APT sources gets stored in ~/Upgrade-Backup/APT but the tutorial didn't cover this or what to do with it (probably best to just find what the 3rd party repositories were and re-enable them manually from instructions on their website). Important for things like Google Chrome.
+            mintupgrade replaces user modified configuration files in /etc without prompting, leaving *.dpkg-old files behind. Perhaps cover this tidbit in the tutorial.
+
+    release notes
+        warning about guest accounts not being confined
+        warning about home directory encryption not unmounting on logout
 
 LMDE 3
 ======
+
+    lightdm asks username to be typed
 
     Backports
         flatpak/ostree/appstream?
@@ -95,6 +89,19 @@ LMDE 3
 
 Linux Mint 19.1
 ===============
+
+    mate:
+        consider brisk menu
+
+    mintupdate:
+        safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
+        notice to reboot the computer when appropriate
+        purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
+        systray icon or infobar to notify user of new Mint versions
+
+    mintreport:
+        detect missing l10n packages and hint at mintlocale
+        warn about root password if not set
 
     artwork
         add dark variant to Mint-Y
@@ -107,6 +114,12 @@ Linux Mint 19.1
 
     system
         plymouth: center text, hide "None" value
+
+    slick
+        would be nice to show release number
+
+    xapps/cinnamon/nemo:
+        don't ship icons with generic names in /usr/share/hicolor. All icons should be prefixed (cs-, xapp-, nemo-..etc..) so they don't conflict with other packages
 
 Roadmap
 =======
@@ -132,6 +145,7 @@ Roadmap
     implement an alarm clock
 
     cinnamon:
+        CSD/Cinnamon should set GtkSettings' gtk-print-preview-command to "xreader-previewer -u -p %s %f" (test by launching xreader from terminal, ask for a print preview and see error trying to launch evince on stdout)
         cinnamon slow to start after boot --> delay execution of appsys/docinfo until the DE is loaded
         CSD: support mouse wheel speed? Evdev scrolling distance?
         menu keywords: looking for display in menu shows color first
@@ -179,6 +193,9 @@ Roadmap
             vignettes should look better, and the same in all themes
             support prefer-dark-themes
             treeview in sidebar shows unecessary "(empty)" when dirs have no subdirs
+
+        xreader
+            xreader-previewer use full-color icons
 
     artwork:
         Tray icons are black with mint-y themes.
@@ -238,6 +255,9 @@ nemo:
         async search
         simplify UI/features
 
+artwork:
+    symbolic icons
+
 improvements to mint-y-icons
     improved icons
     backports from moka
@@ -255,6 +275,10 @@ xed
     refined look/feel with GTK 3.22 support
     shortcuts window
     new preference window (from xapps)
+    word completion plugin
+
+mint-tools:
+    transition to aptdaemon/pkexec and gtk3/python3 (for remaining ones)
 
 mintsources:
     PPA: show already installed packages
@@ -267,6 +291,21 @@ mintupdate:
     automatic updates
     new type to mark updates from other PPA/repos
     switch type icons to symbolics
+    mintupdate-tool -> mintupdate-cli
+    support for lowlatency kernels
+
+mintinstall:
+    python3
+    better keyboard navigation
+    better search (search in categories, async)
+    use internal cache for apt/flatpak with better abstraction (this can potentially be used in mintupdate at a later stage)
+    numerous UI improvements and animations
+    loading and activity indicators
+    old screenshots are cleaned up
+    flatpak support for .flatpakref/.flatpakrepo (can click from website etc..)
+
+mintstick:
+    exfat support
 
 mintwelcome:
     new layout
@@ -284,3 +323,10 @@ hidpi:
 
 software selection:
     pidgin removed
+    ntp/ntpdate removed in Cinnamon (done by systemd)
+
+slick-greeter:
+    user can specify which monitor to use
+
+xfce:
+    whisker 2.1.7

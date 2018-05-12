@@ -10,9 +10,8 @@ Linux Mint 19
     update installation slideshow
     APT: keyring isn't correct, warning shown on each update
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
-    mint-meta-codecs not installable
     should codecs install ttf-ms-fonts?
-    mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
+    [DONE] mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
 
     ubiquity
         set LC_TIME
@@ -317,6 +316,7 @@ mintinstall:
     loading and activity indicators
     old screenshots are cleaned up
     flatpak support for .flatpakref/.flatpakrepo (can click from website etc..)
+    flatpak size/version
 
 mintstick:
     exfat support

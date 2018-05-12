@@ -2,38 +2,38 @@ Linux Mint 19
 =============
 
     gist-paste still used in xapps/mintsystem
-    boot time delay (35s or so for kernel phase)
-    apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
     gnome-calendar: support Cinnamon GOA in preferences
     gnome-logs: window doesn't fit in 1024x768, can't maximize
     upgrade live grub version - 2.02.beta2-36ubuntu3.13 -> 2.02 (bionic)
     update translations
     update mint-mirrors
     update installation slideshow
-    should codecs install ttf-ms-fonts?
-    grub title is ubuntu post-install
     APT: keyring isn't correct, warning shown on each update
+    apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
     mint-meta-codecs not installable
+    should codecs install ttf-ms-fonts?
     mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
-
-    help
-        rtd dev guide
-        rtd security guide
 
     ubiquity
         set LC_TIME
         encrypted home dir (works, but won't unmount on logout)
+        grub title is ubuntu post-install
 
     gdebi
         polkit message is ugly and not l10n
         pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
 
     Artwork
-        mint-y:
+        icons:
+            color variations
+            thunar/caja icons don't match places
+            computer/trash/devices
+            mimetypes
+            grey-on-grey icons (many in cinnamon-settings)
+        gtk:
+            green ticks in ubiquity
             folder-color restore button
             color variations
-            green ticks in ubiquity
-            thunar/caja icons don't match places
         tara backgrounds
         LO is not themed
         mate:
@@ -42,7 +42,9 @@ Linux Mint 19
         CSD windows:
             yelp looks ugly (also check if 18.x patches need to reapply)
             simple-scan looks ugly
-
+        default look:
+            slightly taller/darker panel?
+            generic menu icon?
 
     mintwelcome:
         write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
@@ -69,6 +71,10 @@ Linux Mint 19
         dropbox
         google-earth-pro-stable
         skypeforlinux
+
+    help
+        rtd dev guide
+        rtd security guide
 
     release upgrade tool
         migrate to pkexec

@@ -1,18 +1,20 @@
 Linux Mint 19
 =============
 
-    [DONE]
-        QT look and feel
-        slick: mate doesn't have grid
-        folder-color slow with mint-y icons
-        mintinstall: install Mint-Y flatpak when installing a flatpak
-        caja is missing an open-as-root option
-
     gist-paste still used in xapps/mintsystem
     boot time delay (35s or so for kernel phase)
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
     gnome-calendar: support Cinnamon GOA in preferences
     gnome-logs: window doesn't fit in 1024x768, can't maximize
+    upgrade live grub version - 2.02.beta2-36ubuntu3.13 -> 2.02 (bionic)
+    update translations
+    update mint-mirrors
+    update installation slideshow
+    should codecs install ttf-ms-fonts?
+    grub title is ubuntu post-install
+    APT: keyring isn't correct, warning shown on each update
+    mint-meta-codecs not installable
+    mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
 
     help
         rtd dev guide
@@ -28,9 +30,20 @@ Linux Mint 19
         pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
 
     Artwork
-        mint-y color variations
+        mint-y:
+            folder-color restore button
+            color variations
+            green ticks in ubiquity
+            thunar/caja icons don't match places
         tara backgrounds
         LO is not themed
+        mate:
+            terminal has white bg
+            ugly white icons in caja
+        CSD windows:
+            yelp looks ugly (also check if 18.x patches need to reapply)
+            simple-scan looks ugly
+
 
     mintwelcome:
         write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
@@ -40,9 +53,14 @@ Linux Mint 19
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
         investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
         PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
-        update translations
         nemo
             video thumbnails are blurry
+
+    xfce:
+        no sound indicator
+
+    mate:
+        no sound indicator
 
     need_update:
         ubiquity

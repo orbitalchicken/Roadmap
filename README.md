@@ -19,7 +19,6 @@ Linux Mint 19
     help
         rtd dev guide
         rtd security guide
-        remove local user guide
 
     ubiquity
         set LC_TIME

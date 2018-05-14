@@ -1,22 +1,24 @@
 Linux Mint 19
 =============
 
+    done:
+        gnome-calendar: support Cinnamon GOA in preferences
+        gnome-logs: window doesn't fit in 1024x768, can't maximize
+        upgrade live grub version - 2.02.beta2-36ubuntu3.13 -> 2.02 (bionic)
+        mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
+
     gist-paste still used in xapps/mintsystem
-    gnome-calendar: support Cinnamon GOA in preferences
-    gnome-logs: window doesn't fit in 1024x768, can't maximize
-    upgrade live grub version - 2.02.beta2-36ubuntu3.13 -> 2.02 (bionic)
     update translations
     update mint-mirrors
     update installation slideshow
     APT: keyring isn't correct, warning shown on each update
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
-    should codecs install ttf-ms-fonts?
-    [DONE] mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
 
     ubiquity
         set LC_TIME
         encrypted home dir (works, but won't unmount on logout)
         grub title is ubuntu post-install
+        catch up on upstream commits
 
     gdebi
         polkit message is ugly and not l10n
@@ -63,7 +65,6 @@ Linux Mint 19
         no sound indicator
 
     need_update:
-        ubiquity
         minecraft-installer
         whatsapp-desktop
         spotify-client
@@ -340,6 +341,7 @@ software selection:
     ntp/ntpdate removed in Cinnamon (done by systemd)
     gnome-calendar added
     gnome-logs replaces gnome-system-logs in Cinnamon
+    codecs now include ms fonts
 
 slick-greeter:
     user can specify which monitor to use

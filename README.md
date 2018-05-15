@@ -7,18 +7,16 @@ Linux Mint 19
         upgrade live grub version - 2.02.beta2-36ubuntu3.13 -> 2.02 (bionic)
         mintinstall: dconf-editor lists mint-y twice in deps, produces an error message saying mint-y is already installed.
 
+    [DONE] rebase gnome-terminal on 3.28
     gist-paste still used in xapps/mintsystem
     update translations
-    update mint-mirrors
     update installation slideshow
-    APT: keyring isn't correct, warning shown on each update
+    [DONE] APT: keyring isn't correct, warning shown on each update
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
 
     ubiquity
-        set LC_TIME
-        encrypted home dir (works, but won't unmount on logout)
-        grub title is ubuntu post-install
-        catch up on upstream commits
+        [DONE] set LC_TIME
+        [DONE in Git] grub title is ubuntu post-install
 
     gdebi
         polkit message is ugly and not l10n
@@ -31,6 +29,7 @@ Linux Mint 19
             computer/trash/devices
             mimetypes
             grey-on-grey icons (many in cinnamon-settings)
+            file operations stop sign
         gtk:
             green ticks in ubiquity
             folder-color restore button
@@ -46,6 +45,11 @@ Linux Mint 19
         default look:
             slightly taller/darker panel?
             generic menu icon?
+
+    mate:
+        [DONE] gnome-terminal is installed
+        [DONE] mate-terminal defaults (bell, transparency, scrolling, bash colors..etc)
+        [DONE] mintmenu -> pidgin and gcalctool desktop in favorites
 
     mintwelcome:
         write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)

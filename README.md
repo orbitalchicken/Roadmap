@@ -6,54 +6,30 @@ Linux Mint 19
     update installation slideshow
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
 
-    ubiquity
-        OEM doesn't stop login sequence (revert commit)
-
     gdebi
-        polkit message is ugly and not l10n
         pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
 
     Artwork
         icons:
-            color variations
-            thunar/caja icons don't match places
-            computer/trash/devices
+            thunar/caja -> use app icon? (is folder appropriate. doesn't currently change color with color variation)
             mimetypes
+            actions (gtk-yes in ubiquity, white navigation in caja..etc)
             grey-on-grey icons (many in cinnamon-settings)
-            file operations stop sign (process-stop)
         gtk:
-            green ticks in ubiquity (gtk-yes)
             folder-color restore button
             color variations
-            mate-terminal color
         tara backgrounds
-        LO is not themed
-        mate:
-            terminal has white bg
-            ugly white icons in caja
-        CSD windows:
-            yelp looks ugly (also check if 18.x patches need to reapply)
-            simple-scan looks ugly
         default look:
             slightly taller/darker panel?
             generic menu icon?
 
     mintwelcome:
         write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
-        fix icon in autostart file
-
-    cinnamon 3.8:
-        enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
-        investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
-        PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
-        nemo
-            video thumbnails are blurry
 
     xfce:
-        no sound indicator
-
-    mate:
-        no sound indicator
+        no sound indicator (xfce4-pulseplugin needs to be added)
+        add notif and power plugins
+        icons for plugins
 
     need_update:
         minecraft-installer
@@ -109,8 +85,12 @@ Linux Mint 19.1
         mint-y lack of borders without compositing
 
     cinnamon
+        enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
         muffin to render titlebars with GTK themes (i.e. drop support for metacity themes)
-
+        investigate https://www.phoronix.com/scan.php?page=news_item&px=GNOME-Post-3.28-Perf-Work
+        PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
+        nemo
+            video thumbnails are blurry
     mate
         marco: add support for GTK dark variants
 

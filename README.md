@@ -3,18 +3,23 @@ Linux Mint 19
 
     gist-paste still used in xapps/mintsystem
     update translations
-    update installation slideshow
-    apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675
-
-    gdebi
-        pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
+    finish mintwelcome implementation
+    ubiquity release notes link isn't functional
+    gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
+    apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675 (happens after fresh install on installation of update with mintupdate)
+    [DONE] mintdrivers can't detect live media
+    [DONE] mintsources keys look awful
+    [DONE] mintsources can't add ppa
+    [DONE] add-ppa-repository doesn't work
+    [DONE in GIT] can't run mintdrivers from the settings
+    -- install adwaita-icon-theme-full (removes the auto-installation of humanity-icon-theme and ubuntu-mono)
 
     Artwork
         icons:
             thunar/caja -> use app icon? (is folder appropriate. doesn't currently change color with color variation)
-            mimetypes
             actions (gtk-yes in ubiquity, white navigation in caja..etc)
             grey-on-grey icons (many in cinnamon-settings)
+            wifi networks available notif is blue, but connected one is green
         gtk:
             folder-color restore button
             color variations
@@ -22,14 +27,15 @@ Linux Mint 19
         default look:
             slightly taller/darker panel?
             generic menu icon?
-
-    mintwelcome:
-        write content and hint at things users might want to do (codecs, popular settings, popular apps etc..)
+            cursor theme?
 
     xfce:
         no sound indicator (xfce4-pulseplugin needs to be added)
         add notif and power plugins
         icons for plugins
+
+RELEASE
+=======
 
     need_update:
         minecraft-installer
@@ -66,6 +72,11 @@ LMDE 3
 
 Linux Mint 19.1
 ===============
+
+    update installation slideshow
+        internet: flash/java
+        movies: DVD
+        connected: refs to ICQ..
 
     mate:
         consider brisk menu

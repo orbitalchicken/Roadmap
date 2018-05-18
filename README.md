@@ -3,14 +3,8 @@ Linux Mint 19
 
     gist-paste still used in xapps/mintsystem
     update translations
-    finish mintwelcome implementation
-    ubiquity release notes link isn't functional
     gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
     apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675 (happens after fresh install on installation of update with mintupdate)
-    [DONE] mintdrivers can't detect live media
-    [DONE] mintsources keys look awful
-    [DONE] mintsources can't add ppa
-    [DONE] add-ppa-repository doesn't work
     [DONE in GIT] can't run mintdrivers from the settings
     -- install adwaita-icon-theme-full (removes the auto-installation of humanity-icon-theme and ubuntu-mono)
 
@@ -20,9 +14,6 @@ Linux Mint 19
             actions (gtk-yes in ubiquity, white navigation in caja..etc)
             grey-on-grey icons (many in cinnamon-settings)
             wifi networks available notif is blue, but connected one is green
-        gtk:
-            folder-color restore button
-            color variations
         tara backgrounds
         default look:
             slightly taller/darker panel?
@@ -30,12 +21,16 @@ Linux Mint 19
             cursor theme?
 
     xfce:
-        no sound indicator (xfce4-pulseplugin needs to be added)
-        add notif and power plugins
         icons for plugins
 
 RELEASE
 =======
+
+    live repo
+    rel_notes
+    start page
+    new features page
+
 
     need_update:
         minecraft-installer
@@ -44,6 +39,8 @@ RELEASE
         dropbox
         google-earth-pro-stable
         skypeforlinux
+
+    folder-color-switcher: restore button doesn't look good
 
     help
         rtd dev guide
@@ -94,6 +91,7 @@ Linux Mint 19.1
     artwork
         add dark variant support to Mint-Y (needs fixes in Caja)
         mint-y lack of borders without compositing
+        gtk color variations
 
     cinnamon
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640

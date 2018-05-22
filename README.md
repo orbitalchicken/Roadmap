@@ -1,36 +1,8 @@
 Linux Mint 19
 =============
 
-    gist-paste still used in xapps/mintsystem
-    update translations
-    gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
-    apt sandboxing warning https://bugs.launchpad.net/ubuntu/+source/synaptic/+bug/1522675 (happens after fresh install on installation of update with mintupdate)
-    [DONE in GIT] can't run mintdrivers from the settings
-    -- install adwaita-icon-theme-full (removes the auto-installation of humanity-icon-theme and ubuntu-mono)
-
-    Artwork
-        icons:
-            thunar/caja -> use app icon? (is folder appropriate. doesn't currently change color with color variation)
-            actions (gtk-yes in ubiquity, white navigation in caja..etc)
-            grey-on-grey icons (many in cinnamon-settings)
-            wifi networks available notif is blue, but connected one is green
-        tara backgrounds
-        default look:
-            slightly taller/darker panel?
-            generic menu icon?
-            cursor theme?
-
-    xfce:
-        icons for plugins
-
-RELEASE
-=======
-
-    live repo
     rel_notes
-    start page
     new features page
-
 
     need_update:
         minecraft-installer
@@ -40,7 +12,15 @@ RELEASE
         google-earth-pro-stable
         skypeforlinux
 
-    folder-color-switcher: restore button doesn't look good
+    artwork:
+        grey-on-grey icons (many in cinnamon-settings)
+        wifi networks available notif is blue, but connected one is green
+        thunar/caja -> use app icon? (is folder appropriate. doesn't currently change color with color variation)
+        remove humanity-icon-theme and ubuntu-mono
+
+    gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
+    gist-paste still used in xapps/mintsystem
+    cinnamon settings startup, edit item with no delay, save -> python exception
 
     help
         rtd dev guide
@@ -57,6 +37,8 @@ RELEASE
     release notes
         warning about guest accounts not being confined
         warning about home directory encryption not unmounting on logout
+
+    update translations
 
 LMDE 3
 ======
@@ -92,6 +74,10 @@ Linux Mint 19.1
         add dark variant support to Mint-Y (needs fixes in Caja)
         mint-y lack of borders without compositing
         gtk color variations
+        cursor theme?
+        sound theme?
+        slightly taller/darker panel?
+        generic menu icon?
 
     cinnamon
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
@@ -251,6 +237,8 @@ nemo:
 
 artwork:
     symbolic icons
+    new backgrounds
+    new branded backgrounds
 
 improvements to mint-y-icons
     improved icons

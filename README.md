@@ -6,6 +6,8 @@ Linux Mint 19
 
     [DONE in GIT] gnome-terminal: restore context menu the way it was before
 
+    FF is missing l10n?
+
     need_update:
         minecraft-installer
         whatsapp-desktop

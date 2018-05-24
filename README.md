@@ -4,6 +4,8 @@ Linux Mint 19
     rel_notes
     new features page
 
+    [DONE in GIT] gnome-terminal: restore context menu the way it was before
+
     need_update:
         minecraft-installer
         whatsapp-desktop

@@ -6,7 +6,58 @@ Linux Mint 19
 
     [DONE in GIT] gnome-terminal: restore context menu the way it was before
 
-    FF is missing l10n?
+    QA:
+        FF is missing l10n? (related to mint-artwork-common?)
+        choosing encrypt install and overrite empty space crashes installation and leaves drive with no os on it.
+        cinnamon: "*.deb" files do no automatically associate with gdebi
+        vlc-l10n should be a dep of mint-meta-codecs
+
+        xfce:
+            f1 doesn't produce help content
+            Right clicking on a folder in Thunar and slecting open as root does nothing
+
+        MATE:
+            uses ntp? switch to chrony?
+            mintupdate keeps displaying "Do you want to switch to a local mirror?", click OK -> never comes up with the mirror-speed-test https://github.com/linuxmint/mintupdate/pull/358
+
+             Lock screen prompt takes about minute to show, and when I enter my password, it takes another minute to actually let me back to desktop. There are suspicious messages in journalctl:
+                mate-screensaver-dialog: pam_ecryptfs: seteuid error
+                gnome-keyring-daemon: couldn't initialize slot with master password: The password or PIN is incorrect
+
+            remove gnome-session-bin?
+
+            Launching mintdrivers from mintwelcome has the same missing label issue as in mintsources. However, running "pkexec mintdrivers" from terminal shows the label... weird.
+
+            Launching codecs installation from mintwelcome shows a dialog that has no parent window set. It's easily covered by other windows and isn't shown in tasklist.
+
+            Launching "install/remove languages" tool from mintlocale seems to keep the privileges (mate-polkit icon is shown in tray), it will ask for password next time anyway, when you close the install/remove dialog and launch it again. Weird.
+
+            After multimedia codecs are installed, the entry for it is not disabled/removed from menus. It's still there in mintmenu (or Alt-F1 menu).
+
+            System reports tool also still offers me to install the codecs, even though I did so from mintwelcome before.
+
+            When using Mint-X theme, there are visual glitches in mate-screensaver-preferences in the side pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking.
+
+            Compiz doesn't have MATE compatibility plugin enabled, so Alt-F1 and Alt-F2 shortcuts don't work as MATE users would expect. There's GNOME compatibility plugin enabled, I have no idea what it does. Maybe some support from gnome-flashback session?
+
+            There's some inconsistency between Compiz plugins enabled by mintdesktop and the ones enabled in CCSM.
+                When you first switch to Compiz in matedesktop, it creates /org/compiz/profles/mate/ in dconf and puts plugins-with-set-keys key there, filled with list of enabled plugins. But it doesn't create /org/compiz/profles/mate/plugins/ which is supposed to contain settings of enabled plugins.
+                When you launch CCSM after that, it has a different set of enabled plugins. For example, it doesn't have winrules plugin enabled at all. But CCSM actually creates /org/compiz/profles/mate/plugins/ in dconf and puts several subfolders there, which have the settings of currently enabled plugins. These plugins are the ones that are checked in CCSM itself, so there's no subfolder for winrules in dconf.
+                I'm quite confused because winrules plugin actually seems to work (even though it looks disabled): mintmenu doesn't have a gap between itself and panel. Or maybe that bug isn't reproducible anymore with Ubuntu 18.04 base? No idea.
+                For reference, old bug reports about the gap and the commits with the fixes for it:
+                https://github.com/linuxmint/mintmenu/issues/121
+                https://bugs.launchpad.net/compiz/+bug/1419346
+                https://github.com/linuxmint/mintdesktop/commit/1a443159029b5021e69f0b3e75e3c8967880f8b2
+                https://github.com/linuxmint/mintdesktop/commit/487257aa10eca92150a129246fd846b8d1800d35
+
+
+            intel-microcode is missing
+
+
+            mintdesktop still has a setting for terminal to enable fo
+
+
+
 
     need_update:
         minecraft-installer
@@ -69,6 +120,7 @@ Linux Mint 19.1
         notice to reboot the computer when appropriate
         purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
         systray icon or infobar to notify user of new Mint versions
+        remember sorting of updates
 
     mintreport:
         detect missing l10n packages and hint at mintlocale

@@ -4,60 +4,18 @@ Linux Mint 19
     rel_notes
     new features page
 
-    [DONE in GIT] gnome-terminal: restore context menu the way it was before
-
     QA:
-        FF is missing l10n? (related to mint-artwork-common?)
-        choosing encrypt install and overrite empty space crashes installation and leaves drive with no os on it.
-        cinnamon: "*.deb" files do no automatically associate with gdebi
-        vlc-l10n should be a dep of mint-meta-codecs
-
-        xfce:
-            f1 doesn't produce help content
-            Right clicking on a folder in Thunar and slecting open as root does nothing
-
         MATE:
-            uses ntp? switch to chrony?
-            mintupdate keeps displaying "Do you want to switch to a local mirror?", click OK -> never comes up with the mirror-speed-test https://github.com/linuxmint/mintupdate/pull/358
+            mint-y-icons: nm-applet has quite old icon (from GNOME 2 theme, also present in MATE), and sound icon is gray (looks bad on black panel).
 
-             Lock screen prompt takes about minute to show, and when I enter my password, it takes another minute to actually let me back to desktop. There are suspicious messages in journalctl:
+            Lock screen prompt takes about minute to show, and when I enter my password, it takes another minute to actually let me back to desktop. There are suspicious messages in journalctl:
                 mate-screensaver-dialog: pam_ecryptfs: seteuid error
                 gnome-keyring-daemon: couldn't initialize slot with master password: The password or PIN is incorrect
 
-            remove gnome-session-bin?
-
-            Launching mintdrivers from mintwelcome has the same missing label issue as in mintsources. However, running "pkexec mintdrivers" from terminal shows the label... weird.
-
-            Launching codecs installation from mintwelcome shows a dialog that has no parent window set. It's easily covered by other windows and isn't shown in tasklist.
-
-            Launching "install/remove languages" tool from mintlocale seems to keep the privileges (mate-polkit icon is shown in tray), it will ask for password next time anyway, when you close the install/remove dialog and launch it again. Weird.
-
-            After multimedia codecs are installed, the entry for it is not disabled/removed from menus. It's still there in mintmenu (or Alt-F1 menu).
-
-            System reports tool also still offers me to install the codecs, even though I did so from mintwelcome before.
-
-            When using Mint-X theme, there are visual glitches in mate-screensaver-preferences in the side pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking.
-
-            Compiz doesn't have MATE compatibility plugin enabled, so Alt-F1 and Alt-F2 shortcuts don't work as MATE users would expect. There's GNOME compatibility plugin enabled, I have no idea what it does. Maybe some support from gnome-flashback session?
-
-            There's some inconsistency between Compiz plugins enabled by mintdesktop and the ones enabled in CCSM.
-                When you first switch to Compiz in matedesktop, it creates /org/compiz/profles/mate/ in dconf and puts plugins-with-set-keys key there, filled with list of enabled plugins. But it doesn't create /org/compiz/profles/mate/plugins/ which is supposed to contain settings of enabled plugins.
-                When you launch CCSM after that, it has a different set of enabled plugins. For example, it doesn't have winrules plugin enabled at all. But CCSM actually creates /org/compiz/profles/mate/plugins/ in dconf and puts several subfolders there, which have the settings of currently enabled plugins. These plugins are the ones that are checked in CCSM itself, so there's no subfolder for winrules in dconf.
-                I'm quite confused because winrules plugin actually seems to work (even though it looks disabled): mintmenu doesn't have a gap between itself and panel. Or maybe that bug isn't reproducible anymore with Ubuntu 18.04 base? No idea.
-                For reference, old bug reports about the gap and the commits with the fixes for it:
-                https://github.com/linuxmint/mintmenu/issues/121
-                https://bugs.launchpad.net/compiz/+bug/1419346
-                https://github.com/linuxmint/mintdesktop/commit/1a443159029b5021e69f0b3e75e3c8967880f8b2
-                https://github.com/linuxmint/mintdesktop/commit/487257aa10eca92150a129246fd846b8d1800d35
-
-
-            intel-microcode is missing
-
-
-            mintdesktop still has a setting for terminal to enable fo
-
-
-
+            Ubuntu MATE 18.04 has indicators enabled by default. Because of indicator-power presence, mate-power-manager now has its tray icon disabled by default. Not a problem, but it's also not possible to set it in mate-power-preferences anymore (though still possible via dconf-editor). I think you might want to revert this patching.
+                https://salsa.debian.org/debian-mate-team/mate-power-manager/commit/c97b38c42f3d792f785be35eb026deb7fde4f2d7
+                https://salsa.debian.org/debian-mate-team/mate-power-manager/commit/ec4c7b4589be76fa4afa2454424de40caf95d5bf
+                https://salsa.debian.org/debian-mate-team/mate-power-manager/commit/d0cbb8fb57716b6be89eddef6d3c0d4767f4e0c3
 
     need_update:
         minecraft-installer
@@ -70,16 +28,13 @@ Linux Mint 19
     artwork:
         grey-on-grey icons (many in cinnamon-settings)
         wifi networks available notif is blue, but connected one is green
-        thunar/caja -> use app icon? (is folder appropriate. doesn't currently change color with color variation)
         remove humanity-icon-theme and ubuntu-mono
 
     gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
+    intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
+    mint-x: visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
     gist-paste still used in xapps/mintsystem
     cinnamon settings startup, edit item with no delay, save -> python exception
-
-    help
-        rtd dev guide
-        rtd security guide
 
     release upgrade tool
         migrate to pkexec
@@ -106,6 +61,10 @@ LMDE 3
 
 Linux Mint 19.1
 ===============
+
+    help
+        rtd dev guide
+        rtd security guide
 
     update installation slideshow
         internet: flash/java

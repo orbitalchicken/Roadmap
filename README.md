@@ -4,19 +4,6 @@ Linux Mint 19
     rel_notes
     new features page
 
-    QA:
-        MATE:
-            mint-y-icons: nm-applet has quite old icon (from GNOME 2 theme, also present in MATE), and sound icon is gray (looks bad on black panel).
-
-            Lock screen prompt takes about minute to show, and when I enter my password, it takes another minute to actually let me back to desktop. There are suspicious messages in journalctl:
-                mate-screensaver-dialog: pam_ecryptfs: seteuid error
-                gnome-keyring-daemon: couldn't initialize slot with master password: The password or PIN is incorrect
-
-            Ubuntu MATE 18.04 has indicators enabled by default. Because of indicator-power presence, mate-power-manager now has its tray icon disabled by default. Not a problem, but it's also not possible to set it in mate-power-preferences anymore (though still possible via dconf-editor). I think you might want to revert this patching.
-                https://salsa.debian.org/debian-mate-team/mate-power-manager/commit/c97b38c42f3d792f785be35eb026deb7fde4f2d7
-                https://salsa.debian.org/debian-mate-team/mate-power-manager/commit/ec4c7b4589be76fa4afa2454424de40caf95d5bf
-                https://salsa.debian.org/debian-mate-team/mate-power-manager/commit/d0cbb8fb57716b6be89eddef6d3c0d4767f4e0c3
-
     need_update:
         minecraft-installer
         whatsapp-desktop
@@ -27,6 +14,8 @@ Linux Mint 19
 
     artwork:
         grey-on-grey icons (many in cinnamon-settings)
+        improve status icons: nm-signal-*, volume-audio-*, power icons
+        xfce has two notifs when changing volume and one is missing an icon
         wifi networks available notif is blue, but connected one is green
         remove humanity-icon-theme and ubuntu-mono
 
@@ -223,6 +212,9 @@ R&D
 
 Implemented
 ===========
+
+mate
+    HiDPI
 
 cinnamon
     new combo options for spices settings (combo options, valid values)

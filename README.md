@@ -1,9 +1,6 @@
 Linux Mint 19
 =============
 
-    rel_notes
-    new features page
-
     need_update:
         minecraft-installer
         whatsapp-desktop
@@ -18,6 +15,22 @@ Linux Mint 19
         xfce has two notifs when changing volume and one is missing an icon
         wifi networks available notif is blue, but connected one is green
         remove humanity-icon-theme and ubuntu-mono
+        mintwelcome icon
+        .deb icon
+
+    mate:
+        hide compton menuitem
+        mintlocale im has no window icon
+        mintlocale has no window icon
+        hidpi:
+            blurry titlebar buttons
+            caja sidebar too wide
+            grey tooltips
+
+    csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
+
+    blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
+    xfce: remove xfburn
 
     gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
     intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
@@ -33,11 +46,8 @@ Linux Mint 19
             Re-enable 3rd party repositories after upgrade. A backup of the APT sources gets stored in ~/Upgrade-Backup/APT but the tutorial didn't cover this or what to do with it (probably best to just find what the 3rd party repositories were and re-enable them manually from instructions on their website). Important for things like Google Chrome.
             mintupgrade replaces user modified configuration files in /etc without prompting, leaving *.dpkg-old files behind. Perhaps cover this tidbit in the tutorial.
 
-    release notes
-        warning about guest accounts not being confined
-        warning about home directory encryption not unmounting on logout
-
     update translations
+    update installation guide translations
 
 LMDE 3
 ======
@@ -82,6 +92,7 @@ Linux Mint 19.1
         sound theme?
         slightly taller/darker panel?
         generic menu icon?
+        bump resolution of branded backgrounds
 
     cinnamon
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
@@ -208,119 +219,3 @@ R&D
 
     windows compatibility layer:
         seamless wine integration
-
-
-Implemented
-===========
-
-mate
-    HiDPI
-
-cinnamon
-    new combo options for spices settings (combo options, valid values)
-    sound applet:
-        can now also mute input on middle-click
-        next/previous track on right/left scroll
-        album art keep aspect ratio
-    sound volume can go all the way to 150%
-    better CSD windows support: titlebar click actions and button layouts
-    faster to map windows
-    better window animations
-    better window list thumbnails
-    notifications:
-        can be shown at the bottom of the screen
-        close button
-        no more fade-effect
-        no longer vanish when focusing caller app
-    ability to show desklets on top of windows thanks to show-desklets applet, or Super+Tab
-
-nemo:
-    symbolic icons
-    faster view render
-    stronger extension code
-    File search:
-        async search
-        simplify UI/features
-
-artwork:
-    symbolic icons
-    new backgrounds
-    new branded backgrounds
-
-improvements to mint-y-icons
-    improved icons
-    backports from moka
-    crisper HiDPI with @2x icons
-
-xreader
-    recent view
-    preferences, optional toolbar buttons
-    remove annotations
-    epub support (thumbs fixed, allow to save document)
-    thumbnail zoom
-    smooth scrolling
-
-xed
-    refined look/feel with GTK 3.22 support
-    shortcuts window
-    new preference window (from xapps)
-    word completion plugin
-
-mint-tools:
-    transition to aptdaemon/pkexec and gtk3/python3 (for remaining ones)
-
-mintsources:
-    PPA: show already installed packages
-
-mintupdate:
-    can be backported (locales ...)
-    shortcut window
-    timeshift integration replace levels/policy
-    kernel install rely on meta
-    automatic updates
-    new type to mark updates from other PPA/repos
-    switch type icons to symbolics
-    mintupdate-tool -> mintupdate-cli
-    support for lowlatency kernels
-
-mintinstall:
-    python3
-    better keyboard navigation
-    better search (search in categories, async)
-    use internal cache for apt/flatpak with better abstraction (this can potentially be used in mintupdate at a later stage)
-    numerous UI improvements and animations
-    loading and activity indicators
-    old screenshots are cleaned up
-    flatpak support for .flatpakref/.flatpakrepo (can click from website etc..)
-    flatpak size/version
-
-mintstick:
-    exfat support
-
-mintwelcome:
-    new layout
-
-pia-manager:
-    remembers username/password/gateway
-
-docs
-    translation guide
-    troubleshooting guide
-
-hidpi:
-    2x icons
-    pkexec instead of gksu
-
-software selection:
-    pidgin removed
-    ntp/ntpdate removed in Cinnamon (done by systemd)
-    gnome-calendar added
-    gnome-logs replaces gnome-system-logs in Cinnamon
-    codecs now include ms fonts
-
-slick-greeter:
-    user can specify which monitor to use
-
-xfce:
-    whisker 2.1.7
-    added gnome-logs

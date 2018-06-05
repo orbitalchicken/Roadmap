@@ -9,6 +9,10 @@ Linux Mint 19
         google-earth-pro-stable
         skypeforlinux
 
+
+    cinnamon fallback -> muffin_no_shadows=1
+    ia32-libs: depends on `libesd0:i386` which is gone
+
     artwork:
         grey-on-grey icons (many in cinnamon-settings)
         improve status icons: nm-signal-*, volume-audio-*, power icons

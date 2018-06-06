@@ -27,7 +27,6 @@ mate:
     - grey tooltips
 
 - cinnamon fallback -> muffin_no_shadows=1
-- ia32-libs: depends on libesd0:i386 which is gone
 - csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
 - blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
 - xfce: remove xfburn

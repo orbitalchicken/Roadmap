@@ -13,6 +13,7 @@ artwork:
 
 - The fortune command says 'no fortunes found' -> leftover, fortune is now removed.
 - gdebi doesn't install packages unless it's run from the terminal
+- ia32-libs: depends on libesd0:i386 which is gone
 
 Cinnamon Edition
 ----------------

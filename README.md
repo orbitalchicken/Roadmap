@@ -17,7 +17,6 @@ Linux Mint 19
         grey-on-grey icons (many in cinnamon-settings)
         improve status icons: nm-signal-*, volume-audio-*, power icons
         xfce has two notifs when changing volume and one is missing an icon
-        wifi networks available notif is blue, but connected one is green
         remove humanity-icon-theme and ubuntu-mono
         mintwelcome icon
         .deb icon
@@ -28,7 +27,6 @@ Linux Mint 19
         mintlocale has no window icon
         hidpi:
             blurry titlebar buttons
-            caja sidebar too wide
             grey tooltips
 
     csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
@@ -36,11 +34,9 @@ Linux Mint 19
     blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
     xfce: remove xfburn
 
-    gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
     intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
     mint-x: visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
     gist-paste still used in xapps/mintsystem
-    cinnamon settings startup, edit item with no delay, save -> python exception
 
     release upgrade tool
         migrate to pkexec
@@ -77,12 +73,18 @@ Linux Mint 19.1
     mate:
         consider brisk menu
 
+    mintwelcome:
+        add firewall enablement to welcome app?
+
     mintupdate:
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
         notice to reboot the computer when appropriate
         purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
         systray icon or infobar to notify user of new Mint versions
         remember sorting of updates
+        have an option for update manager to initiate a timeshift backup prior to applying upgrades?
+
+    port mintstick to python3
 
     mintreport:
         detect missing l10n packages and hint at mintlocale

@@ -3,16 +3,12 @@ New bug reports in Linux Mint 19 BETA
 All editions
 ------------
 
-thunderbird icon isn't the same as its flatpak
 Shutdown takes forever: “A stop job is running for Cryptography Setup for cryptoswap1” takes over 5 minutes
 love the new icons, but for video and subtitle icons
 systemd-udev cause high cpu: https://bugs.launchpad.net/ubuntu/+source/udev/+bug/1767968?comments=all
 Firefox bookmarks don’t use the folder color picked in the Cinnamon theme setting.
 Software Center does only wait and not warn if synaptic is open.
-gdebi crashes
 wine doesn't work (upstream issue in 18.04)
-suggestion – add firewall enablement to welcome app.
-suggestion (for a future release) – have an option for update manager to initiate a timeshift backup prior to applying upgrades.
 uninstalling flatpak from menu doesn't work (tried with VLC)
 ms ttf fonts says it is installed but when i go to fonts to use arial black there are no fonts i fixed this by uninstalling from software manager reboot and reinstalling them then reboot then it works i like my arial black and 1 of the few reasons i use lm verses all other distros
 mintupdate is still conflicting with VM guest pkgs... installing them removes mintupdate
@@ -23,28 +19,12 @@ When installing to internal 16GB SSD and with option “Something else” using 
 mintupdate: On first time use, the preferences section “jumps” on the screen.
 The quick filter is missing in synaptic.
 
-mint-y:
-	with mint-y-darker, open an additional pane (F3) in nemo, select a folder in the left page, click in the right pane. The selected folder in the left pane is white on grey, almost invisible.
-
-mint-x:
-	no icon when the update manager cannot connect to the server, no icons in Online accounts > Information about Gnome online accounts -> Gnome Contacts, Gnome Documents, Gnome Maps and Gnome Photos
-
+[FIXED] gdebi: pkexec doesn’t work when double-clicking from nemo https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1760910 https://bugs.launchpad.net/ubuntu/+source/gdebi/+bug/1749728
 What about Java software? It is not being installed by default during the installation (even if I selected to install additional 3-party software)? Anyway after manually installing the openjdk-8-jre or openjdk-11-jre, LibreOffice is not working properly (in the LO preferences Java is visible…) – mainly LibreOffice Base (creating database is not possible)… Could you please check this from your side?
 
 i can not read video like mpeg or mp4 (with ubuntu mate 18.04 live or xubuntu 18.04 live, i can, now mp3 and mp4 codec is public domain, that’s why, no need to install extra codec to read those ones 
 
-auto-login from installer doesn't work?
-
 When using RTL language (in this case Hebrew) in the right click menu on the window header the icons and check boxes go over the text. https://imgur.com/a/fISEJJA
-
-I found a bug while trying to connect the gnome calendar to google.
-	Steps to reproduce :
-	1. Open calendar
-	2. select calendar settings from the icon on the right of search
-	3. Click on google account in the online accounts section
-	4. Click on google in the online accounts window that opens up
-	Expected behavior : it takes you to google’s login page
-	Actual behavior : it opens a window with nothing in it (not even sure if it’s a browser window)
 
 Boot hangs 1 minute with “gave up waiting for suspend/resume device”
 	there seems to be a wrong uuid for resume in initramfs.
@@ -74,7 +54,8 @@ I can not log in with my ubuntu one account in “online accounts” in system s
 I found a little bug in the Desklet “Analog Chronometer”. I can not call the settings when I have downloaded and switched on the Chronometer.
  Two Skype icons are displayed on the panel near the time.
 Installing Pysolfc via Synaptic and also Software Manager. No Games directory added to the menu. Though game worked from within a terminal. Restarting the computer the Menu was properly populated.
-When I edit an application in “Startup Applications”, and it has a delay, the seconds unit “s” disappears.
+[FIXED IN GIT] When I edit an application in “Startup Applications”, and it has a delay, the seconds unit “s” disappears.
+[FIXED IN GIT] cinnamon settings startup, edit item with no delay, save -> python exception
 Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
 Some applications that I installed through additional ppa (like 4kvideodownloader), to open through the menu, I need to restart the computer. Other applications that I installed through additional ppa (like qbittorrent and woeusb) work without having to restart.
 The Telegram icon in the bottom right bar is too small, like Dropbox icon. But it works well.
@@ -85,7 +66,6 @@ MATE Edition - last processed comment: June 5, 2018 at 12:57 pm
 ---------------------------------------------------------------
 
 Folder color yellow is missing (Mint-Y)
-Sticky Notes double click doesnt highlight
 Windows Manager Metacity+Compton puts red line around app window
 provide network/sound panel icons
 preferred apps: caja, onboard, orca aren't selected

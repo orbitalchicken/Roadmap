@@ -1,62 +1,57 @@
 Linux Mint 19
 =============
 
-    need_update:
-        minecraft-installer
-        whatsapp-desktop
-        spotify-client
-        dropbox
-        google-earth-pro-stable
-        skypeforlinux
+need_update:
+  - minecraft-installer
+  - whatsapp-desktop
+  - spotify-client
+  - dropbox
+  - google-earth-pro-stable
+  - skypeforlinux
 
+artwork:
+  - grey-on-grey icons (many in cinnamon-settings)
+  - improve status icons: nm-signal-, volume-audio-, power icons
+  - xfce has two notifs when changing volume and one is missing an icon
+  - remove humanity-icon-theme and ubuntu-mono
+  - mintwelcome icon
+  - .deb icon
+  - mint-x: visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
 
-    cinnamon fallback -> muffin_no_shadows=1
-    ia32-libs: depends on `libesd0:i386` which is gone
+mate:
+  - hide compton menuitem
+  - mintlocale im has no window icon
+  - mintlocale has no window icon
+  - hidpi:
+    - blurry titlebar buttons
+    - grey tooltips
 
-    artwork:
-        grey-on-grey icons (many in cinnamon-settings)
-        improve status icons: nm-signal-*, volume-audio-*, power icons
-        xfce has two notifs when changing volume and one is missing an icon
-        remove humanity-icon-theme and ubuntu-mono
-        mintwelcome icon
-        .deb icon
+- cinnamon fallback -> muffin_no_shadows=1
+- ia32-libs: depends on libesd0:i386 which is gone
+- csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
+- blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
+- xfce: remove xfburn
+- intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
+- gist-paste still used in xapps/mintsystem
+- update translations
+- update installation guide translations
 
-    mate:
-        hide compton menuitem
-        mintlocale im has no window icon
-        mintlocale has no window icon
-        hidpi:
-            blurry titlebar buttons
-            grey tooltips
-
-    csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
-
-    blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
-    xfce: remove xfburn
-
-    intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
-    mint-x: visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
-    gist-paste still used in xapps/mintsystem
-
-    release upgrade tool
-        migrate to pkexec
-        make sure timeshift config is in place
-        make sure mdm isn't in use anymore
-        suggestions:
-            Re-enable 3rd party repositories after upgrade. A backup of the APT sources gets stored in ~/Upgrade-Backup/APT but the tutorial didn't cover this or what to do with it (probably best to just find what the 3rd party repositories were and re-enable them manually from instructions on their website). Important for things like Google Chrome.
-            mintupgrade replaces user modified configuration files in /etc without prompting, leaving *.dpkg-old files behind. Perhaps cover this tidbit in the tutorial.
-
-    update translations
-    update installation guide translations
+release upgrade tool:
+  - migrate to pkexec
+  - make sure timeshift config is in place
+  - make sure mdm isn't in use anymore
+  - suggestions:
+    - Re-enable 3rd party repositories after upgrade. A backup of the APT sources gets stored in ./Upgrade-Backup/APT but the tutorial didn't cover this or what to do with it (probably best to just find what the 3rd party repositories were and re-enable them manually from instructions on their website). Important for things like Google Chrome.
+    - mintupgrade replaces user modified configuration files in /etc without prompting, leaving .dpkg-old files behind. Perhaps cover this tidbit in the tutorial.
 
 LMDE 3
 ======
 
-    lightdm asks username to be typed
+- lightdm asks username to be typed
 
-    Backports
-        flatpak/ostree/appstream?
-        meson/debhelper/dh_autoreconf?
+backports:
+  - flatpak/ostree/appstream?
+  - meson/debhelper/dh_autoreconf?
 
 Linux Mint 19.1
 ===============

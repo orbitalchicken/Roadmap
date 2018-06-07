@@ -34,9 +34,7 @@ base:
 		https://adventuresofwondergeek.wordpress.com/2016/03/16/safer-online-banking-for-windows/
 
 package selection:
-  - The quick filter is missing in synaptic.
-  - What about Java software? It is not being installed by default during the installation (even if I selected to install additional 3-party software)? Anyway after manually installing the openjdk-8-jre or openjdk-11-jre, LibreOffice is not working properly (in the LO preferences Java is visible…) – mainly LibreOffice Base (creating database is not possible)… Could you please check this from your side?
-  - i can not read video like mpeg or mp4 (with ubuntu mate 18.04 live or xubuntu 18.04 live, i can, now mp3 and mp4 codec is public domain, that’s why, no need to install extra codec to read those ones 
+  - [FIXED] libreoffice-base can't open databases
 
 
 Cinnamon Edition - last processed comment: June 5, 2018 at 5:18 pm
@@ -49,9 +47,7 @@ artwork:
   - cinnamon themes hardcode the font
 
 settings:
-  - backgrounds: On the left pane, you can’t select “Pictures” folder by clicking, you need to use the keyboard – Down key..
   - power: No way to set brightness for battery VS AC power.
-  - menu-editor: when adding new Menu items to the Menu, The Icon’s won’t save.
   - desklets: I found a little bug in the Desklet “Analog Chronometer”. I can not call the settings when I have downloaded and switched on the Chronometer.
   - ccc: After adding a color profile, gnome-color-manager won’t auto install when I click “view details.” I have to install it manually in the terminal, software manager or synaptic.
 

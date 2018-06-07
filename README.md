@@ -12,19 +12,14 @@ need_update:
 artwork:
   - grey-on-grey icons (many in cinnamon-settings)
   - improve status icons: nm-signal-, volume-audio-, power icons
-  - xfce has two notifs when changing volume and one is missing an icon
   - remove humanity-icon-theme and ubuntu-mono
   - mintwelcome icon
   - .deb icon
-  - mint-x: visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
 
 mate:
   - hide compton menuitem
   - mintlocale im has no window icon
   - mintlocale has no window icon
-  - hidpi:
-    - blurry titlebar buttons
-    - grey tooltips
 
 - cinnamon fallback -> muffin_no_shadows=1
 - csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209

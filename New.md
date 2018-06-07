@@ -13,7 +13,6 @@ mint tools:
   - mintupdate: conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
   - mintupdate: On first time use, the preferences section “jumps” on the screen.
   - mint-common: uninstalling flatpak from menu doesn't work (tried with VLC)
-  - mintdrivers: The text in “Authenticate” window that comes up when i click on Driver Manager is not fully translated. I’m using it with PT-BR language. The only thing that is translated is the bold text that appears above the explanation text. Buttons, window title, explanation text and “Password” are not.
 
 ubiquity:
   - When installing to internal 16GB SSD and with option “Something else” using the whole SSD for mountpoint root, installation always hangs in both XFCE 64 and Cinnamon 64. Ubuntu 18.04 installer with same options has no problem.
@@ -32,9 +31,6 @@ base:
   - Using a live boot session in VirtualBox no longer allows copy-and-paste between the host and the Linux Mint live boot session, and resizing the VirtualBox window for that session does not resize Linux Mint within that session. Version 18.2 and several prior versions would do both copy-and-paste (to and from the host) and resize the VirtualBox session window easily.
 		I wrote up how and why to use this feature in a blog post a couple of years ago, and it has been quite helpful for myself and my readers.
 		https://adventuresofwondergeek.wordpress.com/2016/03/16/safer-online-banking-for-windows/
-
-package selection:
-  - [FIXED] libreoffice-base can't open databases
 
 
 Cinnamon Edition - last processed comment: June 5, 2018 at 5:18 pm
@@ -81,9 +77,7 @@ MATE Edition - last processed comment: June 5, 2018 at 12:57 pm
 
 - Windows Manager Metacity+Compton puts red line around app window
 - provide network/sound panel icons
-- preferred apps: caja, onboard, orca aren't selected
 - ubiquity: click rel notes, nothing happens
-- update manager toolbar is too big
 - When installing beta 19 mate, from a live USB thumb drive version, my screen goes BLANK during the install to the hard drive in spite of the fact that I had turned off ALL screensaver and power management features on the live USB session. Once I got the install done to the hard drive and again turned off the screensaver and power management the problem did not repeat.
 
 Xfce Edition - last processed comment: June 5, 2018 at 9:42 am

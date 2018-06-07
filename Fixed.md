@@ -15,6 +15,7 @@ artwork:
 - The fortune command says 'no fortunes found' -> leftover, fortune is now removed.
 - gdebi doesn't install packages unless it's run from the terminal
 - ia32-libs: depends on libesd0:i386 which is gone
+- libreoffice-base can't open databases
 
 Cinnamon Edition
 ----------------
@@ -27,6 +28,11 @@ MATE Edition
 hidpi:
   - blurry titlebar buttons
   - grey tooltips
+
+- mintlocale im has no window icon
+- mintlocale has no window icon
+- hide compton menuitem
+- onboard isn't selected as a preferred apps
 
 Xfce Edition
 ------------

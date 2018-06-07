@@ -16,11 +16,6 @@ artwork:
   - mintwelcome icon
   - .deb icon
 
-mate:
-  - hide compton menuitem
-  - mintlocale im has no window icon
-  - mintlocale has no window icon
-
 - cinnamon fallback -> muffin_no_shadows=1
 - csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
 - blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults

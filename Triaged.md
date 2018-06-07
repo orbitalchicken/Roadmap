@@ -9,6 +9,8 @@ Not a bug
 
 - update manager toolbar is too big
 
+- Installing in VirtualBox give error “Running in software rendering mode” -> there's no acceleration by default in virtualbox, this is Cinnamon warning the user about this.
+
 Outside of the scope
 --------------------
 
@@ -21,15 +23,22 @@ cinnamon:
   - backgrounds: On the left pane, you can’t select “Pictures” folder by clicking, you need to use the keyboard – Down key..
   - cinnamon: I disabled the option to block the screen in every case. This works when the screensaver is activated automatically by time. But when I close the lid, It blocks the screen and asks the password when I open.
   - menu-editor: when adding new Menu items to the Menu, The Icon’s won’t save.
+  - After log-out & log-in back, the update manager icon stays there but nothing happens when you left or right click on it..
+  - On Vivaldi when I full screen a youtube video, the dashboard always remains displayed. Same on Firefox.
 
 - mint-x: no icon when the update manager cannot connect to the server
 - auto-login from installer doesn't work?
 - can't access Google login page from GOA
 - When trying to start xed as root it takes approx. 20 seconds for the xed window to display while displays it at once.
+- can’t add any PPA (Xfce)
 
 Upstream
 --------
 
 mate:
-    - Sticky Notes double click doesnt highlight https://github.com/mate-desktop/mate-applets/issues/260
-    - preferred apps: caja, orca aren't selected
+  - Sticky Notes double click doesnt highlight https://github.com/mate-desktop/mate-applets/issues/260
+  - preferred apps: caja, orca aren't selected
+
+cinnamon:
+  - The dropbox icon in the bottom right bar is too small. -> for dropbox to fix
+  - The Telegram icon in the bottom right bar is too small. -> for telegram to fix

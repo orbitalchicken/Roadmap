@@ -37,6 +37,8 @@ hidpi:
 Xfce Edition
 ------------
 
+- xfburn removed
+- mintdesktop shows a sidepanel with only one item in it
 
 Manual steps for upgraders
 --------------------------

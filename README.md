@@ -5,9 +5,7 @@ need_update:
   - minecraft-installer
   - whatsapp-desktop
   - spotify-client
-  - dropbox
   - google-earth-pro-stable
-  - skypeforlinux
 
 artwork:
   - grey-on-grey icons (many in cinnamon-settings)
@@ -16,10 +14,8 @@ artwork:
   - mintwelcome icon
   - .deb icon
 
-- cinnamon fallback -> muffin_no_shadows=1
 - csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
 - blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
-- xfce: remove xfburn
 - intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
 - gist-paste still used in xapps/mintsystem
 - update translations

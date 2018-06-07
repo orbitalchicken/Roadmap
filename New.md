@@ -5,8 +5,9 @@ All editions
 
 artwork:
   - Firefox bookmarks don’t use the folder color picked in the Cinnamon theme setting.
-  - The slideshow that shows during installation shows screenshots from a previous release, which still uses mint-X, and is therefore inconsistent.
-  - Folder color yellow is missing (Mint-Y)
+  - slideshow: old screenshots, still using mint-x.
+  - mint-y-icons: yellow folders missing.
+  - mint-y-dark (and dark variants of light themes): xed right margin is barely visible, current line highlighting is grey on top of grey.
 
 mint tools:
   - mintinstall: does only wait and not warn if synaptic is open.
@@ -38,6 +39,8 @@ Cinnamon Edition - last processed comment: June 5, 2018 at 5:18 pm
 
 - [FIXED IN GIT] When I edit an application in “Startup Applications”, and it has a delay, the seconds unit “s” disappears.
 - [FIXED IN GIT] cinnamon settings startup, edit item with no delay, save -> python exception
+- [FIXED in GIT] cinnamon fallback -> muffin_no_shadows=1
+- [FIXED in GIT] skype systray duplicated: https://github.com/linuxmint/Cinnamon/issues/7588
 
 artwork:
   - cinnamon themes hardcode the font
@@ -45,31 +48,21 @@ artwork:
 settings:
   - power: No way to set brightness for battery VS AC power.
   - desklets: I found a little bug in the Desklet “Analog Chronometer”. I can not call the settings when I have downloaded and switched on the Chronometer.
-  - ccc: After adding a color profile, gnome-color-manager won’t auto install when I click “view details.” I have to install it manually in the terminal, software manager or synaptic.
+  - [confirmed] ccc: in color plugin, add a profile, browse it and click "View details". If gnome-color-manager is not installed, the plugin should ask packagekit (over dbus) to install it. This doesn't work.
 
 network:
   - Wireless not showing in Network Manager even though it appears in Network Manager Settings.
 
 cinnamon:
-  - On Vivaldi when I full screen a youtube video, the dashboard always remains displayed. Same on Firefox.
-  - Some applications that I installed through additional ppa (like 4kvideodownloader), to open through the menu, I need to restart the computer. Other applications that I installed through additional ppa (like qbittorrent and woeusb) work without having to restart.
-  - Installing Pysolfc via Synaptic and also Software Manager. No Games directory added to the menu. Though game worked from within a terminal. Restarting the computer the Menu was properly populated.
+  - cmenu: doesn't show some newly installed apps (slack-desktop, ppa:4kvideodownloader, pysolfc), others show up just fine (filezilla, ppa:qbittorrent, ppa:woeusb).
 
 csd:
   - If the screen is rotated, then the touch screen digitiser and trackpad both move the cursor in a direction mirrored to what is expected ie move your finger to the left on the screen and the cursor moves to the right. This works properly in Gnome.
-
-systray:
-  - The Telegram icon in the bottom right bar is too small, like Dropbox icon. But it works well.
-  - The Skype icon in the bottom right bar is a little deformed, but also works well.
-  - Two Skype icons are displayed on the panel near the time.
-  - After log-out & log-in back, the update manager icon stays there but nothing happens when you left or right click on it..
-  - The dropbox icon in the bottom right bar is too small.
 
 other:
   - Cinnamon setting to disable the touch pad while typing does not work, which makes typing on the laptop pretty annoying.
   - machine will not hibernate, (either from the power button (the hibernate option is selected) or from the exit menu) the screen blanks for a couple of seconds then returns to the session)
   - terminal: Just installed it with Hebrew as the system language and there’s something really weird with the fonts on the terminal. https://imgur.com/a/OHjoBu8
-  - Installing in VirtualBox give error “Running in software rendering mode”
   - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
 
 MATE Edition - last processed comment: June 5, 2018 at 12:57 pm
@@ -78,7 +71,7 @@ MATE Edition - last processed comment: June 5, 2018 at 12:57 pm
 - Windows Manager Metacity+Compton puts red line around app window
 - provide network/sound panel icons
 - ubiquity: click rel notes, nothing happens
-- When installing beta 19 mate, from a live USB thumb drive version, my screen goes BLANK during the install to the hard drive in spite of the fact that I had turned off ALL screensaver and power management features on the live USB session. Once I got the install done to the hard drive and again turned off the screensaver and power management the problem did not repeat.
+- screen goes blank during the install despite all screensaver/power management being turned OFF. Post-install, with everything OFF again, screensaver/power management are disabled properly.
 
 Xfce Edition - last processed comment: June 5, 2018 at 9:42 am
 --------------------------------------------------------------
@@ -96,17 +89,7 @@ panel/osd:
 touchpad:
   - Elan touchpad’s ‘tap to click’ and ‘right click’ functions not working and can’t be set because they are not shown in touchpad settings (in cinnamon it’s fine and shown up).
   - Touchpad tap would not work until I installed synaptics touchpad
-
-software:
   - No pressure sensitivity when I tried Krita. Ugee’s graphics display pen not seen as mouse either. Both Krita and Ugee 2150 (and Huion) worked perfectly in Mint 18.1 and 18.3, Cinnamon/Mate versions.
-
-mint tools:
-  - mintdesktop shows a sidepanel with only one item in it
-  - can’t add any PPA
-
-artwork:
-  - Network Icon in Tray is not monochrome, like the rest of the Mint Y icons
-  - xed display right margin at column does nothing. in dark mode with classic and other themes highlight current line colors need to be inverted
 
 other:
   - can’t see the share remote desktop ….. i went to menu/preferences but then no desktop sharing was there

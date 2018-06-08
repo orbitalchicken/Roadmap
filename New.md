@@ -16,7 +16,7 @@ mint tools:
   - [FIXED in GIT] mintupdate: On first time use, the preferences section “jumps” on the screen.
 
 ubiquity:
-  - When installing to internal 16GB SSD and with option “Something else” using the whole SSD for mountpoint root, installation always hangs in both XFCE 64 and Cinnamon 64. Ubuntu 18.04 installer with same options has no problem.
+  - click rel notes, nothing happens
 
 base:
   - Shutdown takes forever: “A stop job is running for Cryptography Setup for cryptoswap1” takes over 5 minutes
@@ -38,14 +38,12 @@ csd:
   - If the screen is rotated, then the touch screen digitiser and trackpad both move the cursor in a direction mirrored to what is expected ie move your finger to the left on the screen and the cursor moves to the right. This works properly in Gnome.
 
 other:
-  - Cinnamon setting to disable the touch pad while typing does not work, which makes typing on the laptop pretty annoying.
   - machine will not hibernate, (either from the power button (the hibernate option is selected) or from the exit menu) the screen blanks for a couple of seconds then returns to the session)
   - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
 
 MATE Edition - last processed comment: June 5, 2018 at 12:57 pm
 ---------------------------------------------------------------
 
-- ubiquity: click rel notes, nothing happens
 - screen goes blank during the install despite all screensaver/power management being turned OFF. Post-install, with everything OFF again, screensaver/power management are disabled properly.
 
 Xfce Edition - last processed comment: June 5, 2018 at 9:42 am

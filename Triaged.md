@@ -22,8 +22,12 @@ Outside of the scope
 
 - Using a live boot session in VirtualBox no longer allows copy-and-paste between the host and the Linux Mint live boot session, and resizing the VirtualBox window for that session does not resize Linux Mint within that session. -> virtualbox guest additions (from Oracle) need to be installed
 
+- Cinnamon setting to disable the touch pad while typing does not work, which makes typing on the laptop pretty annoying. -> provided for synaptics driver.
+
 Can't reproduce
 ---------------
+
+- When installing to internal 16GB SSD and with option “Something else” using the whole SSD for mountpoint root, installation always hangs in both XFCE 64 and Cinnamon 64. Ubuntu 18.04 installer with same options has no problem. -> journalctl info not provided
 
 cinnamon:
   - backgrounds: On the left pane, you can’t select “Pictures” folder by clicking, you need to use the keyboard – Down key..

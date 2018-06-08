@@ -16,11 +16,20 @@ artwork:
 - gdebi doesn't install packages unless it's run from the terminal
 - ia32-libs: depends on libesd0:i386 which is gone
 - libreoffice-base can't open databases
+- mint-common: uninstalling flatpak from menu doesn't work (tried with VLC)
+- ms ttf fonts says it is installed but when i go to fonts to use arial black there are no fonts i fixed this by uninstalling from software manager reboot and reinstalling them then reboot then it works i like my arial black and 1 of the few reasons i use lm verses all other distros -> made it a manual install
 
 Cinnamon Edition
 ----------------
 
+- When I edit an application in “Startup Applications”, and it has a delay, the seconds unit “s” disappears.
+- cinnamon settings startup, edit item with no delay, save -> python exception
+- cinnamon fallback -> muffin_no_shadows=1
+- skype systray duplicated: https://github.com/linuxmint/Cinnamon/issues/7588
+- cmenu: doesn't show some newly installed apps (slack-desktop, ppa:4kvideodownloader, pysolfc), others show up just fine (filezilla, ppa:qbittorrent, ppa:woeusb).
+- Wireless not showing in Network Manager even though it appears in Network Manager Settings.
 - goa: ubuntu SSO isn't functional -> it won't work without snapd, and it's useless for anything else. Ubuntu non-gnome users auth in snapd CLI anyway, so this should be removed. We don't need it, it's not necessary and it won't work OOTB.
+- desklets: I found a little bug in the Desklet “Analog Chronometer”. I can not call the settings when I have downloaded and switched on the Chronometer.
 
 MATE Edition
 ------------
@@ -33,12 +42,14 @@ hidpi:
 - mintlocale has no window icon
 - hide compton menuitem
 - onboard isn't selected as a preferred apps
+- mintmenu spamming the logs
 
 Xfce Edition
 ------------
 
 - xfburn removed
 - mintdesktop shows a sidepanel with only one item in it
+- Touchpad tap would not work until I installed synaptics touchpad -> synaptics added to Xfce edition
 
 Manual steps for upgraders
 --------------------------
@@ -46,3 +57,9 @@ Manual steps for upgraders
 apt install libreoffice-sdbc-hsqldb
 
 apt remove fortune-mod
+
+in Xfce:
+    apt install xserver-xorg-input-synaptics
+
+
+remove/reinstall mint-meta-codecs

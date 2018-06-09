@@ -1,6 +1,8 @@
 Linux Mint 19
 =============
 
+ff in live repo
+
 need_update:
   - minecraft-installer
   - whatsapp-desktop

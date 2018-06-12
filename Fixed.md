@@ -18,6 +18,7 @@ artwork:
 - libreoffice-base can't open databases
 - mint-common: uninstalling flatpak from menu doesn't work (tried with VLC)
 - ms ttf fonts says it is installed but when i go to fonts to use arial black there are no fonts i fixed this by uninstalling from software manager reboot and reinstalling them then reboot then it works i like my arial black and 1 of the few reasons i use lm verses all other distros -> made it a manual install
+- intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
 
 Cinnamon Edition
 ----------------

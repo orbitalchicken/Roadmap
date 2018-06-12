@@ -4,21 +4,11 @@ Linux Mint 19
 ff in live repo
 
 need_update:
-  - minecraft-installer
+  - minecraft-installer (works with JRE8?)
   - whatsapp-desktop
   - spotify-client
   - google-earth-pro-stable
 
-artwork:
-  - grey-on-grey icons (many in cinnamon-settings)
-  - improve status icons: nm-signal-, volume-audio-, power icons
-  - remove humanity-icon-theme and ubuntu-mono
-  - mintwelcome icon
-  - .deb icon
-
-- csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
-- blueberry won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
-- intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
 - gist-paste still used in xapps/mintsystem
 - update translations
 - update installation guide translations

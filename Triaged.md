@@ -13,6 +13,8 @@ Not a bug
 
 - xfce: can’t see the share remote desktop. I went to menu/preferences but then no desktop sharing was there.
 
+- slick doesn't have a flashing cursor in its entry box, giving the impression that the entry isn't focused.
+
 Outside of the scope
 --------------------
 
@@ -64,3 +66,10 @@ ubuntu:
     - Despite installing open-vm-tools-desktop window resizing does not work
     - gnome-terminal: Just installed it with Hebrew as the system language and there’s something really weird with the fonts on the terminal. https://imgur.com/a/OHjoBu8
     - When using RTL language (in this case Hebrew) in the right click menu on the window header the icons and check boxes go over the text. https://imgur.com/a/fISEJJA
+    - there is no country named Czechia. Adding another language keyboard layout, selecting COUNTRY, i found name Czechia in the list.
+    -  During installation, having selected "Something else", I chose my root partition and changed it to ext4; format; /. Once finished, a window entitled "Write previous changes to disk and continue?" appeared with the text "Before you can select a new partition size...". At no point did I select a new partition size. Hitting "Go Back" got rid of the message and a look at the list of partitions showed that the new info for that root partition was good, so that "new partition size" window appears both incorrect and unnecessary in that situation. I've experienced this twice during two installations.
+
+
+xfce:
+    - system-load-plugin: The switch that enables clicking on the system load monitor to open the task manager is greyed out and in the off position whether or it is turned on or off.
+    - quicklauncher plugin: The properties window is in French.

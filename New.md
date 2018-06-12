@@ -1,19 +1,77 @@
 New bug reports in Linux Mint 19 BETA
 
-All editions
-------------
+All editions - last processed comment: June 12, 2018 at 2:50 pm
+---------------------------------------------------------------
+
+- GTK file chooser: org.gtk.Settings.FileChooser sort-directories-first should be true
+- can't install google chrome?
+- appimage: When I download Molotov.Appimage and try to launch the file it fails. The same installation with Mint Cinnamon version 18.3 runs perfectly on my both laptops.
+- pkexec: xed admin:///etc/fstab -> asks for password twice
+- check that ISO installed in BIOS mode (USB stick)
+- Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
+- Anydesk. Shortcut saved connection on desktop will not launch. Gives ' There was an error launching the application'. From within anydesk it starts normal.
+- spotify depends on libcurl3
+- update inxi
+
+mime:
+  - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/ttf" is an invalid MIME type ("font" is an unregistered media type)
+  - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/otf" is an invalid MIME type ("font" is an unregistered media type
+
+slick:
+  - On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
+  - screen reader reads too fast
+  - text cursor doesn't appear
+  - doesn't notify that caps lock is active
 
 artwork:
+  - grey-on-grey icons (many in cinnamon-settings)
+  - improve status icons: nm-signal-, volume-audio-, power icons
+  - remove humanity-icon-theme and ubuntu-mono
+  - mintwelcome icon
+  - .deb icon
   - Firefox bookmarks don’t use the folder color picked in the Cinnamon theme setting.
   - slideshow: old screenshots, still using mint-x.
   - mint-y-icons: yellow folders missing.
   - mint-y-dark (and dark variants of light themes): xed right margin is barely visible, current line highlighting is grey on top of grey.
   - provide network/sound panel icons
+  - filesystem icon looks like an ipod (in thunar, when small enough)
+  - In the file-manager the number of emblems has been reduced. It takes some effort to create extra ones. It would be great to have an application that automates this process (Else you have to use gimp and put the result with the right name in the proper folder).
+  - with adwaita, missing icons for Settings/Seting Language, Accessories/USB Format, Accessories/USB Write Image
+  - MyPaint and Pinta have the same icon
+  - The progress indicator in the panel should be the same color as the chosen theme. Not just green.
+  - clementine: mint-y-blue -> huge icons
+  - start-here-symbolic.svg was missing in Mint-X icon set. So I copied /usr/share/icons/Mint-X/places/scalable/start-here-linux-mint-symbolic.svg to /usr/share/icons/Mint-X/places/scalable/start-here-symbolic.svg. Then I updated icon-cache file: sudo gtk-update-icon-cache -f '/usr/share/icons/Mint-X' Now: https://imgur.com/ftlrKXL
+  - The mate-terminal menu bar is transparent under Mint-X
+  - In the default theme, approximately one pixel of the taskbar near the edge of the screen cannot properly select and switch the task list.
+  - Mint-Y showing incorrect icons in check-boxes. Example: Nemo Preferences, select "Show advanced permissions in the file property dialogue". Now view the properties of a directory containing files. Initially, the file permissions will show [-] (correct).  But clicking to change permissions results in [ ] -&gt; [🗸] -&gt; [🗸] (blank, check, check).  The dash never shows up again leading one to think they enabled the permission, which they didn't.
+
+blueberry:
+  - won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
+  - possible to turn OFF completely? (systemd might fail to rfkill, but our systray option should at least be preserved)
 
 mint tools:
+  - Bash completion doesn't work with all apt commands https://github.com/linuxmint/mintsystem/issues/73
   - mintinstall: does only wait and not warn if synaptic is open.
+  - mintinstall: launch button should be highlighted blue or green.
+  - mintinstall (live mode): Software Manager-Games-All only shows 0Ad-Edgar  i.e. it does not show the games beginning with later letters E-Z that can be found through the more detailed searches, e.g. Software Manager-Games-Simulation and Racing-Torcs
+  - mintinstall: mint-update-pkgcache runs to completion without error, but too slowly for the Update Manager timeout.
+  		Update Manager reports:
+          Could not refresh the list of updates
+		  Command '['/usr/bin/mintinstall-update-pkgcache']' timed out after 60 seconds
+			MintInstall: User pkgcache is most recent, using it.
+			MintInstall: Generating new pkgcache
+			MintInstall: flatpak - metadata for remote 'flathub' has been updated. Comparing appstream timestamps...
+			MintInstall: flatpak - no new appstream data for remote 'flathub', skipping download
+			MintInstall: Processing Flatpaks for cache took 120963.721 ms
+			MintInstall: Processing APT packages for cache took 3435.910 ms
+		In /usr/lib/linuxmint/mintUpdate/checkAPT.py, increasing the timeout on the subprocess.run of mintinstall-update-pkgcache from 60 to 180 (or more) solves the issue.
   - mintupdate: conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
+  - mintupdate: systray doesn't move to green check mark after all updates are applied
+  - mintupdate: I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
   - [FIXED in GIT] mintupdate: On first time use, the preferences section “jumps” on the screen.
+  - mintbackup: restore packages with buggy names -> error, instead of ignoring buggy names
+  - mintbackup: Restore a package list, Uncheck some packages, Apply. Expected : only selected packages are installed. Observed : all packages are installed, including unchecked ones
+
 
 ubiquity:
   - click rel notes, nothing happens
@@ -25,8 +83,30 @@ base:
 		there seems to be a wrong uuid for resume in initramfs.
 		Temporarily solution is here: https://askubuntu.com/questions/1013830/slow-boot-long-kernel-load-time-due-to-wrong-resume-device
 
-Cinnamon Edition - last processed comment: June 5, 2018 at 5:18 pm
-------------------------------------------------------------------
+timeshift:
+  - /swapfile should be excluded
+  - wizard, the tooltip incorrectly states "Create snapshots using RSYNC" when you hover over BTRFS?
+  - Users tab, the headings for the radio buttons are named "Exclude Apps", "Include Hidden Items" and (once again) "Exclude Apps".
+  - First time Timeshift was used the Warning and Disclaimer text sections appeared blank (image link), next use the fields were populated. http://pasteall.org/pic/show.php?id=61509d64959391182648fdff247804e6
+
+
+xplayer:
+  - In fullscreen mode, it starts misbehaving after a while. Video freezes/goes black, sound is still there. Keyboard is lost. Mouse pointer moves, but no action can be taken. Reset button on box only option.
+  - 'Fit Window to Movie' does not work.
+  - In some videos with subtitles, Xplayer does not show them, even if I select them in the menu. It happened to me in a .mkv file, but I do not know if it happens in other types of files. In these cases, I use VLC.
+  - Booted from the LM19 live CD (linuxmint-19-mate-32bit-beta.iso), installed smplayer (%sudo apt-get install --install-recommends smplayer).
+		Marco: smplayer displays .flv and .mp4 videos correctly.
+		Marco Compositing: smplayer displays .flv and .mp4 videos as described previously.
+		Marco Compton: smplayer displays .flv and .mp4 videos as described previously.
+		Metacity: smplayer displays .flv and .mp4 videos correctly.
+		Metacity Compositing: smplayer displays .flv and .mp4 videos as described previously.
+		Metacity Compton: smplayer displays .flv and .mp4 videos as described previously.
+		Compiz: smplayer displays .flv and .mp4 videos correctly.
+		AOpen MX4SG-4DN motherboard, Intel 865G Graphics Memory Controller Hub.
+		xplayer segfaults in all cases above ^^
+
+Cinnamon Edition
+----------------
 
 artwork:
   - cinnamon themes hardcode the font
@@ -36,18 +116,37 @@ settings:
 
 csd:
   - If the screen is rotated, then the touch screen digitiser and trackpad both move the cursor in a direction mirrored to what is expected ie move your finger to the left on the screen and the cursor moves to the right. This works properly in Gnome.
+  - Another problem: When in tablet mode (that is, the screen is rotated and covering the keyboard) the RotateWindows key doesn't work anymore... It just does nothing...
+  - csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
 
 other:
   - machine will not hibernate, (either from the power button (the hibernate option is selected) or from the exit menu) the screen blanks for a couple of seconds then returns to the session)
   - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
 
-MATE Edition - last processed comment: June 5, 2018 at 12:57 pm
----------------------------------------------------------------
+- removing favorites isn't intuitive, there should be a context menu option
+- Can't delete a user. Delete button doesn't delete.
+- Effects "Unmaximize Window" behavior does not change with change in settings regardless of effect type or time setting.
+- After the updates last night I am no longer able to drag maximized windows bu the title bar in Cinnamon.  To clarify the drag of maximized windows, Firefox and Nemo will not drag when maximized, Thunderbird will drag when maximized
+- NFS mount not visible in Nemo left menu. How to reproduce: install nfs-common, mount NFS folder.
+- steam has to be exited twice from systray?
+- Using Vivaldi (1.15.1147.42 (Stable channel) (64-bit)) I downloaded a picture (jpg) from Facebook to my desktop. The download created a file (filename).jpg.crdownload. Once the picture was downloaded completely this file remained on my desktop. I can select it and check its properties, but I cannot delete it. I get an error message saying that the object does not exist.
+- With panel set to “smart hide”: if panel was never hidden since the beginning of the session, the status of mintupdate is working as expected. Once panel is hidden (by maximizing a window) the mintupdate tray icon remains static for the rest of the session.
+- Wanting to add a new custom Menu category to adding ones own Items to a category is like pulling teeth. Icon's don't save, Can't arrange Items and etc. No way to add desktop Files to the menu after they have already been created.
+- Application switcher items are not properly selected https://github.com/linuxmint/Cinnamon/issues/7623
+- NTFS pen drive is not mounting
+- When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from paketmaneger it works.
+- Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
+
+
+MATE Edition
+------------
 
 - screen goes blank during the install despite all screensaver/power management being turned OFF. Post-install, with everything OFF again, screensaver/power management are disabled properly.
+- When I want to shut down, the dialog offers «Hibernate» (which I never tried, because it could not work with a small swap-file). But when I first log out and login as another user, the computer remembers that there is an file /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla, which disable the hibernation. Afterwards the quit-dialog will never show to hibernate until reboot. I did not noticed this effect on Ubuntu Mate 18.04 on the same machine (hibernation is still disabled).
+- Custom actions created with Caja Actions are not appearing in Caja's context menu, whereas they did in Mint 18.3. Is there some reason this might be occurring?
 
-Xfce Edition - last processed comment: June 5, 2018 at 9:42 am
---------------------------------------------------------------
+Xfce Edition
+------------
 
 panel/osd:
   - changing sound volume via hotkey shows two on-screen-displays

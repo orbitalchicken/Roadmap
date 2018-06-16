@@ -3,10 +3,8 @@ New bug reports in Linux Mint 19 BETA
 All editions - last processed comment: June 12, 2018 at 2:50 pm
 ---------------------------------------------------------------
 
-- GTK file chooser: org.gtk.Settings.FileChooser sort-directories-first should be true
 - can't install google chrome?
 - appimage: When I download Molotov.Appimage and try to launch the file it fails. The same installation with Mint Cinnamon version 18.3 runs perfectly on my both laptops.
-- pkexec: xed admin:///etc/fstab -> asks for password twice
 - check that ISO installed in BIOS mode (USB stick)
 - Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
 - Anydesk. Shortcut saved connection on desktop will not launch. Gives ' There was an error launching the application'. From within anydesk it starts normal.
@@ -51,27 +49,9 @@ blueberry:
 
 mint tools:
   - Bash completion doesn't work with all apt commands https://github.com/linuxmint/mintsystem/issues/73
-  - mintinstall: does only wait and not warn if synaptic is open.
-  - mintinstall: launch button should be highlighted blue or green.
-  - mintinstall (live mode): Software Manager-Games-All only shows 0Ad-Edgar  i.e. it does not show the games beginning with later letters E-Z that can be found through the more detailed searches, e.g. Software Manager-Games-Simulation and Racing-Torcs
-  - mintinstall: mint-update-pkgcache runs to completion without error, but too slowly for the Update Manager timeout.
-  		Update Manager reports:
-          Could not refresh the list of updates
-		  Command '['/usr/bin/mintinstall-update-pkgcache']' timed out after 60 seconds
-			MintInstall: User pkgcache is most recent, using it.
-			MintInstall: Generating new pkgcache
-			MintInstall: flatpak - metadata for remote 'flathub' has been updated. Comparing appstream timestamps...
-			MintInstall: flatpak - no new appstream data for remote 'flathub', skipping download
-			MintInstall: Processing Flatpaks for cache took 120963.721 ms
-			MintInstall: Processing APT packages for cache took 3435.910 ms
-		In /usr/lib/linuxmint/mintUpdate/checkAPT.py, increasing the timeout on the subprocess.run of mintinstall-update-pkgcache from 60 to 180 (or more) solves the issue.
-  - mintupdate: conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
-  - mintupdate: systray doesn't move to green check mark after all updates are applied
-  - mintupdate: I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
-  - [FIXED in GIT] mintupdate: On first time use, the preferences section “jumps” on the screen.
-  - mintbackup: restore packages with buggy names -> error, instead of ignoring buggy names
-  - mintbackup: Restore a package list, Uncheck some packages, Apply. Expected : only selected packages are installed. Observed : all packages are installed, including unchecked ones
-
+  - mintupdate:
+    - conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
+    - systray doesn't move to green check mark after all updates are applied
 
 ubiquity:
   - click rel notes, nothing happens
@@ -88,7 +68,6 @@ timeshift:
   - wizard, the tooltip incorrectly states "Create snapshots using RSYNC" when you hover over BTRFS?
   - Users tab, the headings for the radio buttons are named "Exclude Apps", "Include Hidden Items" and (once again) "Exclude Apps".
   - First time Timeshift was used the Warning and Disclaimer text sections appeared blank (image link), next use the fields were populated. http://pasteall.org/pic/show.php?id=61509d64959391182648fdff247804e6
-
 
 xplayer:
   - In fullscreen mode, it starts misbehaving after a while. Video freezes/goes black, sound is still there. Keyboard is lost. Mouse pointer moves, but no action can be taken. Reset button on box only option.

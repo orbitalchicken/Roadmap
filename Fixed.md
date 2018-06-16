@@ -19,6 +19,19 @@ artwork:
 - mint-common: uninstalling flatpak from menu doesn't work (tried with VLC)
 - ms ttf fonts says it is installed but when i go to fonts to use arial black there are no fonts i fixed this by uninstalling from software manager reboot and reinstalling them then reboot then it works i like my arial black and 1 of the few reasons i use lm verses all other distros -> made it a manual install
 - intel-microcode is missing https://bugs.launchpad.net/ubuntu/+source/ubuntu-drivers-common/+bug/1758689
+- remove vino (upstream made vino useless outside of GNOME)
+- GTK file chooser: org.gtk.Settings.FileChooser sort-directories-first should be true
+- xreader crash when opening certain documents
+- mintinstall: launch button should be highlighted blue or green.
+
+mintupdate:
+  - I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
+  - On first time use, the preferences section “jumps” on the screen.
+  - mint-update-pkgcache errors are reported after 60s timeout
+
+mintbackup:
+  - restore packages with buggy names -> error, instead of ignoring buggy names
+  - restore a package list, Uncheck some packages, Apply. Expected : only selected packages are installed. Observed : all packages are installed, including unchecked ones
 
 Cinnamon Edition
 ----------------

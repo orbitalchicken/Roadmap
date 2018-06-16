@@ -26,6 +26,10 @@ Outside of the scope
 
 - Cinnamon setting to disable the touch pad while typing does not work, which makes typing on the laptop pretty annoying. -> provided for synaptics driver.
 
+- mintinstall (live mode): Software Manager-Games-All only shows 0Ad-Edgar  i.e. it does not show the games beginning with later letters E-Z that can be found through the more detailed searches, e.g. Software Manager-Games-Simulation and Racing-Torcs --> appstream can't work in live mode, the cache isn't full and mintinstall probably doesn't know about the score of each app. Only 200 apps are shown, usually by order of popularity, but here since it's not possible, by alphabetical order.
+
+- mintinstall: does only wait and not warn if synaptic is open.
+
 Can't reproduce
 ---------------
 
@@ -61,15 +65,15 @@ cinnamon:
   - The Telegram icon in the bottom right bar is too small. -> for telegram to fix
 
 ubuntu:
-    - wine doesn't work
-    - wifi dongle rtl8192eu is not being recognized, but the generic rtl8xxxu-driver is being loaded instead yielding a 1mbs connection speed
-    - Despite installing open-vm-tools-desktop window resizing does not work
-    - gnome-terminal: Just installed it with Hebrew as the system language and there’s something really weird with the fonts on the terminal. https://imgur.com/a/OHjoBu8
-    - When using RTL language (in this case Hebrew) in the right click menu on the window header the icons and check boxes go over the text. https://imgur.com/a/fISEJJA
-    - there is no country named Czechia. Adding another language keyboard layout, selecting COUNTRY, i found name Czechia in the list.
-    -  During installation, having selected "Something else", I chose my root partition and changed it to ext4; format; /. Once finished, a window entitled "Write previous changes to disk and continue?" appeared with the text "Before you can select a new partition size...". At no point did I select a new partition size. Hitting "Go Back" got rid of the message and a look at the list of partitions showed that the new info for that root partition was good, so that "new partition size" window appears both incorrect and unnecessary in that situation. I've experienced this twice during two installations.
-
+  - wine doesn't work
+  - wifi dongle rtl8192eu is not being recognized, but the generic rtl8xxxu-driver is being loaded instead yielding a 1mbs connection speed
+  - Despite installing open-vm-tools-desktop window resizing does not work
+  - gnome-terminal: Just installed it with Hebrew as the system language and there’s something really weird with the fonts on the terminal. https://imgur.com/a/OHjoBu8
+  - When using RTL language (in this case Hebrew) in the right click menu on the window header the icons and check boxes go over the text. https://imgur.com/a/fISEJJA
+  - there is no country named Czechia. Adding another language keyboard layout, selecting COUNTRY, i found name Czechia in the list.
+  -  During installation, having selected "Something else", I chose my root partition and changed it to ext4; format; /. Once finished, a window entitled "Write previous changes to disk and continue?" appeared with the text "Before you can select a new partition size...". At no point did I select a new partition size. Hitting "Go Back" got rid of the message and a look at the list of partitions showed that the new info for that root partition was good, so that "new partition size" window appears both incorrect and unnecessary in that situation. I've experienced this twice during two installations.
+  - xed admin:///etc/fstab asks for password twice -> happens with gedit as well, must be an issue with admin:// or pkexec.
 
 xfce:
-    - system-load-plugin: The switch that enables clicking on the system load monitor to open the task manager is greyed out and in the off position whether or it is turned on or off.
-    - quicklauncher plugin: The properties window is in French.
+  - system-load-plugin: The switch that enables clicking on the system load monitor to open the task manager is greyed out and in the off position whether or it is turned on or off.
+  - quicklauncher plugin: The properties window is in French.

@@ -7,6 +7,7 @@ artwork:
   - mint-x:
     - no icons in Online accounts > Information about Gnome online accounts -> Gnome Contacts, Gnome Documents, Gnome Maps and Gnome Photos
     - visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
+    - transparent menubar in mate-terminal
   - mint-y:
     - thunderbird icon isn't the same as its flatpak
     - in nemo additional pane, select a folder in the left page, click in the right pane. The selected folder in the left pane is white on grey, almost invisible.

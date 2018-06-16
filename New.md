@@ -30,7 +30,6 @@ artwork:
   - Firefox bookmarks don’t use the folder color picked in the Cinnamon theme setting.
   - slideshow: old screenshots, still using mint-x.
   - mint-y-icons: yellow folders missing.
-  - mint-y-dark (and dark variants of light themes): xed right margin is barely visible, current line highlighting is grey on top of grey.
   - provide network/sound panel icons
   - filesystem icon looks like an ipod (in thunar, when small enough)
   - In the file-manager the number of emblems has been reduced. It takes some effort to create extra ones. It would be great to have an application that automates this process (Else you have to use gimp and put the result with the right name in the proper folder).
@@ -39,7 +38,6 @@ artwork:
   - The progress indicator in the panel should be the same color as the chosen theme. Not just green.
   - clementine: mint-y-blue -> huge icons
   - start-here-symbolic.svg was missing in Mint-X icon set. So I copied /usr/share/icons/Mint-X/places/scalable/start-here-linux-mint-symbolic.svg to /usr/share/icons/Mint-X/places/scalable/start-here-symbolic.svg. Then I updated icon-cache file: sudo gtk-update-icon-cache -f '/usr/share/icons/Mint-X' Now: https://imgur.com/ftlrKXL
-  - The mate-terminal menu bar is transparent under Mint-X
   - In the default theme, approximately one pixel of the taskbar near the edge of the screen cannot properly select and switch the task list.
   - Mint-Y showing incorrect icons in check-boxes. Example: Nemo Preferences, select "Show advanced permissions in the file property dialogue". Now view the properties of a directory containing files. Initially, the file permissions will show [-] (correct).  But clicking to change permissions results in [ ] -&gt; [🗸] -&gt; [🗸] (blank, check, check).  The dash never shows up again leading one to think they enabled the permission, which they didn't.
 

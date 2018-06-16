@@ -15,6 +15,8 @@ Not a bug
 
 - slick doesn't have a flashing cursor in its entry box, giving the impression that the entry isn't focused.
 
+- mint-y-dark (and dark variants of light themes): xed right margin is barely visible, current line highlighting is grey on top of grey. -> this isn't part of the GTK theme, it's part of the selected Xed style scheme.
+
 Outside of the scope
 --------------------
 

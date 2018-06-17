@@ -3,23 +3,13 @@ New bug reports in Linux Mint 19 BETA
 All editions - last processed comment: June 12, 2018 at 2:50 pm
 ---------------------------------------------------------------
 
-- can't install google chrome?
-- appimage: When I download Molotov.Appimage and try to launch the file it fails. The same installation with Mint Cinnamon version 18.3 runs perfectly on my both laptops.
 - check that ISO installed in BIOS mode (USB stick)
 - Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
-- Anydesk. Shortcut saved connection on desktop will not launch. Gives ' There was an error launching the application'. From within anydesk it starts normal.
-- spotify depends on libcurl3
 - update inxi
-
-mime:
-  - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/ttf" is an invalid MIME type ("font" is an unregistered media type)
-  - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/otf" is an invalid MIME type ("font" is an unregistered media type
 
 slick:
   - On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
   - screen reader reads too fast
-  - text cursor doesn't appear
-  - doesn't notify that caps lock is active
 
 artwork:
   - grey-on-grey icons (many in cinnamon-settings)

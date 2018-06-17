@@ -51,6 +51,9 @@ cinnamon:
 - When trying to start xed as root it takes approx. 20 seconds for the xed window to display while displays it at once.
 - can’t add any PPA (Xfce)
 - No pressure sensitivity in Krita. Ugee 2150 graphics display pen not seen as mouse -> probably down to synaptics missing, user didn't confirm.
+- can't install google chrome
+- appimage: When I download Molotov.Appimage and try to launch the file it fails. The same installation with Mint Cinnamon version 18.3 runs perfectly on my both laptops. -> chmod the file, and run it.. works perfectly.
+- Anydesk. Shortcut saved connection on desktop will not launch. Gives ' There was an error launching the application'. From within anydesk it starts normal.
 
 mate:
   - Windows Manager Metacity+Compton puts red line around app window

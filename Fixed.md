@@ -24,6 +24,7 @@ artwork:
 - GTK file chooser: org.gtk.Settings.FileChooser sort-directories-first should be true
 - xreader crash when opening certain documents
 - mintinstall: launch button should be highlighted blue or green.
+- spotify depends on libcurl3
 
 mintupdate:
   - I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
@@ -33,6 +34,14 @@ mintupdate:
 mintbackup:
   - restore packages with buggy names -> error, instead of ignoring buggy names
   - restore a package list, Uncheck some packages, Apply. Expected : only selected packages are installed. Observed : all packages are installed, including unchecked ones
+
+login screen:
+  - text cursor doesn't appear
+  - doesn't notify that caps lock is active
+
+mime:
+  - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/ttf" is an invalid MIME type ("font" is an unregistered media type)
+  - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/otf" is an invalid MIME type ("font" is an unregistered media type
 
 Cinnamon Edition
 ----------------

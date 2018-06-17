@@ -6,7 +6,6 @@ ff in live repo
 need_update:
   - minecraft-installer (works with JRE8?)
   - whatsapp-desktop
-  - spotify-client
   - google-earth-pro-stable
 
 - gist-paste still used in xapps/mintsystem

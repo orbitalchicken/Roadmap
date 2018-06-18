@@ -20,6 +20,16 @@ release upgrade tool:
     - Re-enable 3rd party repositories after upgrade. A backup of the APT sources gets stored in ./Upgrade-Backup/APT but the tutorial didn't cover this or what to do with it (probably best to just find what the 3rd party repositories were and re-enable them manually from instructions on their website). Important for things like Google Chrome.
     - mintupgrade replaces user modified configuration files in /etc without prompting, leaving .dpkg-old files behind. Perhaps cover this tidbit in the tutorial.
 
+Non-blocking bugs
+=================
+
+artwork:
+  - MyPaint and Pinta have the same icon
+  - Firefox bookmarks don’t use the folder color picked in the Cinnamon theme setting.
+  - remove humanity-icon-theme and ubuntu-mono
+  - mintwelcome icon
+  - grey-on-grey icons (many in cinnamon-settings)
+
 LMDE 3
 ======
 

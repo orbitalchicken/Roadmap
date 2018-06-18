@@ -32,6 +32,8 @@ Outside of the scope
 
 - mintinstall: does only wait and not warn if synaptic is open.
 
+- In the file-manager the number of emblems has been reduced. It takes some effort to create extra ones. It would be great to have an application that automates this process (Else you have to use gimp and put the result with the right name in the proper folder).
+
 Can't reproduce
 ---------------
 
@@ -61,6 +63,8 @@ mate:
 Upstream
 --------
 
+- clementine: mint-y, huge icons -> applications-internet and media-optical look OK in the theme, provided in all sizes. They're PNG as opposed to SVG for action icons, but that shouldn't matter.
+
 mate:
   - Sticky Notes double click doesnt highlight https://github.com/mate-desktop/mate-applets/issues/260
   - preferred apps: caja, orca aren't selected
@@ -78,7 +82,9 @@ ubuntu:
   - there is no country named Czechia. Adding another language keyboard layout, selecting COUNTRY, i found name Czechia in the list.
   -  During installation, having selected "Something else", I chose my root partition and changed it to ext4; format; /. Once finished, a window entitled "Write previous changes to disk and continue?" appeared with the text "Before you can select a new partition size...". At no point did I select a new partition size. Hitting "Go Back" got rid of the message and a look at the list of partitions showed that the new info for that root partition was good, so that "new partition size" window appears both incorrect and unnecessary in that situation. I've experienced this twice during two installations.
   - xed admin:///etc/fstab asks for password twice -> happens with gedit as well, must be an issue with admin:// or pkexec.
+  - screen reader reads too fast
 
 xfce:
   - system-load-plugin: The switch that enables clicking on the system load monitor to open the task manager is greyed out and in the off position whether or it is turned on or off.
   - quicklauncher plugin: The properties window is in French.
+

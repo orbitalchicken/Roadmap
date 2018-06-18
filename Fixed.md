@@ -12,6 +12,7 @@ artwork:
     - thunderbird icon isn't the same as its flatpak
     - in nemo additional pane, select a folder in the left page, click in the right pane. The selected folder in the left pane is white on grey, almost invisible.
     - video and subtitle icons are too similar
+  - with adwaita, missing icons for Settings/Seting Language, Accessories/USB Format, Accessories/USB Write Image
 
 - The fortune command says 'no fortunes found' -> leftover, fortune is now removed.
 - gdebi doesn't install packages unless it's run from the terminal

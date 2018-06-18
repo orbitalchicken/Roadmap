@@ -9,24 +9,14 @@ All editions - last processed comment: June 12, 2018 at 2:50 pm
 
 slick:
   - On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
-  - screen reader reads too fast
 
 artwork:
-  - grey-on-grey icons (many in cinnamon-settings)
   - improve status icons: nm-signal-, volume-audio-, power icons
-  - remove humanity-icon-theme and ubuntu-mono
-  - mintwelcome icon
-  - .deb icon
-  - Firefox bookmarks don’t use the folder color picked in the Cinnamon theme setting.
+  - [FIXED In GIT] .deb icon
   - slideshow: old screenshots, still using mint-x.
   - mint-y-icons: yellow folders missing.
-  - provide network/sound panel icons
   - filesystem icon looks like an ipod (in thunar, when small enough)
-  - In the file-manager the number of emblems has been reduced. It takes some effort to create extra ones. It would be great to have an application that automates this process (Else you have to use gimp and put the result with the right name in the proper folder).
-  - with adwaita, missing icons for Settings/Seting Language, Accessories/USB Format, Accessories/USB Write Image
-  - MyPaint and Pinta have the same icon
   - The progress indicator in the panel should be the same color as the chosen theme. Not just green.
-  - clementine: mint-y-blue -> huge icons
   - start-here-symbolic.svg was missing in Mint-X icon set. So I copied /usr/share/icons/Mint-X/places/scalable/start-here-linux-mint-symbolic.svg to /usr/share/icons/Mint-X/places/scalable/start-here-symbolic.svg. Then I updated icon-cache file: sudo gtk-update-icon-cache -f '/usr/share/icons/Mint-X' Now: https://imgur.com/ftlrKXL
   - In the default theme, approximately one pixel of the taskbar near the edge of the screen cannot properly select and switch the task list.
   - Mint-Y showing incorrect icons in check-boxes. Example: Nemo Preferences, select "Show advanced permissions in the file property dialogue". Now view the properties of a directory containing files. Initially, the file permissions will show [-] (correct).  But clicking to change permissions results in [ ] -&gt; [🗸] -&gt; [🗸] (blank, check, check).  The dash never shows up again leading one to think they enabled the permission, which they didn't.

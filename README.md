@@ -35,7 +35,6 @@ artwork:
 
 cinnamon:
   - removing favorites isn't intuitive, there should be a context menu option
-  - When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
   - Application switcher items are not properly selected https://github.com/linuxmint/Cinnamon/issues/7623
 
 - slick greeter: On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.

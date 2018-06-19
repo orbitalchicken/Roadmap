@@ -51,6 +51,7 @@ other:
 - Wanting to add a new custom Menu category to adding ones own Items to a category is like pulling teeth. Icon's don't save, Can't arrange Items and etc. No way to add desktop Files to the menu after they have already been created.
 - NTFS pen drive is not mounting
 - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
+- [FIXED] When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
 
 MATE Edition
 ------------

@@ -4,12 +4,8 @@ All editions - last processed comment: June 12, 2018 at 2:50 pm
 ---------------------------------------------------------------
 
 - check that ISO installed in BIOS mode (USB stick)
-- Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
 - update inxi
 - update timeshift to 18.06
-
-slick:
-  - On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
 
 artwork:
   - improve status icons: nm-signal-, volume-audio-, power icons
@@ -33,19 +29,7 @@ base:
 		Temporarily solution is here: https://askubuntu.com/questions/1013830/slow-boot-long-kernel-load-time-due-to-wrong-resume-device
 
 xplayer:
-  - In fullscreen mode, it starts misbehaving after a while. Video freezes/goes black, sound is still there. Keyboard is lost. Mouse pointer moves, but no action can be taken. Reset button on box only option.
-  - 'Fit Window to Movie' does not work.
-  - In some videos with subtitles, Xplayer does not show them, even if I select them in the menu. It happened to me in a .mkv file, but I do not know if it happens in other types of files. In these cases, I use VLC.
-  - Booted from the LM19 live CD (linuxmint-19-mate-32bit-beta.iso), installed smplayer (%sudo apt-get install --install-recommends smplayer).
-		Marco: smplayer displays .flv and .mp4 videos correctly.
-		Marco Compositing: smplayer displays .flv and .mp4 videos as described previously.
-		Marco Compton: smplayer displays .flv and .mp4 videos as described previously.
-		Metacity: smplayer displays .flv and .mp4 videos correctly.
-		Metacity Compositing: smplayer displays .flv and .mp4 videos as described previously.
-		Metacity Compton: smplayer displays .flv and .mp4 videos as described previously.
-		Compiz: smplayer displays .flv and .mp4 videos correctly.
-		AOpen MX4SG-4DN motherboard, Intel 865G Graphics Memory Controller Hub.
-		xplayer segfaults in all cases above ^^
+  - [FIXED IN GIT] 'Fit Window to Movie' does not work.
 
 Cinnamon Edition
 ----------------

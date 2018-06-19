@@ -17,6 +17,18 @@ Not a bug
 
 - mint-y-dark (and dark variants of light themes): xed right margin is barely visible, current line highlighting is grey on top of grey. -> this isn't part of the GTK theme, it's part of the selected Xed style scheme.
 
+- Booted from the LM19 live CD (linuxmint-19-mate-32bit-beta.iso), installed smplayer (%sudo apt-get install --install-recommends smplayer).
+        Marco: smplayer displays .flv and .mp4 videos correctly.
+        Marco Compositing: smplayer displays .flv and .mp4 videos as described previously.
+        Marco Compton: smplayer displays .flv and .mp4 videos as described previously.
+        Metacity: smplayer displays .flv and .mp4 videos correctly.
+        Metacity Compositing: smplayer displays .flv and .mp4 videos as described previously.
+        Metacity Compton: smplayer displays .flv and .mp4 videos as described previously.
+        Compiz: smplayer displays .flv and .mp4 videos correctly.
+        AOpen MX4SG-4DN motherboard, Intel 865G Graphics Memory Controller Hub.
+        xplayer segfaults in all cases above ^^
+        --> could be caused by the clutter-gst backend. A stack trace would be needed to idenfity a bug here.
+
 Outside of the scope
 --------------------
 
@@ -54,6 +66,8 @@ cinnamon:
   - steam has to be exited twice from systray
   - Using Vivaldi (1.15.1147.42 (Stable channel) (64-bit)) I downloaded a picture (jpg) from Facebook to my desktop. The download created a file (filename).jpg.crdownload. Once the picture was downloaded completely this file remained on my desktop. I can select it and check its properties, but I cannot delete it. I get an error message saying that the object does not exist. -> could be inotify not working?
 
+- xplayer: In some videos with subtitles, Xplayer does not show them, even if I select them in the menu. It happened to me in a .mkv file, but I do not know if it happens in other types of files. In these cases, I use VLC.
+- xplayer: In fullscreen mode, it starts misbehaving after a while. Video freezes/goes black, sound is still there. Keyboard is lost. Mouse pointer moves, but no action can be taken. Reset button on box only option.
 - mint-x: no icon when the update manager cannot connect to the server
 - auto-login from installer doesn't work?
 - can't access Google login page from GOA

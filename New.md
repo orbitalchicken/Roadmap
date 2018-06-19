@@ -14,12 +14,7 @@ artwork:
   - improve status icons: nm-signal-, volume-audio-, power icons
   - slideshow: old screenshots, still using mint-x.
 
-blueberry:
-  - won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
-  - possible to turn OFF completely? (systemd might fail to rfkill, but our systray option should at least be preserved)
-
 mint tools:
-  - Bash completion doesn't work with all apt commands https://github.com/linuxmint/mintsystem/issues/73
   - mintupdate:
     - conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
     - systray doesn't move to green check mark after all updates are applied
@@ -35,10 +30,9 @@ base:
 		Temporarily solution is here: https://askubuntu.com/questions/1013830/slow-boot-long-kernel-load-time-due-to-wrong-resume-device
 
 timeshift:
-  - /swapfile should be excluded
-  - wizard, the tooltip incorrectly states "Create snapshots using RSYNC" when you hover over BTRFS?
-  - Users tab, the headings for the radio buttons are named "Exclude Apps", "Include Hidden Items" and (once again) "Exclude Apps".
-  - First time Timeshift was used the Warning and Disclaimer text sections appeared blank (image link), next use the fields were populated. http://pasteall.org/pic/show.php?id=61509d64959391182648fdff247804e6
+  - [PR] /swapfile should be excluded
+  - [PR] wizard, the tooltip incorrectly states "Create snapshots using RSYNC" when you hover over BTRFS?
+  - [PR] Users tab, the headings for the radio buttons are named "Exclude Apps", "Include Hidden Items" and (once again) "Exclude Apps".
 
 xplayer:
   - In fullscreen mode, it starts misbehaving after a while. Video freezes/goes black, sound is still there. Keyboard is lost. Mouse pointer moves, but no action can be taken. Reset button on box only option.

@@ -29,6 +29,8 @@ artwork:
 - xreader crash when opening certain documents
 - mintinstall: launch button should be highlighted blue or green.
 - spotify depends on libcurl3
+- blueberry won't launch in VM: "bt-adapter -i" hangs and then segfaults
+- Bash completion doesn't work with all apt commands https://github.com/linuxmint/mintsystem/issues/73
 
 mintupdate:
   - I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.

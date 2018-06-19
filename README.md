@@ -29,6 +29,11 @@ artwork:
   - remove humanity-icon-theme and ubuntu-mono
   - mintwelcome icon
   - grey-on-grey icons (many in cinnamon-settings)
+  - mint-y-icons: yellow and teal folders missing.
+  - cinnamon: The progress indicator in the panel should be the same color as the chosen theme. Not just green.
+
+cinnamon:
+  - removing favorites isn't intuitive, there should be a context menu option
 
 LMDE 3
 ======

@@ -8,10 +8,13 @@ artwork:
     - no icons in Online accounts > Information about Gnome online accounts -> Gnome Contacts, Gnome Documents, Gnome Maps and Gnome Photos
     - visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
     - transparent menubar in mate-terminal
+    - start-here-symbolic.svg missing
   - mint-y:
     - thunderbird icon isn't the same as its flatpak
     - in nemo additional pane, select a folder in the left page, click in the right pane. The selected folder in the left pane is white on grey, almost invisible.
     - video and subtitle icons are too similar
+    - .deb icon
+    - filesystem icon looks like an ipod (in thunar, when small enough)
   - with adwaita, missing icons for Settings/Seting Language, Accessories/USB Format, Accessories/USB Write Image
 
 - The fortune command says 'no fortunes found' -> leftover, fortune is now removed.

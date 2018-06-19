@@ -12,14 +12,7 @@ slick:
 
 artwork:
   - improve status icons: nm-signal-, volume-audio-, power icons
-  - [FIXED In GIT] .deb icon
   - slideshow: old screenshots, still using mint-x.
-  - mint-y-icons: yellow folders missing.
-  - filesystem icon looks like an ipod (in thunar, when small enough)
-  - The progress indicator in the panel should be the same color as the chosen theme. Not just green.
-  - start-here-symbolic.svg was missing in Mint-X icon set. So I copied /usr/share/icons/Mint-X/places/scalable/start-here-linux-mint-symbolic.svg to /usr/share/icons/Mint-X/places/scalable/start-here-symbolic.svg. Then I updated icon-cache file: sudo gtk-update-icon-cache -f '/usr/share/icons/Mint-X' Now: https://imgur.com/ftlrKXL
-  - In the default theme, approximately one pixel of the taskbar near the edge of the screen cannot properly select and switch the task list.
-  - Mint-Y showing incorrect icons in check-boxes. Example: Nemo Preferences, select "Show advanced permissions in the file property dialogue". Now view the properties of a directory containing files. Initially, the file permissions will show [-] (correct).  But clicking to change permissions results in [ ] -&gt; [🗸] -&gt; [🗸] (blank, check, check).  The dash never shows up again leading one to think they enabled the permission, which they didn't.
 
 blueberry:
   - won't launch in VM (Xfce): "bt-adapter -i" hangs and then segfaults
@@ -80,7 +73,6 @@ other:
   - machine will not hibernate, (either from the power button (the hibernate option is selected) or from the exit menu) the screen blanks for a couple of seconds then returns to the session)
   - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
 
-- removing favorites isn't intuitive, there should be a context menu option
 - Can't delete a user. Delete button doesn't delete.
 - Effects "Unmaximize Window" behavior does not change with change in settings regardless of effect type or time setting.
 - After the updates last night I am no longer able to drag maximized windows bu the title bar in Cinnamon.  To clarify the drag of maximized windows, Firefox and Nemo will not drag when maximized, Thunderbird will drag when maximized
@@ -91,7 +83,7 @@ other:
 - Wanting to add a new custom Menu category to adding ones own Items to a category is like pulling teeth. Icon's don't save, Can't arrange Items and etc. No way to add desktop Files to the menu after they have already been created.
 - Application switcher items are not properly selected https://github.com/linuxmint/Cinnamon/issues/7623
 - NTFS pen drive is not mounting
-- When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from paketmaneger it works.
+- When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
 - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
 
 

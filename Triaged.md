@@ -56,6 +56,8 @@ cinnamon:
 - can't install google chrome
 - appimage: When I download Molotov.Appimage and try to launch the file it fails. The same installation with Mint Cinnamon version 18.3 runs perfectly on my both laptops. -> chmod the file, and run it.. works perfectly.
 - Anydesk. Shortcut saved connection on desktop will not launch. Gives ' There was an error launching the application'. From within anydesk it starts normal.
+- In the default theme, approximately one pixel of the taskbar near the edge of the screen cannot properly select and switch the task list.
+- Mint-Y showing incorrect icons in check-boxes. Example: Nemo Preferences, select "Show advanced permissions in the file property dialogue". Now view the properties of a directory containing files. Initially, the file permissions will show [-] (correct).  But clicking to change permissions results in [ ] -&gt; [🗸] -&gt; [🗸] (blank, check, check).  The dash never shows up again leading one to think they enabled the permission, which they didn't.
 
 mate:
   - Windows Manager Metacity+Compton puts red line around app window

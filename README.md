@@ -31,9 +31,12 @@ artwork:
   - grey-on-grey icons (many in cinnamon-settings)
   - mint-y-icons: yellow and teal folders missing.
   - cinnamon: The progress indicator in the panel should be the same color as the chosen theme. Not just green.
+  - cinnamon themes hardcode the font
 
 cinnamon:
   - removing favorites isn't intuitive, there should be a context menu option
+  - When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
+  - Application switcher items are not properly selected https://github.com/linuxmint/Cinnamon/issues/7623
 
 LMDE 3
 ======

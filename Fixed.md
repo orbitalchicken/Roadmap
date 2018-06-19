@@ -80,6 +80,9 @@ Xfce Edition
 - xfburn removed
 - mintdesktop shows a sidepanel with only one item in it
 - Touchpad tap would not work until I installed synaptics touchpad -> synaptics added to Xfce edition
+- changing sound volume via hotkey shows two on-screen-displays
+- After switching to a guest session and back to my session, the wifi indicator appeared twice in the notification area.
+- applet icons are too big
 
 Manual steps for upgraders
 --------------------------

@@ -34,6 +34,8 @@ Outside of the scope
 
 - In the file-manager the number of emblems has been reduced. It takes some effort to create extra ones. It would be great to have an application that automates this process (Else you have to use gimp and put the result with the right name in the proper folder).
 
+- panel date and time item is set as bitstream vera fonts, but bitstream vera fonts not installed
+
 Can't reproduce
 ---------------
 
@@ -46,6 +48,11 @@ cinnamon:
   - After log-out & log-in back, the update manager icon stays there but nothing happens when you left or right click on it..
   - On Vivaldi when I full screen a youtube video, the dashboard always remains displayed. Same on Firefox.
   - power: No way to set brightness for battery VS AC power.
+  - Can't delete a user. Delete button doesn't delete.
+  - Effects "Unmaximize Window" behavior does not change with change in settings regardless of effect type or time setting.
+  - After the updates last night I am no longer able to drag maximized windows bu the title bar in Cinnamon. To clarify the drag of maximized windows, Firefox and Nemo will not drag when maximized, Thunderbird will drag when maximized
+  - steam has to be exited twice from systray
+  - Using Vivaldi (1.15.1147.42 (Stable channel) (64-bit)) I downloaded a picture (jpg) from Facebook to my desktop. The download created a file (filename).jpg.crdownload. Once the picture was downloaded completely this file remained on my desktop. I can select it and check its properties, but I cannot delete it. I get an error message saying that the object does not exist. -> could be inotify not working?
 
 - mint-x: no icon when the update manager cannot connect to the server
 - auto-login from installer doesn't work?
@@ -91,4 +98,4 @@ ubuntu:
 xfce:
   - system-load-plugin: The switch that enables clicking on the system load monitor to open the task manager is greyed out and in the off position whether or it is turned on or off.
   - quicklauncher plugin: The properties window is in French.
-
+  - clock plugin: empty clock in panel after editing preferences.

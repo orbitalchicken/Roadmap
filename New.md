@@ -18,6 +18,7 @@ mint tools:
   - mintupdate:
     - conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
     - systray doesn't move to green check mark after all updates are applied
+    - https://github.com/linuxmint/mintupdate/issues/362
 
 ubiquity:
   - click rel notes, nothing happens
@@ -52,9 +53,6 @@ xplayer:
 Cinnamon Edition
 ----------------
 
-artwork:
-  - cinnamon themes hardcode the font
-
 settings:
   - [confirmed] ccc: in color plugin, add a profile, browse it and click "View details". If gnome-color-manager is not installed, the plugin should ask packagekit (over dbus) to install it. This doesn't work.
 
@@ -67,19 +65,11 @@ other:
   - machine will not hibernate, (either from the power button (the hibernate option is selected) or from the exit menu) the screen blanks for a couple of seconds then returns to the session)
   - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
 
-- Can't delete a user. Delete button doesn't delete.
-- Effects "Unmaximize Window" behavior does not change with change in settings regardless of effect type or time setting.
-- After the updates last night I am no longer able to drag maximized windows bu the title bar in Cinnamon.  To clarify the drag of maximized windows, Firefox and Nemo will not drag when maximized, Thunderbird will drag when maximized
 - NFS mount not visible in Nemo left menu. How to reproduce: install nfs-common, mount NFS folder.
-- steam has to be exited twice from systray?
-- Using Vivaldi (1.15.1147.42 (Stable channel) (64-bit)) I downloaded a picture (jpg) from Facebook to my desktop. The download created a file (filename).jpg.crdownload. Once the picture was downloaded completely this file remained on my desktop. I can select it and check its properties, but I cannot delete it. I get an error message saying that the object does not exist.
 - With panel set to “smart hide”: if panel was never hidden since the beginning of the session, the status of mintupdate is working as expected. Once panel is hidden (by maximizing a window) the mintupdate tray icon remains static for the rest of the session.
 - Wanting to add a new custom Menu category to adding ones own Items to a category is like pulling teeth. Icon's don't save, Can't arrange Items and etc. No way to add desktop Files to the menu after they have already been created.
-- Application switcher items are not properly selected https://github.com/linuxmint/Cinnamon/issues/7623
 - NTFS pen drive is not mounting
-- When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
 - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
-
 
 MATE Edition
 ------------
@@ -90,16 +80,6 @@ MATE Edition
 
 Xfce Edition
 ------------
-
-panel/osd:
-  - changing sound volume via hotkey shows two on-screen-displays
-  - pulseaudio item has two onscreen notifications
-  - panel date and time item is set as bitstream vera fonts, but bitstream vera fonts not installed
-  - digital clock would not stay in the panel, only the analog version
-  - editing the panel clock item in anyway it won’t display anymore user need to remove clock then add again
-  - clock applet doesn't let you use custom format
-  - too many notification and status notifiers panel items, don’t know which one to control, they all have the same basic options. https://i.imgur.com/fmyhhdp.png
-  - After switching to a guest session and back to my session, the wifi indicator appeared twice in the notification area.
 
 other:
   - Suspend worked, but would not ask for my password. I set screen lock in power manager, which I think fixed this in the past, but then it would not suspend at all.

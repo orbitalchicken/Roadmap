@@ -49,6 +49,11 @@ mime:
   - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/ttf" is an invalid MIME type ("font" is an unregistered media type)
   - Error in file "/usr/share/applications/org.gnome.font-viewer.desktop": "font/otf" is an invalid MIME type ("font" is an unregistered media type
 
+timeshift:
+  - /swapfile should be excluded
+  - wizard, the tooltip incorrectly states "Create snapshots using RSYNC" when you hover over BTRFS?
+  - Users tab, the headings for the radio buttons are named "Exclude Apps", "Include Hidden Items" and (once again) "Exclude Apps".
+
 Cinnamon Edition
 ----------------
 

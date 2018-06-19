@@ -6,6 +6,7 @@ All editions - last processed comment: June 12, 2018 at 2:50 pm
 - check that ISO installed in BIOS mode (USB stick)
 - Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
 - update inxi
+- update timeshift to 18.06
 
 slick:
   - On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
@@ -17,6 +18,7 @@ artwork:
 mint tools:
   - mintupdate:
     - conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
+    - refreshing the mintinstall cache slows down checkAPT
     - systray doesn't move to green check mark after all updates are applied
     - https://github.com/linuxmint/mintupdate/issues/362
 
@@ -29,11 +31,6 @@ base:
   - Boot hangs 1 minute with “gave up waiting for suspend/resume device”
 		there seems to be a wrong uuid for resume in initramfs.
 		Temporarily solution is here: https://askubuntu.com/questions/1013830/slow-boot-long-kernel-load-time-due-to-wrong-resume-device
-
-timeshift:
-  - [PR] /swapfile should be excluded
-  - [PR] wizard, the tooltip incorrectly states "Create snapshots using RSYNC" when you hover over BTRFS?
-  - [PR] Users tab, the headings for the radio buttons are named "Exclude Apps", "Include Hidden Items" and (once again) "Exclude Apps".
 
 xplayer:
   - In fullscreen mode, it starts misbehaving after a while. Video freezes/goes black, sound is still there. Keyboard is lost. Mouse pointer moves, but no action can be taken. Reset button on box only option.
@@ -81,5 +78,4 @@ MATE Edition
 Xfce Edition
 ------------
 
-other:
-  - Suspend worked, but would not ask for my password. I set screen lock in power manager, which I think fixed this in the past, but then it would not suspend at all.
+- Suspend worked, but would not ask for my password. I set screen lock in power manager, which I think fixed this in the past, but then it would not suspend at all.

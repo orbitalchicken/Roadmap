@@ -11,13 +11,6 @@ artwork:
   - improve status icons: nm-signal-, volume-audio-, power icons
   - slideshow: old screenshots, still using mint-x.
 
-mint tools:
-  - mintupdate:
-    - conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
-    - refreshing the mintinstall cache slows down checkAPT
-    - systray doesn't move to green check mark after all updates are applied
-    - https://github.com/linuxmint/mintupdate/issues/362
-
 ubiquity:
   - click rel notes, nothing happens
 

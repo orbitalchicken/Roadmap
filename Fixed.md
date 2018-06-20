@@ -36,6 +36,9 @@ mintupdate:
   - I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
   - On first time use, the preferences section “jumps” on the screen.
   - mint-update-pkgcache errors are reported after 60s timeout
+  - conflicts with VM guest pkgs... installing them removes mintupdate (and mintwelcome)
+  - refreshing the mintinstall cache slows down checkAPT
+  - https://github.com/linuxmint/mintupdate/issues/362
 
 mintbackup:
   - restore packages with buggy names -> error, instead of ignoring buggy names

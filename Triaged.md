@@ -48,6 +48,8 @@ Outside of the scope
 
 - panel date and time item is set as bitstream vera fonts, but bitstream vera fonts not installed
 
+- MATE screen goes blank during the install despite all screensaver/power management being turned OFF. Post-install, with everything OFF again, screensaver/power management are disabled properly. -> mate-screensaver is killed by ubiquity to ensure the screen doesn't get locked.
+
 Can't reproduce
 ---------------
 
@@ -82,6 +84,7 @@ cinnamon:
 - not possible to turn bluetooth OFF completely -> systray in blueberry can be disabled. device rfkill state is handled by systemd
 - First time Timeshift was used the Warning and Disclaimer text sections appeared blank (image link), next use the fields were populated. http://pasteall.org/pic/show.php?id=61509d64959391182648fdff247804e6
 - NTFS pen drive is not mounting
+- Custom actions created with Caja Actions are not appearing in Caja's context menu, whereas they did in Mint 18.3. Is there some reason this might be occurring? -> just needs caja to be restarted
 
 mate:
   - Windows Manager Metacity+Compton puts red line around app window

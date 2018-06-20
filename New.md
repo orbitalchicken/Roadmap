@@ -7,10 +7,10 @@ All editions - last processed comment: June 12, 2018 at 2:50 pm
 - update inxi
 - update timeshift to 18.06
 - ubiquity: click rel notes, nothing happens
+- remove ureadahead? faster boot?
 
 artwork:
   - improve status icons: nm-signal-, volume-audio-, power icons
-  - slideshow: old screenshots, still using mint-x.
 
 base:
   - Shutdown takes forever: “A stop job is running for Cryptography Setup for cryptoswap1” takes over 5 minutes
@@ -36,9 +36,6 @@ other:
 
 MATE Edition
 ------------
-
-- screen goes blank during the install despite all screensaver/power management being turned OFF. Post-install, with everything OFF again, screensaver/power management are disabled properly.
-- Custom actions created with Caja Actions are not appearing in Caja's context menu, whereas they did in Mint 18.3. Is there some reason this might be occurring?
 
 Xfce Edition
 ------------

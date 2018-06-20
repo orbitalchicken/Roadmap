@@ -63,6 +63,7 @@ Linux Mint 19.1
         internet: flash/java
         movies: DVD
         connected: refs to ICQ..
+        mint-y theme.
 
     mate:
         consider brisk menu

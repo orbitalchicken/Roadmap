@@ -31,6 +31,7 @@ artwork:
 - spotify depends on libcurl3
 - blueberry won't launch in VM: "bt-adapter -i" hangs and then segfaults
 - Bash completion doesn't work with all apt commands https://github.com/linuxmint/mintsystem/issues/73
+- xplayer: 'Fit Window to Movie' does not work.
 
 mintupdate:
   - I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
@@ -68,6 +69,7 @@ Cinnamon Edition
 - Wireless not showing in Network Manager even though it appears in Network Manager Settings.
 - goa: ubuntu SSO isn't functional -> it won't work without snapd, and it's useless for anything else. Ubuntu non-gnome users auth in snapd CLI anyway, so this should be removed. We don't need it, it's not necessary and it won't work OOTB.
 - desklets: I found a little bug in the Desklet “Analog Chronometer”. I can not call the settings when I have downloaded and switched on the Chronometer.
+- When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
 
 MATE Edition
 ------------
@@ -81,6 +83,7 @@ hidpi:
 - hide compton menuitem
 - onboard isn't selected as a preferred apps
 - mintmenu spamming the logs
+- When I want to shut down, the dialog offers «Hibernate» (which I never tried, because it could not work with a small swap-file). But when I first log out and login as another user, the computer remembers that there is an file /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla, which disable the hibernation. Afterwards the quit-dialog will never show to hibernate until reboot. I did not noticed this effect on Ubuntu Mate 18.04 on the same machine (hibernation is still disabled).
 
 Xfce Edition
 ------------
@@ -91,16 +94,18 @@ Xfce Edition
 - changing sound volume via hotkey shows two on-screen-displays
 - After switching to a guest session and back to my session, the wifi indicator appeared twice in the notification area.
 - applet icons are too big
+- Suspend worked, but would not ask for my password. I set screen lock in power manager, which I think fixed this in the past, but then it would not suspend at all.
 
 Manual steps for upgraders
 --------------------------
 
-apt install libreoffice-sdbc-hsqldb
+apt install libreoffice-sdbc-hsqldb sessioninstaller
 
 apt remove fortune-mod
 
 in Xfce:
     apt install xserver-xorg-input-synaptics
 
-
 remove/reinstall mint-meta-codecs
+
+edit /etc/systemd/logind.conf

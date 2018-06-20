@@ -81,6 +81,7 @@ cinnamon:
 - Mint-Y showing incorrect icons in check-boxes. Example: Nemo Preferences, select "Show advanced permissions in the file property dialogue". Now view the properties of a directory containing files. Initially, the file permissions will show [-] (correct).  But clicking to change permissions results in [ ] -&gt; [🗸] -&gt; [🗸] (blank, check, check).  The dash never shows up again leading one to think they enabled the permission, which they didn't.
 - not possible to turn bluetooth OFF completely -> systray in blueberry can be disabled. device rfkill state is handled by systemd
 - First time Timeshift was used the Warning and Disclaimer text sections appeared blank (image link), next use the fields were populated. http://pasteall.org/pic/show.php?id=61509d64959391182648fdff247804e6
+- NTFS pen drive is not mounting
 
 mate:
   - Windows Manager Metacity+Compton puts red line around app window

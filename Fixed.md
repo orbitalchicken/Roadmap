@@ -9,6 +9,7 @@ artwork:
     - visual glitches in mate-screensaver-preferences in the left pane (list of screensavers). Just move the mouse over that pane back and forth, without clicking. Doesn't happen with Mint-Y.
     - transparent menubar in mate-terminal
     - start-here-symbolic.svg missing
+    - improve status icons: nm-signal-, volume-audio-, power icons
   - mint-y:
     - thunderbird icon isn't the same as its flatpak
     - in nemo additional pane, select a folder in the left page, click in the right pane. The selected folder in the left pane is white on grey, almost invisible.

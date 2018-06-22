@@ -13,6 +13,8 @@ All editions - last processed comment: June 12, 2018 at 2:50 pm
 Cinnamon Edition
 ----------------
 
+- nm applet resets to 0%
+
 MATE Edition
 ------------
 

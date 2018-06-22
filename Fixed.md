@@ -33,6 +33,7 @@ artwork:
 - blueberry won't launch in VM: "bt-adapter -i" hangs and then segfaults
 - Bash completion doesn't work with all apt commands https://github.com/linuxmint/mintsystem/issues/73
 - xplayer: 'Fit Window to Movie' does not work.
+- machine will not hibernate, (either from the power button (the hibernate option is selected) or from the exit menu) the screen blanks for a couple of seconds then returns to the session) -> pm-hibernate fails, that's upstream. We were forcing the hibernation option to be present though, and that was fixed.
 
 mintupdate:
   - I choosed the new «Auto-upgrade», but it did not start until I made /etc/cron.daily/mintupdate executable.
@@ -71,6 +72,8 @@ Cinnamon Edition
 - goa: ubuntu SSO isn't functional -> it won't work without snapd, and it's useless for anything else. Ubuntu non-gnome users auth in snapd CLI anyway, so this should be removed. We don't need it, it's not necessary and it won't work OOTB.
 - desklets: I found a little bug in the Desklet “Analog Chronometer”. I can not call the settings when I have downloaded and switched on the Chronometer.
 - When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
+- csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
+- With panel set to “smart hide”: if panel was never hidden since the beginning of the session, the status of mintupdate is working as expected. Once panel is hidden (by maximizing a window) the mintupdate tray icon remains static for the rest of the session.
 
 MATE Edition
 ------------
@@ -110,3 +113,4 @@ in Xfce:
 remove/reinstall mint-meta-codecs
 
 edit /etc/systemd/logind.conf
+remove plka

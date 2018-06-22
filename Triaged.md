@@ -53,6 +53,8 @@ Outside of the scope
 Can't reproduce
 ---------------
 
+- remove ureadahead? faster boot? -> empirical?
+
 - When installing to internal 16GB SSD and with option “Something else” using the whole SSD for mountpoint root, installation always hangs in both XFCE 64 and Cinnamon 64. Ubuntu 18.04 installer with same options has no problem. -> journalctl info not provided
 
 cinnamon:

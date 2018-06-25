@@ -54,7 +54,7 @@ Can't reproduce
 ---------------
 
 - remove ureadahead? faster boot? -> empirical?
-
+- USB doesn't boot in BIOS mode
 - When installing to internal 16GB SSD and with option “Something else” using the whole SSD for mountpoint root, installation always hangs in both XFCE 64 and Cinnamon 64. Ubuntu 18.04 installer with same options has no problem. -> journalctl info not provided
 
 cinnamon:
@@ -114,6 +114,9 @@ ubuntu:
   -  During installation, having selected "Something else", I chose my root partition and changed it to ext4; format; /. Once finished, a window entitled "Write previous changes to disk and continue?" appeared with the text "Before you can select a new partition size...". At no point did I select a new partition size. Hitting "Go Back" got rid of the message and a look at the list of partitions showed that the new info for that root partition was good, so that "new partition size" window appears both incorrect and unnecessary in that situation. I've experienced this twice during two installations.
   - xed admin:///etc/fstab asks for password twice -> happens with gedit as well, must be an issue with admin:// or pkexec.
   - screen reader reads too fast
+  - systemd-udev cause high cpu: https://bugs.launchpad.net/ubuntu/+source/udev/+bug/1767968?comments=all
+  - Shutdown takes forever: “A stop job is running for Cryptography Setup for cryptoswap1” takes over 5 minutes
+  - Boot hangs 1 minute with “gave up waiting for suspend/resume device”, there seems to be a wrong uuid for resume in initramfs. Temporarily solution is here: https://askubuntu.com/questions/1013830/slow-boot-long-kernel-load-time-due-to-wrong-resume-device https://bugs.launchpad.net/ubuntu/+source/initramfs-tools/+bug/1768230
 
 xfce:
   - system-load-plugin: The switch that enables clicking on the system load monitor to open the task manager is greyed out and in the off position whether or it is turned on or off.

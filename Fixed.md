@@ -18,6 +18,7 @@ artwork:
     - filesystem icon looks like an ipod (in thunar, when small enough)
   - with adwaita, missing icons for Settings/Seting Language, Accessories/USB Format, Accessories/USB Write Image
 
+- ubiquity: click rel notes, nothing happens
 - The fortune command says 'no fortunes found' -> leftover, fortune is now removed.
 - gdebi doesn't install packages unless it's run from the terminal
 - ia32-libs: depends on libesd0:i386 which is gone
@@ -74,6 +75,7 @@ Cinnamon Edition
 - When trying to (samba) share a folder in nemo, i have an option to install samba, but it fails to install. After installing samba from packetmanager it works.
 - csd-power: https://github.com/linuxmint/cinnamon-settings-daemon/issues/209
 - With panel set to “smart hide”: if panel was never hidden since the beginning of the session, the status of mintupdate is working as expected. Once panel is hidden (by maximizing a window) the mintupdate tray icon remains static for the rest of the session.
+- nm applet resets to 0%
 
 MATE Edition
 ------------

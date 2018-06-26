@@ -1,16 +1,5 @@
-Linux Mint 19
-=============
-
-ff in live repo
-
-need_update:
-  - minecraft-installer (works with JRE8?)
-  - whatsapp-desktop
-  - google-earth-pro-stable
-
-- gist-paste still used in xapps/mintsystem
-- update translations
-- update installation guide translations
+Non-blocking bugs
+=================
 
 release upgrade tool:
   - migrate to pkexec
@@ -19,9 +8,6 @@ release upgrade tool:
   - suggestions:
     - Re-enable 3rd party repositories after upgrade. A backup of the APT sources gets stored in ./Upgrade-Backup/APT but the tutorial didn't cover this or what to do with it (probably best to just find what the 3rd party repositories were and re-enable them manually from instructions on their website). Important for things like Google Chrome.
     - mintupgrade replaces user modified configuration files in /etc without prompting, leaving .dpkg-old files behind. Perhaps cover this tidbit in the tutorial.
-
-Non-blocking bugs
-=================
 
 artwork:
   - MyPaint and Pinta have the same icon
@@ -45,6 +31,7 @@ cinnamon:
   - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
   - csd power: https://github.com/GNOME/gnome-settings-daemon/commit/82af1816f32a26f28027ea7ce8edc79cd833bc76
 
+- gist-paste still used in xapps/mintsystem
 - slick greeter: On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
 - Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
 

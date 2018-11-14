@@ -135,7 +135,6 @@ Linux Mint 19.1
 
     cinnamon
         enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
-        PR on network applet to use libnm/libnma (needs fixes in Debian Stretch)
 
     slick
         would be nice to show release number

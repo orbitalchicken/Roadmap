@@ -14,6 +14,8 @@ mintsources
 
 mintupdate
     kernel window supports mainline kernels
+    kernel window shows support status
+    ability to purge old kernels
 
 mintwelcome
     firewall configuration
@@ -43,9 +45,15 @@ libxapp
 
 xed
     show spaces/tabs in statusbar
+    moved to libpeas/python3/meson
+    reworked status bar
 
 xplayer
     moved to python3
+
+xreader
+    better look and feel, thumbs/borders
+    fix print preview
 
 symbolic status icons:
     mint-y -> new icons
@@ -56,44 +64,35 @@ symbolic status icons:
 
 mint-y contrast
 mint-y color variations
+new backgrounds
+
+system:
+    sudo password feedback
 
 Linux Mint 19.1 TO BE DONE
 ===========================
 
-print test page https://github.com/linuxmint/linuxmint/pull/77/files
+update mint-mirrors
 
-system
-    plymouth: center text, hide "None" value
+rel notes:
+    https://superuser.com/questions/1295202/garbled-display-when-running-lubuntu-17-10-as-guest-os
 
-
-update installation slideshow
-    internet: flash/java
-    movies: DVD
-    connected: refs to ICQ..
-    mint-y theme.
+bugs:
+    print test page https://github.com/linuxmint/linuxmint/pull/77/files
+    wine: metapackage, mime handler and menu items
 
 mintupdate:
     don't gather packages in checkAPT as root: https://github.com/linuxmint/mintupdate/issues/379
     safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
     notice to reboot the computer when appropriate
-    purge old kernels? https://github.com/Pjotr123/purge-old-kernels-2
 
-artwork:
-  - MyPaint and Pinta have the same icon
-  - grey-on-grey icons (many in cinnamon-settings)
-  - mint-y-icons: teal folders missing.
-
-- slick greeter: On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
-
-ubiquity:
-    /target/swapfile appears in /etc/crypttab when installing with home dir encryption, causes swap to malfunction https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1759253 https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1670336
+update translations for installation guide
 
 Non-blocking bugs
 =================
 
 artwork:
   - mintwelcome icon
-  - cinnamon themes hardcode the font
 
 cinnamon:
   - NFS mount not visible in Nemo left menu. How to reproduce: install nfs-common, mount NFS folder.
@@ -104,10 +103,23 @@ cinnamon:
   - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
   - csd power: https://github.com/GNOME/gnome-settings-daemon/commit/82af1816f32a26f28027ea7ce8edc79cd833bc76
 
-- Gnome calendar does not have an icon on the top left in the new Gnome decorations, only a cog icon is shown.
-
-Linux Mint 19.1
+Linux Mint 19.2
 ===============
+
+    artwork considerations:
+        contrast down to #000?
+        switch to ubuntu fonts?
+        revamp sound theme?
+        revamp isolinux/grub menus?
+        revamp plymouth splash?
+        cinnamon themes to use system fonts?
+        grey-on-grey icons (many in cinnamon-settings)
+
+    mintlocale:
+        https://github.com/linuxmint/mintlocale/issues/36
+
+    pia-manager:
+        https://github.com/linuxmint/pia-manager/issues/11
 
     help
         rtd dev guide

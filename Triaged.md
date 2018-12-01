@@ -56,6 +56,7 @@ Can't reproduce
 - remove ureadahead? faster boot? -> empirical?
 - USB doesn't boot in BIOS mode
 - When installing to internal 16GB SSD and with option “Something else” using the whole SSD for mountpoint root, installation always hangs in both XFCE 64 and Cinnamon 64. Ubuntu 18.04 installer with same options has no problem. -> journalctl info not provided
+- slick greeter: On a VirtualBox setup with three users, if any user but the first is auto given focus, the username is present but the box only has half height, cut off with no password entry lower half. You can type where that password entry half of the box would be , and it works, but the characters don't show, so it's a visual display problem, only apparently happening on boot.
 
 cinnamon:
   - backgrounds: On the left pane, you can’t select “Pictures” folder by clicking, you need to use the keyboard – Down key..

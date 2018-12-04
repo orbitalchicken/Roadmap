@@ -79,16 +79,16 @@ Linux Mint 19.2
     xapps/cinnamon/nemo:
         don't ship icons with generic names in /usr/share/hicolor. All icons should be prefixed (cs-, xapp-, nemo-..etc..) so they don't conflict with other packages
 
-Linux Mint 19.2
-===============
+    xfce:
+        consider backports https://blog.xfce.org/
 
-cinnamon
-    gtk windows
-    merge appsys and cmenus
-    ditch docinfo
+    cinnamon
+        gtk windows
+        merge appsys and cmenus
+        ditch docinfo
 
-nemo
-    better navbar
+    nemo
+        better navbar
 
 LMDE 4
 ======

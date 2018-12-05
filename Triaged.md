@@ -14,4 +14,5 @@ Can't reproduce
 
 Upstream
 --------
+    Ubiquity: Wrong default French layout: https://github.com/linuxmint/linuxmint/issues/50
 

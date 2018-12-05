@@ -14,7 +14,6 @@ xplayer:
 
 ubiquity:
 	GRUB TIME OUT isn't set properly
-	Wrong French layout: https://github.com/linuxmint/linuxmint/issues/50
 
 Cinnamon Edition
 ----------------
@@ -27,7 +26,6 @@ gwl:
 	Ctrl to launch new instance
 	middle-click on empty pinned group wants to kill something?
 	different system settings modules (say colors and date-time) get grouped together, despite having a different icon
-	in settings, "window list" applet (when switched to modern) looks as if it's added and broken.
 
 menu:
 	With the modern layout, the Menu icon (the Mint logo) looks blurry compared to the “crisp” icons of the grouped applications taskbar
@@ -40,6 +38,7 @@ Fixed in PR:
 
 Fixed in Git:
 	xed menu item not translated
+	in settings, "window list" applet (when switched to modern) looks as if it's added and broken.
 
 MATE Edition
 ------------

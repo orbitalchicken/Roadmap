@@ -23,22 +23,14 @@ in HiDPI, keyboard applet, the flags is not the proper size. Hovering it fixes i
 wacom buttons ignored in tablet mode
 
 gwl:
-	Ctrl to launch new instance
-	middle-click on empty pinned group wants to kill something?
 	different system settings modules (say colors and date-time) get grouped together, despite having a different icon
 
 menu:
 	With the modern layout, the Menu icon (the Mint logo) looks blurry compared to the “crisp” icons of the grouped applications taskbar
 	I would like a tiny bit more space between the start menu and the following "Grouped windows list" icons, like with "panel launcher" or "window list" that have a bit space to their left.
 
-Fixed in PR:
-	calendar text is too small.
-	The notification area icons will look more elegant if is set to 22 px. by default (even so, will be bigger than the defaults on Linux Mint 19.0).
-	Start menu doesn't auto-shrink – too much space between the lock and favorites button and unused space under "Places".
-
 Fixed in Git:
 	xed menu item not translated
-	in settings, "window list" applet (when switched to modern) looks as if it's added and broken.
 
 MATE Edition
 ------------

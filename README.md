@@ -1,8 +1,6 @@
 Linux Mint 19.1 TO BE DONE
 ===========================
 
-update mint-mirrors
-
 bugs:
     print test page https://github.com/linuxmint/linuxmint/pull/77/files
     wine: metapackage, mime handler and menu items

@@ -15,6 +15,9 @@ xplayer:
 ubiquity:
 	GRUB TIME OUT isn't set properly
 
+sane:
+	https://bugs.launchpad.net/ubuntu/+source/sane-backends/+bug/1731459
+
 Cinnamon Edition
 ----------------
 
@@ -22,8 +25,20 @@ in HiDPI, keyboard applet, the flags is not the proper size. Hovering it fixes i
 
 wacom buttons ignored in tablet mode
 
+
+The ‘system-shutdown’, ‘ system-log-out’ and ‘system-lock-screen’ icons don’t scale properly on big panels (50+). Instead of 48px icons they are upscaled (blurry) 32px. It might also be a nice feature to be able to ‘pin’ them down in the aforementioned applet.
+
+center-align applet text (test with %n in clock applet)
+
+mint-y: tooltips don't match theme
+mint-y gwl theme broken for top/right/left panels
+
 gwl:
 	different system settings modules (say colors and date-time) get grouped together, despite having a different icon
+	mint-x + panel on top -> all groups active
+	remove dnd option to pin
+	dnd on pin should be persistent
+	vertical thumbs, restart cinnamon -> wrong number of thumbs
 
 menu:
 	With the modern layout, the Menu icon (the Mint logo) looks blurry compared to the “crisp” icons of the grouped applications taskbar

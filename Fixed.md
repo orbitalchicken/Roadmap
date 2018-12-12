@@ -3,6 +3,14 @@ Fixed Issues since Linux Mint 19.1 BETA
 All editions
 ------------
 
+xed menu item not translated
+https://github.com/linuxmint/mint-19.1-beta/issues?q=is%3Aissue+is%3Aclosed
+
+mintsources: Add kabyle support
+update translations
+FF in live repo
+FF support for dark themes
+
 Cinnamon Edition
 ----------------
 
@@ -17,6 +25,15 @@ Start menu doesn't auto-shrink – too much space between the lock and favorites
 in settings, "window list" applet (when switched to modern) looks as if it's added and broken.
 gwl: Ctrl to launch new instance
 gwl: middle-click on empty pinned group wants to kill something
+mint-y gwl theme broken for top/right/left panels
+gwl:
+  different system settings modules (say colors and date-time) get grouped together, despite having a different icon
+  mint-x + panel on top -> all groups active
+  remove dnd option to pin
+  dnd on pin should be persistent
+  vertical thumbs, restart cinnamon -> wrong number of thumbs
+center-align applet text (test with %n in clock applet)
+The ‘system-shutdown’, ‘ system-log-out’ and ‘system-lock-screen’ icons don’t scale properly on big panels (50+). Instead of 48px icons they are upscaled (blurry) 32px.
 
 MATE Edition
 ------------

@@ -1,31 +1,8 @@
-Linux Mint 19.1 TO BE DONE
-===========================
-
-rel notes:
-    epson:
-        This bug has been reported in https://bugs.launchpad.net/ubuntu/+source/sane-backends/+bug/1728012
-        The work around is as follows (I just tested this out with a V300 Photo Scanner)
-        1. Install the iscan-software from the Epson website
-        2. sudo ln -sfr /usr/lib/sane/libsane-epkowa* /usr/lib/x86_64-linux-gnu/sane
-        3. Create an udev-rule /etc/udev/rules.d/79-udev-epson.rules
-        with the following content: ATTRS{manufacturer}==”EPSON”, DRIVERS==”usb”, SUBSYSTEMS==”usb”, ATTRS{idVendor}==”04b8″, ATTRS{idProduct}==”*”, MODE=”0777″
-
-        Restart you computer. Power-on the scanner. The first time I started the epson-scan-software I got the message Scanner not found, but the second time all went well.
-
-
-bugs:
-    print test page https://github.com/linuxmint/linuxmint/pull/77/files
-    wine: metapackage, mime handler and menu items
-
-mintupdate:
-    don't gather packages in checkAPT as root: https://github.com/linuxmint/mintupdate/issues/379
-    safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
-    notice to reboot the computer when appropriate
-
-update translations for installation guide
-
 Non-blocking bugs
 =================
+
+print test page https://github.com/linuxmint/linuxmint/pull/77/files
+wine: metapackage, mime handler and menu items
 
 artwork:
   - mintwelcome icon
@@ -36,12 +13,18 @@ cinnamon:
   - menu-editor: picking a pixmap in /usr/share/pixmaps for a category results in no icon being shown in the menu.
   - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
   - csd power: https://github.com/GNOME/gnome-settings-daemon/commit/82af1816f32a26f28027ea7ce8edc79cd833bc76
+  - in HiDPI, keyboard applet, the flags is not the proper size. Hovering it fixes it.
+
+mintupdate:
+    don't gather packages in checkAPT as root: https://github.com/linuxmint/mintupdate/issues/379
+    safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
+    notice to reboot the computer when appropriate
+    unit tests and improvements for kernel recommendation
+
+update translations for installation guide
 
 Linux Mint 19.2
 ===============
-
-    ubiquity:
-        allow to skip grub installation
 
     artwork considerations:
         contrast down to #000?
@@ -50,7 +33,9 @@ Linux Mint 19.2
         revamp isolinux/grub menus?
         revamp plymouth splash?
         cinnamon themes to use system fonts?
+        cinnamon/gtk mint-y: tooltips don't match theme
         grey-on-grey icons (many in cinnamon-settings)
+        review color variations in mint-y
 
     mintlocale:
         https://github.com/linuxmint/mintlocale/issues/36

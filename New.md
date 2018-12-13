@@ -14,43 +14,19 @@ ubiquity:
 	kabyle
 	fcitx recommends
 
-bird in coast wallpaper
-
 xapps don't react consistently to ctrl+q and ctrl+w
-
-Open update manager — View — Linux Kernels –> Continue
-Click Remove old kernels…
-If the list is empty (no removable kernel):
-The “Remove selected kernels” button remain active, and if you click the button, the “Remove old kernels” windows close, and the Kernels window remain inactive.
-
-
- I couldn’t do the installation of my HP Laserjet 1132MFP, following the installation of the hplip file from hp, in the final step it says that it requires a binary file, and enters in a loop that never ends.
 
 Cinnamon Edition
 ----------------
 
 Booting from USB stick take pause for 10-30 seconds with no USB mouse light and no light on USB stick then light up boot continue. Pause for USB ports reset ?
 
-Terminal prompt color still just green for both user &amp; root, LM 18.3 green for user red for root.
-Simple System desklet not working.
-SAMBA Windows Networking does not show anything, LM 18.3 show all devices.
+nemo:
+	- When I right click on the desktop and select ‘Customize’, my icons are automatically resorted.
 
-Could not find a setting to make a default folder view size. All the folder/file icons seem rather large. I can easily resize with ctrl+ (+/-) or the resize bar but it would be nice to have a customized setting that was global and then I could tweak each folder as needed
+gwl: Enable "application name" label. Open FF, open at least two browser tabs. Close FF. The label slides over the icon and doesn't disappear: https://kepkuldes.com/image/UoNHl
 
-
-When I right click on the desktop and select ‘Customize’, my icons are automatically resorted. This is pretty annoying. Any way it can be changed to not do that unless a re-sort is requested?
-
-
-Right click “Grouped window list” — Preferences — Configure
-Click the Panel tab — Chose: Button label: Application name, Window title or Window title (only for the…)
-Now
-Open Firefox — Open at least two browser tab — Close Firefox
-Watch the “Grouped window list” menu. The caption slide over the icon, and will not disappear.
-https://kepkuldes.com/image/UoNHl
-
-gwl add shift click
-
-Panel — Removable drives application: if you unmount a disk, the application doesn’t show feedback (popup window), if you a disk unmount in nemo, the notification is show (popup windows).
+mounted volume applet: no notification when unmounting (as opposed to when it's done in nemo).
 
 MATE Edition
 ------------

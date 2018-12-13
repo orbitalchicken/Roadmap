@@ -26,6 +26,9 @@ update translations for installation guide
 Linux Mint 19.2
 ===============
 
+    system:
+        add support for 32-bit EFI: https://forums.linuxmint.com/viewtopic.php?f=29&t=283381
+
     artwork considerations:
         contrast down to #000?
         switch to ubuntu fonts?
@@ -33,6 +36,7 @@ Linux Mint 19.2
         revamp isolinux/grub menus?
         revamp plymouth splash?
         cinnamon themes to use system fonts?
+        text-size to be configurable in panel zones?
         cinnamon/gtk mint-y: tooltips don't match theme
         grey-on-grey icons (many in cinnamon-settings)
         review color variations in mint-y

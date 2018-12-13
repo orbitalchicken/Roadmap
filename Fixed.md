@@ -10,6 +10,7 @@ mintsources: Add kabyle support
 update translations
 FF in live repo
 FF support for dark themes
+in lightdm, onboard doesn't work (empty area)
 
 Cinnamon Edition
 ----------------

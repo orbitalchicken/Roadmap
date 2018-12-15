@@ -39,6 +39,7 @@ gwl:
 
 center-align applet text (test with %n in clock applet)
 The ‘system-shutdown’, ‘ system-log-out’ and ‘system-lock-screen’ icons don’t scale properly on big panels (50+). Instead of 48px icons they are upscaled (blurry) 32px.
+When I right click on the desktop and select ‘Customize’, my icons are automatically resorted.
 
 MATE Edition
 ------------

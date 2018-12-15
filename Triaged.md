@@ -18,6 +18,8 @@ lightdm:
 
 hplip: I couldn’t do the installation of my HP Laserjet 1132MFP, following the installation of the hplip file from hp, in the final step it says that it requires a binary file, and enters in a loop that never ends.
 
+Booting from USB stick take pause for 10-30 seconds with no USB mouse light and no light on USB stick then light up boot continue. Pause for USB ports reset ?
+
 Upstream
 --------
     Ubiquity: Wrong default French layout: https://github.com/linuxmint/linuxmint/issues/50

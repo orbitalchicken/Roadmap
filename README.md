@@ -1,3 +1,62 @@
+Done
+====
+
+mintreport:
+    sysinfo tab
+    migrate to systemd-coredump (to make it compatible with LMDE)
+
+mintinstall/mintupdate:
+    use common cache to know all manually installed packages, not just the ones installed via mintinstall (only in Mint, not LMDE)
+
+Cinnamon 4.2:
+    - preferred apps: Added an option for PDF reader
+    - simplified docinfo
+    - simplified appsys
+    - cmenus ported to meson
+    - onscreen keyboard in screensaver
+    - background slideshow applet shows filename
+    - faster input lag
+    - faster menu
+    - printer applet
+    - vsync can be switched without restarting
+    - configurable vsync method
+
+mintupdate:
+    able to blacklist a specific version
+    detects apt lock and delays refresh instead of failing
+    automated autoremove of kernels and packages
+    inhibit shutdown/reboot during automation
+    persistent and logrotate for /var/log/mintupdate.log
+    auto-refresh is now configurable
+
+mintupdate
+    refreshes automatically when apt cache changes
+    add man pages
+    warns that reboot is required after kernel update
+    info dialog updates in real time
+    refresh mechanism uses timestamp, no longer impacted by suspends, can be configured to periods longer than the session
+    warns 90 days before distro reaches EOL
+    retire level and obsolete options
+    checkAPT no longer run as root
+    kernel series supported
+    multiples can be installed/removed (queued operations)
+    kernels show their EOL
+    status page when mintupdate needs to update itself
+    refresh page
+    mintupdate page
+
+artwork:
+    mint-y:
+        improved contrast in nemo sidebar
+    switch to ubuntu fonts
+    improved contrast
+    clear and dark action icons
+    remove noto-sans, noto-sans-hinted, noto-sans-unhinted? (create stuttering in chromium)
+    currently debating mint-y-darker
+
+blueberry:
+    ability to connect/disconnect paired devices in systray
+
 Non-blocking bugs
 =================
 
@@ -7,6 +66,8 @@ wine: metapackage, mime handler and menu items
 artwork:
   - mintwelcome icon
   - package mint-y variations into flathub
+
+pia-manager
 
 cinnamon:
   - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
@@ -22,30 +83,40 @@ cinnamon:
 xapps don't react consistently to ctrl+q and ctrl+w
 
 mintupdate:
-    don't gather packages in checkAPT as root: https://github.com/linuxmint/mintupdate/issues/379
     safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
-    notice to reboot the computer when appropriate
-    unit tests and improvements for kernel recommendation
+
+timeshift: after restoration and before reboot, run hooks (could be used to adjust grub menu)
 
 update translations for installation guide
 
 Linux Mint 19.2
 ===============
 
+    add sum to download page directly
+
+    https/apt:
+        add https support for packages.linuxmint.com
+        switch to https by default?
+        add feature in mintsources to list https mirrors only?
+
     system:
         add support for 32-bit EFI: https://forums.linuxmint.com/viewtopic.php?f=29&t=283381
+        add support for https://help.ubuntu.com/community/Boot-Repair
+        add CLI support for foreign packages list/removal/downgrade
+
+    samba: https://github.com/linuxmint/linuxmint/issues/125
 
     artwork considerations:
-        contrast down to #000?
-        switch to ubuntu fonts?
         revamp sound theme?
         revamp isolinux/grub menus?
         revamp plymouth splash?
-        cinnamon themes to use system fonts?
         text-size to be configurable in panel zones?
         cinnamon/gtk mint-y: tooltips don't match theme
         grey-on-grey icons (many in cinnamon-settings)
         review color variations in mint-y
+        solid opaque terminal background?
+        update MATE metathemes
+        mint-y-darker dark menus should use dark assets
 
     mintlocale:
         https://github.com/linuxmint/mintlocale/issues/36
@@ -59,12 +130,11 @@ Linux Mint 19.2
 
     mate:
         consider brisk menu
+        fix terminal apps not running (gnome-terminal --> mate-terminal)
 
     mintupdate:
-        systray icon or infobar to notify user of new Mint versions
         remember sorting of updates
         have an option for update manager to initiate a timeshift backup prior to applying upgrades?
-        retire levels
 
     port mintstick to python3
 
@@ -77,9 +147,6 @@ Linux Mint 19.2
         cursor theme?
         sound theme?
         bump resolution of branded backgrounds
-
-    cinnamon
-        enable recent by default, fix mem leak https://github.com/linuxmint/cinnamon-desktop/commit/2015cc0f8a8fe46384225b0cf10df45f7d3d9315#diff-7ad95a88738c9b5cd253f469add87640
 
     slick
         would be nice to show release number
@@ -133,9 +200,10 @@ Roadmap
         wrong lsb info..etc.
         slow boot sequence
         slow shutdown sequence
-        migrate to systemd-coredump (to make it compatible with LMDE)
         systray support
-        use systemd-coredump
+
+    mintupgrade
+        list/address foreign packages post-upgrade
 
     implement an alarm clock
 

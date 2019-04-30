@@ -61,7 +61,6 @@ Non-blocking bugs
 =================
 
 print test page https://github.com/linuxmint/linuxmint/pull/77/files
-wine: metapackage, mime handler and menu items
 
 artwork:
   - mintwelcome icon
@@ -105,6 +104,8 @@ Linux Mint 19.2
         add CLI support for foreign packages list/removal/downgrade
 
     samba: https://github.com/linuxmint/linuxmint/issues/125
+
+    wine: metapackage, mime handler and menu items https://bugs.launchpad.net/ubuntu/+source/wine/+bug/1576326
 
     artwork considerations:
         revamp sound theme?

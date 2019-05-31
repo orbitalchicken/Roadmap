@@ -45,6 +45,14 @@ mintupdate
     refresh page
     mintupdate page
 
+mintmenu:
+    configurable tooltips
+    configurable search bar position
+    performance improvements
+    preferences rewrite
+    recent -> documents first
+    removed obsolete code
+
 artwork:
     mint-y:
         improved contrast in nemo sidebar
@@ -56,6 +64,20 @@ artwork:
 
 blueberry:
     ability to connect/disconnect paired devices in systray
+
+xed:
+    print preview fixes
+    toggle comments
+
+wine:
+    wine-installed + wine-desktop-files
+    winehq-stable in repos
+    mintinstall support for wine-installer
+    rel notes
+    desktop-file-utils
+
+python-xapp
+    GSettings widgets
 
 Non-blocking bugs
 =================
@@ -69,7 +91,6 @@ artwork:
 pia-manager
 
 cinnamon:
-  - Even after authorize Samba in gufw, Nemo doesn’t show the local network and machine on it. I must manually type smb://user@ip to get in (after workgroup and password) In Mint 18 that was directly available.
   - When in tablet mode (that is, the screen is rotated and covering the keyboard) the RotateWindows key doesn't work anymore... It just does nothing...
   - menu-editor: picking a pixmap in /usr/share/pixmaps for a category results in no icon being shown in the menu.
   - Unable to unlock the screensaver via LDAP with libpam-ldap and nscd packages installed pointing to an openldap server.
@@ -154,6 +175,7 @@ Linux Mint 19.2
 
     xapps/cinnamon/nemo:
         don't ship icons with generic names in /usr/share/hicolor. All icons should be prefixed (cs-, xapp-, nemo-..etc..) so they don't conflict with other packages
+        cinnamon-settings should use gsettingswidgets from xapp and retire its own
 
     xfce:
         consider backports https://blog.xfce.org/

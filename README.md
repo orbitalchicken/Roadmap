@@ -20,6 +20,7 @@ Cinnamon 4.2:
     - printer applet
     - vsync can be switched without restarting
     - configurable vsync method
+    - nemo conditional actions, exec condition https://github.com/linuxmint/nemo/pull/2056
 
 mintupdate:
     able to blacklist a specific version
@@ -79,10 +80,16 @@ wine:
 python-xapp
     GSettings widgets
 
+dev guide
+
+xreader:
+    optional zoom factor indicator
+
+xapps:
+    ctrl+w/q
+
 Non-blocking bugs
 =================
-
-print test page https://github.com/linuxmint/linuxmint/pull/77/files
 
 artwork:
   - mintwelcome icon
@@ -100,8 +107,6 @@ cinnamon:
   - gwl: Enable "application name" label. Open FF, open at least two browser tabs. Close FF. The label slides over the icon and doesn't disappear: https://kepkuldes.com/image/UoNHl
   - nemo: custom folder colors are blurry (they use png instead of svg)
 
-xapps don't react consistently to ctrl+q and ctrl+w
-
 mintupdate:
     safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
 
@@ -111,6 +116,17 @@ update translations for installation guide
 
 Linux Mint 19.2
 ===============
+
+    cinnamon calendar : numbers too small
+
+    fingerprint reader -> slick-greeter support
+
+    advertise community website in get involved page
+
+    remove network-manager-config-connectivity-ubuntu
+    https://askubuntu.com/questions/46501/why-can-other-users-see-the-files-in-my-home-folder
+    ubuntu-backports priority -> 100
+    nvidia driver in iso
 
     add sum to download page directly
 
@@ -123,10 +139,6 @@ Linux Mint 19.2
         add support for 32-bit EFI: https://forums.linuxmint.com/viewtopic.php?f=29&t=283381
         add support for https://help.ubuntu.com/community/Boot-Repair
         add CLI support for foreign packages list/removal/downgrade
-
-    samba: https://github.com/linuxmint/linuxmint/issues/125
-
-    wine: metapackage, mime handler and menu items https://bugs.launchpad.net/ubuntu/+source/wine/+bug/1576326
 
     artwork considerations:
         revamp sound theme?
@@ -143,11 +155,7 @@ Linux Mint 19.2
     mintlocale:
         https://github.com/linuxmint/mintlocale/issues/36
 
-    pia-manager:
-        https://github.com/linuxmint/pia-manager/issues/11
-
     help
-        rtd dev guide
         rtd security guide
 
     mate:
@@ -182,15 +190,10 @@ Linux Mint 19.2
 
     cinnamon
         gtk windows
-        merge appsys and cmenus
-        ditch docinfo
 
     nemo
         better navbar
         consider sping loaded folders https://www.youtube.com/watch?v=gdUPrMjlLy8
-
-    xreader:
-        consider zoom factor indicator
 
     xed:
         option to remember past opened-documents

@@ -1,134 +1,3 @@
-Done
-====
-
-mintreport:
-    sysinfo tab
-    migrate to systemd-coredump (to make it compatible with LMDE
-    better layout
-
-mintinstall/mintbackup:
-    use common cache to know all manually installed packages, not just the ones installed via mintinstall (only in Mint, not LMDE)
-
-mintinstall:
-    spinner while searching
-    support for low resolution screens
-
-Cinnamon 4.2:
-    - enable recent by default
-    - preferred apps: Added an option for PDF reader
-    - simplified docinfo
-    - simplified appsys
-    - cmenus ported to meson
-    - background slideshow applet shows filename
-    - faster input lag
-    - faster menu
-    - printer applet
-    - vsync can be switched without restarting
-    - configurable vsync method
-    - nemo conditional actions, exec condition https://github.com/linuxmint/nemo/pull/2056
-    - nemo pinned items
-    - menu no more duplicated names
-    - natural scrolling for mice (not just touchpad)
-    - cmenus ported to meson
-    - screensaver no longer fades
-    - screensaver on-screen keyboard
-    - better samba support (check full permissions, warns about encrypted directories, fills rules for UFW)
-    - session manager:
-        don't let inhibitors stop a forced logout
-        port to gdbus
-    - connectivity checking in privacy
-
-mintupdate:
-    able to blacklist a specific version
-    detects apt lock and delays refresh instead of failing
-    automated autoremove of kernels and packages
-    inhibit shutdown/reboot during automation
-    persistent and logrotate for /var/log/mintupdate.log
-    auto-refresh is now configurable
-
-mintupdate
-    refreshes automatically when apt cache changes
-    add man pages
-    warns that reboot is required after kernel update
-    info dialog updates in real time
-    refresh mechanism uses timestamp, no longer impacted by suspends, can be configured to periods longer than the session
-    warns 90 days before distro reaches EOL
-    retire level and obsolete options
-    checkAPT no longer run as root
-    kernel series supported
-    multiples can be installed/removed (queued operations)
-    kernels show their EOL
-    status page when mintupdate needs to update itself
-    refresh page
-    mintupdate page
-
-mintmenu:
-    configurable tooltips
-    configurable search bar position
-    performance improvements
-    preferences rewrite using xapp gsettings widgets
-    recent -> documents first
-    removed obsolete code
-    added support for icon name in applet button
-
-artwork:
-    mint-y:
-        improved contrast in nemo sidebar
-    switch to ubuntu fonts
-    improved contrast (more saturation, less value)
-    improved progressbars
-    less transparency in terminal
-    clear and dark action icons
-    remove noto-sans, noto-sans-hinted, noto-sans-unhinted? (create stuttering in chromium)
-    currently debating mint-y-darker
-    package mint-y variations into flathub
-
-blueberry:
-    ability to connect/disconnect paired devices in systray
-    migrated to python3
-
-xed:
-    print preview fixes
-    toggle comments
-
-wine:
-    wine-installed + wine-desktop-files
-    winehq-stable in repos
-    mintinstall support for wine-installer
-    rel notes
-    desktop-file-utils
-
-python-xapp
-    GSettings widgets
-
-dev guide
-
-xreader:
-    optional zoom factor indicator
-    ported to meson
-    no recent documents screen
-
-xapps:
-    ctrl+w/q
-
-lightdm-settings
-    autologin delay (timeout)
-
-mintdesktop
-    use xapp.GsettingsWidgets
-    Button layout for CSD windows
-
-mintsystem
-    search is more visible
-    apt showsrc command
-
-mintsources
-    add missing keys
-    remove duplicate sources
-
-system
-    boot repair
-
 Linux Mint 19.2 BETA bugs
 =========================
 
@@ -147,11 +16,8 @@ Linux Mint 19.2 BETA bugs
         hidpi
             titlebar buttons are blurry
 
-    xfce
-        mintdesktop doesn't run
-
     artwork:
-        missing yellow icons
+        flathub icon theme only installed when installing an app
 
 Maintenance
 ===========
@@ -180,10 +46,11 @@ Linux Mint 19.3
             splash screens
             isolinux/grub menu
         new website theme
-        use dark-variants for dark apps (xplayer..etc) in Mint-Y (needs fixes in mint-themes and marco)
+        use dark-variants for dark apps (xplayer..etc) in Mint-Y (needs fixes in mint-themes and marco: https://github.com/GNOME/metacity/commit/6b0d325442b995a78b8783384f7ec370db1369a4)
         icons
             grey-on-grey icons (many in cinnamon-settings)
             review color variations in mint-y
+            add missing yellow icons
         update MATE metathemes
 
     mintlocale:

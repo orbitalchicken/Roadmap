@@ -1,24 +1,3 @@
-Linux Mint 19.2 BETA bugs
-=========================
-
-    HiDPI
-        mintlocale flags
-        mintsources flags
-        cinnamon theme settings
-
-    mate:
-        caja
-            wrong icon in engrampa compress action
-            wrong icon in change color action
-        theme settings
-            folder icons too big
-            mint-x background too dark
-        hidpi
-            titlebar buttons are blurry
-
-    artwork:
-        flathub icon theme only installed when installing an app
-
 Maintenance
 ===========
 
@@ -29,6 +8,22 @@ Maintenance
 
 Linux Mint 19.3
 ===============
+
+    HiDPI
+        mintlocale flags
+        mintsources flags
+        cinnamon theme settings
+
+    mate:
+        caja
+            wrong icon in engrampa compress action
+        theme settings
+            folder icons too big
+            mint-x background too dark
+        hidpi
+            titlebar buttons are blurry
+
+    apturl doesn't refresh
 
     favorite/starred documents (nemo, xapps)
 
@@ -46,7 +41,7 @@ Linux Mint 19.3
             splash screens
             isolinux/grub menu
         new website theme
-        use dark-variants for dark apps (xplayer..etc) in Mint-Y (needs fixes in mint-themes and marco: https://github.com/GNOME/metacity/commit/6b0d325442b995a78b8783384f7ec370db1369a4)
+        use dark-variants for dark apps (xplayer..etc) in Mint-Y (needs fixes in mint-themes and marco: https://github.com/mate-desktop/marco/pull/530)
         icons
             grey-on-grey icons (many in cinnamon-settings)
             review color variations in mint-y
@@ -60,6 +55,10 @@ Linux Mint 19.3
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
 
     timeshift: after restoration and before reboot, run hooks (could be used to adjust grub menu)
+
+    apps:
+        consider celluloid vs xplayer
+        consider aptik vs mintbackup
 
 Ideas - Todos
 ==============

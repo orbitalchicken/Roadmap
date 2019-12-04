@@ -65,6 +65,10 @@ Linux Mint 20
         implement zoom
         simplify rotation, flip..
 
+    timeshift:
+        show a try when a save is ongoing
+        let user cancel save
+
 
 Ideas - Todos
 ==============

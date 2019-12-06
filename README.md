@@ -14,8 +14,14 @@ Maintenance
 Linux Mint 20
 =============
 
+    selection:
+        open-vm-tools?
+        libinput-gestures?
+
     artwork:
         theme LO
+        remove all sound, power, network icons in mint-y-icons/panel/ (needs patches in Xfce and MATE to stop using fullcolor in panel (for MATE power manager) and notifications)
+        mint-y-icons: improve computer icon
 
     mate:
         Ctrl+alt+backspace support
@@ -50,6 +56,7 @@ Linux Mint 20
             review color variations in mint-y
             add missing yellow icons
         update MATE metathemes
+        consider manjaro mouse cursor?
 
     mintupdate:
         safeguard against package removals (for instance, don't let users perform updates which would remove sensitive packages).
@@ -97,7 +104,6 @@ Ideas - Todos
 
     mintupdate:
         remember sorting of updates
-        have an option for update manager to initiate a timeshift backup prior to applying upgrades?
 
     port mintstick to python3
 

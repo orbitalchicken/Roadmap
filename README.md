@@ -32,7 +32,7 @@ Linux Mint 20
 
     cinnamon:
         cs_info: Show a distro logo
-        remove send-by-email nemo action
+        remove send-by-email nemo action //WHY ???
 
 
     mate:
